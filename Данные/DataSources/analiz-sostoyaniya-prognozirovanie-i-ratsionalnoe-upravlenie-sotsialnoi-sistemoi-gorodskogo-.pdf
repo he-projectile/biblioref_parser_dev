@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+	
+<title>Тест Тьюринга</title>
+<meta name="description" content="Вы робот?" />
+
+	<link media="all" rel="stylesheet" href="/app.css">
+	<script type="text/javascript" src="/app.js"></script>
+	
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+  <link rel="preload" href="/fonts/icomoon.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="preload" href="/fonts/PFBeauSansPro-SemiBoldItalic.woff" as="font" type="font/woff" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+</head>
+<body>
+	<div id="wrapper">
+		<header id="header" class="header">
+			<div class="container">
+				<div class="header-top popup-holder">
+					<div class="logo">
+						<a href="/">
+							<img src="/images/logo.svg" alt="image description">
+							<span class="logo-text-holder">
+								<span class="logo-title">disserCat</span><span class="logo-text"> — электронная библиотека диссертаций <span>работаем для вас с 2009 года</span></span>
+							</span>
+						</a>
+					</div>
+					<ul class="cart-links">
+						<li><a class="cart-link" href="/cart"><i class="icon-cart"></i></a></li>
+						<li><a class="cart-link" href="/cart">Корзина пуста</a></li>
+					</ul>
+				</div>
+				<div class="header-bottom">
+					<div class="acc">
+						
+						<a class="acc-link" href="/login">Вход</a>
+						|
+						<a class="acc-link" href="/register">Регистрация</a>
+						
+					</div>
+          
+					<form action="/search" class="search-form">
+						<div class="input-icon">
+							<i class="icon-search"></i>
+							<input name="q" type="search" placeholder="Поиск">
+						</div>
+						<input type="submit" value="Найти">
+					</form>
+          
+				</div>
+			</div>
+		</header>
+		<main id="main">
+      <div class="container d-flex">
+			  
+<div class="content">
+  <h2 class="min-spacing">Вы робот?</h2>
+  <p>Мы заметили, что с вашего адреса поступает очень много запросов.</p>
+  <form method="POST" action="/robot">
+    <fieldset>
+      <label style="margin-top:16px;">Подтвердите, что вы не робот</label>
+      <div class="input-holder">
+        <div class="g-recaptcha" data-sitekey="6LeQ_o8UAAAAADII5V1Y-LqM477qWo3szaTUsNWy"></div>
+      </div>
+    </fieldset>
+    <input type="hidden" name="ret" value="/content/analiz-sostoyaniya-prognozirovanie-i-ratsionalnoe-upravlenie-sotsialnoi-sistemoi-gorodskogo-/read/pdf">
+    <input type="submit" value="Продолжить">
+  </form>
+</div>
+
+        <aside class="sidebar">
+          <nav class="side-nav aside-block open-close">
+            <span class="aside-block-title opener">Навигация</span>
+            <ul class="slide">
+							
+							
+  <li ><a href="/">Каталог диссертаций</a></li>
+
+							
+  <li ><a href="/search">Поиск</a></li>
+
+							
+  <li ><a href="/pravila-raboty-elektronnoi-biblioteki-dissercat">Правила работы</a></li>
+
+							
+  <li ><a href="/chasto-zadavaemye-voprosy-pri-rabote-s-nashei-nauchnoi-bibliotekoi">Помощь</a></li>
+
+							
+  <li ><a href="/skachat-besplatnye-dissertatsii-i-avtoreferaty-iz-rgb">Бесплатные диссертации</a></li>
+
+							
+  <li ><a href="/feedback">Отзывы</a></li>
+
+							
+  <li ><a href="/contact">Задать вопрос</a></li>
+
+            </ul>
+          </nav>
+          
+        </aside>
+      </div>
+    </main>
+		<footer class="footer" id="footer">
+			<div class="container">
+        <p><a href="/terms">Пользовательское соглашение</a> | <a href="/privacy">Политика конфиденциальности</a></p>
+        
+        <p>Научная электронная библиотека диссертаций и авторефератов dissercat.com, 2009-2024</p>
+        <p>
+          <img src="/images/payment_systems.svg">
+        </p>
+			</div>
+		</footer>
+	</div>
+	
+
+
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+   ym(970593, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/970593" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-11488243-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-11488243-1');
+</script>
+
+<script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src="https://vk.com/js/api/openapi.js?160",t.onload=function(){VK.Retargeting.Init("VK-RTRG-350485-ai6yZ"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-350485-ai6yZ" style="position:fixed; left:-999px;" alt=""/></noscript>
+
+</body>
+</html>
+
+

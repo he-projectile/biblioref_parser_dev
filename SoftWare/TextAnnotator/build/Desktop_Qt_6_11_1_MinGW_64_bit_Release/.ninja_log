@@ -1,0 +1,23 @@
+# ninja log v5
+19	2508	8087109225850291	TextAnnotator_autogen/timestamp	6e9100d2dbb313f7
+19	2508	8087109225850291	C:/Users/barko/Desktop/Daniil/MIPT/SRW/SoftWare/TextAnnotator/build/Desktop_Qt_6_11_1_MinGW_64_bit_Release/TextAnnotator_autogen/mocs_compilation.cpp	6e9100d2dbb313f7
+19	2508	8087109225850291	TextAnnotator_autogen/mocs_compilation.cpp	6e9100d2dbb313f7
+19	2508	8087109225850291	C:/Users/barko/Desktop/Daniil/MIPT/SRW/SoftWare/TextAnnotator/build/Desktop_Qt_6_11_1_MinGW_64_bit_Release/TextAnnotator_autogen/timestamp	6e9100d2dbb313f7
+2590	7146	8087109274253339	CMakeFiles/TextAnnotator.dir/src/AnnotationModel.cpp.obj	ad382f5f1a3debdf
+2526	7815	8087109280923350	CMakeFiles/TextAnnotator.dir/src/main.cpp.obj	83cec75cd5b58b5d
+2532	11290	8087109315698949	CMakeFiles/TextAnnotator.dir/src/MainWindow.cpp.obj	9a6dc670a10e88ef
+2519	8624	8087109288983341	CMakeFiles/TextAnnotator.dir/TextAnnotator_autogen/mocs_compilation.cpp.obj	3c62df197e2da2a9
+2609	8990	8087109292693340	CMakeFiles/TextAnnotator.dir/src/JsonStorage.cpp.obj	31d9b4f5dc11e571
+11291	11637	8087109319088960	TextAnnotator.exe	fc79aed58ce99b7c
+2601	9133	8087109294143329	CMakeFiles/TextAnnotator.dir/src/AnnotationEditor.cpp.obj	fb4aa7a11541a646
+43	1016	8087122865443099	TextAnnotator_autogen/timestamp	6e9100d2dbb313f7
+43	1016	8087122865443099	TextAnnotator_autogen/mocs_compilation.cpp	6e9100d2dbb313f7
+43	1016	8087122865443099	C:/Users/barko/Desktop/Daniil/MIPT/SRW/SoftWare/TextAnnotator/build/Desktop_Qt_6_11_1_MinGW_64_bit_Release/TextAnnotator_autogen/timestamp	6e9100d2dbb313f7
+43	1016	8087122865443099	C:/Users/barko/Desktop/Daniil/MIPT/SRW/SoftWare/TextAnnotator/build/Desktop_Qt_6_11_1_MinGW_64_bit_Release/TextAnnotator_autogen/mocs_compilation.cpp	6e9100d2dbb313f7
+1030	3569	8087122891684938	CMakeFiles/TextAnnotator.dir/src/AnnotationModel.cpp.obj	fd57a8b53828952c
+1021	4064	8087122896642305	CMakeFiles/TextAnnotator.dir/src/main.cpp.obj	7ed5700aa77a8aa3
+1017	4520	8087122901202343	CMakeFiles/TextAnnotator.dir/TextAnnotator_autogen/mocs_compilation.cpp.obj	2a21e06f301a1c40
+1035	4654	8087122902552309	CMakeFiles/TextAnnotator.dir/src/AnnotationEditor.cpp.obj	c285b3402012a2fc
+1040	4672	8087122902722309	CMakeFiles/TextAnnotator.dir/src/JsonStorage.cpp.obj	85cc7c0da4c728b0
+1026	5611	8087122912124788	CMakeFiles/TextAnnotator.dir/src/MainWindow.cpp.obj	1d07452cf163cd7b
+5611	5808	8087122914034923	TextAnnotator.exe	a4b6ca241fd86fc
