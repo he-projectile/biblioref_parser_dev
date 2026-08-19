@@ -29,7 +29,7 @@ from seqeval.metrics import (
 # CONFIG
 # ============================================================
 
-TOKEN_PATH = r"C:\Users\barko\Desktop\Daniil\MIPT\SRW\SoftWare\PythonWorkflow\secrets\hf_tkn_RO.tkn"
+TOKEN_PATH = r".\secrets\hf_tkn_RO.tkn"
 
 if os.path.exists(TOKEN_PATH):
     with open(TOKEN_PATH, "r", encoding="utf-8") as f:
