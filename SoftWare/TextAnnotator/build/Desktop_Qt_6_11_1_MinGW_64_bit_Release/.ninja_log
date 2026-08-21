@@ -58,3 +58,13 @@
 638	2953	8089754009808121	CMakeFiles/TextAnnotator.dir/TextAnnotator_autogen/mocs_compilation.cpp.obj	2a21e06f301a1c40
 646	4122	8089754021500141	CMakeFiles/TextAnnotator.dir/src/MainWindow.cpp.obj	1d07452cf163cd7b
 4122	4293	8089754023170477	TextAnnotator.exe	a4b6ca241fd86fc
+52	331	8089757745833792	TextAnnotator_autogen/timestamp	6e9100d2dbb313f7
+52	331	8089757745833792	TextAnnotator_autogen/mocs_compilation.cpp	6e9100d2dbb313f7
+52	331	8089757745833792	C:/Users/barko/Desktop/Daniil/MIPT/SRW/SoftWare/TextAnnotator/build/Desktop_Qt_6_11_1_MinGW_64_bit_Release/TextAnnotator_autogen/timestamp	6e9100d2dbb313f7
+52	331	8089757745833792	C:/Users/barko/Desktop/Daniil/MIPT/SRW/SoftWare/TextAnnotator/build/Desktop_Qt_6_11_1_MinGW_64_bit_Release/TextAnnotator_autogen/mocs_compilation.cpp	6e9100d2dbb313f7
+373	3093	8089766978704593	CMakeFiles/TextAnnotator.dir/src/AnnotationModel.cpp.obj	fd57a8b53828952c
+361	3321	8089766981004587	CMakeFiles/TextAnnotator.dir/src/main.cpp.obj	7ed5700aa77a8aa3
+355	3706	8089766984844618	CMakeFiles/TextAnnotator.dir/TextAnnotator_autogen/mocs_compilation.cpp.obj	2a21e06f301a1c40
+380	3935	8089766987134570	CMakeFiles/TextAnnotator.dir/src/AnnotationEditor.cpp.obj	c285b3402012a2fc
+367	4980	8089766997594611	CMakeFiles/TextAnnotator.dir/src/MainWindow.cpp.obj	1d07452cf163cd7b
+4980	5335	8089767001104561	TextAnnotator.exe	a4b6ca241fd86fc
