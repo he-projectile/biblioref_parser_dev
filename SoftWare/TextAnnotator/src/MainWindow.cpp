@@ -24,14 +24,22 @@
 #include <QTextCursor>
 #include <QFileInfo>
 
+#include <QCloseEvent>
+#include <QKeySequence>
+
+#include <QShortcut>
+
 MainWindow::MainWindow(QWidget* parent)
     : QMainWindow(parent)
 {
-    m_model = new AnnotationModel();
-
     createUi();
 
-    m_editor->setAnnotationModel(m_model);
+    connect(
+        m_editor,
+        &AnnotationEditor::entityShortcutPressed,
+        this,
+        &MainWindow::handleEntityShortcut
+        );
 
     setWindowTitle("Text Annotator");
 
@@ -63,6 +71,8 @@ void MainWindow::createUi()
     m_editor =
         new AnnotationEditor();
 
+    m_editor->setAnnotationModel(m_model);
+
     editorLayout->addWidget(m_editor);
 
     mainLayout->addLayout(
@@ -82,32 +92,50 @@ void MainWindow::createUi()
 
     sideLayout->addWidget(entityLabel);
 
-    const QStringList entityTypes =
-    {
-        "БИБЛ. ССЫЛКА",
-        "АВТОРЫ",
-        "НАЗВАНИЕ",
-        "ГОД ПУБЛИКАЦИИ",
-        "НАЗВАНИЕ ЖУРНАЛА",
-        "НАЗВАНИЕ КОНФЕРЕНЦИИ",
-        "СТРАНИЦЫ",
-        "DOI",
-        "URL",
-        "ТОМ",
-        "НОМЕР",
-        "ИЗДАТЕЛЬСТВО",
-        "МЕСТО ИЗДАНИЯ",
-        "ISBN",
-        "ISSN"
-    };
+    m_entityTypes =
+        {
+            "БИБЛ. ССЫЛКА",
+            "АВТОРЫ",
+            "НАЗВАНИЕ",
+            "ГОД ПУБЛИКАЦИИ",
+            "НАЗВАНИЕ ЖУРНАЛА",
+            "НАЗВАНИЕ КОНФЕРЕНЦИИ",
+            "СТРАНИЦЫ",
+            "НОМЕР",
+            "ИЗДАТЕЛЬСТВО",
+            "МЕСТО ИЗДАНИЯ",
 
-    for (const QString& type : entityTypes)
+            "ТОМ",
+            "DOI",
+            "URL",
+            "ISBN",
+            "ISSN"
+        };
+
+    for (int i = 0; i < m_entityTypes.size(); ++i)
     {
+        const QString& label =
+            m_entityTypes[i];
+
+        QString shortcut;
+
+        if (i < 10)
+        {
+            shortcut =
+                (i == 9)
+                    ? "0"
+                    : QString::number(i + 1);
+        }
+
         QPushButton* button =
-            createEntityButton(type);
+            createEntityButton(
+                label,
+                shortcut
+                );
 
         sideLayout->addWidget(button);
     }
+
 
     sideLayout->addSpacing(20);
 
@@ -140,7 +168,7 @@ void MainWindow::createUi()
             QPushButton* button =
                 createEntityButton(
                     label.trimmed().toUpper()
-                    );
+                    , "");
 
             sideLayout->insertWidget(
                 sideLayout->count() - 3,
@@ -150,6 +178,8 @@ void MainWindow::createUi()
     );
 
     sideLayout->addSpacing(20);
+
+
 
     QLabel* annotationsLabel =
         new QLabel("Разметка:");
@@ -185,7 +215,10 @@ void MainWindow::createUi()
             if (row < 0)
                 return;
 
-            m_model->removeAnnotation(row);
+            if (m_model->removeAnnotation(row))
+            {
+                m_dirty = true;
+            }
 
             refreshAnnotationList();
 
@@ -295,31 +328,46 @@ void MainWindow::createUi()
 }
 
 QPushButton* MainWindow::createEntityButton(
-    const QString& label
-)
+    const QString& label,
+    const QString& shortcut
+    )
 {
+    QString buttonText = label;
+
+    if (!shortcut.isEmpty())
+    {
+        buttonText =
+            "[" + shortcut + "]  " + label;
+    }
+
     QPushButton* button =
-        new QPushButton(label);
+        new QPushButton(buttonText);
 
     button->setMinimumHeight(32);
+
+    button->setProperty(
+        "entityLabel",
+        label
+        );
 
     connect(
         button,
         &QPushButton::clicked,
         this,
-        &MainWindow::addAnnotation
-    );
-
-    button->setProperty(
-        "entityLabel",
-        label
-    );
+        [this, label]()
+        {
+            addAnnotation(label);
+        }
+        );
 
     return button;
 }
 
 void MainWindow::openTextFile()
 {
+    if (!confirmSaveChanges())
+        return;
+
     const QString filePath =
         QFileDialog::getOpenFileName(
             this,
@@ -365,59 +413,14 @@ void MainWindow::openTextFile()
 
 void MainWindow::saveAnnotations()
 {
-    if (m_currentTextFile.isEmpty())
-    {
-        QMessageBox::warning(
-            this,
-            "Нет файла",
-            "Сначала откройте TXT-файл."
-        );
-
-        return;
-    }
-
-    const QString defaultPath =
-        m_currentTextFile
-            .left(
-                m_currentTextFile.lastIndexOf('.')
-            )
-        + ".json";
-
-    const QString filePath =
-        QFileDialog::getSaveFileName(
-            this,
-            "Сохранить JSON",
-            defaultPath,
-            "JSON files (*.json)"
-        );
-
-    if (filePath.isEmpty())
-        return;
-
-    if (!JsonStorage::save(
-            filePath,
-            QFileInfo(m_currentTextFile).fileName(),
-            m_model->annotations()))
-    {
-        QMessageBox::critical(
-            this,
-            "Ошибка",
-            "Не удалось сохранить JSON."
-        );
-
-        return;
-    }
-
-    m_currentJsonFile = filePath;
-
-    statusBar()->showMessage(
-        "Разметка сохранена.",
-        3000
-    );
+    saveAnnotationsToFile();
 }
 
 void MainWindow::loadAnnotations()
 {
+    if (!confirmSaveChanges())
+        return;
+
     if (m_currentTextFile.isEmpty())
     {
         QMessageBox::warning(
@@ -529,24 +532,26 @@ void MainWindow::loadAnnotations()
 
     m_currentJsonFile = filePath;
 
+    m_dirty = false;
+
     statusBar()->showMessage(
         "Разметка загружена.",
         3000
     );
 }
 
-void MainWindow::addAnnotation()
+void MainWindow::addAnnotation(
+    const QString& label
+    )
 {
+    if (label.isEmpty())
+        return;
+
     QPushButton* button =
         qobject_cast<QPushButton*>(sender());
 
     if (!button)
         return;
-
-    const QString label =
-        button->property(
-                  "entityLabel"
-                  ).toString();
 
     if (label.isEmpty())
         return;
@@ -573,15 +578,15 @@ void MainWindow::addAnnotation()
     const QString text =
         cursor.selectedText();
 
-    // ============================================================
+    // ------------------------------------------------------------
     // REFERENCE
-    //
-    // Библиографическая ссылка является корневой сущностью.
-    // ============================================================
+    // ------------------------------------------------------------
 
     if (label == "БИБЛ. ССЫЛКА")
     {
-        if (m_model->hasOverlap(start, end))
+        // REFERENCE не может пересекаться
+        // с существующей разметкой.
+        if (m_model->hasAnyOverlap(start, end))
         {
             QMessageBox::warning(
                 this,
@@ -594,34 +599,13 @@ void MainWindow::addAnnotation()
         }
     }
 
-    // ============================================================
-    // Дочерние сущности
-    //
-    // AUTHOR, TITLE, JOURNAL, YEAR и т.д.
-    // должны полностью находиться внутри REFERENCE.
-    // ============================================================
+    // ------------------------------------------------------------
+    // Дочерняя сущность
+    // ------------------------------------------------------------
 
     else
     {
-        bool insideReference = false;
-
-        const QVector<Annotation>& annotations =
-            m_model->annotations();
-
-        for (const Annotation& annotation : annotations)
-        {
-            if (annotation.label != "БИБЛ. ССЫЛКА")
-                continue;
-
-            if (annotation.start <= start &&
-                annotation.end >= end)
-            {
-                insideReference = true;
-                break;
-            }
-        }
-
-        if (!insideReference)
+        if (!m_model->isInsideReference(start, end))
         {
             QMessageBox::warning(
                 this,
@@ -629,32 +613,31 @@ void MainWindow::addAnnotation()
                 "Дочерние сущности нельзя разметить "
                 "без выделенной библиографической ссылки.\n\n"
                 "Сначала выделите всю библиографическую "
-                "ссылку и назначьте ей REFERENCE."
+                "ссылку и назначьте ей "
+                "\"БИБЛ. ССЫЛКА\"."
                 );
 
             return;
         }
 
-        // --------------------------------------------------------
-        // Дочерние сущности не могут пересекаться.
-        // --------------------------------------------------------
-
-        if (m_model->hasOverlap(start, end))
+        // Дочерние сущности не должны пересекаться
+        // друг с другом.
+        if (m_model->hasChildOverlap(start, end))
         {
             QMessageBox::warning(
                 this,
                 "Пересечение",
                 "Дочерняя сущность пересекается "
-                "с существующей сущностью."
+                "с другой дочерней сущностью."
                 );
 
             return;
         }
     }
 
-    // ============================================================
-    // Создаём annotation
-    // ============================================================
+    // ------------------------------------------------------------
+    // Создаём сущность
+    // ------------------------------------------------------------
 
     Annotation annotation;
 
@@ -677,6 +660,8 @@ void MainWindow::addAnnotation()
     m_editor->refreshAnnotations();
 
     refreshAnnotationList();
+
+    m_dirty = true;
 }
 
 void MainWindow::refreshAnnotationList()
@@ -728,4 +713,164 @@ void MainWindow::setCurrentFile(
         "Text Annotator — " +
         QFileInfo(filePath).fileName()
     );
+}
+
+bool MainWindow::saveAnnotationsToFile()
+{
+    if (m_currentTextFile.isEmpty())
+    {
+        QMessageBox::warning(
+            this,
+            "Нет файла",
+            "Сначала откройте TXT-файл."
+            );
+
+        return false;
+    }
+
+    QString filePath =
+        m_currentJsonFile;
+
+    // Если JSON ещё не создавался,
+    // спрашиваем путь.
+    if (filePath.isEmpty())
+    {
+        const QString defaultPath =
+            m_currentTextFile.left(
+                m_currentTextFile.lastIndexOf('.')
+                ) + ".json";
+
+        filePath =
+            QFileDialog::getSaveFileName(
+                this,
+                "Сохранить JSON",
+                defaultPath,
+                "JSON files (*.json)"
+                );
+
+        if (filePath.isEmpty())
+            return false;
+    }
+
+    if (!JsonStorage::save(
+            filePath,
+            QFileInfo(m_currentTextFile).fileName(),
+            m_model->annotations()))
+    {
+        QMessageBox::critical(
+            this,
+            "Ошибка",
+            "Не удалось сохранить JSON."
+            );
+
+        return false;
+    }
+
+    m_currentJsonFile = filePath;
+
+    m_dirty = false;
+
+    statusBar()->showMessage(
+        "Разметка сохранена.",
+        3000
+        );
+
+    return true;
+}
+
+bool MainWindow::confirmSaveChanges()
+{
+    if (!m_dirty)
+        return true;
+
+    QMessageBox messageBox(
+        QMessageBox::Warning,
+        "Несохранённая разметка",
+        "Разметка была изменена, но ещё не сохранена в JSON.\n\n"
+        "Сохранить изменения?",
+        QMessageBox::Save |
+            QMessageBox::Discard |
+            QMessageBox::Cancel,
+        this
+        );
+
+    messageBox.setDefaultButton(
+        QMessageBox::Save
+        );
+
+    const int result =
+        messageBox.exec();
+
+    if (result == QMessageBox::Save)
+    {
+        return saveAnnotationsToFile();
+    }
+
+    if (result == QMessageBox::Discard)
+    {
+        return true;
+    }
+
+    // Cancel
+    return false;
+}
+
+void MainWindow::closeEvent(QCloseEvent* event)
+{
+    if (confirmSaveChanges())
+    {
+        event->accept();
+    }
+    else
+    {
+        event->ignore();
+    }
+}
+
+void MainWindow::keyPressEvent(QKeyEvent* event)
+{
+    if (event->modifiers() == Qt::NoModifier)
+    {
+        int index = -1;
+
+        if (event->key() >= Qt::Key_1 &&
+            event->key() <= Qt::Key_9)
+        {
+            index =
+                event->key() - Qt::Key_1;
+        }
+        else if (event->key() == Qt::Key_0)
+        {
+            index = 9;
+        }
+
+        if (index >= 0 &&
+            index < m_entityTypes.size() &&
+            index < 10)
+        {
+            addAnnotation(
+                m_entityTypes[index]
+                );
+
+            event->accept();
+
+            return;
+        }
+    }
+
+    QMainWindow::keyPressEvent(event);
+}
+
+void MainWindow::handleEntityShortcut(int index)
+{
+    if (index < 0 ||
+        index >= m_entityTypes.size() ||
+        index >= 10)
+    {
+        return;
+    }
+
+    addAnnotation(
+        m_entityTypes[index]
+        );
 }

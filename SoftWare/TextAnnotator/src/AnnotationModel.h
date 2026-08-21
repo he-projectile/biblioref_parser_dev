@@ -12,21 +12,42 @@ public:
 
     const QVector<Annotation>& annotations() const;
 
-    bool addAnnotation(const Annotation& annotation);
+    bool addAnnotation(
+        const Annotation& annotation
+        );
 
-    bool removeAnnotation(int index);
+    bool removeAnnotation(
+        int index
+        );
 
     bool updateLabel(
         int index,
         const QString& label
         );
 
-    int annotationAt(int position) const;
+    int annotationAt(
+        int position
+        ) const;
 
     bool hasOverlap(
         int start,
         int end,
         int ignoreIndex = -1
+        ) const;
+
+    bool hasAnyOverlap(
+        int start,
+        int end
+        ) const;
+
+    bool hasChildOverlap(
+        int start,
+        int end
+        ) const;
+
+    bool isInsideReference(
+        int start,
+        int end
         ) const;
 
     int findParent(

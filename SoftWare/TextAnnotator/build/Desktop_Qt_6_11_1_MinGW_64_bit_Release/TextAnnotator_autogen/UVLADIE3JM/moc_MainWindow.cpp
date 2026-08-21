@@ -43,7 +43,8 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         "",
         "saveAnnotations",
         "loadAnnotations",
-        "addAnnotation"
+        "addAnnotation",
+        "label"
     };
 
     QtMocHelpers::UintData qt_methods {
@@ -54,7 +55,9 @@ template <> constexpr inline auto MainWindow::qt_create_metaobjectdata<qt_meta_t
         // Slot 'loadAnnotations'
         QtMocHelpers::SlotData<void()>(4, 2, QMC::AccessPrivate, QMetaType::Void),
         // Slot 'addAnnotation'
-        QtMocHelpers::SlotData<void()>(5, 2, QMC::AccessPrivate, QMetaType::Void),
+        QtMocHelpers::SlotData<void(const QString &)>(5, 2, QMC::AccessPrivate, QMetaType::Void, {{
+            { QMetaType::QString, 6 },
+        }}),
     };
     QtMocHelpers::UintData qt_properties {
     };
@@ -81,11 +84,10 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 0: _t->openTextFile(); break;
         case 1: _t->saveAnnotations(); break;
         case 2: _t->loadAnnotations(); break;
-        case 3: _t->addAnnotation(); break;
+        case 3: _t->addAnnotation((*reinterpret_cast<std::add_pointer_t<QString>>(_a[1]))); break;
         default: ;
         }
     }
-    (void)_a;
 }
 
 const QMetaObject *MainWindow::metaObject() const

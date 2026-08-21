@@ -42,12 +42,17 @@ template <> constexpr inline auto AnnotationEditor::qt_create_metaobjectdata<qt_
         "AnnotationEditor",
         "annotationClicked",
         "",
-        "index"
+        "index",
+        "entityShortcutPressed"
     };
 
     QtMocHelpers::UintData qt_methods {
         // Signal 'annotationClicked'
         QtMocHelpers::SignalData<void(int)>(1, 2, QMC::AccessPublic, QMetaType::Void, {{
+            { QMetaType::Int, 3 },
+        }}),
+        // Signal 'entityShortcutPressed'
+        QtMocHelpers::SignalData<void(int)>(4, 2, QMC::AccessPublic, QMetaType::Void, {{
             { QMetaType::Int, 3 },
         }}),
     };
@@ -74,11 +79,14 @@ void AnnotationEditor::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int
     if (_c == QMetaObject::InvokeMetaMethod) {
         switch (_id) {
         case 0: _t->annotationClicked((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
+        case 1: _t->entityShortcutPressed((*reinterpret_cast<std::add_pointer_t<int>>(_a[1]))); break;
         default: ;
         }
     }
     if (_c == QMetaObject::IndexOfMethod) {
         if (QtMocHelpers::indexOfMethod<void (AnnotationEditor::*)(int )>(_a, &AnnotationEditor::annotationClicked, 0))
+            return;
+        if (QtMocHelpers::indexOfMethod<void (AnnotationEditor::*)(int )>(_a, &AnnotationEditor::entityShortcutPressed, 1))
             return;
     }
 }
@@ -102,14 +110,14 @@ int AnnotationEditor::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 1)
+        if (_id < 2)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 1;
+        _id -= 2;
     }
     if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 1)
+        if (_id < 2)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 1;
+        _id -= 2;
     }
     return _id;
 }
@@ -118,5 +126,11 @@ int AnnotationEditor::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 void AnnotationEditor::annotationClicked(int _t1)
 {
     QMetaObject::activate<void>(this, &staticMetaObject, 0, nullptr, _t1);
+}
+
+// SIGNAL 1
+void AnnotationEditor::entityShortcutPressed(int _t1)
+{
+    QMetaObject::activate<void>(this, &staticMetaObject, 1, nullptr, _t1);
 }
 QT_WARNING_POP

@@ -24,14 +24,48 @@ bool AnnotationModel::addAnnotation(
     if (annotation.label.isEmpty())
         return false;
 
-    Annotation newAnnotation = annotation;
+    // ------------------------------------------------------------
+    // REFERENCE
+    // ------------------------------------------------------------
+
+    if (annotation.label ==
+        "БИБЛ. ССЫЛКА")
+    {
+        // REFERENCE не может пересекаться
+        // вообще ни с чем.
+        if (hasAnyOverlap(
+                annotation.start,
+                annotation.end))
+        {
+            return false;
+        }
+    }
 
     // ------------------------------------------------------------
-    // Определяем родителя автоматически.
-    //
-    // Если новая сущность находится внутри существующей,
-    // она становится её дочерней сущностью.
+    // Дочерняя сущность
     // ------------------------------------------------------------
+
+    else
+    {
+        // Должна находиться внутри REFERENCE.
+        if (!isInsideReference(
+                annotation.start,
+                annotation.end))
+        {
+            return false;
+        }
+
+        // Дочерние сущности не пересекаются.
+        if (hasChildOverlap(
+                annotation.start,
+                annotation.end))
+        {
+            return false;
+        }
+    }
+
+    Annotation newAnnotation =
+        annotation;
 
     newAnnotation.parentIndex =
         findParent(
@@ -39,77 +73,16 @@ bool AnnotationModel::addAnnotation(
             annotation.end
             );
 
-    if (newAnnotation.parentIndex >= 0)
-    {
-        const Annotation& parent =
-            m_annotations[newAnnotation.parentIndex];
-
-        if (parent.label != "БИБЛ. ССЫЛКА")
-        {
-            return false;
-        }
-    }
-
-    // ------------------------------------------------------------
-    // Проверяем пересечения.
-    //
-    // Полностью содержащая сущность допустима:
-    //
-    // БИБЛ. ССЫЛКА
-    // ├── TITLE
-    // └── YEAR
-    //
-    // Частичное пересечение запрещено:
-    //
-    // ┌───────────────┐
-    //       ┌───────────────┐
-    //       └───────────────┘
-    // └───────────────┘
-    //
-    // ------------------------------------------------------------
-
-    for (int i = 0; i < m_annotations.size(); ++i)
-    {
-        const Annotation& existing =
-            m_annotations[i];
-
-        if (rangesOverlap(
-                annotation.start,
-                annotation.end,
-                existing.start,
-                existing.end))
-        {
-            const bool newContainsOld =
-                rangeContains(
-                    annotation.start,
-                    annotation.end,
-                    existing.start,
-                    existing.end
-                    );
-
-            const bool oldContainsNew =
-                rangeContains(
-                    existing.start,
-                    existing.end,
-                    annotation.start,
-                    annotation.end
-                    );
-
-            // Полное вложение допустимо.
-            if (newContainsOld || oldContainsNew)
-                continue;
-
-            // Частичное пересечение запрещено.
-            return false;
-        }
-    }
-
-    m_annotations.append(newAnnotation);
+    m_annotations.append(
+        newAnnotation
+        );
 
     return true;
 }
 
-bool AnnotationModel::removeAnnotation(int index)
+bool AnnotationModel::removeAnnotation(
+    int index
+    )
 {
     if (index < 0 ||
         index >= m_annotations.size())
@@ -117,12 +90,52 @@ bool AnnotationModel::removeAnnotation(int index)
         return false;
     }
 
-    m_annotations.removeAt(index);
+    const Annotation& annotation =
+        m_annotations[index];
 
-    // После удаления индексы родителей могут измениться.
-    //
-    // Пересчитываем их заново.
-    for (int i = 0; i < m_annotations.size(); ++i)
+    // ------------------------------------------------------------
+    // Если удаляем REFERENCE,
+    // удаляем всю её ветку.
+    // ------------------------------------------------------------
+
+    if (annotation.label ==
+        "БИБЛ. ССЫЛКА")
+    {
+        const int referenceStart =
+            annotation.start;
+
+        const int referenceEnd =
+            annotation.end;
+
+        for (int i =
+             m_annotations.size() - 1;
+             i >= 0;
+             --i)
+        {
+            const Annotation& current =
+                m_annotations[i];
+
+            if (current.start >= referenceStart &&
+                current.end <= referenceEnd)
+            {
+                m_annotations.removeAt(i);
+            }
+        }
+    }
+    else
+    {
+        // Обычная сущность —
+        // удаляем только её.
+        m_annotations.removeAt(index);
+    }
+
+    // ------------------------------------------------------------
+    // Пересчитываем parentIndex
+    // ------------------------------------------------------------
+
+    for (int i = 0;
+         i < m_annotations.size();
+         ++i)
     {
         m_annotations[i].parentIndex =
             findParent(
@@ -296,4 +309,79 @@ bool AnnotationModel::rangeContains(
 {
     return outerStart <= innerStart &&
            outerEnd >= innerEnd;
+}
+
+bool AnnotationModel::hasAnyOverlap(
+    int start,
+    int end
+    ) const
+{
+    for (const Annotation& annotation :
+         m_annotations)
+    {
+        if (rangesOverlap(
+                start,
+                end,
+                annotation.start,
+                annotation.end))
+        {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+bool AnnotationModel::hasChildOverlap(
+    int start,
+    int end
+    ) const
+{
+    for (const Annotation& annotation :
+         m_annotations)
+    {
+        if (annotation.label ==
+            "БИБЛ. ССЫЛКА")
+        {
+            continue;
+        }
+
+        if (rangesOverlap(
+                start,
+                end,
+                annotation.start,
+                annotation.end))
+        {
+            return true;
+        }
+    }
+
+    return false;
+}
+
+bool AnnotationModel::isInsideReference(
+    int start,
+    int end
+    ) const
+{
+    for (const Annotation& annotation :
+         m_annotations)
+    {
+        if (annotation.label !=
+            "БИБЛ. ССЫЛКА")
+        {
+            continue;
+        }
+
+        if (rangeContains(
+                annotation.start,
+                annotation.end,
+                start,
+                end))
+        {
+            return true;
+        }
+    }
+
+    return false;
 }

@@ -144,6 +144,7 @@ C:/Users/barko/Desktop/Daniil/MIPT/SRW/SoftWare/TextAnnotator/build/Desktop_Qt_6
   C:/Qt/6.11.1/mingw_64/include/QtCore/qversiontagging.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qxptype_traits.h \
   C:/Qt/6.11.1/mingw_64/include/QtCore/qyieldcpu.h \
+  C:/Qt/6.11.1/mingw_64/include/QtGui/QKeyEvent \
   C:/Qt/6.11.1/mingw_64/include/QtGui/QTransform \
   C:/Qt/6.11.1/mingw_64/include/QtGui/QWheelEvent \
   C:/Qt/6.11.1/mingw_64/include/QtGui/qabstracttextdocumentlayout.h \

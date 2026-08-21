@@ -13,16 +13,24 @@ static QColor colorForLabel(
     const QString& label
     )
 {
+    // Контрастные, но не слишком кислотные цвета.
     static const QVector<QColor> colors =
         {
-            QColor("#FFE3E3"),
-            QColor("#E3F0FF"), QColor("#E5F9E9"),
-            QColor("#FFF6D6"), QColor("#F0E8FA"),
-            QColor("#FFE7D1"), QColor("#E3FAFA"),
-            QColor("#ECF6DC"), QColor("#FCE4E6"),
-            QColor("#E8F2FA"), QColor("#F2ECFA"),
-            QColor("#EAF9E3"), QColor("#FFF0FA"),
-            QColor("#F9E2FA"), QColor("#E3FAF2")
+            QColor("#FF9999"), // красный
+            QColor("#80BFFF"), // синий
+            QColor("#7DDC8B"), // зелёный
+            QColor("#FFD966"), // жёлтый
+            QColor("#C59BFF"), // фиолетовый
+            QColor("#FFB366"), // оранжевый
+            QColor("#66D9D9"), // бирюзовый
+            QColor("#B6D957"), // салатовый
+            QColor("#FF80AB"), // розовый
+            QColor("#80CBC4"), // teal
+            QColor("#B39DDB"), // лавандовый
+            QColor("#A5D6A7"), // светло-зелёный
+            QColor("#FFCC80"), // светло-оранжевый
+            QColor("#90CAF9"), // голубой
+            QColor("#CE93D8")  // сиреневый
         };
 
     uint hash = 0;
@@ -195,4 +203,32 @@ void AnnotationEditor::wheelEvent(QWheelEvent* event)
     }
 
     QPlainTextEdit::wheelEvent(event);
+}
+
+void AnnotationEditor::keyPressEvent(QKeyEvent* event)
+{
+    if (event->modifiers() == Qt::NoModifier)
+    {
+        int index = -1;
+
+        if (event->key() >= Qt::Key_1 &&
+            event->key() <= Qt::Key_9)
+        {
+            index =
+                event->key() - Qt::Key_1;
+        }
+        else if (event->key() == Qt::Key_0)
+        {
+            index = 9;
+        }
+
+        if (index >= 0)
+        {
+            emit entityShortcutPressed(index);
+            event->accept();
+            return;
+        }
+    }
+
+    QPlainTextEdit::keyPressEvent(event);
 }
