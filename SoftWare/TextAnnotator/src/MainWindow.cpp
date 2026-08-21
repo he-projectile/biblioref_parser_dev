@@ -25,13 +25,13 @@
 #include <QFileInfo>
 
 #include <QCloseEvent>
-#include <QKeySequence>
-
-#include <QShortcut>
 
 MainWindow::MainWindow(QWidget* parent)
     : QMainWindow(parent)
 {
+    m_editor = new AnnotationEditor();
+
+
     createUi();
 
     connect(
@@ -67,9 +67,6 @@ void MainWindow::createUi()
         new QLabel("Файл не открыт");
 
     editorLayout->addWidget(m_fileLabel);
-
-    m_editor =
-        new AnnotationEditor();
 
     m_editor->setAnnotationModel(m_model);
 
@@ -544,14 +541,6 @@ void MainWindow::addAnnotation(
     const QString& label
     )
 {
-    if (label.isEmpty())
-        return;
-
-    QPushButton* button =
-        qobject_cast<QPushButton*>(sender());
-
-    if (!button)
-        return;
 
     if (label.isEmpty())
         return;
@@ -827,39 +816,6 @@ void MainWindow::closeEvent(QCloseEvent* event)
     }
 }
 
-void MainWindow::keyPressEvent(QKeyEvent* event)
-{
-    if (event->modifiers() == Qt::NoModifier)
-    {
-        int index = -1;
-
-        if (event->key() >= Qt::Key_1 &&
-            event->key() <= Qt::Key_9)
-        {
-            index =
-                event->key() - Qt::Key_1;
-        }
-        else if (event->key() == Qt::Key_0)
-        {
-            index = 9;
-        }
-
-        if (index >= 0 &&
-            index < m_entityTypes.size() &&
-            index < 10)
-        {
-            addAnnotation(
-                m_entityTypes[index]
-                );
-
-            event->accept();
-
-            return;
-        }
-    }
-
-    QMainWindow::keyPressEvent(event);
-}
 
 void MainWindow::handleEntityShortcut(int index)
 {
