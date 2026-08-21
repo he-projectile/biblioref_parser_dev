@@ -5,6 +5,8 @@
 #include <QString>
 #include <QStringList>
 
+#include "AnnotationModel.h"
+
 class QPushButton;
 class QLabel;
 class QListWidget;

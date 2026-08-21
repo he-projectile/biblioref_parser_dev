@@ -29,8 +29,7 @@
 MainWindow::MainWindow(QWidget* parent)
     : QMainWindow(parent)
 {
-    m_editor = new AnnotationEditor();
-
+    m_model = new AnnotationModel();
 
     createUi();
 
@@ -68,7 +67,9 @@ void MainWindow::createUi()
 
     editorLayout->addWidget(m_fileLabel);
 
+    m_editor = new AnnotationEditor();
     m_editor->setAnnotationModel(m_model);
+
 
     editorLayout->addWidget(m_editor);
 
