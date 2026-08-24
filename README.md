@@ -205,7 +205,7 @@
 <div align="center">
 <figure>
   <img src="./Report/Диаграмма IoU.png" alt="Альтернативный текст" 
-  width="50%">
+  width="50%"><br>
   <figcaption>Рисунок -- 2. Вычисление метрики IoU</figcaption>
 </figure>
 </div>
