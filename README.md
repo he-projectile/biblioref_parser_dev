@@ -192,7 +192,7 @@
 
 <figure>
   <img src="./Report/Окно приложния Text Annotator.png" alt="Альтернативный текст"> 
-  <figcaption><p align="center">Рисунок -- 1. Схема архитектуры разрабатываемого проекта.</p></figcaption>
+  <figcaption><p align="center">Рисунок -- 1. Окно приложения для разметки.</p></figcaption>
 </figure>
 
 ПО позволяет размечать данные, совершая несколько простых действий:
