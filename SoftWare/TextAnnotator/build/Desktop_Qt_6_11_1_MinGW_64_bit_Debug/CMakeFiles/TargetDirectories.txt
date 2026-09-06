@@ -1,5 +1,0 @@
-C:/Users/barko/Desktop/Daniil/MIPT/SRW/SoftWare/TextAnnotator/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/CMakeFiles/TextAnnotator.dir
-C:/Users/barko/Desktop/Daniil/MIPT/SRW/SoftWare/TextAnnotator/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/CMakeFiles/edit_cache.dir
-C:/Users/barko/Desktop/Daniil/MIPT/SRW/SoftWare/TextAnnotator/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/CMakeFiles/rebuild_cache.dir
-C:/Users/barko/Desktop/Daniil/MIPT/SRW/SoftWare/TextAnnotator/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/CMakeFiles/TextAnnotator_autogen_timestamp_deps.dir
-C:/Users/barko/Desktop/Daniil/MIPT/SRW/SoftWare/TextAnnotator/build/Desktop_Qt_6_11_1_MinGW_64_bit_Debug/CMakeFiles/TextAnnotator_autogen.dir
