@@ -47,7 +47,8 @@ private:
 
     // Сохраняет JSON. Если текущего JSON ещё нет,
     // показывает диалог выбора файла.
-    bool saveAnnotationsToFile();
+    bool saveAnnotationsToFile(const QString& filePath);
+    bool saveAnnotationsAs();
 
     // Проверяет наличие несохранённых изменений.
     // true  — можно продолжать действие.

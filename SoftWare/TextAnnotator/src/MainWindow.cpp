@@ -402,6 +402,9 @@ void MainWindow::openTextFile()
 
     m_model->clear();
 
+    m_currentJsonFile.clear();
+    m_dirty = false;
+
     m_editor->refreshAnnotations();
 
     refreshAnnotationList();
@@ -411,8 +414,9 @@ void MainWindow::openTextFile()
 
 void MainWindow::saveAnnotations()
 {
-    saveAnnotationsToFile();
+    saveAnnotationsAs();
 }
+
 
 void MainWindow::loadAnnotations()
 {
@@ -705,7 +709,7 @@ void MainWindow::setCurrentFile(
     );
 }
 
-bool MainWindow::saveAnnotationsToFile()
+bool MainWindow::saveAnnotationsToFile(const QString& filePath)
 {
     if (m_currentTextFile.isEmpty())
     {
@@ -716,30 +720,6 @@ bool MainWindow::saveAnnotationsToFile()
             );
 
         return false;
-    }
-
-    QString filePath =
-        m_currentJsonFile;
-
-    // Если JSON ещё не создавался,
-    // спрашиваем путь.
-    if (filePath.isEmpty())
-    {
-        const QString defaultPath =
-            m_currentTextFile.left(
-                m_currentTextFile.lastIndexOf('.')
-                ) + ".json";
-
-        filePath =
-            QFileDialog::getSaveFileName(
-                this,
-                "Сохранить JSON",
-                defaultPath,
-                "JSON files (*.json)"
-                );
-
-        if (filePath.isEmpty())
-            return false;
     }
 
     if (!JsonStorage::save(
@@ -756,8 +736,42 @@ bool MainWindow::saveAnnotationsToFile()
         return false;
     }
 
-    m_currentJsonFile = filePath;
+    return true;
+}
 
+bool MainWindow::saveAnnotationsAs()
+{
+    if (m_currentTextFile.isEmpty())
+    {
+        QMessageBox::warning(
+            this,
+            "Нет файла",
+            "Сначала откройте TXT-файл."
+            );
+
+        return false;
+    }
+
+    const QString defaultPath =
+        m_currentTextFile.left(
+            m_currentTextFile.lastIndexOf('.')
+            ) + ".json";
+
+    const QString filePath =
+        QFileDialog::getSaveFileName(
+            this,
+            "Сохранить JSON",
+            defaultPath,
+            "JSON files (*.json)"
+            );
+
+    if (filePath.isEmpty())
+        return false;
+
+    if (!saveAnnotationsToFile(filePath))
+        return false;
+
+    m_currentJsonFile = filePath;
     m_dirty = false;
 
     statusBar()->showMessage(
@@ -766,43 +780,6 @@ bool MainWindow::saveAnnotationsToFile()
         );
 
     return true;
-}
-
-bool MainWindow::confirmSaveChanges()
-{
-    if (!m_dirty)
-        return true;
-
-    QMessageBox messageBox(
-        QMessageBox::Warning,
-        "Несохранённая разметка",
-        "Разметка была изменена, но ещё не сохранена в JSON.\n\n"
-        "Сохранить изменения?",
-        QMessageBox::Save |
-            QMessageBox::Discard |
-            QMessageBox::Cancel,
-        this
-        );
-
-    messageBox.setDefaultButton(
-        QMessageBox::Save
-        );
-
-    const int result =
-        messageBox.exec();
-
-    if (result == QMessageBox::Save)
-    {
-        return saveAnnotationsToFile();
-    }
-
-    if (result == QMessageBox::Discard)
-    {
-        return true;
-    }
-
-    // Cancel
-    return false;
 }
 
 void MainWindow::closeEvent(QCloseEvent* event)
@@ -830,4 +807,36 @@ void MainWindow::handleEntityShortcut(int index)
     addAnnotation(
         m_entityTypes[index]
         );
+}
+
+
+bool MainWindow::confirmSaveChanges()
+{
+    if (!m_dirty)
+        return true;
+
+    QMessageBox messageBox(
+        QMessageBox::Warning,
+        "Несохранённая разметка",
+        "Разметка была изменена, но ещё не сохранена в JSON.\n\n"
+        "Сохранить изменения?",
+        QMessageBox::Save |
+            QMessageBox::Discard |
+            QMessageBox::Cancel,
+        this
+        );
+
+    messageBox.setDefaultButton(QMessageBox::Save);
+
+    const int result = messageBox.exec();
+
+    if (result == QMessageBox::Save)
+    {
+        return saveAnnotationsAs();  // ← ВОТ ЭТО
+    }
+
+    if (result == QMessageBox::Discard)
+        return true;
+
+    return false;
 }
