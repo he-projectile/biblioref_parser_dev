@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-from loader import Annotation, Document
+from SoftWare.PythonWorkflow.NeuroSlop.localization.loader import Annotation, Document
 
 
 @dataclass(frozen=True)

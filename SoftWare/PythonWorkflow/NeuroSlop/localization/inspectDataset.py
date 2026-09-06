@@ -4,9 +4,9 @@ import sys
 from pathlib import Path
 from collections import Counter
 
-from loader import DatasetLoader
-from blocks import group_references
-from lines import split_lines, label_lines
+from SoftWare.PythonWorkflow.NeuroSlop.localization.loader import DatasetLoader
+from SoftWare.PythonWorkflow.NeuroSlop.localization.blocks import group_references
+from SoftWare.PythonWorkflow.NeuroSlop.localization.lines import split_lines, label_lines
 
 
 def inspect_document(document):
