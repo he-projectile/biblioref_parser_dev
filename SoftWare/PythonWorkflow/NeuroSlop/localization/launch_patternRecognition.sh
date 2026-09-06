@@ -1,0 +1,1 @@
+Get-ChildItem -Path "C:\Users\barko\Desktop\Daniil\MIPT\SRW\SoftWare\PythonWorkflow\DataSource" -Filter *.txt | Where-Object { $_.Name -notlike "RECOGNISE_*" } | ForEach-Object { python patternRecognition.py -p patterns.json $_.FullName }

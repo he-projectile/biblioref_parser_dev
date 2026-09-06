@@ -1,0 +1,31 @@
+{
+    "YEAR": 1.0,
+    "SURNAME_INITIALS": 2.0,
+    "INITIALS_SURNAME": 2.0,
+    "SURNAME_INITIAL": 1.0,
+    "INITIAL_SURNAME": 1.0,
+
+    "DOI": 3.0,
+    "URL": 1.5,
+    "ISBN": 2.0,
+    "ISSN": 2.0,
+
+    "DOUBLE_SLASH": 2.0,
+    "COLON": 0.3,
+    "DASH": 0.5,
+    "DOT_DASH": 1.5,
+    "SEMICOLON": 0.5,
+
+    "PAGES": 1.5,
+    "VOLUME": 1.0,
+    "NUMBER": 1.0,
+
+    "EDITION": 1.0,
+    "PLACE_PUBLISHER": 0.5,
+
+    "PARENTHESIS": 0.3,
+    "LIST_NUMBER": 2.0,
+
+    "QUOTATION": 0.2,
+    "SLASH": 0.1
+}
