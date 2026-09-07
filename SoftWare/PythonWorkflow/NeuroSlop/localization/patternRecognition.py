@@ -3,6 +3,8 @@ import json
 import re
 from pathlib import Path
 
+import numpy as np
+
 
 def load_patterns(filename):
     """Загрузка паттернов и их весов из JSON."""
@@ -54,15 +56,20 @@ def recognize_lines(lines, patterns):
 
         for pattern in patterns:
             count = len(pattern["compiled"].findall(line))
-
             counts.append(count)
             score += count * pattern["weight"]
+
+        lengthSigma = 100
+        lengthOffset = 500
+        line_length = max(len(line), 1)
+        normalized_score = score /(1+np.exp((line_length-lengthOffset-lengthSigma)/(0.5*lengthSigma)))
+        #normalized_score = score * np.exp(- np.pow(line_length,2) / lengthSigma**2)         
 
         result.append({
             "line": line_number,
             "text": line,
             "counts": counts,
-            "score": score
+            "score": normalized_score
         })
 
     return result
@@ -158,7 +165,8 @@ def save_machine_data(filename, results, patterns):
         "lines": [
             {
                 "line": item["line"],
-                "counts": item["counts"]
+                "counts": item["counts"],
+                "score": item["score"]
             }
             for item in results
         ]

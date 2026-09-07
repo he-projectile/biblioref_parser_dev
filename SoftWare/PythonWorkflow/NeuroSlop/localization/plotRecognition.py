@@ -17,24 +17,12 @@ def load_machine_file(filename):
 
 
 def calculate_score(machine_data):
-    patterns = machine_data["patterns"]
     lines = machine_data["lines"]
-
-    weights = np.array(
-        [pattern["weight"] for pattern in patterns],
-        dtype=float
-    )
 
     scores = []
 
     for line in lines:
-        counts = np.array(
-            line["counts"],
-            dtype=float
-        )
-
-        score = np.dot(counts, weights)
-        scores.append(score)
+        scores.append(line["score"])
 
     return np.array(scores, dtype=float)
 
@@ -386,7 +374,7 @@ def main():
     parser.add_argument(
         "--cwt-max-scale",
         type=int,
-        default=50
+        default=75
     )
 
     parser.add_argument(
@@ -429,7 +417,7 @@ def main():
     )
 
     cwt, widths = calculate_cwt(
-        scores,
+        filtered_scores,
         args.cwt_min_scale,
         args.cwt_max_scale
     )
