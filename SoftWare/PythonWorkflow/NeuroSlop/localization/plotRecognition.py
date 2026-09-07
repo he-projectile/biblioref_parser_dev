@@ -81,8 +81,8 @@ def get_reference_line_bounds(text, annotations):
     ends = []
 
     for start, end in annotations:
-        start_line = char_to_line(text, start)
-        end_line = char_to_line(text, end)
+        start_line = char_to_line(text, start+1)
+        end_line = char_to_line(text, end+1)
 
         starts.append(start_line)
         ends.append(end_line)
@@ -154,22 +154,10 @@ def calculate_cwt(signal, min_width, max_width):
     )
 
     for i, width in enumerate(widths):
-        # Mexican Hat / Ricker wavelet
-        x = np.arange(-width // 2, width // 2 + 1)
+        kernel = np.ones(width)
 
-        sigma = width / 6.0
-
-        kernel = (
-            (1 - (x / sigma) ** 2)
-            * np.exp(-(x ** 2) / (2 * sigma ** 2))
-        )
-
-        # Нормировка
-        kernel /= np.max(np.abs(kernel))
-
-        # Нулевое дополнение слева и справа
-        pad_left = len(kernel) // 2
-        pad_right = len(kernel) - 1 - pad_left
+        pad_left = width // 2
+        pad_right = width - 1 - pad_left
 
         padded_signal = np.pad(
             signal,
@@ -177,6 +165,9 @@ def calculate_cwt(signal, min_width, max_width):
             mode="constant",
             constant_values=0
         )
+
+        # Сдвигаем весь дополненный массив вниз на его среднее значение
+        padded_signal = padded_signal - np.mean(padded_signal)
 
         values = np.convolve(
             padded_signal,
@@ -448,8 +439,6 @@ def main():
 
     best_width = widths[best_index[0]]
     best_center = best_index[1]
-
-    best_width = best_width // 3
 
     det_start = max(
         1,
