@@ -5,6 +5,7 @@ TextAnnotator_autogen/timestamp: \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/QSize \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/QSizeF \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/QString \
+	C:/Qt/6.11.1/mingw_64/include/QtCore/QStringList \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/QVector \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/q17memory.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/q20bit.h \
@@ -146,6 +147,7 @@ TextAnnotator_autogen/timestamp: \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qversiontagging.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qxptype_traits.h \
 	C:/Qt/6.11.1/mingw_64/include/QtCore/qyieldcpu.h \
+	C:/Qt/6.11.1/mingw_64/include/QtGui/QKeyEvent \
 	C:/Qt/6.11.1/mingw_64/include/QtGui/QTransform \
 	C:/Qt/6.11.1/mingw_64/include/QtGui/QWheelEvent \
 	C:/Qt/6.11.1/mingw_64/include/QtGui/qabstracttextdocumentlayout.h \
