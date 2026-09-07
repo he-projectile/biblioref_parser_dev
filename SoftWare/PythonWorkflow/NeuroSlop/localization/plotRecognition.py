@@ -256,17 +256,18 @@ def make_plot(
     # SCORE
     # ---------------------------------------------------------
 
-    ax_score.plot(
+    ax_score.step(
         x,
         scores,
         linewidth=1.0,
+        where="mid",
         label="SCORE"
     )
-
-    ax_score.plot(
+    ax_score.step(
         x,
         filtered_scores,
         linewidth=2.0,
+        where="mid",
         label="SCORE после нелинейного ФНЧ"
     )
 
@@ -277,32 +278,33 @@ def make_plot(
     if reference_bounds is not None:
         ref_start, ref_end = reference_bounds
 
-        for ax in [ax_cwt, ax_score]:
-            ax.axvspan(
-                ref_start,
-                ref_end,
-                facecolor="C0",
-                alpha=0.05,
-                edgecolor="black",
-                hatch="///",
-                linewidth=0.0,
-                label=f"Эталон: строки {ref_start}–{ref_end}"
-            )
+        plt.rcParams['hatch.linewidth'] = 0.20  
+
+        ax_score.axvspan(
+            ref_start - 0.5, 
+            ref_end + 0.5, 
+            facecolor='none',     # Убираем заливку совсем, чтобы она не мешала
+            edgecolor='black',    # Цвет линий штриховки и границ
+            hatch='//',           # Меньше слэшей = более редкая штриховка (больший шаг)
+            linewidth=0.20,        # Толщина боковых границ зоны
+            label=f"Эталон: строки {ref_start}–{ref_end}"
+        )
 
     if detected_bounds is not None:
         det_start, det_end = detected_bounds
 
-        for ax in [ax_cwt, ax_score]:
-            ax.axvspan(
-                det_start,
-                det_end,
-                facecolor="C0",
-                alpha=0.05,
-                edgecolor="black",
-                hatch="\\\\\\",
-                linewidth=0.0,
-                label=f"Распознано: строки {det_start}–{det_end}"
-            )
+        plt.rcParams['hatch.linewidth'] = 0.20
+
+
+        ax_score.axvspan(
+            det_start - 0.5,
+            det_end + 0.5,
+            facecolor='none',     # Убираем заливку совсем, чтобы она не мешала
+            edgecolor='black',    # Цвет линий штриховки и границ
+            hatch='\\\\',           # Меньше слэшей = более редкая штриховка (больший шаг)
+            linewidth=0.20,        # Толщина боковых границ зоны
+            label=f"Распознано: строки {det_start}–{det_end}"
+        )
 
     # ---------------------------------------------------------
     # SCORE AXIS
@@ -377,13 +379,13 @@ def main():
 
     parser.add_argument(
         "--cwt-min-scale",
-        type=float,
+        type=int,
         default=1
     )
 
     parser.add_argument(
         "--cwt-max-scale",
-        type=float,
+        type=int,
         default=50
     )
 
@@ -427,7 +429,7 @@ def main():
     )
 
     cwt, widths = calculate_cwt(
-        filtered_scores,
+        scores,
         args.cwt_min_scale,
         args.cwt_max_scale
     )
@@ -451,9 +453,6 @@ def main():
     )
 
     detected_bounds = [det_start, det_end]
-   #detected_bounds = get_detected_bounds(
-   #    active
-   #)
 
     # ---------------------------------------------------------
     # LOAD ANNOTATION
