@@ -4,7 +4,6 @@ from pathlib import Path
 
 import numpy as np
 import matplotlib.pyplot as plt
-from scipy.signal import butter, filtfilt
 
 
 REFERENCE_LABEL = "БИБЛ. ССЫЛКА"
@@ -14,575 +13,544 @@ def load_machine_file(filename):
     with open(filename, "r", encoding="utf-8") as f:
         data = json.load(f)
 
+    return data
+
+
+def calculate_score(machine_data):
+    patterns = machine_data["patterns"]
+    lines = machine_data["lines"]
+
     weights = np.array(
-        [pattern["weight"] for pattern in data["patterns"]],
+        [pattern["weight"] for pattern in patterns],
         dtype=float
     )
 
-    line_numbers = np.array(
-        [line["line"] for line in data["lines"]],
-        dtype=int
-    )
+    scores = []
 
-    counts = np.array(
-        [line["counts"] for line in data["lines"]],
-        dtype=float
-    )
+    for line in lines:
+        counts = np.array(
+            line["counts"],
+            dtype=float
+        )
 
-    return line_numbers, counts, weights
+        score = np.dot(counts, weights)
+        scores.append(score)
 
-
-def calculate_score(counts, weights):
-    """
-    SCORE_i = sum_j count_ij * weight_j
-    """
-    return counts @ weights
+    return np.array(scores, dtype=float)
 
 
-def get_reference_annotations(annotations):
-    """
-    Рекурсивно ищет все аннотации БИБЛ. ССЫЛКА.
-    """
+def get_reference_annotations(annotation_data):
+    result = []
 
-    references = []
+    def recursive_search(obj):
+        if isinstance(obj, dict):
+            if obj.get("label") == REFERENCE_LABEL:
+                if "start" in obj and "end" in obj:
+                    result.append(
+                        (
+                            int(obj["start"]),
+                            int(obj["end"])
+                        )
+                    )
 
-    def walk(items):
-        for annotation in items:
-            if annotation.get("label") == REFERENCE_LABEL:
-                references.append(annotation)
+            for value in obj.values():
+                recursive_search(value)
 
-            children = annotation.get("children", [])
+        elif isinstance(obj, list):
+            for item in obj:
+                recursive_search(item)
 
-            if children:
-                walk(children)
+    recursive_search(annotation_data)
 
-    walk(annotations)
-
-    return references
-
-
-def char_to_line(text, char_position):
-    """
-    Перевод позиции символа в номер строки.
-
-    Нумерация строк начинается с 1.
-    """
-
-    return text.count("\n", 0, char_position) + 1
+    return result
 
 
-def get_reference_line_bounds(txt_filename, json_filename):
-    """
-    Возвращает крайние строки библиографического раздела.
+def char_to_line(text, char_pos):
+    before = text[:char_pos]
 
-    ВАЖНО:
-    если между ссылками есть пропуски, они всё равно входят
-    в единый эталонный интервал.
+    line = before.count("\n") + 1
 
-    Например:
-        ссылки: 100-110
-                112-120
+    return line
 
-    результат:
-        [100, 120]
-    """
 
-    with open(txt_filename, "r", encoding="utf-8") as f:
-        text = f.read()
-
-    with open(json_filename, "r", encoding="utf-8") as f:
-        data = json.load(f)
-
-    references = get_reference_annotations(
-        data.get("annotations", [])
-    )
-
-    if not references:
+def get_reference_line_bounds(text, annotations):
+    if not annotations:
         return None
 
-    first_lines = []
-    last_lines = []
+    starts = []
+    ends = []
 
-    for reference in references:
-
-        start = reference["start"]
-        end = reference["end"]
-
+    for start, end in annotations:
         start_line = char_to_line(text, start)
         end_line = char_to_line(text, end)
 
-        first_lines.append(start_line)
-        last_lines.append(end_line)
+        starts.append(start_line)
+        ends.append(end_line)
 
-    return min(first_lines), max(last_lines)
+    return min(starts), max(ends)
 
 
-def low_pass_filter(signal, characteristic_period):
-    """
-    Butterworth ФНЧ.
+def nonlinear_median_filter(signal, window_size):
+    window_size = int(round(window_size))
 
-    characteristic_period задаётся в строках.
-    """
-
-    if characteristic_period <= 1:
+    if window_size < 3:
         return signal.copy()
 
-    cutoff = 1.0 / characteristic_period
+    if window_size % 2 == 0:
+        window_size += 1
 
-    cutoff = min(max(cutoff, 0.001), 0.99)
+    radius = window_size // 2
 
-    b, a = butter(
-        N=2,
-        Wn=cutoff,
-        btype="low"
+    padded = np.pad(
+        signal,
+        radius,
+        mode="edge"
     )
 
-    if len(signal) < 10:
-        return signal.copy()
+    filtered = np.empty_like(signal)
 
-    return filtfilt(b, a, signal)
+    for i in range(len(signal)):
+        window = padded[i:i + window_size]
+        filtered[i] = np.median(window)
 
-
-def hysteresis_detection(signal, threshold, hysteresis):
-    """
-    Гистерезисный детектор.
-
-    Включение:
-        signal >= threshold
-
-    Выключение:
-        signal < threshold - hysteresis
-    """
-
-    upper = threshold
-    lower = threshold - hysteresis
-
-    state = np.zeros(len(signal), dtype=bool)
-
-    active = False
-
-    for i, value in enumerate(signal):
-
-        if not active:
-            if value >= upper:
-                active = True
-        else:
-            if value < lower:
-                active = False
-
-        state[i] = active
-
-    return state
+    return filtered
 
 
-def get_detected_bounds(line_numbers, state):
-    """
-    Возвращает крайние строки всего обнаруженного участка.
-
-    Если детектор дал несколько отдельных кусков,
-    они объединяются в один интервал.
-    """
-
-    indices = np.where(state)[0]
-
-    if len(indices) == 0:
-        return None
-
-    return (
-        int(line_numbers[indices[0]]),
-        int(line_numbers[indices[-1]])
-    )
-
-
-def calculate_iou(predicted_bounds, reference_bounds):
-    """
-    IoU двух цельных интервалов строк.
-    """
-
-    if predicted_bounds is None or reference_bounds is None:
+def calculate_iou(reference_bounds, detected_bounds):
+    if reference_bounds is None or detected_bounds is None:
         return 0.0
 
-    pred_start, pred_end = predicted_bounds
     ref_start, ref_end = reference_bounds
+    det_start, det_end = detected_bounds
 
-    intersection_start = max(pred_start, ref_start)
-    intersection_end = min(pred_end, ref_end)
+    intersection_start = max(ref_start, det_start)
+    intersection_end = min(ref_end, det_end)
 
-    if intersection_start > intersection_end:
+    if intersection_end < intersection_start:
         intersection = 0
     else:
-        intersection = (
-            intersection_end - intersection_start + 1
-        )
+        intersection = intersection_end - intersection_start + 1
 
-    union_start = min(pred_start, ref_start)
-    union_end = max(pred_end, ref_end)
+    reference_length = ref_end - ref_start + 1
+    detected_length = det_end - det_start + 1
 
-    union = union_end - union_start + 1
+    union = reference_length + detected_length - intersection
+
+    if union == 0:
+        return 0.0
 
     return intersection / union
 
+def calculate_cwt(signal, min_width, max_width):
+    signal = np.asarray(signal)
+
+    widths = np.arange(
+        min_width,
+        min(max_width, len(signal)) + 1
+    )
+
+    result = np.zeros(
+        (len(widths), len(signal))
+    )
+
+    for i, width in enumerate(widths):
+        # Mexican Hat / Ricker wavelet
+        x = np.arange(-width // 2, width // 2 + 1)
+
+        sigma = width / 6.0
+
+        kernel = (
+            (1 - (x / sigma) ** 2)
+            * np.exp(-(x ** 2) / (2 * sigma ** 2))
+        )
+
+        # Нормировка
+        kernel /= np.max(np.abs(kernel))
+
+        # Нулевое дополнение слева и справа
+        pad_left = len(kernel) // 2
+        pad_right = len(kernel) - 1 - pad_left
+
+        padded_signal = np.pad(
+            signal,
+            (pad_left, pad_right),
+            mode="constant",
+            constant_values=0
+        )
+
+        values = np.convolve(
+            padded_signal,
+            kernel,
+            mode="valid"
+        )
+
+        result[i] = values
+
+    return result, widths
 
 def make_plot(
-    filename,
-    line_numbers,
-    score,
-    filtered_score,
-    state,
-    threshold,
-    hysteresis,
-    characteristic_period,
-    reference_bounds
+    scores,
+    filtered_scores,
+    cwt,
+    scales,
+    reference_bounds,
+    detected_bounds,
+    IoUvalue,
+    output_filename
 ):
-    fig, ax = plt.subplots(figsize=(18, 8))
+    fig = plt.figure(figsize=(20, 12), dpi=300)
+    gs = fig.add_gridspec(
+        2,
+        3,
+        width_ratios=[30, 1, 5],
+        height_ratios=[1.5, 1],
+        hspace=0.18,
+        wspace=0.08
+    )    
 
-    # =========================================================
+    fig.subplots_adjust(
+        left=0.05,
+        right=0.95,
+        top=0.95,
+        bottom=0.05
+    )
+
+    ax_cwt = fig.add_subplot(gs[0, 0])
+    ax_score = fig.add_subplot(gs[1, 0], sharex=ax_cwt)
+
+    ax_cbar = fig.add_subplot(gs[0, 1])
+    ax_legend = fig.add_subplot(gs[1, 2])
+
+    ax_legend.axis("off")
+
+    x = np.arange(
+        1,
+        len(scores) + 1
+    )
+
+    # ---------------------------------------------------------
+    # CWT HEATMAP
+    # ---------------------------------------------------------
+
+    max_abs = np.max(np.abs(cwt))
+
+    if max_abs == 0:
+        max_abs = 1.0
+
+    image = ax_cwt.imshow(
+        cwt,
+        aspect="auto",
+        origin="lower",
+        extent=[
+            1,
+            len(scores),
+            scales[0],
+            scales[-1]
+        ],
+        cmap="RdBu_r",
+        vmin=-max_abs,
+        vmax=max_abs
+    )
+
+    ax_cwt.set_ylabel("Ширина окна, строк")
+    ax_cwt.set_title("CWT прямоугольного окна")
+
+    fig.colorbar(
+        image,
+        cax=ax_cbar,
+        label="Интенсивность CWT"
+    )
+
+    # ---------------------------------------------------------
     # SCORE
-    # =========================================================
+    # ---------------------------------------------------------
 
-    ax.plot(
-        line_numbers,
-        score,
-        linewidth=0.7,
-        alpha=0.30,
-        label="Исходный SCORE"
+    ax_score.plot(
+        x,
+        scores,
+        linewidth=1.0,
+        label="SCORE"
     )
 
-    # =========================================================
-    # Отфильтрованный SCORE
-    # =========================================================
-
-    ax.plot(
-        line_numbers,
-        filtered_score,
+    ax_score.plot(
+        x,
+        filtered_scores,
         linewidth=2.0,
-        label="SCORE после ФНЧ"
+        label="SCORE после нелинейного ФНЧ"
     )
 
-    # =========================================================
-    # Порог
-    # =========================================================
-
-    ax.axhline(
-        threshold,
-        linestyle="--",
-        linewidth=1.5,
-        label=f"Порог = {threshold:g}"
-    )
-
-    # =========================================================
-    # Нижняя граница гистерезиса
-    # =========================================================
-
-    lower_threshold = threshold - hysteresis
-
-    ax.axhline(
-        lower_threshold,
-        linestyle=":",
-        linewidth=1.5,
-        label=f"Нижний порог = {lower_threshold:g}"
-    )
-
-    # =========================================================
-    # Эталонный библиографический раздел
-    # =========================================================
+    # ---------------------------------------------------------
+    # REFERENCE / DETECTED AREAS
+    # ---------------------------------------------------------
 
     if reference_bounds is not None:
-
         ref_start, ref_end = reference_bounds
 
-        ax.axvspan(
-            ref_start,
-            ref_end,
-            facecolor="C0",
-            alpha=0.05,
-            edgecolor="black",
-            hatch="///",
-            linewidth=0.0,
-            label=f"Эталон: строки {ref_start}–{ref_end}"
-        )
-
-    # =========================================================
-    # Обнаруженный участок
-    # =========================================================
-
-    detected_bounds = get_detected_bounds(
-        line_numbers,
-        state
-    )
+        for ax in [ax_cwt, ax_score]:
+            ax.axvspan(
+                ref_start,
+                ref_end,
+                facecolor="C0",
+                alpha=0.05,
+                edgecolor="black",
+                hatch="///",
+                linewidth=0.0,
+                label=f"Эталон: строки {ref_start}–{ref_end}"
+            )
 
     if detected_bounds is not None:
-
         det_start, det_end = detected_bounds
 
-        ax.axvspan(
-            det_start,
-            det_end,
-            facecolor="C0",
-            alpha=0.05,
-            edgecolor="black",
-            hatch="\\\\\\",
-            linewidth=0.0,
-            label=f"Распознано: строки {det_start}–{det_end}"
-        )
+        for ax in [ax_cwt, ax_score]:
+            ax.axvspan(
+                det_start,
+                det_end,
+                facecolor="C0",
+                alpha=0.05,
+                edgecolor="black",
+                hatch="\\\\\\",
+                linewidth=0.0,
+                label=f"Распознано: строки {det_start}–{det_end}"
+            )
 
-    # =========================================================
-    # IoU
-    # =========================================================
+    # ---------------------------------------------------------
+    # SCORE AXIS
+    # ---------------------------------------------------------
 
-    iou = calculate_iou(
-        detected_bounds,
-        reference_bounds
+    ax_score.set_xlabel("Номер строки")
+    ax_score.set_ylabel("SCORE")
+
+    ax_score.set_title(
+        "SCORE и результат нелинейного обнаружения"
     )
 
-    # Выводим IoU прямо на графике
-    ax.text(
-        0.99,
-        0.97,
-        f"IoU = {iou:.4f}",
-        transform=ax.transAxes,
-        horizontalalignment="right",
-        verticalalignment="top",
-        fontsize=14,
-        bbox=dict(
-            boxstyle="round",
-            facecolor="white",
-            alpha=0.85
-        )
+    ax_score.grid(
+        True,
+        alpha=0.3
     )
 
-    # =========================================================
-    # Оформление
-    # =========================================================
+    handles, labels = ax_score.get_legend_handles_labels()
 
-    ax.set_xlabel("Номер строки")
-    ax.set_ylabel("SCORE")
-
-    ax.set_title(
-        "Распознавание библиографического раздела\n"
-        f"ФНЧ: {characteristic_period:g} строк | "
-        f"порог: {threshold:g} | "
-        f"гистерезис: {hysteresis:g} | "
-        f"IoU: {iou:.4f}"
+    ax_legend.legend(
+        handles,
+        labels,
+        loc="center left"
+    )
+    ax_legend.text(
+        0,
+        0.35,
+        f"IoU = {IoUvalue:.4f}",
+        transform=ax_legend.transAxes
     )
 
-    ax.grid(True, alpha=0.25)
-
-    ax.legend(
-        loc="upper left"
+    ax_cwt.grid(
+        False
     )
 
-    fig.tight_layout()
+    ax_cwt.set_xlim(
+        1,
+        len(scores)
+    )
 
-    output_filename = filename.with_suffix(".png")
+    #plt.tight_layout()
 
-    fig.savefig(
+    plt.savefig(
         output_filename,
-        dpi=150
+        dpi=300
     )
+
+    # plt.show()
 
     plt.close(fig)
 
-    return output_filename, iou, detected_bounds
-
 
 def main():
-
-    parser = argparse.ArgumentParser(
-        description=(
-            "Построение SCORE с ФНЧ, гистерезисом "
-            "и сравнением с разметкой."
-        )
-    )
+    parser = argparse.ArgumentParser()
 
     parser.add_argument(
         "machine_file",
-        type=str,
-        help="MACHINE_*.json"
+        type=Path
     )
 
     parser.add_argument(
         "annotation_file",
-        type=str,
-        help="Размеченный document.json"
+        type=Path
     )
 
     parser.add_argument(
         "--filter",
         type=float,
-        default=10.0,
-        help=(
-            "Характерный период ФНЧ в строках "
-            "(по умолчанию 10)"
-        )
+        default=3,
+        help="Размер окна медианного фильтра в строках"
     )
 
     parser.add_argument(
-        "--threshold",
+        "--cwt-min-scale",
         type=float,
-        required=True,
-        help="Порог распознавания"
+        default=1
     )
 
     parser.add_argument(
-        "--hysteresis",
+        "--cwt-max-scale",
         type=float,
-        default=1.0,
-        help=(
-            "Ширина зоны нечувствительности "
-            "(по умолчанию 1)"
-        )
+        default=50
+    )
+
+    parser.add_argument(
+        "--cwt-scales",
+        type=int,
+        default=50
     )
 
     args = parser.parse_args()
 
-    machine_filename = Path(args.machine_file)
-    annotation_filename = Path(args.annotation_file)
+    # ---------------------------------------------------------
+    # LOAD MACHINE DATA
+    # ---------------------------------------------------------
 
-    if not machine_filename.exists():
-        print(
-            f"Ошибка: MACHINE-файл не найден:\n"
-            f"{machine_filename}"
-        )
-        return
-
-    if not annotation_filename.exists():
-        print(
-            f"Ошибка: файл разметки не найден:\n"
-            f"{annotation_filename}"
-        )
-        return
-
-    # =========================================================
-    # Проверяем TXT
-    # =========================================================
-
-    # MACHINE_document.json
-    #
-    # annotation:
-    # document.json
-    #
-    # txt:
-    # document.txt
-
-    txt_filename = annotation_filename.with_suffix(".txt")
-
-    if not txt_filename.exists():
-        print(
-            f"Ошибка: TXT-файл не найден:\n"
-            f"{txt_filename}"
-        )
-        return
-
-    # =========================================================
-    # Загружаем MACHINE
-    # =========================================================
-
-    line_numbers, counts, weights = load_machine_file(
-        machine_filename
+    machine_data = load_machine_file(
+        args.machine_file
     )
 
-    # =========================================================
-    # SCORE
-    # =========================================================
-
-    score = calculate_score(
-        counts,
-        weights
+    scores = calculate_score(
+        machine_data
     )
 
-    # =========================================================
-    # ФНЧ
-    # =========================================================
+    # ---------------------------------------------------------
+    # FILTER
+    # ---------------------------------------------------------
 
-    filtered_score = low_pass_filter(
-        score,
+    filtered_scores = nonlinear_median_filter(
+        scores,
         args.filter
     )
 
-    # =========================================================
-    # Гистерезис
-    # =========================================================
+    # ---------------------------------------------------------
+    # CWT
+    # ---------------------------------------------------------
 
-    state = hysteresis_detection(
-        filtered_score,
-        args.threshold,
-        args.hysteresis
+    scales = np.linspace(
+        args.cwt_min_scale,
+        args.cwt_max_scale,
+        args.cwt_scales
     )
 
-    # =========================================================
-    # Эталонные границы
-    # =========================================================
+    cwt, widths = calculate_cwt(
+        filtered_scores,
+        args.cwt_min_scale,
+        args.cwt_max_scale
+    )
+
+    best_index = np.unravel_index(
+        np.argmax(cwt),
+        cwt.shape
+    )
+
+    best_width = widths[best_index[0]]
+    best_center = best_index[1]
+
+    best_width = best_width // 3
+
+    det_start = max(
+        1,
+        best_center - best_width // 2 + 1
+    )
+
+    det_end = min(
+        len(filtered_scores),
+        det_start + best_width - 1
+    )
+
+    detected_bounds = [det_start, det_end]
+   #detected_bounds = get_detected_bounds(
+   #    active
+   #)
+
+    # ---------------------------------------------------------
+    # LOAD ANNOTATION
+    # ---------------------------------------------------------
+
+    with open(
+        args.annotation_file,
+        "r",
+        encoding="utf-8"
+    ) as f:
+        annotation_data = json.load(f)
+
+    annotation_filename = args.annotation_file
+
+    txt_filename = annotation_filename.with_suffix(
+        ".txt"
+    )
+
+    with open(
+        txt_filename,
+        "r",
+        encoding="utf-8"
+    ) as f:
+        text = f.read()
+
+    annotations = get_reference_annotations(
+        annotation_data
+    )
 
     reference_bounds = get_reference_line_bounds(
-        txt_filename,
-        annotation_filename
+        text,
+        annotations
     )
 
-    if reference_bounds is None:
-        print(
-            "Предупреждение: БИБЛ. ССЫЛКА "
-            "в разметке не найдена."
-        )
-
-    # =========================================================
-    # График
-    # =========================================================
-
-    output_filename, iou, detected_bounds = make_plot(
-        machine_filename,
-        line_numbers,
-        score,
-        filtered_score,
-        state,
-        args.threshold,
-        args.hysteresis,
-        args.filter,
-        reference_bounds
+    iou = calculate_iou(
+        reference_bounds,
+        detected_bounds
     )
 
-    # =========================================================
-    # Результат
-    # =========================================================
+
+    # ---------------------------------------------------------
+    # OUTPUT
+    # ---------------------------------------------------------
+
+    output_filename = args.machine_file.with_suffix(
+        ".png"
+    )
+
+    make_plot(
+        scores=scores,
+        filtered_scores=filtered_scores,
+        cwt=cwt,
+        scales=scales,
+        reference_bounds=reference_bounds,
+        detected_bounds=detected_bounds,
+        IoUvalue=iou,
+        output_filename=output_filename
+    )
+
+    # ---------------------------------------------------------
+    # PRINT RESULTS
+    # ---------------------------------------------------------
 
     print()
-    print("========================================")
-    print("РЕЗУЛЬТАТ")
-    print("========================================")
 
-    print(f"Входной файл : {machine_filename}")
-    print(f"Разметка     : {annotation_filename}")
-    print(f"TXT          : {txt_filename}")
+    print(
+        f"Reference: {reference_bounds}"
+    )
 
-    print()
-    print(f"ФНЧ          : {args.filter:g} строк")
-    print(f"Порог        : {args.threshold:g}")
-    print(f"Гистерезис   : {args.hysteresis:g}")
+    print(
+        f"Detected : {detected_bounds}"
+    )
 
-    print()
+    print(
+        f"IoU      : {iou:.6f}"
+    )
 
-    if reference_bounds is not None:
-        print(
-            f"Эталон       : "
-            f"{reference_bounds[0]}–{reference_bounds[1]}"
-        )
-    else:
-        print("Эталон       : нет")
+    print(
+        f"CWT      : scales "
+        f"{args.cwt_min_scale:.1f}–"
+        f"{args.cwt_max_scale:.1f}"
+    )
 
-    if detected_bounds is not None:
-        print(
-            f"Распознано   : "
-            f"{detected_bounds[0]}–{detected_bounds[1]}"
-        )
-    else:
-        print("Распознано   : нет")
-
-    print()
-    print(f"IoU          : {iou:.6f}")
-
-    print()
-    print(f"График       : {output_filename}")
-    print("========================================")
+    print(
+        f"Output   : {output_filename}"
+    )
 
 
 if __name__ == "__main__":

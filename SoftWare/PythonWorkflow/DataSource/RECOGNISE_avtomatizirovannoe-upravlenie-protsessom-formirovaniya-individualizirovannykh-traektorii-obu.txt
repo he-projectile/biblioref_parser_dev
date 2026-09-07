@@ -2,728 +2,728 @@ PATTERN RECOGNITION
 ================================================================================
 
 Patterns:
-    0: DOT (weight=-2.218854)
-    1: INITIAL (weight=5.622563)
-    2: INITIALS (weight=6.752633)
-    3: YEAR (weight=-0.932440)
-    4: NUMBER (weight=5.909677)
-    5: COMMA (weight=-2.751430)
-    6: NUMBER (weight=-5.144767)
-    7: DASH (weight=-0.384226)
-    8: PAGES (weight=-7.303145)
-    9: DOT (weight=-5.621781)
-   10: INITIAL (weight=4.156839)
-   11: DASH (weight=-0.721849)
-   12: DASH (weight=0.950528)
-   13: DOT (weight=-0.211154)
-   14: COLON (weight=0.919831)
-   15: COMMA (weight=-6.408409)
-   16: NUMBER (weight=9.393695)
-   17: NUMBER (weight=-9.917490)
-   18: DASH (weight=3.440998)
-   19: QUOTATION (weight=-5.992672)
-   20: DOT (weight=5.095695)
-   21: DOT (weight=-2.035101)
-   22: YEAR (weight=-4.515830)
-   23: INITIAL (weight=-2.329750)
-   24: COLON (weight=3.072802)
-   25: DOT (weight=-4.653592)
-   26: DASH (weight=4.637970)
-   27: COLON (weight=3.276858)
-   28: NUMBER (weight=7.685870)
-   29: DOT (weight=4.345141)
-   30: COMMA (weight=1.061483)
-   31: COMMA (weight=-0.683628)
-   32: INITIAL (weight=-0.060137)
-   33: DASH (weight=9.806915)
-   34: COMMA (weight=-1.069137)
-   35: DOT (weight=3.185403)
-   36: QUOTATION (weight=0.736384)
-   37: DASH (weight=0.165467)
-   38: DOT (weight=3.576242)
-   39: URL (weight=-0.801863)
-   40: SLASH (weight=-2.054462)
-   41: PARENTHESIS (weight=-7.153315)
-   42: DOUBLE_SLASH (weight=-3.088693)
-   43: COLON (weight=1.083730)
-   44: COMMA (weight=1.038790)
-   45: QUOTATION (weight=8.849663)
-   46: NUMBER (weight=1.429854)
-   47: DASH (weight=3.826236)
-   48: PARENTHESIS (weight=-0.711414)
-   49: NUMBER (weight=5.377963)
-   50: QUOTATION (weight=-8.745080)
-   51: NUMBER (weight=9.972803)
-   52: PARENTHESIS (weight=0.354067)
-   53: INITIAL (weight=4.884387)
-   54: INITIAL (weight=-0.654732)
-   55: INITIALS (weight=-7.808587)
-   56: INITIALS (weight=5.235259)
-   57: NUMBER (weight=-6.283843)
-   58: YEAR (weight=-4.873333)
-   59: PARENTHESIS (weight=-4.403683)
-   60: INITIAL (weight=1.677049)
-   61: YEAR (weight=-7.748357)
-   62: ENTITY_SHAPE (weight=-4.459791)
-   63: ENTITY_SHAPE (weight=2.119947)
-   64: ENTITY_SHAPE (weight=-2.670522)
-   65: ENTITY_SHAPE (weight=5.959489)
-   66: ENTITY_SHAPE (weight=-1.726431)
-   67: ENTITY_SHAPE (weight=3.216084)
-   68: ENTITY_SHAPE (weight=-8.460479)
-   69: ENTITY_SHAPE (weight=5.094358)
-   70: ENTITY_SHAPE (weight=-0.589228)
-   71: ENTITY_SHAPE (weight=5.902746)
-   72: ENTITY_SHAPE (weight=-2.152622)
-   73: ENTITY_SHAPE (weight=-8.755763)
-   74: ENTITY_SHAPE (weight=-5.177285)
-   75: ENTITY_SHAPE (weight=-3.899405)
-   76: ENTITY_SHAPE (weight=0.677334)
-   77: ENTITY_SHAPE (weight=-0.370604)
-   78: ENTITY_SHAPE (weight=2.622643)
-   79: ENTITY_SHAPE (weight=-1.624050)
-   80: ENTITY_SHAPE (weight=-5.878906)
-   81: ENTITY_SHAPE (weight=2.559484)
-   82: ENTITY_SHAPE (weight=3.038685)
-   83: ENTITY_SHAPE (weight=-1.529616)
-   84: ENTITY_SHAPE (weight=-5.102077)
-   85: ENTITY_SHAPE (weight=7.021093)
-   86: ENTITY_SHAPE (weight=-0.688959)
-   87: ENTITY_SHAPE (weight=-0.304460)
-   88: ENTITY_SHAPE (weight=-4.358451)
-   89: ENTITY_SHAPE (weight=4.806726)
-   90: ENTITY_SHAPE (weight=5.429940)
-   91: ENTITY_SHAPE (weight=-4.892821)
-   92: ENTITY_SHAPE (weight=-8.867865)
-   93: ENTITY_SHAPE (weight=9.569815)
-   94: ENTITY_SHAPE (weight=-2.798655)
-   95: ENTITY_SHAPE (weight=-9.312943)
-   96: ENTITY_SHAPE (weight=7.596514)
-   97: ENTITY_SHAPE (weight=-0.291021)
-   98: ENTITY_SHAPE (weight=5.330841)
-   99: ENTITY_SHAPE (weight=6.996461)
-  100: ENTITY_SHAPE (weight=-4.528844)
-  101: ENTITY_SHAPE (weight=-0.977555)
-  102: ENTITY_SHAPE (weight=4.588694)
-  103: ENTITY_SHAPE (weight=3.695352)
-  104: ENTITY_SHAPE (weight=-6.055673)
-  105: ENTITY_SHAPE (weight=-4.196739)
-  106: ENTITY_SHAPE (weight=-0.560350)
-  107: ENTITY_SHAPE (weight=-3.983133)
-  108: ENTITY_SHAPE (weight=-1.532741)
-  109: ENTITY_SHAPE (weight=9.376752)
-  110: ENTITY_SHAPE (weight=-5.669593)
-  111: ENTITY_SHAPE (weight=-6.084497)
-  112: ENTITY_SHAPE (weight=-4.667381)
-  113: ENTITY_SHAPE (weight=2.582919)
-  114: ENTITY_SHAPE (weight=5.651600)
-  115: ENTITY_SHAPE (weight=-5.462506)
-  116: ENTITY_SHAPE (weight=-0.747116)
-  117: ENTITY_SHAPE (weight=-2.701045)
-  118: ENTITY_SHAPE (weight=-7.045997)
-  119: ENTITY_SHAPE (weight=0.746971)
-  120: ENTITY_SHAPE (weight=-2.224051)
-  121: ENTITY_SHAPE (weight=8.512715)
-  122: ENTITY_SHAPE (weight=8.679731)
-  123: ENTITY_SHAPE (weight=5.253909)
-  124: ENTITY_SHAPE (weight=-4.382341)
-  125: ENTITY_SHAPE (weight=-9.484642)
-  126: ENTITY_SHAPE (weight=5.254698)
-  127: ENTITY_SHAPE (weight=6.707717)
-  128: ENTITY_SHAPE (weight=3.906093)
-  129: ENTITY_SHAPE (weight=9.842551)
-  130: ENTITY_SHAPE (weight=0.287888)
-  131: ENTITY_SHAPE (weight=3.329359)
-  132: ENTITY_SHAPE (weight=2.310080)
-  133: ENTITY_SHAPE (weight=1.040253)
-  134: ENTITY_SHAPE (weight=1.595961)
-  135: ENTITY_SHAPE (weight=4.663145)
-  136: ENTITY_SHAPE (weight=1.571994)
-  137: ENTITY_SHAPE (weight=0.203558)
-  138: ENTITY_SHAPE (weight=-1.913984)
-  139: ENTITY_SHAPE (weight=9.705093)
-  140: ENTITY_SHAPE (weight=-6.545336)
-  141: ENTITY_SHAPE (weight=-5.332963)
-  142: ENTITY_SHAPE (weight=1.669688)
-  143: ENTITY_SHAPE (weight=1.221842)
-  144: ENTITY_SHAPE (weight=-9.511194)
-  145: ENTITY_SHAPE (weight=-6.655026)
-  146: ENTITY_SHAPE (weight=7.360448)
-  147: ENTITY_SHAPE (weight=-0.690094)
-  148: ENTITY_SHAPE (weight=-9.410291)
-  149: ENTITY_SHAPE (weight=6.570615)
-  150: ENTITY_SHAPE (weight=-2.951975)
-  151: ENTITY_SHAPE (weight=2.927432)
-  152: ENTITY_SHAPE (weight=-7.824837)
-  153: ENTITY_SHAPE (weight=-2.427109)
-  154: ENTITY_SHAPE (weight=-3.080531)
-  155: ENTITY_SHAPE (weight=-0.018700)
-  156: ENTITY_SHAPE (weight=-4.258513)
-  157: ENTITY_SHAPE (weight=-3.642208)
-  158: ENTITY_SHAPE (weight=-9.839016)
-  159: ENTITY_SHAPE (weight=-3.543283)
-  160: ENTITY_SHAPE (weight=0.591171)
-  161: ENTITY_SHAPE (weight=8.381426)
-  162: ENTITY_SHAPE (weight=2.632747)
-  163: ENTITY_SHAPE (weight=6.063624)
-  164: ENTITY_SHAPE (weight=0.347218)
-  165: ENTITY_SHAPE (weight=-6.552034)
-  166: ENTITY_SHAPE (weight=-5.946093)
-  167: ENTITY_SHAPE (weight=-8.678616)
-  168: ENTITY_SHAPE (weight=-2.668140)
-  169: ENTITY_SHAPE (weight=0.934229)
-  170: ENTITY_SHAPE (weight=1.009665)
-  171: ENTITY_SHAPE (weight=-6.219543)
-  172: ENTITY_SHAPE (weight=-0.817221)
-  173: ENTITY_SHAPE (weight=2.831065)
-  174: ENTITY_SHAPE (weight=9.691207)
-  175: ENTITY_SHAPE (weight=-7.494335)
-  176: ENTITY_SHAPE (weight=-0.847909)
-  177: ENTITY_SHAPE (weight=-6.352767)
-  178: ENTITY_SHAPE (weight=2.280507)
-  179: ENTITY_SHAPE (weight=-4.144731)
-  180: ENTITY_SHAPE (weight=7.735121)
-  181: ENTITY_SHAPE (weight=9.446278)
-  182: ENTITY_SHAPE (weight=-0.424372)
-  183: ENTITY_SHAPE (weight=4.081611)
-  184: ENTITY_SHAPE (weight=-0.582766)
-  185: ENTITY_SHAPE (weight=1.123054)
-  186: ENTITY_SHAPE (weight=1.200294)
-  187: ENTITY_SHAPE (weight=5.017679)
-  188: ENTITY_SHAPE (weight=1.542945)
-  189: ENTITY_SHAPE (weight=7.569070)
-  190: ENTITY_SHAPE (weight=7.076175)
-  191: ENTITY_SHAPE (weight=-8.160311)
-  192: ENTITY_SHAPE (weight=2.587606)
-  193: ENTITY_SHAPE (weight=-0.133860)
-  194: ENTITY_SHAPE (weight=-9.328761)
-  195: ENTITY_SHAPE (weight=1.042788)
-  196: ENTITY_SHAPE (weight=-1.509492)
-  197: ENTITY_SHAPE (weight=-4.884957)
-  198: ENTITY_SHAPE (weight=1.467908)
-  199: ENTITY_SHAPE (weight=7.215683)
-  200: ENTITY_SHAPE (weight=-3.953787)
-  201: ENTITY_SHAPE (weight=-8.748017)
-  202: ENTITY_SHAPE (weight=4.985537)
-  203: ENTITY_SHAPE (weight=-5.941623)
-  204: SEPARATOR (weight=8.367144)
-  205: SEPARATOR (weight=-1.866826)
-  206: SEPARATOR (weight=-3.310649)
-  207: SEPARATOR (weight=0.700430)
-  208: SEPARATOR (weight=0.027915)
-  209: SEPARATOR (weight=4.311802)
-  210: SEPARATOR (weight=1.019199)
-  211: SEPARATOR (weight=-5.377988)
-  212: SEPARATOR (weight=0.534720)
-  213: SEPARATOR (weight=5.974491)
-  214: SEPARATOR (weight=1.046128)
-  215: SEPARATOR (weight=-1.371452)
-  216: SEPARATOR (weight=-5.505255)
-  217: SEPARATOR (weight=-9.620203)
-  218: SEPARATOR (weight=-5.886502)
-  219: SEPARATOR (weight=6.039517)
-  220: SEPARATOR (weight=0.325963)
-  221: SEPARATOR (weight=-1.403573)
-  222: SEPARATOR (weight=6.831311)
-  223: SEPARATOR (weight=-2.939387)
-  224: SEPARATOR (weight=8.150689)
-  225: SEPARATOR (weight=2.607865)
-  226: SEPARATOR (weight=8.028796)
-  227: SEPARATOR (weight=-4.309943)
-  228: SEPARATOR (weight=0.765526)
-  229: SEPARATOR (weight=-0.270360)
-  230: SEPARATOR (weight=-7.127675)
-  231: SEPARATOR (weight=-6.023711)
-  232: SEPARATOR (weight=7.085467)
-  233: SEPARATOR (weight=7.971210)
-  234: SEPARATOR (weight=-2.845092)
-  235: SEPARATOR (weight=-6.993571)
-  236: SEPARATOR (weight=8.381255)
-  237: SEPARATOR (weight=3.305042)
-  238: SEPARATOR (weight=-1.630379)
-  239: SEPARATOR (weight=-3.344363)
-  240: SEPARATOR (weight=-6.011902)
-  241: SEPARATOR (weight=3.657181)
-  242: SEPARATOR (weight=-9.025565)
-  243: SEPARATOR (weight=5.783499)
-  244: SEPARATOR (weight=-4.092683)
-  245: SEPARATOR (weight=-5.265260)
-  246: SEPARATOR (weight=-3.062554)
-  247: SEPARATOR (weight=1.327151)
-  248: SEPARATOR (weight=-3.119382)
-  249: SEPARATOR (weight=9.660717)
-  250: SEPARATOR (weight=-0.815424)
-  251: SEPARATOR (weight=-1.271290)
-  252: SEPARATOR (weight=-2.835870)
-  253: SEPARATOR (weight=-4.079280)
-  254: SEPARATOR (weight=0.658517)
-  255: SEPARATOR (weight=-5.372596)
-  256: SEPARATOR (weight=-6.361387)
-  257: SEPARATOR (weight=-5.074722)
-  258: SEPARATOR (weight=4.117576)
-  259: SEPARATOR (weight=-3.427169)
-  260: SEPARATOR (weight=-1.571341)
-  261: SEPARATOR (weight=3.187013)
-  262: SEPARATOR (weight=-9.097171)
-  263: SEPARATOR (weight=-5.932131)
-  264: SEPARATOR (weight=4.836880)
-  265: SEPARATOR (weight=4.152597)
-  266: SEPARATOR (weight=4.471783)
-  267: SEPARATOR (weight=-0.260130)
-  268: SEPARATOR (weight=4.737098)
-  269: SEPARATOR (weight=5.975062)
-  270: SEPARATOR (weight=0.165654)
-  271: SEPARATOR (weight=5.907206)
-  272: SEPARATOR (weight=1.062092)
-  273: SEPARATOR (weight=8.423104)
-  274: SEPARATOR (weight=-9.513850)
-  275: SEPARATOR (weight=-5.510015)
-  276: SEPARATOR (weight=-4.036623)
-  277: SEPARATOR (weight=-4.681098)
-  278: SEPARATOR (weight=3.809843)
-  279: SEPARATOR (weight=4.979663)
-  280: SEPARATOR (weight=-4.737572)
-  281: SEPARATOR (weight=8.385185)
-  282: SEPARATOR (weight=2.473110)
-  283: SEPARATOR (weight=-3.976466)
-  284: SEPARATOR (weight=-8.011709)
-  285: SEPARATOR (weight=-0.587509)
-  286: SEPARATOR (weight=1.708971)
-  287: SEPARATOR (weight=9.366690)
-  288: SEPARATOR (weight=4.949293)
-  289: SEPARATOR (weight=8.053529)
-  290: SEPARATOR (weight=-9.501554)
-  291: SEPARATOR (weight=-2.699748)
-  292: SEPARATOR (weight=-7.686784)
-  293: SEPARATOR (weight=5.652225)
-  294: SEPARATOR (weight=-3.760039)
-  295: SEPARATOR (weight=1.912015)
-  296: SEPARATOR (weight=9.434013)
-  297: SEPARATOR (weight=-1.798474)
-  298: SEPARATOR (weight=6.282120)
-  299: SEPARATOR (weight=2.603811)
-  300: SEPARATOR (weight=4.453173)
-  301: SEPARATOR (weight=-2.190442)
-  302: SEPARATOR (weight=2.618603)
-  303: SEPARATOR (weight=-1.630406)
-  304: SEPARATOR (weight=-4.703001)
-  305: SEPARATOR (weight=-8.423031)
-  306: SEPARATOR (weight=-4.402755)
-  307: SEPARATOR (weight=9.403337)
-  308: SEPARATOR (weight=-2.405487)
-  309: SEPARATOR (weight=-4.809057)
-  310: SEPARATOR (weight=-3.425194)
-  311: SEPARATOR (weight=1.240486)
-  312: SEPARATOR (weight=-2.767475)
-  313: SEPARATOR (weight=-2.716168)
-  314: SEPARATOR (weight=-4.368416)
-  315: SEPARATOR (weight=2.707305)
-  316: SEPARATOR (weight=4.909287)
-  317: SEPARATOR (weight=-7.702750)
-  318: SEPARATOR (weight=8.220299)
-  319: SEPARATOR (weight=-3.625893)
-  320: SEPARATOR (weight=-8.760328)
-  321: SEPARATOR (weight=2.939024)
-  322: SEPARATOR (weight=2.658018)
-  323: SEPARATOR (weight=-0.430303)
-  324: SEPARATOR (weight=6.557634)
-  325: SEPARATOR (weight=3.161889)
-  326: SEPARATOR (weight=-1.315094)
-  327: SEPARATOR (weight=-1.515591)
-  328: SEPARATOR (weight=-0.254903)
-  329: SEPARATOR (weight=1.982555)
-  330: SEPARATOR (weight=4.955129)
-  331: SEPARATOR (weight=3.830007)
-  332: SEPARATOR (weight=9.904249)
-  333: SEPARATOR (weight=9.763081)
-  334: SEPARATOR (weight=-2.423429)
-  335: SEPARATOR (weight=-5.785294)
-  336: SEPARATOR (weight=-2.790590)
-  337: SEPARATOR (weight=8.120098)
-  338: SEPARATOR (weight=-7.216704)
-  339: SEPARATOR (weight=9.650552)
-  340: SEPARATOR (weight=0.079303)
-  341: SEPARATOR (weight=0.806348)
-  342: SEPARATOR (weight=1.741114)
-  343: SEPARATOR (weight=1.244410)
-  344: SEPARATOR (weight=1.595813)
-  345: SEPARATOR (weight=-0.325370)
-  346: SEPARATOR (weight=9.387415)
-  347: SEPARATOR (weight=5.259179)
-  348: SEPARATOR (weight=-8.225287)
-  349: SEPARATOR (weight=-7.096592)
-  350: SEPARATOR (weight=6.321673)
-  351: SEPARATOR (weight=-6.145789)
-  352: SEPARATOR (weight=-8.332909)
-  353: SEPARATOR (weight=0.703959)
-  354: SEPARATOR (weight=-6.284077)
-  355: SEPARATOR (weight=0.152218)
-  356: SEPARATOR (weight=6.101561)
-  357: SEPARATOR (weight=9.084060)
-  358: SEPARATOR (weight=-7.555954)
-  359: SEPARATOR (weight=-1.927687)
-  360: SEPARATOR (weight=6.299372)
-  361: SEPARATOR (weight=0.479142)
-  362: SEPARATOR (weight=-4.686172)
-  363: SEPARATOR (weight=-8.953240)
-  364: SEPARATOR (weight=6.475048)
-  365: SEPARATOR (weight=0.684433)
-  366: SEPARATOR (weight=-0.166457)
-  367: SEPARATOR (weight=-8.216823)
-  368: SEPARATOR (weight=5.701200)
-  369: SEPARATOR (weight=8.208410)
-  370: SEPARATOR (weight=1.732651)
-  371: SEPARATOR (weight=-4.676534)
-  372: SEPARATOR (weight=9.970549)
-  373: SEPARATOR (weight=8.733622)
-  374: SEPARATOR (weight=7.517310)
-  375: SEPARATOR (weight=5.163811)
-  376: SEPARATOR (weight=-8.746804)
-  377: SEPARATOR (weight=-1.799572)
-  378: SEPARATOR (weight=4.497233)
-  379: SEPARATOR (weight=-5.444690)
-  380: SEPARATOR (weight=-0.308068)
-  381: SEPARATOR (weight=-5.929664)
-  382: SEPARATOR (weight=1.229392)
-  383: SEPARATOR (weight=4.813215)
-  384: SEPARATOR (weight=-1.736562)
-  385: SEPARATOR (weight=9.244661)
-  386: SEPARATOR (weight=8.738431)
-  387: SEPARATOR (weight=-3.884071)
-  388: SEPARATOR (weight=-8.262073)
-  389: SEPARATOR (weight=4.260242)
-  390: SEPARATOR (weight=-1.197616)
-  391: SEPARATOR (weight=4.822966)
-  392: SEPARATOR (weight=6.139187)
-  393: SEPARATOR (weight=-0.444415)
-  394: SEPARATOR (weight=3.121519)
-  395: SEPARATOR (weight=-4.113206)
-  396: SEPARATOR (weight=1.377673)
-  397: SEPARATOR (weight=4.625081)
-  398: SEPARATOR (weight=-7.356020)
-  399: SEPARATOR (weight=3.633907)
-  400: SEPARATOR (weight=-2.268689)
-  401: SEPARATOR (weight=-2.197116)
-  402: SEPARATOR (weight=1.457334)
-  403: SEPARATOR (weight=9.238525)
-  404: SEPARATOR (weight=7.719595)
-  405: SEPARATOR (weight=5.108854)
-  406: SEPARATOR (weight=-7.651403)
-  407: SEPARATOR (weight=8.051182)
-  408: SEPARATOR (weight=-7.669640)
-  409: SEPARATOR (weight=8.873838)
-  410: SEPARATOR (weight=-3.160631)
-  411: SEPARATOR (weight=1.505069)
-  412: SEPARATOR (weight=7.512676)
-  413: SEPARATOR (weight=2.314282)
-  414: SEPARATOR (weight=-5.091633)
-  415: SEPARATOR (weight=3.939491)
-  416: SEPARATOR (weight=-4.241864)
-  417: SEPARATOR (weight=5.172619)
-  418: SEPARATOR (weight=1.527447)
-  419: SEPARATOR (weight=-2.660087)
-  420: SEPARATOR (weight=5.916843)
-  421: SEPARATOR (weight=-9.394702)
-  422: SEPARATOR (weight=-2.289177)
-  423: SEPARATOR (weight=-2.292910)
-  424: SEPARATOR (weight=4.874736)
-  425: SEPARATOR (weight=7.177337)
-  426: SEPARATOR (weight=4.249391)
-  427: SEPARATOR (weight=2.363234)
-  428: SEPARATOR (weight=-4.205594)
+    0: DOT (weight=5.442195)
+    1: INITIAL (weight=4.829944)
+    2: INITIALS (weight=-3.233417)
+    3: YEAR (weight=4.168792)
+    4: NUMBER (weight=7.698815)
+    5: COMMA (weight=1.104946)
+    6: NUMBER (weight=8.504256)
+    7: DASH (weight=-2.553853)
+    8: PAGES (weight=8.217553)
+    9: DOT (weight=8.393661)
+   10: INITIAL (weight=2.740979)
+   11: DASH (weight=3.022699)
+   12: DASH (weight=9.192924)
+   13: DOT (weight=7.599384)
+   14: COLON (weight=3.594488)
+   15: COMMA (weight=3.819573)
+   16: NUMBER (weight=5.553001)
+   17: NUMBER (weight=9.490096)
+   18: DASH (weight=-0.817403)
+   19: QUOTATION (weight=-5.925434)
+   20: DOT (weight=1.450635)
+   21: DOT (weight=7.502193)
+   22: YEAR (weight=3.059370)
+   23: INITIAL (weight=8.701287)
+   24: COLON (weight=4.789671)
+   25: DOT (weight=7.276241)
+   26: DASH (weight=7.913018)
+   27: COLON (weight=0.160068)
+   28: NUMBER (weight=9.114366)
+   29: DOT (weight=3.975388)
+   30: COMMA (weight=4.282884)
+   31: COMMA (weight=4.348674)
+   32: INITIAL (weight=5.327569)
+   33: DASH (weight=8.055120)
+   34: COMMA (weight=-5.355148)
+   35: DOT (weight=8.228884)
+   36: QUOTATION (weight=-8.237623)
+   37: DASH (weight=5.917938)
+   38: DOT (weight=8.966172)
+   39: URL (weight=-1.104368)
+   40: SLASH (weight=2.687970)
+   41: PARENTHESIS (weight=-4.324764)
+   42: DOUBLE_SLASH (weight=4.112969)
+   43: COLON (weight=3.792269)
+   44: COMMA (weight=-2.400080)
+   45: QUOTATION (weight=5.819232)
+   46: NUMBER (weight=4.824439)
+   47: DASH (weight=9.781280)
+   48: PARENTHESIS (weight=-3.794813)
+   49: NUMBER (weight=7.754383)
+   50: QUOTATION (weight=2.675444)
+   51: NUMBER (weight=3.824937)
+   52: PARENTHESIS (weight=6.795625)
+   53: INITIAL (weight=-1.590094)
+   54: INITIAL (weight=9.397790)
+   55: INITIALS (weight=-5.508415)
+   56: INITIALS (weight=3.070737)
+   57: NUMBER (weight=4.880426)
+   58: YEAR (weight=-5.276741)
+   59: PARENTHESIS (weight=-8.125208)
+   60: INITIAL (weight=6.700263)
+   61: YEAR (weight=8.788475)
+   62: ENTITY_SHAPE (weight=-3.344227)
+   63: ENTITY_SHAPE (weight=5.576510)
+   64: ENTITY_SHAPE (weight=5.708442)
+   65: ENTITY_SHAPE (weight=-3.773604)
+   66: ENTITY_SHAPE (weight=2.416094)
+   67: ENTITY_SHAPE (weight=-4.759517)
+   68: ENTITY_SHAPE (weight=-6.661941)
+   69: ENTITY_SHAPE (weight=1.740066)
+   70: ENTITY_SHAPE (weight=-7.232306)
+   71: ENTITY_SHAPE (weight=-2.831879)
+   72: ENTITY_SHAPE (weight=-4.327639)
+   73: ENTITY_SHAPE (weight=-0.766870)
+   74: ENTITY_SHAPE (weight=-2.034275)
+   75: ENTITY_SHAPE (weight=-5.930206)
+   76: ENTITY_SHAPE (weight=3.913894)
+   77: ENTITY_SHAPE (weight=-2.719634)
+   78: ENTITY_SHAPE (weight=-1.262779)
+   79: ENTITY_SHAPE (weight=-2.444354)
+   80: ENTITY_SHAPE (weight=8.440561)
+   81: ENTITY_SHAPE (weight=-2.494751)
+   82: ENTITY_SHAPE (weight=5.242099)
+   83: ENTITY_SHAPE (weight=-3.386599)
+   84: ENTITY_SHAPE (weight=3.325278)
+   85: ENTITY_SHAPE (weight=0.624992)
+   86: ENTITY_SHAPE (weight=3.068277)
+   87: ENTITY_SHAPE (weight=5.314764)
+   88: ENTITY_SHAPE (weight=-5.082121)
+   89: ENTITY_SHAPE (weight=0.341099)
+   90: ENTITY_SHAPE (weight=-6.723282)
+   91: ENTITY_SHAPE (weight=4.148707)
+   92: ENTITY_SHAPE (weight=9.869714)
+   93: ENTITY_SHAPE (weight=1.111810)
+   94: ENTITY_SHAPE (weight=7.731031)
+   95: ENTITY_SHAPE (weight=-5.498378)
+   96: ENTITY_SHAPE (weight=-2.477098)
+   97: ENTITY_SHAPE (weight=-0.261771)
+   98: ENTITY_SHAPE (weight=-2.066666)
+   99: ENTITY_SHAPE (weight=-4.520703)
+  100: ENTITY_SHAPE (weight=-1.690274)
+  101: ENTITY_SHAPE (weight=2.742696)
+  102: ENTITY_SHAPE (weight=-7.418650)
+  103: ENTITY_SHAPE (weight=-0.776493)
+  104: ENTITY_SHAPE (weight=9.997945)
+  105: ENTITY_SHAPE (weight=-0.418504)
+  106: ENTITY_SHAPE (weight=8.538042)
+  107: ENTITY_SHAPE (weight=3.490043)
+  108: ENTITY_SHAPE (weight=8.109785)
+  109: ENTITY_SHAPE (weight=-4.637681)
+  110: ENTITY_SHAPE (weight=7.043446)
+  111: ENTITY_SHAPE (weight=-9.597577)
+  112: ENTITY_SHAPE (weight=-0.730116)
+  113: ENTITY_SHAPE (weight=5.736093)
+  114: ENTITY_SHAPE (weight=-7.959013)
+  115: ENTITY_SHAPE (weight=-2.725733)
+  116: ENTITY_SHAPE (weight=-1.792146)
+  117: ENTITY_SHAPE (weight=-1.535246)
+  118: ENTITY_SHAPE (weight=2.065928)
+  119: ENTITY_SHAPE (weight=-8.314908)
+  120: ENTITY_SHAPE (weight=-8.447803)
+  121: ENTITY_SHAPE (weight=-2.750162)
+  122: ENTITY_SHAPE (weight=2.432405)
+  123: ENTITY_SHAPE (weight=5.187322)
+  124: ENTITY_SHAPE (weight=-8.773439)
+  125: ENTITY_SHAPE (weight=9.056528)
+  126: ENTITY_SHAPE (weight=1.811251)
+  127: ENTITY_SHAPE (weight=1.048726)
+  128: ENTITY_SHAPE (weight=1.322404)
+  129: ENTITY_SHAPE (weight=2.909448)
+  130: ENTITY_SHAPE (weight=7.704836)
+  131: ENTITY_SHAPE (weight=4.077654)
+  132: ENTITY_SHAPE (weight=-0.470707)
+  133: ENTITY_SHAPE (weight=-2.056125)
+  134: ENTITY_SHAPE (weight=2.288110)
+  135: ENTITY_SHAPE (weight=-8.885688)
+  136: ENTITY_SHAPE (weight=4.514502)
+  137: ENTITY_SHAPE (weight=6.783286)
+  138: ENTITY_SHAPE (weight=5.041294)
+  139: ENTITY_SHAPE (weight=4.016768)
+  140: ENTITY_SHAPE (weight=2.317223)
+  141: ENTITY_SHAPE (weight=-1.631768)
+  142: ENTITY_SHAPE (weight=5.601846)
+  143: ENTITY_SHAPE (weight=-1.737292)
+  144: ENTITY_SHAPE (weight=-3.195410)
+  145: ENTITY_SHAPE (weight=-2.510628)
+  146: ENTITY_SHAPE (weight=-0.780010)
+  147: ENTITY_SHAPE (weight=-0.068802)
+  148: ENTITY_SHAPE (weight=4.345036)
+  149: ENTITY_SHAPE (weight=3.347133)
+  150: ENTITY_SHAPE (weight=-5.592687)
+  151: ENTITY_SHAPE (weight=3.060046)
+  152: ENTITY_SHAPE (weight=-8.786167)
+  153: ENTITY_SHAPE (weight=-0.764911)
+  154: ENTITY_SHAPE (weight=-2.687007)
+  155: ENTITY_SHAPE (weight=-8.459717)
+  156: ENTITY_SHAPE (weight=8.118685)
+  157: ENTITY_SHAPE (weight=-4.493917)
+  158: ENTITY_SHAPE (weight=2.584849)
+  159: ENTITY_SHAPE (weight=-2.161722)
+  160: ENTITY_SHAPE (weight=2.514467)
+  161: ENTITY_SHAPE (weight=5.059759)
+  162: ENTITY_SHAPE (weight=-0.663443)
+  163: ENTITY_SHAPE (weight=0.832812)
+  164: ENTITY_SHAPE (weight=3.691770)
+  165: ENTITY_SHAPE (weight=3.422710)
+  166: ENTITY_SHAPE (weight=-4.421508)
+  167: ENTITY_SHAPE (weight=1.538465)
+  168: ENTITY_SHAPE (weight=-1.250980)
+  169: ENTITY_SHAPE (weight=-7.027533)
+  170: ENTITY_SHAPE (weight=-5.663749)
+  171: ENTITY_SHAPE (weight=-6.380385)
+  172: ENTITY_SHAPE (weight=6.475875)
+  173: ENTITY_SHAPE (weight=-7.373453)
+  174: ENTITY_SHAPE (weight=2.484771)
+  175: ENTITY_SHAPE (weight=-4.047585)
+  176: ENTITY_SHAPE (weight=-2.510062)
+  177: ENTITY_SHAPE (weight=3.925791)
+  178: ENTITY_SHAPE (weight=8.920571)
+  179: ENTITY_SHAPE (weight=-2.968022)
+  180: ENTITY_SHAPE (weight=8.083474)
+  181: ENTITY_SHAPE (weight=-5.794021)
+  182: ENTITY_SHAPE (weight=8.057632)
+  183: ENTITY_SHAPE (weight=4.746258)
+  184: ENTITY_SHAPE (weight=5.554519)
+  185: ENTITY_SHAPE (weight=-9.645286)
+  186: ENTITY_SHAPE (weight=0.040927)
+  187: ENTITY_SHAPE (weight=-1.285192)
+  188: ENTITY_SHAPE (weight=-1.613658)
+  189: ENTITY_SHAPE (weight=-2.104397)
+  190: ENTITY_SHAPE (weight=-4.902055)
+  191: ENTITY_SHAPE (weight=5.769016)
+  192: ENTITY_SHAPE (weight=-4.372967)
+  193: ENTITY_SHAPE (weight=-4.501263)
+  194: ENTITY_SHAPE (weight=-6.975977)
+  195: ENTITY_SHAPE (weight=-9.215839)
+  196: ENTITY_SHAPE (weight=-7.120258)
+  197: ENTITY_SHAPE (weight=-9.581748)
+  198: ENTITY_SHAPE (weight=-5.790627)
+  199: ENTITY_SHAPE (weight=4.836827)
+  200: ENTITY_SHAPE (weight=4.399681)
+  201: ENTITY_SHAPE (weight=-0.391049)
+  202: ENTITY_SHAPE (weight=6.536201)
+  203: ENTITY_SHAPE (weight=3.994897)
+  204: SEPARATOR (weight=7.985332)
+  205: SEPARATOR (weight=7.250419)
+  206: SEPARATOR (weight=0.780223)
+  207: SEPARATOR (weight=-4.805107)
+  208: SEPARATOR (weight=-5.670969)
+  209: SEPARATOR (weight=-4.846860)
+  210: SEPARATOR (weight=0.981549)
+  211: SEPARATOR (weight=-1.613118)
+  212: SEPARATOR (weight=-1.558831)
+  213: SEPARATOR (weight=5.315108)
+  214: SEPARATOR (weight=7.054206)
+  215: SEPARATOR (weight=-4.129232)
+  216: SEPARATOR (weight=-9.700110)
+  217: SEPARATOR (weight=1.991004)
+  218: SEPARATOR (weight=-3.028582)
+  219: SEPARATOR (weight=-0.448659)
+  220: SEPARATOR (weight=0.612064)
+  221: SEPARATOR (weight=-2.747230)
+  222: SEPARATOR (weight=-4.129927)
+  223: SEPARATOR (weight=-7.701326)
+  224: SEPARATOR (weight=-8.875565)
+  225: SEPARATOR (weight=-6.119436)
+  226: SEPARATOR (weight=-3.145782)
+  227: SEPARATOR (weight=5.300315)
+  228: SEPARATOR (weight=-5.939551)
+  229: SEPARATOR (weight=1.416673)
+  230: SEPARATOR (weight=-5.396550)
+  231: SEPARATOR (weight=-5.117423)
+  232: SEPARATOR (weight=4.231443)
+  233: SEPARATOR (weight=-0.652892)
+  234: SEPARATOR (weight=-2.945870)
+  235: SEPARATOR (weight=-0.024520)
+  236: SEPARATOR (weight=5.399570)
+  237: SEPARATOR (weight=8.404700)
+  238: SEPARATOR (weight=-9.630726)
+  239: SEPARATOR (weight=3.935214)
+  240: SEPARATOR (weight=4.259975)
+  241: SEPARATOR (weight=-3.224865)
+  242: SEPARATOR (weight=-1.142554)
+  243: SEPARATOR (weight=-4.933257)
+  244: SEPARATOR (weight=1.303130)
+  245: SEPARATOR (weight=5.051867)
+  246: SEPARATOR (weight=-9.590213)
+  247: SEPARATOR (weight=2.280404)
+  248: SEPARATOR (weight=-9.390945)
+  249: SEPARATOR (weight=2.629453)
+  250: SEPARATOR (weight=4.441693)
+  251: SEPARATOR (weight=4.391323)
+  252: SEPARATOR (weight=-8.494363)
+  253: SEPARATOR (weight=9.999724)
+  254: SEPARATOR (weight=-4.782701)
+  255: SEPARATOR (weight=-3.905213)
+  256: SEPARATOR (weight=1.941983)
+  257: SEPARATOR (weight=-7.423266)
+  258: SEPARATOR (weight=6.570757)
+  259: SEPARATOR (weight=4.542097)
+  260: SEPARATOR (weight=-3.813037)
+  261: SEPARATOR (weight=4.397288)
+  262: SEPARATOR (weight=0.253067)
+  263: SEPARATOR (weight=-0.817274)
+  264: SEPARATOR (weight=3.049288)
+  265: SEPARATOR (weight=5.229812)
+  266: SEPARATOR (weight=-1.929674)
+  267: SEPARATOR (weight=0.615203)
+  268: SEPARATOR (weight=7.482487)
+  269: SEPARATOR (weight=2.083596)
+  270: SEPARATOR (weight=-3.826135)
+  271: SEPARATOR (weight=5.411051)
+  272: SEPARATOR (weight=7.328382)
+  273: SEPARATOR (weight=-0.793828)
+  274: SEPARATOR (weight=-4.104789)
+  275: SEPARATOR (weight=-4.652071)
+  276: SEPARATOR (weight=5.803390)
+  277: SEPARATOR (weight=7.079419)
+  278: SEPARATOR (weight=6.104121)
+  279: SEPARATOR (weight=3.552847)
+  280: SEPARATOR (weight=0.257734)
+  281: SEPARATOR (weight=0.987695)
+  282: SEPARATOR (weight=1.764648)
+  283: SEPARATOR (weight=7.000815)
+  284: SEPARATOR (weight=2.416978)
+  285: SEPARATOR (weight=-7.517392)
+  286: SEPARATOR (weight=4.860761)
+  287: SEPARATOR (weight=8.388636)
+  288: SEPARATOR (weight=-3.146189)
+  289: SEPARATOR (weight=-1.111665)
+  290: SEPARATOR (weight=-1.659633)
+  291: SEPARATOR (weight=-0.199778)
+  292: SEPARATOR (weight=9.347889)
+  293: SEPARATOR (weight=4.188270)
+  294: SEPARATOR (weight=-5.285752)
+  295: SEPARATOR (weight=4.409733)
+  296: SEPARATOR (weight=6.509806)
+  297: SEPARATOR (weight=-7.992510)
+  298: SEPARATOR (weight=-0.083868)
+  299: SEPARATOR (weight=-6.607285)
+  300: SEPARATOR (weight=-7.829761)
+  301: SEPARATOR (weight=-8.475542)
+  302: SEPARATOR (weight=-7.076308)
+  303: SEPARATOR (weight=3.244318)
+  304: SEPARATOR (weight=-0.950137)
+  305: SEPARATOR (weight=6.442501)
+  306: SEPARATOR (weight=-7.232669)
+  307: SEPARATOR (weight=5.742031)
+  308: SEPARATOR (weight=8.851918)
+  309: SEPARATOR (weight=-1.315500)
+  310: SEPARATOR (weight=8.947881)
+  311: SEPARATOR (weight=1.973106)
+  312: SEPARATOR (weight=-4.262792)
+  313: SEPARATOR (weight=0.731951)
+  314: SEPARATOR (weight=3.681296)
+  315: SEPARATOR (weight=-4.376811)
+  316: SEPARATOR (weight=-1.538490)
+  317: SEPARATOR (weight=9.532236)
+  318: SEPARATOR (weight=-0.127942)
+  319: SEPARATOR (weight=2.190230)
+  320: SEPARATOR (weight=1.124353)
+  321: SEPARATOR (weight=-8.897480)
+  322: SEPARATOR (weight=-9.192231)
+  323: SEPARATOR (weight=-1.401784)
+  324: SEPARATOR (weight=2.177866)
+  325: SEPARATOR (weight=1.765733)
+  326: SEPARATOR (weight=-4.194663)
+  327: SEPARATOR (weight=6.484766)
+  328: SEPARATOR (weight=-5.745434)
+  329: SEPARATOR (weight=5.909963)
+  330: SEPARATOR (weight=-4.002821)
+  331: SEPARATOR (weight=0.482124)
+  332: SEPARATOR (weight=0.329850)
+  333: SEPARATOR (weight=-0.324734)
+  334: SEPARATOR (weight=-0.001450)
+  335: SEPARATOR (weight=-2.043335)
+  336: SEPARATOR (weight=4.986791)
+  337: SEPARATOR (weight=-2.333088)
+  338: SEPARATOR (weight=-2.872517)
+  339: SEPARATOR (weight=-1.570942)
+  340: SEPARATOR (weight=1.331543)
+  341: SEPARATOR (weight=0.483213)
+  342: SEPARATOR (weight=-9.171352)
+  343: SEPARATOR (weight=-5.595177)
+  344: SEPARATOR (weight=-1.114015)
+  345: SEPARATOR (weight=-7.130048)
+  346: SEPARATOR (weight=3.957614)
+  347: SEPARATOR (weight=5.472947)
+  348: SEPARATOR (weight=-6.747974)
+  349: SEPARATOR (weight=-4.826060)
+  350: SEPARATOR (weight=-5.172287)
+  351: SEPARATOR (weight=-6.529202)
+  352: SEPARATOR (weight=-4.047284)
+  353: SEPARATOR (weight=-1.052661)
+  354: SEPARATOR (weight=6.793280)
+  355: SEPARATOR (weight=4.347540)
+  356: SEPARATOR (weight=-1.894123)
+  357: SEPARATOR (weight=-5.511346)
+  358: SEPARATOR (weight=-3.486258)
+  359: SEPARATOR (weight=-3.896189)
+  360: SEPARATOR (weight=-2.435733)
+  361: SEPARATOR (weight=-0.808715)
+  362: SEPARATOR (weight=-2.740143)
+  363: SEPARATOR (weight=3.399512)
+  364: SEPARATOR (weight=-1.101358)
+  365: SEPARATOR (weight=-1.740566)
+  366: SEPARATOR (weight=-4.091170)
+  367: SEPARATOR (weight=9.527107)
+  368: SEPARATOR (weight=-9.424993)
+  369: SEPARATOR (weight=1.913090)
+  370: SEPARATOR (weight=-1.488346)
+  371: SEPARATOR (weight=-5.072903)
+  372: SEPARATOR (weight=-4.346767)
+  373: SEPARATOR (weight=-0.756053)
+  374: SEPARATOR (weight=0.947624)
+  375: SEPARATOR (weight=-6.580188)
+  376: SEPARATOR (weight=-6.111917)
+  377: SEPARATOR (weight=-5.764707)
+  378: SEPARATOR (weight=1.047688)
+  379: SEPARATOR (weight=4.990872)
+  380: SEPARATOR (weight=-7.195216)
+  381: SEPARATOR (weight=-6.751567)
+  382: SEPARATOR (weight=0.663488)
+  383: SEPARATOR (weight=0.885907)
+  384: SEPARATOR (weight=0.174658)
+  385: SEPARATOR (weight=-1.083306)
+  386: SEPARATOR (weight=-0.931528)
+  387: SEPARATOR (weight=6.599070)
+  388: SEPARATOR (weight=0.390196)
+  389: SEPARATOR (weight=-1.567198)
+  390: SEPARATOR (weight=7.791402)
+  391: SEPARATOR (weight=9.474470)
+  392: SEPARATOR (weight=-7.734603)
+  393: SEPARATOR (weight=3.078449)
+  394: SEPARATOR (weight=-3.977456)
+  395: SEPARATOR (weight=-8.774451)
+  396: SEPARATOR (weight=-9.452552)
+  397: SEPARATOR (weight=1.308280)
+  398: SEPARATOR (weight=0.683191)
+  399: SEPARATOR (weight=-6.410583)
+  400: SEPARATOR (weight=-0.325472)
+  401: SEPARATOR (weight=0.565338)
+  402: SEPARATOR (weight=-3.186058)
+  403: SEPARATOR (weight=1.346147)
+  404: SEPARATOR (weight=6.148818)
+  405: SEPARATOR (weight=-4.779576)
+  406: SEPARATOR (weight=-3.644575)
+  407: SEPARATOR (weight=-8.866566)
+  408: SEPARATOR (weight=-5.068608)
+  409: SEPARATOR (weight=1.133855)
+  410: SEPARATOR (weight=6.060393)
+  411: SEPARATOR (weight=1.058934)
+  412: SEPARATOR (weight=3.176856)
+  413: SEPARATOR (weight=-9.040879)
+  414: SEPARATOR (weight=2.503817)
+  415: SEPARATOR (weight=6.918738)
+  416: SEPARATOR (weight=2.412285)
+  417: SEPARATOR (weight=-1.271143)
+  418: SEPARATOR (weight=-5.693081)
+  419: SEPARATOR (weight=-3.155122)
+  420: SEPARATOR (weight=1.860289)
+  421: SEPARATOR (weight=-0.987214)
+  422: SEPARATOR (weight=-7.624254)
+  423: SEPARATOR (weight=0.507022)
+  424: SEPARATOR (weight=-5.334231)
+  425: SEPARATOR (weight=1.859874)
+  426: SEPARATOR (weight=-6.855759)
+  427: SEPARATOR (weight=2.134855)
+  428: SEPARATOR (weight=-1.534514)
 
 ================================================================================
 
   LINE |      SCORE | TEXT
 --------------------------------------------------------------------------------
-     1 |     2.8258 | ﻿На правах рукописи
+     1 |     2.0989 | ﻿На правах рукописи
      2 |     0.0000 | 
-     3 |    79.7918 | Аль - Шаеби Рашид Али Ахмед
-     4 |   -94.0179 | Автоматизированное управление процессом формирования индивидуализированных траекторий обучения студента в высшем учебном заведении
-     5 |   110.0928 | 05.13.10 - «Управление в социальных и экономических системах»
-     6 |   -12.2051 | Автореферат диссертации на соискание ученой степени кандидата технических наук
-     7 |    21.5211 | L I.
-     8 |     3.5788 | 005016846
-     9 |     5.7029 | Волгоград 2012
-    10 |   -23.0898 | Работа выполнена в ФГБОУ ВПО «Волгоградский государственный технический университет»
-    11 |   -18.6974 | Научный руководитель: доктор технических наук
-    12 |    -6.0995 | Кравец Алла Григорьевна
-    13 |  -151.2570 | Официальные оппоненты: Халилов Абдурахман Исмаилович доктор технических наук, профессор, Дагестанский государственный университет, профессор кафедры дискретной математики и информатики Кочеткова Ольга Владимировна, Доктор технических наук, профессор, Волгоградский государственный аграрный университет, проректор по информатизации
-    14 |    47.7233 | Ведущая организация: Брянский государственный технический университет
-    15 |   260.1488 | Защита диссертации состоится 22 мая 2012 г. в 15.00 часов на заседании диссертационного совета ДМ 212.009.03 при Астраханском государственном университете по адресу: 414056, г. Астрахань, ул. Татищева, 20 а.
-    16 |   -57.3182 | С диссертацией можно ознакомиться в библиотеке Астраханского государственного университета.
-    17 |    51.3096 | Автореферат разослан «20» апреля 2012 г.
-    18 |    52.4801 | Ученый секретарь диссертационного совета, к.т.н.
-    19 |    89.6264 | Щербинина О.В.
-    20 |    20.2856 | 2
-    21 |   -16.7100 | ОБЩАЯ ХАРАКТЕРИСТИКА РАБОТЫ
-    22 |  -361.4223 | Актуальность темы. В сентябре 2003 года на Берлинской конференции Россия присоединилась к Болонскому процессу - движению, целью которого является создание единого образовательного пространства. Признание результатов обучения позволяет студентам проходить часть своего обучения в вузах других стран. Предложения, рассматриваемые в рамках Болонского процесса, сводятся, в частности, к введению кредитно-модульной структуры образования. Применение в высшей школе системы зачётных единиц открывает возможность позитивного преобразования учебного процесса в целях:
-    23 |  -194.7434 | - индивидуально-ориентированной организации учебного процесса, предоставляющей студентам возможность составления индивидуальных учебных планов, свободного определения последовательности освоения дисциплин, самостоятельного составления личных семестровых расписаний учебных занятий;
-    24 |   -72.3386 | - стимулирующей балльно - рейтинговой системы оценки результатов учебной деятельности студентов;
-    25 |   -13.5491 | - формирования и постоянного развития учебных планов, программ и стандартов содержания образования;
-    26 |   -47.9528 | - предоставление преподавателям академических свобод, в том числе, права свободного выбора методики обучения;
-    27 |  -137.5877 | - экономических расчётов размера платы за обучение и заработной платы преподавателей. Кредитно-модульную систему называют также нелинейной организацией учебного процесса. Нелинейная система обучения - способ организации учебного процесса, при котором обучающиеся имеют возможность индивидуально планировать последовательность образовательного процесса.
-    28 |  -311.3057 | Введение в 2011 году в ФГОС третьего поколения зачетных единиц (з.е.) и модулей учебных дисциплин позволяет студентам учиться по индивидуальным планам, самостоятельно выстраивая свою образовательную траекторию. Таким образом, задача управления процессом формирования индивидуальной траектории обучения студента с учетом его профессиональных предпочтений является актуальной.
-    29 |   -31.7569 | Целью диссертационной работы является:
-    30 |    -5.7653 | Повышение эффективности индивидуально-ориентированной организации учебного процесса с учётом профессиональных предпочтений студента.
-    31 |   -96.0349 | Для достижения поставленной цели необходимо было решить следующие задачи:
-    32 |   -74.7791 | - исследовать Европейскую систему образования подготовки магистров и бакалавров, Европейскую систему взаимозачётов кредитов, российскую систему подготовки бакалавров, специалистов и магистров, особенности учебных планов при ФГОС 3;
-    33 |  -121.2171 | - разработать методику автоматизированного управления процессом формирования индивидуализированных траекторий образования студентов;
-    34 |   -26.7608 | - 1 разработать модели объектов предметной области;
-    35 |   -62.0431 | - создать' автоматизированную систему моделирования индивидуальных траекторий образования студентов;
-    36 |    12.3336 | 3
-    37 |   -47.1283 | - разработать подсистему поддержки принятия решения для студентов при моделировании индивидуальной траектории обучения.
-    38 |   -76.6800 | Объект исследований. Главным объектом исследования диссертационной работы является сложная социально-экономическая система организации учебного процесса в высшем учебном заведении профессионального образования Российской Федерации.
-    39 |   -65.7687 | Предмет исследований. Предметом исследования является процесс формирования индивидуализированных учебных программ.
-    40 |  -220.5418 | Методы исследований. Для решения поставленных задач использованы методы функционального и структурного анализа, инфологического моделирования, системного анализа, методы принятия решений, методы экспертной оценки, математического моделирования.
-    41 |     3.1681 | Научная новизна результатов, полученных в диссертации, заключается в следующем:
-    42 |  -288.2178 | Разработана инвариантная относительно специальности методика автоматизированного управления процессом формирования индивидуализированных траекторий подготовки при системе зачетных единиц, отличающаяся от известных тем, что в ее рамках впервые представлены:
-    43 |  -113.8886 | - концептуальная модель учебного процесса в вузе при системе зачетных единиц, которая наглядно отражает изменения в учебном процессе, связанные с переходом от Российской системы высшего профессионального образования к ФГОС 3;
-    44 |  -111.1376 | - функциональные модели автоматизированного управления процессом формирования учебных планов при системе зачетных единиц (СЗЕ);
-    45 |    14.1381 | - информационные модели объектов предметной области, обобщенные критерии их оценки и ограничения;
-    46 |   -57.8298 | - модель системы поддержки принятия решения при формировании индивидуальной траектории обучения с учетом личных предпочтений студента.
-    47 |  -436.1441 | Практическая ценность. На основе разработанных математических моделей учебных планов при системе зачетных единиц, методики автоматизированного управления процессом формирования индивидуализированных траекторий обучения студента, разработанной модели системы поддержки принятия решений, концептуальной и функциональной моделей учебного процесса в вузе создана автоматизированная система, которая обеспечивает студентам возможность моделировать свои индивидуальные траектории образования при кредитномодульной системе образования, учитывая при этом свои профессиональные навыки и предпочтения. Согласно проведенным испытаниям время составления индивидуального учебного плана с использованием автоматизированной системы «Моделирование траектории обучения студента» сократилось в среднем на 32,5% по сравнению с ручным методом формирования. Сроки формирования групп студентов на дисциплины по выбору сократились в среднем на 27% по сравнению с аналогичными автоматизированными системами. Имеется 2 акта внедрения и приема в опытную эксплуатацию методики и программного продукта. Получено Свидетельство о регистрации программы для ЭВМ № 2012611747 от 12.03.12.
-    48 |   -53.2170 | На защиту выносятся следующие положения:
-    49 |    24.5638 | - Модели учебного процесса в ВУЗе при СЗЕ;
-    50 |    18.8733 | 4
-    51 |   -86.5546 | - Методика автоматизированного управления процессом формирования индивидуализированных траекторий обучения студента при системе зачетных единиц;
-    52 |   -25.8380 | - Информационные модели объектов предметной области;
-    53 |   -18.2274 | - Система поддержки принятия решений при формировании индивидуальной траектории обучения с учетом личных предпочтений студента.
-    54 |   857.7130 | Апробация работы. Отдельные материалы, входящие в диссертацию обсуждались на VI всерос. науч.-практ. конф. «Инновационные технологии в обучении и производстве» (г. Камышин), XXXVIII междунар, конф. «Информационные технологии в науке, образовании, телекоммуникации и бизнесе IT+SE'll» (Украина, Крым, Ялта-Гурзуф), междунар, науч.-практ. коиф. «Перспективные инновации в науке, образовании, производстве и транспорте» (Украина, г.Одесса), Конгрессе по интеллектуальным системам и информационным технологиям "IS&IT'll" (п. Дивноморское), междунар, науч.-практ. конф. «Инновации на основе информационных и коммуникационных технологий. Инфо-2011» (г. Сочи), междунар, науч.-практ. конф. TOUR-XXI: модернизация образования в туризме и академическая мобильность - международный опыт» (г. Астрахань, 1-2 ноября 2011 г.)
-    55 |   179.6708 | Структура и содержание работы. Диссертационная работа состоит из введения, четырёх глав, заключения, списка литературы из 72 наименований, 4 приложений, изложена на 114 машинописных страницах, содержит 23 рисунка и 6 таблиц.
-    56 |    -0.1480 | СОДЕРЖАНИЕ РАБОТЫ
-    57 |   -62.1464 | Во введении обоснована актуальность темы, сформулированы цель и задачи исследования, дана общая характеристика работы.
-    58 |   -93.8792 | В первой главе проведен анализ предметной области исследования. В рамках анализа были рассмотрены современные и международные тенденции организации образовательного процесса ВУЗа, а также проведен анализ опыта внедрения системы зачетных единиц и кредитно-модульной системы образования.
-    59 |  -101.3635 | В результате анализа были выявлены основные проблемы внедрения СЗЕ в зарубежных и российских ВУЗах. Рассмотрено построение учебных планов, в том числе соотношение аудиторной и внеаудиторной нагрузки студента, а также обязательных дисциплин и дисциплин по выбору в ведущих зарубежных и российских ВУЗах.
-    60 |   277.9873 | Были проанализированы; теория развития профессионального образования (А.М. Новиков), стратегии развития высшего образования (Е. Г. Пугачева, К. Н. Соловьенко), проблемы индивидуализации учебных программ (Л.С. Лисицына), возможности прогнозирования потребности рынка труда в выпускниках системы профессионального образования (Н. О. Вербицкая, М. Э. Матафонов, В. А. Федоров).
-    61 |  -242.4597 | Во второй главе сделан обзор существующих систем автоматизации учебного процесса вузов и предъявлены требования к проектируемой автоматизированной системе. В таблице 1 приведён сравнительный анализ характеристик и возможностей рассмотренных систем автоматизации учебного процесса ВУЗов. В ходе исследования были сформулированы следующие критерии:
-    62 |   -79.7549 | 1. Автоматическая проверка разработанного учебного плана на соответствие государственным стандартам;
-    63 |     5.7019 | 5
-    64 |     8.5190 | 2. Определение трудоёмкости дисциплин учебного плана;
-    65 |   -42.9602 | 3. Возможность конвертирования трудоёмкости учебного плана в зачетные единицы;
-    66 |   -11.7695 | 4. Возможность дальнейшего использования базы учебных планов в автоматизации процесса
-    67 |     4.7058 | управления вузом;
-    68 |    13.5728 | 5. Используемая в системе технология;
-    69 |    31.4422 | 6. Разграничение прав и доступа пользователей к разработанной системе;
-    70 |   -83.5833 | 7. Обеспечение студенту возможности самостоятельного составления своего индивидуального учебного плана;
-    71 |   -36.1548 | 8. Обеспечение поддержки принятия решения студентом при формировании своего индивидуального учебного плана.
-    72 |    25.8884 | Таблица 1
-    73 |    -3.3879 | Сравнительный анализ систем автоматизации учебного процесса в российских ВУЗах
-    74 |   114.5677 | Система 1 г 3 4 5 6 7 8
-    75 |    81.8172 | Автоматизация процесса составления учебных планов вузов (г.Москва) 4  - - Локальная - - -
-    76 |    78.7394 | Система автоматизации разработки учебных планов (САРУП) "Куратор" (г. Петрозаводск) - 4  - Локальная - 4 -
-    77 |   131.6499 | ИС «Планы ВПО»  4 - 4 Клиент-сервер 4  
-    78 |   102.9005 | АИС «Электронный деканат» (г. Москва)  4  4 Клиент-сервер   -
-    79 |   202.0643 | Информационная система для российских вузов — «Университет» компании РЕДЛАБ - 4 + 4 SAPR/3 (клиент-сервер) 4 4 -
-    80 |   177.9019 | АИС УНИВЕРСИТЕТ (г. Ставрополь) 4 4 - 4 Клиент-сервер 4  -
-    81 |  -224.5156 | Как видно из таблицы 1, ни одна из представленных систем не обладает всем спектром перечисленных свойств и функций. Таким образом, актуальной становится задача создания такой автоматизированной системы моделирования кредитно-модульной структуры индивидуальной траектории обучения студента, которая осуществляла бы все указанные выше
-    82 |    38.4810 | операции.
-    83 |    -7.9991 | Состояние управляемой системы О
-    84 |    40.7827 | Рис. 1. Схема управления процессом формирования индивидуализированных траекторий
-    85 |    -9.2620 | подготовки
-    86 |     3.0387 | б
-    87 |    85.8510 | Обозначения: ∖ / - непосредственное управление; ∖y * вхождение; I ^∙ - воздействие;
-    88 |    42.5159 | - нововведение концепции; | _ , J1I - множество документов.
-    89 |  -299.9194 | Третья глава посвящена разработке методики автоматизированного управления учебным процессом при СЗЕ, в том числе построению концептуальной модели учебного процесса в вузе, функциональной модели формирования учебных планов, математических моделей семестра, дисциплин, учебного плана, преподавателя, системы поддержки принятия решения (СППР) при моделировании индивидуальной траектории обучения, алгоритма функционирования СППР.
-    90 |  -181.7679 | В общем виде объект исследования как социально - экономическая система решает следующую задачу управления (рис.1): управляющая система V осуществляет управление процессом C(t) таким образом, чтобы с учетом внешних воздействий F(R,t) обеспечить требуемое в настоящий момент состояние (G) управляемой системы (W) в соответствии с управляющим воздействием (S), где t - время.
-    91 |  -110.9359 | В диссертационном исследовании рассматривается элемент 1 (рис.1) , то есть активное влияние управляемой системы на процесс управления, что является отличительной чертой управления в социальных и экономических системах.
-    92 |   -89.4999 | Для реализации нелинейной системы образования необходимо использовать три формы учебного плана по каждому направлению (специальности):
-    93 |   -75.1314 | - базовые (стабильные) учебные планы - общие по направлению (специальности), служат для определения содержания и трудоемкости учебной работы каждого студента;
-    94 |   -80.1718 | - индивидуальные учебные планы, - вообще говоря, различные для каждого студента, определяют образовательную траекторию учащихся;
-    95 |   -20.2360 | - рабочие планы - для формирования ежегодного графика учебного процесса и расчета трудоемкости учебной работы преподавателей.
-    96 |   -55.8938 | Построенная концептуальная модель учебного процесса в вузе при СЗЕ отражает
-    97 |    26.2653 | перечисленные выше моменты (рис.2).
-    98 |    15.9280 | стетаргм ∙nαueo
-    99 |    40.3964 | 6⅝U01WtX
-   100 |    33.8675 | tφακuκv реактхжееег, rπuxrφrtbβ
-   101 |    -2.2217 | гсгуттаюкнх
-   102 |    51.2022 | ЖИИИО1
-   103 |    41.1271 | форее^4*«е гебиозы»
-   104 |    22.5891 | euς*⅜Dt F⅛⅝e⅞tte ученых пято* [⅝∏⅛⅜m
-   105 |    12.2520 | учебный стах
-   106 |    60.9793 | >1Д1МИ»
-   107 |    45.5511 | Γφoφ∙<QKecutll⅜8e
-   108 |     6.0774 | K*φι⅞>t
-   109 |    61.2376 | mptiogro ар.
-   110 |    23.1850 | ауам*
-   111 |    58.2551 | уч«6к И ГЛИКИ
-   112 |    23.6714 | P∙σφentιwee
-   113 |    28.2215 | r⅜⅝tθwe глины
-   114 |    26.7697 | рчбсчга yve⅜oιe
-   115 |    23.0622 | пр ело пи ««мм
+     3 |    19.5603 | Аль - Шаеби Рашид Али Ахмед
+     4 |  -106.5328 | Автоматизированное управление процессом формирования индивидуализированных траекторий обучения студента в высшем учебном заведении
+     5 |   429.5354 | 05.13.10 - «Управление в социальных и экономических системах»
+     6 |  -178.6300 | Автореферат диссертации на соискание ученой степени кандидата технических наук
+     7 |    97.2066 | L I.
+     8 |    49.5667 | 005016846
+     9 |   103.1496 | Волгоград 2012
+    10 |   -32.6966 | Работа выполнена в ФГБОУ ВПО «Волгоградский государственный технический университет»
+    11 |    38.7329 | Научный руководитель: доктор технических наук
+    12 |    17.3948 | Кравец Алла Григорьевна
+    13 |   -38.4173 | Официальные оппоненты: Халилов Абдурахман Исмаилович доктор технических наук, профессор, Дагестанский государственный университет, профессор кафедры дискретной математики и информатики Кочеткова Ольга Владимировна, Доктор технических наук, профессор, Волгоградский государственный аграрный университет, проректор по информатизации
+    14 |    23.5596 | Ведущая организация: Брянский государственный технический университет
+    15 |  1180.7604 | Защита диссертации состоится 22 мая 2012 г. в 15.00 часов на заседании диссертационного совета ДМ 212.009.03 при Астраханском государственном университете по адресу: 414056, г. Астрахань, ул. Татищева, 20 а.
+    16 |    18.3928 | С диссертацией можно ознакомиться в библиотеке Астраханского государственного университета.
+    17 |   255.7868 | Автореферат разослан «20» апреля 2012 г.
+    18 |   311.0838 | Ученый секретарь диссертационного совета, к.т.н.
+    19 |   281.4258 | Щербинина О.В.
+    20 |    53.1282 | 2
+    21 |   -24.0259 | ОБЩАЯ ХАРАКТЕРИСТИКА РАБОТЫ
+    22 |   -34.3925 | Актуальность темы. В сентябре 2003 года на Берлинской конференции Россия присоединилась к Болонскому процессу - движению, целью которого является создание единого образовательного пространства. Признание результатов обучения позволяет студентам проходить часть своего обучения в вузах других стран. Предложения, рассматриваемые в рамках Болонского процесса, сводятся, в частности, к введению кредитно-модульной структуры образования. Применение в высшей школе системы зачётных единиц открывает возможность позитивного преобразования учебного процесса в целях:
+    23 |  -128.3234 | - индивидуально-ориентированной организации учебного процесса, предоставляющей студентам возможность составления индивидуальных учебных планов, свободного определения последовательности освоения дисциплин, самостоятельного составления личных семестровых расписаний учебных занятий;
+    24 |    -0.1406 | - стимулирующей балльно - рейтинговой системы оценки результатов учебной деятельности студентов;
+    25 |    64.0409 | - формирования и постоянного развития учебных планов, программ и стандартов содержания образования;
+    26 |   -90.3677 | - предоставление преподавателям академических свобод, в том числе, права свободного выбора методики обучения;
+    27 |   -10.3884 | - экономических расчётов размера платы за обучение и заработной платы преподавателей. Кредитно-модульную систему называют также нелинейной организацией учебного процесса. Нелинейная система обучения - способ организации учебного процесса, при котором обучающиеся имеют возможность индивидуально планировать последовательность образовательного процесса.
+    28 |   141.2860 | Введение в 2011 году в ФГОС третьего поколения зачетных единиц (з.е.) и модулей учебных дисциплин позволяет студентам учиться по индивидуальным планам, самостоятельно выстраивая свою образовательную траекторию. Таким образом, задача управления процессом формирования индивидуальной траектории обучения студента с учетом его профессиональных предпочтений является актуальной.
+    29 |   -53.4925 | Целью диссертационной работы является:
+    30 |    62.2519 | Повышение эффективности индивидуально-ориентированной организации учебного процесса с учётом профессиональных предпочтений студента.
+    31 |  -163.0370 | Для достижения поставленной цели необходимо было решить следующие задачи:
+    32 |  -134.7007 | - исследовать Европейскую систему образования подготовки магистров и бакалавров, Европейскую систему взаимозачётов кредитов, российскую систему подготовки бакалавров, специалистов и магистров, особенности учебных планов при ФГОС 3;
+    33 |   -17.5118 | - разработать методику автоматизированного управления процессом формирования индивидуализированных траекторий образования студентов;
+    34 |    36.7096 | - 1 разработать модели объектов предметной области;
+    35 |    43.8752 | - создать' автоматизированную систему моделирования индивидуальных траекторий образования студентов;
+    36 |    61.5448 | 3
+    37 |   -55.1146 | - разработать подсистему поддержки принятия решения для студентов при моделировании индивидуальной траектории обучения.
+    38 |  -130.2096 | Объект исследований. Главным объектом исследования диссертационной работы является сложная социально-экономическая система организации учебного процесса в высшем учебном заведении профессионального образования Российской Федерации.
+    39 |   123.3482 | Предмет исследований. Предметом исследования является процесс формирования индивидуализированных учебных программ.
+    40 |   177.8498 | Методы исследований. Для решения поставленных задач использованы методы функционального и структурного анализа, инфологического моделирования, системного анализа, методы принятия решений, методы экспертной оценки, математического моделирования.
+    41 |   111.2786 | Научная новизна результатов, полученных в диссертации, заключается в следующем:
+    42 |  -252.2669 | Разработана инвариантная относительно специальности методика автоматизированного управления процессом формирования индивидуализированных траекторий подготовки при системе зачетных единиц, отличающаяся от известных тем, что в ее рамках впервые представлены:
+    43 |  -193.5183 | - концептуальная модель учебного процесса в вузе при системе зачетных единиц, которая наглядно отражает изменения в учебном процессе, связанные с переходом от Российской системы высшего профессионального образования к ФГОС 3;
+    44 |   -87.2282 | - функциональные модели автоматизированного управления процессом формирования учебных планов при системе зачетных единиц (СЗЕ);
+    45 |   -51.9741 | - информационные модели объектов предметной области, обобщенные критерии их оценки и ограничения;
+    46 |   -70.4472 | - модель системы поддержки принятия решения при формировании индивидуальной траектории обучения с учетом личных предпочтений студента.
+    47 |   509.8644 | Практическая ценность. На основе разработанных математических моделей учебных планов при системе зачетных единиц, методики автоматизированного управления процессом формирования индивидуализированных траекторий обучения студента, разработанной модели системы поддержки принятия решений, концептуальной и функциональной моделей учебного процесса в вузе создана автоматизированная система, которая обеспечивает студентам возможность моделировать свои индивидуальные траектории образования при кредитномодульной системе образования, учитывая при этом свои профессиональные навыки и предпочтения. Согласно проведенным испытаниям время составления индивидуального учебного плана с использованием автоматизированной системы «Моделирование траектории обучения студента» сократилось в среднем на 32,5% по сравнению с ручным методом формирования. Сроки формирования групп студентов на дисциплины по выбору сократились в среднем на 27% по сравнению с аналогичными автоматизированными системами. Имеется 2 акта внедрения и приема в опытную эксплуатацию методики и программного продукта. Получено Свидетельство о регистрации программы для ЭВМ № 2012611747 от 12.03.12.
+    48 |   -61.3101 | На защиту выносятся следующие положения:
+    49 |   -29.6141 | - Модели учебного процесса в ВУЗе при СЗЕ;
+    50 |    56.7620 | 4
+    51 |  -100.7103 | - Методика автоматизированного управления процессом формирования индивидуализированных траекторий обучения студента при системе зачетных единиц;
+    52 |    -2.8237 | - Информационные модели объектов предметной области;
+    53 |   -23.9960 | - Система поддержки принятия решений при формировании индивидуальной траектории обучения с учетом личных предпочтений студента.
+    54 |  3928.2686 | Апробация работы. Отдельные материалы, входящие в диссертацию обсуждались на VI всерос. науч.-практ. конф. «Инновационные технологии в обучении и производстве» (г. Камышин), XXXVIII междунар, конф. «Информационные технологии в науке, образовании, телекоммуникации и бизнесе IT+SE'll» (Украина, Крым, Ялта-Гурзуф), междунар, науч.-практ. коиф. «Перспективные инновации в науке, образовании, производстве и транспорте» (Украина, г.Одесса), Конгрессе по интеллектуальным системам и информационным технологиям "IS&IT'll" (п. Дивноморское), междунар, науч.-практ. конф. «Инновации на основе информационных и коммуникационных технологий. Инфо-2011» (г. Сочи), междунар, науч.-практ. конф. TOUR-XXI: модернизация образования в туризме и академическая мобильность - международный опыт» (г. Астрахань, 1-2 ноября 2011 г.)
+    55 |   729.5401 | Структура и содержание работы. Диссертационная работа состоит из введения, четырёх глав, заключения, списка литературы из 72 наименований, 4 приложений, изложена на 114 машинописных страницах, содержит 23 рисунка и 6 таблиц.
+    56 |    -6.3802 | СОДЕРЖАНИЕ РАБОТЫ
+    57 |     3.9988 | Во введении обоснована актуальность темы, сформулированы цель и задачи исследования, дана общая характеристика работы.
+    58 |  -177.9138 | В первой главе проведен анализ предметной области исследования. В рамках анализа были рассмотрены современные и международные тенденции организации образовательного процесса ВУЗа, а также проведен анализ опыта внедрения системы зачетных единиц и кредитно-модульной системы образования.
+    59 |  -152.6147 | В результате анализа были выявлены основные проблемы внедрения СЗЕ в зарубежных и российских ВУЗах. Рассмотрено построение учебных планов, в том числе соотношение аудиторной и внеаудиторной нагрузки студента, а также обязательных дисциплин и дисциплин по выбору в ведущих зарубежных и российских ВУЗах.
+    60 |  1908.8467 | Были проанализированы; теория развития профессионального образования (А.М. Новиков), стратегии развития высшего образования (Е. Г. Пугачева, К. Н. Соловьенко), проблемы индивидуализации учебных программ (Л.С. Лисицына), возможности прогнозирования потребности рынка труда в выпускниках системы профессионального образования (Н. О. Вербицкая, М. Э. Матафонов, В. А. Федоров).
+    61 |  -232.0310 | Во второй главе сделан обзор существующих систем автоматизации учебного процесса вузов и предъявлены требования к проектируемой автоматизированной системе. В таблице 1 приведён сравнительный анализ характеристик и возможностей рассмотренных систем автоматизации учебного процесса ВУЗов. В ходе исследования были сформулированы следующие критерии:
+    62 |    81.4748 | 1. Автоматическая проверка разработанного учебного плана на соответствие государственным стандартам;
+    63 |    58.6907 | 5
+    64 |    79.0123 | 2. Определение трудоёмкости дисциплин учебного плана;
+    65 |    94.6275 | 3. Возможность конвертирования трудоёмкости учебного плана в зачетные единицы;
+    66 |   110.9829 | 4. Возможность дальнейшего использования базы учебных планов в автоматизации процесса
+    67 |    24.6146 | управления вузом;
+    68 |   145.2748 | 5. Используемая в системе технология;
+    69 |   117.9574 | 6. Разграничение прав и доступа пользователей к разработанной системе;
+    70 |   -38.3211 | 7. Обеспечение студенту возможности самостоятельного составления своего индивидуального учебного плана;
+    71 |    46.3900 | 8. Обеспечение поддержки принятия решения студентом при формировании своего индивидуального учебного плана.
+    72 |    92.8585 | Таблица 1
+    73 |   -80.3889 | Сравнительный анализ систем автоматизации учебного процесса в российских ВУЗах
+    74 |   440.6854 | Система 1 г 3 4 5 6 7 8
+    75 |   349.6247 | Автоматизация процесса составления учебных планов вузов (г.Москва) 4  - - Локальная - - -
+    76 |   443.3745 | Система автоматизации разработки учебных планов (САРУП) "Куратор" (г. Петрозаводск) - 4  - Локальная - 4 -
+    77 |   266.1005 | ИС «Планы ВПО»  4 - 4 Клиент-сервер 4  
+    78 |   370.3418 | АИС «Электронный деканат» (г. Москва)  4  4 Клиент-сервер   -
+    79 |   477.4462 | Информационная система для российских вузов — «Университет» компании РЕДЛАБ - 4 + 4 SAPR/3 (клиент-сервер) 4 4 -
+    80 |   472.9781 | АИС УНИВЕРСИТЕТ (г. Ставрополь) 4 4 - 4 Клиент-сервер 4  -
+    81 |  -125.5943 | Как видно из таблицы 1, ни одна из представленных систем не обладает всем спектром перечисленных свойств и функций. Таким образом, актуальной становится задача создания такой автоматизированной системы моделирования кредитно-модульной структуры индивидуальной траектории обучения студента, которая осуществляла бы все указанные выше
+    82 |    93.2653 | операции.
+    83 |   -36.8012 | Состояние управляемой системы О
+    84 |   217.3451 | Рис. 1. Схема управления процессом формирования индивидуализированных траекторий
+    85 |    14.2417 | подготовки
+    86 |     5.2421 | б
+    87 |   111.1942 | Обозначения: ∖ / - непосредственное управление; ∖y * вхождение; I ^∙ - воздействие;
+    88 |   237.4630 | - нововведение концепции; | _ , J1I - множество документов.
+    89 |  -135.1631 | Третья глава посвящена разработке методики автоматизированного управления учебным процессом при СЗЕ, в том числе построению концептуальной модели учебного процесса в вузе, функциональной модели формирования учебных планов, математических моделей семестра, дисциплин, учебного плана, преподавателя, системы поддержки принятия решения (СППР) при моделировании индивидуальной траектории обучения, алгоритма функционирования СППР.
+    90 |    51.0242 | В общем виде объект исследования как социально - экономическая система решает следующую задачу управления (рис.1): управляющая система V осуществляет управление процессом C(t) таким образом, чтобы с учетом внешних воздействий F(R,t) обеспечить требуемое в настоящий момент состояние (G) управляемой системы (W) в соответствии с управляющим воздействием (S), где t - время.
+    91 |   -13.9802 | В диссертационном исследовании рассматривается элемент 1 (рис.1) , то есть активное влияние управляемой системы на процесс управления, что является отличительной чертой управления в социальных и экономических системах.
+    92 |  -161.0456 | Для реализации нелинейной системы образования необходимо использовать три формы учебного плана по каждому направлению (специальности):
+    93 |   -14.3117 | - базовые (стабильные) учебные планы - общие по направлению (специальности), служат для определения содержания и трудоемкости учебной работы каждого студента;
+    94 |    41.6536 | - индивидуальные учебные планы, - вообще говоря, различные для каждого студента, определяют образовательную траекторию учащихся;
+    95 |     5.4923 | - рабочие планы - для формирования ежегодного графика учебного процесса и расчета трудоемкости учебной работы преподавателей.
+    96 |  -119.7968 | Построенная концептуальная модель учебного процесса в вузе при СЗЕ отражает
+    97 |   210.3431 | перечисленные выше моменты (рис.2).
+    98 |    53.8746 | стетаргм ∙nαueo
+    99 |   136.5541 | 6⅝U01WtX
+   100 |    55.0023 | tφακuκv реактхжееег, rπuxrφrtbβ
+   101 |    61.3168 | гсгуттаюкнх
+   102 |    63.9106 | ЖИИИО1
+   103 |    42.6037 | форее^4*«е гебиозы»
+   104 |    61.9872 | euς*⅜Dt F⅛⅝e⅞tte ученых пято* [⅝∏⅛⅜m
+   105 |    23.2080 | учебный стах
+   106 |   150.2292 | >1Д1МИ»
+   107 |   110.7624 | Γφoφ∙<QKecutll⅜8e
+   108 |    10.4842 | K*φι⅞>t
+   109 |   143.8405 | mptiogro ар.
+   110 |    37.8935 | ауам*
+   111 |    89.1133 | уч«6к И ГЛИКИ
+   112 |    36.7765 | P∙σφentιwee
+   113 |    52.6649 | r⅜⅝tθwe глины
+   114 |    68.8682 | рчбсчга yve⅜oιe
+   115 |    22.9297 | пр ело пи ««мм
    116 |     0.0000 | %
-   117 |    25.5217 | ^«х нетелей 1 ^
-   118 |    -3.4197 | ♦орАерохое»
-   119 |    25.4122 | ⅜⅝⅜6κι⅜roe∙ee
-   120 |    40.5398 | в сеат,учебный errt⅝x
-   121 |    23.8810 | формкраяое» ptageeatl
+   117 |    61.2413 | ^«х нетелей 1 ^
+   118 |   -14.7538 | ♦орАерохое»
+   119 |    78.0636 | ⅜⅝⅜6κι⅜roe∙ee
+   120 |    70.2497 | в сеат,учебный errt⅝x
+   121 |    62.5040 | формкраяое» ptageeatl
    122 |     0.0000 | ⅛~
-   123 |    58.8026 | leer леем flV8e<roι
-   124 |     5.8997 | переход
-   125 |    -3.0170 | ПуДООЧ!
-   126 |    17.0178 | гирею»
-   127 |    27.8760 | смру»е«и ιyιt
-   128 |    52.6724 | Рис.2. Концептуальная модель учебного процесса в вузе при СЗЕ.
-   129 |    30.9490 | puavn∙etι ι⅜κaa⅜
-   130 |    29.7487 | nperoteι⅜st⅜ι
-   131 |    44.6754 | вашем < τ⅝eatoif⅜M⅜M
-   132 |    12.7574 | 7
-   133 |  -403.0765 | Автоматизации подлежат процессы формирования индивидуальных и рабочих учебных планов, а также расчёт учебной нагрузки в з.е. Поэтому была построена функциональная модель формирования учебных планов при СЗЕ (рис.З). Этап формирования рабочих и индивидуальных учебных планов был подвергнут дальнейшей детализации, результатом которой является функциональная модель формирования рабочих и индивидуальных учебных планов. Данная модель также наглядно отражает функционирование проектируемой системы, цветом выделены те блоки (=рис. 3 - №4, 6), которые могут выполняться полностью автоматически.
-   134 |  -596.5367 | Рис.З. Функциональная модель формирования учебных планов при СЗЕ Университет организует запись студентов на изучение дисциплин следующего учебного года следующим образом: вновь поступивший студент до начала занятий получает доступ к проектируемой автоматизированной системе, в которой может просмотреть подготовленный вариант типового индивидуального учебного плана и базового учебного плана для первокурсника, куда он может внести свои коррективы. Но, так как первокурснику трудно ориентироваться в наборе дисциплин, то автоматизированная система с помощью модуля поддержки принятия решения поможет студенту сделать выбор в зависимости от его профессиональных предпочтений.
-   135 |   -32.3162 | В общем виде алгоритм методики автоматизированного управления формированием индивидуальных траекторий обучения студента при СЗЕ представлен на рис. 4, где Dj -обязательные последовательно изучаемые дисциплины, Dk - обязательные дисциплины, Dp -дисциплины по выбору.
-   136 |   -11.6902 | Алгоритмы блоков 1 и 2 (рис. 5,9) используют модели объектов предметной области.
-   137 |   -47.7213 | Также были разработаны правила и ограничения на составление базовых и индивидуальных учебных планов, с целью учесть требования государственных стандартов.
-   138 |    13.9640 | 8
-   139 |    35.7507 | Рис.5. Формирование подмножеств дисциплин
-   140 |   -24.1662 | Рис. 4. Алгоритм методики автоматизированного управления процессом формирования индивидуальных учебных планов при СЗЕ
-   141 |    13.9640 | 9
-   142 |   -46.4819 | Базовый учебный план W_base на i-тый семестр, на основе которого формируется индивидуальный, включает в себя все дисциплины, которые студент может изучить в i-том семестре, т.е. трудоёмкость базового учебного плана и методику его составления можно выразить следующим образом:
-   143 |   142.7830 | W-basei-∑ Wj+2 Wk+∑ Wp>cr-m⅛, где (1) j к р
-   144 |    -4.3159 | 1) начало преподавания j-той дисциплины (sj) относится к i-тому семестру, а сама j-тая дисциплина относится к группе дисциплин Dj, изучаемых обязательно и строго последовательно во времени; множество дисциплин, изученных студентом ранее, содержит множество inpj, указывающее, какие дисциплины должен изучить студент до j-той;
-   145 |     1.1022 | 2) начало преподавания k-той дисциплины (sk) относится к семестру, номер которого < i; сама k-тая дисциплина относится к группе дисциплин Dk, изучаемых обязательно, но, возможно, не последовательно во времени;
-   146 |  -157.2544 | 3) начало преподавания p-той дисциплины (sp) относится к семестру, номер которого < i; сама р-тая дисциплина относится к группе дисциплин Dp, изучаемых студентом по собственному выбору; р-тая дисциплина изучалась студентом в п семестрах, где n < ssp (количество семестров, в которых уже изучалась студентом р-тая дисциплина меньше количества семестров, которое изучается р-тая дисциплина до полного её освоения); ssp < (12-i )+1 количество семестров, которое изучается р-тая дисциплина до полного её освоения меньше либо равно сроку оставшегося обучения студента;
-   147 |  -152.5322 | 4) каждый раз при формировании базового учебного плана должен просматриваться список дисциплин Dk, если у k-той дисциплины срок её освоения ssk или срок её оставшегося освоения (если студент изучает дисциплину уже п семестров, то срок оставшегося её освоения равен (ssk - n)) равен сроку оставшегося обучения студента (т.е. равен (12-i)+l), то дисциплина включается в базовый план как обязательная и изучаемая строго последовательно во времени, Dj;
-   148 |   -92.4775 | 5) каждый раз при формировании учебного плана должен просматриваться список дисциплин, у которых Dp и студент уже начал их изучать в прошлых семестрах (изучал уже п семестров), если у p-той дисциплины срок её оставшегося освоения (ssp-n) равен сроку оставшегося обучения студента (т.е. равен (12-i )+1), то дисциплина включается в базовый план как обязательная и изучаемая строго последовательно во времени, Dj.
-   149 |   185.3580 | На основе базового учебного плана на i-тый семестр студент формирует свой индивидуальный учебный план, при этом учитывается минимально необходимое (crmi∏j) и максимально возможное (cr-maXj) число з.е., которое студент может набрать за i-тый семестр. Таким образом, получаем следующее ограничение на формирование индивидуального учебного плана: cr-mi∏i < W~plar⅛ < cr-max∣ или cr-mi∏i ≤ ∑ Wj + ^ Wk+ £ Wp < cr-maxι (2)
-   150 |     7.7125 | j к Р
-   151 |     3.3020 | , где Wjι Wk, Wp - это трудоёмкости той части соответствующих дисциплин базового плана, которые включены в индивидуальный план, т.е. j-тые дисциплины в базовом и индивидуальном учебном плане совпадают, k-тые и р-тые дисциплины в индивидуальном учебном плане представляют подмножество (часть) к-тых и р-тых дисциплин базового учебного плана.
-   152 |    19.2232 | 10
-   153 |  -118.1670 | Для автоматизации процесса формирования учебных планов при СЗЕ были построены обобщённые модели семестра, дисциплины, учебного плана, преподавателей, системы поддержки принятия решений при формировании индивидуального учебного плана и алгоритм её функционирования.
-   154 |    20.9216 | Семестр характеризуется номером семестра и соответствующим ему количеством з.е.:
-   155 |   110.1370 | S = {i, prakj, attj, cr-max∣, cr_mini ∣ i С Z, 1 < i < 12} , где (3)
-   156 |   109.9458 | 1 - номер семестра, принимает целое значение от 1 до 12
-   157 |    31.2858 | prakj - количество практических недель в i-
-   158 |    -1.1553 | том семестре
-   159 |   -14.1037 | attj - количество недель итоговой аттестации в
-   160 |   170.3575 | cr maxi - максимальное число з.е., которое студент может набрать в i-том семестре cr-mi∏i - минимальное число з.е., которое студент должен набрать в i-том семестре
-   161 |    23.6054 | i-том семестре
-   162 |   -85.6147 | Таким образом, объект предметной области «Семестр» отображается следующей моделью
-   163 |    22.5467 | (рис.6):
-   164 |    35.1492 | Рисунок 6. Модель семестра
-   165 |    80.2927 | При построении модели выделены следующие классы отношений: def -идентифицирующие; use - используемые в расчетах; lim - ограничительные.
-   166 |    10.3784 | Дисциплину учебного плана в теоретико-множественном виде можно представить так:
-   167 |   174.8791 | D = {j, namej, groupj, modj, Sj, contrj, t_inpj, t_outj, inpj, teacherj, st_maxj, st-minj, st_realj, ssj, Kj}, (4)
-   168 |    24.2759 | где .
-   169 |   149.4418 | j - идентификационный номер дисциплины namej - название j-той дисциплины
-   170 |    47.1298 | groupj - группа, к которой относится j-тая дисциплина
-   171 |    21.1964 | modj - образовательный цикл , к которому относится j-тая дисциплина
-   172 |    31.9422 | sj - семестр с минимальным номером, в котором может начать изучаться j-тая дисциплина
-   173 |    55.6280 | contrj - вид контроля по j-той дисциплине (зачёт, экзамен)
-   174 |    57.2709 | inpj - множество дисциплин, которые необходимо изучить ранее j-той
-   175 |    49.8241 | t_inpj ~ продолжительность аудиторных занятий по j-той дисциплине в академических часах
-   176 |    89.2339 | t-outj - продолжительность внеаудиторных занятий по j-той дисциплине в академических часах
-   177 |   123.2443 | teacherj - преподаватель j-той дисциплины st_maxj - максимальное число студентов в группе, изучающей j-тую дисциплину
-   178 |    86.9454 | st-minj - минимальное число студентов в группе, изучающей j-тую дисциплину
-   179 |    91.9442 | st-realj - число студентов, желающих изучать j-тую дисциплину в текущем семестре
-   180 |   -16.2225 | ssj - количество семестров, которое изучается j-тая дисциплина до полного её освоения
-   181 |   -60.1818 | Kj - множество коэффициентов, где к показывает влияние положительного ответа
-   182 |    51.5180 | студента на i-тый вопрос при работе СППР на включение j-той дисциплины в индивидуальный учебный план.
-   183 |   -98.0313 | Таким образом, объект предметной области «Дисциплина» отображается следующей моделью (рис.7). При построении модели выделены следующие классы отношений:
-   184 |    90.1349 | Def - идентифицирующие Lim - ограничительные
-   185 |    76.0868 | Inc - включающие Dm - принятия решения
-   186 |    76.4272 | Use - используемые в расчетах Res - результирующие
-   187 |    70.4183 | Рис. 7. Модель дисциплины
-   188 |  -175.9984 | Обобщенным критерием оценки дисциплины является трудоемкость. Расчёт трудоёмкости дисциплины в зачётных единицах производится исходя из деления её трудоёмкости в академических часах на KF - коэффициент перерасчета, установленный нормативными актами (на данный момент в РФ KF=36) с округлением до 0,5 (ROUND (аргумент; точность)). Зачет по дисциплине и трудоёмкость курсовых проектов (работ) входят в общую трудоёмкость дисциплины в зачетных единицах. Один семестровый экзамен выражается 1 зачетной единицей (3 дня подготовки и 1 день на экзамен). Таким образом, трудоёмкость j-той дисциплины за семестр, выраженная в зачётных единицах, определяется следующей системой уравнений:
-   189 |    72.4706 | Wj = ROUND(≈=^Sij!ll=Ξ3L +1; о .5), если contij = «экзамен», (5)
-   190 |   116.2071 | Wj = ROUND(-t=⅛^^=-^-; 0,5), если contrj + «экзамен».
-   191 |  -137.2185 | Учебные планы составляются для всех специальностей на каждый год набора абитуриентов по любой форме, виду и ступени обучения. Тогда трудоёмкость учебного плана за i-тый семестр вычисляется по формуле:
-   192 |    63.2672 | Wjplar¾ = ROUND( ^ Wj +1,5 * {prak + att∣-); 1), (6)
-   193 |    25.5448 | 12
-   194 |   -14.5386 | где суммируются все трудоёмкости j-тых дисциплин, осваиваемых студентом в i-том семестре. Преподаватель характеризуется множеством предметов, которые он преподаёт, и участием в дополнительной учебной работе (организация прохождения практики студентами, участие в итоговой аттестации). Таким образом, преподаватель представляется в виде множества: Teacher = {k, D-can∣αiι D_mustkn, prakk, at⅛ n}, где (7)
-   195 |    16.0267 | к - идентификационный номер преподавателя
-   196 |    44.5425 | D-ca∏kn - множество дисциплин, которые k-тый преподаватель может преподавать в п-ом семестре
-   197 |    40.3710 | D-mustk∏ - множество дисциплин, которые k-тый преподаватель должен преподавать в п-ом семестре
-   198 |   -31.9853 | ргакк - количество недель учебной практики, организуемой k-тым преподавателем at⅛ - количество недель итоговой аттестации, в которой участвовал k-тый преподаватель п - номер семестра, в котором k-тый преподаватель ведёт указанное множество дисциплин
-   199 |   -74.5138 | Таким образом, объект предметной области «Преподаватель» отображается следующей моделью (рис.8):
-   200 |    14.3709 | Рисунок 8. Модель преподавателя
-   201 |    49.6429 | При построении модели выделены следующие классы отношений: def -идентифицирующие; use - используемые в расчетах; inc - включающие; Нт - ограничительные. Тогда трудоёмкость нагрузки k-того преподавателя, выраженная в зачётных единицах, набранная им за первый семестр учебного года, рассчитывается по следующей формуле: Wjeacherk≈^(^^' + l,5*(prakkπ+attkπ)), где (9)
-   202 |    -2.1130 | " j
-   203 |   -17.6576 | j-тая дисциплина € D-must∣αb п- целое (номер семестра), трудоёмкость вычисляется по всем семестрам, в которых задействован преподаватель.
-   204 |  -417.9949 | Студент или абитуриент, впервые столкнувшийся с задачей формирования своей индивидуальной траектории образования, не всегда может быстро сориентироваться, какой набор дисциплин ему следует включить в свой индивидуальный план для достижения своих профессиональных целей. Помочь в решении данной проблемы ему может тьютор (консультант по составлению индивидуального учебного плана) или система поддержки принятия решения, включённая в общую систему как модуль (студент может воспользоваться обоими способами помощи) (рис.9).
-   205 |    17.5927 | 13
-   206 |  -171.6932 | Систему поддержки принятия решения для студентов при моделировании индивидуальной траектории образования можно представить в виде набора вопросов для студентов об их профессиональных навыках и предпочтениях и набора коэффициентов, указывающих влияние
-   207 |   -23.5028 | ответа на вопрос на включение дисциплины в индивидуальный учебный план.
-   208 |    81.7227 | Рис.9.Изменение вариативной части учебного плана
-   209 |     0.6678 | Система принятия решения описывается в виде следующей модели:
-   210 |    27.6544 | Q = {i,Dp,K∣0≤k≤10},r∏e (10)
-   211 |    33.9366 | i - идентификационный номер вопроса
-   212 |   -65.9675 | Dp - множество дисциплин, которые может включить студент в свой индивидуальный учебный план по своему усмотрению
-   213 |    25.4217 | К - множество коэффициентов, где ку показывает влияние ответа на i-тый вопрос на включение j-той дисциплины из множества Dp в индивидуальный учебный план студента;
-   214 |    -7.1960 | к - целое число, к С [0;10], к определяется экспертами до начала работы с системой поддержки принятия решения. Таким образом, для ∀Dpj∈D ранг Rj дисциплины по выбору рассчитывается по формуле: Rj=∑Ai*Ka, где (11)
-   215 |    66.6492 | А; - ответ на i-ый вопрос,
-   216 |    32.6446 | Ку - коэффициент влияния ответа A∣ на включение дисциплины Dp, в индивидуальный учебный план.
-   217 |    -5.9509 | Затем происходит ранжирование списка дисциплин по max(Ri).
-   218 |    -6.5627 | Далее в алгоритме методики (рис. 4) используется редуцированное множество дисциплин по выбору.
-   219 |  -188.8152 | В четвертой главе описываются особенности проектируемой системы автоматизации моделирования индивидуальной траектории обучения студента вуза при СЗЕ. На основании построенных концептуальной и функциональных моделей разработана автоматизированная система «Моделирование траектории обучения студента». Предлагаемая архитектура системы представлена на рис. 10.
-   220 |   -98.7255 | Подсистема формирования индивидуальных учебных планов выполняет главную функцию
-   221 |  -339.0434 | системы, а именно, предоставляет студентам возможность моделировать свои индивидуальные траектории обучения на основе профессиональных предпочтений. В результате работы подсистемы наполняется база данных индивидуальных учебных планов, которые затем утверждаются с помощью подсистемы просмотра и утверждения учебных планов.
-   222 |  -252.9933 | Цель работы подсистемы поддержки принятия решения при формировании индивидуальных учебных планов - помочь студенту выбрать наиболее подходящий для него набор дисциплин в зависимости от его профессиональных предпочтений. Для начала функционирования данной подсистемы необходимо участие экспертов. Эксперты должны оценить влияние
-   223 |    24.1324 | 14
-   224 |  -100.9068 | положительных ответов студента на вопросы подсистемы на включение дисциплин в его индивидуальный учебный план.
-   225 |     5.2975 | Подистем» ПрОСТО TJ)t И утверхдехих учебные штамм вуза
-   226 |    44.4656 | Рис.10. Архитектура АС «Моделирование траектории обучения студента»
-   227 |  -226.8964 | В представленной архитектуре не было отражено использование базы данных дополнительной информации, необходимой для корректного функционирования -системы с целью избежать перегруженности схемы. Данная база необходима для функционирования всех подсистем, в ней содержится такая информация как названия дисциплин, количество аудиторной и внеаудиторной нагрузки по дисциплинам, количество семестров, необходимых для освоения дисциплины, коэффициенты подсистемы поддержки принятия решений и многое другое.
-   228 |  -148.0947 | Как представлено на рис.11, система может работать в трех режимах доступа, в зависимости от которых имеется возможность выполнять определённые функции системы.
-   229 |  -263.5518 | Помимо трёх режимов доступа у системы должно быть четыре интерфейса, так как тьютор -это человек, предназначенный помочь студенту в моделировании своей индивидуальной траектории обучения, если в этом ему не помогла система поддержки принятия решения. Поэтому тьютору необходим доступ к той же информации, что и сотрудникам вуза или деканата, но функции он может выполнять только, как студент, т.е. только формировать индивидуальный учебный план студента (рис.12).
-   230 |  -238.2403 | В случае изменения государственных стандартов образования, необходимо внести изменения и в автоматизированную систему, такими возможностями располагает администратор системы. Например, на данный момент стандартами образования регламентируется максимальное число з.е., которое студент может набрать за семестр, оно равно 30. Предположим, что для студентов пятого курса это число увеличилось до 50, тогда необходимо отразить эти изменения в системе (указать, что для 9 и 10 семестров обучения максимальное число з.е. равно 50) для обеспечения её дальнейшего корректного функционирования.
-   231 |    10.9611 | 15
-   232 |    82.9629 | Рис. 11. Логическая схема АС «Моделирование траектории обучения студента»
-   233 |     3.8547 | © просмотр ИУП
-   234 |    -4.9559 | ® Составить учвбны» ИУП
-   235 |    11.7989 | О ИУП по семестраи
-   236 |     6.6624 | [Журналистики ^
-   237 |     3.0281 | I Периодическая печать⅝¾∣
-   238 |    -9.3568 | [ Специальность журналистики⅜
-   239 |   -96.0476 | Отметьте тапочкой семестр в который вы хотите начать изучать дисциплину. Рядом указаны трудоемкости дисциплин.
-   240 |    -3.8962 | Рис.12. Страница СППР составления индивидуальных учебных планов студентов
-   241 |  -262.3628 | По результатам тестирования СППР в ВУЗах сокращение времени формирования индивидуальных учебных планов, исходя из профессиональных предпочтений студентов, составило: Волгоградский государственный технический университет - 44,44%, Волгоградский государственный аграрный университет - 28 %, Волгоградский государственный университет -25%, а сокращение времени на формирование групп студентов для изучения дисциплин по выбору на факультетах Волгоградском государственном техническом университете: Факультет
-   242 |    13.0774 | 16
-   243 |   153.5559 | электроники и вычислительной техники - 16,67%, Факультет экономики и управления -28,57%,Факультет переподготовки инженерных кадров - 36.36% (рис. 13).
-   244 |   -12.1779 | Формирование индивидуальных учебных планов
-   245 |   -24.9792 | ВолгГТУ ВГАУ ВолГУ
-   246 |     7.8535 | ВУЗ
-   247 |    52.5074 | Рис. 13. Диаграммы временных затрат
-   248 |   -82.9623 | В заключении диссертации приводятся основные научные и прикладные результаты, полученные автором в процессе выполнения работы.
-   249 |  -136.2664 | В приложениях приведены материалы справочного, иллюстративного характера, данные, собранные в ходе анализа предметной области, а также техническая документация предлагаемого программного продукта.
-   250 |   -41.1365 | ОСНОВНЫЕ РЕЗУЛЬТАТЫ ДИССЕРТАЦИОННОЙ РАБОТЫ
-   251 |   -24.1184 | В ходе выполнения диссертационного исследования были получены и разработаны:
-   252 |  -115.0162 | 1) Концептуальная модель учебного процесса в вузе при системе зачетных единиц, которая наглядно отражает изменения в учебном процессе, связанные с переходом от Российской системы высшего профессионального образования к ФГОС 3.
-   253 |  -168.4466 | 2) Инвариантная относительно специальности методика автоматизированного управления процессом формирования индивидуализированных траекторий подготовки студента ВУЗа.
-   254 |  -251.5945 | 3) Модели семестра, дисциплин, преподавателей, учебных планов, которые унифицируют процесс составления учебных планов в соответствии со стандартом, позволяют контролировать количество зачетных единиц, набранных студентом.
-   255 |   -36.2460 | 4) Обобщённые критерии оценки трудоёмкостей дисциплин, базовых и индивидуальных учебных планов, правила определения учебной нагрузки преподавателей.
-   256 |   -52.1429 | 5) Система поддержки принятия решений студентом при составлении им своего индивидуального учебного плана и алгоритм её функционирования.
-   257 |   -50.7400 | 6) Автоматизированная система «Моделирование траектории обучения студента», прошедшая испытания на специальностях «Журналистика», «Системы автоматизированного проектирования», «Информатика и вычислительная техника», «Информационные системы в экономике» и других.
-   258 |    15.9972 | СПИСОК ПУБЛИКАЦИЙ
-   259 |    42.0563 | Публикации в изданиях, включённых в Перечень ВАК:
-   260 |   520.0721 | 1. Исаев, А.В. Автоматизированная система поддержки учебной траектории: пример реализации учебного курса / А.В. Исаев, А.Г. Кравец, М.П. Мельников, Р.А.А. Аль-Шаеби И Известия Волгоградского государственного технического университета. Серия 17
-   261 |   396.5082 | "Актуальные проблемы управления, вычислительной техники и информатики в технических системах". Выл. 10 : межвуз. сб. науч. ст. / ВолгГТУ. - Волгоград, 2011. - № 3. -С. 103-106.
-   262 |   657.1286 | 2. Кравец, А.Г. Автоматизация формирования индивидуальной траектории подготовки студента при кредитно-модульной системе обучения / А.Г. Кравец, Р.А.А. Аль-Шаеби // Известия Волгоградского государственного технического университета. Серия "Актуальные проблемы управления, вычислительной техники и информатики в технических системах". Выл. 11 : межвуз. сб. науч. ст. / ВолгГТУ. - Волгоград, 2011. - № 9. -С. 117-122.
-   263 |   584.0456 | 3. Аль-Шаеби, Р.А.А. Методика автоматизированного управления процессом формирования индивидуализированных учебных планов/ Р.А.А. Аль-Шаеби // Известия Волгоградского государственного технического университета. Серия "Актуальные проблемы управления, вычислительной техники и информатики в технических системах". Выл. 13 : межвуз. сб. науч. ст./ВолгГТУ. - Волгоград, 2012. - №4(91). - С. 87-91.
-   264 |   589.3436 | 4. Автоматизированное управление процессом формирования индивидуализированных траекторий подготовки студента вуза / Р.А.А. Аль-Шаеби, А.Г. Кравец // Современные проблемы науки и образования. - 2012. - № 2; URL: http://www.science-education.ru/102-5952 (дата обращения: 10.04.12).
-   265 |    -5.5529 | Свидетельства о регистрации программы для ЭВМ:
-   266 |   358.1065 | 5. Автоматизированная система «Моделирование траектории обучения студента»: Свидетельство о государственной регистрации программы для ЭВМ № 2012611747, Россия, ФГБОУ ВПО «Волгоградский государственный технический университет»/ Р.А.А. Аль-Шаеби, А.Г. Кравец// Дата регистрации: 12.03.12.
-   267 |    22.1490 | Прочие публикации:
-   268 |   653.4606 | 6. А.В. Исаев, А.Г. Кравец, Р.А.А. Аль-Шаеби. «Концепция разработки программного обеспечения «Автоматизированной поддержки индивидуализированной образовательной траектории». - Кол. монография «Современное состояние и пути развития системы образования». - 2012. - SWorld, Одесса, Украина. - Т.8, С. 112-126.
-   269 |   799.6186 | 7. Исаев, А.В. Фрактальная архитектура открытой системы образования / А.В. Исаев, Р.А.А. Аль-Шаеби // Информационные технологии в науке, образовании, телекоммуникации и бизнесе IT+SE'12 : матер. ХХХХ междунар, конф, и дискус. науч, клуба (майская сессия, Крым, Ялта-Гурзуф) : прилож. к журналу "Открытое образование" / РАН, ИЛУ РАН, ГУ-ВШЭ [и др.]. - [М.], 2012.
-   270 |  1150.8591 | 8. Исаев, А.В. Автоматизированная система поддержки учебной траектории: функциональные роли и их соподчинение / А.В. Исаев, А.Г. Кравец, Р.А.А. Аль-Шаеби И Перспективные инновации в науке, образовании, производстве и транспорте '2011 : сб. науч. тр. Sworld по матер, междунар, науч.-практ. конф. (21-30 июня 2011 г.) / Укр. гос. акад, ж/д транспорта [и др.]. - Одесса, Украина, 2011. - С. 21-28.
-   271 |   626.7375 | 9. Исаев, А.В. Построение автоматизированной системы сопровождения учебного курса / А.В. Исаев, А.Г. Кравец, Р.А.А. Аль-Шаеби И Информационные технологии в науке, образовании, телекоммуникации и бизнесе IT+SE'11 : матер. XXXVIII междунар, конф, и
-   272 |    19.2232 | 18
-   273 |   382.1636 | дискус. науч, клуба (майская сессия, Крым, Ялта-Гурзуф) : прилож. к журналу "Открытое образование" / РАН, ИПУ РАН, ГУ-ВШЭ [и др.]. - [M.], 2011,- С. 145-148.
-   274 |  1333.1076 | 10. Аль-Шаеби, Р.А.А. Modeling of the student individual training trajectory in frame of credit-modular system of education / Р.А.А. Аль-Шаеби, A.Γ. Кравец // Proceedings of the Congress on intelligent systems and information technologies "IS&IT' 11". Vol. 4 : [аннот. докл.] I SFU [et al.]. - Moscow,2011. - C. 111. - Англ.
-   275 |  1114.0499 | 11. Аль-Шаеби, Р.А.А. Моделирование индивидуальной траектории подготовки студента при кредитно-модульной системе обучения / Р.А.А. Аль-Шаеби, А.Г. Кравец И Труды Конгресса по интеллектуальным системам и информационным технологиям "IS&ITH" (Дивноморское, 2-9 сент. 2011 г.). В 4 т. Т. 2 : докл. секций междунар, науч.-техн. конференций "AIS'11" и "CAD-2011" / ФГОУ ВПО "Южный федеральный ун-т" [и др.]. -М., 2011.-С. 200-205.
-   276 |   721.7401 | 12. Аль-Шаеби, Р.А.А. Автоматизированная система формирования индивидуальной траектории обучения студента / Р.А.А. Аль-Шаеби // Глобальный научный потенциал: матер. 7й междунар, заочной науч.-практ. конф. (г.Тамбов, 30 июня 2011 г.) / ТГТУ [и др.]. -Тамбов, 2011.-С. 78-80
-   277 |   957.8659 | 13. Кравец, А.Г. Автоматизированная система формирования индивидуальной траектории подготовки студента [Электронный ресурс] / А.Г. Кравец, Р.А.А. Аль-Шаеби // Инновации на основе информационных и коммуникационных технологий. Инфо-2011 : матер, междунар, науч.-практ. конф. (г. Сочи, 1-10 окт. 2011 г.) / МИЭМ [и др.]. - М., 2011. - 1 электрон, опт. диск (CD-ROM). - С. 78-81.
-   278 |   911.7539 | 14. Аль-Шаеби, Р.А.А. Автоматизированная система формирования индивидуальной траектории подготовки студента при кредитно-модульной системе обучения / Р.А.А. Аль-Шаеби // TOUR-XXI: модернизация образования в туризме и академическая мобильность -международный опыт : матер, междунар, науч.-практ. конф, с элементами науч, школы для молодёжи (г. Астрахань, 1-2 ноября 2011 г.) / Программа Tempus Европейского союза, Астраханский гос. ун-т [и др.]. - Астрахань, 2011. - С. 204-208.
-   279 |  1004.5539 | 15. Аль-Шаеби, Р.А.А. Разработка механизмов генерации страницы в адаптивной обучающей системе / Р.А.А. Аль-Шаеби, О.А. Шабалина И Инновационные технологии в обучении и производстве : матер. VI всерос. науч.-практ. конф., г. Камышин, 15-16 дек. 2009 г. В 6 т. Т. 4 / ГОУ ВПО ВолгГТУ, КТИ (филиал) ВолгГТУ. - Волгоград, 2010. - С. 17-18.
-   280 |   297.3270 | Подписано в печать ^^ 17^.2012 г. Заказ № ¾55". Тираж /^экз. Печ. л. ^7 Формат 60 х 84 1/16. Бумага офсетная. Печать офсетная.
-   281 |    23.5647 | Отпечатано в типографии ИУНЛ
-   282 |   -55.6892 | Волгоградского государственного технического университета.
-   283 |   165.7552 | 400005, Волгоград, просп. им. В .И. Ленина, 28, корп. №7.
+   123 |   115.8355 | leer леем flV8e<roι
+   124 |     3.9159 | переход
+   125 |    23.4137 | ПуДООЧ!
+   126 |     6.9632 | гирею»
+   127 |    22.4961 | смру»е«и ιyιt
+   128 |   249.0537 | Рис.2. Концептуальная модель учебного процесса в вузе при СЗЕ.
+   129 |    47.3017 | puavn∙etι ι⅜κaa⅜
+   130 |    47.2607 | nperoteι⅜st⅜ι
+   131 |    59.3501 | вашем < τ⅝eatoif⅜M⅜M
+   132 |    63.7475 | 7
+   133 |   551.4510 | Автоматизации подлежат процессы формирования индивидуальных и рабочих учебных планов, а также расчёт учебной нагрузки в з.е. Поэтому была построена функциональная модель формирования учебных планов при СЗЕ (рис.З). Этап формирования рабочих и индивидуальных учебных планов был подвергнут дальнейшей детализации, результатом которой является функциональная модель формирования рабочих и индивидуальных учебных планов. Данная модель также наглядно отражает функционирование проектируемой системы, цветом выделены те блоки (=рис. 3 - №4, 6), которые могут выполняться полностью автоматически.
+   134 |  -381.3746 | Рис.З. Функциональная модель формирования учебных планов при СЗЕ Университет организует запись студентов на изучение дисциплин следующего учебного года следующим образом: вновь поступивший студент до начала занятий получает доступ к проектируемой автоматизированной системе, в которой может просмотреть подготовленный вариант типового индивидуального учебного плана и базового учебного плана для первокурсника, куда он может внести свои коррективы. Но, так как первокурснику трудно ориентироваться в наборе дисциплин, то автоматизированная система с помощью модуля поддержки принятия решения поможет студенту сделать выбор в зависимости от его профессиональных предпочтений.
+   135 |   235.3842 | В общем виде алгоритм методики автоматизированного управления формированием индивидуальных траекторий обучения студента при СЗЕ представлен на рис. 4, где Dj -обязательные последовательно изучаемые дисциплины, Dk - обязательные дисциплины, Dp -дисциплины по выбору.
+   136 |   360.5038 | Алгоритмы блоков 1 и 2 (рис. 5,9) используют модели объектов предметной области.
+   137 |    -4.9975 | Также были разработаны правила и ограничения на составление базовых и индивидуальных учебных планов, с целью учесть требования государственных стандартов.
+   138 |    58.3005 | 8
+   139 |   245.6383 | Рис.5. Формирование подмножеств дисциплин
+   140 |   228.3139 | Рис. 4. Алгоритм методики автоматизированного управления процессом формирования индивидуальных учебных планов при СЗЕ
+   141 |    58.3005 | 9
+   142 |   183.4152 | Базовый учебный план W_base на i-тый семестр, на основе которого формируется индивидуальный, включает в себя все дисциплины, которые студент может изучить в i-том семестре, т.е. трудоёмкость базового учебного плана и методику его составления можно выразить следующим образом:
+   143 |   330.3908 | W-basei-∑ Wj+2 Wk+∑ Wp>cr-m⅛, где (1) j к р
+   144 |   231.4946 | 1) начало преподавания j-той дисциплины (sj) относится к i-тому семестру, а сама j-тая дисциплина относится к группе дисциплин Dj, изучаемых обязательно и строго последовательно во времени; множество дисциплин, изученных студентом ранее, содержит множество inpj, указывающее, какие дисциплины должен изучить студент до j-той;
+   145 |   218.8457 | 2) начало преподавания k-той дисциплины (sk) относится к семестру, номер которого < i; сама k-тая дисциплина относится к группе дисциплин Dk, изучаемых обязательно, но, возможно, не последовательно во времени;
+   146 |    -1.5903 | 3) начало преподавания p-той дисциплины (sp) относится к семестру, номер которого < i; сама р-тая дисциплина относится к группе дисциплин Dp, изучаемых студентом по собственному выбору; р-тая дисциплина изучалась студентом в п семестрах, где n < ssp (количество семестров, в которых уже изучалась студентом р-тая дисциплина меньше количества семестров, которое изучается р-тая дисциплина до полного её освоения); ssp < (12-i )+1 количество семестров, которое изучается р-тая дисциплина до полного её освоения меньше либо равно сроку оставшегося обучения студента;
+   147 |  -255.7812 | 4) каждый раз при формировании базового учебного плана должен просматриваться список дисциплин Dk, если у k-той дисциплины срок её освоения ssk или срок её оставшегося освоения (если студент изучает дисциплину уже п семестров, то срок оставшегося её освоения равен (ssk - n)) равен сроку оставшегося обучения студента (т.е. равен (12-i)+l), то дисциплина включается в базовый план как обязательная и изучаемая строго последовательно во времени, Dj;
+   148 |   189.9867 | 5) каждый раз при формировании учебного плана должен просматриваться список дисциплин, у которых Dp и студент уже начал их изучать в прошлых семестрах (изучал уже п семестров), если у p-той дисциплины срок её оставшегося освоения (ssp-n) равен сроку оставшегося обучения студента (т.е. равен (12-i )+1), то дисциплина включается в базовый план как обязательная и изучаемая строго последовательно во времени, Dj.
+   149 |   662.3275 | На основе базового учебного плана на i-тый семестр студент формирует свой индивидуальный учебный план, при этом учитывается минимально необходимое (crmi∏j) и максимально возможное (cr-maXj) число з.е., которое студент может набрать за i-тый семестр. Таким образом, получаем следующее ограничение на формирование индивидуального учебного плана: cr-mi∏i < W~plar⅛ < cr-max∣ или cr-mi∏i ≤ ∑ Wj + ^ Wk+ £ Wp < cr-maxι (2)
+   150 |    12.9791 | j к Р
+   151 |   491.6115 | , где Wjι Wk, Wp - это трудоёмкости той части соответствующих дисциплин базового плана, которые включены в индивидуальный план, т.е. j-тые дисциплины в базовом и индивидуальном учебном плане совпадают, k-тые и р-тые дисциплины в индивидуальном учебном плане представляют подмножество (часть) к-тых и р-тых дисциплин базового учебного плана.
+   152 |    63.7734 | 10
+   153 |   -60.3491 | Для автоматизации процесса формирования учебных планов при СЗЕ были построены обобщённые модели семестра, дисциплины, учебного плана, преподавателей, системы поддержки принятия решений при формировании индивидуального учебного плана и алгоритм её функционирования.
+   154 |   161.6209 | Семестр характеризуется номером семестра и соответствующим ему количеством з.е.:
+   155 |   391.1215 | S = {i, prakj, attj, cr-max∣, cr_mini ∣ i С Z, 1 < i < 12} , где (3)
+   156 |   166.4466 | 1 - номер семестра, принимает целое значение от 1 до 12
+   157 |    57.4798 | prakj - количество практических недель в i-
+   158 |   -20.6206 | том семестре
+   159 |   -40.4787 | attj - количество недель итоговой аттестации в
+   160 |   626.2549 | cr maxi - максимальное число з.е., которое студент может набрать в i-том семестре cr-mi∏i - минимальное число з.е., которое студент должен набрать в i-том семестре
+   161 |    25.1332 | i-том семестре
+   162 |   -48.3942 | Таким образом, объект предметной области «Семестр» отображается следующей моделью
+   163 |   135.5066 | (рис.6):
+   164 |   171.6202 | Рисунок 6. Модель семестра
+   165 |   218.7656 | При построении модели выделены следующие классы отношений: def -идентифицирующие; use - используемые в расчетах; lim - ограничительные.
+   166 |    23.4588 | Дисциплину учебного плана в теоретико-множественном виде можно представить так:
+   167 |   594.8573 | D = {j, namej, groupj, modj, Sj, contrj, t_inpj, t_outj, inpj, teacherj, st_maxj, st-minj, st_realj, ssj, Kj}, (4)
+   168 |   101.2215 | где .
+   169 |   228.4037 | j - идентификационный номер дисциплины namej - название j-той дисциплины
+   170 |   145.8425 | groupj - группа, к которой относится j-тая дисциплина
+   171 |   146.5331 | modj - образовательный цикл , к которому относится j-тая дисциплина
+   172 |   157.1054 | sj - семестр с минимальным номером, в котором может начать изучаться j-тая дисциплина
+   173 |   142.9304 | contrj - вид контроля по j-той дисциплине (зачёт, экзамен)
+   174 |    62.3579 | inpj - множество дисциплин, которые необходимо изучить ранее j-той
+   175 |    40.0943 | t_inpj ~ продолжительность аудиторных занятий по j-той дисциплине в академических часах
+   176 |   127.6325 | t-outj - продолжительность внеаудиторных занятий по j-той дисциплине в академических часах
+   177 |   364.8252 | teacherj - преподаватель j-той дисциплины st_maxj - максимальное число студентов в группе, изучающей j-тую дисциплину
+   178 |   247.3705 | st-minj - минимальное число студентов в группе, изучающей j-тую дисциплину
+   179 |   141.3257 | st-realj - число студентов, желающих изучать j-тую дисциплину в текущем семестре
+   180 |   -49.8820 | ssj - количество семестров, которое изучается j-тая дисциплина до полного её освоения
+   181 |   -31.6579 | Kj - множество коэффициентов, где к показывает влияние положительного ответа
+   182 |   141.1986 | студента на i-тый вопрос при работе СППР на включение j-той дисциплины в индивидуальный учебный план.
+   183 |    60.5325 | Таким образом, объект предметной области «Дисциплина» отображается следующей моделью (рис.7). При построении модели выделены следующие классы отношений:
+   184 |   183.6867 | Def - идентифицирующие Lim - ограничительные
+   185 |   129.0823 | Inc - включающие Dm - принятия решения
+   186 |   191.5589 | Use - используемые в расчетах Res - результирующие
+   187 |   279.0143 | Рис. 7. Модель дисциплины
+   188 |   660.8129 | Обобщенным критерием оценки дисциплины является трудоемкость. Расчёт трудоёмкости дисциплины в зачётных единицах производится исходя из деления её трудоёмкости в академических часах на KF - коэффициент перерасчета, установленный нормативными актами (на данный момент в РФ KF=36) с округлением до 0,5 (ROUND (аргумент; точность)). Зачет по дисциплине и трудоёмкость курсовых проектов (работ) входят в общую трудоёмкость дисциплины в зачетных единицах. Один семестровый экзамен выражается 1 зачетной единицей (3 дня подготовки и 1 день на экзамен). Таким образом, трудоёмкость j-той дисциплины за семестр, выраженная в зачётных единицах, определяется следующей системой уравнений:
+   189 |   439.4628 | Wj = ROUND(≈=^Sij!ll=Ξ3L +1; о .5), если contij = «экзамен», (5)
+   190 |   419.8287 | Wj = ROUND(-t=⅛^^=-^-; 0,5), если contrj + «экзамен».
+   191 |   -86.1597 | Учебные планы составляются для всех специальностей на каждый год набора абитуриентов по любой форме, виду и ступени обучения. Тогда трудоёмкость учебного плана за i-тый семестр вычисляется по формуле:
+   192 |   347.9231 | Wjplar¾ = ROUND( ^ Wj +1,5 * {prak + att∣-); 1), (6)
+   193 |    58.6012 | 12
+   194 |   419.4256 | где суммируются все трудоёмкости j-тых дисциплин, осваиваемых студентом в i-том семестре. Преподаватель характеризуется множеством предметов, которые он преподаёт, и участием в дополнительной учебной работе (организация прохождения практики студентами, участие в итоговой аттестации). Таким образом, преподаватель представляется в виде множества: Teacher = {k, D-can∣αiι D_mustkn, prakk, at⅛ n}, где (7)
+   195 |    57.7886 | к - идентификационный номер преподавателя
+   196 |   128.1214 | D-ca∏kn - множество дисциплин, которые k-тый преподаватель может преподавать в п-ом семестре
+   197 |   135.3483 | D-mustk∏ - множество дисциплин, которые k-тый преподаватель должен преподавать в п-ом семестре
+   198 |   140.9765 | ргакк - количество недель учебной практики, организуемой k-тым преподавателем at⅛ - количество недель итоговой аттестации, в которой участвовал k-тый преподаватель п - номер семестра, в котором k-тый преподаватель ведёт указанное множество дисциплин
+   199 |   108.8701 | Таким образом, объект предметной области «Преподаватель» отображается следующей моделью (рис.8):
+   200 |   163.6048 | Рисунок 8. Модель преподавателя
+   201 |   571.0580 | При построении модели выделены следующие классы отношений: def -идентифицирующие; use - используемые в расчетах; inc - включающие; Нт - ограничительные. Тогда трудоёмкость нагрузки k-того преподавателя, выраженная в зачётных единицах, набранная им за первый семестр учебного года, рассчитывается по следующей формуле: Wjeacherk≈^(^^' + l,5*(prakkπ+attkπ)), где (9)
+   202 |    -0.4263 | " j
+   203 |   172.7397 | j-тая дисциплина € D-must∣αb п- целое (номер семестра), трудоёмкость вычисляется по всем семестрам, в которых задействован преподаватель.
+   204 |  -296.2407 | Студент или абитуриент, впервые столкнувшийся с задачей формирования своей индивидуальной траектории образования, не всегда может быстро сориентироваться, какой набор дисциплин ему следует включить в свой индивидуальный план для достижения своих профессиональных целей. Помочь в решении данной проблемы ему может тьютор (консультант по составлению индивидуального учебного плана) или система поддержки принятия решения, включённая в общую систему как модуль (студент может воспользоваться обоими способами помощи) (рис.9).
+   205 |    67.0178 | 13
+   206 |  -299.8451 | Систему поддержки принятия решения для студентов при моделировании индивидуальной траектории образования можно представить в виде набора вопросов для студентов об их профессиональных навыках и предпочтениях и набора коэффициентов, указывающих влияние
+   207 |    43.8139 | ответа на вопрос на включение дисциплины в индивидуальный учебный план.
+   208 |   190.6852 | Рис.9.Изменение вариативной части учебного плана
+   209 |  -144.0138 | Система принятия решения описывается в виде следующей модели:
+   210 |   226.3293 | Q = {i,Dp,K∣0≤k≤10},r∏e (10)
+   211 |    56.3184 | i - идентификационный номер вопроса
+   212 |   -34.9920 | Dp - множество дисциплин, которые может включить студент в свой индивидуальный учебный план по своему усмотрению
+   213 |    58.5152 | К - множество коэффициентов, где ку показывает влияние ответа на i-тый вопрос на включение j-той дисциплины из множества Dp в индивидуальный учебный план студента;
+   214 |   269.1240 | к - целое число, к С [0;10], к определяется экспертами до начала работы с системой поддержки принятия решения. Таким образом, для ∀Dpj∈D ранг Rj дисциплины по выбору рассчитывается по формуле: Rj=∑Ai*Ka, где (11)
+   215 |    87.5382 | А; - ответ на i-ый вопрос,
+   216 |   169.9035 | Ку - коэффициент влияния ответа A∣ на включение дисциплины Dp, в индивидуальный учебный план.
+   217 |    21.6413 | Затем происходит ранжирование списка дисциплин по max(Ri).
+   218 |   154.8717 | Далее в алгоритме методики (рис. 4) используется редуцированное множество дисциплин по выбору.
+   219 |    19.0022 | В четвертой главе описываются особенности проектируемой системы автоматизации моделирования индивидуальной траектории обучения студента вуза при СЗЕ. На основании построенных концептуальной и функциональных моделей разработана автоматизированная система «Моделирование траектории обучения студента». Предлагаемая архитектура системы представлена на рис. 10.
+   220 |    -4.8620 | Подсистема формирования индивидуальных учебных планов выполняет главную функцию
+   221 |   -58.1001 | системы, а именно, предоставляет студентам возможность моделировать свои индивидуальные траектории обучения на основе профессиональных предпочтений. В результате работы подсистемы наполняется база данных индивидуальных учебных планов, которые затем утверждаются с помощью подсистемы просмотра и утверждения учебных планов.
+   222 |  -209.5983 | Цель работы подсистемы поддержки принятия решения при формировании индивидуальных учебных планов - помочь студенту выбрать наиболее подходящий для него набор дисциплин в зависимости от его профессиональных предпочтений. Для начала функционирования данной подсистемы необходимо участие экспертов. Эксперты должны оценить влияние
+   223 |    62.2349 | 14
+   224 |   -46.6316 | положительных ответов студента на вопросы подсистемы на включение дисциплин в его индивидуальный учебный план.
+   225 |    18.9103 | Подистем» ПрОСТО TJ)t И утверхдехих учебные штамм вуза
+   226 |   189.1356 | Рис.10. Архитектура АС «Моделирование траектории обучения студента»
+   227 |  -157.5460 | В представленной архитектуре не было отражено использование базы данных дополнительной информации, необходимой для корректного функционирования -системы с целью избежать перегруженности схемы. Данная база необходима для функционирования всех подсистем, в ней содержится такая информация как названия дисциплин, количество аудиторной и внеаудиторной нагрузки по дисциплинам, количество семестров, необходимых для освоения дисциплины, коэффициенты подсистемы поддержки принятия решений и многое другое.
+   228 |    -5.5727 | Как представлено на рис.11, система может работать в трех режимах доступа, в зависимости от которых имеется возможность выполнять определённые функции системы.
+   229 |   212.9076 | Помимо трёх режимов доступа у системы должно быть четыре интерфейса, так как тьютор -это человек, предназначенный помочь студенту в моделировании своей индивидуальной траектории обучения, если в этом ему не помогла система поддержки принятия решения. Поэтому тьютору необходим доступ к той же информации, что и сотрудникам вуза или деканата, но функции он может выполнять только, как студент, т.е. только формировать индивидуальный учебный план студента (рис.12).
+   230 |   630.1192 | В случае изменения государственных стандартов образования, необходимо внести изменения и в автоматизированную систему, такими возможностями располагает администратор системы. Например, на данный момент стандартами образования регламентируется максимальное число з.е., которое студент может набрать за семестр, оно равно 30. Предположим, что для студентов пятого курса это число увеличилось до 50, тогда необходимо отразить эти изменения в системе (указать, что для 9 и 10 семестров обучения максимальное число з.е. равно 50) для обеспечения её дальнейшего корректного функционирования.
+   231 |    64.1636 | 15
+   232 |   167.2376 | Рис. 11. Логическая схема АС «Моделирование траектории обучения студента»
+   233 |    22.3786 | © просмотр ИУП
+   234 |    31.1194 | ® Составить учвбны» ИУП
+   235 |   -17.2937 | О ИУП по семестраи
+   236 |    45.1747 | [Журналистики ^
+   237 |    -4.3547 | I Периодическая печать⅝¾∣
+   238 |    39.1531 | [ Специальность журналистики⅜
+   239 |    38.7585 | Отметьте тапочкой семестр в который вы хотите начать изучать дисциплину. Рядом указаны трудоемкости дисциплин.
+   240 |   191.9535 | Рис.12. Страница СППР составления индивидуальных учебных планов студентов
+   241 |   142.3805 | По результатам тестирования СППР в ВУЗах сокращение времени формирования индивидуальных учебных планов, исходя из профессиональных предпочтений студентов, составило: Волгоградский государственный технический университет - 44,44%, Волгоградский государственный аграрный университет - 28 %, Волгоградский государственный университет -25%, а сокращение времени на формирование групп студентов для изучения дисциплин по выбору на факультетах Волгоградском государственном техническом университете: Факультет
+   242 |    57.2442 | 16
+   243 |   793.2716 | электроники и вычислительной техники - 16,67%, Факультет экономики и управления -28,57%,Факультет переподготовки инженерных кадров - 36.36% (рис. 13).
+   244 |    42.8187 | Формирование индивидуальных учебных планов
+   245 |    36.0041 | ВолгГТУ ВГАУ ВолГУ
+   246 |    21.1688 | ВУЗ
+   247 |   315.6863 | Рис. 13. Диаграммы временных затрат
+   248 |   -73.1646 | В заключении диссертации приводятся основные научные и прикладные результаты, полученные автором в процессе выполнения работы.
+   249 |    79.3929 | В приложениях приведены материалы справочного, иллюстративного характера, данные, собранные в ходе анализа предметной области, а также техническая документация предлагаемого программного продукта.
+   250 |   -38.6199 | ОСНОВНЫЕ РЕЗУЛЬТАТЫ ДИССЕРТАЦИОННОЙ РАБОТЫ
+   251 |   -70.0854 | В ходе выполнения диссертационного исследования были получены и разработаны:
+   252 |   -92.6848 | 1) Концептуальная модель учебного процесса в вузе при системе зачетных единиц, которая наглядно отражает изменения в учебном процессе, связанные с переходом от Российской системы высшего профессионального образования к ФГОС 3.
+   253 |     0.9669 | 2) Инвариантная относительно специальности методика автоматизированного управления процессом формирования индивидуализированных траекторий подготовки студента ВУЗа.
+   254 |    29.7810 | 3) Модели семестра, дисциплин, преподавателей, учебных планов, которые унифицируют процесс составления учебных планов в соответствии со стандартом, позволяют контролировать количество зачетных единиц, набранных студентом.
+   255 |   109.1886 | 4) Обобщённые критерии оценки трудоёмкостей дисциплин, базовых и индивидуальных учебных планов, правила определения учебной нагрузки преподавателей.
+   256 |   -18.9998 | 5) Система поддержки принятия решений студентом при составлении им своего индивидуального учебного плана и алгоритм её функционирования.
+   257 |   322.3381 | 6) Автоматизированная система «Моделирование траектории обучения студента», прошедшая испытания на специальностях «Журналистика», «Системы автоматизированного проектирования», «Информатика и вычислительная техника», «Информационные системы в экономике» и других.
+   258 |    16.1715 | СПИСОК ПУБЛИКАЦИЙ
+   259 |   100.1732 | Публикации в изданиях, включённых в Перечень ВАК:
+   260 |  1670.1141 | 1. Исаев, А.В. Автоматизированная система поддержки учебной траектории: пример реализации учебного курса / А.В. Исаев, А.Г. Кравец, М.П. Мельников, Р.А.А. Аль-Шаеби И Известия Волгоградского государственного технического университета. Серия 17
+   261 |  1636.5930 | "Актуальные проблемы управления, вычислительной техники и информатики в технических системах". Выл. 10 : межвуз. сб. науч. ст. / ВолгГТУ. - Волгоград, 2011. - № 3. -С. 103-106.
+   262 |  2731.2646 | 2. Кравец, А.Г. Автоматизация формирования индивидуальной траектории подготовки студента при кредитно-модульной системе обучения / А.Г. Кравец, Р.А.А. Аль-Шаеби // Известия Волгоградского государственного технического университета. Серия "Актуальные проблемы управления, вычислительной техники и информатики в технических системах". Выл. 11 : межвуз. сб. науч. ст. / ВолгГТУ. - Волгоград, 2011. - № 9. -С. 117-122.
+   263 |  2744.5659 | 3. Аль-Шаеби, Р.А.А. Методика автоматизированного управления процессом формирования индивидуализированных учебных планов/ Р.А.А. Аль-Шаеби // Известия Волгоградского государственного технического университета. Серия "Актуальные проблемы управления, вычислительной техники и информатики в технических системах". Выл. 13 : межвуз. сб. науч. ст./ВолгГТУ. - Волгоград, 2012. - №4(91). - С. 87-91.
+   264 |  2159.3613 | 4. Автоматизированное управление процессом формирования индивидуализированных траекторий подготовки студента вуза / Р.А.А. Аль-Шаеби, А.Г. Кравец // Современные проблемы науки и образования. - 2012. - № 2; URL: http://www.science-education.ru/102-5952 (дата обращения: 10.04.12).
+   265 |    51.1856 | Свидетельства о регистрации программы для ЭВМ:
+   266 |  1416.4847 | 5. Автоматизированная система «Моделирование траектории обучения студента»: Свидетельство о государственной регистрации программы для ЭВМ № 2012611747, Россия, ФГБОУ ВПО «Волгоградский государственный технический университет»/ Р.А.А. Аль-Шаеби, А.Г. Кравец// Дата регистрации: 12.03.12.
+   267 |    23.8234 | Прочие публикации:
+   268 |  2350.4297 | 6. А.В. Исаев, А.Г. Кравец, Р.А.А. Аль-Шаеби. «Концепция разработки программного обеспечения «Автоматизированной поддержки индивидуализированной образовательной траектории». - Кол. монография «Современное состояние и пути развития системы образования». - 2012. - SWorld, Одесса, Украина. - Т.8, С. 112-126.
+   269 |  2472.7665 | 7. Исаев, А.В. Фрактальная архитектура открытой системы образования / А.В. Исаев, Р.А.А. Аль-Шаеби // Информационные технологии в науке, образовании, телекоммуникации и бизнесе IT+SE'12 : матер. ХХХХ междунар, конф, и дискус. науч, клуба (майская сессия, Крым, Ялта-Гурзуф) : прилож. к журналу "Открытое образование" / РАН, ИЛУ РАН, ГУ-ВШЭ [и др.]. - [М.], 2012.
+   270 |  3625.5369 | 8. Исаев, А.В. Автоматизированная система поддержки учебной траектории: функциональные роли и их соподчинение / А.В. Исаев, А.Г. Кравец, Р.А.А. Аль-Шаеби И Перспективные инновации в науке, образовании, производстве и транспорте '2011 : сб. науч. тр. Sworld по матер, междунар, науч.-практ. конф. (21-30 июня 2011 г.) / Укр. гос. акад, ж/д транспорта [и др.]. - Одесса, Украина, 2011. - С. 21-28.
+   271 |  1655.6686 | 9. Исаев, А.В. Построение автоматизированной системы сопровождения учебного курса / А.В. Исаев, А.Г. Кравец, Р.А.А. Аль-Шаеби И Информационные технологии в науке, образовании, телекоммуникации и бизнесе IT+SE'11 : матер. XXXVIII междунар, конф, и
+   272 |    63.7734 | 18
+   273 |  1400.5701 | дискус. науч, клуба (майская сессия, Крым, Ялта-Гурзуф) : прилож. к журналу "Открытое образование" / РАН, ИПУ РАН, ГУ-ВШЭ [и др.]. - [M.], 2011,- С. 145-148.
+   274 |  3497.0292 | 10. Аль-Шаеби, Р.А.А. Modeling of the student individual training trajectory in frame of credit-modular system of education / Р.А.А. Аль-Шаеби, A.Γ. Кравец // Proceedings of the Congress on intelligent systems and information technologies "IS&IT' 11". Vol. 4 : [аннот. докл.] I SFU [et al.]. - Moscow,2011. - C. 111. - Англ.
+   275 |  3887.2878 | 11. Аль-Шаеби, Р.А.А. Моделирование индивидуальной траектории подготовки студента при кредитно-модульной системе обучения / Р.А.А. Аль-Шаеби, А.Г. Кравец И Труды Конгресса по интеллектуальным системам и информационным технологиям "IS&ITH" (Дивноморское, 2-9 сент. 2011 г.). В 4 т. Т. 2 : докл. секций междунар, науч.-техн. конференций "AIS'11" и "CAD-2011" / ФГОУ ВПО "Южный федеральный ун-т" [и др.]. -М., 2011.-С. 200-205.
+   276 |  2877.4579 | 12. Аль-Шаеби, Р.А.А. Автоматизированная система формирования индивидуальной траектории обучения студента / Р.А.А. Аль-Шаеби // Глобальный научный потенциал: матер. 7й междунар, заочной науч.-практ. конф. (г.Тамбов, 30 июня 2011 г.) / ТГТУ [и др.]. -Тамбов, 2011.-С. 78-80
+   277 |  3794.8168 | 13. Кравец, А.Г. Автоматизированная система формирования индивидуальной траектории подготовки студента [Электронный ресурс] / А.Г. Кравец, Р.А.А. Аль-Шаеби // Инновации на основе информационных и коммуникационных технологий. Инфо-2011 : матер, междунар, науч.-практ. конф. (г. Сочи, 1-10 окт. 2011 г.) / МИЭМ [и др.]. - М., 2011. - 1 электрон, опт. диск (CD-ROM). - С. 78-81.
+   278 |  3232.5597 | 14. Аль-Шаеби, Р.А.А. Автоматизированная система формирования индивидуальной траектории подготовки студента при кредитно-модульной системе обучения / Р.А.А. Аль-Шаеби // TOUR-XXI: модернизация образования в туризме и академическая мобильность -международный опыт : матер, междунар, науч.-практ. конф, с элементами науч, школы для молодёжи (г. Астрахань, 1-2 ноября 2011 г.) / Программа Tempus Европейского союза, Астраханский гос. ун-т [и др.]. - Астрахань, 2011. - С. 204-208.
+   279 |  3710.7562 | 15. Аль-Шаеби, Р.А.А. Разработка механизмов генерации страницы в адаптивной обучающей системе / Р.А.А. Аль-Шаеби, О.А. Шабалина И Инновационные технологии в обучении и производстве : матер. VI всерос. науч.-практ. конф., г. Камышин, 15-16 дек. 2009 г. В 6 т. Т. 4 / ГОУ ВПО ВолгГТУ, КТИ (филиал) ВолгГТУ. - Волгоград, 2010. - С. 17-18.
+   280 |  1499.2664 | Подписано в печать ^^ 17^.2012 г. Заказ № ¾55". Тираж /^экз. Печ. л. ^7 Формат 60 х 84 1/16. Бумага офсетная. Печать офсетная.
+   281 |    17.4546 | Отпечатано в типографии ИУНЛ
+   282 |    69.2151 | Волгоградского государственного технического университета.
+   283 |   843.0865 | 400005, Волгоград, просп. им. В .И. Ленина, 28, корп. №7.
 
 ================================================================================
 STATISTICS
 ================================================================================
 Lines : 283
-Min   : -596.5367
-Max   : 1333.1076
-Mean  : 33.0606
+Min   : -381.3746
+Max   : 3928.2686
+Mean  : 274.5039

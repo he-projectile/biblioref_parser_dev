@@ -2,750 +2,750 @@ PATTERN RECOGNITION
 ================================================================================
 
 Patterns:
-    0: DOT (weight=1.000000)
-    1: INITIAL (weight=1.000000)
-    2: INITIALS (weight=1.000000)
-    3: YEAR (weight=1.000000)
-    4: NUMBER (weight=1.000000)
-    5: COMMA (weight=1.000000)
-    6: NUMBER (weight=1.000000)
-    7: DASH (weight=1.000000)
-    8: PAGES (weight=1.000000)
-    9: DOT (weight=1.000000)
-   10: INITIAL (weight=1.000000)
-   11: DASH (weight=1.000000)
-   12: DASH (weight=1.000000)
-   13: DOT (weight=1.000000)
-   14: COLON (weight=1.000000)
-   15: COMMA (weight=1.000000)
-   16: NUMBER (weight=1.000000)
-   17: NUMBER (weight=1.000000)
-   18: DASH (weight=1.000000)
-   19: QUOTATION (weight=1.000000)
-   20: DOT (weight=1.000000)
-   21: DOT (weight=1.000000)
-   22: YEAR (weight=1.000000)
-   23: INITIAL (weight=1.000000)
-   24: COLON (weight=1.000000)
-   25: DOT (weight=1.000000)
-   26: DASH (weight=1.000000)
-   27: COLON (weight=1.000000)
-   28: NUMBER (weight=1.000000)
-   29: DOT (weight=1.000000)
-   30: COMMA (weight=1.000000)
-   31: COMMA (weight=1.000000)
-   32: INITIAL (weight=1.000000)
-   33: DASH (weight=1.000000)
-   34: COMMA (weight=1.000000)
-   35: DOT (weight=1.000000)
-   36: QUOTATION (weight=1.000000)
-   37: DASH (weight=1.000000)
-   38: DOT (weight=1.000000)
-   39: URL (weight=1.000000)
-   40: SLASH (weight=1.000000)
-   41: PARENTHESIS (weight=1.000000)
-   42: DOUBLE_SLASH (weight=1.000000)
-   43: COLON (weight=1.000000)
-   44: COMMA (weight=1.000000)
-   45: QUOTATION (weight=1.000000)
-   46: NUMBER (weight=1.000000)
-   47: DASH (weight=1.000000)
-   48: PARENTHESIS (weight=1.000000)
-   49: NUMBER (weight=1.000000)
-   50: QUOTATION (weight=1.000000)
-   51: NUMBER (weight=1.000000)
-   52: PARENTHESIS (weight=1.000000)
-   53: INITIAL (weight=1.000000)
-   54: INITIAL (weight=1.000000)
-   55: INITIALS (weight=1.000000)
-   56: INITIALS (weight=1.000000)
-   57: NUMBER (weight=1.000000)
-   58: YEAR (weight=1.000000)
-   59: PARENTHESIS (weight=1.000000)
-   60: INITIAL (weight=1.000000)
-   61: YEAR (weight=1.000000)
-   62: ENTITY_SHAPE (weight=1.000000)
-   63: ENTITY_SHAPE (weight=1.000000)
-   64: ENTITY_SHAPE (weight=1.000000)
-   65: ENTITY_SHAPE (weight=1.000000)
-   66: ENTITY_SHAPE (weight=1.000000)
-   67: ENTITY_SHAPE (weight=1.000000)
-   68: ENTITY_SHAPE (weight=1.000000)
-   69: ENTITY_SHAPE (weight=1.000000)
-   70: ENTITY_SHAPE (weight=1.000000)
-   71: ENTITY_SHAPE (weight=1.000000)
-   72: ENTITY_SHAPE (weight=1.000000)
-   73: ENTITY_SHAPE (weight=1.000000)
-   74: ENTITY_SHAPE (weight=1.000000)
-   75: ENTITY_SHAPE (weight=1.000000)
-   76: ENTITY_SHAPE (weight=1.000000)
-   77: ENTITY_SHAPE (weight=1.000000)
-   78: ENTITY_SHAPE (weight=1.000000)
-   79: ENTITY_SHAPE (weight=1.000000)
-   80: ENTITY_SHAPE (weight=1.000000)
-   81: ENTITY_SHAPE (weight=1.000000)
-   82: ENTITY_SHAPE (weight=1.000000)
-   83: ENTITY_SHAPE (weight=1.000000)
-   84: ENTITY_SHAPE (weight=1.000000)
-   85: ENTITY_SHAPE (weight=1.000000)
-   86: ENTITY_SHAPE (weight=1.000000)
-   87: ENTITY_SHAPE (weight=1.000000)
-   88: ENTITY_SHAPE (weight=1.000000)
-   89: ENTITY_SHAPE (weight=1.000000)
-   90: ENTITY_SHAPE (weight=1.000000)
-   91: ENTITY_SHAPE (weight=1.000000)
-   92: ENTITY_SHAPE (weight=1.000000)
-   93: ENTITY_SHAPE (weight=1.000000)
-   94: ENTITY_SHAPE (weight=1.000000)
-   95: ENTITY_SHAPE (weight=1.000000)
-   96: ENTITY_SHAPE (weight=1.000000)
-   97: ENTITY_SHAPE (weight=1.000000)
-   98: ENTITY_SHAPE (weight=1.000000)
-   99: ENTITY_SHAPE (weight=1.000000)
-  100: ENTITY_SHAPE (weight=1.000000)
-  101: ENTITY_SHAPE (weight=1.000000)
-  102: ENTITY_SHAPE (weight=1.000000)
-  103: ENTITY_SHAPE (weight=1.000000)
-  104: ENTITY_SHAPE (weight=1.000000)
-  105: ENTITY_SHAPE (weight=1.000000)
-  106: ENTITY_SHAPE (weight=1.000000)
-  107: ENTITY_SHAPE (weight=1.000000)
-  108: ENTITY_SHAPE (weight=1.000000)
-  109: ENTITY_SHAPE (weight=1.000000)
-  110: ENTITY_SHAPE (weight=1.000000)
-  111: ENTITY_SHAPE (weight=1.000000)
-  112: ENTITY_SHAPE (weight=1.000000)
-  113: ENTITY_SHAPE (weight=1.000000)
-  114: ENTITY_SHAPE (weight=1.000000)
-  115: ENTITY_SHAPE (weight=1.000000)
-  116: ENTITY_SHAPE (weight=1.000000)
-  117: ENTITY_SHAPE (weight=1.000000)
-  118: ENTITY_SHAPE (weight=1.000000)
-  119: ENTITY_SHAPE (weight=1.000000)
-  120: ENTITY_SHAPE (weight=1.000000)
-  121: ENTITY_SHAPE (weight=1.000000)
-  122: ENTITY_SHAPE (weight=1.000000)
-  123: ENTITY_SHAPE (weight=1.000000)
-  124: ENTITY_SHAPE (weight=1.000000)
-  125: ENTITY_SHAPE (weight=1.000000)
-  126: ENTITY_SHAPE (weight=1.000000)
-  127: ENTITY_SHAPE (weight=1.000000)
-  128: ENTITY_SHAPE (weight=1.000000)
-  129: ENTITY_SHAPE (weight=1.000000)
-  130: ENTITY_SHAPE (weight=1.000000)
-  131: ENTITY_SHAPE (weight=1.000000)
-  132: ENTITY_SHAPE (weight=1.000000)
-  133: ENTITY_SHAPE (weight=1.000000)
-  134: ENTITY_SHAPE (weight=1.000000)
-  135: ENTITY_SHAPE (weight=1.000000)
-  136: ENTITY_SHAPE (weight=1.000000)
-  137: ENTITY_SHAPE (weight=1.000000)
-  138: ENTITY_SHAPE (weight=1.000000)
-  139: ENTITY_SHAPE (weight=1.000000)
-  140: ENTITY_SHAPE (weight=1.000000)
-  141: ENTITY_SHAPE (weight=1.000000)
-  142: ENTITY_SHAPE (weight=1.000000)
-  143: ENTITY_SHAPE (weight=1.000000)
-  144: ENTITY_SHAPE (weight=1.000000)
-  145: ENTITY_SHAPE (weight=1.000000)
-  146: ENTITY_SHAPE (weight=1.000000)
-  147: ENTITY_SHAPE (weight=1.000000)
-  148: ENTITY_SHAPE (weight=1.000000)
-  149: ENTITY_SHAPE (weight=1.000000)
-  150: ENTITY_SHAPE (weight=1.000000)
-  151: ENTITY_SHAPE (weight=1.000000)
-  152: ENTITY_SHAPE (weight=1.000000)
-  153: ENTITY_SHAPE (weight=1.000000)
-  154: ENTITY_SHAPE (weight=1.000000)
-  155: ENTITY_SHAPE (weight=1.000000)
-  156: ENTITY_SHAPE (weight=1.000000)
-  157: ENTITY_SHAPE (weight=1.000000)
-  158: ENTITY_SHAPE (weight=1.000000)
-  159: ENTITY_SHAPE (weight=1.000000)
-  160: ENTITY_SHAPE (weight=1.000000)
-  161: ENTITY_SHAPE (weight=1.000000)
-  162: ENTITY_SHAPE (weight=1.000000)
-  163: ENTITY_SHAPE (weight=1.000000)
-  164: ENTITY_SHAPE (weight=1.000000)
-  165: ENTITY_SHAPE (weight=1.000000)
-  166: ENTITY_SHAPE (weight=1.000000)
-  167: ENTITY_SHAPE (weight=1.000000)
-  168: ENTITY_SHAPE (weight=1.000000)
-  169: ENTITY_SHAPE (weight=1.000000)
-  170: ENTITY_SHAPE (weight=1.000000)
-  171: ENTITY_SHAPE (weight=1.000000)
-  172: ENTITY_SHAPE (weight=1.000000)
-  173: ENTITY_SHAPE (weight=1.000000)
-  174: ENTITY_SHAPE (weight=1.000000)
-  175: ENTITY_SHAPE (weight=1.000000)
-  176: ENTITY_SHAPE (weight=1.000000)
-  177: ENTITY_SHAPE (weight=1.000000)
-  178: ENTITY_SHAPE (weight=1.000000)
-  179: ENTITY_SHAPE (weight=1.000000)
-  180: ENTITY_SHAPE (weight=1.000000)
-  181: ENTITY_SHAPE (weight=1.000000)
-  182: ENTITY_SHAPE (weight=1.000000)
-  183: ENTITY_SHAPE (weight=1.000000)
-  184: ENTITY_SHAPE (weight=1.000000)
-  185: ENTITY_SHAPE (weight=1.000000)
-  186: ENTITY_SHAPE (weight=1.000000)
-  187: ENTITY_SHAPE (weight=1.000000)
-  188: ENTITY_SHAPE (weight=1.000000)
-  189: ENTITY_SHAPE (weight=1.000000)
-  190: ENTITY_SHAPE (weight=1.000000)
-  191: ENTITY_SHAPE (weight=1.000000)
-  192: ENTITY_SHAPE (weight=1.000000)
-  193: ENTITY_SHAPE (weight=1.000000)
-  194: ENTITY_SHAPE (weight=1.000000)
-  195: ENTITY_SHAPE (weight=1.000000)
-  196: ENTITY_SHAPE (weight=1.000000)
-  197: ENTITY_SHAPE (weight=1.000000)
-  198: ENTITY_SHAPE (weight=1.000000)
-  199: ENTITY_SHAPE (weight=1.000000)
-  200: ENTITY_SHAPE (weight=1.000000)
-  201: ENTITY_SHAPE (weight=1.000000)
-  202: ENTITY_SHAPE (weight=1.000000)
-  203: ENTITY_SHAPE (weight=1.000000)
-  204: SEPARATOR (weight=1.000000)
-  205: SEPARATOR (weight=1.000000)
-  206: SEPARATOR (weight=1.000000)
-  207: SEPARATOR (weight=1.000000)
-  208: SEPARATOR (weight=1.000000)
-  209: SEPARATOR (weight=1.000000)
-  210: SEPARATOR (weight=1.000000)
-  211: SEPARATOR (weight=1.000000)
-  212: SEPARATOR (weight=1.000000)
-  213: SEPARATOR (weight=1.000000)
-  214: SEPARATOR (weight=1.000000)
-  215: SEPARATOR (weight=1.000000)
-  216: SEPARATOR (weight=1.000000)
-  217: SEPARATOR (weight=1.000000)
-  218: SEPARATOR (weight=1.000000)
-  219: SEPARATOR (weight=1.000000)
-  220: SEPARATOR (weight=1.000000)
-  221: SEPARATOR (weight=1.000000)
-  222: SEPARATOR (weight=1.000000)
-  223: SEPARATOR (weight=1.000000)
-  224: SEPARATOR (weight=1.000000)
-  225: SEPARATOR (weight=1.000000)
-  226: SEPARATOR (weight=1.000000)
-  227: SEPARATOR (weight=1.000000)
-  228: SEPARATOR (weight=1.000000)
-  229: SEPARATOR (weight=1.000000)
-  230: SEPARATOR (weight=1.000000)
-  231: SEPARATOR (weight=1.000000)
-  232: SEPARATOR (weight=1.000000)
-  233: SEPARATOR (weight=1.000000)
-  234: SEPARATOR (weight=1.000000)
-  235: SEPARATOR (weight=1.000000)
-  236: SEPARATOR (weight=1.000000)
-  237: SEPARATOR (weight=1.000000)
-  238: SEPARATOR (weight=1.000000)
-  239: SEPARATOR (weight=1.000000)
-  240: SEPARATOR (weight=1.000000)
-  241: SEPARATOR (weight=1.000000)
-  242: SEPARATOR (weight=1.000000)
-  243: SEPARATOR (weight=1.000000)
-  244: SEPARATOR (weight=1.000000)
-  245: SEPARATOR (weight=1.000000)
-  246: SEPARATOR (weight=1.000000)
-  247: SEPARATOR (weight=1.000000)
-  248: SEPARATOR (weight=1.000000)
-  249: SEPARATOR (weight=1.000000)
-  250: SEPARATOR (weight=1.000000)
-  251: SEPARATOR (weight=1.000000)
-  252: SEPARATOR (weight=1.000000)
-  253: SEPARATOR (weight=1.000000)
-  254: SEPARATOR (weight=1.000000)
-  255: SEPARATOR (weight=1.000000)
-  256: SEPARATOR (weight=1.000000)
-  257: SEPARATOR (weight=1.000000)
-  258: SEPARATOR (weight=1.000000)
-  259: SEPARATOR (weight=1.000000)
-  260: SEPARATOR (weight=1.000000)
-  261: SEPARATOR (weight=1.000000)
-  262: SEPARATOR (weight=1.000000)
-  263: SEPARATOR (weight=1.000000)
-  264: SEPARATOR (weight=1.000000)
-  265: SEPARATOR (weight=1.000000)
-  266: SEPARATOR (weight=1.000000)
-  267: SEPARATOR (weight=1.000000)
-  268: SEPARATOR (weight=1.000000)
-  269: SEPARATOR (weight=1.000000)
-  270: SEPARATOR (weight=1.000000)
-  271: SEPARATOR (weight=1.000000)
-  272: SEPARATOR (weight=1.000000)
-  273: SEPARATOR (weight=1.000000)
-  274: SEPARATOR (weight=1.000000)
-  275: SEPARATOR (weight=1.000000)
-  276: SEPARATOR (weight=1.000000)
-  277: SEPARATOR (weight=1.000000)
-  278: SEPARATOR (weight=1.000000)
-  279: SEPARATOR (weight=1.000000)
-  280: SEPARATOR (weight=1.000000)
-  281: SEPARATOR (weight=1.000000)
-  282: SEPARATOR (weight=1.000000)
-  283: SEPARATOR (weight=1.000000)
-  284: SEPARATOR (weight=1.000000)
-  285: SEPARATOR (weight=1.000000)
-  286: SEPARATOR (weight=1.000000)
-  287: SEPARATOR (weight=1.000000)
-  288: SEPARATOR (weight=1.000000)
-  289: SEPARATOR (weight=1.000000)
-  290: SEPARATOR (weight=1.000000)
-  291: SEPARATOR (weight=1.000000)
-  292: SEPARATOR (weight=1.000000)
-  293: SEPARATOR (weight=1.000000)
-  294: SEPARATOR (weight=1.000000)
-  295: SEPARATOR (weight=1.000000)
-  296: SEPARATOR (weight=1.000000)
-  297: SEPARATOR (weight=1.000000)
-  298: SEPARATOR (weight=1.000000)
-  299: SEPARATOR (weight=1.000000)
-  300: SEPARATOR (weight=1.000000)
-  301: SEPARATOR (weight=1.000000)
-  302: SEPARATOR (weight=1.000000)
-  303: SEPARATOR (weight=1.000000)
-  304: SEPARATOR (weight=1.000000)
-  305: SEPARATOR (weight=1.000000)
-  306: SEPARATOR (weight=1.000000)
-  307: SEPARATOR (weight=1.000000)
-  308: SEPARATOR (weight=1.000000)
-  309: SEPARATOR (weight=1.000000)
-  310: SEPARATOR (weight=1.000000)
-  311: SEPARATOR (weight=1.000000)
-  312: SEPARATOR (weight=1.000000)
-  313: SEPARATOR (weight=1.000000)
-  314: SEPARATOR (weight=1.000000)
-  315: SEPARATOR (weight=1.000000)
-  316: SEPARATOR (weight=1.000000)
-  317: SEPARATOR (weight=1.000000)
-  318: SEPARATOR (weight=1.000000)
-  319: SEPARATOR (weight=1.000000)
-  320: SEPARATOR (weight=1.000000)
-  321: SEPARATOR (weight=1.000000)
-  322: SEPARATOR (weight=1.000000)
-  323: SEPARATOR (weight=1.000000)
-  324: SEPARATOR (weight=1.000000)
-  325: SEPARATOR (weight=1.000000)
-  326: SEPARATOR (weight=1.000000)
-  327: SEPARATOR (weight=1.000000)
-  328: SEPARATOR (weight=1.000000)
-  329: SEPARATOR (weight=1.000000)
-  330: SEPARATOR (weight=1.000000)
-  331: SEPARATOR (weight=1.000000)
-  332: SEPARATOR (weight=1.000000)
-  333: SEPARATOR (weight=1.000000)
-  334: SEPARATOR (weight=1.000000)
-  335: SEPARATOR (weight=1.000000)
-  336: SEPARATOR (weight=1.000000)
-  337: SEPARATOR (weight=1.000000)
-  338: SEPARATOR (weight=1.000000)
-  339: SEPARATOR (weight=1.000000)
-  340: SEPARATOR (weight=1.000000)
-  341: SEPARATOR (weight=1.000000)
-  342: SEPARATOR (weight=1.000000)
-  343: SEPARATOR (weight=1.000000)
-  344: SEPARATOR (weight=1.000000)
-  345: SEPARATOR (weight=1.000000)
-  346: SEPARATOR (weight=1.000000)
-  347: SEPARATOR (weight=1.000000)
-  348: SEPARATOR (weight=1.000000)
-  349: SEPARATOR (weight=1.000000)
-  350: SEPARATOR (weight=1.000000)
-  351: SEPARATOR (weight=1.000000)
-  352: SEPARATOR (weight=1.000000)
-  353: SEPARATOR (weight=1.000000)
-  354: SEPARATOR (weight=1.000000)
-  355: SEPARATOR (weight=1.000000)
-  356: SEPARATOR (weight=1.000000)
-  357: SEPARATOR (weight=1.000000)
-  358: SEPARATOR (weight=1.000000)
-  359: SEPARATOR (weight=1.000000)
-  360: SEPARATOR (weight=1.000000)
-  361: SEPARATOR (weight=1.000000)
-  362: SEPARATOR (weight=1.000000)
-  363: SEPARATOR (weight=1.000000)
-  364: SEPARATOR (weight=1.000000)
-  365: SEPARATOR (weight=1.000000)
-  366: SEPARATOR (weight=1.000000)
-  367: SEPARATOR (weight=1.000000)
-  368: SEPARATOR (weight=1.000000)
-  369: SEPARATOR (weight=1.000000)
-  370: SEPARATOR (weight=1.000000)
-  371: SEPARATOR (weight=1.000000)
-  372: SEPARATOR (weight=1.000000)
-  373: SEPARATOR (weight=1.000000)
-  374: SEPARATOR (weight=1.000000)
-  375: SEPARATOR (weight=1.000000)
-  376: SEPARATOR (weight=1.000000)
-  377: SEPARATOR (weight=1.000000)
-  378: SEPARATOR (weight=1.000000)
-  379: SEPARATOR (weight=1.000000)
-  380: SEPARATOR (weight=1.000000)
-  381: SEPARATOR (weight=1.000000)
-  382: SEPARATOR (weight=1.000000)
-  383: SEPARATOR (weight=1.000000)
-  384: SEPARATOR (weight=1.000000)
-  385: SEPARATOR (weight=1.000000)
-  386: SEPARATOR (weight=1.000000)
-  387: SEPARATOR (weight=1.000000)
-  388: SEPARATOR (weight=1.000000)
-  389: SEPARATOR (weight=1.000000)
-  390: SEPARATOR (weight=1.000000)
-  391: SEPARATOR (weight=1.000000)
-  392: SEPARATOR (weight=1.000000)
-  393: SEPARATOR (weight=1.000000)
-  394: SEPARATOR (weight=1.000000)
-  395: SEPARATOR (weight=1.000000)
-  396: SEPARATOR (weight=1.000000)
-  397: SEPARATOR (weight=1.000000)
-  398: SEPARATOR (weight=1.000000)
-  399: SEPARATOR (weight=1.000000)
-  400: SEPARATOR (weight=1.000000)
-  401: SEPARATOR (weight=1.000000)
-  402: SEPARATOR (weight=1.000000)
-  403: SEPARATOR (weight=1.000000)
-  404: SEPARATOR (weight=1.000000)
-  405: SEPARATOR (weight=1.000000)
-  406: SEPARATOR (weight=1.000000)
-  407: SEPARATOR (weight=1.000000)
-  408: SEPARATOR (weight=1.000000)
-  409: SEPARATOR (weight=1.000000)
-  410: SEPARATOR (weight=1.000000)
-  411: SEPARATOR (weight=1.000000)
-  412: SEPARATOR (weight=1.000000)
-  413: SEPARATOR (weight=1.000000)
-  414: SEPARATOR (weight=1.000000)
-  415: SEPARATOR (weight=1.000000)
-  416: SEPARATOR (weight=1.000000)
-  417: SEPARATOR (weight=1.000000)
-  418: SEPARATOR (weight=1.000000)
-  419: SEPARATOR (weight=1.000000)
-  420: SEPARATOR (weight=1.000000)
-  421: SEPARATOR (weight=1.000000)
-  422: SEPARATOR (weight=1.000000)
-  423: SEPARATOR (weight=1.000000)
-  424: SEPARATOR (weight=1.000000)
-  425: SEPARATOR (weight=1.000000)
-  426: SEPARATOR (weight=1.000000)
-  427: SEPARATOR (weight=1.000000)
-  428: SEPARATOR (weight=1.000000)
+    0: DOT (weight=5.442195)
+    1: INITIAL (weight=4.829944)
+    2: INITIALS (weight=-3.233417)
+    3: YEAR (weight=4.168792)
+    4: NUMBER (weight=7.698815)
+    5: COMMA (weight=1.104946)
+    6: NUMBER (weight=8.504256)
+    7: DASH (weight=-2.553853)
+    8: PAGES (weight=8.217553)
+    9: DOT (weight=8.393661)
+   10: INITIAL (weight=2.740979)
+   11: DASH (weight=3.022699)
+   12: DASH (weight=9.192924)
+   13: DOT (weight=7.599384)
+   14: COLON (weight=3.594488)
+   15: COMMA (weight=3.819573)
+   16: NUMBER (weight=5.553001)
+   17: NUMBER (weight=9.490096)
+   18: DASH (weight=-0.817403)
+   19: QUOTATION (weight=-5.925434)
+   20: DOT (weight=1.450635)
+   21: DOT (weight=7.502193)
+   22: YEAR (weight=3.059370)
+   23: INITIAL (weight=8.701287)
+   24: COLON (weight=4.789671)
+   25: DOT (weight=7.276241)
+   26: DASH (weight=7.913018)
+   27: COLON (weight=0.160068)
+   28: NUMBER (weight=9.114366)
+   29: DOT (weight=3.975388)
+   30: COMMA (weight=4.282884)
+   31: COMMA (weight=4.348674)
+   32: INITIAL (weight=5.327569)
+   33: DASH (weight=8.055120)
+   34: COMMA (weight=-5.355148)
+   35: DOT (weight=8.228884)
+   36: QUOTATION (weight=-8.237623)
+   37: DASH (weight=5.917938)
+   38: DOT (weight=8.966172)
+   39: URL (weight=-1.104368)
+   40: SLASH (weight=2.687970)
+   41: PARENTHESIS (weight=-4.324764)
+   42: DOUBLE_SLASH (weight=4.112969)
+   43: COLON (weight=3.792269)
+   44: COMMA (weight=-2.400080)
+   45: QUOTATION (weight=5.819232)
+   46: NUMBER (weight=4.824439)
+   47: DASH (weight=9.781280)
+   48: PARENTHESIS (weight=-3.794813)
+   49: NUMBER (weight=7.754383)
+   50: QUOTATION (weight=2.675444)
+   51: NUMBER (weight=3.824937)
+   52: PARENTHESIS (weight=6.795625)
+   53: INITIAL (weight=-1.590094)
+   54: INITIAL (weight=9.397790)
+   55: INITIALS (weight=-5.508415)
+   56: INITIALS (weight=3.070737)
+   57: NUMBER (weight=4.880426)
+   58: YEAR (weight=-5.276741)
+   59: PARENTHESIS (weight=-8.125208)
+   60: INITIAL (weight=6.700263)
+   61: YEAR (weight=8.788475)
+   62: ENTITY_SHAPE (weight=-3.344227)
+   63: ENTITY_SHAPE (weight=5.576510)
+   64: ENTITY_SHAPE (weight=5.708442)
+   65: ENTITY_SHAPE (weight=-3.773604)
+   66: ENTITY_SHAPE (weight=2.416094)
+   67: ENTITY_SHAPE (weight=-4.759517)
+   68: ENTITY_SHAPE (weight=-6.661941)
+   69: ENTITY_SHAPE (weight=1.740066)
+   70: ENTITY_SHAPE (weight=-7.232306)
+   71: ENTITY_SHAPE (weight=-2.831879)
+   72: ENTITY_SHAPE (weight=-4.327639)
+   73: ENTITY_SHAPE (weight=-0.766870)
+   74: ENTITY_SHAPE (weight=-2.034275)
+   75: ENTITY_SHAPE (weight=-5.930206)
+   76: ENTITY_SHAPE (weight=3.913894)
+   77: ENTITY_SHAPE (weight=-2.719634)
+   78: ENTITY_SHAPE (weight=-1.262779)
+   79: ENTITY_SHAPE (weight=-2.444354)
+   80: ENTITY_SHAPE (weight=8.440561)
+   81: ENTITY_SHAPE (weight=-2.494751)
+   82: ENTITY_SHAPE (weight=5.242099)
+   83: ENTITY_SHAPE (weight=-3.386599)
+   84: ENTITY_SHAPE (weight=3.325278)
+   85: ENTITY_SHAPE (weight=0.624992)
+   86: ENTITY_SHAPE (weight=3.068277)
+   87: ENTITY_SHAPE (weight=5.314764)
+   88: ENTITY_SHAPE (weight=-5.082121)
+   89: ENTITY_SHAPE (weight=0.341099)
+   90: ENTITY_SHAPE (weight=-6.723282)
+   91: ENTITY_SHAPE (weight=4.148707)
+   92: ENTITY_SHAPE (weight=9.869714)
+   93: ENTITY_SHAPE (weight=1.111810)
+   94: ENTITY_SHAPE (weight=7.731031)
+   95: ENTITY_SHAPE (weight=-5.498378)
+   96: ENTITY_SHAPE (weight=-2.477098)
+   97: ENTITY_SHAPE (weight=-0.261771)
+   98: ENTITY_SHAPE (weight=-2.066666)
+   99: ENTITY_SHAPE (weight=-4.520703)
+  100: ENTITY_SHAPE (weight=-1.690274)
+  101: ENTITY_SHAPE (weight=2.742696)
+  102: ENTITY_SHAPE (weight=-7.418650)
+  103: ENTITY_SHAPE (weight=-0.776493)
+  104: ENTITY_SHAPE (weight=9.997945)
+  105: ENTITY_SHAPE (weight=-0.418504)
+  106: ENTITY_SHAPE (weight=8.538042)
+  107: ENTITY_SHAPE (weight=3.490043)
+  108: ENTITY_SHAPE (weight=8.109785)
+  109: ENTITY_SHAPE (weight=-4.637681)
+  110: ENTITY_SHAPE (weight=7.043446)
+  111: ENTITY_SHAPE (weight=-9.597577)
+  112: ENTITY_SHAPE (weight=-0.730116)
+  113: ENTITY_SHAPE (weight=5.736093)
+  114: ENTITY_SHAPE (weight=-7.959013)
+  115: ENTITY_SHAPE (weight=-2.725733)
+  116: ENTITY_SHAPE (weight=-1.792146)
+  117: ENTITY_SHAPE (weight=-1.535246)
+  118: ENTITY_SHAPE (weight=2.065928)
+  119: ENTITY_SHAPE (weight=-8.314908)
+  120: ENTITY_SHAPE (weight=-8.447803)
+  121: ENTITY_SHAPE (weight=-2.750162)
+  122: ENTITY_SHAPE (weight=2.432405)
+  123: ENTITY_SHAPE (weight=5.187322)
+  124: ENTITY_SHAPE (weight=-8.773439)
+  125: ENTITY_SHAPE (weight=9.056528)
+  126: ENTITY_SHAPE (weight=1.811251)
+  127: ENTITY_SHAPE (weight=1.048726)
+  128: ENTITY_SHAPE (weight=1.322404)
+  129: ENTITY_SHAPE (weight=2.909448)
+  130: ENTITY_SHAPE (weight=7.704836)
+  131: ENTITY_SHAPE (weight=4.077654)
+  132: ENTITY_SHAPE (weight=-0.470707)
+  133: ENTITY_SHAPE (weight=-2.056125)
+  134: ENTITY_SHAPE (weight=2.288110)
+  135: ENTITY_SHAPE (weight=-8.885688)
+  136: ENTITY_SHAPE (weight=4.514502)
+  137: ENTITY_SHAPE (weight=6.783286)
+  138: ENTITY_SHAPE (weight=5.041294)
+  139: ENTITY_SHAPE (weight=4.016768)
+  140: ENTITY_SHAPE (weight=2.317223)
+  141: ENTITY_SHAPE (weight=-1.631768)
+  142: ENTITY_SHAPE (weight=5.601846)
+  143: ENTITY_SHAPE (weight=-1.737292)
+  144: ENTITY_SHAPE (weight=-3.195410)
+  145: ENTITY_SHAPE (weight=-2.510628)
+  146: ENTITY_SHAPE (weight=-0.780010)
+  147: ENTITY_SHAPE (weight=-0.068802)
+  148: ENTITY_SHAPE (weight=4.345036)
+  149: ENTITY_SHAPE (weight=3.347133)
+  150: ENTITY_SHAPE (weight=-5.592687)
+  151: ENTITY_SHAPE (weight=3.060046)
+  152: ENTITY_SHAPE (weight=-8.786167)
+  153: ENTITY_SHAPE (weight=-0.764911)
+  154: ENTITY_SHAPE (weight=-2.687007)
+  155: ENTITY_SHAPE (weight=-8.459717)
+  156: ENTITY_SHAPE (weight=8.118685)
+  157: ENTITY_SHAPE (weight=-4.493917)
+  158: ENTITY_SHAPE (weight=2.584849)
+  159: ENTITY_SHAPE (weight=-2.161722)
+  160: ENTITY_SHAPE (weight=2.514467)
+  161: ENTITY_SHAPE (weight=5.059759)
+  162: ENTITY_SHAPE (weight=-0.663443)
+  163: ENTITY_SHAPE (weight=0.832812)
+  164: ENTITY_SHAPE (weight=3.691770)
+  165: ENTITY_SHAPE (weight=3.422710)
+  166: ENTITY_SHAPE (weight=-4.421508)
+  167: ENTITY_SHAPE (weight=1.538465)
+  168: ENTITY_SHAPE (weight=-1.250980)
+  169: ENTITY_SHAPE (weight=-7.027533)
+  170: ENTITY_SHAPE (weight=-5.663749)
+  171: ENTITY_SHAPE (weight=-6.380385)
+  172: ENTITY_SHAPE (weight=6.475875)
+  173: ENTITY_SHAPE (weight=-7.373453)
+  174: ENTITY_SHAPE (weight=2.484771)
+  175: ENTITY_SHAPE (weight=-4.047585)
+  176: ENTITY_SHAPE (weight=-2.510062)
+  177: ENTITY_SHAPE (weight=3.925791)
+  178: ENTITY_SHAPE (weight=8.920571)
+  179: ENTITY_SHAPE (weight=-2.968022)
+  180: ENTITY_SHAPE (weight=8.083474)
+  181: ENTITY_SHAPE (weight=-5.794021)
+  182: ENTITY_SHAPE (weight=8.057632)
+  183: ENTITY_SHAPE (weight=4.746258)
+  184: ENTITY_SHAPE (weight=5.554519)
+  185: ENTITY_SHAPE (weight=-9.645286)
+  186: ENTITY_SHAPE (weight=0.040927)
+  187: ENTITY_SHAPE (weight=-1.285192)
+  188: ENTITY_SHAPE (weight=-1.613658)
+  189: ENTITY_SHAPE (weight=-2.104397)
+  190: ENTITY_SHAPE (weight=-4.902055)
+  191: ENTITY_SHAPE (weight=5.769016)
+  192: ENTITY_SHAPE (weight=-4.372967)
+  193: ENTITY_SHAPE (weight=-4.501263)
+  194: ENTITY_SHAPE (weight=-6.975977)
+  195: ENTITY_SHAPE (weight=-9.215839)
+  196: ENTITY_SHAPE (weight=-7.120258)
+  197: ENTITY_SHAPE (weight=-9.581748)
+  198: ENTITY_SHAPE (weight=-5.790627)
+  199: ENTITY_SHAPE (weight=4.836827)
+  200: ENTITY_SHAPE (weight=4.399681)
+  201: ENTITY_SHAPE (weight=-0.391049)
+  202: ENTITY_SHAPE (weight=6.536201)
+  203: ENTITY_SHAPE (weight=3.994897)
+  204: SEPARATOR (weight=7.985332)
+  205: SEPARATOR (weight=7.250419)
+  206: SEPARATOR (weight=0.780223)
+  207: SEPARATOR (weight=-4.805107)
+  208: SEPARATOR (weight=-5.670969)
+  209: SEPARATOR (weight=-4.846860)
+  210: SEPARATOR (weight=0.981549)
+  211: SEPARATOR (weight=-1.613118)
+  212: SEPARATOR (weight=-1.558831)
+  213: SEPARATOR (weight=5.315108)
+  214: SEPARATOR (weight=7.054206)
+  215: SEPARATOR (weight=-4.129232)
+  216: SEPARATOR (weight=-9.700110)
+  217: SEPARATOR (weight=1.991004)
+  218: SEPARATOR (weight=-3.028582)
+  219: SEPARATOR (weight=-0.448659)
+  220: SEPARATOR (weight=0.612064)
+  221: SEPARATOR (weight=-2.747230)
+  222: SEPARATOR (weight=-4.129927)
+  223: SEPARATOR (weight=-7.701326)
+  224: SEPARATOR (weight=-8.875565)
+  225: SEPARATOR (weight=-6.119436)
+  226: SEPARATOR (weight=-3.145782)
+  227: SEPARATOR (weight=5.300315)
+  228: SEPARATOR (weight=-5.939551)
+  229: SEPARATOR (weight=1.416673)
+  230: SEPARATOR (weight=-5.396550)
+  231: SEPARATOR (weight=-5.117423)
+  232: SEPARATOR (weight=4.231443)
+  233: SEPARATOR (weight=-0.652892)
+  234: SEPARATOR (weight=-2.945870)
+  235: SEPARATOR (weight=-0.024520)
+  236: SEPARATOR (weight=5.399570)
+  237: SEPARATOR (weight=8.404700)
+  238: SEPARATOR (weight=-9.630726)
+  239: SEPARATOR (weight=3.935214)
+  240: SEPARATOR (weight=4.259975)
+  241: SEPARATOR (weight=-3.224865)
+  242: SEPARATOR (weight=-1.142554)
+  243: SEPARATOR (weight=-4.933257)
+  244: SEPARATOR (weight=1.303130)
+  245: SEPARATOR (weight=5.051867)
+  246: SEPARATOR (weight=-9.590213)
+  247: SEPARATOR (weight=2.280404)
+  248: SEPARATOR (weight=-9.390945)
+  249: SEPARATOR (weight=2.629453)
+  250: SEPARATOR (weight=4.441693)
+  251: SEPARATOR (weight=4.391323)
+  252: SEPARATOR (weight=-8.494363)
+  253: SEPARATOR (weight=9.999724)
+  254: SEPARATOR (weight=-4.782701)
+  255: SEPARATOR (weight=-3.905213)
+  256: SEPARATOR (weight=1.941983)
+  257: SEPARATOR (weight=-7.423266)
+  258: SEPARATOR (weight=6.570757)
+  259: SEPARATOR (weight=4.542097)
+  260: SEPARATOR (weight=-3.813037)
+  261: SEPARATOR (weight=4.397288)
+  262: SEPARATOR (weight=0.253067)
+  263: SEPARATOR (weight=-0.817274)
+  264: SEPARATOR (weight=3.049288)
+  265: SEPARATOR (weight=5.229812)
+  266: SEPARATOR (weight=-1.929674)
+  267: SEPARATOR (weight=0.615203)
+  268: SEPARATOR (weight=7.482487)
+  269: SEPARATOR (weight=2.083596)
+  270: SEPARATOR (weight=-3.826135)
+  271: SEPARATOR (weight=5.411051)
+  272: SEPARATOR (weight=7.328382)
+  273: SEPARATOR (weight=-0.793828)
+  274: SEPARATOR (weight=-4.104789)
+  275: SEPARATOR (weight=-4.652071)
+  276: SEPARATOR (weight=5.803390)
+  277: SEPARATOR (weight=7.079419)
+  278: SEPARATOR (weight=6.104121)
+  279: SEPARATOR (weight=3.552847)
+  280: SEPARATOR (weight=0.257734)
+  281: SEPARATOR (weight=0.987695)
+  282: SEPARATOR (weight=1.764648)
+  283: SEPARATOR (weight=7.000815)
+  284: SEPARATOR (weight=2.416978)
+  285: SEPARATOR (weight=-7.517392)
+  286: SEPARATOR (weight=4.860761)
+  287: SEPARATOR (weight=8.388636)
+  288: SEPARATOR (weight=-3.146189)
+  289: SEPARATOR (weight=-1.111665)
+  290: SEPARATOR (weight=-1.659633)
+  291: SEPARATOR (weight=-0.199778)
+  292: SEPARATOR (weight=9.347889)
+  293: SEPARATOR (weight=4.188270)
+  294: SEPARATOR (weight=-5.285752)
+  295: SEPARATOR (weight=4.409733)
+  296: SEPARATOR (weight=6.509806)
+  297: SEPARATOR (weight=-7.992510)
+  298: SEPARATOR (weight=-0.083868)
+  299: SEPARATOR (weight=-6.607285)
+  300: SEPARATOR (weight=-7.829761)
+  301: SEPARATOR (weight=-8.475542)
+  302: SEPARATOR (weight=-7.076308)
+  303: SEPARATOR (weight=3.244318)
+  304: SEPARATOR (weight=-0.950137)
+  305: SEPARATOR (weight=6.442501)
+  306: SEPARATOR (weight=-7.232669)
+  307: SEPARATOR (weight=5.742031)
+  308: SEPARATOR (weight=8.851918)
+  309: SEPARATOR (weight=-1.315500)
+  310: SEPARATOR (weight=8.947881)
+  311: SEPARATOR (weight=1.973106)
+  312: SEPARATOR (weight=-4.262792)
+  313: SEPARATOR (weight=0.731951)
+  314: SEPARATOR (weight=3.681296)
+  315: SEPARATOR (weight=-4.376811)
+  316: SEPARATOR (weight=-1.538490)
+  317: SEPARATOR (weight=9.532236)
+  318: SEPARATOR (weight=-0.127942)
+  319: SEPARATOR (weight=2.190230)
+  320: SEPARATOR (weight=1.124353)
+  321: SEPARATOR (weight=-8.897480)
+  322: SEPARATOR (weight=-9.192231)
+  323: SEPARATOR (weight=-1.401784)
+  324: SEPARATOR (weight=2.177866)
+  325: SEPARATOR (weight=1.765733)
+  326: SEPARATOR (weight=-4.194663)
+  327: SEPARATOR (weight=6.484766)
+  328: SEPARATOR (weight=-5.745434)
+  329: SEPARATOR (weight=5.909963)
+  330: SEPARATOR (weight=-4.002821)
+  331: SEPARATOR (weight=0.482124)
+  332: SEPARATOR (weight=0.329850)
+  333: SEPARATOR (weight=-0.324734)
+  334: SEPARATOR (weight=-0.001450)
+  335: SEPARATOR (weight=-2.043335)
+  336: SEPARATOR (weight=4.986791)
+  337: SEPARATOR (weight=-2.333088)
+  338: SEPARATOR (weight=-2.872517)
+  339: SEPARATOR (weight=-1.570942)
+  340: SEPARATOR (weight=1.331543)
+  341: SEPARATOR (weight=0.483213)
+  342: SEPARATOR (weight=-9.171352)
+  343: SEPARATOR (weight=-5.595177)
+  344: SEPARATOR (weight=-1.114015)
+  345: SEPARATOR (weight=-7.130048)
+  346: SEPARATOR (weight=3.957614)
+  347: SEPARATOR (weight=5.472947)
+  348: SEPARATOR (weight=-6.747974)
+  349: SEPARATOR (weight=-4.826060)
+  350: SEPARATOR (weight=-5.172287)
+  351: SEPARATOR (weight=-6.529202)
+  352: SEPARATOR (weight=-4.047284)
+  353: SEPARATOR (weight=-1.052661)
+  354: SEPARATOR (weight=6.793280)
+  355: SEPARATOR (weight=4.347540)
+  356: SEPARATOR (weight=-1.894123)
+  357: SEPARATOR (weight=-5.511346)
+  358: SEPARATOR (weight=-3.486258)
+  359: SEPARATOR (weight=-3.896189)
+  360: SEPARATOR (weight=-2.435733)
+  361: SEPARATOR (weight=-0.808715)
+  362: SEPARATOR (weight=-2.740143)
+  363: SEPARATOR (weight=3.399512)
+  364: SEPARATOR (weight=-1.101358)
+  365: SEPARATOR (weight=-1.740566)
+  366: SEPARATOR (weight=-4.091170)
+  367: SEPARATOR (weight=9.527107)
+  368: SEPARATOR (weight=-9.424993)
+  369: SEPARATOR (weight=1.913090)
+  370: SEPARATOR (weight=-1.488346)
+  371: SEPARATOR (weight=-5.072903)
+  372: SEPARATOR (weight=-4.346767)
+  373: SEPARATOR (weight=-0.756053)
+  374: SEPARATOR (weight=0.947624)
+  375: SEPARATOR (weight=-6.580188)
+  376: SEPARATOR (weight=-6.111917)
+  377: SEPARATOR (weight=-5.764707)
+  378: SEPARATOR (weight=1.047688)
+  379: SEPARATOR (weight=4.990872)
+  380: SEPARATOR (weight=-7.195216)
+  381: SEPARATOR (weight=-6.751567)
+  382: SEPARATOR (weight=0.663488)
+  383: SEPARATOR (weight=0.885907)
+  384: SEPARATOR (weight=0.174658)
+  385: SEPARATOR (weight=-1.083306)
+  386: SEPARATOR (weight=-0.931528)
+  387: SEPARATOR (weight=6.599070)
+  388: SEPARATOR (weight=0.390196)
+  389: SEPARATOR (weight=-1.567198)
+  390: SEPARATOR (weight=7.791402)
+  391: SEPARATOR (weight=9.474470)
+  392: SEPARATOR (weight=-7.734603)
+  393: SEPARATOR (weight=3.078449)
+  394: SEPARATOR (weight=-3.977456)
+  395: SEPARATOR (weight=-8.774451)
+  396: SEPARATOR (weight=-9.452552)
+  397: SEPARATOR (weight=1.308280)
+  398: SEPARATOR (weight=0.683191)
+  399: SEPARATOR (weight=-6.410583)
+  400: SEPARATOR (weight=-0.325472)
+  401: SEPARATOR (weight=0.565338)
+  402: SEPARATOR (weight=-3.186058)
+  403: SEPARATOR (weight=1.346147)
+  404: SEPARATOR (weight=6.148818)
+  405: SEPARATOR (weight=-4.779576)
+  406: SEPARATOR (weight=-3.644575)
+  407: SEPARATOR (weight=-8.866566)
+  408: SEPARATOR (weight=-5.068608)
+  409: SEPARATOR (weight=1.133855)
+  410: SEPARATOR (weight=6.060393)
+  411: SEPARATOR (weight=1.058934)
+  412: SEPARATOR (weight=3.176856)
+  413: SEPARATOR (weight=-9.040879)
+  414: SEPARATOR (weight=2.503817)
+  415: SEPARATOR (weight=6.918738)
+  416: SEPARATOR (weight=2.412285)
+  417: SEPARATOR (weight=-1.271143)
+  418: SEPARATOR (weight=-5.693081)
+  419: SEPARATOR (weight=-3.155122)
+  420: SEPARATOR (weight=1.860289)
+  421: SEPARATOR (weight=-0.987214)
+  422: SEPARATOR (weight=-7.624254)
+  423: SEPARATOR (weight=0.507022)
+  424: SEPARATOR (weight=-5.334231)
+  425: SEPARATOR (weight=1.859874)
+  426: SEPARATOR (weight=-6.855759)
+  427: SEPARATOR (weight=2.134855)
+  428: SEPARATOR (weight=-1.534514)
 
 ================================================================================
 
   LINE |      SCORE | TEXT
 --------------------------------------------------------------------------------
-     1 |    10.0000 | ﻿На
-     2 |    67.0000 | правах рукописи
-     3 |   139.0000 | Чалаташвили Малхаз Николаевич
-     4 |   464.0000 | АНАЛИЗ И ОЦЕНКА РИСКОВ ПОЖАРНОЙ ОПАСНОСТИ ПРОМЫШЛЕННЫХ ОБЪЕКТОВ (НА ПРИМЕРЕ СЕВЕРО-ЗАПАДНОГО РЕГИОНА)
-     5 |   238.0000 | 05ЛЗЛ0 - управление в социальных и экономических системах
-     6 |   239.0000 | Автореферат диссертации на соискание ученой степени
-     7 |   119.0000 | кандидата технических наук
-     8 |    85.0000 | Санкт-Петербург - 2010
-     9 |   444.0000 | Работа выполнена в Санкт-Петербургском университете Государственной противопожарной службы МЧС России
-    10 |   335.0000 | Научный руководитель: доктор технических наук, профессор Исаков Сергей Львович
-    11 |   603.0000 | Официальные оппоненты: доктор технических наук, профессор Куватов Валерий Ильич; кандидат технических наук, доцент Козленко Роман Николаевич
-    12 |   251.0000 | Ведущая организация: Санкт-Петербургский филиал ФГУ ВНИИ
-    13 |   142.0000 | противопожарной обороны МЧС России
-    14 |  1208.0000 | Защита состоится «17» февраля 2011 года в «12» часов на заседании совета по защите докторских и кандидатских диссертаций Д 205.003.02 при Санкт-Петербургском университете Государственной противопожарной службы МЧС России (196105, Санкт-Петербург, Московский проспект, Д.149).
-    15 |   583.0000 | С диссертацией можно ознакомиться в библиотеке Санкт-Петербургского университета Государственной противопожарной службы МЧС России.
-    16 |   162.0000 | Автореферат разослан « Γ⅞ » января 2011 г.
-    17 |   387.0000 | Ученый секретарь диссертационного совета Д 205.003.02 доктор технических наук, профессор
-    18 |    81.0000 | А.Ю. Иванов
-    19 |    11.0000 | 3
-    20 |   121.0000 | ОБЩАЯ ХАРАКТЕРИСТИКА РАБОТЫ
-    21 |   837.0000 | Актуальность темы. Повышение уровня пожарной опасности в современных условиях определяет необходимость повышения пожарной безопасности населения, экономических объектов и природных ресурсов.
-    22 |  1445.0000 | Несмотря на некоторое снижение количества пожаров в 2009 году по сравнению с 2008 годом, ситуация с пожарами в Российской Федерации продолжает оставаться напряженной и оказывает большое влияние на деятельность государственных и коммерческих промышленных объектов. Усложнившаяся пожарная обстановка летом 2010 года усиливает это тезис
-    23 |   610.0000 | За 2009 год обстановка с пожарами в Российской Федерации по сравнению с прошлым годом характеризовалась следующими основными показателями:
-    24 |   241.0000 | - зарегистрировано 187 490 пожаров (в 2008 г. - 202002 (-7,2 %);
-    25 |   386.0000 | - погибло 13 933 человека (в 2008 г. - 15301 (-8,9 %), в том числе 596 ребенка (в 2008 г. - 596 (0 %);
-    26 |   235.0000 | - получили травмы 13 207 человек (в 2008 г. - 12887 (+2,5 %);
-    27 |   324.0000 | - прямой материальный ущерб причинен в размере 10929,7 млн. рублей (-10,6%);
-    28 |   355.0000 | - зарегистрировано 329 832 выезда пожарных подразделений на ликвидацию загораний.
-    29 |   501.0000 | Подразделениями ГПС на пожарах спасено 84 394 человека и материальных ценностей на сумму более 46,8 млрд, рублей.
-    30 |   941.0000 | Ежедневно в Российской Федерации происходило 513 пожаров, при которых погибало 38 человек и 36 человек получали травмы. Огнем уничтожалось 148 строений, 28 единиц автотехники, материальный ущерб составлял 29,5 млн. рублей.
-    31 |  1264.0000 | На города пришлось 62,2% от общего количества пожаров, 64,4% материального ущерба, 52,8% погибших при пожарах людей и 69,1% травмированных. На сельскую местность - 37,8% от общего количества пожаров, 35,6% материального ущерба, 47,2% от погибших при пожарах людей и 30,9% травмированных.
-    32 |   521.0000 | Относительные показатели, характеризующие оперативную обстановку с пожарами за 2009 год по Российской Федерации следующие:
-    33 |   261.0000 | - количество пожаров, приходящихся на 100 тыс. населения 131,98;
-    34 |    11.0000 | 4
-    35 |   268.0000 | - средний ущерб, приходящийся на один пожар - 57,40 тыс. руб.;
-    36 |   268.0000 | - количество погибших при пожарах на 100 тыс. населения - 9,80;
-    37 |   309.0000 | - количество травмированных при пожарах на 100 тыс. населения - 9,29.
-    38 |  1875.0000 | В 2009 году от неосторожного обращения с огнем произошло 40,3% от общего количества пожаров, при которых погибло 9 383 человека (67,5% от общего количества) и 6 976 человек получили травмы (52,9%). Нарушение правил устройства и эксплуатации электрооборудования послужило причиной каждого пятого пожара (22,0%), при которых погибло 2 003 человека -14,4% от общего количества, получили травмы 2 174 человека - 16,5% от общего количества.
-    39 |   820.0000 | В деятельности системы управления МЧС России важное место отводится Федеральному государственному бюджетному учреждению (ФГБУ) «Национальный центр управления в кризисных ситуациях (НЦУКС)».
-    40 |   744.0000 | Одна из приоритетных задач Национального центра - ускорение и оптимизация действий по реагированию на чрезвычайные ситуации с использованием современных технологий.
-    41 |  1449.0000 | В настоящее время завершается работа по созданию своеобразного «мозга» НЦУКС - автоматизированной системы оперативного управления в кризисных ситуациях. Собраны различные информационные базы данных, например, по силам и средствам, которые могут быть привлечены к ликвидации последствий ЧС, по потенциально опасным объектам и т.д.
-    42 |  1210.0000 | Эта информация позволит моделировать угрозы и чрезвычайные ситуации, разрабатывать варианты предупреждения, смягчения последствий и ликвидации возможных чрезвычайных ситуаций. Таким образом, готовятся сценарии для «проигрывания» различных вариантов управленческих решений.
-    43 |  1407.0000 | Также создается информационная оболочка, в которой будут находиться информационные ресурсы, включая и уже разработанные планы ликвидации последствий ЧС по конкретным объектам, а также инструмент, обеспечивающий поиск и формирование варианта решения с учетом различных условий (времени года, суток, погоды) в районе события.
-    44 |   827.0000 | Далее в зависимости от ситуации будет корректироваться готовый вариант, либо сразу даваться команда на исполнение, что позволит значительно сократить время для принятия решений.
-    45 |   312.0000 | Как только чрезвычайная ситуация будет ликвидирована, описание ра-
-    46 |    11.0000 | 5
-    47 |   625.0000 | бот закладывается в архив информационной базы данных, с тем чтобы в случае возникновения подобной ситуации специалисты могли поднять анало-
-    48 |   139.0000 | гичные случаи для анализа.
-    49 |   674.0000 | В территориальных органах МЧС России алгоритм аналогичен: там функционируют свои центры управления в кризисных ситуациях, входящие в систему ФГБУ НЦУКС.
-    50 |  1185.0000 | Научные результаты диссертационной работы могут быть использованы при разработке различных вариантов предупреждения, смягчения последствий и ликвидации возможных чрезвычайных ситуаций в центрах управления в кризисных ситуациях территориальных органов МЧС России.
-    51 |  1057.0000 | Теоретическую основу составили работы ученых: Артамонова В.С., Брушлинского Н.Н., Вентцель Е.С., Гадышева В.А., Евграфова В.Г., Малыгина И.Г., Таранцева А.А., Чуприяна А.П. и других.
-    52 |   850.0000 | Целью работы является повышение эффективности функционирования органов Государственной противопожарной службы МЧС России за счет широкого применения разработанных математических моделей.
-    53 |   738.0000 | Научная задача диссертационного исследования посвящена разработке и совершенствованию моделей и методов оценки рисков пожарной опасности на промышленных объектах?
-    54 |   300.0000 | Для достижения поставленной цели в работе решены следующие част-
-    55 |    90.0000 | ные научные задачи:
-    56 |   866.0000 | - разработка структуры и алгоритма функционирования автоматизированной системы управления риском пожарной опасности, позволяющей сни-зитъвеличину индивидуального риска до заданного значения;
-    57 |   436.0000 | - разработка математической модели, позволяющей оцепить вероятности состояний системы пожаротушения;
-    58 |   587.0000 | ’ - разработка методов технико-экономической оценки мероприятий пожарной безопасности для действующего и вновь создаваемого предприятия;
-    59 |   595.0000 | - проведение экспериментальных исследований функционирования системы управления риском пожарной опасности промышленного предприятия.
-    60 |   367.0000 | Объект исследования - процессы анализа и оценки рисков на промышленных объектах.
-    61 |   474.0000 | Предмет исследования - модели, методы и алгоритмы оценки пожарной опасности на производственных объектах.
-    62 |    11.0000 | 6
-    63 |   795.0000 | Методы исследования: общая теория систем, системный анализ, теория вероятностей, математическая статистика, теория дифференциальных уравнений, теория массового обслуживания.
-    64 |   135.0000 | Результаты, выносимые на защиту:
-    65 |   314.0000 | 1. Структура и алгоритм функционирования системы управления риском
-    66 |   542.0000 | пожарной опасности промышленного предприятия, позволяющей регулировать величину индивидуального риска в установленных пределах, ^*^σ
-    67 |   568.0000 | 2. Вероятностные модели состояний системы пожаротушения и оценки рисков пожарной опасности группы промышленных предприятий.
-    68 |   568.0000 | 3. Методы технико-экономической оценки мероприятий пожарной безопасности для действующего и вновь создаваемого предприятия.
-    69 |   921.0000 | Научная новизна. В диссертации разработаны и модифицированы модели и методы оценки рисков пожарной опасности на промышленных объектах, а также представлены практические результаты в области оценки и сни-
-    70 |   326.0000 | жения рисков пожарной опасности на объектах промышленного назначения.
-    71 |   272.0000 | Достоверность научных результатов определена и подтверждена экс-
-    72 |   796.0000 | периментальными исследованиями, свидетельствующими о правомерности использования математических моделей и методов при оценке рисков пожарной опасности промышленных предприятий.
-    73 |  2891.0000 | Практическая значимость научных результатов. Приведенные в работе модели оценки рисков пожарной опасности промышленных предприятий и оценки состояний системы пожаротушения могут быть использованы для обоснования управленческих решений по минимизации негативных последствий от пожаров. Сформулированные предложения по составу элементов и структуре системы управления риском пожарной опасности промышленного предприятия рекомендуются к использованию при создании автоматизированных систем управления риском пожарной опасности. Разработанные модели используются в образовательном процессе Санкт-Петербургского университета ГПС МЧС России.
-    74 |  1153.0000 | Апробация работы. Научные результаты, полученные в результате исследования, докладывались на заседаниях кафедры прикладной математики и информационных технологий Санкт-Петербургского университета ГПС МЧС России, а также на научно-практических конференциях:
-    75 |   291.0000 | 1. II международная научно-практическая конференция «Сервис безо-
-    76 |    12.0000 | 7
-    77 |   285.0000 | пасности в России: опыт, проблемы, перспективы» (Санкт-Петербург, 2009 г.)
-    78 |   622.0000 | 2. V Всероссийская научно-практическая конференция «Проблемы обеспечения взрывобезопасности и противодействия терроризму» (Санкт-Петербург, 2010 г.)
-    79 |   499.0000 | Публикации. По теме диссертации опубликовано 7 печатных работ, в том числе_^ работы в изданиях, рекомендованных ВАК.
-    80 |   980.0000 | Структура и объем работы. Диссертация состоит из введения, четырех глав, заключения, списка литературы. Общий объем диссертации составляет 114 страниц, в том числе 20 рисунков, 6 таблиц и список литературы из 112 наименований.
-    81 |   112.0000 | ОСНОВНОЕ СОДЕРЖАНИЕ РАБОТЫ
-    82 |   898.0000 | Во введении обоснована актуальность темы исследования, раскрыты атрибуты исследования, сформулированы выносимые на защиту научные результаты, показаны их научная новизна и практическая значимость.
-    83 |  2958.0000 | В первой главе «Анализ функционирования системы управления государственной противопожарной службой МЧС России в северозападном регионе» проведен анализ органов управления Государственной противопожарной службы МЧС России. Рассмотрены основные функции ГПС и структуры стратегического и оперативного управления в СевероЗападном федеральном округе. Представлена организация работы по прогнозированию чрезвычайных ситуаций. Дан обзор моделей функционирования противопожарных служб городов, позволяющих обосновать основные требования к системам управления рисками пожарной опасности. Рассмотрены характеристики подсистем системы управления рисками пожарной опасности:
-    84 |   406.0000 | - подсистемы информационной поддержки действий инспектора Государственного пожарного надзора;
-    85 |   341.0000 | - подсистемы автоматической поддержки решений руководителя тушения пожара.
-    86 |   556.0000 | Для решения главных задач (пожарного надзора и пожаротушения) на каждом уровне управления формируется два контура управления:
-    87 |   160.0000 | - контур управления пожарным надзором;
-    88 |   158.0000 | - контур управления пожаротушением.
-    89 |   490.0000 | Реализацию процессов управления в ГПС МЧС России можно представить схемой процессного управления (рис.1).
-    90 |    10.0000 | 8
-    91 |    55.0000 | Внешняя среда
-    92 |   236.0000 | Рис.1. Схема процессного управления в МЧС России
-    93 |  1207.0000 | В результате проведенного анализа сформулировано противоречие между высоким уровнем пожарной опасности объектов промышленного назначения и трудностями в адекватной и оперативной оценки риска пожарной опасности при использовании существующих математических моделей.
-    94 |   749.0000 | Во второй главе «Модели и методы оценки рисков пожарной опасности» рассмотрена методология анализа рисков пожарной опасности и базовые понятия пожарной опасности.
-    95 |  2056.0000 | Анализ риска - это действия, направленные на выявление и количественное определение различных видов риска (в том числе риска пожарной опасности) при осуществлении каких-либо видов деятельности. Анализ риска предполагает выявление опасностей на исследуемой территории как причин риска. В ходе анализа риска используются статистические данные об опасных природных и техногенных явлениях. Методический аппарат анализа рисков приведен на рис. 2.
-    96 |   793.0000 | Необходимые меры защиты определяются на основе анализа рисков и формируются в рамках единой государственной системы предупреждения чрезвычайных ситуаций по двум направлениям:
-    97 |   456.0000 | - меры снижения рисков и смягчения последствий кризисных и чрезвычайных ситуаций, осуществляемые заранее;
-    98 |   442.0000 | - меры по смягчению последствий произошедших кризисных и чрезвычайных ситуаций и возмещение ущерба.
-    99 |    10.0000 | 9
-   100 |   226.0000 | Рис. 2. Методический аппарат анализа риска
-   101 |   174.0000 | Основными среди базовых понятий являются:
-   102 |   530.0000 | - допустимый пожарный риск - пожарный риск, уровень которого допустим и обоснован исходя из социально-экономических условий;
-   103 |   588.0000 | - индивидуальный пожарный риск - пожарный риск, который может привести к гибели человека в результате воздействия опасных факторов пожара;
-   104 |  1200.0000 | - система противопожарной защиты - комплекс организационных мероприятий и технических средств, направленных на защиту людей и имущества от воздействия опасных факторов пожара и (или) ограничение последствий воздействия опасных факторов пожара на объект защиты (продукцию).
-   105 |   271.0000 | Приводятся показатели, по которым производится оценка пожарной
-   106 |    56.0000 | опасности.
-   107 |   544.0000 | Рассматривается разработанная математическая модель системы управления индивидуальным риском пожарной опасности.
-   108 |   267.0000 | Динамика промышленного объекта по показателю индивидуального
-   109 |   166.0000 | риска описывается уравнением Стодолы:
-   110 |    28.0000 | ¾aKt) = 0, (
-   111 |     9.0000 | dt ,
-   112 |   201.0000 | где а - коэффициент самовыравнивания объекта.
-   113 |    11.0000 | 10
-   114 |  1027.0000 | Коэффициент а характеризует свойство самовыравнивания состояния промышленного объекта по показателю риска, которое состоит в том, что при отсутствии возмущающих воздействий риск уменьшается пропорционально его действующему значению.
-   115 |   498.0000 | При действии возмущающих факторов уравнение динамики примет вид стохастического дифференциального уравнения:
-   116 |    19.0000 | ⅛ + = (2)
-   117 |     3.0000 | at
-   118 |   137.0000 | где / (/) - возмущающее воздействие.
-   119 |   768.0000 | Возмущающее воздействие определяет случайное изменение индивидуального риска за счёт действия факторов, способствующих повышению пожарной опасности промышленного предприятия.
-   120 |   366.0000 | Пусть /(<) представляет собой стационарный случайный процесс, удовлетворяющий двум условиям:
-   121 |   142.0000 | 1) математическое ожидание M[f(t)]=0;
-   122 |   110.0000 | 2) корреляционная функция RW = N^¾tV
-   123 |   135.0000 | где N - спектральная плотность / (/).
-   124 |   453.0000 | При этих условиях индивидуальный риск r^, представляет собой марковский процесс с математическим ожиданием
-   125 |    36.0000 | MV⅛r0e'aτF (3)
-   126 |   387.0000 | Распределение случайной величины r(Z) — Λ∕[r(z)] будет нормальным с дисперсией, определяемой выражением
-   127 |    70.0000 | σ2[rω] = ^(l-e'2"'), (4)
-   128 |    16.0000 | 1а
-   129 |   449.0000 | С учётом (3) и правила За оценка наибольшей величины индивидуального риска определяется выражением.
-   130 |    61.0000 | r(Z) = r^+3⅛e-h), (5)
-   131 |    18.0000 | V 2а
-   132 |   877.0000 | В настоящее время проводятся исследования по разработке комплексов управления промышленной безопасностью, в состав таких комплексов должна входить и система управления риском пожарной опасности.
-   133 |   800.0000 | Управляемой величиной такой системы выступает оценка текущего значения индивидуального риска r(t). Алгоритм управления риском пожарной опасности представлен на рис. 3.
-   134 |    12.0000 | 11
-   135 |   264.0000 | Рис.З. Алгоритм управления рисками пожарной опасности
-   136 |   721.0000 | Структурно-функциональная схема варианта системы управления риском пожарной опасности, в которой реализуется предложенный алгоритм, представлена на рис. 4.
-   137 |   291.0000 | Рис. 4. Схема системы управления риском пожарной опасности
-   138 |   701.0000 | На рис. 4 обозначены: 1 — звено анализа, 2 - звено сравнения, 3 - звено преобразования, 4 - звено запаздывания, 5 - объект управления (промышленное предприятие).
-   139 |   943.0000 | Система управления риском пожарной опасности промышленного предприятия относится к стохастическим системам управления, т.к. управляемая величина (индивидуальный риск) имеет случайный характер. Качество про-
-   140 |    12.0000 | 12
-   141 |   663.0000 | цесса управления в стохастических системах зависит от информации, которая может быть получена путем измерения и анализа управляемой величины.
-   142 |  1527.0000 | В системе управления риском пожарной опасности реализуется принцип управления по отклонению. В звене анализа производится анализ состояния пожарной опасности промышленного объекта и по определенным признакам оценивается значение индивидуального риска. В качестве признаков, повышающих величину индивидуального риска, могут выступать:
-   143 |   337.0000 | - повышение количества отказов и неисправностей отдельных видов оборудования,
-   144 |   486.0000 | - использование высокоскоростных высокоинтенсивных режимов на оборудовании, выработавшем большую часть ресурса.
-   145 |   746.0000 | При наличии на промышленном предприятии автоматизированной системы управления риском пожарной опасности уравнение динамики индивидуального риска примет вид ' ' ~
-   146 |    29.0000 | 9 (6)
-   147 |   420.0000 | где к - коэффициент передачи звена преобразования; 1з — время запаздывания управляющего воздействия.
-   148 |   430.0000 | Решение неоднородного дифференциального уравнения (6) определяется формулой Коши, которая примет вид:
-   149 |   150.0000 | r^ = r0e^' + 3 Д (1 - е 2‘") - к J(r(f - ζ) - r⅛dt. (7)
-   150 |    13.0000 | V2α j
-   151 |   733.0000 | Функционирование статистических систем управления принято оценивать по среднеквадратическому отклонению управляемой величины от его математического ожидания.
-   152 |   704.0000 | В этом случае выражение для величины индивидуального риска промышленного предприятия с системой управления рисками пожарной опасности можно записать в виде:
-   153 |   119.0000 | r^ = ree"β + - е'2") - к ∫(r(z -t3V ^dt, (8) V2α '
-   154 |  1254.0000 | В (8) первое слагаемое представляет собой математическое ожидание величины индивидуального риска, второе слагаемое - величину среднеквадратического отклонения индивидуального риска от его математического ожидания, а третье слагаемое - управляющее воздействие системы управле-
-   155 |    12.0000 | 13
-   156 |   301.0000 | ния риском пожарной опасности, компенсирующее увеличение индивиду-
-   157 |   385.0000 | Рис.5. Зависимость величины индивидуального риска пожарной опасности от времени
-   158 |  1548.0000 | На рис. 5 представлены графики изменения во времени значений индивидуального риска пожарной опасности домостроительного комбината. График 2 при наличии автоматизированной системы управления риском пожарной опасности (выражение 8), график 1 - без системы управления риском пожарной опасности (выражение 8 без последнего слагаемого).
-   159 |  1016.0000 | Как видно, использование автоматизированной системы управления риском пожарной опасности позволяет снизить величины индивидуального риска до заданной величины за счет компенсации возмущающих воздействий управляющими.
-   160 |   571.0000 | Рассматривается разработанная математическая модель оценки показателей ущерба от пожаров в группе промышленных предприятий.
-   161 |   528.0000 | Общий ущерб от пожаров в группе промышленных объектов определяется суммой вероятных ущербов от пожаров на объектах группы
-   162 |    78.0000 | R.=∑R=∑P,-H,., (9)
-   163 |   151.0000 | где и - количество объектов в группе.
-   164 |   324.0000 | Средний ущерб от пожаров в группе промышленных объектов определяется формулой
-   165 |    12.0000 | 14
-   166 |    64.0000 | R = ⅛R = ⅛P.W.. (10)
-   167 |     5.0000 | ∏ '=l п 'el
-   168 |   913.0000 | В третьей главе «Математическая модель оценки состояний системы пожаротушения» приводятся математические модели для оценки вероятностей состояний системы пожаротушения методом пространства состояний.
-   169 |   431.0000 | Описывается вероятностное пространство состояний системы пожаротушения Ω, элементами которого являются:
-   170 |   524.0000 | < Уо - точка с координатами (0,...,0), соответствует состоянию, когда все формирования системы пожаротушения свободны;
-   171 |   886.0000 | < y∣ - точка с координатами (τl,0,...,0), соответствует состоянию, когда на тушении пожара занято одно формирование на время r∣ = rτ, распределенное в промежутке О^г^г™»,, где rv - среднее время занятости подразделения;
-   172 |   214.0000 | Гтах - максимальное время занятости подразделения;
-   173 |   748.0000 | < y2 - точка с координатами (г,, Гз ,0,... ,0) соответствует состоянию, когда на тушении пожара занято два формирования. Время занятости удовлетворяет неравенствам:
-   174 |   106.0000 | 0^Г1^Гт.х, 0 -< Гз Гт.»
-   175 |   608.0000 | ωn -точка с координатами (r∣,Γ2,,... г»,) соответствует состоянию, когда занято п формирований время занятости удовлетворяет неравенствам:
-   176 |    16.0000 | 0 Гз
-   177 |    58.0000 | 0 √ Г„ "< Гт.» .
-   178 |  1848.0000 | Исследования показывают, что при входном воздействии, которое подчиняется пуассоновскому закону распределения, изменение состояний системы массового обслуживания представляет собой марковский случайный процесс. То есть вероятность состояния системы пожаротушения в некоторый момент времени зависит от ситуации, сложившийся в этот момент и не зависит от того, в каком состоянии система находилась в прошлом.
-   179 |   891.0000 | Для математического моделирования динамических свойств сложных систем нашли широкое применение модели системной динамики, основанные на векторном представлении состояний сложных систем.
-   180 |    12.0000 | 15
-   181 |   478.0000 | Процесс изменения состояний системы пожаротушения можно описать векторно-матричным уравнением динамики
-   182 |    34.0000 | ⅛ = A∙pU), (11)
-   183 |     3.0000 | at
-   184 |   184.0000 | с начальными условиями, заданными вектором
-   185 |   193.0000 | p(0) = [p0(0),p1(0),....,p√0)] r, (12)
-   186 |   608.0000 | где А - динамическая матрица системы пожаротушения, представляющая собой квадратную матрицу размером тхи, м = и+1;« — количество формирований в
-   187 |   275.0000 | системе пожаротушения; рр — вектор состояний системы пожаротушения:
-   188 |    66.0000 | p(∕) = [poW,Pι(O,∙∙∙∙,p^W] r, (13)
-   189 |  1235.0000 | Элементы динамической матрицы системы пожаротушения зависят от интенсивности потока пожаров и среднего времени занятия пожарного подразделения на тушении пожара. Алгоритм определения элементов динамической матрицы системы пожаротушения представлен на рис. 6.
-   190 |   710.0000 | Решением уравнения (11) является вектор состояний системы пожаротушения (13), координаты которого образуют текущее распределение вероятностей состояний системы.
-   191 |   223.0000 | Решение векторно-матричного уравнения (И) имеет вид
-   192 |    82.0000 | Р (t) = Φ(t)-3 (0) , (14)
-   193 |   124.0000 | где Φ(t) - переходная матрица.
-   194 |   249.0000 | Переходную матрицу Φ(t) можно определить операторным методом.
-   195 |   344.0000 | Применим к вектор-функции р^ - преобразование Лапласа L[s] и получим операторное уравнение
-   196 |    31.0000 | S⅛⅛>⅛), (15)
-   197 |   418.0000 | где S - комплексное число, S=a+jω, p(S) - изображение по Лапласу вектора состояний системы пожаротушения.
-   198 |   158.0000 | Запишем операторное уравнение в виде
-   199 |    66.0000 | (SE-A)∙p(S)=p(O), (16)
-   200 |   123.0000 | где Е - единичная матрица.
-   201 |    12.0000 | 16
-   202 |   387.0000 | Рис. 6. Алгоритм определения элементов динамической матрицы системы пожаротушения
-   203 |    13.0000 | 17
-   204 |   292.0000 | Выразим из (16) изображение вектора состояний р($М8Е-АУ'-р(0). (17)
-   205 |   261.0000 | Обратная матрица определяется по формуле (5£-^Г'= - * -a⅞ISE-A), (18)
-   206 |   268.0000 | где adj(SE - А) - матрица алгебраических дополнений матрицы (SE-A).
-   207 |   306.0000 | Применив к (17) обратное преобразование Лапласа, получим: ⅛⅜ = i∕4se-aΓ∙p(0), (19)
-   208 |   319.0000 | Сравним выражения (14) и (19) и получим формулу определения переходной матрицы
-   209 |    62.0000 | Ф(/) = £'[Ж-4]'. (20)
-   210 |   235.0000 | Пример определения состояний системы пожаротушения.
-   211 |   149.0000 | Исходные данные для моделирования:
-   212 |    36.0000 | Λ=0,13-
-   213 |   128.0000 | - плотность потока пожаров ’ час ,
-   214 |   211.0000 | - среднее время занятости формирования ГсР ~ ЬНчас ,
-   215 |   118.0000 | - число подразделений т = 3.
-   216 |   606.0000 | Результаты моделирования системы пожаротушения представлены на рис. 7 ( p⅜ P∣.P1,P5 - вероятности 0-го, 1-го, 2-го и 3-го состояний).
-   217 |   238.0000 | Рис.7. Вероятность состояний системы пожаротушения
-   218 |    11.0000 | 18
-   219 |  1699.0000 | В четвертой главе «Методы технико-экономической оценки мероприятий пожарной безопасности» приводятся результаты разработки методов технико-экономической оценки мероприятий пожарной безопасности для действующих и проектируемых промышленных предприятий. Методы позволяют связать ожидаемую прибыль с оценкой риска пожарной опасности, который зависит от затрат на противопожарные мероприятия.
-   220 |   471.0000 | Для действующих предприятий затраты на мероприятия пожарной безопасности следует включить в формулу издержек
-   221 |   220.0000 | C(L,K,S) = w1L + w2K + S, (21) где L - стоимость трудового ресурса,
-   222 |   156.0000 | К - стоимость материального ресурса,
-   223 |   212.0000 | S - стоимость мероприятий пожарной безопасности.
-   224 |   338.0000 | Степень риска пожарной опасности определяется гиперболической функцией вида
-   225 |   712.0000 | p1sv⅞' (22) где ξ - коэффициент, определяемый по данным статистики или экспертным методом; Р(0) - значение степени риска при затратах на противопожарные мероприятия S≈0.
-   226 |   707.0000 | Таким образом, каждому значению прибыли и затрат на мероприятия пожарной безопасности можно поставить в соответствие оценку риска потери прибыли. Функция
-   227 |   485.0000 | Φ<S>∖-P(S∖ (23) позволяет оценить вероятность сохранения дохода (прибыли), т.е. вероятность невозникновения пожара.
-   228 |  1155.0000 | Для проектируемых предприятий ставится и решается задача определения оптимальной по критерию максимума прибыли комбинации ресурсов. Объем выпуска продукции среднемасштабных хозяйственных объектов принято оценивать мультипликативной производственной функцией
-   229 |  1031.0000 | Y = F(lL,K) = Yo∙Lε'∙Kε∖ (24) где у0 - коэффициент, соизмеряющий ресурсы с выпуском; я,и - коэффициенты эластичности по трудовому и материальному ресурсам соответственно, показывающие на сколько процентов возрастет выпуск продукции при увеличении ресурса на 1%.
-   230 |    11.0000 | 19
-   231 |   237.0000 | В этом случае прибыль предприятия определяется по формуле
-   232 |    54.0000 | ∏ ^L,K,S^ = Ц-у0∙ Lcl ∙ Kc2
-   233 |    22.0000 | 1 Рот
-   234 |    22.0000 | 1+£5
-   235 |    35.0000 | -^W1L⅜W1K⅜S^
-   236 |    17.0000 | L>0,
-   237 |    20.0000 | (25)
-   238 |    18.0000 | К>0,
-   239 |    22.0000 | О < S < S max.
-   240 |   566.0000 | где Ц- оптовая цепа единицы продукции, выпускаемой предприятием. Задача оптимизации прибыли ставится следующим образом Π(L,K,S) -> max
-   241 |    70.0000 | при L>0,K>0,S max > 5 > О,
-   242 |   461.0000 | где Smαx -допустимая сумма средств, которые могут быть выделены на мероприятия противопожарной безопасности.
-   243 |   450.0000 | Это задача нелинейного программирования с двумя условиями неотрицательности L > О, К > 0 и условием вида 0 < S < smιx.
-   244 |   490.0000 | Необходимым и достаточным условием решения задачи нелинейного программирования являются условия Куна-Таккера
-   245 |    49.0000 | δ∏(Ltt,Ko,S6) ≤ 0
-   246 |     1.0000 | ∂L ’
-   247 |    58.0000 | δ∏g0,κ0,s9) 0
-   248 |     6.0000 | ЭК '
-   249 |    21.0000 | (27)
-   250 |    70.0000 | 8∏g0,κtt,s^ ,,0 95
-   251 |    98.0000 | e∏(Lβ,κ0,s0) , δ∏ge,κ⅜,s^ ∂∏g0,κa,sti) c
-   252 |    18.0000 | 8L ЭК ∂S
-   253 |    65.0000 | L«>0, Kl>0, 5„>0
-   254 |   392.0000 | В оптимальном плане все компоненты положительны, поэтому условия Куна-Таккера примут вид:
-   255 |    87.0000 | -tZ∙Xo∙<Fl∙ZSl^lΛrS2fl-τ-⅝-] -^,ι = 0
-   256 |     5.0000 | ( р
-   257 |    62.0000 | U∙y0∙ε2∙Lε<,lK∏ -^2=0
-   258 |    15.0000 | к l+⅞S0J
-   259 |    19.0000 | (28)
-   260 |    55.0000 | 11 л 7 τflιze2∣ 1
-   261 |    30.0000 | Ц/Уo*£l*Lo Ко 1 e
-   262 |    47.0000 | ^L-1=O. l+⅜5≈
-   263 |   193.0000 | Из первого и второго уравнений можно получить
-   264 |    11.0000 | 20
-   265 |     1.0000 | L
-   266 |    23.0000 | ε2 W1
-   267 |    17.0000 | W∖ и 2
-   268 |    46.0000 | l-fl-f2.
-   269 |    15.0000 | fl l-cl
-   270 |    19.0000 | U⅜ •(—) W∖ Wι
-   271 |    12.0000 | f2
+     1 |    20.0011 | ﻿На
+     2 |    18.9914 | правах рукописи
+     3 |    18.0913 | Чалаташвили Малхаз Николаевич
+     4 |   -61.6807 | АНАЛИЗ И ОЦЕНКА РИСКОВ ПОЖАРНОЙ ОПАСНОСТИ ПРОМЫШЛЕННЫХ ОБЪЕКТОВ (НА ПРИМЕРЕ СЕВЕРО-ЗАПАДНОГО РЕГИОНА)
+     5 |   212.6291 | 05ЛЗЛ0 - управление в социальных и экономических системах
+     6 |  -125.7372 | Автореферат диссертации на соискание ученой степени
+     7 |     0.0289 | кандидата технических наук
+     8 |   192.8360 | Санкт-Петербург - 2010
+     9 |    -8.5029 | Работа выполнена в Санкт-Петербургском университете Государственной противопожарной службы МЧС России
+    10 |   -47.1508 | Научный руководитель: доктор технических наук, профессор Исаков Сергей Львович
+    11 |  -123.2167 | Официальные оппоненты: доктор технических наук, профессор Куватов Валерий Ильич; кандидат технических наук, доцент Козленко Роман Николаевич
+    12 |   130.1346 | Ведущая организация: Санкт-Петербургский филиал ФГУ ВНИИ
+    13 |   -16.6968 | противопожарной обороны МЧС России
+    14 |   849.1890 | Защита состоится «17» февраля 2011 года в «12» часов на заседании совета по защите докторских и кандидатских диссертаций Д 205.003.02 при Санкт-Петербургском университете Государственной противопожарной службы МЧС России (196105, Санкт-Петербург, Московский проспект, Д.149).
+    15 |    42.8148 | С диссертацией можно ознакомиться в библиотеке Санкт-Петербургского университета Государственной противопожарной службы МЧС России.
+    16 |   224.0683 | Автореферат разослан « Γ⅞ » января 2011 г.
+    17 |   248.9235 | Ученый секретарь диссертационного совета Д 205.003.02 доктор технических наук, профессор
+    18 |   268.5080 | А.Ю. Иванов
+    19 |    61.5448 | 3
+    20 |   -24.0259 | ОБЩАЯ ХАРАКТЕРИСТИКА РАБОТЫ
+    21 |   -77.4717 | Актуальность темы. Повышение уровня пожарной опасности в современных условиях определяет необходимость повышения пожарной безопасности населения, экономических объектов и природных ресурсов.
+    22 |  -119.3883 | Несмотря на некоторое снижение количества пожаров в 2009 году по сравнению с 2008 годом, ситуация с пожарами в Российской Федерации продолжает оставаться напряженной и оказывает большое влияние на деятельность государственных и коммерческих промышленных объектов. Усложнившаяся пожарная обстановка летом 2010 года усиливает это тезис
+    23 |   -18.0641 | За 2009 год обстановка с пожарами в Российской Федерации по сравнению с прошлым годом характеризовалась следующими основными показателями:
+    24 |   619.3325 | - зарегистрировано 187 490 пожаров (в 2008 г. - 202002 (-7,2 %);
+    25 |   989.8445 | - погибло 13 933 человека (в 2008 г. - 15301 (-8,9 %), в том числе 596 ребенка (в 2008 г. - 596 (0 %);
+    26 |   575.5653 | - получили травмы 13 207 человек (в 2008 г. - 12887 (+2,5 %);
+    27 |   473.7766 | - прямой материальный ущерб причинен в размере 10929,7 млн. рублей (-10,6%);
+    28 |   261.9570 | - зарегистрировано 329 832 выезда пожарных подразделений на ликвидацию загораний.
+    29 |   370.6014 | Подразделениями ГПС на пожарах спасено 84 394 человека и материальных ценностей на сумму более 46,8 млрд, рублей.
+    30 |   694.9865 | Ежедневно в Российской Федерации происходило 513 пожаров, при которых погибало 38 человек и 36 человек получали травмы. Огнем уничтожалось 148 строений, 28 единиц автотехники, материальный ущерб составлял 29,5 млн. рублей.
+    31 |  1134.3990 | На города пришлось 62,2% от общего количества пожаров, 64,4% материального ущерба, 52,8% погибших при пожарах людей и 69,1% травмированных. На сельскую местность - 37,8% от общего количества пожаров, 35,6% материального ущерба, 47,2% от погибших при пожарах людей и 30,9% травмированных.
+    32 |     5.9383 | Относительные показатели, характеризующие оперативную обстановку с пожарами за 2009 год по Российской Федерации следующие:
+    33 |   354.5997 | - количество пожаров, приходящихся на 100 тыс. населения 131,98;
+    34 |    56.7620 | 4
+    35 |   409.2933 | - средний ущерб, приходящийся на один пожар - 57,40 тыс. руб.;
+    36 |   353.4170 | - количество погибших при пожарах на 100 тыс. населения - 9,80;
+    37 |   465.2307 | - количество травмированных при пожарах на 100 тыс. населения - 9,29.
+    38 |   999.5435 | В 2009 году от неосторожного обращения с огнем произошло 40,3% от общего количества пожаров, при которых погибло 9 383 человека (67,5% от общего количества) и 6 976 человек получили травмы (52,9%). Нарушение правил устройства и эксплуатации электрооборудования послужило причиной каждого пятого пожара (22,0%), при которых погибло 2 003 человека -14,4% от общего количества, получили травмы 2 174 человека - 16,5% от общего количества.
+    39 |   -38.7657 | В деятельности системы управления МЧС России важное место отводится Федеральному государственному бюджетному учреждению (ФГБУ) «Национальный центр управления в кризисных ситуациях (НЦУКС)».
+    40 |    51.6845 | Одна из приоритетных задач Национального центра - ускорение и оптимизация действий по реагированию на чрезвычайные ситуации с использованием современных технологий.
+    41 |   239.1397 | В настоящее время завершается работа по созданию своеобразного «мозга» НЦУКС - автоматизированной системы оперативного управления в кризисных ситуациях. Собраны различные информационные базы данных, например, по силам и средствам, которые могут быть привлечены к ликвидации последствий ЧС, по потенциально опасным объектам и т.д.
+    42 |   185.2545 | Эта информация позволит моделировать угрозы и чрезвычайные ситуации, разрабатывать варианты предупреждения, смягчения последствий и ликвидации возможных чрезвычайных ситуаций. Таким образом, готовятся сценарии для «проигрывания» различных вариантов управленческих решений.
+    43 |   -78.7251 | Также создается информационная оболочка, в которой будут находиться информационные ресурсы, включая и уже разработанные планы ликвидации последствий ЧС по конкретным объектам, а также инструмент, обеспечивающий поиск и формирование варианта решения с учетом различных условий (времени года, суток, погоды) в районе события.
+    44 |  -246.1284 | Далее в зависимости от ситуации будет корректироваться готовый вариант, либо сразу даваться команда на исполнение, что позволит значительно сократить время для принятия решений.
+    45 |    -7.9071 | Как только чрезвычайная ситуация будет ликвидирована, описание ра-
+    46 |    58.6907 | 5
+    47 |  -112.7016 | бот закладывается в архив информационной базы данных, с тем чтобы в случае возникновения подобной ситуации специалисты могли поднять анало-
+    48 |    95.0555 | гичные случаи для анализа.
+    49 |   120.4687 | В территориальных органах МЧС России алгоритм аналогичен: там функционируют свои центры управления в кризисных ситуациях, входящие в систему ФГБУ НЦУКС.
+    50 |  -110.1608 | Научные результаты диссертационной работы могут быть использованы при разработке различных вариантов предупреждения, смягчения последствий и ликвидации возможных чрезвычайных ситуаций в центрах управления в кризисных ситуациях территориальных органов МЧС России.
+    51 |  2488.8924 | Теоретическую основу составили работы ученых: Артамонова В.С., Брушлинского Н.Н., Вентцель Е.С., Гадышева В.А., Евграфова В.Г., Малыгина И.Г., Таранцева А.А., Чуприяна А.П. и других.
+    52 |  -185.4930 | Целью работы является повышение эффективности функционирования органов Государственной противопожарной службы МЧС России за счет широкого применения разработанных математических моделей.
+    53 |  -244.4542 | Научная задача диссертационного исследования посвящена разработке и совершенствованию моделей и методов оценки рисков пожарной опасности на промышленных объектах?
+    54 |  -148.0836 | Для достижения поставленной цели в работе решены следующие част-
+    55 |    12.0233 | ные научные задачи:
+    56 |    88.2994 | - разработка структуры и алгоритма функционирования автоматизированной системы управления риском пожарной опасности, позволяющей сни-зитъвеличину индивидуального риска до заданного значения;
+    57 |   -97.3735 | - разработка математической модели, позволяющей оцепить вероятности состояний системы пожаротушения;
+    58 |   -47.1900 | ’ - разработка методов технико-экономической оценки мероприятий пожарной безопасности для действующего и вновь создаваемого предприятия;
+    59 |     3.4712 | - проведение экспериментальных исследований функционирования системы управления риском пожарной опасности промышленного предприятия.
+    60 |    61.4918 | Объект исследования - процессы анализа и оценки рисков на промышленных объектах.
+    61 |    81.1903 | Предмет исследования - модели, методы и алгоритмы оценки пожарной опасности на производственных объектах.
+    62 |    51.7713 | 6
+    63 |    25.5440 | Методы исследования: общая теория систем, системный анализ, теория вероятностей, математическая статистика, теория дифференциальных уравнений, теория массового обслуживания.
+    64 |    69.8819 | Результаты, выносимые на защиту:
+    65 |   163.8994 | 1. Структура и алгоритм функционирования системы управления риском
+    66 |   -33.3685 | пожарной опасности промышленного предприятия, позволяющей регулировать величину индивидуального риска в установленных пределах, ^*^σ
+    67 |    47.2616 | 2. Вероятностные модели состояний системы пожаротушения и оценки рисков пожарной опасности группы промышленных предприятий.
+    68 |   174.6372 | 3. Методы технико-экономической оценки мероприятий пожарной безопасности для действующего и вновь создаваемого предприятия.
+    69 |   -71.8326 | Научная новизна. В диссертации разработаны и модифицированы модели и методы оценки рисков пожарной опасности на промышленных объектах, а также представлены практические результаты в области оценки и сни-
+    70 |   -10.4183 | жения рисков пожарной опасности на объектах промышленного назначения.
+    71 |   -20.7240 | Достоверность научных результатов определена и подтверждена экс-
+    72 |     9.2393 | периментальными исследованиями, свидетельствующими о правомерности использования математических моделей и методов при оценке рисков пожарной опасности промышленных предприятий.
+    73 |  -352.3129 | Практическая значимость научных результатов. Приведенные в работе модели оценки рисков пожарной опасности промышленных предприятий и оценки состояний системы пожаротушения могут быть использованы для обоснования управленческих решений по минимизации негативных последствий от пожаров. Сформулированные предложения по составу элементов и структуре системы управления риском пожарной опасности промышленного предприятия рекомендуются к использованию при создании автоматизированных систем управления риском пожарной опасности. Разработанные модели используются в образовательном процессе Санкт-Петербургского университета ГПС МЧС России.
+    74 |   242.1228 | Апробация работы. Научные результаты, полученные в результате исследования, докладывались на заседаниях кафедры прикладной математики и информационных технологий Санкт-Петербургского университета ГПС МЧС России, а также на научно-практических конференциях:
+    75 |   293.0364 | 1. II международная научно-практическая конференция «Сервис безо-
+    76 |    63.7475 | 7
+    77 |   342.4121 | пасности в России: опыт, проблемы, перспективы» (Санкт-Петербург, 2009 г.)
+    78 |   424.7205 | 2. V Всероссийская научно-практическая конференция «Проблемы обеспечения взрывобезопасности и противодействия терроризму» (Санкт-Петербург, 2010 г.)
+    79 |   285.0525 | Публикации. По теме диссертации опубликовано 7 печатных работ, в том числе_^ работы в изданиях, рекомендованных ВАК.
+    80 |   482.6195 | Структура и объем работы. Диссертация состоит из введения, четырех глав, заключения, списка литературы. Общий объем диссертации составляет 114 страниц, в том числе 20 рисунков, 6 таблиц и список литературы из 112 наименований.
+    81 |   -55.1467 | ОСНОВНОЕ СОДЕРЖАНИЕ РАБОТЫ
+    82 |    57.4160 | Во введении обоснована актуальность темы исследования, раскрыты атрибуты исследования, сформулированы выносимые на защиту научные результаты, показаны их научная новизна и практическая значимость.
+    83 |  -288.7027 | В первой главе «Анализ функционирования системы управления государственной противопожарной службой МЧС России в северозападном регионе» проведен анализ органов управления Государственной противопожарной службы МЧС России. Рассмотрены основные функции ГПС и структуры стратегического и оперативного управления в СевероЗападном федеральном округе. Представлена организация работы по прогнозированию чрезвычайных ситуаций. Дан обзор моделей функционирования противопожарных служб городов, позволяющих обосновать основные требования к системам управления рисками пожарной опасности. Рассмотрены характеристики подсистем системы управления рисками пожарной опасности:
+    84 |   -43.0051 | - подсистемы информационной поддержки действий инспектора Государственного пожарного надзора;
+    85 |    -7.5802 | - подсистемы автоматической поддержки решений руководителя тушения пожара.
+    86 |   -60.7587 | Для решения главных задач (пожарного надзора и пожаротушения) на каждом уровне управления формируется два контура управления:
+    87 |    67.4817 | - контур управления пожарным надзором;
+    88 |   138.7853 | - контур управления пожаротушением.
+    89 |    62.0597 | Реализацию процессов управления в ГПС МЧС России можно представить схемой процессного управления (рис.1).
+    90 |    58.3005 | 8
+    91 |    -8.6722 | Внешняя среда
+    92 |   186.2421 | Рис.1. Схема процессного управления в МЧС России
+    93 |  -251.7991 | В результате проведенного анализа сформулировано противоречие между высоким уровнем пожарной опасности объектов промышленного назначения и трудностями в адекватной и оперативной оценки риска пожарной опасности при использовании существующих математических моделей.
+    94 |  -216.0274 | Во второй главе «Модели и методы оценки рисков пожарной опасности» рассмотрена методология анализа рисков пожарной опасности и базовые понятия пожарной опасности.
+    95 |  -128.2494 | Анализ риска - это действия, направленные на выявление и количественное определение различных видов риска (в том числе риска пожарной опасности) при осуществлении каких-либо видов деятельности. Анализ риска предполагает выявление опасностей на исследуемой территории как причин риска. В ходе анализа риска используются статистические данные об опасных природных и техногенных явлениях. Методический аппарат анализа рисков приведен на рис. 2.
+    96 |  -136.5857 | Необходимые меры защиты определяются на основе анализа рисков и формируются в рамках единой государственной системы предупреждения чрезвычайных ситуаций по двум направлениям:
+    97 |    -5.2779 | - меры снижения рисков и смягчения последствий кризисных и чрезвычайных ситуаций, осуществляемые заранее;
+    98 |    34.2668 | - меры по смягчению последствий произошедших кризисных и чрезвычайных ситуаций и возмещение ущерба.
+    99 |    58.3005 | 9
+   100 |   211.9142 | Рис. 2. Методический аппарат анализа риска
+   101 |   -44.2503 | Основными среди базовых понятий являются:
+   102 |    92.3949 | - допустимый пожарный риск - пожарный риск, уровень которого допустим и обоснован исходя из социально-экономических условий;
+   103 |   -62.5146 | - индивидуальный пожарный риск - пожарный риск, который может привести к гибели человека в результате воздействия опасных факторов пожара;
+   104 |   -98.5363 | - система противопожарной защиты - комплекс организационных мероприятий и технических средств, направленных на защиту людей и имущества от воздействия опасных факторов пожара и (или) ограничение последствий воздействия опасных факторов пожара на объект защиты (продукцию).
+   105 |   -68.4854 | Приводятся показатели, по которым производится оценка пожарной
+   106 |    94.3601 | опасности.
+   107 |    39.9677 | Рассматривается разработанная математическая модель системы управления индивидуальным риском пожарной опасности.
+   108 |     9.9430 | Динамика промышленного объекта по показателю индивидуального
+   109 |   -58.8334 | риска описывается уравнением Стодолы:
+   110 |    60.9702 | ¾aKt) = 0, (
+   111 |    16.3260 | dt ,
+   112 |   146.3329 | где а - коэффициент самовыравнивания объекта.
+   113 |    63.7734 | 10
+   114 |  -190.5567 | Коэффициент а характеризует свойство самовыравнивания состояния промышленного объекта по показателю риска, которое состоит в том, что при отсутствии возмущающих воздействий риск уменьшается пропорционально его действующему значению.
+   115 |  -122.3731 | При действии возмущающих факторов уравнение динамики примет вид стохастического дифференциального уравнения:
+   116 |    34.2299 | ⅛ + = (2)
+   117 |    10.5251 | at
+   118 |   112.0433 | где / (/) - возмущающее воздействие.
+   119 |  -181.1104 | Возмущающее воздействие определяет случайное изменение индивидуального риска за счёт действия факторов, способствующих повышению пожарной опасности промышленного предприятия.
+   120 |    15.9306 | Пусть /(<) представляет собой стационарный случайный процесс, удовлетворяющий двум условиям:
+   121 |   112.0920 | 1) математическое ожидание M[f(t)]=0;
+   122 |   108.1322 | 2) корреляционная функция RW = N^¾tV
+   123 |   153.4635 | где N - спектральная плотность / (/).
+   124 |   -60.2297 | При этих условиях индивидуальный риск r^, представляет собой марковский процесс с математическим ожиданием
+   125 |   132.4405 | MV⅛r0e'aτF (3)
+   126 |    30.4682 | Распределение случайной величины r(Z) — Λ∕[r(z)] будет нормальным с дисперсией, определяемой выражением
+   127 |   181.5923 | σ2[rω] = ^(l-e'2"'), (4)
+   128 |    67.8727 | 1а
+   129 |    54.6478 | С учётом (3) и правила За оценка наибольшей величины индивидуального риска определяется выражением.
+   130 |   145.5128 | r(Z) = r^+3⅛e-h), (5)
+   131 |    61.9989 | V 2а
+   132 |  -243.5066 | В настоящее время проводятся исследования по разработке комплексов управления промышленной безопасностью, в состав таких комплексов должна входить и система управления риском пожарной опасности.
+   133 |    87.8140 | Управляемой величиной такой системы выступает оценка текущего значения индивидуального риска r(t). Алгоритм управления риском пожарной опасности представлен на рис. 3.
+   134 |    69.2464 | 11
+   135 |   198.6229 | Рис.З. Алгоритм управления рисками пожарной опасности
+   136 |   258.1927 | Структурно-функциональная схема варианта системы управления риском пожарной опасности, в которой реализуется предложенный алгоритм, представлена на рис. 4.
+   137 |   173.0308 | Рис. 4. Схема системы управления риском пожарной опасности
+   138 |   805.7673 | На рис. 4 обозначены: 1 — звено анализа, 2 - звено сравнения, 3 - звено преобразования, 4 - звено запаздывания, 5 - объект управления (промышленное предприятие).
+   139 |   256.6290 | Система управления риском пожарной опасности промышленного предприятия относится к стохастическим системам управления, т.к. управляемая величина (индивидуальный риск) имеет случайный характер. Качество про-
+   140 |    58.6012 | 12
+   141 |  -127.5064 | цесса управления в стохастических системах зависит от информации, которая может быть получена путем измерения и анализа управляемой величины.
+   142 |  -215.1823 | В системе управления риском пожарной опасности реализуется принцип управления по отклонению. В звене анализа производится анализ состояния пожарной опасности промышленного объекта и по определенным признакам оценивается значение индивидуального риска. В качестве признаков, повышающих величину индивидуального риска, могут выступать:
+   143 |   -85.0179 | - повышение количества отказов и неисправностей отдельных видов оборудования,
+   144 |    68.4904 | - использование высокоскоростных высокоинтенсивных режимов на оборудовании, выработавшем большую часть ресурса.
+   145 |  -160.5319 | При наличии на промышленном предприятии автоматизированной системы управления риском пожарной опасности уравнение динамики индивидуального риска примет вид ' ' ~
+   146 |    91.1735 | 9 (6)
+   147 |   203.4919 | где к - коэффициент передачи звена преобразования; 1з — время запаздывания управляющего воздействия.
+   148 |   -28.7488 | Решение неоднородного дифференциального уравнения (6) определяется формулой Коши, которая примет вид:
+   149 |   522.1990 | r^ = r0e^' + 3 Д (1 - е 2‘") - к J(r(f - ζ) - r⅛dt. (7)
+   150 |    63.6124 | V2α j
+   151 |  -134.8925 | Функционирование статистических систем управления принято оценивать по среднеквадратическому отклонению управляемой величины от его математического ожидания.
+   152 |  -192.8108 | В этом случае выражение для величины индивидуального риска промышленного предприятия с системой управления рисками пожарной опасности можно записать в виде:
+   153 |   345.3567 | r^ = ree"β + - е'2") - к ∫(r(z -t3V ^dt, (8) V2α '
+   154 |  -264.9829 | В (8) первое слагаемое представляет собой математическое ожидание величины индивидуального риска, второе слагаемое - величину среднеквадратического отклонения индивидуального риска от его математического ожидания, а третье слагаемое - управляющее воздействие системы управле-
+   155 |    67.0178 | 13
+   156 |   -10.8048 | ния риском пожарной опасности, компенсирующее увеличение индивиду-
+   157 |   145.5808 | Рис.5. Зависимость величины индивидуального риска пожарной опасности от времени
+   158 |   322.1729 | На рис. 5 представлены графики изменения во времени значений индивидуального риска пожарной опасности домостроительного комбината. График 2 при наличии автоматизированной системы управления риском пожарной опасности (выражение 8), график 1 - без системы управления риском пожарной опасности (выражение 8 без последнего слагаемого).
+   159 |  -188.1350 | Как видно, использование автоматизированной системы управления риском пожарной опасности позволяет снизить величины индивидуального риска до заданной величины за счет компенсации возмущающих воздействий управляющими.
+   160 |   -10.9759 | Рассматривается разработанная математическая модель оценки показателей ущерба от пожаров в группе промышленных предприятий.
+   161 |  -235.1864 | Общий ущерб от пожаров в группе промышленных объектов определяется суммой вероятных ущербов от пожаров на объектах группы
+   162 |   298.7983 | R.=∑R=∑P,-H,., (9)
+   163 |    99.7174 | где и - количество объектов в группе.
+   164 |  -120.9370 | Средний ущерб от пожаров в группе промышленных объектов определяется формулой
+   165 |    62.2349 | 14
+   166 |   327.2736 | R = ⅛R = ⅛P.W.. (10)
+   167 |    21.0093 | ∏ '=l п 'el
+   168 |  -299.4479 | В третьей главе «Математическая модель оценки состояний системы пожаротушения» приводятся математические модели для оценки вероятностей состояний системы пожаротушения методом пространства состояний.
+   169 |  -151.2029 | Описывается вероятностное пространство состояний системы пожаротушения Ω, элементами которого являются:
+   170 |   370.3198 | < Уо - точка с координатами (0,...,0), соответствует состоянию, когда все формирования системы пожаротушения свободны;
+   171 |   436.1395 | < y∣ - точка с координатами (τl,0,...,0), соответствует состоянию, когда на тушении пожара занято одно формирование на время r∣ = rτ, распределенное в промежутке О^г^г™»,, где rv - среднее время занятости подразделения;
+   172 |    61.7749 | Гтах - максимальное время занятости подразделения;
+   173 |   529.2133 | < y2 - точка с координатами (г,, Гз ,0,... ,0) соответствует состоянию, когда на тушении пожара занято два формирования. Время занятости удовлетворяет неравенствам:
+   174 |   458.5147 | 0^Г1^Гт.х, 0 -< Гз Гт.»
+   175 |   330.8770 | ωn -точка с координатами (r∣,Γ2,,... г»,) соответствует состоянию, когда занято п формирований время занятости удовлетворяет неравенствам:
+   176 |    81.9120 | 0 Гз
+   177 |   247.3589 | 0 √ Г„ "< Гт.» .
+   178 |  -496.0138 | Исследования показывают, что при входном воздействии, которое подчиняется пуассоновскому закону распределения, изменение состояний системы массового обслуживания представляет собой марковский случайный процесс. То есть вероятность состояния системы пожаротушения в некоторый момент времени зависит от ситуации, сложившийся в этот момент и не зависит от того, в каком состоянии система находилась в прошлом.
+   179 |  -233.6144 | Для математического моделирования динамических свойств сложных систем нашли широкое применение модели системной динамики, основанные на векторном представлении состояний сложных систем.
+   180 |    64.1636 | 15
+   181 |   -66.3209 | Процесс изменения состояний системы пожаротушения можно описать векторно-матричным уравнением динамики
+   182 |    62.4670 | ⅛ = A∙pU), (11)
+   183 |    10.5251 | at
+   184 |   108.0893 | с начальными условиями, заданными вектором
+   185 |   735.9952 | p(0) = [p0(0),p1(0),....,p√0)] r, (12)
+   186 |   180.3057 | где А - динамическая матрица системы пожаротушения, представляющая собой квадратную матрицу размером тхи, м = и+1;« — количество формирований в
+   187 |    -2.3925 | системе пожаротушения; рр — вектор состояний системы пожаротушения:
+   188 |    90.1952 | p(∕) = [poW,Pι(O,∙∙∙∙,p^W] r, (13)
+   189 |   -72.5870 | Элементы динамической матрицы системы пожаротушения зависят от интенсивности потока пожаров и среднего времени занятия пожарного подразделения на тушении пожара. Алгоритм определения элементов динамической матрицы системы пожаротушения представлен на рис. 6.
+   190 |  -140.5200 | Решением уравнения (11) является вектор состояний системы пожаротушения (13), координаты которого образуют текущее распределение вероятностей состояний системы.
+   191 |    38.2966 | Решение векторно-матричного уравнения (И) имеет вид
+   192 |   168.5258 | Р (t) = Φ(t)-3 (0) , (14)
+   193 |   142.4767 | где Φ(t) - переходная матрица.
+   194 |    65.8166 | Переходную матрицу Φ(t) можно определить операторным методом.
+   195 |   187.0872 | Применим к вектор-функции р^ - преобразование Лапласа L[s] и получим операторное уравнение
+   196 |    46.8591 | S⅛⅛>⅛), (15)
+   197 |    63.6651 | где S - комплексное число, S=a+jω, p(S) - изображение по Лапласу вектора состояний системы пожаротушения.
+   198 |   -43.5175 | Запишем операторное уравнение в виде
+   199 |    64.6992 | (SE-A)∙p(S)=p(O), (16)
+   200 |   173.6918 | где Е - единичная матрица.
+   201 |    57.2442 | 16
+   202 |   173.5528 | Рис. 6. Алгоритм определения элементов динамической матрицы системы пожаротушения
+   203 |    69.2205 | 17
+   204 |   375.1593 | Выразим из (16) изображение вектора состояний р($М8Е-АУ'-р(0). (17)
+   205 |   254.2367 | Обратная матрица определяется по формуле (5£-^Г'= - * -a⅞ISE-A), (18)
+   206 |   246.2908 | где adj(SE - А) - матрица алгебраических дополнений матрицы (SE-A).
+   207 |   347.4813 | Применив к (17) обратное преобразование Лапласа, получим: ⅛⅜ = i∕4se-aΓ∙p(0), (19)
+   208 |    99.4280 | Сравним выражения (14) и (19) и получим формулу определения переходной матрицы
+   209 |   213.7627 | Ф(/) = £'[Ж-4]'. (20)
+   210 |    -5.3421 | Пример определения состояний системы пожаротушения.
+   211 |     8.2363 | Исходные данные для моделирования:
+   212 |   171.6308 | Λ=0,13-
+   213 |    30.9160 | - плотность потока пожаров ’ час ,
+   214 |    21.8949 | - среднее время занятости формирования ГсР ~ ЬНчас ,
+   215 |   181.7164 | - число подразделений т = 3.
+   216 |   904.8013 | Результаты моделирования системы пожаротушения представлены на рис. 7 ( p⅜ P∣.P1,P5 - вероятности 0-го, 1-го, 2-го и 3-го состояний).
+   217 |   168.0566 | Рис.7. Вероятность состояний системы пожаротушения
+   218 |    63.7734 | 18
+   219 |  -129.3579 | В четвертой главе «Методы технико-экономической оценки мероприятий пожарной безопасности» приводятся результаты разработки методов технико-экономической оценки мероприятий пожарной безопасности для действующих и проектируемых промышленных предприятий. Методы позволяют связать ожидаемую прибыль с оценкой риска пожарной опасности, который зависит от затрат на противопожарные мероприятия.
+   220 |  -168.7663 | Для действующих предприятий затраты на мероприятия пожарной безопасности следует включить в формулу издержек
+   221 |   231.2981 | C(L,K,S) = w1L + w2K + S, (21) где L - стоимость трудового ресурса,
+   222 |    38.5993 | К - стоимость материального ресурса,
+   223 |    86.3812 | S - стоимость мероприятий пожарной безопасности.
+   224 |  -184.3341 | Степень риска пожарной опасности определяется гиперболической функцией вида
+   225 |   286.4771 | p1sv⅞' (22) где ξ - коэффициент, определяемый по данным статистики или экспертным методом; Р(0) - значение степени риска при затратах на противопожарные мероприятия S≈0.
+   226 |   -71.9722 | Таким образом, каждому значению прибыли и затрат на мероприятия пожарной безопасности можно поставить в соответствие оценку риска потери прибыли. Функция
+   227 |   265.9343 | Φ<S>∖-P(S∖ (23) позволяет оценить вероятность сохранения дохода (прибыли), т.е. вероятность невозникновения пожара.
+   228 |  -237.0408 | Для проектируемых предприятий ставится и решается задача определения оптимальной по критерию максимума прибыли комбинации ресурсов. Объем выпуска продукции среднемасштабных хозяйственных объектов принято оценивать мультипликативной производственной функцией
+   229 |   286.6752 | Y = F(lL,K) = Yo∙Lε'∙Kε∖ (24) где у0 - коэффициент, соизмеряющий ресурсы с выпуском; я,и - коэффициенты эластичности по трудовому и материальному ресурсам соответственно, показывающие на сколько процентов возрастет выпуск продукции при увеличении ресурса на 1%.
+   230 |    63.7734 | 19
+   231 |  -104.5079 | В этом случае прибыль предприятия определяется по формуле
+   232 |   220.4547 | ∏ ^L,K,S^ = Ц-у0∙ Lcl ∙ Kc2
+   233 |    70.2050 | 1 Рот
+   234 |   122.4641 | 1+£5
+   235 |   194.2691 | -^W1L⅜W1K⅜S^
+   236 |    69.3434 | L>0,
+   237 |    34.6201 | (25)
+   238 |    66.5962 | К>0,
+   239 |   108.5852 | О < S < S max.
+   240 |   178.4110 | где Ц- оптовая цепа единицы продукции, выпускаемой предприятием. Задача оптимизации прибыли ставится следующим образом Π(L,K,S) -> max
+   241 |   235.4295 | при L>0,K>0,S max > 5 > О,
+   242 |    57.2258 | где Smαx -допустимая сумма средств, которые могут быть выделены на мероприятия противопожарной безопасности.
+   243 |   225.1517 | Это задача нелинейного программирования с двумя условиями неотрицательности L > О, К > 0 и условием вида 0 < S < smιx.
+   244 |    10.5728 | Необходимым и достаточным условием решения задачи нелинейного программирования являются условия Куна-Таккера
+   245 |   134.3096 | δ∏(Ltt,Ko,S6) ≤ 0
+   246 |     5.2421 | ∂L ’
+   247 |   245.8387 | δ∏g0,κ0,s9) 0
+   248 |    13.5359 | ЭК '
+   249 |    39.6769 | (27)
+   250 |   277.8049 | 8∏g0,κtt,s^ ,,0 95
+   251 |   250.1470 | e∏(Lβ,κ0,s0) , δ∏ge,κ⅜,s^ ∂∏g0,κa,sti) c
+   252 |    82.3206 | 8L ЭК ∂S
+   253 |   249.6243 | L«>0, Kl>0, 5„>0
+   254 |    70.9777 | В оптимальном плане все компоненты положительны, поэтому условия Куна-Таккера примут вид:
+   255 |   393.4231 | -tZ∙Xo∙<Fl∙ZSl^lΛrS2fl-τ-⅝-] -^,ι = 0
+   256 |    -4.2071 | ( р
+   257 |   295.4214 | U∙y0∙ε2∙Lε<,lK∏ -^2=0
+   258 |    76.5217 | к l+⅞S0J
+   259 |    34.2299 | (28)
+   260 |   274.8999 | 11 л 7 τflιze2∣ 1
+   261 |   110.2763 | Ц/Уo*£l*Lo Ко 1 e
+   262 |   265.4246 | ^L-1=O. l+⅜5≈
+   263 |   -53.0371 | Из первого и второго уравнений можно получить
+   264 |    53.1282 | 20
+   265 |     5.2421 | L
+   266 |   122.1437 | ε2 W1
+   267 |    57.8838 | W∖ и 2
+   268 |   237.0267 | l-fl-f2.
+   269 |    66.8041 | fl l-cl
+   270 |    37.3397 | U⅜ •(—) W∖ Wι
+   271 |    58.3703 | f2
    272 |     0.0000 | ∕⅛
-   273 |     3.0000 | So
-   274 |    19.0000 | (29)
-   275 |   319.0000 | Эти значения ресурсов дают максимальную прибыль при фиксированном S,=S∕.
-   276 |   452.0000 | Для определения So решается задача оптимизации прибыли при различных фиксированных значениях затрат s∣ ε Lθ,SmaχJ
-   277 |   381.0000 | Затем определяется Si, при котором прибыль самая высокая. Это значение Si принимаем за So.
-   278 |   447.0000 | В итоге получим комбинацию производственных ресурсов Lo, Ко, So, оптимальную по критерию максимума прибыли.
-   279 |  1038.0000 | На рис. 8 представлен график зависимости прибыли предприятия от затрат на мероприятия пожарной безопасности. Из графика видно, что оптимальные значения затрат на мероприятия пожарной безопасности составляет 60 тыс. рублей.
-   280 |   447.0000 | Рис. 8. График зависимости прибыли предприятия от затрат на мероприятия пожарной безопасности
-   281 |  1122.0000 | В заключении представлены основные результаты исследования, свидетельствующие о том, что повышение эффективности функционирования органов Государственной противопожарной службы МЧС России, возможно за счет применения разработанных математических моделей.
-   282 |    12.0000 | 21
-   283 |   136.0000 | ОСНОВНЫЕ РЕЗУЛЬТАТЫ ИССЛЕДОВАНИЯ
-   284 |   551.0000 | Разработаны вероятностные модели оценки риска пожарной опасности промышленного предприятия и группы промышленных предприятий.
-   285 |   626.0000 | Разработаны экономико-математические модели для оценки влияния риска пожарной опасности промышленных предприятий на их доход и прибыль.
-   286 |  1320.0000 | Разработана математическая модель автоматизированной системы управления риском пожарной опасности промышленного предприятия. Определены ее структура, состав и назначение элементов. Система позволяет регулировать величину индивидуального риска пожарной опасности в установленных пределах.
-   287 |   585.0000 | Разработана математическая модель пространства состояний системы пожаротушения и алгоритм определения вероятностей состояний.
-   288 |  1517.0000 | Рассмотренные математические модели и методы позволяют производить прогнозные оценки рисков пожарной опасности промышленных предприятий, оценки технической и экономической эффективности мероприятий пожарной безопасности, оценки состояний систем пожаротушения. Разработанные математические модели проверены моделированием на компьютерах.
-   289 |   991.0000 | Результаты работы могут быть использованы для информационного обеспечения при обосновании управленческих решений по противопожарной безопасности руководством промышленных предприятий и должностными лицами ГПС МЧС России.
-   290 |   736.0000 | Совокупность полученных в диссертации теоретических и практических результатов позволяет сделать вывод о том, что цель работы достигнута, поставленная задача решена.
-   291 |   215.0000 | Основные работы, опубликованные по теме диссертации
-   292 |   341.0000 | Статьи в ведущих рецензируемых научных журналах и изданиях, рекомендованных ВАК
-   293 |   924.0000 | 1. Чалаташвили М.Н., Исаков С.Л. Векторно-матричная модель системы пожаротушения // Проблемы управления рисками в техносфере № 4(8). СПб.: СПбУ ГПС МЧС России. 2008.0,6/0,3 п.л.
-   294 |   993.0000 | 2. Чалаташвили М.Н., Исаков С.Л. Об управлении риском пожарной опасности промышленного предприятия // Проблемы управления рисками в техносфере № 4(8). СПб.: СПбУ ГПС МЧС России. 2008.0,6/0,3 п.л.
-   295 |    12.0000 | 22
-   296 |   967.0000 | 3. Чалаташвили М.Н., Исаков С.Л. Экономическая эффективность мероприятий пожарной безопасности // Проблемы управления рисками в техносфере № 1(13). СПб.: СПбУ ГПСМЧС России. 2010.0,6/0,3 п.л.
-   297 |   232.0000 | Сборники трудов всероссийских и международных конференций
-   298 |  1394.0000 | 4. Чалаташвили М.Н., Исаков С.Л. Возможности оценки пожарного риска на производственных объектах И Материалы II международной научнопрактической конференции «Сервис безопасности в России: опыт, проблемы, перспективы», Санкт-Петербург, 29-31 октября 2009 г. СПб.: СПбУ ГПС МЧС России, 2009. 0,4/0,2 п.л.
-   299 |  1313.0000 | 5. Чалаташвили М.Н. Методический аппарат анализа рисков кризисных и чрезвычайных ситуаций // Материалы II международной научнопрактической конференции «Сервис безопасности в России: опыт, проблемы, перспективы», Санкт-Петербург, 29 — 31 октября 2009 г. СПб.: СПбУ ГПС МЧС России, 2009. 0,3 п.л.
-   300 |  1565.0000 | 6. Чалаташвили М.Н., Исаков С.Л. Об оценке эффективности мероприятий пожарной безопасности на промышленном предприятии И Материалы V Всероссийской научно-практической конференции «Проблемы обеспечения взрывобезопасности и противодействия терроризму», Санкт-Петербург, 20 -21 апреля 2010 г. СПб.: СПбУ ГПС МЧС России, 2010. 0,4/0,2 п.л.
-   301 |  1407.0000 | 7. Чалаташвили М.Н. Возможности управления риском пожарной опасности на промышленном предприятии // Материалы V Всероссийской научно-практической конференции «Проблемы обеспечения взрывобезопасности и противодействия терроризму», Санкт-Петербург, 20-21 апреля 2010 г. СПб.: СПбУ ГПС МЧС России, 2010. 0,3 п.л.
-   302 |   201.0000 | Подписано в печать 14.01.2011 Формат 60x84 *Лб
-   303 |   238.0000 | Печать цифровая Объем 1.0 п.л.Тираж 100 экз.
-   304 |   267.0000 | Отпечатано в Санкт-Петербургском университете ГПС МЧС России
-   305 |   200.0000 | 196105, Санкт-Петербург, Московский проспект, дом 149
+   273 |    10.5251 | So
+   274 |    34.2299 | (29)
+   275 |    90.3525 | Эти значения ресурсов дают максимальную прибыль при фиксированном S,=S∕.
+   276 |   -25.9621 | Для определения So решается задача оптимизации прибыли при различных фиксированных значениях затрат s∣ ε Lθ,SmaχJ
+   277 |   181.7722 | Затем определяется Si, при котором прибыль самая высокая. Это значение Si принимаем за So.
+   278 |   127.5277 | В итоге получим комбинацию производственных ресурсов Lo, Ко, So, оптимальную по критерию максимума прибыли.
+   279 |   201.0281 | На рис. 8 представлен график зависимости прибыли предприятия от затрат на мероприятия пожарной безопасности. Из графика видно, что оптимальные значения затрат на мероприятия пожарной безопасности составляет 60 тыс. рублей.
+   280 |   116.1706 | Рис. 8. График зависимости прибыли предприятия от затрат на мероприятия пожарной безопасности
+   281 |   -93.8477 | В заключении представлены основные результаты исследования, свидетельствующие о том, что повышение эффективности функционирования органов Государственной противопожарной службы МЧС России, возможно за счет применения разработанных математических моделей.
+   282 |    58.6012 | 21
+   283 |   -30.1421 | ОСНОВНЫЕ РЕЗУЛЬТАТЫ ИССЛЕДОВАНИЯ
+   284 |   -14.4830 | Разработаны вероятностные модели оценки риска пожарной опасности промышленного предприятия и группы промышленных предприятий.
+   285 |    68.7025 | Разработаны экономико-математические модели для оценки влияния риска пожарной опасности промышленных предприятий на их доход и прибыль.
+   286 |    40.3659 | Разработана математическая модель автоматизированной системы управления риском пожарной опасности промышленного предприятия. Определены ее структура, состав и назначение элементов. Система позволяет регулировать величину индивидуального риска пожарной опасности в установленных пределах.
+   287 |  -107.5643 | Разработана математическая модель пространства состояний системы пожаротушения и алгоритм определения вероятностей состояний.
+   288 |  -223.4716 | Рассмотренные математические модели и методы позволяют производить прогнозные оценки рисков пожарной опасности промышленных предприятий, оценки технической и экономической эффективности мероприятий пожарной безопасности, оценки состояний систем пожаротушения. Разработанные математические модели проверены моделированием на компьютерах.
+   289 |  -127.0894 | Результаты работы могут быть использованы для информационного обеспечения при обосновании управленческих решений по противопожарной безопасности руководством промышленных предприятий и должностными лицами ГПС МЧС России.
+   290 |  -155.1725 | Совокупность полученных в диссертации теоретических и практических результатов позволяет сделать вывод о том, что цель работы достигнута, поставленная задача решена.
+   291 |   -20.0956 | Основные работы, опубликованные по теме диссертации
+   292 |    80.2565 | Статьи в ведущих рецензируемых научных журналах и изданиях, рекомендованных ВАК
+   293 |  1768.5150 | 1. Чалаташвили М.Н., Исаков С.Л. Векторно-матричная модель системы пожаротушения // Проблемы управления рисками в техносфере № 4(8). СПб.: СПбУ ГПС МЧС России. 2008.0,6/0,3 п.л.
+   294 |  1629.7923 | 2. Чалаташвили М.Н., Исаков С.Л. Об управлении риском пожарной опасности промышленного предприятия // Проблемы управления рисками в техносфере № 4(8). СПб.: СПбУ ГПС МЧС России. 2008.0,6/0,3 п.л.
+   295 |    47.9559 | 22
+   296 |  1702.8756 | 3. Чалаташвили М.Н., Исаков С.Л. Экономическая эффективность мероприятий пожарной безопасности // Проблемы управления рисками в техносфере № 1(13). СПб.: СПбУ ГПСМЧС России. 2010.0,6/0,3 п.л.
+   297 |    10.7405 | Сборники трудов всероссийских и международных конференций
+   298 |  1948.6720 | 4. Чалаташвили М.Н., Исаков С.Л. Возможности оценки пожарного риска на производственных объектах И Материалы II международной научнопрактической конференции «Сервис безопасности в России: опыт, проблемы, перспективы», Санкт-Петербург, 29-31 октября 2009 г. СПб.: СПбУ ГПС МЧС России, 2009. 0,4/0,2 п.л.
+   299 |  1633.2159 | 5. Чалаташвили М.Н. Методический аппарат анализа рисков кризисных и чрезвычайных ситуаций // Материалы II международной научнопрактической конференции «Сервис безопасности в России: опыт, проблемы, перспективы», Санкт-Петербург, 29 — 31 октября 2009 г. СПб.: СПбУ ГПС МЧС России, 2009. 0,3 п.л.
+   300 |  1865.8966 | 6. Чалаташвили М.Н., Исаков С.Л. Об оценке эффективности мероприятий пожарной безопасности на промышленном предприятии И Материалы V Всероссийской научно-практической конференции «Проблемы обеспечения взрывобезопасности и противодействия терроризму», Санкт-Петербург, 20 -21 апреля 2010 г. СПб.: СПбУ ГПС МЧС России, 2010. 0,4/0,2 п.л.
+   301 |  1549.4082 | 7. Чалаташвили М.Н. Возможности управления риском пожарной опасности на промышленном предприятии // Материалы V Всероссийской научно-практической конференции «Проблемы обеспечения взрывобезопасности и противодействия терроризму», Санкт-Петербург, 20-21 апреля 2010 г. СПб.: СПбУ ГПС МЧС России, 2010. 0,3 п.л.
+   302 |   564.1974 | Подписано в печать 14.01.2011 Формат 60x84 *Лб
+   303 |   591.1857 | Печать цифровая Объем 1.0 п.л.Тираж 100 экз.
+   304 |    42.5446 | Отпечатано в Санкт-Петербургском университете ГПС МЧС России
+   305 |   233.8911 | 196105, Санкт-Петербург, Московский проспект, дом 149
 
 ================================================================================
 STATISTICS
 ================================================================================
 Lines : 305
-Min   : 0.0000
-Max   : 2958.0000
-Mean  : 429.4066
+Min   : -496.0138
+Max   : 2488.8924
+Mean  : 139.6649
