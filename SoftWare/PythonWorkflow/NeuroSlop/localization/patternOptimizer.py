@@ -1,8 +1,6 @@
 import argparse
 import json
 import random
-import shutil
-import subprocess
 from pathlib import Path
 
 import numpy as np
@@ -10,7 +8,6 @@ from scipy.optimize import differential_evolution
 
 
 REFERENCE_LABEL = "БИБЛ. ССЫЛКА"
-
 DEFAULT_SEED = 42
 
 
@@ -41,12 +38,7 @@ def get_references(annotations):
 
 
 def get_document_reference_lines(json_file, text_file):
-    """
-    Возвращает множество строк, которые относятся
-    к библиографическому блоку.
-
-    Индексы start/end в разметке считаются по символам текста.
-    """
+    """Возвращает номера строк, входящих в библиографический блок."""
 
     with open(text_file, "r", encoding="utf-8") as f:
         text = f.read()
@@ -54,14 +46,13 @@ def get_document_reference_lines(json_file, text_file):
     with open(json_file, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    annotations = data.get("annotations", [])
-
-    references = get_references(annotations)
+    references = get_references(
+        data.get("annotations", [])
+    )
 
     if not references:
         return set()
 
-    # Позиция начала каждой строки
     line_starts = [0]
 
     for i, char in enumerate(text):
@@ -69,11 +60,6 @@ def get_document_reference_lines(json_file, text_file):
             line_starts.append(i + 1)
 
     def char_to_line(position):
-        """
-        Перевод позиции символа в номер строки.
-        """
-
-        # binary search
         left = 0
         right = len(line_starts) - 1
 
@@ -115,22 +101,22 @@ def load_machine_file(filename):
 
 
 # ============================================================
-# Формирование предсказанного блока
+# Score
 # ============================================================
 
 def scores_from_counts(counts, weights):
-    """
-    S_i = sum_j x_ij * w_j
-    """
+    return counts @ weights
 
-    return np.asarray(counts) @ np.asarray(weights)
 
+# ============================================================
+# Поиск библиографического блока
+# ============================================================
 
 def find_best_block(scores, threshold):
     """
-    Находит непрерывный блок строк, где score >= threshold.
+    Находит непрерывный блок строк, score которых >= threshold.
 
-    Из нескольких блоков выбирается блок с максимальной
+    Если блоков несколько, выбирается блок с максимальной
     суммой score.
     """
 
@@ -163,7 +149,6 @@ def find_best_block(scores, threshold):
                 current_start = None
                 current_value = 0.0
 
-    # Последний блок
     if current_start is not None:
 
         if current_value > best_value:
@@ -182,10 +167,6 @@ def find_best_block(scores, threshold):
 # ============================================================
 
 def interval_iou(predicted, target):
-    """
-    IoU двух интервалов строк.
-    """
-
     if predicted is None or not target:
         return 0.0
 
@@ -194,16 +175,34 @@ def interval_iou(predicted, target):
     target_start = min(target)
     target_end = max(target)
 
-    intersection_start = max(pred_start, target_start)
-    intersection_end = min(pred_end, target_end)
+    intersection_start = max(
+        pred_start,
+        target_start
+    )
 
-    if intersection_start > intersection_end:
-        intersection = 0
+    intersection_end = min(
+        pred_end,
+        target_end
+    )
+
+    if intersection_start <= intersection_end:
+        intersection = (
+            intersection_end
+            - intersection_start
+            + 1
+        )
     else:
-        intersection = intersection_end - intersection_start + 1
+        intersection = 0
 
-    union_start = min(pred_start, target_start)
-    union_end = max(pred_end, target_end)
+    union_start = min(
+        pred_start,
+        target_start
+    )
+
+    union_end = max(
+        pred_end,
+        target_end
+    )
 
     union = union_end - union_start + 1
 
@@ -214,18 +213,44 @@ def interval_iou(predicted, target):
 
 
 # ============================================================
+# Margin
+# ============================================================
+
+def calculate_margin(document, scores):
+    """
+    Разница между средним score библиографических
+    и обычных строк.
+
+    Используется только как слабый дополнительный
+    критерий при оптимизации.
+    """
+
+    target = document["target"]
+
+    positive_scores = []
+    negative_scores = []
+
+    for i, score in enumerate(scores, start=1):
+
+        if i in target:
+            positive_scores.append(score)
+        else:
+            negative_scores.append(score)
+
+    if not positive_scores or not negative_scores:
+        return 0.0
+
+    return (
+        np.mean(positive_scores)
+        - np.mean(negative_scores)
+    )
+
+
+# ============================================================
 # Dataset
 # ============================================================
 
 def prepare_dataset(source_dir):
-    """
-    Находит пары:
-        document.txt
-        document.json
-
-    и соответствующий:
-        MACHINE_document.json
-    """
 
     source_dir = Path(source_dir)
 
@@ -233,7 +258,6 @@ def prepare_dataset(source_dir):
 
     for text_file in sorted(source_dir.glob("*.txt")):
 
-        # Не брать наши результаты
         if text_file.name.startswith("RECOGNISE_"):
             continue
 
@@ -269,7 +293,9 @@ def prepare_dataset(source_dir):
             )
             continue
 
-        machine = load_machine_file(machine_file)
+        machine = load_machine_file(
+            machine_file
+        )
 
         counts = np.asarray(
             [
@@ -282,17 +308,21 @@ def prepare_dataset(source_dir):
         dataset.append({
             "name": text_file.stem,
             "counts": counts,
-            "target": target_lines,
+            "target": target_lines
         })
 
     return dataset
 
 
 # ============================================================
-# Метрики
+# Оценка одного документа
 # ============================================================
 
-def evaluate_document(document, weights, threshold):
+def evaluate_document(
+    document,
+    weights,
+    threshold
+):
     scores = scores_from_counts(
         document["counts"],
         weights
@@ -303,78 +333,132 @@ def evaluate_document(document, weights, threshold):
         threshold
     )
 
-    return interval_iou(
+    iou = interval_iou(
         predicted,
         document["target"]
     )
 
+    margin = calculate_margin(
+        document,
+        scores
+    )
 
-def evaluate_dataset(dataset, weights, threshold):
+    return iou, margin
+
+
+# ============================================================
+# Оценка dataset
+# ============================================================
+
+def evaluate_dataset(
+    dataset,
+    weights,
+    threshold
+):
     if not dataset:
-        return 0.0
+        return 0.0, 0.0
 
-    values = [
-        evaluate_document(
+    ious = []
+    margins = []
+
+    for document in dataset:
+
+        iou, margin = evaluate_document(
             document,
             weights,
             threshold
         )
-        for document in dataset
-    ]
 
-    return float(np.mean(values))
+        ious.append(iou)
+        margins.append(margin)
+
+    return (
+        float(np.mean(ious)),
+        float(np.mean(margins))
+    )
 
 
 # ============================================================
-# Оптимизация
+# Optimization
 # ============================================================
 
 def optimize(train, pattern_count):
-    """
-    Оптимизирует:
-
-        weight_1 ... weight_N
-        threshold
-
-    Целевая функция:
-
-        mean(IoU)
-    """
-
-    # Первые N параметров — веса.
-    # Последний — threshold.
 
     dimension = pattern_count + 1
 
-    # Ограничения весов.
-    #
-    # Разрешаем отрицательные веса:
-    #
-    # отрицательный вес означает, что наличие паттерна
-    # скорее говорит ПРОТИВ библиографической строки.
-    #
     weight_bounds = [
         (-10.0, 10.0)
         for _ in range(pattern_count)
     ]
 
-    # Порог.
     threshold_bounds = (0.0, 50.0)
 
-    bounds = weight_bounds + [threshold_bounds]
+    bounds = weight_bounds + [
+        threshold_bounds
+    ]
+
+    # Очень маленький вклад margin.
+    #
+    # IoU остаётся главным критерием.
+    #
+    # Margin нужен только для того, чтобы отличать
+    # решения с одинаковым IoU.
+
+    MARGIN_COEFFICIENT = 0.001
+
+    history = []
 
     def objective(parameters):
 
         weights = parameters[:-1]
         threshold = parameters[-1]
 
-        score = evaluate_dataset(
+        mean_iou, mean_margin = evaluate_dataset(
             train,
             weights,
             threshold
         )
 
-        return -score
+        # Максимизируем:
+        #
+        # IoU + lambda * margin
+        #
+        # scipy минимизирует функцию,
+        # поэтому возвращаем отрицательное значение.
+
+        objective_value = (
+            mean_iou
+            + MARGIN_COEFFICIENT * mean_margin
+        )
+
+        return -objective_value
+
+    def callback(xk, convergence):
+
+        weights = xk[:-1]
+        threshold = xk[-1]
+
+        mean_iou, mean_margin = evaluate_dataset(
+            train,
+            weights,
+            threshold
+        )
+
+        history.append({
+            "iteration": len(history) + 1,
+            "best_iou": mean_iou,
+            "mean_margin": mean_margin,
+            "convergence": float(convergence),
+        })
+
+        print(
+            f"Iteration "
+            f"{len(history):3d} | "
+            f"IoU = {mean_iou:.10f} | "
+            f"Margin = {mean_margin:.6f}"
+        )
+
+        return False
 
     print()
     print("=" * 60)
@@ -384,25 +468,44 @@ def optimize(train, pattern_count):
 
     print(f"Documents : {len(train)}")
     print(f"Patterns  : {pattern_count}")
+    print(f"Parameters: {dimension}")
     print()
 
     result = differential_evolution(
         objective,
         bounds,
         seed=DEFAULT_SEED,
+
+        # Размер популяции.
+        # 5 * 430 ≈ 2150 кандидатов.
         popsize=5,
+
         maxiter=100,
-        tol=1e-5,
+
+        # Пока не делаем агрессивную остановку.
+        # Хотим увидеть реальную динамику.
+        tol=1e-7,
+
         polish=False,
+
         workers=1,
+
         updating="immediate",
-        disp=True
+
+        disp=False,
+
+        callback=callback
     )
 
     weights = result.x[:-1]
     threshold = result.x[-1]
 
-    return weights, threshold, result
+    return (
+        weights,
+        threshold,
+        result,
+        history
+    )
 
 
 # ============================================================
@@ -410,6 +513,7 @@ def optimize(train, pattern_count):
 # ============================================================
 
 def save_weights(patterns_file, weights):
+
     with open(patterns_file, "r", encoding="utf-8") as f:
         data = json.load(f)
 
@@ -420,7 +524,10 @@ def save_weights(patterns_file, weights):
             "Number of patterns changed!"
         )
 
-    for pattern, weight in zip(patterns, weights):
+    for pattern, weight in zip(
+        patterns,
+        weights
+    ):
         pattern["weight"] = float(weight)
 
     data["patterns"] = patterns
@@ -435,12 +542,48 @@ def save_weights(patterns_file, weights):
 
 
 # ============================================================
-# Печать результатов
+# Сохранение истории
 # ============================================================
 
-def print_dataset_result(name, dataset, weights, threshold):
+def save_history(
+    source_dir,
+    history
+):
 
-    score = evaluate_dataset(
+    source_dir = Path(source_dir)
+
+    filename = (
+        source_dir /
+        "OPTIMIZATION_HISTORY.json"
+    )
+
+    data = {
+        "iterations": history
+    }
+
+    with open(filename, "w", encoding="utf-8") as f:
+        json.dump(
+            data,
+            f,
+            ensure_ascii=False,
+            indent=2
+        )
+
+    return filename
+
+
+# ============================================================
+# Dataset result
+# ============================================================
+
+def print_dataset_result(
+    name,
+    dataset,
+    weights,
+    threshold
+):
+
+    iou, margin = evaluate_dataset(
         dataset,
         weights,
         threshold
@@ -448,11 +591,16 @@ def print_dataset_result(name, dataset, weights, threshold):
 
     print(
         f"{name:12s}: "
-        f"IoU = {score:.4f} "
+        f"IoU = {iou:.4f} "
         f"({len(dataset)} documents)"
     )
 
-    return score
+    print(
+        f"{'':12s}  "
+        f"Margin = {margin:.6f}"
+    )
+
+    return iou
 
 
 # ============================================================
@@ -480,15 +628,13 @@ def main():
     parser.add_argument(
         "--train",
         type=float,
-        default=0.6,
-        help="Train fraction"
+        default=0.6
     )
 
     parser.add_argument(
         "--validation",
         type=float,
-        default=0.2,
-        help="Validation fraction"
+        default=0.2
     )
 
     parser.add_argument(
@@ -512,18 +658,18 @@ def main():
     print("=" * 60)
     print()
 
-    dataset = prepare_dataset(args.source)
+    dataset = prepare_dataset(
+        args.source
+    )
 
     if len(dataset) < 3:
         raise RuntimeError(
             "Need at least 3 documents."
         )
 
-    print(f"Documents found: {len(dataset)}")
-
-    # --------------------------------------------------------
-    # Shuffle
-    # --------------------------------------------------------
+    print(
+        f"Documents found: {len(dataset)}"
+    )
 
     random.shuffle(dataset)
 
@@ -533,8 +679,9 @@ def main():
         n * args.train
     )
 
-    validation_end = train_end + int(
-        n * args.validation
+    validation_end = (
+        train_end
+        + int(n * args.validation)
     )
 
     train = dataset[:train_end]
@@ -549,18 +696,31 @@ def main():
 
     print()
     print("Dataset split:")
-    print(f"  Train      : {len(train)}")
-    print(f"  Validation : {len(validation)}")
-    print(f"  Test       : {len(test)}")
+    print(
+        f"  Train      : {len(train)}"
+    )
+    print(
+        f"  Validation : {len(validation)}"
+    )
+    print(
+        f"  Test       : {len(test)}"
+    )
 
     # --------------------------------------------------------
     # Patterns
     # --------------------------------------------------------
 
-    with open(args.patterns, "r", encoding="utf-8") as f:
+    with open(
+        args.patterns,
+        "r",
+        encoding="utf-8"
+    ) as f:
         pattern_data = json.load(f)
 
-    patterns = pattern_data.get("patterns", [])
+    patterns = pattern_data.get(
+        "patterns",
+        []
+    )
 
     if not patterns:
         raise RuntimeError(
@@ -570,13 +730,20 @@ def main():
     pattern_count = len(patterns)
 
     print()
-    print(f"Patterns: {pattern_count}")
+    print(
+        f"Patterns: {pattern_count}"
+    )
 
     # --------------------------------------------------------
     # Optimization
     # --------------------------------------------------------
 
-    weights, threshold, result = optimize(
+    (
+        weights,
+        threshold,
+        result,
+        history
+    ) = optimize(
         train,
         pattern_count
     )
@@ -591,19 +758,9 @@ def main():
     print("=" * 60)
     print()
 
-    print(f"Threshold: {threshold:.6f}")
-    print()
-
-    print("Weights:")
-
-    for i, (pattern, weight) in enumerate(
-        zip(patterns, weights)
-    ):
-        print(
-            f"  {i:3d} "
-            f"{pattern.get('name', ''):30s} "
-            f"{weight:10.6f}"
-        )
+    print(
+        f"Threshold: {threshold:.10f}"
+    )
 
     print()
 
@@ -629,7 +786,24 @@ def main():
     )
 
     # --------------------------------------------------------
-    # Сохраняем веса
+    # Weights
+    # --------------------------------------------------------
+
+    print()
+    print("Weights:")
+
+    for i, (pattern, weight) in enumerate(
+        zip(patterns, weights)
+    ):
+
+        print(
+            f"  {i:3d} "
+            f"{pattern.get('name', ''):35s} "
+            f"{weight:12.6f}"
+        )
+
+    # --------------------------------------------------------
+    # Save
     # --------------------------------------------------------
 
     save_weights(
@@ -637,9 +811,23 @@ def main():
         weights
     )
 
+    history_file = save_history(
+        args.source,
+        history
+    )
+
     print()
     print("=" * 60)
-    print(f"Weights written to: {args.patterns}")
+    print(
+        f"Weights written to: "
+        f"{args.patterns}"
+    )
+
+    print(
+        f"History written to: "
+        f"{history_file}"
+    )
+
     print("=" * 60)
     print()
 

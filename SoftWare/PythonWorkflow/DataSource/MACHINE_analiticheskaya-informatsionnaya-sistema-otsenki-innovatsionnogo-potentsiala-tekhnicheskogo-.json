@@ -2,1719 +2,1719 @@
   "patterns": [
     {
       "name": "DOT",
-      "weight": 1.0
+      "weight": 5.442195482226177
     },
     {
       "name": "INITIAL",
-      "weight": 1.0
+      "weight": 4.829943554874125
     },
     {
       "name": "INITIALS",
-      "weight": 1.0
+      "weight": -3.233417156815841
     },
     {
       "name": "YEAR",
-      "weight": 1.0
+      "weight": 4.168791886880328
     },
     {
       "name": "NUMBER",
-      "weight": 1.0
+      "weight": 7.698815142018136
     },
     {
       "name": "COMMA",
-      "weight": 1.0
+      "weight": 1.1049463262583359
     },
     {
       "name": "NUMBER",
-      "weight": 1.0
+      "weight": 8.504255500364675
     },
     {
       "name": "DASH",
-      "weight": 1.0
+      "weight": -2.5538530898713176
     },
     {
       "name": "PAGES",
-      "weight": 1.0
+      "weight": 8.217553073692475
     },
     {
       "name": "DOT",
-      "weight": 1.0
+      "weight": 8.393661074849481
     },
     {
       "name": "INITIAL",
-      "weight": 1.0
+      "weight": 2.7409787322431334
     },
     {
       "name": "DASH",
-      "weight": 1.0
+      "weight": 3.022698970764659
     },
     {
       "name": "DASH",
-      "weight": 1.0
+      "weight": 9.192924149516859
     },
     {
       "name": "DOT",
-      "weight": 1.0
+      "weight": 7.599384134278573
     },
     {
       "name": "COLON",
-      "weight": 1.0
+      "weight": 3.594487790174503
     },
     {
       "name": "COMMA",
-      "weight": 1.0
+      "weight": 3.8195733973452173
     },
     {
       "name": "NUMBER",
-      "weight": 1.0
+      "weight": 5.553000837989279
     },
     {
       "name": "NUMBER",
-      "weight": 1.0
+      "weight": 9.490096157172161
     },
     {
       "name": "DASH",
-      "weight": 1.0
+      "weight": -0.8174029587457765
     },
     {
       "name": "QUOTATION",
-      "weight": 1.0
+      "weight": -5.92543379276806
     },
     {
       "name": "DOT",
-      "weight": 1.0
+      "weight": 1.4506346467607534
     },
     {
       "name": "DOT",
-      "weight": 1.0
+      "weight": 7.50219330150645
     },
     {
       "name": "YEAR",
-      "weight": 1.0
+      "weight": 3.059369582952143
     },
     {
       "name": "INITIAL",
-      "weight": 1.0
+      "weight": 8.701286690825924
     },
     {
       "name": "COLON",
-      "weight": 1.0
+      "weight": 4.789670559743189
     },
     {
       "name": "DOT",
-      "weight": 1.0
+      "weight": 7.276240789267582
     },
     {
       "name": "DASH",
-      "weight": 1.0
+      "weight": 7.9130184134867365
     },
     {
       "name": "COLON",
-      "weight": 1.0
+      "weight": 0.16006775797556827
     },
     {
       "name": "NUMBER",
-      "weight": 1.0
+      "weight": 9.114365588049655
     },
     {
       "name": "DOT",
-      "weight": 1.0
+      "weight": 3.975388311489163
     },
     {
       "name": "COMMA",
-      "weight": 1.0
+      "weight": 4.282884129524707
     },
     {
       "name": "COMMA",
-      "weight": 1.0
+      "weight": 4.348674151588476
     },
     {
       "name": "INITIAL",
-      "weight": 1.0
+      "weight": 5.327568843437462
     },
     {
       "name": "DASH",
-      "weight": 1.0
+      "weight": 8.055120433331922
     },
     {
       "name": "COMMA",
-      "weight": 1.0
+      "weight": -5.355148207939486
     },
     {
       "name": "DOT",
-      "weight": 1.0
+      "weight": 8.228884093369523
     },
     {
       "name": "QUOTATION",
-      "weight": 1.0
+      "weight": -8.237622703769222
     },
     {
       "name": "DASH",
-      "weight": 1.0
+      "weight": 5.917938214891574
     },
     {
       "name": "DOT",
-      "weight": 1.0
+      "weight": 8.966171953653948
     },
     {
       "name": "URL",
-      "weight": 1.0
+      "weight": -1.104368440641068
     },
     {
       "name": "SLASH",
-      "weight": 1.0
+      "weight": 2.6879702249781268
     },
     {
       "name": "PARENTHESIS",
-      "weight": 1.0
+      "weight": -4.324764232282315
     },
     {
       "name": "DOUBLE_SLASH",
-      "weight": 1.0
+      "weight": 4.112969228616718
     },
     {
       "name": "COLON",
-      "weight": 1.0
+      "weight": 3.792269405835178
     },
     {
       "name": "COMMA",
-      "weight": 1.0
+      "weight": -2.400079881948729
     },
     {
       "name": "QUOTATION",
-      "weight": 1.0
+      "weight": 5.819232026652747
     },
     {
       "name": "NUMBER",
-      "weight": 1.0
+      "weight": 4.8244393642724415
     },
     {
       "name": "DASH",
-      "weight": 1.0
+      "weight": 9.781280290521181
     },
     {
       "name": "PARENTHESIS",
-      "weight": 1.0
+      "weight": -3.7948126588068734
     },
     {
       "name": "NUMBER",
-      "weight": 1.0
+      "weight": 7.754382866381684
     },
     {
       "name": "QUOTATION",
-      "weight": 1.0
+      "weight": 2.6754435019670164
     },
     {
       "name": "NUMBER",
-      "weight": 1.0
+      "weight": 3.8249372300496054
     },
     {
       "name": "PARENTHESIS",
-      "weight": 1.0
+      "weight": 6.7956251589681615
     },
     {
       "name": "INITIAL",
-      "weight": 1.0
+      "weight": -1.5900936015086264
     },
     {
       "name": "INITIAL",
-      "weight": 1.0
+      "weight": 9.397789513519045
     },
     {
       "name": "INITIALS",
-      "weight": 1.0
+      "weight": -5.508415446983996
     },
     {
       "name": "INITIALS",
-      "weight": 1.0
+      "weight": 3.0707373673267324
     },
     {
       "name": "NUMBER",
-      "weight": 1.0
+      "weight": 4.880425576848502
     },
     {
       "name": "YEAR",
-      "weight": 1.0
+      "weight": -5.276741224939067
     },
     {
       "name": "PARENTHESIS",
-      "weight": 1.0
+      "weight": -8.125208095789365
     },
     {
       "name": "INITIAL",
-      "weight": 1.0
+      "weight": 6.700263217550752
     },
     {
       "name": "YEAR",
-      "weight": 1.0
+      "weight": 8.788475188275973
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -3.3442270181953893
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 5.5765104935070475
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 5.708441925054397
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -3.7736041226463546
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 2.4160943464385687
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -4.7595165783227165
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -6.661941357247525
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 1.7400656770246203
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -7.2323056876531
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -2.8318786066390866
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -4.327638673047918
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -0.7668697455329876
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -2.034275462079119
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -5.930206372539036
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 3.9138944115654017
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -2.7196338347084783
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -1.2627792233911295
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -2.444354022188493
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 8.440560780822787
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -2.4947511985961777
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 5.242099023420028
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -3.386598991639973
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 3.3252779284762224
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 0.6249921319683716
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 3.06827695978797
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 5.3147635634636075
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -5.082121458089437
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 0.3410989327287428
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -6.723282074257395
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 4.148706744661013
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 9.86971387151976
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 1.111810271107494
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 7.73103093380765
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -5.498378467427571
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -2.4770976386024293
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -0.2617709091894127
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -2.0666663379265495
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -4.520703063684779
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -1.690273879689167
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 2.742695981290857
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -7.418649856382386
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -0.7764928492371381
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 9.997944519495183
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -0.418503667650747
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 8.538042325032071
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 3.490043396904967
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 8.109784860968503
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -4.637681231026622
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 7.043445785261735
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -9.59757738996758
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -0.7301158347442682
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 5.736092622395064
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -7.9590133007326465
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -2.7257334848154704
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -1.7921464428514478
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -1.535245917703797
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 2.0659277595394543
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -8.314907827424062
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -8.44780302361984
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -2.7501616330393452
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 2.4324051518547085
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 5.187321637375528
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -8.773438908391183
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 9.056527842126147
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 1.8112514691188086
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 1.0487264191435997
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 1.3224036989132304
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 2.9094478583797367
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 7.70483649170642
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 4.077654451072272
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -0.47070668197771504
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -2.0561251382474355
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 2.288109766897206
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -8.885688315040422
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 4.51450237098844
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 6.783286122150671
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 5.04129449250355
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 4.016767589608361
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 2.3172232637608348
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -1.6317676813895732
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 5.601846285500047
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -1.7372920456683638
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -3.1954095159319063
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -2.510628375347308
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -0.7800095567578702
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -0.06880202349150988
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 4.345036336423547
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 3.3471327436047016
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -5.592687249992599
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 3.060046186121288
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -8.786167118762203
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -0.764911100135468
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -2.6870069935194385
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -8.459717459513891
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 8.118685220233793
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -4.493917426459298
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 2.5848494342176664
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -2.1617218150348814
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 2.5144674426270863
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 5.0597593943960195
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -0.6634432000040358
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 0.8328123097829887
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 3.6917699582659647
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 3.4227101943905014
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -4.421508487517398
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 1.5384648031744907
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -1.2509800100611257
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -7.027532609008071
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -5.663749261387952
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -6.380385036745051
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 6.475875157440319
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -7.373452982581121
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 2.484770605465547
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -4.047585065121621
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -2.5100624012706874
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 3.925790698502165
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 8.920570902726567
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -2.9680222515434185
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 8.08347389486256
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -5.794020720638578
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 8.057631508909765
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 4.746257907578652
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 5.554518948510645
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -9.645286454893276
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 0.0409268529603124
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -1.2851918950159735
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -1.6136578978987792
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -2.1043965646466245
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -4.902054690830331
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 5.76901643777656
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -4.372966690478275
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -4.501263474469531
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -6.97597654585328
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -9.215838778684116
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -7.1202577344516635
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -9.581748452577674
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -5.790627003796085
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 4.836827244794946
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 4.399680989288662
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": -0.3910486720972639
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 6.536201209263266
     },
     {
       "name": "ENTITY_SHAPE",
-      "weight": 1.0
+      "weight": 3.9948969079945895
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 7.985331733616969
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 7.250418573992934
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 0.7802226358788533
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -4.805106730010626
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -5.670968801514869
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -4.846859552722744
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 0.9815490655977865
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -1.6131183249071235
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -1.558830744596107
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 5.315108136606897
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 7.054206146058459
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -4.129231661632714
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -9.700110137290572
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 1.9910036393010144
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -3.028581737429905
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -0.4486590675692126
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 0.6120639927554805
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -2.747229834298391
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -4.129927316925368
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -7.701325982937677
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -8.875565048522773
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -6.119436442168206
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -3.145782350263393
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 5.300314759030902
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -5.939550936195513
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 1.4166734123173663
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -5.396549944671808
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -5.117422936985545
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 4.231443049808568
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -0.6528919815446299
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -2.9458701455792213
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -0.024520458779812015
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 5.399570481758902
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 8.404699712152674
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -9.630725658471276
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 3.9352142014585167
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 4.259975145126447
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -3.2248652843994288
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -1.1425535564347389
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -4.933257443450547
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 1.303130313475993
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 5.051867176014357
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -9.590212928871217
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 2.2804042688993786
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -9.390945013762416
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 2.629453321759647
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 4.4416928352077285
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 4.391322534349015
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -8.494363416380796
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 9.999724480843774
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -4.782700999052497
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -3.9052133374689935
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 1.9419828973458952
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -7.423266154519792
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 6.570757474431379
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 4.542096843158657
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -3.8130369372889694
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 4.39728831526196
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 0.25306706236631893
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -0.8172739774323301
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 3.0492881069358058
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 5.229812248992478
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -1.9296740962049586
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 0.6152027914756597
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 7.4824873797782026
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 2.083596364681477
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -3.826135485143154
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 5.411051252052069
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 7.328381726631699
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -0.7938280707920864
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -4.1047890176895585
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -4.652071289721676
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 5.803390144092548
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 7.07941864265684
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 6.10412120451371
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 3.5528465611016413
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 0.25773373275419065
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 0.9876945843511442
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 1.7646475799047145
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 7.000815371052265
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 2.4169777396814274
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -7.517392019980598
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 4.860760520527377
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 8.388636053088025
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -3.146189121892231
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -1.1116652906029056
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -1.6596332198979558
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -0.1997782520724356
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 9.347888802857007
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 4.188269619517784
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -5.28575211808008
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 4.409733204966391
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 6.509805959283219
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -7.992509717551332
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -0.0838683776825544
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -6.607285288523784
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -7.829761273607017
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -8.47554211546548
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -7.07630842230662
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 3.2443179887837803
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -0.9501366981256898
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 6.4425006161134295
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -7.232669127351764
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 5.742031101889909
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 8.85191832757085
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -1.3155003306557622
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 8.947880604296031
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 1.9731061972027297
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -4.262792145843724
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 0.7319512011201423
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 3.6812963816439037
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -4.376811367545477
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -1.5384899536569707
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 9.532236224340858
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -0.12794211083578255
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 2.1902302264189966
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 1.1243534828235213
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -8.897480201229634
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -9.192230980174708
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -1.401783974025067
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 2.177865994031618
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 1.7657331276453103
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -4.194663449220537
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 6.484765674981885
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -5.745433897100299
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 5.9099634749315495
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -4.002820895321627
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 0.4821242097383682
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 0.3298498131025229
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -0.3247342845591972
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -0.001449695697264275
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -2.0433347759744613
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 4.9867910346307305
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -2.333088483374679
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -2.8725167720761355
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -1.5709417039377027
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 1.3315430978752651
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 0.483213415085717
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -9.17135150575707
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -5.595177432857765
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -1.1140146827770236
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -7.130047880697159
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 3.9576140148982075
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 5.472946931875264
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -6.747974262999287
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -4.826059881195663
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -5.1722866986983
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -6.529201840482088
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -4.0472843937891465
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -1.0526608685226224
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 6.793280065748393
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 4.347539718566853
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -1.8941226124469779
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -5.5113461662896865
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -3.4862578128866395
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -3.8961886316864613
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -2.4357334257936083
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -0.8087151618877508
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -2.7401426358521674
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 3.399512166661074
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -1.1013579431043952
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -1.7405656331143682
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -4.091170283014626
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 9.52710719340331
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -9.424993320060766
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 1.9130898018708153
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -1.4883459959683454
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -5.072903312902222
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -4.3467671526203855
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -0.7560528155314394
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 0.9476242353287168
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -6.580187937889691
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -6.111916645745994
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -5.764707125709947
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 1.0476882757003048
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 4.99087222718676
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -7.195215744034388
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -6.751567393139494
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 0.6634884311553413
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 0.8859069293826471
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 0.17465826926300165
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -1.0833063277491495
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -0.9315282583443452
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 6.599069555152077
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 0.39019623172892537
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -1.5671979333465136
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 7.791401839499736
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 9.474470230888116
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -7.7346032426489195
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 3.078449115336004
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -3.977455792325395
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -8.774450532075003
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -9.452551971885562
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 1.3082799243558463
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 0.6831908411516263
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -6.410582922998902
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -0.3254715560344379
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 0.5653378526212616
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -3.1860578503651817
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 1.3461468286593026
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 6.148818254406752
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -4.779576129086892
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -3.6445746492162945
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -8.86656607278454
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -5.068608187060413
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 1.1338552112858324
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 6.060392583477179
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 1.0589343730178946
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 3.1768556495607947
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -9.040878911874238
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 2.5038172584140095
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 6.91873799939783
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 2.412285003685608
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -1.2711434291147827
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -5.693080732558479
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -3.1551224400073075
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 1.8602894842690043
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -0.9872144873675293
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -7.624254391316878
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 0.5070221815088738
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -5.33423092080768
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 1.8598736901689406
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -6.855758598955082
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": 2.134855457211584
     },
     {
       "name": "SEPARATOR",
-      "weight": 1.0
+      "weight": -1.5345142564925296
     }
   ],
   "lines": [
