@@ -1,0 +1,9868 @@
+PATTERN RECOGNITION RESULT
+================================================================================
+
+PATTERNS:
+0: DOT
+   regex: \.
+1: INITIAL
+   regex: \b[А-ЯЁ]\.
+2: INITIALS
+   regex: \b[А-ЯЁ]\.\s*[А-ЯЁ]\.
+3: YEAR
+   regex: (?<!\d)(17|18|19|20|21)\d{2}(?!\d)
+4: NUMBER
+   regex: \d+
+5: COMMA
+   regex: ,
+6: NUMBER
+   regex: \d+
+7: DASH
+   regex: [-–—]
+8: PAGES
+   regex: \b[Сс]\.?\s*\d+(?:\s*[-–—]\s*\d+)?
+9: DOT
+   regex: \.
+10: INITIAL
+   regex: \b[А-ЯЁ]\.
+11: DASH
+   regex: [-–—]
+12: DASH
+   regex: [-–—]
+13: DOT
+   regex: \.
+14: COLON
+   regex: :
+15: COMMA
+   regex: ,
+16: NUMBER
+   regex: \d+
+17: NUMBER
+   regex: \d+
+18: DASH
+   regex: [-–—]
+19: QUOTATION
+   regex: [«»\"„“”]
+20: DOT
+   regex: \.
+21: DOT
+   regex: \.
+22: YEAR
+   regex: (?<!\d)(17|18|19|20|21)\d{2}(?!\d)
+23: INITIAL
+   regex: \b[А-ЯЁ]\.
+24: COLON
+   regex: :
+25: DOT
+   regex: \.
+26: DASH
+   regex: [-–—]
+27: COLON
+   regex: :
+28: NUMBER
+   regex: \d+
+29: DOT
+   regex: \.
+30: COMMA
+   regex: ,
+31: COMMA
+   regex: ,
+32: INITIAL
+   regex: \b[А-ЯЁ]\.
+33: DASH
+   regex: [-–—]
+34: COMMA
+   regex: ,
+35: DOT
+   regex: \.
+36: QUOTATION
+   regex: [«»\"„“”]
+37: DASH
+   regex: [-–—]
+38: DOT
+   regex: \.
+39: URL
+   regex: (?:https?://|www\.)[^\s]+
+40: SLASH
+   regex: /
+41: PARENTHESIS
+   regex: [()]
+42: DOUBLE_SLASH
+   regex: //
+43: COLON
+   regex: :
+44: COMMA
+   regex: ,
+45: QUOTATION
+   regex: [«»\"„“”]
+46: NUMBER
+   regex: \d+
+47: DASH
+   regex: [-–—]
+48: PARENTHESIS
+   regex: [()]
+49: NUMBER
+   regex: \d+
+50: QUOTATION
+   regex: [«»\"„“”]
+51: NUMBER
+   regex: \d+
+52: PARENTHESIS
+   regex: [()]
+53: INITIAL
+   regex: \b[А-ЯЁ]\.
+54: INITIAL
+   regex: \b[А-ЯЁ]\.
+55: INITIALS
+   regex: \b[А-ЯЁ]\.\s*[А-ЯЁ]\.
+56: INITIALS
+   regex: \b[А-ЯЁ]\.\s*[А-ЯЁ]\.
+57: NUMBER
+   regex: \d+
+58: YEAR
+   regex: (?<!\d)(17|18|19|20|21)\d{2}(?!\d)
+59: PARENTHESIS
+   regex: [()]
+60: INITIAL
+   regex: \b[А-ЯЁ]\.
+61: YEAR
+   regex: (?<!\d)(17|18|19|20|21)\d{2}(?!\d)
+62: ENTITY_SHAPE
+   regex: \d+
+63: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+
+64: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+\d+\-\d+
+65: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+66: ENTITY_SHAPE
+   regex: \d+\-\d+
+67: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+68: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+69: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\s+\d+\-\d+
+70: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+71: ENTITY_SHAPE
+   regex: №\d+
+72: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.
+73: ENTITY_SHAPE
+   regex: №\s+\d+
+74: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+75: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+76: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+77: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]
+78: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.
+79: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+80: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+81: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+82: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]
+83: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+84: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё][а-яё][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+85: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+86: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\d+\-\d+
+87: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+
+88: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][а-яё]\.
+89: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+90: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]
+91: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+92: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+93: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+\d+
+94: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+95: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+96: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+\d+\s+\-\s+\d+
+97: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+
+98: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.
+99: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+100: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+101: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+102: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+103: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+104: ENTITY_SHAPE
+   regex: [а-яё]+\.\d+\-\d+
+105: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+
+106: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+107: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁ][а-яё]+
+108: ENTITY_SHAPE
+   regex: [а-яё]+\.\s+\d+
+109: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ]\.
+110: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+
+111: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+
+112: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\d+
+113: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+\d+
+114: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+115: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+
+116: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\.\s+[а-яё]+\-[а-яё]+
+117: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+118: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+\-[а-яё]+\.
+119: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+
+120: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+121: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]
+122: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
+123: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+124: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\s+\([А-ЯЁ][а-яё]+\)
+125: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+
+126: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁ][А-ЯЁ]
+127: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+
+128: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+
+129: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+
+130: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\s+\([А-ЯЁ][а-яё]+\)
+131: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+
+132: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\s+\d+
+133: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+134: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][а-яё][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+
+135: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\-[А-ЯЁ][а-яё]+
+136: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+\s+[а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+
+137: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+138: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+139: ENTITY_SHAPE
+   regex: [a-z]+://[a-z]+\.[a-z]+\.[a-z]+/[a-z]+
+140: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+
+141: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+,\s+[а-яё]+\-[а-яё]+
+142: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+\-[а-яё]+
+143: ENTITY_SHAPE
+   regex: [а-яё]+\s+\d+\-\d+
+144: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ]\.
+145: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\-[а-яё]+
+146: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+«[А-ЯЁ][а-яё]+»
+147: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ]
+148: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+,\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+149: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ],\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+150: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁ][а-яё]+
+151: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\-[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+152: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
+153: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+\d+
+154: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+
+155: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+156: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][а-яё][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+157: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ]
+158: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+159: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+\-\s+[А-ЯЁ][а-яё]+
+160: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+
+161: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\-[А-ЯЁ][а-яё]+
+162: ENTITY_SHAPE
+   regex: [а-яё]+\.\s+\d+\-\d+
+163: ENTITY_SHAPE
+   regex: [а-яё]+\.\d+
+164: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+165: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\.
+166: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
+167: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+,\s+[а-яё]+,\s+[а-яё]+
+168: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+169: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+170: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+,\s+[а-яё]+\-[а-яё]+
+171: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.
+172: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+:\s+[а-яё]+\-[а-яё]+
+173: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][а-яё]+
+174: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
+175: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\-[а-яё]+\s+[а-яё]+
+176: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+177: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][а-яё]
+178: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+:\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+179: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[А-ЯЁ][а-яё]+
+180: ENTITY_SHAPE
+   regex: [A-Z][a-z]+,\s+[A-Z][a-z]+
+181: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
+182: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+:\s+[А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+\.
+183: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+184: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+185: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+:\s+[А-ЯЁ][а-яё]+\.\s+[A-Z][A-Z][A-Z]\s+[а-яё]+\.\s+[а-яё]+\.
+186: ENTITY_SHAPE
+   regex: [A-Z][a-z]+
+187: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+:\s+[а-яё]+\.\s+[а-яё]+\.\s+\d+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+\.\-[а-яё]+\.\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+188: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+189: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+,\s+[а-яё]+\-[а-яё]+\.\s+[а-яё]+\.\s+«[А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+»
+190: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\-[а-яё]+\s+[а-яё]+
+191: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+192: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+:\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[А-ЯЁ][а-яё]+
+193: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+194: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ]
+195: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\.\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
+196: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\-[а-яё]+\s+[а-яё]+
+197: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+198: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+199: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ],\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ]\.
+200: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+
+201: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+
+202: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+203: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+
+204: SEPARATOR
+   regex: \.
+205: SEPARATOR
+   regex: У,
+206: SEPARATOR
+   regex: \.:
+207: SEPARATOR
+   regex: а,
+208: SEPARATOR
+   regex: а:
+209: SEPARATOR
+   regex: я\s+/
+210: SEPARATOR
+   regex: и,
+211: SEPARATOR
+   regex: а,
+212: SEPARATOR
+   regex: »\.\s+\-
+213: SEPARATOR
+   regex: в\s+/
+214: SEPARATOR
+   regex: л:
+215: SEPARATOR
+   regex: В
+216: SEPARATOR
+   regex: \.\s+\-
+217: SEPARATOR
+   regex: и\s+/
+218: SEPARATOR
+   regex: а\s+/
+219: SEPARATOR
+   regex: м\s+/
+220: SEPARATOR
+   regex: ь:
+221: SEPARATOR
+   regex: к
+222: SEPARATOR
+   regex: й\s+/
+223: SEPARATOR
+   regex: а\s+//
+224: SEPARATOR
+   regex: ф,
+225: SEPARATOR
+   regex: 2\.
+226: SEPARATOR
+   regex: а\s+//
+227: SEPARATOR
+   regex: \.,
+228: SEPARATOR
+   regex: Е
+229: SEPARATOR
+   regex: 1\.\s+\-
+230: SEPARATOR
+   regex: в\s+//
+231: SEPARATOR
+   regex: ж:
+232: SEPARATOR
+   regex: »,
+233: SEPARATOR
+   regex: г:
+234: SEPARATOR
+   regex: И,
+235: SEPARATOR
+   regex: 3\.
+236: SEPARATOR
+   regex: в\s+/
+237: SEPARATOR
+   regex: н\s+//
+238: SEPARATOR
+   regex: О
+239: SEPARATOR
+   regex: к:
+240: SEPARATOR
+   regex: М:
+241: SEPARATOR
+   regex: а\s+//
+242: SEPARATOR
+   regex: 0\.
+243: SEPARATOR
+   regex: к,
+244: SEPARATOR
+   regex: »\.
+245: SEPARATOR
+   regex: А
+246: SEPARATOR
+   regex: ж,
+247: SEPARATOR
+   regex: т,
+248: SEPARATOR
+   regex: 1\.
+249: SEPARATOR
+   regex: й\s+//
+250: SEPARATOR
+   regex: д,
+251: SEPARATOR
+   regex: а\s+//
+252: SEPARATOR
+   regex: и\s+//
+253: SEPARATOR
+   regex: М
+254: SEPARATOR
+   regex: а
+255: SEPARATOR
+   regex: в\s+//
+256: SEPARATOR
+   regex: х\s+/
+257: SEPARATOR
+   regex: \.\s+/
+258: SEPARATOR
+   regex: Н,
+259: SEPARATOR
+   regex: 4\.
+260: SEPARATOR
+   regex: в\s+\[Текст\]/
+261: SEPARATOR
+   regex: 7\.\s+\-
+262: SEPARATOR
+   regex: н\s+//
+263: SEPARATOR
+   regex: л
+264: SEPARATOR
+   regex: м\s+//
+265: SEPARATOR
+   regex: и\s+//
+266: SEPARATOR
+   regex: ы\s+/
+267: SEPARATOR
+   regex: а\s+:
+268: SEPARATOR
+   regex: \)\s+//
+269: SEPARATOR
+   regex: м
+270: SEPARATOR
+   regex: 4\.\s+\-
+271: SEPARATOR
+   regex: 6\.
+272: SEPARATOR
+   regex: Г
+273: SEPARATOR
+   regex: в:
+274: SEPARATOR
+   regex: ь,
+275: SEPARATOR
+   regex: и//
+276: SEPARATOR
+   regex: \.
+277: SEPARATOR
+   regex: е\s+//
+278: SEPARATOR
+   regex: и\.\s+\-
+279: SEPARATOR
+   regex: в\s+//
+280: SEPARATOR
+   regex: я\s+//
+281: SEPARATOR
+   regex: 6\.\s+\-
+282: SEPARATOR
+   regex: е\.\s+\-
+283: SEPARATOR
+   regex: 2\.\s+\-
+284: SEPARATOR
+   regex: 2\.\s+\-
+285: SEPARATOR
+   regex: 8\.
+286: SEPARATOR
+   regex: Н
+287: SEPARATOR
+   regex: а\s+И
+288: SEPARATOR
+   regex: 7\.
+289: SEPARATOR
+   regex: У\.
+290: SEPARATOR
+   regex: и
+291: SEPARATOR
+   regex: е\s+/
+292: SEPARATOR
+   regex: а\s+И
+293: SEPARATOR
+   regex: и\.\s+\-
+294: SEPARATOR
+   regex: а//
+295: SEPARATOR
+   regex: У
+296: SEPARATOR
+   regex: \.
+297: SEPARATOR
+   regex: 1\.
+298: SEPARATOR
+   regex: 1\.
+299: SEPARATOR
+   regex: 3\.
+300: SEPARATOR
+   regex: 9\.
+301: SEPARATOR
+   regex: 0\.
+302: SEPARATOR
+   regex: С
+303: SEPARATOR
+   regex: 3
+304: SEPARATOR
+   regex: в\s+И
+305: SEPARATOR
+   regex: 6\s+\-
+306: SEPARATOR
+   regex: й\s+И
+307: SEPARATOR
+   regex: у,
+308: SEPARATOR
+   regex: \.
+309: SEPARATOR
+   regex: я\s+//
+310: SEPARATOR
+   regex: и/
+311: SEPARATOR
+   regex: я\.
+312: SEPARATOR
+   regex: я»\.
+313: SEPARATOR
+   regex: л,
+314: SEPARATOR
+   regex: 7
+315: SEPARATOR
+   regex: а\s+/
+316: SEPARATOR
+   regex: 4
+317: SEPARATOR
+   regex: ф\s+\-
+318: SEPARATOR
+   regex: я\.//
+319: SEPARATOR
+   regex: а//
+320: SEPARATOR
+   regex: 5\.\s+\-
+321: SEPARATOR
+   regex: О\.\s+\-
+322: SEPARATOR
+   regex: и\s+/
+323: SEPARATOR
+   regex: 8\.\s+\-
+324: SEPARATOR
+   regex: \.\s+—
+325: SEPARATOR
+   regex: 7
+326: SEPARATOR
+   regex: й\s+//
+327: SEPARATOR
+   regex: 3\.\s+\-
+328: SEPARATOR
+   regex: А\.\s+\-
+329: SEPARATOR
+   regex: 2\.\s+\-
+330: SEPARATOR
+   regex: н//
+331: SEPARATOR
+   regex: а
+332: SEPARATOR
+   regex: и\s+И
+333: SEPARATOR
+   regex: 9\.\s+\-\s+С\.
+334: SEPARATOR
+   regex: \.,
+335: SEPARATOR
+   regex: я\s+И
+336: SEPARATOR
+   regex: 0\.\s+\-\s+С\.
+337: SEPARATOR
+   regex: С,
+338: SEPARATOR
+   regex: и\.\s+\-
+339: SEPARATOR
+   regex: я\.\s+\-
+340: SEPARATOR
+   regex: е\.\s+\-
+341: SEPARATOR
+   regex: \.\s+\-
+342: SEPARATOR
+   regex: 4,
+343: SEPARATOR
+   regex: и\s+\-
+344: SEPARATOR
+   regex: а\.\s+//
+345: SEPARATOR
+   regex: \.\s+\(осенняя\s+сессия\)\.
+346: SEPARATOR
+   regex: 4\.
+347: SEPARATOR
+   regex: 1
+348: SEPARATOR
+   regex: »\s+\-
+349: SEPARATOR
+   regex: т
+350: SEPARATOR
+   regex: 2
+351: SEPARATOR
+   regex: 6
+352: SEPARATOR
+   regex: 7\.\s+\-
+353: SEPARATOR
+   regex: 8\.\s+\-
+354: SEPARATOR
+   regex: 5\.\s+\-
+355: SEPARATOR
+   regex: 4\.\s+\-
+356: SEPARATOR
+   regex: а
+357: SEPARATOR
+   regex: и
+358: SEPARATOR
+   regex: й\s+//
+359: SEPARATOR
+   regex: в\s+//
+360: SEPARATOR
+   regex: 2\s+г\.,
+361: SEPARATOR
+   regex: \.:
+362: SEPARATOR
+   regex: и\s+//
+363: SEPARATOR
+   regex: л\.\s+\-
+364: SEPARATOR
+   regex: а\s+\-
+365: SEPARATOR
+   regex: У\.\-
+366: SEPARATOR
+   regex: и\.
+367: SEPARATOR
+   regex: »,
+368: SEPARATOR
+   regex: 8\.
+369: SEPARATOR
+   regex: и
+370: SEPARATOR
+   regex: ы\s+//
+371: SEPARATOR
+   regex: е\s+//
+372: SEPARATOR
+   regex: а\s+И
+373: SEPARATOR
+   regex: а;
+374: SEPARATOR
+   regex: \.\s+\-
+375: SEPARATOR
+   regex: \.\s+\-
+376: SEPARATOR
+   regex: м,
+377: SEPARATOR
+   regex: я
+378: SEPARATOR
+   regex: а\.\s+\-
+379: SEPARATOR
+   regex: к\s+:
+380: SEPARATOR
+   regex: s\s+/
+381: SEPARATOR
+   regex: й\s+/
+382: SEPARATOR
+   regex: а\.\s+В\s+сб\.
+383: SEPARATOR
+   regex: и\.\s+В\s+сб\.
+384: SEPARATOR
+   regex: \.\s+\(весенняя\s+сессия\)\.
+385: SEPARATOR
+   regex: \)\s+//
+386: SEPARATOR
+   regex: 3\.
+387: SEPARATOR
+   regex: 3\.
+388: SEPARATOR
+   regex: 5
+389: SEPARATOR
+   regex: в\s+/
+390: SEPARATOR
+   regex: а\s+/
+391: SEPARATOR
+   regex: и,
+392: SEPARATOR
+   regex: в\s+\-
+393: SEPARATOR
+   regex: в\.\s+\-
+394: SEPARATOR
+   regex: я//
+395: SEPARATOR
+   regex: 9\.\s+\-
+396: SEPARATOR
+   regex: а\.\s+\-
+397: SEPARATOR
+   regex: 4\.\s+\-
+398: SEPARATOR
+   regex: 9\.\s+\-
+399: SEPARATOR
+   regex: х\s+//
+400: SEPARATOR
+   regex: \.\s+/
+401: SEPARATOR
+   regex: »\s+\(ПРОЕКТ\-2009\)\.\s+\-
+402: SEPARATOR
+   regex: м»,
+403: SEPARATOR
+   regex: й
+404: SEPARATOR
+   regex: 1\.
+405: SEPARATOR
+   regex: ш\s+//
+406: SEPARATOR
+   regex: 5\s+\-
+407: SEPARATOR
+   regex: 2\s+\-
+408: SEPARATOR
+   regex: а\s+\-
+409: SEPARATOR
+   regex: 4\s+\-
+410: SEPARATOR
+   regex: й\s+И
+411: SEPARATOR
+   regex: 7\s+\-
+412: SEPARATOR
+   regex: И\.
+413: SEPARATOR
+   regex: е
+414: SEPARATOR
+   regex: и\.
+415: SEPARATOR
+   regex: 5\.\s+\-
+416: SEPARATOR
+   regex: й/
+417: SEPARATOR
+   regex: н,
+418: SEPARATOR
+   regex: и,
+419: SEPARATOR
+   regex: А,
+420: SEPARATOR
+   regex: У/
+421: SEPARATOR
+   regex: в/
+422: SEPARATOR
+   regex: н//
+423: SEPARATOR
+   regex: \.,
+424: SEPARATOR
+   regex: в,
+425: SEPARATOR
+   regex: ж\.
+426: SEPARATOR
+   regex: 1\.\s+\-
+427: SEPARATOR
+   regex: в\.
+428: SEPARATOR
+   regex: м,
+
+================================================================================
+
+LINE 1 (length=20)
+TEXT: ﻿На правах рукописи
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 2
+
+LINE 2 (length=26)
+TEXT: ПРОШКИНА Елена Николаевна
+COUNTS:
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 10
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 3 (length=83)
+TEXT: АЛГОРИТМЫ И МЕТОДИКИ АНАЛИЗА ИНФОРМАЦИИ В СИСТЕМЕ УПРАВЛЕНИЯ КАЧЕСТВОМ ОБРАЗОВАНИЯ
+COUNTS:
+  ENTITY_SHAPE: 14
+  ENTITY_SHAPE: 73
+  ENTITY_SHAPE: 11
+  ENTITY_SHAPE: 21
+  ENTITY_SHAPE: 21
+  ENTITY_SHAPE: 5
+  SEPARATOR: 4
+  SEPARATOR: 5
+  SEPARATOR: 6
+  SEPARATOR: 9
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 3
+
+LINE 4 (length=74)
+TEXT: Специальность 05.13.10 - Управление в социальных и экономических системах
+COUNTS:
+  DOT: 2
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DASH: 1
+  DOT: 2
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DASH: 1
+  NUMBER: 3
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  NUMBER: 3
+  DASH: 1
+  NUMBER: 3
+  NUMBER: 3
+  NUMBER: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+
+LINE 5 (length=79)
+TEXT: Автореферат диссертации на соискание ученой степени кандидата технических наук
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 9
+  SEPARATOR: 8
+  SEPARATOR: 6
+  SEPARATOR: 8
+  SEPARATOR: 9
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 9
+
+LINE 6 (length=11)
+TEXT: ПЕНЗА 2θθ9
+COUNTS:
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 7 (length=29)
+TEXT: llllllllllllllllllllllllllll
+COUNTS:
+
+LINE 8 (length=10)
+TEXT: 003174305
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 9 (length=178)
+TEXT: Работа выполнена в государственном образовательном учреждении высшего профессионального образования «Пензенский государственный университет» на кафедре «Вычислительная техника».
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  QUOTATION: 4
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  QUOTATION: 4
+  DOT: 1
+  QUOTATION: 4
+  QUOTATION: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 8
+  SEPARATOR: 14
+  SEPARATOR: 10
+  SEPARATOR: 10
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 16
+
+LINE 10 (length=58)
+TEXT: Научный руководитель - доктор технических наук, профессор
+COUNTS:
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 4
+
+LINE 11 (length=25)
+TEXT: Макарычев Пётр Петрович.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 12 (length=58)
+TEXT: Официальные оппоненты: доктор технических наук, профессор
+COUNTS:
+  COMMA: 1
+  COLON: 1
+  COMMA: 1
+  COLON: 1
+  COLON: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COLON: 1
+  COMMA: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 5
+
+LINE 13 (length=26)
+TEXT: Лебедев Виктор Борисович;
+COUNTS:
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+
+LINE 14 (length=35)
+TEXT: доктор технических наук, профессор
+COUNTS:
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 3
+
+LINE 15 (length=32)
+TEXT: Дворянкин Александр Михайлович.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 16 (length=174)
+TEXT: Ведущая организация - Исследовательский центр проблем качества подготовки специалистов Московского государственного института стали и сплавов (технологического университета)
+COUNTS:
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  PARENTHESIS: 2
+  DASH: 1
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 12
+  SEPARATOR: 13
+  SEPARATOR: 12
+  SEPARATOR: 13
+  SEPARATOR: 13
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 12
+
+LINE 17 (length=277)
+TEXT: Защита диссертации состоится 22 ноября 2007 г., в 14 часов, на заседании диссертационного совета Д 212.186.04 в государственном образовательном учреждении высшего профессионального образования «Пензенский государственный университет» по адресу 440026, г. Пенза, ул Красная, 40
+COUNTS:
+  DOT: 4
+  YEAR: 1
+  NUMBER: 8
+  COMMA: 5
+  NUMBER: 8
+  DOT: 4
+  DOT: 4
+  COMMA: 5
+  NUMBER: 8
+  NUMBER: 8
+  QUOTATION: 2
+  DOT: 4
+  DOT: 4
+  YEAR: 1
+  DOT: 4
+  NUMBER: 8
+  DOT: 4
+  COMMA: 5
+  COMMA: 5
+  COMMA: 5
+  DOT: 4
+  QUOTATION: 2
+  DOT: 4
+  COMMA: 5
+  QUOTATION: 2
+  NUMBER: 8
+  NUMBER: 8
+  QUOTATION: 2
+  NUMBER: 8
+  NUMBER: 8
+  YEAR: 1
+  YEAR: 1
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 20
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 16
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 20
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 11
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 20
+  SEPARATOR: 16
+  SEPARATOR: 16
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 18 (length=211)
+TEXT: С диссертацией и авторефератом можно ознакомиться в библиотеке государственного образовательного учреждения высшего профессионального образования «Пензенский государственный университет» и на сайте www.pnzgu ru
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  QUOTATION: 2
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  QUOTATION: 2
+  DOT: 1
+  URL: 1
+  QUOTATION: 2
+  QUOTATION: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 13
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 11
+  SEPARATOR: 13
+  SEPARATOR: 13
+  SEPARATOR: 13
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 18
+
+LINE 19 (length=32)
+TEXT: Автореферат разослан"∕9"	2007 г
+COUNTS:
+  YEAR: 1
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  QUOTATION: 2
+  YEAR: 1
+  NUMBER: 2
+  QUOTATION: 2
+  QUOTATION: 2
+  NUMBER: 2
+  NUMBER: 2
+  QUOTATION: 2
+  NUMBER: 2
+  NUMBER: 2
+  YEAR: 1
+  YEAR: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+
+LINE 20 (length=76)
+TEXT: Ученый секретарь диссертационного совета доктор технических наук, профессор
+COUNTS:
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 8
+
+LINE 21 (length=15)
+TEXT: Смогунов В. В.
+COUNTS:
+  DOT: 2
+  INITIAL: 2
+  INITIALS: 1
+  DOT: 2
+  INITIAL: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  INITIAL: 2
+  DOT: 2
+  DOT: 2
+  INITIAL: 2
+  DOT: 2
+  DOT: 2
+  INITIAL: 2
+  INITIAL: 2
+  INITIALS: 1
+  INITIALS: 1
+  INITIAL: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 22 (length=28)
+TEXT: ОБЩАЯ ХАРАКТЕРИСТИКА РАБОТЫ
+COUNTS:
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 25
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 1
+
+LINE 23 (length=1048)
+TEXT: Актуальность темы. В связи с вступлением России в Болонский процесс актуальной становится проблема обеспечения необходимого качества высшего образования В России до недавнего времени проблема качества образования решалась в пределах требований государственной идеологии1 качество работы учебного заведения оценивалось в соответствии с тем, как оно исполняло существовавшие учебные программы и планы, использовало технические средства и т д В ходе реформы отечественной системы образования в последнем десятилетии отчетливо проявилась тенденция децентрализации функций управления (в том числе и управления качеством), которые с федерального уровня переходят к региональным, муниципальным органам, а учебное заведение несет самостоятельную ответственность за качество своего «продукта». При этом престиж вуза непосредственно зависит от того, насколько и как долго будет конкурентоспособным подготовленный им специалист. Пути решения этой проблемы в каждом вузе выбираются свои, с учетом сложившихся традиций, возможностей и региональных особенностей
+COUNTS:
+  DOT: 3
+  NUMBER: 1
+  COMMA: 8
+  NUMBER: 1
+  DOT: 3
+  DOT: 3
+  COMMA: 8
+  NUMBER: 1
+  NUMBER: 1
+  QUOTATION: 2
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  NUMBER: 1
+  DOT: 3
+  COMMA: 8
+  COMMA: 8
+  COMMA: 8
+  DOT: 3
+  QUOTATION: 2
+  DOT: 3
+  PARENTHESIS: 2
+  COMMA: 8
+  QUOTATION: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  QUOTATION: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 22
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 58
+  SEPARATOR: 34
+  SEPARATOR: 26
+  SEPARATOR: 3
+  SEPARATOR: 66
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 58
+  SEPARATOR: 1
+  SEPARATOR: 60
+  SEPARATOR: 58
+  SEPARATOR: 66
+  SEPARATOR: 66
+  SEPARATOR: 3
+  SEPARATOR: 19
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 92
+  SEPARATOR: 1
+  SEPARATOR: 3
+
+LINE 24 (length=1185)
+TEXT: Методологической основой данной работы являются исследования Архангельского С И, Аванесова В С, Володина Б В, Коро-зы В И, Новакова И. А., Подлеснова В Н., Тягуновой Т Н., Попова Ю В , Савельева Б. А., Субетто А И., Селезневой Н. А, Звонни-кова В И, Челышковой М Б., Берестневой О. Г, Марухиной О. В. и многих др. Среди зарубежных исследователей необходимо отметить работы Ишикава К., Robert С., Terner А, Morecroft J., Balm G., Haworth I и др Однако, несмотря на заметные успехи в управлении качеством образования, существует ряд проблем, решение которых позволит существенно повысить качество образования. Главными среди них являются недостаточная проработка методик и алгоритмов анализа данных мониторинга образовательного процесса, а также отсутствие информационных систем, обеспечивающих комплексный подход к управлению качеством образования. В настоящее время широкое распространение получили три способа оценки качества образования, тестирование как способ объективного оценивания знаний студентов; рейтинговая оценка деятельности преподавателей как способ выявления их компетентности, знаний и опыта и мониторинг удовлетворенности потребителей качеством образовательных услуг,
+COUNTS:
+  DOT: 19
+  INITIAL: 14
+  INITIALS: 3
+  COMMA: 27
+  DASH: 2
+  DOT: 19
+  INITIAL: 14
+  DASH: 2
+  DASH: 2
+  DOT: 19
+  COMMA: 27
+  DASH: 2
+  DOT: 19
+  DOT: 19
+  INITIAL: 14
+  DOT: 19
+  DASH: 2
+  DOT: 19
+  COMMA: 27
+  COMMA: 27
+  INITIAL: 14
+  DASH: 2
+  COMMA: 27
+  DOT: 19
+  DASH: 2
+  DOT: 19
+  COMMA: 27
+  DASH: 2
+  INITIAL: 14
+  INITIAL: 14
+  INITIALS: 3
+  INITIALS: 3
+  INITIAL: 14
+  ENTITY_SHAPE: 20
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 16
+  ENTITY_SHAPE: 62
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 20
+  ENTITY_SHAPE: 20
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 19
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 28
+  SEPARATOR: 10
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 74
+  SEPARATOR: 30
+  SEPARATOR: 19
+  SEPARATOR: 2
+  SEPARATOR: 19
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 64
+  SEPARATOR: 1
+  SEPARATOR: 19
+  SEPARATOR: 7
+  SEPARATOR: 19
+  SEPARATOR: 2
+  SEPARATOR: 74
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 59
+  SEPARATOR: 74
+  SEPARATOR: 64
+  SEPARATOR: 64
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 22
+  SEPARATOR: 1
+  SEPARATOR: 15
+  SEPARATOR: 2
+  SEPARATOR: 81
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 10
+  SEPARATOR: 2
+
+LINE 25 (length=499)
+TEXT: основанный на проведении в их среде анкетирования. Для обработки полученных данных необходимы методики и алгоритмы, позволяющие выявить скрытые закономерности в данных и получить выводы, адекватные реальности. Для автоматизации работы системы управления качеством образования необходима информационная система, которая сочетала бы в себе все три способа оценки качества образования, а также поддерживала процесс принятия решений по управлению качеством образовательных услуг, предоставляемых вузом.
+COUNTS:
+  DOT: 3
+  COMMA: 5
+  DOT: 3
+  DOT: 3
+  COMMA: 5
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  COMMA: 5
+  COMMA: 5
+  COMMA: 5
+  DOT: 3
+  DOT: 3
+  COMMA: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 41
+  SEPARATOR: 14
+  SEPARATOR: 13
+  SEPARATOR: 3
+  SEPARATOR: 35
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 41
+  SEPARATOR: 25
+  SEPARATOR: 41
+  SEPARATOR: 35
+  SEPARATOR: 1
+  SEPARATOR: 35
+  SEPARATOR: 13
+  SEPARATOR: 2
+  SEPARATOR: 35
+  SEPARATOR: 1
+
+LINE 26 (length=262)
+TEXT: Целью диссертационной работы являются теоретическое обоснование и исследование моделей, алгоритмов реализации методов анализа качества предоставляемых услуг и информационной поддержки принятия управленческих решений в сфере высшего профессионального образования
+COUNTS:
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 4
+  SEPARATOR: 18
+  SEPARATOR: 11
+  SEPARATOR: 5
+  SEPARATOR: 22
+  SEPARATOR: 18
+  SEPARATOR: 10
+  SEPARATOR: 18
+  SEPARATOR: 22
+  SEPARATOR: 22
+  SEPARATOR: 7
+  SEPARATOR: 4
+  SEPARATOR: 25
+
+LINE 27 (length=83)
+TEXT: Для достижения поставленной цели в диссертационной работе решены следующие задачи.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 5
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 9
+  SEPARATOR: 1
+
+LINE 28 (length=169)
+TEXT: -	анализ методов, моделей и алгоритмов, применяемых при оценке показателей деятельности и принятии управленческих решений в сфере высшего профессионального образования;
+COUNTS:
+  COMMA: 2
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 2
+  DASH: 1
+  DASH: 1
+  COMMA: 2
+  COMMA: 2
+  DASH: 1
+  COMMA: 2
+  DASH: 1
+  COMMA: 2
+  DASH: 1
+  SEPARATOR: 3
+  SEPARATOR: 9
+  SEPARATOR: 7
+  SEPARATOR: 5
+  SEPARATOR: 14
+  SEPARATOR: 9
+  SEPARATOR: 6
+  SEPARATOR: 9
+  SEPARATOR: 14
+  SEPARATOR: 14
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 19
+  SEPARATOR: 2
+
+LINE 29 (length=188)
+TEXT: -	разработка функциональных и информационных моделей деятельности преподавателей, студентов и оценки удовлетворенности потребителей качеством образовательных услуг, предоставляемых вузом,
+COUNTS:
+  COMMA: 3
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 3
+  DASH: 1
+  DASH: 1
+  COMMA: 3
+  COMMA: 3
+  DASH: 1
+  COMMA: 3
+  DASH: 1
+  COMMA: 3
+  DASH: 1
+  SEPARATOR: 4
+  SEPARATOR: 11
+  SEPARATOR: 9
+  SEPARATOR: 5
+  SEPARATOR: 9
+  SEPARATOR: 11
+  SEPARATOR: 13
+  SEPARATOR: 11
+  SEPARATOR: 9
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 18
+  SEPARATOR: 1
+
+LINE 30 (length=187)
+TEXT: -	разработка и исследование моделей, алгоритмов анализа данных мониторинга удовлетворенности качеством образовательных услуг, деятельности преподавателей и студентов, подразделений вуза;
+COUNTS:
+  COMMA: 3
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 3
+  DASH: 1
+  DASH: 1
+  COMMA: 3
+  COMMA: 3
+  DASH: 1
+  COMMA: 3
+  DASH: 1
+  COMMA: 3
+  DASH: 1
+  SEPARATOR: 2
+  SEPARATOR: 17
+  SEPARATOR: 10
+  SEPARATOR: 4
+  SEPARATOR: 11
+  SEPARATOR: 17
+  SEPARATOR: 12
+  SEPARATOR: 17
+  SEPARATOR: 11
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 16
+  SEPARATOR: 1
+
+LINE 31 (length=201)
+TEXT: -	теоретическое обоснование алгоритмов реализации и исследование эффективности метода вербального анализа при принятии управленческих решений по результатам мониторинга качества образовательных услуг;
+COUNTS:
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  SEPARATOR: 4
+  SEPARATOR: 18
+  SEPARATOR: 9
+  SEPARATOR: 4
+  SEPARATOR: 20
+  SEPARATOR: 18
+  SEPARATOR: 12
+  SEPARATOR: 18
+  SEPARATOR: 20
+  SEPARATOR: 20
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 18
+
+LINE 32 (length=136)
+TEXT: -	разработка информационного, математического и методического обеспечения системы мониторинга и управления качеством образования в вузе
+COUNTS:
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  SEPARATOR: 4
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 12
+  SEPARATOR: 11
+  SEPARATOR: 7
+  SEPARATOR: 11
+  SEPARATOR: 12
+  SEPARATOR: 12
+  SEPARATOR: 3
+  SEPARATOR: 11
+
+LINE 33 (length=280)
+TEXT: Методологическая основа работы. Для решения поставленных задач использованы основные положения теории информационных процессов и систем, статистического, оперативного и интеллектуального анализа данных, принятия решений и теоретические основы проектирования информационных систем
+COUNTS:
+  DOT: 1
+  COMMA: 3
+  DOT: 1
+  DOT: 1
+  COMMA: 3
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  DOT: 1
+  DOT: 1
+  COMMA: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 17
+  SEPARATOR: 9
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 27
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 17
+  SEPARATOR: 16
+  SEPARATOR: 17
+  SEPARATOR: 27
+  SEPARATOR: 27
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 22
+  SEPARATOR: 1
+
+LINE 34 (length=2)
+TEXT: 4
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 35 (length=48)
+TEXT: Научная новизна работы заключается в следующем:
+COUNTS:
+  COLON: 1
+  COLON: 1
+  COLON: 1
+  COLON: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+
+LINE 36 (length=120)
+TEXT: 1)	предложена методика оценки деятельности преподавателей с использованием положений репрезентативной теории измерений;
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 1
+  NUMBER: 1
+  PARENTHESIS: 1
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 1
+  NUMBER: 1
+  PARENTHESIS: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 11
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 6
+  SEPARATOR: 11
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 17
+
+LINE 37 (length=256)
+TEXT: 2)	предложен алгоритм решения задачи кластерного анализа данных мониторинга деятельности преподавателей, отличающийся использованием нечеткой логики, позволяющей учесть размытость границ, формируемых кластеров с целью обнаружения закономерностей в данных,
+COUNTS:
+  NUMBER: 1
+  COMMA: 4
+  NUMBER: 1
+  COMMA: 4
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  PARENTHESIS: 1
+  COMMA: 4
+  NUMBER: 1
+  PARENTHESIS: 1
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 1
+  NUMBER: 1
+  PARENTHESIS: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 19
+  SEPARATOR: 12
+  SEPARATOR: 7
+  SEPARATOR: 16
+  SEPARATOR: 19
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 19
+  SEPARATOR: 16
+  SEPARATOR: 16
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 21
+  SEPARATOR: 1
+
+LINE 38 (length=373)
+TEXT: 3)	на основе положений теории скрытых марковских моделей, конструирования и параметризации тестов по методологии ШТ разработана математическая модель анализа уровня подготовки студентов. Отличительной особенностью модели является учет взаимосвязи между наблюдаемыми результатами учебных достижений, латентными свойствами самих учащихся и характеристиками тестовых заданий;
+COUNTS:
+  DOT: 1
+  NUMBER: 1
+  COMMA: 2
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 2
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 1
+  DOT: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  PARENTHESIS: 1
+  COMMA: 2
+  NUMBER: 1
+  PARENTHESIS: 1
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 1
+  NUMBER: 1
+  PARENTHESIS: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 30
+  SEPARATOR: 12
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 33
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 30
+  SEPARATOR: 28
+  SEPARATOR: 30
+  SEPARATOR: 33
+  SEPARATOR: 33
+  SEPARATOR: 8
+  SEPARATOR: 6
+  SEPARATOR: 25
+  SEPARATOR: 1
+
+LINE 39 (length=228)
+TEXT: 4)	предложены методика и алгоритм оценки удовлетворенности потребителей качеством образовательных услуг, предоставляемых вузом, отличающиеся использованием репрезентативной теории измерений и метода вербального анализа решений,
+COUNTS:
+  NUMBER: 1
+  COMMA: 3
+  NUMBER: 1
+  COMMA: 3
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  PARENTHESIS: 1
+  COMMA: 3
+  NUMBER: 1
+  PARENTHESIS: 1
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 1
+  NUMBER: 1
+  PARENTHESIS: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 14
+  SEPARATOR: 11
+  SEPARATOR: 8
+  SEPARATOR: 18
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 14
+  SEPARATOR: 14
+  SEPARATOR: 18
+  SEPARATOR: 18
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 25
+  SEPARATOR: 1
+
+LINE 40 (length=243)
+TEXT: 5)	разработана методика и алгоритм принятия решения по управлению качеством образовательных услуг, предоставляемых вузом, отличающиеся использованием метода вербального анализа решений и формулировкой решающего правила на качественном уровне;
+COUNTS:
+  NUMBER: 1
+  COMMA: 2
+  NUMBER: 1
+  COMMA: 2
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  PARENTHESIS: 1
+  COMMA: 2
+  NUMBER: 1
+  PARENTHESIS: 1
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 1
+  NUMBER: 1
+  PARENTHESIS: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 4
+  SEPARATOR: 23
+  SEPARATOR: 11
+  SEPARATOR: 9
+  SEPARATOR: 16
+  SEPARATOR: 23
+  SEPARATOR: 10
+  SEPARATOR: 23
+  SEPARATOR: 16
+  SEPARATOR: 16
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 19
+  SEPARATOR: 1
+
+LINE 41 (length=237)
+TEXT: 6)	разработаны концептуальные, функциональные и информационные модели деятельности подразделений вуза по обеспечению качества образования, отличающиеся применением международных стандартов системного структурного анализа IDEF0 и IDEF1X.
+COUNTS:
+  DOT: 1
+  NUMBER: 3
+  COMMA: 2
+  NUMBER: 3
+  DOT: 1
+  DOT: 1
+  COMMA: 2
+  NUMBER: 3
+  NUMBER: 3
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 3
+  DOT: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  PARENTHESIS: 1
+  COMMA: 2
+  NUMBER: 3
+  PARENTHESIS: 1
+  NUMBER: 3
+  NUMBER: 3
+  PARENTHESIS: 1
+  NUMBER: 3
+  PARENTHESIS: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 9
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 19
+  SEPARATOR: 7
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 19
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 19
+  SEPARATOR: 16
+  SEPARATOR: 16
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 19
+
+LINE 42 (length=469)
+TEXT: Практическая ценность. На основе исследований, выполненных в рамках настоящей работы, разработана методика анализа удовлетворенности потребителей качеством образовательных услуг, предоставляемых вузом; методика анализа уровня подготовки студентов по результатам тестирования, методика анализа деятельности преподавателей по показателям научной, учебной, учебно-методической деятельности, реализована база данных системы менеджмента качества для проведения мониторинга.
+COUNTS:
+  DOT: 2
+  COMMA: 7
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DASH: 1
+  DOT: 2
+  COMMA: 7
+  DASH: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  COMMA: 7
+  COMMA: 7
+  DASH: 1
+  COMMA: 7
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  COMMA: 7
+  DASH: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 46
+  SEPARATOR: 17
+  SEPARATOR: 14
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 22
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 46
+  SEPARATOR: 33
+  SEPARATOR: 46
+  SEPARATOR: 22
+  SEPARATOR: 22
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 41
+  SEPARATOR: 1
+
+LINE 43 (length=133)
+TEXT: Реализация и внедрение результатов. Результаты использованы в системе менеджмента качества Пензенского государственного университета
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 10
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 10
+  SEPARATOR: 10
+  SEPARATOR: 8
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 17
+  SEPARATOR: 1
+
+LINE 44 (length=2)
+TEXT: 5
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 45 (length=33)
+TEXT: Результаты, выносимые на защиту:
+COUNTS:
+  COMMA: 1
+  COLON: 1
+  COMMA: 1
+  COLON: 1
+  COLON: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COLON: 1
+  COMMA: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+
+LINE 46 (length=258)
+TEXT: 1)	методика и алгоритм оценки удовлетворенности потребителей качеством образовательных услуг, разработанные с использованием основных положений репрезентативной теории измерений, что позволяет получить выводы инвариантные к допустимым преобразованиям шкалы,
+COUNTS:
+  NUMBER: 1
+  COMMA: 3
+  NUMBER: 1
+  COMMA: 3
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  PARENTHESIS: 1
+  COMMA: 3
+  NUMBER: 1
+  PARENTHESIS: 1
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 1
+  NUMBER: 1
+  PARENTHESIS: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 5
+  SEPARATOR: 15
+  SEPARATOR: 10
+  SEPARATOR: 8
+  SEPARATOR: 19
+  SEPARATOR: 15
+  SEPARATOR: 1
+  SEPARATOR: 17
+  SEPARATOR: 15
+  SEPARATOR: 19
+  SEPARATOR: 19
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 21
+
+LINE 47 (length=200)
+TEXT: 2)	алгоритм реализации метода вербального анализа решений для оценки качества образовательных услуг, позволяющий в 5—10 раз сократить число вопросов к руководителю с целью выявления его предпочтений;
+COUNTS:
+  NUMBER: 3
+  COMMA: 1
+  NUMBER: 3
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 1
+  DASH: 1
+  NUMBER: 3
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  PARENTHESIS: 1
+  COMMA: 1
+  NUMBER: 3
+  DASH: 1
+  PARENTHESIS: 1
+  NUMBER: 3
+  NUMBER: 3
+  PARENTHESIS: 1
+  NUMBER: 3
+  PARENTHESIS: 1
+  ENTITY_SHAPE: 3
+  SEPARATOR: 5
+  SEPARATOR: 14
+  SEPARATOR: 12
+  SEPARATOR: 2
+  SEPARATOR: 13
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 13
+  SEPARATOR: 13
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 14
+
+LINE 48 (length=335)
+TEXT: 3)	концептуальные, функциональные и информационные модели процессов деятельности подразделений вуза по обеспечению качества образования, отличающиеся применением международных стандартов системного структурного анализа IDEF0 и IDEF1X и позволяющие регламентировать требования к информационной системе менеджмента качества образования.
+COUNTS:
+  DOT: 1
+  NUMBER: 3
+  COMMA: 2
+  NUMBER: 3
+  DOT: 1
+  DOT: 1
+  COMMA: 2
+  NUMBER: 3
+  NUMBER: 3
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 3
+  DOT: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  PARENTHESIS: 1
+  COMMA: 2
+  NUMBER: 3
+  PARENTHESIS: 1
+  NUMBER: 3
+  NUMBER: 3
+  PARENTHESIS: 1
+  NUMBER: 3
+  PARENTHESIS: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 25
+  SEPARATOR: 9
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 24
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 25
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 25
+  SEPARATOR: 24
+  SEPARATOR: 24
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 30
+
+LINE 49 (length=116)
+TEXT: Апробация работы. Основные результаты диссертационной работы докладывались и обсуждались на следующих конференциях:
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  DOT: 1
+  COLON: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 5
+  SEPARATOR: 9
+  SEPARATOR: 8
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 6
+
+LINE 50 (length=96)
+TEXT: -	Международная научно-методическая конференция «Университетское образование» (Пенза, 2006 г.);
+COUNTS:
+  DOT: 1
+  YEAR: 1
+  NUMBER: 1
+  COMMA: 1
+  NUMBER: 1
+  DASH: 2
+  DOT: 1
+  DASH: 2
+  DASH: 2
+  DOT: 1
+  COMMA: 1
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 2
+  QUOTATION: 2
+  DOT: 1
+  DOT: 1
+  YEAR: 1
+  DOT: 1
+  DASH: 2
+  NUMBER: 1
+  DOT: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 2
+  COMMA: 1
+  DOT: 1
+  QUOTATION: 2
+  DASH: 2
+  DOT: 1
+  PARENTHESIS: 2
+  COMMA: 1
+  QUOTATION: 2
+  NUMBER: 1
+  DASH: 2
+  PARENTHESIS: 2
+  NUMBER: 1
+  QUOTATION: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  YEAR: 1
+  PARENTHESIS: 2
+  YEAR: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 10
+
+LINE 51 (length=109)
+TEXT: -	Международная научно-техническая конференция «Новые информационные технологии и системы» (Пенза, 2006 г ),
+COUNTS:
+  YEAR: 1
+  NUMBER: 1
+  COMMA: 2
+  NUMBER: 1
+  DASH: 2
+  DASH: 2
+  DASH: 2
+  COMMA: 2
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 2
+  QUOTATION: 2
+  YEAR: 1
+  DASH: 2
+  NUMBER: 1
+  COMMA: 2
+  COMMA: 2
+  DASH: 2
+  COMMA: 2
+  QUOTATION: 2
+  DASH: 2
+  PARENTHESIS: 2
+  COMMA: 2
+  QUOTATION: 2
+  NUMBER: 1
+  DASH: 2
+  PARENTHESIS: 2
+  NUMBER: 1
+  QUOTATION: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  YEAR: 1
+  PARENTHESIS: 2
+  YEAR: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 8
+  SEPARATOR: 8
+  SEPARATOR: 3
+  SEPARATOR: 10
+
+LINE 52 (length=96)
+TEXT: -	Международная научно-методическая конференция «Университетское образование» (Пенза, 2007 г.),
+COUNTS:
+  DOT: 1
+  YEAR: 1
+  NUMBER: 1
+  COMMA: 2
+  NUMBER: 1
+  DASH: 2
+  DOT: 1
+  DASH: 2
+  DASH: 2
+  DOT: 1
+  COMMA: 2
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 2
+  QUOTATION: 2
+  DOT: 1
+  DOT: 1
+  YEAR: 1
+  DOT: 1
+  DASH: 2
+  NUMBER: 1
+  DOT: 1
+  COMMA: 2
+  COMMA: 2
+  DASH: 2
+  COMMA: 2
+  DOT: 1
+  QUOTATION: 2
+  DASH: 2
+  DOT: 1
+  PARENTHESIS: 2
+  COMMA: 2
+  QUOTATION: 2
+  NUMBER: 1
+  DASH: 2
+  PARENTHESIS: 2
+  NUMBER: 1
+  QUOTATION: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  YEAR: 1
+  PARENTHESIS: 2
+  YEAR: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 10
+
+LINE 53 (length=196)
+TEXT: -	Международная научно-техническая конференция молодых специалистов, аспирантов и студентов «Математическое и компьютерное моделирование естественнонаучных и социальных проблем» (Пенза, 2007 г.).
+COUNTS:
+  DOT: 2
+  YEAR: 1
+  NUMBER: 1
+  COMMA: 2
+  NUMBER: 1
+  DASH: 2
+  DOT: 2
+  DASH: 2
+  DASH: 2
+  DOT: 2
+  COMMA: 2
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 2
+  QUOTATION: 2
+  DOT: 2
+  DOT: 2
+  YEAR: 1
+  DOT: 2
+  DASH: 2
+  NUMBER: 1
+  DOT: 2
+  COMMA: 2
+  COMMA: 2
+  DASH: 2
+  COMMA: 2
+  DOT: 2
+  QUOTATION: 2
+  DASH: 2
+  DOT: 2
+  PARENTHESIS: 2
+  COMMA: 2
+  QUOTATION: 2
+  NUMBER: 1
+  DASH: 2
+  PARENTHESIS: 2
+  NUMBER: 1
+  QUOTATION: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  YEAR: 1
+  PARENTHESIS: 2
+  YEAR: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 13
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 12
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 12
+  SEPARATOR: 12
+  SEPARATOR: 3
+  SEPARATOR: 19
+  SEPARATOR: 1
+
+LINE 54 (length=116)
+TEXT: Публикации. По теме диссертационной работы опубликовано 11 печатных работ, в том числе 10 статей и 1 тезис доклада.
+COUNTS:
+  DOT: 2
+  NUMBER: 3
+  COMMA: 1
+  NUMBER: 3
+  DOT: 2
+  DOT: 2
+  COMMA: 1
+  NUMBER: 3
+  NUMBER: 3
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  NUMBER: 3
+  DOT: 2
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DOT: 2
+  DOT: 2
+  COMMA: 1
+  NUMBER: 3
+  NUMBER: 3
+  NUMBER: 3
+  NUMBER: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 9
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 9
+  SEPARATOR: 4
+  SEPARATOR: 9
+  SEPARATOR: 9
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 1
+
+LINE 55 (length=217)
+TEXT: Структура и объем работы. Диссертация состоит из введения, четырех глав, заключения, списка литературы (112 наименований) и 6 приложений Объем работы- 136 страниц основного текста, включающего 26 рисунков и 3 таблицы
+COUNTS:
+  DOT: 1
+  NUMBER: 5
+  COMMA: 4
+  NUMBER: 5
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 4
+  NUMBER: 5
+  NUMBER: 5
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  NUMBER: 5
+  DOT: 1
+  COMMA: 4
+  COMMA: 4
+  DASH: 1
+  COMMA: 4
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  PARENTHESIS: 2
+  COMMA: 4
+  NUMBER: 5
+  DASH: 1
+  PARENTHESIS: 2
+  NUMBER: 5
+  NUMBER: 5
+  PARENTHESIS: 2
+  NUMBER: 5
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 18
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 3
+  SEPARATOR: 14
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 14
+  SEPARATOR: 18
+  SEPARATOR: 18
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 13
+  SEPARATOR: 1
+
+LINE 56 (length=2)
+TEXT: 6
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 57 (length=23)
+TEXT: СОДЕРЖАНИЕ ДИССЕРТАЦИИ
+COUNTS:
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 21
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+
+LINE 58 (length=226)
+TEXT: Во введении обоснована актуальность темы диссертации, сформулированы цель и задачи исследований, показаны научная новизна и практическая значимость полученных результатов, приведены сведения об апробации работы и публикациях.
+COUNTS:
+  DOT: 1
+  COMMA: 3
+  DOT: 1
+  DOT: 1
+  COMMA: 3
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  DOT: 1
+  DOT: 1
+  COMMA: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 22
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 21
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 22
+  SEPARATOR: 9
+  SEPARATOR: 22
+  SEPARATOR: 21
+  SEPARATOR: 21
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 59 (length=667)
+TEXT: В первой главе проведен анализ информационных процессов, методов, моделей, алгоритмов и систем мониторинга и управления вузом Рассмотрены методы мониторинга и оценки качества образования, дана их сравнительная оценка Выделены основные проблемы, связанные с разработкой методов оценки качества образования, и указаны возможные пути их решения. Показана необходимость использования репрезентативной теории измерений при разработке моделей и алгоритмов анализа данных. Дана сравнительная оценка методов принятия решений и обосновано использование методов вербального анализа при решении сложных плохо структурируемых проблем, которые описываются качественными факторами
+COUNTS:
+  DOT: 2
+  COMMA: 7
+  DOT: 2
+  DOT: 2
+  COMMA: 7
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  COMMA: 7
+  COMMA: 7
+  COMMA: 7
+  DOT: 2
+  DOT: 2
+  COMMA: 7
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 14
+  SEPARATOR: 54
+  SEPARATOR: 19
+  SEPARATOR: 23
+  SEPARATOR: 2
+  SEPARATOR: 50
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 54
+  SEPARATOR: 29
+  SEPARATOR: 54
+  SEPARATOR: 50
+  SEPARATOR: 50
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 7
+  SEPARATOR: 52
+  SEPARATOR: 2
+  SEPARATOR: 1
+
+LINE 60 (length=356)
+TEXT: Показано, что большинство функционирующих в вузах информационных систем носят фрагментарный характер, не ориентированы на информационные потребности студентов, преподавателей, сотрудников вуза и иных заинтересованных лиц, не позволяют осуществлять мониторинг образовательного процесса, не обеспечивают комплексную поддержку принятия управленческих решений
+COUNTS:
+  COMMA: 6
+  COMMA: 6
+  COMMA: 6
+  COMMA: 6
+  COMMA: 6
+  COMMA: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 21
+  SEPARATOR: 8
+  SEPARATOR: 6
+  SEPARATOR: 24
+  SEPARATOR: 21
+  SEPARATOR: 21
+  SEPARATOR: 21
+  SEPARATOR: 24
+  SEPARATOR: 24
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 26
+  SEPARATOR: 1
+
+LINE 61 (length=553)
+TEXT: Существующие методы мониторинга образовательного процесса условно разделены на две группы: группа экспертных оценок и группа объективных показателей Полученная с их помощью информация подлежит обработке. Анализ современных методов оценки качества образования показывает, что часто к полученным данным применяют недопустимые операции, приводящие к искажению результатов Использование репрезентативной теории измерений позволяет разработать модели и алгоритмы анализа данных, результат работы которых не меняется при любом допустимом преобразовании шкалы
+COUNTS:
+  DOT: 1
+  COMMA: 3
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  COMMA: 3
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  DOT: 1
+  COLON: 1
+  DOT: 1
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  COMMA: 3
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 40
+  SEPARATOR: 17
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 34
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 40
+  SEPARATOR: 31
+  SEPARATOR: 40
+  SEPARATOR: 34
+  SEPARATOR: 34
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 44
+  SEPARATOR: 1
+
+LINE 62 (length=374)
+TEXT: Качество образования - понятие многомерное, затрудняющее использование методов принятия решений, требующих представления информации в числовой форме. Поэтому в качестве метода принятия решений о качестве образовательных услуг, предоставляемых вузом, в диссертационной работе предлагается использовать метод вербального анализа решений, позволяющий использовать качественную
+COUNTS:
+  DOT: 1
+  COMMA: 5
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 5
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 5
+  COMMA: 5
+  DASH: 1
+  COMMA: 5
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 5
+  DASH: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 24
+  SEPARATOR: 12
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 23
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 24
+  SEPARATOR: 21
+  SEPARATOR: 24
+  SEPARATOR: 23
+  SEPARATOR: 23
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 6
+  SEPARATOR: 34
+  SEPARATOR: 1
+
+LINE 63 (length=2)
+TEXT: 7
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 64 (length=104)
+TEXT: информацию на всех этапах анализа и принятия решений без каких-либо ее преобразований в числовую форму.
+COUNTS:
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 10
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 2
+  SEPARATOR: 10
+  SEPARATOR: 11
+  SEPARATOR: 11
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 7
+
+LINE 65 (length=496)
+TEXT: Во второй главе разработана концепция мониторинга качества образовательных услуг. Приведены функциональные модели деятельности преподавателя, процесса обучения студентов и мониторинга удовлетворенности потребителей качеством образовательных услуг. Предложены методики и алгоритмы оценки деятельности преподавателей и удовлетворенности потребителей с использованием репрезентативной теории измерений. Приведена методика анализа адекватности механизма оценивания результатов педагогического теста.
+COUNTS:
+  DOT: 4
+  COMMA: 1
+  DOT: 4
+  DOT: 4
+  COMMA: 1
+  DOT: 4
+  DOT: 4
+  DOT: 4
+  DOT: 4
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DOT: 4
+  DOT: 4
+  COMMA: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 36
+  SEPARATOR: 20
+  SEPARATOR: 11
+  SEPARATOR: 4
+  SEPARATOR: 37
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 36
+  SEPARATOR: 36
+  SEPARATOR: 36
+  SEPARATOR: 37
+  SEPARATOR: 37
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 53
+
+LINE 66 (length=479)
+TEXT: Для разработки концептуальных моделей деятельности преподавателя, обучения студентов, мониторинга удовлетворенности потребителей качеством образовательных услуг использована методология IDEF. Основные макропроцессы, которые можно выделить в деятельности преподавателя, показаны на рисунке 1. Поскольку деятельность преподавателя многогранна, то для ее оценки требуется множество частных показателей. Для измерения частных показателей в диссертации использована порядковая шкала.
+COUNTS:
+  DOT: 4
+  NUMBER: 1
+  COMMA: 5
+  NUMBER: 1
+  DOT: 4
+  DOT: 4
+  COMMA: 5
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 4
+  DOT: 4
+  DOT: 4
+  NUMBER: 1
+  DOT: 4
+  COMMA: 5
+  COMMA: 5
+  COMMA: 5
+  DOT: 4
+  DOT: 4
+  COMMA: 5
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 33
+  SEPARATOR: 23
+  SEPARATOR: 9
+  SEPARATOR: 4
+  SEPARATOR: 19
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 33
+  SEPARATOR: 1
+  SEPARATOR: 32
+  SEPARATOR: 33
+  SEPARATOR: 19
+  SEPARATOR: 19
+  SEPARATOR: 15
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 43
+  SEPARATOR: 1
+
+LINE 67 (length=12)
+TEXT: ' Рисунок 1
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 68 (length=2)
+TEXT: 8
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+
+LINE 69 (length=246)
+TEXT: Для обработки порядковых экспериментальных данных использована операция проверки на совпадение или несовпадение, обозначаемая с помощью символа Кронекера δy ={kx1 = xj,0.x, ≠xj}, где х, и xj - записи разных измерений, и операция вычисления ранга
+COUNTS:
+  DOT: 1
+  NUMBER: 2
+  COMMA: 6
+  NUMBER: 2
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 6
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  NUMBER: 2
+  DOT: 1
+  COMMA: 6
+  COMMA: 6
+  DASH: 1
+  COMMA: 6
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 6
+  NUMBER: 2
+  DASH: 1
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 19
+  SEPARATOR: 6
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 19
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 19
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 19
+  SEPARATOR: 19
+  SEPARATOR: 19
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 17
+
+LINE 70 (length=2)
+TEXT: И
+COUNTS:
+  ENTITY_SHAPE: 1
+
+LINE 71 (length=65)
+TEXT: объекта Д = ^C(xi -xj), где C(x, ~xj^ - индикатор положитель-7=1
+COUNTS:
+  NUMBER: 2
+  COMMA: 2
+  NUMBER: 2
+  DASH: 3
+  DASH: 3
+  DASH: 3
+  COMMA: 2
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 3
+  DASH: 3
+  NUMBER: 2
+  COMMA: 2
+  COMMA: 2
+  DASH: 3
+  COMMA: 2
+  DASH: 3
+  PARENTHESIS: 3
+  COMMA: 2
+  NUMBER: 2
+  DASH: 3
+  PARENTHESIS: 3
+  NUMBER: 2
+  NUMBER: 2
+  PARENTHESIS: 3
+  NUMBER: 2
+  PARENTHESIS: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+
+LINE 72 (length=65)
+TEXT: ных чисел. По результатам этих операций выполняется подсчет чис-
+COUNTS:
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 5
+
+LINE 73 (length=2)
+TEXT: п
+COUNTS:
+
+LINE 74 (length=391)
+TEXT: ла преподавателей, обладающих признаком ⅛-ro класса nk - ^δ^ , 7=1 ранжирование преподавателей по любому рейтинговому показателю, выявление корреляционной связи между двумя показателями, по которым оцениваются преподаватели. Для выявления корреляционной связи в диссертации использован выборочный коэффициент ранговой корреляции Спирмена, рассчитанный с доверительной вероятностью Р = 95 %.
+COUNTS:
+  DOT: 2
+  NUMBER: 3
+  COMMA: 5
+  NUMBER: 3
+  DASH: 2
+  DOT: 2
+  DASH: 2
+  DASH: 2
+  DOT: 2
+  COMMA: 5
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DASH: 2
+  NUMBER: 3
+  DOT: 2
+  COMMA: 5
+  COMMA: 5
+  DASH: 2
+  COMMA: 5
+  DOT: 2
+  DASH: 2
+  DOT: 2
+  COMMA: 5
+  NUMBER: 3
+  DASH: 2
+  NUMBER: 3
+  NUMBER: 3
+  NUMBER: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 25
+  SEPARATOR: 17
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 25
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 25
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 25
+  SEPARATOR: 25
+  SEPARATOR: 1
+  SEPARATOR: 25
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 26
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 75 (length=1122)
+TEXT: В процессе обучения студентов выделены три основных макропроцесса: определение уровня исходных знаний, обучение, контроль качества обучения (уровня знаний), который целесообразно проводить в тестовой форме, поскольку это позволит практически полностью устранить субъективизм преподавателя при проверке работ Тестирование характеризуется следующими основными параметрами N — общее число тестовых заданий, охватывающих содержание всего проверяемого учебного курса; D — число тестовых заданий множества N, на которые тестируемый не знает правильного ответа, q=D∕N - индекс неподготовленности тестируемого; и - число тестовых заданий, включенных в тест; d - число заданий в составе и, на которые тестируемый дает неправильный ответ; с - браковочное число, являющееся критерием оценивания результата тестирования, при d < с результат тестирования является положительным, а при d>c — отрицательным; P⅛) - оперативная характеристика теста, которая равна вероятности положительного оценивания теста при заданном значении индекса неподготовленности q тестируемого, является показателем адекватности оценивания знаний тестируемого.
+COUNTS:
+  DOT: 1
+  COMMA: 14
+  DASH: 8
+  DOT: 1
+  DASH: 8
+  DASH: 8
+  DOT: 1
+  COLON: 1
+  COMMA: 14
+  DASH: 8
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  DOT: 1
+  DASH: 8
+  COLON: 1
+  DOT: 1
+  COMMA: 14
+  COMMA: 14
+  DASH: 8
+  COMMA: 14
+  DOT: 1
+  DASH: 8
+  DOT: 1
+  PARENTHESIS: 3
+  COLON: 1
+  COMMA: 14
+  DASH: 8
+  PARENTHESIS: 3
+  PARENTHESIS: 3
+  PARENTHESIS: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 24
+  SEPARATOR: 69
+  SEPARATOR: 30
+  SEPARATOR: 19
+  SEPARATOR: 1
+  SEPARATOR: 73
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 69
+  SEPARATOR: 1
+  SEPARATOR: 83
+  SEPARATOR: 69
+  SEPARATOR: 73
+  SEPARATOR: 73
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 24
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 96
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 76 (length=2)
+TEXT: 9
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+
+LINE 77 (length=409)
+TEXT: В том случае, если множество тестовых заданий N разбито на подмножества Nl, N2, N2 . и т. д. тестовых заданий по отдельному модулю (дидактической единице - ДЕ) проверяемой учебной дисциплины, тогда достоверность всего теста P(q) рассчитывается как произведение вероятностей ( P(q),) положительного оценивания теста по каждой ДЕ при заданном значении индекса неподготовленности ( ql) тестируемого по каждой ДЕ
+COUNTS:
+  DOT: 3
+  NUMBER: 2
+  COMMA: 5
+  NUMBER: 2
+  DASH: 1
+  DOT: 3
+  DASH: 1
+  DASH: 1
+  DOT: 3
+  COMMA: 5
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 1
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  DASH: 1
+  NUMBER: 2
+  DOT: 3
+  COMMA: 5
+  COMMA: 5
+  DASH: 1
+  COMMA: 5
+  DOT: 3
+  DASH: 1
+  DOT: 3
+  PARENTHESIS: 10
+  COMMA: 5
+  NUMBER: 2
+  DASH: 1
+  PARENTHESIS: 10
+  NUMBER: 2
+  NUMBER: 2
+  PARENTHESIS: 10
+  NUMBER: 2
+  PARENTHESIS: 10
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 13
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 22
+  SEPARATOR: 8
+  SEPARATOR: 8
+  SEPARATOR: 3
+  SEPARATOR: 24
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 22
+  SEPARATOR: 27
+  SEPARATOR: 2
+  SEPARATOR: 22
+  SEPARATOR: 24
+  SEPARATOR: 24
+  SEPARATOR: 4
+  SEPARATOR: 8
+  SEPARATOR: 31
+
+LINE 78 (length=2)
+TEXT: к
+COUNTS:
+  SEPARATOR: 1
+
+LINE 79 (length=11)
+TEXT: P<qVYV‰	(О
+COUNTS:
+  PARENTHESIS: 1
+  PARENTHESIS: 1
+  PARENTHESIS: 1
+  PARENTHESIS: 1
+  ENTITY_SHAPE: 5
+  SEPARATOR: 1
+
+LINE 80 (length=4)
+TEXT: z=l
+COUNTS:
+
+LINE 81 (length=21)
+TEXT: где к- количество ДЕ
+COUNTS:
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 82 (length=492)
+TEXT: В диссертации доказано, что любой оцениваемый по данной методике тест является достоверным, если при 60 % подготовленности тестируемого по каждой ДЕ он гарантированно получает зачет по тесту с риском не более 15 %. Таким образом, использование математического аппарата статистического контроля качества применительно к педагогическому тестированию знаний позволяет формализовано оценить степень достоверности тестов, что весьма важно при проектировании контрольных тестов и тестовых программ
+COUNTS:
+  DOT: 1
+  NUMBER: 2
+  COMMA: 4
+  NUMBER: 2
+  DOT: 1
+  DOT: 1
+  COMMA: 4
+  NUMBER: 2
+  NUMBER: 2
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 2
+  DOT: 1
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  DOT: 1
+  DOT: 1
+  COMMA: 4
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 32
+  SEPARATOR: 12
+  SEPARATOR: 15
+  SEPARATOR: 1
+  SEPARATOR: 31
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 32
+  SEPARATOR: 1
+  SEPARATOR: 41
+  SEPARATOR: 1
+  SEPARATOR: 32
+  SEPARATOR: 31
+  SEPARATOR: 31
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 38
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 83 (length=280)
+TEXT: На рисунке 2 представлена концептуальная модель процесса мониторинга удовлетворенности потребителей качеством образовательных услуг, предоставляемых вузом Для оценки степени удовлетворенности предлагается использовать пятибалльную шкалу. Приведем лингвистические значения оценок.
+COUNTS:
+  DOT: 2
+  NUMBER: 1
+  COMMA: 1
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  COMMA: 1
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  NUMBER: 1
+  DOT: 2
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DOT: 2
+  DOT: 2
+  COMMA: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 17
+  SEPARATOR: 16
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 17
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 17
+  SEPARATOR: 16
+  SEPARATOR: 16
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 28
+
+LINE 84 (length=48)
+TEXT: 5	— «полное соответствие желаемому результату»;
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  QUOTATION: 2
+  DASH: 1
+  NUMBER: 1
+  DASH: 1
+  QUOTATION: 2
+  DASH: 1
+  QUOTATION: 2
+  NUMBER: 1
+  DASH: 1
+  NUMBER: 1
+  QUOTATION: 2
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+
+LINE 85 (length=50)
+TEXT: 4	- «неполное соответствие желаемому результату»,
+COUNTS:
+  NUMBER: 1
+  COMMA: 1
+  NUMBER: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  QUOTATION: 2
+  DASH: 1
+  NUMBER: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  QUOTATION: 2
+  DASH: 1
+  COMMA: 1
+  QUOTATION: 2
+  NUMBER: 1
+  DASH: 1
+  NUMBER: 1
+  QUOTATION: 2
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+
+LINE 86 (length=60)
+TEXT: 3	- «удовлетворительное соответствие желаемому результату»;
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  QUOTATION: 2
+  DASH: 1
+  NUMBER: 1
+  DASH: 1
+  QUOTATION: 2
+  DASH: 1
+  QUOTATION: 2
+  NUMBER: 1
+  DASH: 1
+  NUMBER: 1
+  QUOTATION: 2
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 8
+
+LINE 87 (length=62)
+TEXT: 2	- «неудовлетворительное соответствие желаемому результату»;
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  QUOTATION: 2
+  DASH: 1
+  NUMBER: 1
+  DASH: 1
+  QUOTATION: 2
+  DASH: 1
+  QUOTATION: 2
+  NUMBER: 1
+  DASH: 1
+  NUMBER: 1
+  QUOTATION: 2
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 9
+
+LINE 88 (length=49)
+TEXT: 1 - «полное несоответствие желаемому результату»
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  QUOTATION: 2
+  DASH: 1
+  NUMBER: 1
+  DASH: 1
+  QUOTATION: 2
+  DASH: 1
+  QUOTATION: 2
+  NUMBER: 1
+  DASH: 1
+  NUMBER: 1
+  QUOTATION: 2
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+
+LINE 89 (length=73)
+TEXT: Предварительная обработка результатов измерений включает следующие этапы
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 7
+  SEPARATOR: 6
+  SEPARATOR: 7
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+
+LINE 90 (length=146)
+TEXT: -	подсчет количества потребителей, оценивших одинаковым образом степень удовлетворенности определенным критериям качества образовательной услуги;
+COUNTS:
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  SEPARATOR: 4
+  SEPARATOR: 7
+  SEPARATOR: 6
+  SEPARATOR: 4
+  SEPARATOR: 9
+  SEPARATOR: 7
+  SEPARATOR: 10
+  SEPARATOR: 7
+  SEPARATOR: 9
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 16
+
+LINE 91 (length=3)
+TEXT: 10
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 92 (length=10)
+TEXT: Рисунок 2
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 93 (length=180)
+TEXT: -	определение для одного потребителя количества и процента критериев, которые «полностью соответствуют желаемому результату» или «полностью не соответствуют желаемому результату»;
+COUNTS:
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  QUOTATION: 4
+  DASH: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  QUOTATION: 4
+  DASH: 1
+  COMMA: 1
+  QUOTATION: 4
+  DASH: 1
+  QUOTATION: 4
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 11
+  SEPARATOR: 4
+  SEPARATOR: 8
+  SEPARATOR: 6
+  SEPARATOR: 20
+  SEPARATOR: 6
+  SEPARATOR: 8
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 20
+  SEPARATOR: 1
+
+LINE 94 (length=162)
+TEXT: —	ранжирование критериев оценки качества образовательной услуги по степени удовлетворенности в пределах выделенной группы (кафедра, факультет, институт и т. д.);
+COUNTS:
+  DOT: 2
+  COMMA: 2
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DASH: 1
+  DOT: 2
+  COMMA: 2
+  DASH: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  COMMA: 2
+  COMMA: 2
+  DASH: 1
+  COMMA: 2
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  PARENTHESIS: 2
+  COMMA: 2
+  DASH: 1
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 11
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 10
+  SEPARATOR: 12
+  SEPARATOR: 10
+  SEPARATOR: 11
+  SEPARATOR: 11
+  SEPARATOR: 2
+  SEPARATOR: 16
+
+LINE 95 (length=169)
+TEXT: -	выявление наличия ранговой корреляционной связи по критериям качества образовательной услуги между двумя группами с помощью коэффициента ранговой корреляции Спирмена;
+COUNTS:
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 5
+  SEPARATOR: 10
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 4
+  SEPARATOR: 10
+  SEPARATOR: 14
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 4
+  SEPARATOR: 10
+
+LINE 96 (length=148)
+TEXT: -	вычисление степени согласованности мнений потребителей в пределах группы с помощью коэффициента конкордации по формуле, предложенной Кендаллом; ■
+COUNTS:
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 8
+  SEPARATOR: 4
+  SEPARATOR: 10
+  SEPARATOR: 6
+  SEPARATOR: 5
+  SEPARATOR: 6
+  SEPARATOR: 10
+  SEPARATOR: 10
+  SEPARATOR: 3
+  SEPARATOR: 15
+
+LINE 97 (length=106)
+TEXT: -	нахождение среднего балла для каждого критерия оценки качества образовательной услуги в пределах группы
+COUNTS:
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  SEPARATOR: 4
+  SEPARATOR: 9
+  SEPARATOR: 6
+  SEPARATOR: 5
+  SEPARATOR: 9
+  SEPARATOR: 3
+  SEPARATOR: 9
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 10
+
+LINE 98 (length=21)
+TEXT: w,=V5 λAaeial-Y5 (2)
+COUNTS:
+  NUMBER: 3
+  COMMA: 1
+  NUMBER: 3
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 1
+  DASH: 1
+  NUMBER: 3
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  PARENTHESIS: 2
+  COMMA: 1
+  NUMBER: 3
+  DASH: 1
+  PARENTHESIS: 2
+  NUMBER: 3
+  NUMBER: 3
+  PARENTHESIS: 2
+  NUMBER: 3
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 99 (length=76)
+TEXT: ' 4-ιq=l Ч ЬЧ / 4—∣q=∖ ЬЧ ’ v 7 где Aq - веса лингвистических оценок el q .
+COUNTS:
+  DOT: 1
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 3
+  DOT: 1
+  DASH: 3
+  DASH: 3
+  DOT: 1
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 3
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 3
+  NUMBER: 3
+  DOT: 1
+  DASH: 3
+  DOT: 1
+  DASH: 3
+  DOT: 1
+  SLASH: 1
+  NUMBER: 3
+  DASH: 3
+  NUMBER: 3
+  NUMBER: 3
+  NUMBER: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 4
+
+LINE 100 (length=242)
+TEXT: В третьей главе предложен алгоритм нахождения теоретикомножественного разбиения исходного множества объектов данных мониторинга на подмножества с использованием методов нечеткой кластеризации. Разработаны математические модели анализа уровня
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 20
+  SEPARATOR: 7
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 20
+  SEPARATOR: 16
+  SEPARATOR: 20
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 17
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 23
+  SEPARATOR: 1
+
+LINE 101 (length=2)
+TEXT: И
+COUNTS:
+  ENTITY_SHAPE: 1
+
+LINE 102 (length=269)
+TEXT: подготовки студентов по результатам их учебных достижений, анализа удовлетворенности потребителей качеством образовательных услуг, предоставляемых вузом Построены математическая модель и алгоритм процесса принятия решений по управлению качеством образовательных услуг.
+COUNTS:
+  DOT: 1
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  COMMA: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 18
+  SEPARATOR: 12
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 18
+  SEPARATOR: 20
+  SEPARATOR: 18
+  SEPARATOR: 14
+  SEPARATOR: 14
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 23
+
+LINE 103 (length=381)
+TEXT: При рейтинговой оценке деятельности преподавателей выборку для кластеризации составляют преподаватели одной кафедры, одного факультета или всего университета в целом. В диссертации A=∖aya1,...,a^ — множество объектов кластеризации, P=⅛∖,p2,...,p<¾ -конечное множество признаков или атрибутов, где и — общее количество объектов, a q - общее количество измеряемых признаков объектов
+COUNTS:
+  DOT: 7
+  NUMBER: 2
+  COMMA: 9
+  NUMBER: 2
+  DASH: 4
+  DOT: 7
+  DASH: 4
+  DASH: 4
+  DOT: 7
+  COMMA: 9
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 4
+  DOT: 7
+  DOT: 7
+  DOT: 7
+  DASH: 4
+  NUMBER: 2
+  DOT: 7
+  COMMA: 9
+  COMMA: 9
+  DASH: 4
+  COMMA: 9
+  DOT: 7
+  DASH: 4
+  DOT: 7
+  COMMA: 9
+  NUMBER: 2
+  DASH: 4
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 2
+  SEPARATOR: 17
+  SEPARATOR: 13
+  SEPARATOR: 5
+  SEPARATOR: 7
+  SEPARATOR: 26
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 17
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 23
+  SEPARATOR: 1
+  SEPARATOR: 17
+  SEPARATOR: 26
+  SEPARATOR: 26
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 35
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+
+LINE 104 (length=518)
+TEXT: Для каждого объекта кластеризации (преподавателя) измерены все признаки множества Р в некоторой количественной шкале. Каждому из элементов а, е А поставлен в соответствие вектор х, =(x1,,X2,..., х'), где х' - количественное значение признака ρj⅞P для объекта а, е А. Требуется на основе исходных данных определить такое нечеткое разбиение ¾(⅜ = ⅛[2jfc множества А = А на заданное число с нечетких кластеров 4t(⅛e{2,. ,с}), которое доставляет экстремум некоторой целевой функции ∕(SR(j)) среди всех нечетких разбиений.
+COUNTS:
+  DOT: 7
+  INITIAL: 1
+  NUMBER: 5
+  COMMA: 11
+  NUMBER: 5
+  DASH: 1
+  DOT: 7
+  INITIAL: 1
+  DASH: 1
+  DASH: 1
+  DOT: 7
+  COMMA: 11
+  NUMBER: 5
+  NUMBER: 5
+  DASH: 1
+  DOT: 7
+  DOT: 7
+  INITIAL: 1
+  DOT: 7
+  DASH: 1
+  NUMBER: 5
+  DOT: 7
+  COMMA: 11
+  COMMA: 11
+  INITIAL: 1
+  DASH: 1
+  COMMA: 11
+  DOT: 7
+  DASH: 1
+  DOT: 7
+  PARENTHESIS: 11
+  COMMA: 11
+  NUMBER: 5
+  DASH: 1
+  PARENTHESIS: 11
+  NUMBER: 5
+  NUMBER: 5
+  PARENTHESIS: 11
+  INITIAL: 1
+  INITIAL: 1
+  NUMBER: 5
+  PARENTHESIS: 11
+  INITIAL: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 12
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 7
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 20
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 28
+  SEPARATOR: 14
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 24
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 28
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 27
+  SEPARATOR: 3
+  SEPARATOR: 28
+  SEPARATOR: 24
+  SEPARATOR: 24
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 54
+  SEPARATOR: 1
+
+LINE 105 (length=108)
+TEXT: Решение задачи нечеткой кластеризации выполнено с помощью алгоритма нечетких с-средних (FCM, Fuzzy C-Means)
+COUNTS:
+  COMMA: 1
+  DASH: 2
+  DASH: 2
+  DASH: 2
+  COMMA: 1
+  DASH: 2
+  DASH: 2
+  COMMA: 1
+  COMMA: 1
+  DASH: 2
+  COMMA: 1
+  DASH: 2
+  PARENTHESIS: 2
+  COMMA: 1
+  DASH: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 8
+  SEPARATOR: 6
+  SEPARATOR: 4
+  SEPARATOR: 6
+  SEPARATOR: 8
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 10
+
+LINE 106 (length=222)
+TEXT: В результате работы данного алгоритма было получено нечеткое разбиение множества преподавателей на группы, в пределах которых впоследствии возможно выполнять ранжирование преподавателей, вычислять средние значения и т. д.
+COUNTS:
+  DOT: 2
+  COMMA: 2
+  DOT: 2
+  DOT: 2
+  COMMA: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 2
+  DOT: 2
+  COMMA: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 16
+  SEPARATOR: 10
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 11
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 16
+  SEPARATOR: 13
+  SEPARATOR: 16
+  SEPARATOR: 11
+  SEPARATOR: 11
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 22
+
+LINE 107 (length=194)
+TEXT: В основе квалиметрического подхода к современному тестированию лежат идеи использования математических моделей конструирования и параметризации тестов по методологии IRT (Item Response Theory).
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 11
+  SEPARATOR: 5
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 18
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 11
+  SEPARATOR: 11
+  SEPARATOR: 18
+  SEPARATOR: 18
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 15
+
+LINE 108 (length=176)
+TEXT: В качестве математической модели в диссертации использована однопараметрическая модель Раша. В рамках этой модели задания характеризуются только одним параметром - трудностью.
+COUNTS:
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 19
+  SEPARATOR: 5
+  SEPARATOR: 10
+  SEPARATOR: 2
+  SEPARATOR: 11
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 19
+  SEPARATOR: 12
+  SEPARATOR: 19
+  SEPARATOR: 11
+  SEPARATOR: 11
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 12
+
+LINE 109 (length=3)
+TEXT: 12
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 110 (length=255)
+TEXT: Для создания адаптивного теста необходимо иметь банк тестовых заданий с известными уровнями трудности (калиброванных заданий). Субъективное мнение педагога о степени сложности задания учитывается посредством применения аппарата нечетких отношений. Препо-
+COUNTS:
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  PARENTHESIS: 2
+  DASH: 1
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 20
+  SEPARATOR: 3
+  SEPARATOR: 7
+  SEPARATOR: 2
+  SEPARATOR: 21
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 20
+  SEPARATOR: 18
+  SEPARATOR: 20
+  SEPARATOR: 21
+  SEPARATOR: 21
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 20
+
+LINE 111 (length=10)
+TEXT: Рисунок 3
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 112 (length=271)
+TEXT: даватель оценивает степень сложности каждого задания на отрезке [0,1], формируя нечеткое отношение S = ^b,μs(b)^ - «сложное задание». На основе экспертных оценок в интервале [-3, +3] логит был построен график функции принадлежности для нечеткого множества S (рисунок 3).
+COUNTS:
+  DOT: 2
+  NUMBER: 5
+  COMMA: 4
+  NUMBER: 5
+  DASH: 2
+  DOT: 2
+  DASH: 2
+  DASH: 2
+  DOT: 2
+  COMMA: 4
+  NUMBER: 5
+  NUMBER: 5
+  DASH: 2
+  QUOTATION: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DASH: 2
+  NUMBER: 5
+  DOT: 2
+  COMMA: 4
+  COMMA: 4
+  DASH: 2
+  COMMA: 4
+  DOT: 2
+  QUOTATION: 2
+  DASH: 2
+  DOT: 2
+  PARENTHESIS: 4
+  COMMA: 4
+  QUOTATION: 2
+  NUMBER: 5
+  DASH: 2
+  PARENTHESIS: 4
+  NUMBER: 5
+  QUOTATION: 2
+  NUMBER: 5
+  PARENTHESIS: 4
+  NUMBER: 5
+  PARENTHESIS: 4
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 14
+  SEPARATOR: 14
+  SEPARATOR: 14
+  SEPARATOR: 3
+  SEPARATOR: 24
+
+LINE 113 (length=246)
+TEXT: Для определения уровня подготовленности испытуемых по предмету на момент тестирования введена в рассмотрение лингвистическая переменная Q — «уровень подготовленности». Тогда множество различных уровней подготовленности T^ = {β,∣z = 1,∏} является
+COUNTS:
+  DOT: 1
+  NUMBER: 1
+  COMMA: 2
+  NUMBER: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 2
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  QUOTATION: 2
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  NUMBER: 1
+  DOT: 1
+  COMMA: 2
+  COMMA: 2
+  DASH: 1
+  COMMA: 2
+  DOT: 1
+  QUOTATION: 2
+  DASH: 1
+  DOT: 1
+  COMMA: 2
+  QUOTATION: 2
+  NUMBER: 1
+  DASH: 1
+  NUMBER: 1
+  QUOTATION: 2
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 8
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 15
+  SEPARATOR: 8
+  SEPARATOR: 12
+  SEPARATOR: 12
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 23
+
+LINE 114 (length=311)
+TEXT: терм-множеством лингвистической переменной β. Нечеткие множества Q, значений лингвистической переменной Q - «уровень подготовленности» - строятся путем указания преподавателем (экспертами) точек перехода функций принадлежности терм-множеств, заданных колоколообразной функцией принадлежности следующим образом.
+COUNTS:
+  DOT: 2
+  COMMA: 2
+  DASH: 4
+  DOT: 2
+  DASH: 4
+  DASH: 4
+  DOT: 2
+  COMMA: 2
+  DASH: 4
+  QUOTATION: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DASH: 4
+  DOT: 2
+  COMMA: 2
+  COMMA: 2
+  DASH: 4
+  COMMA: 2
+  DOT: 2
+  QUOTATION: 2
+  DASH: 4
+  DOT: 2
+  PARENTHESIS: 2
+  COMMA: 2
+  QUOTATION: 2
+  DASH: 4
+  PARENTHESIS: 2
+  QUOTATION: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 10
+  SEPARATOR: 14
+  SEPARATOR: 9
+  SEPARATOR: 13
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 18
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 18
+  SEPARATOR: 14
+  SEPARATOR: 18
+  SEPARATOR: 18
+  SEPARATOR: 3
+  SEPARATOR: 8
+  SEPARATOR: 31
+  SEPARATOR: 1
+
+LINE 115 (length=18)
+TEXT: ⅛⅛>=------—-.	(3>
+COUNTS:
+  DOT: 1
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 8
+  DOT: 1
+  DASH: 8
+  DASH: 8
+  DOT: 1
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 8
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 8
+  NUMBER: 1
+  DOT: 1
+  DASH: 8
+  DOT: 1
+  DASH: 8
+  DOT: 1
+  PARENTHESIS: 1
+  NUMBER: 1
+  DASH: 8
+  PARENTHESIS: 1
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 1
+  NUMBER: 1
+  PARENTHESIS: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 116 (length=159)
+TEXT: где q - численное значение переменной Q (значение уровня подготовленности), ⅞,⅞ι i = l,n - точки перехода переменной Q, указанные преподавателем (экспертами).
+COUNTS:
+  DOT: 1
+  COMMA: 4
+  DASH: 2
+  DOT: 1
+  DASH: 2
+  DASH: 2
+  DOT: 1
+  COMMA: 4
+  DASH: 2
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 2
+  DOT: 1
+  COMMA: 4
+  COMMA: 4
+  DASH: 2
+  COMMA: 4
+  DOT: 1
+  DASH: 2
+  DOT: 1
+  PARENTHESIS: 4
+  COMMA: 4
+  DASH: 2
+  PARENTHESIS: 4
+  PARENTHESIS: 4
+  PARENTHESIS: 4
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 8
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 5
+  SEPARATOR: 8
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 21
+
+LINE 117 (length=3)
+TEXT: 13
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 118 (length=517)
+TEXT: Преподаватель определяет, что уровень подготовленности студента со степенью принадлежности μ^ можно отнести к одному из термов лингвистической переменной Q . Интервал, в пределах которого находится уровень подготовленности μ^ j-ro студента, определяется путем дефаззификации функции принадлежности лингвистической переменной Q с использованием методов левого и правого модального значения Для осуществления адаптивного тестирования подбираются задания такой трудности, чтобы вероятность правильного ответа Pj⅛β = 0,5
+COUNTS:
+  DOT: 1
+  NUMBER: 2
+  COMMA: 5
+  NUMBER: 2
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 5
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  NUMBER: 2
+  DOT: 1
+  COMMA: 5
+  COMMA: 5
+  DASH: 1
+  COMMA: 5
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 5
+  NUMBER: 2
+  DASH: 1
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 24
+  SEPARATOR: 17
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 33
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 24
+  SEPARATOR: 38
+  SEPARATOR: 24
+  SEPARATOR: 33
+  SEPARATOR: 33
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 42
+  SEPARATOR: 1
+
+LINE 119 (length=1419)
+TEXT: В диссертации для точного определения уровня знаний испытуемого процесс тестирования представляется в виде скрытой марковской модели (СММ) как совокупность значений N, М, А, В, π (обозначим λ = (A,B,π) ), где N - количество дидактических единиц (ДЕ); М - количество возможных символов в наблюдаемой последовательности, которую генерирует СММ (в случае тестирования М = 2), Е = {0, 1} - алфавит наблюдаемой последовательности; Λ = {αy} -матрица вероятностей перехода от одной ДЕ к другой; В = ∖bj (⅛)} -матрица вероятностей появления правильных и неправильных ответов в каждой ДЕ. СММ генерирует последовательность ответов тестируемого O = O1O2. От, где О, - один из символов алфавита V, аТ - это количество элементов в наблюдаемой последовательности С помощью алгоритма Баума-Уэлша модель оптимизирована таким образом, чтобы она точно описывала наблюдаемую последовательность В результате была получена модель с переоцененными параметрами Вычислив и сравнив правдоподобность появления данной последовательности наблюдений для модели с исходными параметрами P(θ∣λ) ис переоцененными P(O∣λξ), используя алгоритм прямого хода, получили P((9∣λξ) > P(O∣λ),т е после переоценки параметров модели ее правдоподобность увеличилась. По скорректированной матрице распределения вероятностей «правильных» и «неправильных» ответов испытуемого Sξ был найден уровень подготовки испытуемого по каждой ДЕ в логитах, а затем выполнен пе-
+COUNTS:
+  DOT: 3
+  NUMBER: 6
+  COMMA: 18
+  NUMBER: 6
+  DASH: 9
+  DOT: 3
+  DASH: 9
+  DASH: 9
+  DOT: 3
+  COMMA: 18
+  NUMBER: 6
+  NUMBER: 6
+  DASH: 9
+  QUOTATION: 4
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  DASH: 9
+  NUMBER: 6
+  DOT: 3
+  COMMA: 18
+  COMMA: 18
+  DASH: 9
+  COMMA: 18
+  DOT: 3
+  QUOTATION: 4
+  DASH: 9
+  DOT: 3
+  PARENTHESIS: 21
+  COMMA: 18
+  QUOTATION: 4
+  NUMBER: 6
+  DASH: 9
+  PARENTHESIS: 21
+  NUMBER: 6
+  QUOTATION: 4
+  NUMBER: 6
+  PARENTHESIS: 21
+  NUMBER: 6
+  PARENTHESIS: 21
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 49
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 20
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 80
+  SEPARATOR: 59
+  SEPARATOR: 39
+  SEPARATOR: 3
+  SEPARATOR: 79
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 80
+  SEPARATOR: 2
+  SEPARATOR: 73
+  SEPARATOR: 2
+  SEPARATOR: 80
+  SEPARATOR: 79
+  SEPARATOR: 79
+  SEPARATOR: 1
+  SEPARATOR: 18
+  SEPARATOR: 1
+  SEPARATOR: 18
+  SEPARATOR: 101
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 120 (length=3)
+TEXT: 14
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 121 (length=120)
+TEXT: ресчет уровня учебных достижений испытуемого, выраженный в логитах, в 100-балльную шкалу путем линейных преобразований.
+COUNTS:
+  DOT: 1
+  NUMBER: 1
+  COMMA: 2
+  NUMBER: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 2
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  NUMBER: 1
+  DOT: 1
+  COMMA: 2
+  COMMA: 2
+  DASH: 1
+  COMMA: 2
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 2
+  NUMBER: 1
+  DASH: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 9
+
+LINE 122 (length=280)
+TEXT: Таким образом, разработанная методика позволяет на основе априорного предположения о степени подготовленности испытуемого подобрать ему задания, соответствующие его уровню, провести адаптивное тестирование и определить уровень учебных достижений испытуемого по 100-балльной шкале
+COUNTS:
+  NUMBER: 1
+  COMMA: 3
+  NUMBER: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 3
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  DASH: 1
+  NUMBER: 1
+  COMMA: 3
+  COMMA: 3
+  DASH: 1
+  COMMA: 3
+  DASH: 1
+  COMMA: 3
+  NUMBER: 1
+  DASH: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 17
+  SEPARATOR: 7
+  SEPARATOR: 6
+  SEPARATOR: 18
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 18
+  SEPARATOR: 17
+  SEPARATOR: 18
+  SEPARATOR: 18
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 24
+  SEPARATOR: 1
+
+LINE 123 (length=455)
+TEXT: Оценка удовлетворенности потребителей качеством образовательных услуг выполняется по результатам мониторинга. При проведении мониторинга потребители образовательных услуг были разделены на категории и группы на основе потребности в определенном виде образовательной услуги Ранжирование оценок потребителей внутри группы по степени удовлетворенности качеством образовательных услуг в работе выполнено методом вербального анализа решений Для данного метода
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 28
+  SEPARATOR: 22
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 26
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 28
+  SEPARATOR: 29
+  SEPARATOR: 28
+  SEPARATOR: 26
+  SEPARATOR: 26
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 43
+
+LINE 124 (length=119)
+TEXT: Kv Kz, , Kn — критерии, по которым оценивается степень удовлетворенности потребителей качеством образовательных услуг;
+COUNTS:
+  COMMA: 3
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 3
+  DASH: 1
+  DASH: 1
+  COMMA: 3
+  COMMA: 3
+  DASH: 1
+  COMMA: 3
+  DASH: 1
+  COMMA: 3
+  DASH: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 4
+  SEPARATOR: 10
+  SEPARATOR: 4
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 1
+
+LINE 125 (length=177)
+TEXT: Xq = {xkq} - множество оценок (шкала) ⅞-ro критерия, которые упорядочены от лучшей (первой) к худшей (последней); [jf9∣ = 59, Sq - число значений оценок на шкале ⅞-ro критерия,
+COUNTS:
+  NUMBER: 2
+  COMMA: 3
+  NUMBER: 2
+  DASH: 4
+  DASH: 4
+  DASH: 4
+  COMMA: 3
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 4
+  DASH: 4
+  NUMBER: 2
+  COMMA: 3
+  COMMA: 3
+  DASH: 4
+  COMMA: 3
+  DASH: 4
+  PARENTHESIS: 6
+  COMMA: 3
+  NUMBER: 2
+  DASH: 4
+  PARENTHESIS: 6
+  NUMBER: 2
+  NUMBER: 2
+  PARENTHESIS: 6
+  NUMBER: 2
+  PARENTHESIS: 6
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 8
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 14
+
+LINE 126 (length=59)
+TEXT: Y=XxX2 .Xn - множество векторов вида yj =(yjx,yj2,. ,yjN),
+COUNTS:
+  DOT: 2
+  NUMBER: 2
+  COMMA: 4
+  NUMBER: 2
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DASH: 1
+  DOT: 2
+  COMMA: 4
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DASH: 1
+  NUMBER: 2
+  DOT: 2
+  COMMA: 4
+  COMMA: 4
+  DASH: 1
+  COMMA: 4
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  PARENTHESIS: 2
+  COMMA: 4
+  NUMBER: 2
+  DASH: 1
+  PARENTHESIS: 2
+  NUMBER: 2
+  NUMBER: 2
+  PARENTHESIS: 2
+  NUMBER: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 127 (length=2)
+TEXT: N
+COUNTS:
+  ENTITY_SHAPE: 1
+
+LINE 128 (length=73)
+TEXT: где yjqeXg, j = 1, .., S и S = ∣K∣ = P∣S,g , задающее все гипотетиче-»=>
+COUNTS:
+  DOT: 2
+  NUMBER: 1
+  COMMA: 5
+  NUMBER: 1
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DASH: 1
+  DOT: 2
+  COMMA: 5
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  QUOTATION: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DASH: 1
+  NUMBER: 1
+  DOT: 2
+  COMMA: 5
+  COMMA: 5
+  DASH: 1
+  COMMA: 5
+  DOT: 2
+  QUOTATION: 1
+  DASH: 1
+  DOT: 2
+  COMMA: 5
+  QUOTATION: 1
+  NUMBER: 1
+  DASH: 1
+  NUMBER: 1
+  QUOTATION: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 1
+
+LINE 129 (length=35)
+TEXT: ски возможные ответы анкетируемых;
+COUNTS:
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 4
+
+LINE 130 (length=118)
+TEXT: Л = {Д, ,<42,. ,An^ — множество реальных оценок потребителей, содержащее и векторов α1 = (αll,α,2, ,‰), где aιq g Xq;
+COUNTS:
+  DOT: 1
+  NUMBER: 3
+  COMMA: 10
+  NUMBER: 3
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 10
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  NUMBER: 3
+  DOT: 1
+  COMMA: 10
+  COMMA: 10
+  DASH: 1
+  COMMA: 10
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  PARENTHESIS: 2
+  COMMA: 10
+  NUMBER: 3
+  DASH: 1
+  PARENTHESIS: 2
+  NUMBER: 3
+  NUMBER: 3
+  PARENTHESIS: 2
+  NUMBER: 3
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 11
+
+LINE 131 (length=45)
+TEXT: У=УЦ) - ценность оценки Л, для руководителя.
+COUNTS:
+  DOT: 1
+  COMMA: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 1
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  PARENTHESIS: 1
+  COMMA: 1
+  DASH: 1
+  PARENTHESIS: 1
+  PARENTHESIS: 1
+  PARENTHESIS: 1
+  ENTITY_SHAPE: 4
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 3
+
+LINE 132 (length=147)
+TEXT: Необходимо на основе предпочтений руководителя ранжировать векторы у} е Y в соответствии со значениями априорно неизвестной функции ценности К(Д).
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 9
+  SEPARATOR: 5
+  SEPARATOR: 13
+  SEPARATOR: 13
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 12
+
+LINE 133 (length=182)
+TEXT: Предпочтения руководителя были выявлены путем сравнения изменений качества на шкалах двух критериев в предположении, что оценки по другим критериям наилучшие. Информация, полученная
+COUNTS:
+  DOT: 1
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  COMMA: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 9
+  SEPARATOR: 7
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 7
+  SEPARATOR: 9
+  SEPARATOR: 17
+  SEPARATOR: 17
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 17
+  SEPARATOR: 1
+
+LINE 134 (length=3)
+TEXT: 15
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 135 (length=470)
+TEXT: от руководителя при построении единых шкал изменения качества (ЕШИК) для всех пар критериев, была использована для построения общей порядковой ЕШИК для всех критериев. Построение общей порядковой ЕШИК в работе было выполнено с помощью алгоритма последовательного выбора недоминируемых изменений качества. Полученная общая порядковая ЕШИК использовалась для ранжирования множества реальных групп потребителей по степени удовлетворенности качеством образовательных услуг.
+COUNTS:
+  DOT: 3
+  COMMA: 1
+  DOT: 3
+  DOT: 3
+  COMMA: 1
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DOT: 3
+  DOT: 3
+  PARENTHESIS: 2
+  COMMA: 1
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 18
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 3
+  SEPARATOR: 10
+  SEPARATOR: 4
+  SEPARATOR: 26
+  SEPARATOR: 21
+  SEPARATOR: 8
+  SEPARATOR: 3
+  SEPARATOR: 25
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 26
+  SEPARATOR: 20
+  SEPARATOR: 26
+  SEPARATOR: 25
+  SEPARATOR: 25
+  SEPARATOR: 14
+  SEPARATOR: 6
+  SEPARATOR: 38
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 136 (length=347)
+TEXT: После обработки данных, по которым выполняем оценку качества образовательных услуг, следует этап принятия решения по управлению качеством образования. Задача принятия решения по управлению качеством образования в диссертации определена как задача порядковой классификации многокритериальных альтернатив и формально представлена следующим образом:
+COUNTS:
+  DOT: 1
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  DOT: 1
+  COLON: 1
+  DOT: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  COMMA: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 33
+  SEPARATOR: 14
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 23
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 33
+  SEPARATOR: 15
+  SEPARATOR: 33
+  SEPARATOR: 23
+  SEPARATOR: 23
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 24
+
+LINE 137 (length=76)
+TEXT: Т - свойство, отвечающее целевому критерию задачи («качество образования»);
+COUNTS:
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  QUOTATION: 2
+  DASH: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  QUOTATION: 2
+  DASH: 1
+  PARENTHESIS: 2
+  COMMA: 1
+  QUOTATION: 2
+  DASH: 1
+  PARENTHESIS: 2
+  QUOTATION: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 6
+  SEPARATOR: 4
+  SEPARATOR: 6
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+
+LINE 138 (length=213)
+TEXT: K1, K2,.., Kn - критерии, по которым оценивается качество образования (средний балл студента, рейтинг преподавателя, процент потребителей, полностью удовлетворенных по всем критериям оценки качества образования);
+COUNTS:
+  DOT: 2
+  NUMBER: 2
+  COMMA: 7
+  NUMBER: 2
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DASH: 1
+  DOT: 2
+  COMMA: 7
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DASH: 1
+  NUMBER: 2
+  DOT: 2
+  COMMA: 7
+  COMMA: 7
+  DASH: 1
+  COMMA: 7
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  PARENTHESIS: 2
+  COMMA: 7
+  NUMBER: 2
+  DASH: 1
+  PARENTHESIS: 2
+  NUMBER: 2
+  NUMBER: 2
+  PARENTHESIS: 2
+  NUMBER: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 12
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 12
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 15
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 12
+  SEPARATOR: 12
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 19
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 139 (length=167)
+TEXT: Xq={xq) - множество оценок (шкала) критерия Kq, упорядоченных по убыванию характерности для свойства 7; ∣Λ'9∣ = S'9, Sq -число значений оценок на шкале q-ro критерия;
+COUNTS:
+  NUMBER: 3
+  COMMA: 2
+  NUMBER: 3
+  DASH: 3
+  DASH: 3
+  DASH: 3
+  COMMA: 2
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 3
+  DASH: 3
+  NUMBER: 3
+  COMMA: 2
+  COMMA: 2
+  DASH: 3
+  COMMA: 2
+  DASH: 3
+  PARENTHESIS: 3
+  COMMA: 2
+  NUMBER: 3
+  DASH: 3
+  PARENTHESIS: 3
+  NUMBER: 3
+  NUMBER: 3
+  PARENTHESIS: 3
+  NUMBER: 3
+  PARENTHESIS: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  SEPARATOR: 7
+  SEPARATOR: 9
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 6
+  SEPARATOR: 9
+  SEPARATOR: 8
+  SEPARATOR: 8
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 9
+
+LINE 140 (length=138)
+TEXT: Y = X1 X1..Xn - декартово произведение шкал критериев, определяющее множество всех возможных описаний объектов, подлежащих классификации;
+COUNTS:
+  DOT: 2
+  NUMBER: 2
+  COMMA: 2
+  NUMBER: 2
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DASH: 1
+  DOT: 2
+  COMMA: 2
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DASH: 1
+  NUMBER: 2
+  DOT: 2
+  COMMA: 2
+  COMMA: 2
+  DASH: 1
+  COMMA: 2
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  COMMA: 2
+  NUMBER: 2
+  DASH: 1
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 11
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 6
+  SEPARATOR: 11
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 2
+
+LINE 141 (length=200)
+TEXT: С = {C1, C2,..., См^ - множество классов решений, упорядоченных по убыванию выраженности свойства Т («высокое качество образования», «приемлемое качество образования», «низкое качество образования»).
+COUNTS:
+  DOT: 4
+  NUMBER: 2
+  COMMA: 6
+  NUMBER: 2
+  DASH: 1
+  DOT: 4
+  DASH: 1
+  DASH: 1
+  DOT: 4
+  COMMA: 6
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 1
+  QUOTATION: 6
+  DOT: 4
+  DOT: 4
+  DOT: 4
+  DASH: 1
+  NUMBER: 2
+  DOT: 4
+  COMMA: 6
+  COMMA: 6
+  DASH: 1
+  COMMA: 6
+  DOT: 4
+  QUOTATION: 6
+  DASH: 1
+  DOT: 4
+  PARENTHESIS: 2
+  COMMA: 6
+  QUOTATION: 6
+  NUMBER: 2
+  DASH: 1
+  PARENTHESIS: 2
+  NUMBER: 2
+  QUOTATION: 6
+  NUMBER: 2
+  PARENTHESIS: 2
+  NUMBER: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 4
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 13
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 8
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 8
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 13
+  SEPARATOR: 1
+
+LINE 142 (length=190)
+TEXT: Требуется, основываясь на предпочтениях руководителя, построить отображение множества допустимых объектов Ya во множество классов С. F :Y° → С, которое должно быть полным и непротиворечивым
+COUNTS:
+  DOT: 1
+  INITIAL: 1
+  COMMA: 3
+  DOT: 1
+  INITIAL: 1
+  DOT: 1
+  COLON: 1
+  COMMA: 3
+  DOT: 1
+  DOT: 1
+  INITIAL: 1
+  COLON: 1
+  DOT: 1
+  COLON: 1
+  DOT: 1
+  COMMA: 3
+  COMMA: 3
+  INITIAL: 1
+  COMMA: 3
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  COMMA: 3
+  INITIAL: 1
+  INITIAL: 1
+  INITIAL: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 5
+  SEPARATOR: 8
+  SEPARATOR: 8
+  SEPARATOR: 4
+  SEPARATOR: 13
+
+LINE 143 (length=3)
+TEXT: 16
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 144 (length=380)
+TEXT: Дия решения данной задачи использован метод вербального анализа решений, позволяющий уменьшить число обращений к руководителю за счет косвенной классификации части объектов; вести диалог с руководителем на содержательном языке оценок критериев и дать содержательную формулировку решающего правила, которая может быть использована в качестве объяснения любых решений руководителя.
+COUNTS:
+  DOT: 1
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  COMMA: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 25
+  SEPARATOR: 16
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 28
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 25
+  SEPARATOR: 17
+  SEPARATOR: 25
+  SEPARATOR: 28
+  SEPARATOR: 28
+  SEPARATOR: 8
+  SEPARATOR: 6
+  SEPARATOR: 32
+
+LINE 145 (length=340)
+TEXT: В четвертой главе приведены основные положения концепции менеджмента качества Построены с применением стандартов IDEF информационные модели мониторинга деятельности преподавателей, мониторинга удовлетворенности качеством образовательных услуг, процесса тестирования студентов и процесса принятия решений по управлению качеством образования
+COUNTS:
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 21
+  SEPARATOR: 9
+  SEPARATOR: 10
+  SEPARATOR: 23
+  SEPARATOR: 21
+  SEPARATOR: 22
+  SEPARATOR: 21
+  SEPARATOR: 23
+  SEPARATOR: 23
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 35
+
+LINE 146 (length=482)
+TEXT: Информация, поступающая в систему менеджмента качества из различных источников, проходит несколько этапов: сбор и хранение данных, оперативный анализ данных, обобщение результатов оперативного анализа, принятие решения по управлению учебным процессом университета. Собранная информация размещается в оперативных базах данных (ОВД): «Преподаватель», «Тестирование» и «Мониторинг мнений». Информационные модели всех ОВД разработаны с учетом выделенных во второй главе макропроцессов.
+COUNTS:
+  DOT: 3
+  COMMA: 6
+  DOT: 3
+  DOT: 3
+  COLON: 2
+  COMMA: 6
+  QUOTATION: 6
+  DOT: 3
+  DOT: 3
+  COLON: 2
+  DOT: 3
+  COLON: 2
+  DOT: 3
+  COMMA: 6
+  COMMA: 6
+  COMMA: 6
+  DOT: 3
+  QUOTATION: 6
+  DOT: 3
+  PARENTHESIS: 2
+  COLON: 2
+  COMMA: 6
+  QUOTATION: 6
+  PARENTHESIS: 2
+  QUOTATION: 6
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 12
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 39
+  SEPARATOR: 10
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 31
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 39
+  SEPARATOR: 22
+  SEPARATOR: 39
+  SEPARATOR: 31
+  SEPARATOR: 1
+  SEPARATOR: 31
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 37
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 147 (length=348)
+TEXT: Оперативные данные после обработки в обобщенном виде поступают в БД управления системы качества, где хранятся в течение длительного времени. ОВД при этом подвергаются очистке. Обобщенные данные из БД управления системы качества поступают в виде критериев в систему принятия решений, где на основе предпочтений руководителя формируется база знаний.
+COUNTS:
+  DOT: 3
+  COMMA: 2
+  DOT: 3
+  DOT: 3
+  COMMA: 2
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 3
+  DOT: 3
+  COMMA: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 18
+  SEPARATOR: 6
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 24
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 18
+  SEPARATOR: 22
+  SEPARATOR: 18
+  SEPARATOR: 24
+  SEPARATOR: 1
+  SEPARATOR: 24
+  SEPARATOR: 9
+  SEPARATOR: 3
+  SEPARATOR: 36
+  SEPARATOR: 1
+
+LINE 148 (length=72)
+TEXT: В заключении сформулированы основные результаты диссертационной работы.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 4
+
+LINE 149 (length=217)
+TEXT: Приложения содержат акты, подтверждающие результаты работы, функциональные и информационные модели, листинги разработанных математических моделей в среде Mathcad, результаты проведенных экспериментальных исследований
+COUNTS:
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 15
+  SEPARATOR: 9
+  SEPARATOR: 6
+  SEPARATOR: 16
+  SEPARATOR: 15
+  SEPARATOR: 13
+  SEPARATOR: 15
+  SEPARATOR: 16
+  SEPARATOR: 16
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 20
+  SEPARATOR: 1
+
+LINE 150 (length=29)
+TEXT: ОСНОВНЫЕ РЕЗУЛЬТАТЫ И ВЫВОДЫ
+COUNTS:
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 25
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 151 (length=146)
+TEXT: В ходе теоретических и экспериментальных исследований, выполненных в диссертационной работе, получены следующие научные и практические результаты
+COUNTS:
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 7
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 7
+  SEPARATOR: 8
+  SEPARATOR: 7
+  SEPARATOR: 12
+  SEPARATOR: 12
+  SEPARATOR: 2
+  SEPARATOR: 17
+
+LINE 152 (length=3)
+TEXT: 17
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 153 (length=342)
+TEXT: 1	Выполнен сравнительный анализ методов, моделей и алгоритмов, применяемых при оценке показателей деятельности и принятии управленческих решений в сфере высшего профессионального образования, выявлены их достоинства и недостатки Анализ позволил выбрать методы, модели и алгоритмы, которые в наибольшей степени соответствуют цели исследования
+COUNTS:
+  NUMBER: 1
+  COMMA: 5
+  NUMBER: 1
+  COMMA: 5
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  COMMA: 5
+  COMMA: 5
+  COMMA: 5
+  COMMA: 5
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 17
+  SEPARATOR: 18
+  SEPARATOR: 8
+  SEPARATOR: 29
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 20
+  SEPARATOR: 17
+  SEPARATOR: 29
+  SEPARATOR: 29
+  SEPARATOR: 6
+  SEPARATOR: 5
+  SEPARATOR: 32
+  SEPARATOR: 2
+
+LINE 154 (length=426)
+TEXT: 2	Разработаны концептуальные, функциональные и информационные модели деятельности преподавателей, студентов и оценки удовлетворенности потребителей качеством образовательных услуг, предоставляемых вузом. Модели отличаются использованием международных стандартов системного структурного анализа IDEF0 и IDEF1X, что позволяет регламентировать фазы анализа требований к системе менеджмента качества и проектирования спецификаций
+COUNTS:
+  DOT: 1
+  NUMBER: 3
+  COMMA: 4
+  NUMBER: 3
+  DOT: 1
+  DOT: 1
+  COMMA: 4
+  NUMBER: 3
+  NUMBER: 3
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 3
+  DOT: 1
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  DOT: 1
+  DOT: 1
+  COMMA: 4
+  NUMBER: 3
+  NUMBER: 3
+  NUMBER: 3
+  NUMBER: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 11
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 32
+  SEPARATOR: 17
+  SEPARATOR: 12
+  SEPARATOR: 1
+  SEPARATOR: 27
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 32
+  SEPARATOR: 1
+  SEPARATOR: 30
+  SEPARATOR: 1
+  SEPARATOR: 32
+  SEPARATOR: 27
+  SEPARATOR: 27
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 37
+
+LINE 155 (length=248)
+TEXT: 3	Предложен алгоритм нахождения теоретико-множественного разбиения исходного множества преподавателей на подмножества, отличающийся использованием методов нечеткой кластеризации, которые позволяют учесть размытость границ, формируемых подмножеств.
+COUNTS:
+  DOT: 1
+  NUMBER: 1
+  COMMA: 3
+  NUMBER: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 3
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  NUMBER: 1
+  DOT: 1
+  COMMA: 3
+  COMMA: 3
+  DASH: 1
+  COMMA: 3
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 3
+  NUMBER: 1
+  DASH: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 14
+  SEPARATOR: 7
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 15
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 17
+  SEPARATOR: 14
+  SEPARATOR: 15
+  SEPARATOR: 15
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 22
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 156 (length=479)
+TEXT: 4	. Разработана математическая модель анализа уровня подготовки студентов, учитывающая наличие взаимосвязи между наблюдаемыми результатами учебных достижений, латентными свойствами самих учащихся и характеристиками тестовых заданий, что позволяет на основе априорного предположения о степени подготовленности испытуемого подобрать ему задания, соответствующие его уровню, провести адаптивное тестирование и определить уровень учебных достижений испытуемого по 100-балльной шкале
+COUNTS:
+  DOT: 1
+  NUMBER: 2
+  COMMA: 5
+  NUMBER: 2
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 5
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  NUMBER: 2
+  DOT: 1
+  COMMA: 5
+  COMMA: 5
+  DASH: 1
+  COMMA: 5
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 5
+  NUMBER: 2
+  DASH: 1
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 37
+  SEPARATOR: 13
+  SEPARATOR: 15
+  SEPARATOR: 1
+  SEPARATOR: 37
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 37
+  SEPARATOR: 1
+  SEPARATOR: 34
+  SEPARATOR: 37
+  SEPARATOR: 37
+  SEPARATOR: 37
+  SEPARATOR: 8
+  SEPARATOR: 5
+  SEPARATOR: 36
+  SEPARATOR: 1
+
+LINE 157 (length=435)
+TEXT: 5	. Для ранжирования групп потребителей по степени удовлетворенности качеством образовательных услуг разработана методика и алгоритм, отличающийся использованием метода вербального анализа решений, который позволяет выполнить ранжирование многокритериальных альтернатив и учесть возможности человека по переработке информации, на всех этапах используются вербальные переменные, метод не требует специальной подготовки от руководителя.
+COUNTS:
+  DOT: 2
+  NUMBER: 1
+  COMMA: 4
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  COMMA: 4
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  NUMBER: 1
+  DOT: 2
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  DOT: 2
+  DOT: 2
+  COMMA: 4
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 31
+  SEPARATOR: 19
+  SEPARATOR: 10
+  SEPARATOR: 2
+  SEPARATOR: 29
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 31
+  SEPARATOR: 29
+  SEPARATOR: 31
+  SEPARATOR: 29
+  SEPARATOR: 29
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 38
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 158 (length=244)
+TEXT: 6	. Для принятия решения по управлению качеством образования разработана методика и алгоритм, отличающиеся использованием метода вербального анализа решений, позволяющего выполнить классификацию многокритериальных альтернатив с учетом предпоч-
+COUNTS:
+  DOT: 1
+  NUMBER: 1
+  COMMA: 2
+  NUMBER: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 2
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  NUMBER: 1
+  DOT: 1
+  COMMA: 2
+  COMMA: 2
+  DASH: 1
+  COMMA: 2
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 2
+  NUMBER: 1
+  DASH: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 22
+  SEPARATOR: 12
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 21
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 22
+  SEPARATOR: 12
+  SEPARATOR: 1
+  SEPARATOR: 22
+  SEPARATOR: 21
+  SEPARATOR: 21
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 1
+
+LINE 159 (length=3)
+TEXT: 18
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 160 (length=145)
+TEXT: тений руководителя Диалог с руководителем ведется на содержательном языке оценок критериев, давая содержательную формулировку решающего правила.
+COUNTS:
+  DOT: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 9
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 7
+  SEPARATOR: 9
+  SEPARATOR: 8
+  SEPARATOR: 8
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 1
+
+LINE 161 (length=165)
+TEXT: 7	На основе предложенных концептуальных моделей разработаны информационные системы для проведения мониторинга качества образовательных услуг, предоставляемых вузом.
+COUNTS:
+  DOT: 1
+  NUMBER: 1
+  COMMA: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 1
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 1
+  DOT: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 12
+  SEPARATOR: 7
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 7
+  SEPARATOR: 12
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 14
+
+LINE 162 (length=40)
+TEXT: ОСНОВНЫЕ ПУБЛИКАЦИИ ПО ТЕМЕ ДИССЕРТАЦИИ
+COUNTS:
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 35
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+
+LINE 163 (length=46)
+TEXT: Публикации в изданиях, рекомендованных ВАК РФ
+COUNTS:
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 164 (length=206)
+TEXT: 1	, Прошкина, Е Н Задача нечеткой кластеризации данных мониторинга деятельности преподавателей / Е. Н. Прошкина, В И Волчи-хин // Известия вузов Поволжский регион Технические науки — 2007. — №1.- С. 61-65.
+COUNTS:
+  DOT: 6
+  INITIAL: 3
+  INITIALS: 1
+  YEAR: 1
+  NUMBER: 5
+  COMMA: 3
+  NUMBER: 5
+  DASH: 5
+  PAGES: 1
+  DOT: 6
+  INITIAL: 3
+  DASH: 5
+  DASH: 5
+  DOT: 6
+  COMMA: 3
+  NUMBER: 5
+  NUMBER: 5
+  DASH: 5
+  DOT: 6
+  DOT: 6
+  YEAR: 1
+  INITIAL: 3
+  DOT: 6
+  DASH: 5
+  NUMBER: 5
+  DOT: 6
+  COMMA: 3
+  COMMA: 3
+  INITIAL: 3
+  DASH: 5
+  COMMA: 3
+  DOT: 6
+  DASH: 5
+  DOT: 6
+  SLASH: 3
+  DOUBLE_SLASH: 1
+  COMMA: 3
+  NUMBER: 5
+  DASH: 5
+  NUMBER: 5
+  NUMBER: 5
+  INITIAL: 3
+  INITIAL: 3
+  INITIALS: 1
+  INITIALS: 1
+  NUMBER: 5
+  YEAR: 1
+  INITIAL: 3
+  YEAR: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 14
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 3
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 12
+  SEPARATOR: 16
+  SEPARATOR: 16
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 13
+
+LINE 165 (length=29)
+TEXT: Публикации в других изданиях
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 1
+
+LINE 166 (length=211)
+TEXT: 2	. Прошкина, Е. Н Анализ методов оценки качества образования / Е. Н. Прошкина, В А Мещеряков, // «Университетское образование» Пенза - 2006 . сб. статей X Междунар, науч.-метод. конф. - Пенза, 2006.-С 122-124.
+COUNTS:
+  DOT: 11
+  INITIAL: 3
+  INITIALS: 1
+  YEAR: 2
+  NUMBER: 5
+  COMMA: 5
+  NUMBER: 5
+  DASH: 5
+  PAGES: 1
+  DOT: 11
+  INITIAL: 3
+  DASH: 5
+  DASH: 5
+  DOT: 11
+  COMMA: 5
+  NUMBER: 5
+  NUMBER: 5
+  DASH: 5
+  QUOTATION: 2
+  DOT: 11
+  DOT: 11
+  YEAR: 2
+  INITIAL: 3
+  DOT: 11
+  DASH: 5
+  NUMBER: 5
+  DOT: 11
+  COMMA: 5
+  COMMA: 5
+  INITIAL: 3
+  DASH: 5
+  COMMA: 5
+  DOT: 11
+  QUOTATION: 2
+  DASH: 5
+  DOT: 11
+  SLASH: 3
+  DOUBLE_SLASH: 1
+  COMMA: 5
+  QUOTATION: 2
+  NUMBER: 5
+  DASH: 5
+  NUMBER: 5
+  QUOTATION: 2
+  NUMBER: 5
+  INITIAL: 3
+  INITIAL: 3
+  INITIALS: 1
+  INITIALS: 1
+  NUMBER: 5
+  YEAR: 2
+  INITIAL: 3
+  YEAR: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 16
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 8
+  SEPARATOR: 11
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 2
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 14
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 1
+
+LINE 167 (length=195)
+TEXT: 3	Прошкина, Е. Н. Система мониторинга качества обучения / Е Н Прошкина, П П Макарычев И «Университетское образование» Пенза - 2006 сб статей X Междунар науч.-метод конф - Пенза, 2006 -С 279-282.
+COUNTS:
+  DOT: 4
+  INITIAL: 2
+  INITIALS: 1
+  YEAR: 2
+  NUMBER: 5
+  COMMA: 3
+  NUMBER: 5
+  DASH: 5
+  PAGES: 1
+  DOT: 4
+  INITIAL: 2
+  DASH: 5
+  DASH: 5
+  DOT: 4
+  COMMA: 3
+  NUMBER: 5
+  NUMBER: 5
+  DASH: 5
+  QUOTATION: 2
+  DOT: 4
+  DOT: 4
+  YEAR: 2
+  INITIAL: 2
+  DOT: 4
+  DASH: 5
+  NUMBER: 5
+  DOT: 4
+  COMMA: 3
+  COMMA: 3
+  INITIAL: 2
+  DASH: 5
+  COMMA: 3
+  DOT: 4
+  QUOTATION: 2
+  DASH: 5
+  DOT: 4
+  SLASH: 1
+  COMMA: 3
+  QUOTATION: 2
+  NUMBER: 5
+  DASH: 5
+  NUMBER: 5
+  QUOTATION: 2
+  NUMBER: 5
+  INITIAL: 2
+  INITIAL: 2
+  INITIALS: 1
+  INITIALS: 1
+  NUMBER: 5
+  YEAR: 2
+  INITIAL: 2
+  YEAR: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 17
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 8
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 15
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 15
+  SEPARATOR: 8
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 15
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 13
+
+LINE 168 (length=294)
+TEXT: 4	. Прошкина, Е Н. Информационная система рейтинговой оценки знаний студентов / ЕН. Прошкина // Математические методы в технике и технологиях - ММТТ-19 сб тр XIX Междунар науч конф В 10 т. Т. 4 Секции 4, 9 / под общ. ред В С Балакирева - Воронеж: Воронеж, гос. технол. акад, 2006. - С 125-127.
+COUNTS:
+  DOT: 10
+  INITIAL: 2
+  YEAR: 1
+  NUMBER: 9
+  COMMA: 4
+  NUMBER: 9
+  DASH: 5
+  PAGES: 1
+  DOT: 10
+  INITIAL: 2
+  DASH: 5
+  DASH: 5
+  DOT: 10
+  COLON: 1
+  COMMA: 4
+  NUMBER: 9
+  NUMBER: 9
+  DASH: 5
+  DOT: 10
+  DOT: 10
+  YEAR: 1
+  INITIAL: 2
+  COLON: 1
+  DOT: 10
+  DASH: 5
+  COLON: 1
+  NUMBER: 9
+  DOT: 10
+  COMMA: 4
+  COMMA: 4
+  INITIAL: 2
+  DASH: 5
+  COMMA: 4
+  DOT: 10
+  DASH: 5
+  DOT: 10
+  SLASH: 4
+  DOUBLE_SLASH: 1
+  COLON: 1
+  COMMA: 4
+  NUMBER: 9
+  DASH: 5
+  NUMBER: 9
+  NUMBER: 9
+  INITIAL: 2
+  INITIAL: 2
+  NUMBER: 9
+  YEAR: 1
+  INITIAL: 2
+  YEAR: 1
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 25
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 15
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 15
+  SEPARATOR: 10
+  SEPARATOR: 3
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 15
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 12
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 15
+  SEPARATOR: 15
+  SEPARATOR: 1
+  SEPARATOR: 15
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 18
+
+LINE 169 (length=259)
+TEXT: 5	Прошкина, Е Н Адекватность механизма оценивания результатов тестирования остаточных знаний / Е. Н. Прошкина, П П. Макарычев // Новые информационные технологии и системы. тр. VII Междунар науч -техн, конф Ч. 2 - Пенза Изд-во Пенз. гос ун-та,2006 -С 207-210.
+COUNTS:
+  DOT: 8
+  INITIAL: 4
+  INITIALS: 1
+  YEAR: 1
+  NUMBER: 5
+  COMMA: 4
+  NUMBER: 5
+  DASH: 6
+  PAGES: 1
+  DOT: 8
+  INITIAL: 4
+  DASH: 6
+  DASH: 6
+  DOT: 8
+  COMMA: 4
+  NUMBER: 5
+  NUMBER: 5
+  DASH: 6
+  DOT: 8
+  DOT: 8
+  YEAR: 1
+  INITIAL: 4
+  DOT: 8
+  DASH: 6
+  NUMBER: 5
+  DOT: 8
+  COMMA: 4
+  COMMA: 4
+  INITIAL: 4
+  DASH: 6
+  COMMA: 4
+  DOT: 8
+  DASH: 6
+  DOT: 8
+  SLASH: 3
+  DOUBLE_SLASH: 1
+  COMMA: 4
+  NUMBER: 5
+  DASH: 6
+  NUMBER: 5
+  NUMBER: 5
+  INITIAL: 4
+  INITIAL: 4
+  INITIALS: 1
+  INITIALS: 1
+  NUMBER: 5
+  YEAR: 1
+  INITIAL: 4
+  YEAR: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 20
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 8
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 17
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 1
+
+LINE 170 (length=233)
+TEXT: 6	Прошкина, Е Н Администрирование и анализ данных средствами SQL Server / Е. Н Прошкина, А. Ю Афонин // Новые информационные технологии и системы , тр. VII Междунар науч.-техн конф 4 1- Пенза Изд-во Пенз гос ун-та, 2006 - С 200-202.
+COUNTS:
+  DOT: 5
+  INITIAL: 2
+  YEAR: 1
+  NUMBER: 6
+  COMMA: 4
+  NUMBER: 6
+  DASH: 6
+  PAGES: 1
+  DOT: 5
+  INITIAL: 2
+  DASH: 6
+  DASH: 6
+  DOT: 5
+  COMMA: 4
+  NUMBER: 6
+  NUMBER: 6
+  DASH: 6
+  DOT: 5
+  DOT: 5
+  YEAR: 1
+  INITIAL: 2
+  DOT: 5
+  DASH: 6
+  NUMBER: 6
+  DOT: 5
+  COMMA: 4
+  COMMA: 4
+  INITIAL: 2
+  DASH: 6
+  COMMA: 4
+  DOT: 5
+  DASH: 6
+  DOT: 5
+  SLASH: 3
+  DOUBLE_SLASH: 1
+  COMMA: 4
+  NUMBER: 6
+  DASH: 6
+  NUMBER: 6
+  NUMBER: 6
+  INITIAL: 2
+  INITIAL: 2
+  NUMBER: 6
+  YEAR: 1
+  INITIAL: 2
+  YEAR: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 23
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 12
+  SEPARATOR: 16
+  SEPARATOR: 16
+  SEPARATOR: 1
+  SEPARATOR: 10
+
+LINE 171 (length=3)
+TEXT: 19
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 172 (length=207)
+TEXT: 7	Прошкина, Е Н. Утилиты администрирования SQL Server / Е. Н. Прошкина // Системы обработки информации и управления • тез. докл. науч.-техн. конф, молодых специалистов — ОАО «НПП “Рубин"», 2006. - С. 50-51.
+COUNTS:
+  DOT: 10
+  INITIAL: 4
+  INITIALS: 1
+  YEAR: 1
+  NUMBER: 4
+  COMMA: 3
+  NUMBER: 4
+  DASH: 4
+  PAGES: 1
+  DOT: 10
+  INITIAL: 4
+  DASH: 4
+  DASH: 4
+  DOT: 10
+  COMMA: 3
+  NUMBER: 4
+  NUMBER: 4
+  DASH: 4
+  QUOTATION: 4
+  DOT: 10
+  DOT: 10
+  YEAR: 1
+  INITIAL: 4
+  DOT: 10
+  DASH: 4
+  NUMBER: 4
+  DOT: 10
+  COMMA: 3
+  COMMA: 3
+  INITIAL: 4
+  DASH: 4
+  COMMA: 3
+  DOT: 10
+  QUOTATION: 4
+  DASH: 4
+  DOT: 10
+  SLASH: 3
+  DOUBLE_SLASH: 1
+  COMMA: 3
+  QUOTATION: 4
+  NUMBER: 4
+  DASH: 4
+  NUMBER: 4
+  QUOTATION: 4
+  NUMBER: 4
+  INITIAL: 4
+  INITIAL: 4
+  INITIALS: 1
+  INITIALS: 1
+  NUMBER: 4
+  YEAR: 1
+  INITIAL: 4
+  YEAR: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 20
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 18
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 18
+  SEPARATOR: 1
+  SEPARATOR: 18
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+
+LINE 173 (length=210)
+TEXT: 8	Прошкина, Е. Н. Мониторинг качества образования / Е. Н Прошкина // Вычислительные системы и технологии обработки информации . Межвуз. сб науч, тр - Пенза1 Инф.-изд. центр 111 У, 2006. -Вып.5(30).-С. 100-104.
+COUNTS:
+  DOT: 12
+  INITIAL: 4
+  INITIALS: 1
+  YEAR: 1
+  NUMBER: 8
+  COMMA: 3
+  NUMBER: 8
+  DASH: 5
+  PAGES: 1
+  DOT: 12
+  INITIAL: 4
+  DASH: 5
+  DASH: 5
+  DOT: 12
+  COMMA: 3
+  NUMBER: 8
+  NUMBER: 8
+  DASH: 5
+  DOT: 12
+  DOT: 12
+  YEAR: 1
+  INITIAL: 4
+  DOT: 12
+  DASH: 5
+  NUMBER: 8
+  DOT: 12
+  COMMA: 3
+  COMMA: 3
+  INITIAL: 4
+  DASH: 5
+  COMMA: 3
+  DOT: 12
+  DASH: 5
+  DOT: 12
+  SLASH: 3
+  PARENTHESIS: 2
+  DOUBLE_SLASH: 1
+  COMMA: 3
+  NUMBER: 8
+  DASH: 5
+  PARENTHESIS: 2
+  NUMBER: 8
+  NUMBER: 8
+  PARENTHESIS: 2
+  INITIAL: 4
+  INITIAL: 4
+  INITIALS: 1
+  INITIALS: 1
+  NUMBER: 8
+  YEAR: 1
+  PARENTHESIS: 2
+  INITIAL: 4
+  YEAR: 1
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 14
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 1
+  SEPARATOR: 12
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 16
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 16
+  SEPARATOR: 16
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+
+LINE 174 (length=202)
+TEXT: 9	. Прошкина, Е. Н. Математическая модель оценки знаний студентов / Е. Н. Прошкина И «Университетское образование» Пенза - 2007 : сб. статей XI Междунар. науч.-метод. конф. — Пенза, 2007. - С. 280-282.
+COUNTS:
+  DOT: 13
+  INITIAL: 5
+  INITIALS: 2
+  YEAR: 2
+  NUMBER: 5
+  COMMA: 2
+  NUMBER: 5
+  DASH: 5
+  PAGES: 1
+  DOT: 13
+  INITIAL: 5
+  DASH: 5
+  DASH: 5
+  DOT: 13
+  COLON: 1
+  COMMA: 2
+  NUMBER: 5
+  NUMBER: 5
+  DASH: 5
+  QUOTATION: 2
+  DOT: 13
+  DOT: 13
+  YEAR: 2
+  INITIAL: 5
+  COLON: 1
+  DOT: 13
+  DASH: 5
+  COLON: 1
+  NUMBER: 5
+  DOT: 13
+  COMMA: 2
+  COMMA: 2
+  INITIAL: 5
+  DASH: 5
+  COMMA: 2
+  DOT: 13
+  QUOTATION: 2
+  DASH: 5
+  DOT: 13
+  SLASH: 1
+  COLON: 1
+  COMMA: 2
+  QUOTATION: 2
+  NUMBER: 5
+  DASH: 5
+  NUMBER: 5
+  QUOTATION: 2
+  NUMBER: 5
+  INITIAL: 5
+  INITIAL: 5
+  INITIALS: 2
+  INITIALS: 2
+  NUMBER: 5
+  YEAR: 2
+  INITIAL: 5
+  YEAR: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 15
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 7
+  SEPARATOR: 13
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 13
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 14
+
+LINE 175 (length=264)
+TEXT: 10	Прошкина, Е Н. Математическая модель оценки знаний студентов / Е. Н. Прошкина // Компьютерное моделирование естественнонаучных и социальных проблем : сб. статей I Междунар, науч.-техн. конф, молодых специалистов, аспирантов и студентов - Пенза, 2007.-С. 89-91.
+COUNTS:
+  DOT: 9
+  INITIAL: 4
+  INITIALS: 1
+  YEAR: 1
+  NUMBER: 4
+  COMMA: 5
+  NUMBER: 4
+  DASH: 4
+  PAGES: 1
+  DOT: 9
+  INITIAL: 4
+  DASH: 4
+  DASH: 4
+  DOT: 9
+  COLON: 1
+  COMMA: 5
+  NUMBER: 4
+  NUMBER: 4
+  DASH: 4
+  DOT: 9
+  DOT: 9
+  YEAR: 1
+  INITIAL: 4
+  COLON: 1
+  DOT: 9
+  DASH: 4
+  COLON: 1
+  NUMBER: 4
+  DOT: 9
+  COMMA: 5
+  COMMA: 5
+  INITIAL: 4
+  DASH: 4
+  COMMA: 5
+  DOT: 9
+  DASH: 4
+  DOT: 9
+  SLASH: 3
+  DOUBLE_SLASH: 1
+  COLON: 1
+  COMMA: 5
+  NUMBER: 4
+  DASH: 4
+  NUMBER: 4
+  NUMBER: 4
+  INITIAL: 4
+  INITIAL: 4
+  INITIALS: 1
+  INITIALS: 1
+  NUMBER: 4
+  YEAR: 1
+  INITIAL: 4
+  YEAR: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 12
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  SEPARATOR: 9
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 16
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 9
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 2
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 13
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 19
+  SEPARATOR: 1
+
+LINE 176 (length=168)
+TEXT: 11	. Прошкина, Е Н. Методика принятия решений по управлению качеством образования / Е. Н Прошкина, П. П. Макарычев // Территория науки. - 2007. - № 4(5). - С. 523-529.
+COUNTS:
+  DOT: 10
+  INITIAL: 5
+  INITIALS: 1
+  YEAR: 1
+  NUMBER: 6
+  COMMA: 2
+  NUMBER: 6
+  DASH: 4
+  PAGES: 1
+  DOT: 10
+  INITIAL: 5
+  DASH: 4
+  DASH: 4
+  DOT: 10
+  COMMA: 2
+  NUMBER: 6
+  NUMBER: 6
+  DASH: 4
+  DOT: 10
+  DOT: 10
+  YEAR: 1
+  INITIAL: 5
+  DOT: 10
+  DASH: 4
+  NUMBER: 6
+  DOT: 10
+  COMMA: 2
+  COMMA: 2
+  INITIAL: 5
+  DASH: 4
+  COMMA: 2
+  DOT: 10
+  DASH: 4
+  DOT: 10
+  SLASH: 3
+  PARENTHESIS: 2
+  DOUBLE_SLASH: 1
+  COMMA: 2
+  NUMBER: 6
+  DASH: 4
+  PARENTHESIS: 2
+  NUMBER: 6
+  NUMBER: 6
+  PARENTHESIS: 2
+  INITIAL: 5
+  INITIAL: 5
+  INITIALS: 1
+  INITIALS: 1
+  NUMBER: 6
+  YEAR: 1
+  PARENTHESIS: 2
+  INITIAL: 5
+  YEAR: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 12
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 10
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+
+LINE 177 (length=26)
+TEXT: Прошкина Елена Николаевна
+COUNTS:
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+
+LINE 178 (length=83)
+TEXT: Алгоритмы и методики анализа информации в системе управления качеством образования
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 11
+  SEPARATOR: 8
+  SEPARATOR: 4
+  SEPARATOR: 8
+  SEPARATOR: 11
+  SEPARATOR: 11
+  SEPARATOR: 2
+  SEPARATOR: 5
+
+LINE 179 (length=72)
+TEXT: Специальность 05 13 10-Управление в социальных и экономических системах
+COUNTS:
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 1
+  DASH: 1
+  NUMBER: 3
+  DASH: 1
+  DASH: 1
+  NUMBER: 3
+  DASH: 1
+  NUMBER: 3
+  NUMBER: 3
+  NUMBER: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 5
+
+LINE 180 (length=114)
+TEXT: Редактор В В Чувашова Технический редактор Н А Вьялкова Корректор Ж А Лубенцова Компьютерная верстка С П Черновой
+COUNTS:
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 16
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 3
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 5
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 9
+
+LINE 181 (length=23)
+TEXT: ИД № 06494 от 26 12 01
+COUNTS:
+  NUMBER: 4
+  NUMBER: 4
+  NUMBER: 4
+  NUMBER: 4
+  NUMBER: 4
+  NUMBER: 4
+  NUMBER: 4
+  NUMBER: 4
+  NUMBER: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+
+LINE 182 (length=48)
+TEXT: Сдано в производство 15 10 07 Формат 60x84^-/16
+COUNTS:
+  NUMBER: 6
+  NUMBER: 6
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  NUMBER: 6
+  NUMBER: 6
+  DASH: 1
+  DASH: 1
+  NUMBER: 6
+  DASH: 1
+  DASH: 1
+  SLASH: 1
+  NUMBER: 6
+  DASH: 1
+  NUMBER: 6
+  NUMBER: 6
+  NUMBER: 6
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 183 (length=45)
+TEXT: Бумага писчая Печать офсетная Усл печ л 1,16
+COUNTS:
+  NUMBER: 2
+  COMMA: 1
+  NUMBER: 2
+  COMMA: 1
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+
+LINE 184 (length=22)
+TEXT: Заказ № 568 Тираж 100
+COUNTS:
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 185 (length=55)
+TEXT: Издательство Пензенского государственного университета
+COUNTS:
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 6
+
+LINE 186 (length=26)
+TEXT: 440026, Пенза, Красная, 40
+COUNTS:
+  NUMBER: 2
+  COMMA: 3
+  NUMBER: 2
+  COMMA: 3
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+

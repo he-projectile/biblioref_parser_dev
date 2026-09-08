@@ -3,37 +3,39 @@ import json
 import re
 from pathlib import Path
 
-import numpy as np
-
 
 def load_patterns(filename):
-    """Загрузка паттернов и их весов из JSON."""
+    """
+    Загружает паттерны из JSON-файла.
+
+    Ожидаемый формат:
+    {
+        "patterns": [
+            {
+                "name": "...",
+                "regex": "..."
+            }
+        ]
+    }
+    """
 
     with open(filename, "r", encoding="utf-8") as f:
         data = json.load(f)
 
     patterns = []
 
-    for pattern in data.get("patterns", []):
-        regex = pattern.get("regex")
-        weight = pattern.get("weight", 0.0)
-
-        if not regex:
-            continue
+    for pattern in data["patterns"]:
+        regex = pattern["regex"]
 
         try:
-            compiled = re.compile(regex, re.IGNORECASE)
+            compiled = re.compile(regex)
         except re.error as e:
-            print(
-                f"WARNING: invalid regex "
-                f"'{pattern.get('name', 'UNKNOWN')}': {e}"
-            )
+            print(f"Ошибка компиляции regex '{regex}': {e}")
             continue
 
         patterns.append({
-            "name": pattern.get("name", ""),
+            "name": pattern["name"],
             "regex": regex,
-            "weight": float(weight),
             "compiled": compiled
         })
 
@@ -42,205 +44,102 @@ def load_patterns(filename):
 
 def recognize_lines(lines, patterns):
     """
-    Для каждой строки:
-        x_ij = количество срабатываний j-го паттерна
-        score = sum(x_ij * weight_j)
+    Для каждой строки считает количество срабатываний
+    каждого паттерна.
+
+    Возвращает список:
+    {
+        "line": номер строки,
+        "length": длина строки,
+        "counts": [количество совпадений каждого паттерна],
+        "text": текст строки
+    }
     """
 
     result = []
 
     for line_number, line in enumerate(lines, start=1):
-
         counts = []
-        score = 0.0
 
         for pattern in patterns:
-            count = len(pattern["compiled"].findall(line))
-            counts.append(count)
-            score += count * pattern["weight"]
-
-        lengthSigma = 100
-        lengthOffset = 250
-        line_length = max(len(line), 1)
-        normalized_score = score*np.exp(-(line_length-lengthOffset)**2/lengthSigma**2)  
+            matches = pattern["compiled"].findall(line)
+            counts.append(len(matches))
 
         result.append({
             "line": line_number,
-            "text": line,
+            "length": len(line),
             "counts": counts,
-            "score": normalized_score
+            "text": line.rstrip("\n")
         })
 
     return result
 
 
-def save_human_readable(filename, results, patterns):
+def save_human_readable(filename, lines_data, patterns):
     """
-    Человекочитаемый результат.
-
-    Формат:
-        номер | score | текст
+    Сохраняет человекочитаемый результат.
     """
 
     with open(filename, "w", encoding="utf-8") as f:
 
-        f.write("PATTERN RECOGNITION\n")
+        f.write("PATTERN RECOGNITION RESULT\n")
         f.write("=" * 80 + "\n\n")
 
-        f.write("Patterns:\n")
-
+        f.write("PATTERNS:\n")
         for i, pattern in enumerate(patterns):
-            f.write(
-                f"  {i:3d}: "
-                f"{pattern['name']} "
-                f"(weight={pattern['weight']:.6f})\n"
-            )
+            f.write(f"{i}: {pattern['name']}\n")
+            f.write(f"   regex: {pattern['regex']}\n")
 
         f.write("\n")
         f.write("=" * 80 + "\n\n")
 
-        f.write(
-            f"{'LINE':>6} | "
-            f"{'SCORE':>10} | "
-            f"TEXT\n"
-        )
-
-        f.write("-" * 80 + "\n")
-
-        for item in results:
-            text = item["text"].replace("\t", " ")
-
+        for item in lines_data:
             f.write(
-                f"{item['line']:6d} | "
-                f"{item['score']:10.4f} | "
-                f"{text}\n"
+                f"LINE {item['line']} "
+                f"(length={item['length']})\n"
             )
 
-        scores = [item["score"] for item in results]
+            f.write(f"TEXT: {item['text']}\n")
 
-        if scores:
-            min_score = min(scores)
-            max_score = max(scores)
-            mean_score = sum(scores) / len(scores)
-        else:
-            min_score = 0.0
-            max_score = 0.0
-            mean_score = 0.0
+            f.write("COUNTS:\n")
 
-        f.write("\n")
-        f.write("=" * 80 + "\n")
-        f.write("STATISTICS\n")
-        f.write("=" * 80 + "\n")
+            for i, count in enumerate(item["counts"]):
+                if count > 0:
+                    f.write(
+                        f"  {patterns[i]['name']}: {count}\n"
+                    )
 
-        f.write(f"Lines : {len(results)}\n")
-        f.write(f"Min   : {min_score:.4f}\n")
-        f.write(f"Max   : {max_score:.4f}\n")
-        f.write(f"Mean  : {mean_score:.4f}\n")
+            f.write("\n")
 
 
-def save_machine_data(filename, results, patterns):
+def save_machine_data(filename, lines_data, patterns):
     """
-    Машинный формат.
-
-    ВАЖНО:
-    score сюда не записывается, поскольку он зависит от весов.
-
-    Сохраняются только:
-        counts = X[i,j]
-
-    Это позволяет потом перебирать веса без повторного
-    запуска распознавания текста.
+    Сохраняет машинно-обрабатываемый JSON.
     """
 
-    machine_data = {
+    data = {
         "patterns": [
             {
                 "name": pattern["name"],
-                "weight": pattern["weight"]
+                "regex": pattern["regex"]
             }
             for pattern in patterns
         ],
-
-        "lines": [
-            {
-                "line": item["line"],
-                "counts": item["counts"],
-                "score": item["score"]
-            }
-            for item in results
-        ]
+        "lines": lines_data
     }
 
     with open(filename, "w", encoding="utf-8") as f:
         json.dump(
-            machine_data,
+            data,
             f,
             ensure_ascii=False,
             indent=2
         )
 
 
-def print_console_statistics(input_file, patterns, results):
-    """Красивый вывод в консоль."""
-
-    scores = [item["score"] for item in results]
-
-    if scores:
-        min_score = min(scores)
-        max_score = max(scores)
-        mean_score = sum(scores) / len(scores)
-    else:
-        min_score = 0.0
-        max_score = 0.0
-        mean_score = 0.0
-
-    print()
-    print("=" * 50)
-    print(" Pattern Recognition")
-    print("=" * 50)
-
-    print()
-    print(f"Input file       : {input_file}")
-    print(f"Patterns loaded  : {len(patterns)}")
-    print(f"Lines processed  : {len(results)}")
-
-    print()
-    print("Score statistics:")
-    print(f"  Min            : {min_score:.4f}")
-    print(f"  Max            : {max_score:.4f}")
-    print(f"  Mean           : {mean_score:.4f}")
-
-    print()
-    print("Top scoring lines:")
-
-    # Показываем несколько самых сильных строк,
-    # чтобы в консоли было видно, что алгоритм вообще нашёл.
-    top_lines = sorted(
-        results,
-        key=lambda x: x["score"],
-        reverse=True
-    )[:10]
-
-    for item in top_lines:
-        text = item["text"].strip()
-
-        if len(text) > 100:
-            text = text[:97] + "..."
-
-        print(
-            f"  {item['line']:5d} | "
-            f"{item['score']:8.3f} | "
-            f"{text}"
-        )
-
-    print()
-    print("=" * 50)
-
-
 def main():
-
     parser = argparse.ArgumentParser(
-        description="Bibliographic pattern recognition"
+        description="Recognize bibliographic patterns in text"
     )
 
     parser.add_argument(
@@ -249,89 +148,83 @@ def main():
     )
 
     parser.add_argument(
-        "-p",
         "--patterns",
         required=True,
-        help="JSON file with mined patterns"
+        help="JSON file with regex patterns"
+    )
+
+    parser.add_argument(
+        "--output-dir",
+        required=True,
+        help="Directory for MACHINE and HUMAN output files"
     )
 
     args = parser.parse_args()
 
     input_path = Path(args.input)
     patterns_path = Path(args.patterns)
+    output_dir = Path(args.output_dir)
 
-    # ------------------------------------------------------------
-    # Формирование имён выходных файлов
-    # ------------------------------------------------------------
+    # Проверяем входные файлы
+    if not input_path.exists():
+        raise FileNotFoundError(
+            f"Input file not found: {input_path}"
+        )
 
-    human_output = (
-        input_path.parent /
-        f"RECOGNISE_{input_path.stem}.txt"
+    if not patterns_path.exists():
+        raise FileNotFoundError(
+            f"Patterns file not found: {patterns_path}"
+        )
+
+    # Создаём директорию результатов
+    output_dir.mkdir(
+        parents=True,
+        exist_ok=True
     )
 
-    machine_output = (
-        input_path.parent /
-        f"MACHINE_{input_path.stem}.json"
-    )
-
-    # ------------------------------------------------------------
-    # Загрузка текста
-    # ------------------------------------------------------------
-
+    # Загружаем текст
     with open(input_path, "r", encoding="utf-8") as f:
-        text = f.read()
+        lines = f.readlines()
 
-    lines = text.splitlines()
-
-    # ------------------------------------------------------------
-    # Загрузка паттернов
-    # ------------------------------------------------------------
-
+    # Загружаем паттерны
     patterns = load_patterns(patterns_path)
 
-    if not patterns:
-        print("ERROR: no valid patterns found.")
-        return 1
+    print(f"Input:       {input_path}")
+    print(f"Patterns:    {patterns_path}")
+    print(f"Output dir:  {output_dir}")
+    print(f"Lines:       {len(lines)}")
+    print(f"Patterns:    {len(patterns)}")
 
-    # ------------------------------------------------------------
     # Распознавание
-    # ------------------------------------------------------------
+    lines_data = recognize_lines(
+        lines,
+        patterns
+    )
 
-    results = recognize_lines(lines, patterns)
+    # Формируем имена выходных файлов
+    stem = input_path.stem
 
-    # ------------------------------------------------------------
-    # Вывод
-    # ------------------------------------------------------------
+    machine_filename = output_dir / f"MACHINE_{stem}.json"
+    human_filename = output_dir / f"HUMAN_{stem}.txt"
+
+    # Сохраняем результаты
+    save_machine_data(
+        machine_filename,
+        lines_data,
+        patterns
+    )
 
     save_human_readable(
-        human_output,
-        results,
+        human_filename,
+        lines_data,
         patterns
     )
 
-    save_machine_data(
-        machine_output,
-        results,
-        patterns
-    )
-
-    # ------------------------------------------------------------
-    # Консоль
-    # ------------------------------------------------------------
-
-    print_console_statistics(
-        input_path,
-        patterns,
-        results
-    )
-
     print()
-    print(f"Human readable : {human_output}")
-    print(f"Machine data   : {machine_output}")
-    print()
-
-    return 0
+    print("Done.")
+    print(f"MACHINE: {machine_filename}")
+    print(f"HUMAN:   {human_filename}")
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    main()

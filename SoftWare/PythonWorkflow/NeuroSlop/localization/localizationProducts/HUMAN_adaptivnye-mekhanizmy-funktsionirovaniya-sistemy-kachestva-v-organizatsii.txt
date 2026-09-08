@@ -1,0 +1,11152 @@
+PATTERN RECOGNITION RESULT
+================================================================================
+
+PATTERNS:
+0: DOT
+   regex: \.
+1: INITIAL
+   regex: \b[А-ЯЁ]\.
+2: INITIALS
+   regex: \b[А-ЯЁ]\.\s*[А-ЯЁ]\.
+3: YEAR
+   regex: (?<!\d)(17|18|19|20|21)\d{2}(?!\d)
+4: NUMBER
+   regex: \d+
+5: COMMA
+   regex: ,
+6: NUMBER
+   regex: \d+
+7: DASH
+   regex: [-–—]
+8: PAGES
+   regex: \b[Сс]\.?\s*\d+(?:\s*[-–—]\s*\d+)?
+9: DOT
+   regex: \.
+10: INITIAL
+   regex: \b[А-ЯЁ]\.
+11: DASH
+   regex: [-–—]
+12: DASH
+   regex: [-–—]
+13: DOT
+   regex: \.
+14: COLON
+   regex: :
+15: COMMA
+   regex: ,
+16: NUMBER
+   regex: \d+
+17: NUMBER
+   regex: \d+
+18: DASH
+   regex: [-–—]
+19: QUOTATION
+   regex: [«»\"„“”]
+20: DOT
+   regex: \.
+21: DOT
+   regex: \.
+22: YEAR
+   regex: (?<!\d)(17|18|19|20|21)\d{2}(?!\d)
+23: INITIAL
+   regex: \b[А-ЯЁ]\.
+24: COLON
+   regex: :
+25: DOT
+   regex: \.
+26: DASH
+   regex: [-–—]
+27: COLON
+   regex: :
+28: NUMBER
+   regex: \d+
+29: DOT
+   regex: \.
+30: COMMA
+   regex: ,
+31: COMMA
+   regex: ,
+32: INITIAL
+   regex: \b[А-ЯЁ]\.
+33: DASH
+   regex: [-–—]
+34: COMMA
+   regex: ,
+35: DOT
+   regex: \.
+36: QUOTATION
+   regex: [«»\"„“”]
+37: DASH
+   regex: [-–—]
+38: DOT
+   regex: \.
+39: URL
+   regex: (?:https?://|www\.)[^\s]+
+40: SLASH
+   regex: /
+41: PARENTHESIS
+   regex: [()]
+42: DOUBLE_SLASH
+   regex: //
+43: COLON
+   regex: :
+44: COMMA
+   regex: ,
+45: QUOTATION
+   regex: [«»\"„“”]
+46: NUMBER
+   regex: \d+
+47: DASH
+   regex: [-–—]
+48: PARENTHESIS
+   regex: [()]
+49: NUMBER
+   regex: \d+
+50: QUOTATION
+   regex: [«»\"„“”]
+51: NUMBER
+   regex: \d+
+52: PARENTHESIS
+   regex: [()]
+53: INITIAL
+   regex: \b[А-ЯЁ]\.
+54: INITIAL
+   regex: \b[А-ЯЁ]\.
+55: INITIALS
+   regex: \b[А-ЯЁ]\.\s*[А-ЯЁ]\.
+56: INITIALS
+   regex: \b[А-ЯЁ]\.\s*[А-ЯЁ]\.
+57: NUMBER
+   regex: \d+
+58: YEAR
+   regex: (?<!\d)(17|18|19|20|21)\d{2}(?!\d)
+59: PARENTHESIS
+   regex: [()]
+60: INITIAL
+   regex: \b[А-ЯЁ]\.
+61: YEAR
+   regex: (?<!\d)(17|18|19|20|21)\d{2}(?!\d)
+62: ENTITY_SHAPE
+   regex: \d+
+63: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+
+64: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+\d+\-\d+
+65: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+66: ENTITY_SHAPE
+   regex: \d+\-\d+
+67: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+68: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+69: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\s+\d+\-\d+
+70: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+71: ENTITY_SHAPE
+   regex: №\d+
+72: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.
+73: ENTITY_SHAPE
+   regex: №\s+\d+
+74: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+75: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+76: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+77: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]
+78: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.
+79: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+80: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+81: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+82: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]
+83: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+84: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё][а-яё][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+85: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+86: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\d+\-\d+
+87: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+
+88: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][а-яё]\.
+89: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+90: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]
+91: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+92: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+93: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+\d+
+94: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+95: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+96: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+\d+\s+\-\s+\d+
+97: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+
+98: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.
+99: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+100: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+101: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+102: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+103: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+104: ENTITY_SHAPE
+   regex: [а-яё]+\.\d+\-\d+
+105: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+
+106: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+107: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁ][а-яё]+
+108: ENTITY_SHAPE
+   regex: [а-яё]+\.\s+\d+
+109: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ]\.
+110: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+
+111: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+
+112: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\d+
+113: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+\d+
+114: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+115: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+
+116: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\.\s+[а-яё]+\-[а-яё]+
+117: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+118: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+\-[а-яё]+\.
+119: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+
+120: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+121: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]
+122: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
+123: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+124: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\s+\([А-ЯЁ][а-яё]+\)
+125: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+
+126: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁ][А-ЯЁ]
+127: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+
+128: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+
+129: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+
+130: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\s+\([А-ЯЁ][а-яё]+\)
+131: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+
+132: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\s+\d+
+133: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+134: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][а-яё][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+
+135: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\-[А-ЯЁ][а-яё]+
+136: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+\s+[а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+
+137: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+138: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+139: ENTITY_SHAPE
+   regex: [a-z]+://[a-z]+\.[a-z]+\.[a-z]+/[a-z]+
+140: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+
+141: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+,\s+[а-яё]+\-[а-яё]+
+142: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+\-[а-яё]+
+143: ENTITY_SHAPE
+   regex: [а-яё]+\s+\d+\-\d+
+144: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ]\.
+145: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\-[а-яё]+
+146: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+«[А-ЯЁ][а-яё]+»
+147: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ]
+148: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+,\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+149: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ],\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+150: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁ][а-яё]+
+151: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\-[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+152: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
+153: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+\d+
+154: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+
+155: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+156: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][а-яё][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+157: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ]
+158: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+159: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+\-\s+[А-ЯЁ][а-яё]+
+160: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+
+161: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\-[А-ЯЁ][а-яё]+
+162: ENTITY_SHAPE
+   regex: [а-яё]+\.\s+\d+\-\d+
+163: ENTITY_SHAPE
+   regex: [а-яё]+\.\d+
+164: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+165: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\.
+166: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
+167: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+,\s+[а-яё]+,\s+[а-яё]+
+168: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+169: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+170: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+,\s+[а-яё]+\-[а-яё]+
+171: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.
+172: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+:\s+[а-яё]+\-[а-яё]+
+173: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][а-яё]+
+174: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
+175: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\-[а-яё]+\s+[а-яё]+
+176: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+177: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][а-яё]
+178: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+:\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+179: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[А-ЯЁ][а-яё]+
+180: ENTITY_SHAPE
+   regex: [A-Z][a-z]+,\s+[A-Z][a-z]+
+181: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
+182: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+:\s+[А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+\.
+183: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+184: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+185: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+:\s+[А-ЯЁ][а-яё]+\.\s+[A-Z][A-Z][A-Z]\s+[а-яё]+\.\s+[а-яё]+\.
+186: ENTITY_SHAPE
+   regex: [A-Z][a-z]+
+187: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+:\s+[а-яё]+\.\s+[а-яё]+\.\s+\d+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+\.\-[а-яё]+\.\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+188: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+189: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+,\s+[а-яё]+\-[а-яё]+\.\s+[а-яё]+\.\s+«[А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+»
+190: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\-[а-яё]+\s+[а-яё]+
+191: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+192: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+:\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[А-ЯЁ][а-яё]+
+193: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+194: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ]
+195: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\.\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
+196: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\-[а-яё]+\s+[а-яё]+
+197: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+198: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+199: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ],\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ]\.
+200: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+
+201: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+
+202: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+203: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+
+204: SEPARATOR
+   regex: \.
+205: SEPARATOR
+   regex: У,
+206: SEPARATOR
+   regex: \.:
+207: SEPARATOR
+   regex: а,
+208: SEPARATOR
+   regex: а:
+209: SEPARATOR
+   regex: я\s+/
+210: SEPARATOR
+   regex: и,
+211: SEPARATOR
+   regex: а,
+212: SEPARATOR
+   regex: »\.\s+\-
+213: SEPARATOR
+   regex: в\s+/
+214: SEPARATOR
+   regex: л:
+215: SEPARATOR
+   regex: В
+216: SEPARATOR
+   regex: \.\s+\-
+217: SEPARATOR
+   regex: и\s+/
+218: SEPARATOR
+   regex: а\s+/
+219: SEPARATOR
+   regex: м\s+/
+220: SEPARATOR
+   regex: ь:
+221: SEPARATOR
+   regex: к
+222: SEPARATOR
+   regex: й\s+/
+223: SEPARATOR
+   regex: а\s+//
+224: SEPARATOR
+   regex: ф,
+225: SEPARATOR
+   regex: 2\.
+226: SEPARATOR
+   regex: а\s+//
+227: SEPARATOR
+   regex: \.,
+228: SEPARATOR
+   regex: Е
+229: SEPARATOR
+   regex: 1\.\s+\-
+230: SEPARATOR
+   regex: в\s+//
+231: SEPARATOR
+   regex: ж:
+232: SEPARATOR
+   regex: »,
+233: SEPARATOR
+   regex: г:
+234: SEPARATOR
+   regex: И,
+235: SEPARATOR
+   regex: 3\.
+236: SEPARATOR
+   regex: в\s+/
+237: SEPARATOR
+   regex: н\s+//
+238: SEPARATOR
+   regex: О
+239: SEPARATOR
+   regex: к:
+240: SEPARATOR
+   regex: М:
+241: SEPARATOR
+   regex: а\s+//
+242: SEPARATOR
+   regex: 0\.
+243: SEPARATOR
+   regex: к,
+244: SEPARATOR
+   regex: »\.
+245: SEPARATOR
+   regex: А
+246: SEPARATOR
+   regex: ж,
+247: SEPARATOR
+   regex: т,
+248: SEPARATOR
+   regex: 1\.
+249: SEPARATOR
+   regex: й\s+//
+250: SEPARATOR
+   regex: д,
+251: SEPARATOR
+   regex: а\s+//
+252: SEPARATOR
+   regex: и\s+//
+253: SEPARATOR
+   regex: М
+254: SEPARATOR
+   regex: а
+255: SEPARATOR
+   regex: в\s+//
+256: SEPARATOR
+   regex: х\s+/
+257: SEPARATOR
+   regex: \.\s+/
+258: SEPARATOR
+   regex: Н,
+259: SEPARATOR
+   regex: 4\.
+260: SEPARATOR
+   regex: в\s+\[Текст\]/
+261: SEPARATOR
+   regex: 7\.\s+\-
+262: SEPARATOR
+   regex: н\s+//
+263: SEPARATOR
+   regex: л
+264: SEPARATOR
+   regex: м\s+//
+265: SEPARATOR
+   regex: и\s+//
+266: SEPARATOR
+   regex: ы\s+/
+267: SEPARATOR
+   regex: а\s+:
+268: SEPARATOR
+   regex: \)\s+//
+269: SEPARATOR
+   regex: м
+270: SEPARATOR
+   regex: 4\.\s+\-
+271: SEPARATOR
+   regex: 6\.
+272: SEPARATOR
+   regex: Г
+273: SEPARATOR
+   regex: в:
+274: SEPARATOR
+   regex: ь,
+275: SEPARATOR
+   regex: и//
+276: SEPARATOR
+   regex: \.
+277: SEPARATOR
+   regex: е\s+//
+278: SEPARATOR
+   regex: и\.\s+\-
+279: SEPARATOR
+   regex: в\s+//
+280: SEPARATOR
+   regex: я\s+//
+281: SEPARATOR
+   regex: 6\.\s+\-
+282: SEPARATOR
+   regex: е\.\s+\-
+283: SEPARATOR
+   regex: 2\.\s+\-
+284: SEPARATOR
+   regex: 2\.\s+\-
+285: SEPARATOR
+   regex: 8\.
+286: SEPARATOR
+   regex: Н
+287: SEPARATOR
+   regex: а\s+И
+288: SEPARATOR
+   regex: 7\.
+289: SEPARATOR
+   regex: У\.
+290: SEPARATOR
+   regex: и
+291: SEPARATOR
+   regex: е\s+/
+292: SEPARATOR
+   regex: а\s+И
+293: SEPARATOR
+   regex: и\.\s+\-
+294: SEPARATOR
+   regex: а//
+295: SEPARATOR
+   regex: У
+296: SEPARATOR
+   regex: \.
+297: SEPARATOR
+   regex: 1\.
+298: SEPARATOR
+   regex: 1\.
+299: SEPARATOR
+   regex: 3\.
+300: SEPARATOR
+   regex: 9\.
+301: SEPARATOR
+   regex: 0\.
+302: SEPARATOR
+   regex: С
+303: SEPARATOR
+   regex: 3
+304: SEPARATOR
+   regex: в\s+И
+305: SEPARATOR
+   regex: 6\s+\-
+306: SEPARATOR
+   regex: й\s+И
+307: SEPARATOR
+   regex: у,
+308: SEPARATOR
+   regex: \.
+309: SEPARATOR
+   regex: я\s+//
+310: SEPARATOR
+   regex: и/
+311: SEPARATOR
+   regex: я\.
+312: SEPARATOR
+   regex: я»\.
+313: SEPARATOR
+   regex: л,
+314: SEPARATOR
+   regex: 7
+315: SEPARATOR
+   regex: а\s+/
+316: SEPARATOR
+   regex: 4
+317: SEPARATOR
+   regex: ф\s+\-
+318: SEPARATOR
+   regex: я\.//
+319: SEPARATOR
+   regex: а//
+320: SEPARATOR
+   regex: 5\.\s+\-
+321: SEPARATOR
+   regex: О\.\s+\-
+322: SEPARATOR
+   regex: и\s+/
+323: SEPARATOR
+   regex: 8\.\s+\-
+324: SEPARATOR
+   regex: \.\s+—
+325: SEPARATOR
+   regex: 7
+326: SEPARATOR
+   regex: й\s+//
+327: SEPARATOR
+   regex: 3\.\s+\-
+328: SEPARATOR
+   regex: А\.\s+\-
+329: SEPARATOR
+   regex: 2\.\s+\-
+330: SEPARATOR
+   regex: н//
+331: SEPARATOR
+   regex: а
+332: SEPARATOR
+   regex: и\s+И
+333: SEPARATOR
+   regex: 9\.\s+\-\s+С\.
+334: SEPARATOR
+   regex: \.,
+335: SEPARATOR
+   regex: я\s+И
+336: SEPARATOR
+   regex: 0\.\s+\-\s+С\.
+337: SEPARATOR
+   regex: С,
+338: SEPARATOR
+   regex: и\.\s+\-
+339: SEPARATOR
+   regex: я\.\s+\-
+340: SEPARATOR
+   regex: е\.\s+\-
+341: SEPARATOR
+   regex: \.\s+\-
+342: SEPARATOR
+   regex: 4,
+343: SEPARATOR
+   regex: и\s+\-
+344: SEPARATOR
+   regex: а\.\s+//
+345: SEPARATOR
+   regex: \.\s+\(осенняя\s+сессия\)\.
+346: SEPARATOR
+   regex: 4\.
+347: SEPARATOR
+   regex: 1
+348: SEPARATOR
+   regex: »\s+\-
+349: SEPARATOR
+   regex: т
+350: SEPARATOR
+   regex: 2
+351: SEPARATOR
+   regex: 6
+352: SEPARATOR
+   regex: 7\.\s+\-
+353: SEPARATOR
+   regex: 8\.\s+\-
+354: SEPARATOR
+   regex: 5\.\s+\-
+355: SEPARATOR
+   regex: 4\.\s+\-
+356: SEPARATOR
+   regex: а
+357: SEPARATOR
+   regex: и
+358: SEPARATOR
+   regex: й\s+//
+359: SEPARATOR
+   regex: в\s+//
+360: SEPARATOR
+   regex: 2\s+г\.,
+361: SEPARATOR
+   regex: \.:
+362: SEPARATOR
+   regex: и\s+//
+363: SEPARATOR
+   regex: л\.\s+\-
+364: SEPARATOR
+   regex: а\s+\-
+365: SEPARATOR
+   regex: У\.\-
+366: SEPARATOR
+   regex: и\.
+367: SEPARATOR
+   regex: »,
+368: SEPARATOR
+   regex: 8\.
+369: SEPARATOR
+   regex: и
+370: SEPARATOR
+   regex: ы\s+//
+371: SEPARATOR
+   regex: е\s+//
+372: SEPARATOR
+   regex: а\s+И
+373: SEPARATOR
+   regex: а;
+374: SEPARATOR
+   regex: \.\s+\-
+375: SEPARATOR
+   regex: \.\s+\-
+376: SEPARATOR
+   regex: м,
+377: SEPARATOR
+   regex: я
+378: SEPARATOR
+   regex: а\.\s+\-
+379: SEPARATOR
+   regex: к\s+:
+380: SEPARATOR
+   regex: s\s+/
+381: SEPARATOR
+   regex: й\s+/
+382: SEPARATOR
+   regex: а\.\s+В\s+сб\.
+383: SEPARATOR
+   regex: и\.\s+В\s+сб\.
+384: SEPARATOR
+   regex: \.\s+\(весенняя\s+сессия\)\.
+385: SEPARATOR
+   regex: \)\s+//
+386: SEPARATOR
+   regex: 3\.
+387: SEPARATOR
+   regex: 3\.
+388: SEPARATOR
+   regex: 5
+389: SEPARATOR
+   regex: в\s+/
+390: SEPARATOR
+   regex: а\s+/
+391: SEPARATOR
+   regex: и,
+392: SEPARATOR
+   regex: в\s+\-
+393: SEPARATOR
+   regex: в\.\s+\-
+394: SEPARATOR
+   regex: я//
+395: SEPARATOR
+   regex: 9\.\s+\-
+396: SEPARATOR
+   regex: а\.\s+\-
+397: SEPARATOR
+   regex: 4\.\s+\-
+398: SEPARATOR
+   regex: 9\.\s+\-
+399: SEPARATOR
+   regex: х\s+//
+400: SEPARATOR
+   regex: \.\s+/
+401: SEPARATOR
+   regex: »\s+\(ПРОЕКТ\-2009\)\.\s+\-
+402: SEPARATOR
+   regex: м»,
+403: SEPARATOR
+   regex: й
+404: SEPARATOR
+   regex: 1\.
+405: SEPARATOR
+   regex: ш\s+//
+406: SEPARATOR
+   regex: 5\s+\-
+407: SEPARATOR
+   regex: 2\s+\-
+408: SEPARATOR
+   regex: а\s+\-
+409: SEPARATOR
+   regex: 4\s+\-
+410: SEPARATOR
+   regex: й\s+И
+411: SEPARATOR
+   regex: 7\s+\-
+412: SEPARATOR
+   regex: И\.
+413: SEPARATOR
+   regex: е
+414: SEPARATOR
+   regex: и\.
+415: SEPARATOR
+   regex: 5\.\s+\-
+416: SEPARATOR
+   regex: й/
+417: SEPARATOR
+   regex: н,
+418: SEPARATOR
+   regex: и,
+419: SEPARATOR
+   regex: А,
+420: SEPARATOR
+   regex: У/
+421: SEPARATOR
+   regex: в/
+422: SEPARATOR
+   regex: н//
+423: SEPARATOR
+   regex: \.,
+424: SEPARATOR
+   regex: в,
+425: SEPARATOR
+   regex: ж\.
+426: SEPARATOR
+   regex: 1\.\s+\-
+427: SEPARATOR
+   regex: в\.
+428: SEPARATOR
+   regex: м,
+
+================================================================================
+
+LINE 1 (length=26)
+TEXT: ﻿РОССИЙСКАЯ АКАДЕМИЯ НАУК
+COUNTS:
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 22
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+
+LINE 2 (length=28)
+TEXT: Институт проблем управления
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 3 (length=22)
+TEXT: им. В.А. Трапезникова
+COUNTS:
+  DOT: 3
+  INITIAL: 2
+  INITIALS: 1
+  DOT: 3
+  INITIAL: 2
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  INITIAL: 2
+  DOT: 3
+  DOT: 3
+  INITIAL: 2
+  DOT: 3
+  DOT: 3
+  INITIAL: 2
+  INITIAL: 2
+  INITIALS: 1
+  INITIALS: 1
+  INITIAL: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+
+LINE 4 (length=19)
+TEXT: На правах рукописи
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 2
+
+LINE 5 (length=28)
+TEXT: МИХЕЕВ Георгий Владимирович
+COUNTS:
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 6 (length=21)
+TEXT: АДАПТИВНЫЕ МЕХАНИЗМЫ
+COUNTS:
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 19
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 2
+
+LINE 7 (length=48)
+TEXT: ФУНКЦИОНИРОВАНИЯ СИСТЕМЫ КАЧЕСТВА В ОРГАНИЗАЦИИ
+COUNTS:
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 43
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 12
+  ENTITY_SHAPE: 12
+  ENTITY_SHAPE: 2
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 3
+
+LINE 8 (length=51)
+TEXT: Специальность 05.13.10 - Управление в социальных н
+COUNTS:
+  DOT: 2
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DASH: 1
+  DOT: 2
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DASH: 1
+  NUMBER: 3
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  NUMBER: 3
+  DASH: 1
+  NUMBER: 3
+  NUMBER: 3
+  NUMBER: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+
+LINE 9 (length=22)
+TEXT: экономическихсистемах
+COUNTS:
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 2
+
+LINE 10 (length=12)
+TEXT: АВТОРЕФЕРАТ
+COUNTS:
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 11
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 11 (length=67)
+TEXT: диссертации на соискание ученой степени кандидата технических наук
+COUNTS:
+  SEPARATOR: 4
+  SEPARATOR: 7
+  SEPARATOR: 9
+  SEPARATOR: 7
+  SEPARATOR: 4
+  SEPARATOR: 7
+  SEPARATOR: 9
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 7
+
+LINE 12 (length=12)
+TEXT: Москва 2004
+COUNTS:
+  YEAR: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  YEAR: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  YEAR: 1
+  YEAR: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 13 (length=74)
+TEXT: Работа выполнена в Институте проблем управления им. В.А. Трапезникова РАН
+COUNTS:
+  DOT: 3
+  INITIAL: 2
+  INITIALS: 1
+  DOT: 3
+  INITIAL: 2
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  INITIAL: 2
+  DOT: 3
+  DOT: 3
+  INITIAL: 2
+  DOT: 3
+  DOT: 3
+  INITIAL: 2
+  INITIAL: 2
+  INITIALS: 1
+  INITIALS: 1
+  INITIAL: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 4
+  SEPARATOR: 6
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 5
+
+LINE 14 (length=48)
+TEXT: Научный руководитель	-	доктор технических наук,
+COUNTS:
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+
+LINE 15 (length=13)
+TEXT: В.В. Цыганов
+COUNTS:
+  DOT: 2
+  INITIAL: 2
+  INITIALS: 1
+  DOT: 2
+  INITIAL: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  INITIAL: 2
+  DOT: 2
+  DOT: 2
+  INITIAL: 2
+  DOT: 2
+  DOT: 2
+  INITIAL: 2
+  INITIAL: 2
+  INITIALS: 1
+  INITIALS: 1
+  INITIAL: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 16 (length=49)
+TEXT: Официальные оппоненты -	доктор технических наук,
+COUNTS:
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 4
+
+LINE 17 (length=74)
+TEXT: профессор А.С. Мандель кандидат технических наук, доцент Т.И. Овчинникова
+COUNTS:
+  DOT: 4
+  INITIAL: 4
+  INITIALS: 2
+  COMMA: 1
+  DOT: 4
+  INITIAL: 4
+  DOT: 4
+  COMMA: 1
+  DOT: 4
+  DOT: 4
+  INITIAL: 4
+  DOT: 4
+  DOT: 4
+  COMMA: 1
+  COMMA: 1
+  INITIAL: 4
+  COMMA: 1
+  DOT: 4
+  DOT: 4
+  COMMA: 1
+  INITIAL: 4
+  INITIAL: 4
+  INITIALS: 2
+  INITIALS: 2
+  INITIAL: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 5
+
+LINE 18 (length=37)
+TEXT: Ведущая организация	-	Вычислительный
+COUNTS:
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 19 (length=10)
+TEXT: центр РАН
+COUNTS:
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 20 (length=199)
+TEXT: Защита состоится «21» С^Т5^цК 2004 года в 1^ часов на заседании Диссертационного Совета Д002.226.02 при Институте проблем управления им. В.А. Трапезникова РАН: 117997, Москва, ул. Профсоюзная, д. 65
+COUNTS:
+  DOT: 7
+  INITIAL: 2
+  INITIALS: 1
+  YEAR: 1
+  NUMBER: 9
+  COMMA: 3
+  NUMBER: 9
+  DOT: 7
+  INITIAL: 2
+  DOT: 7
+  COLON: 1
+  COMMA: 3
+  NUMBER: 9
+  NUMBER: 9
+  QUOTATION: 2
+  DOT: 7
+  DOT: 7
+  YEAR: 1
+  INITIAL: 2
+  COLON: 1
+  DOT: 7
+  COLON: 1
+  NUMBER: 9
+  DOT: 7
+  COMMA: 3
+  COMMA: 3
+  INITIAL: 2
+  COMMA: 3
+  DOT: 7
+  QUOTATION: 2
+  DOT: 7
+  COLON: 1
+  COMMA: 3
+  QUOTATION: 2
+  NUMBER: 9
+  NUMBER: 9
+  QUOTATION: 2
+  NUMBER: 9
+  INITIAL: 2
+  INITIAL: 2
+  INITIALS: 1
+  INITIALS: 1
+  NUMBER: 9
+  YEAR: 1
+  INITIAL: 2
+  YEAR: 1
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 16
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 7
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 8
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 14
+  SEPARATOR: 11
+  SEPARATOR: 11
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 7
+
+LINE 21 (length=101)
+TEXT: С диссертацией можно ознакомится в библиотеке Института проблем управления им. В.А. Трапезникова РАН
+COUNTS:
+  DOT: 3
+  INITIAL: 2
+  INITIALS: 1
+  DOT: 3
+  INITIAL: 2
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  INITIAL: 2
+  DOT: 3
+  DOT: 3
+  INITIAL: 2
+  DOT: 3
+  DOT: 3
+  INITIAL: 2
+  INITIAL: 2
+  INITIALS: 1
+  INITIALS: 1
+  INITIAL: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 9
+  SEPARATOR: 9
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 7
+
+LINE 22 (length=35)
+TEXT: Автореферат разослан «__»2004 года
+COUNTS:
+  YEAR: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  QUOTATION: 2
+  YEAR: 1
+  NUMBER: 1
+  QUOTATION: 2
+  QUOTATION: 2
+  NUMBER: 1
+  NUMBER: 1
+  QUOTATION: 2
+  NUMBER: 1
+  NUMBER: 1
+  YEAR: 1
+  YEAR: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 2
+
+LINE 23 (length=68)
+TEXT: Ученый секретарь Диссертационного Совета, кандидат технических наук
+COUNTS:
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 6
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 5
+  SEPARATOR: 6
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 7
+
+LINE 24 (length=13)
+TEXT: В.Н. Лебедев
+COUNTS:
+  DOT: 2
+  INITIAL: 2
+  INITIALS: 1
+  DOT: 2
+  INITIAL: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  INITIAL: 2
+  DOT: 2
+  DOT: 2
+  INITIAL: 2
+  DOT: 2
+  DOT: 2
+  INITIAL: 2
+  INITIAL: 2
+  INITIALS: 1
+  INITIALS: 1
+  INITIAL: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 3
+
+LINE 25 (length=28)
+TEXT: ОБЩАЯ ХАРАКТЕРИСТИКА РАБОТЫ
+COUNTS:
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 25
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 1
+
+LINE 26 (length=589)
+TEXT: Актуальность темы. Современная организация представляет собой сложную динамическую систему. Одной из важнейших задач руководства организации является управление качеством бизнес-процессов. Эта задача решается путем создания и внедрения системы качества (кратко, СК), основанной на требованиях стандартов ISO серии 9000. Исследованием данной задачи занимались Э. Край ер, Д.А.Гаврилов, Н.Л. Карданская, А.Д. Чудаков и другие авторы. Для эффективного функционирования СК в организации необходимо использовать механизмы, которые учитывают динамику организации и обладают свойством адаптации.
+COUNTS:
+  DOT: 13
+  INITIAL: 7
+  INITIALS: 3
+  NUMBER: 1
+  COMMA: 6
+  NUMBER: 1
+  DASH: 1
+  DOT: 13
+  INITIAL: 7
+  DASH: 1
+  DASH: 1
+  DOT: 13
+  COMMA: 6
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  DOT: 13
+  DOT: 13
+  INITIAL: 7
+  DOT: 13
+  DASH: 1
+  NUMBER: 1
+  DOT: 13
+  COMMA: 6
+  COMMA: 6
+  INITIAL: 7
+  DASH: 1
+  COMMA: 6
+  DOT: 13
+  DASH: 1
+  DOT: 13
+  PARENTHESIS: 2
+  COMMA: 6
+  NUMBER: 1
+  DASH: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 2
+  INITIAL: 7
+  INITIAL: 7
+  INITIALS: 3
+  INITIALS: 3
+  NUMBER: 1
+  PARENTHESIS: 2
+  INITIAL: 7
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 10
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 24
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 10
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 10
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  SEPARATOR: 13
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 55
+  SEPARATOR: 11
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 45
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 13
+  SEPARATOR: 55
+  SEPARATOR: 27
+  SEPARATOR: 55
+  SEPARATOR: 45
+  SEPARATOR: 1
+  SEPARATOR: 45
+  SEPARATOR: 13
+  SEPARATOR: 7
+  SEPARATOR: 31
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 27 (length=144)
+TEXT: Актуальность темы диссертации определяется необходимостью разработки адаптивных механизмов функционирования (кратко, АМФ) для СК в организации.
+COUNTS:
+  DOT: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  PARENTHESIS: 2
+  COMMA: 1
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 9
+  SEPARATOR: 11
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 4
+  SEPARATOR: 7
+  SEPARATOR: 1
+
+LINE 28 (length=260)
+TEXT: Исследования и разработки по теме диссертации проводились в соответствии с планами научных исследований Института проблем управления им; В .А. Трапезникова РАН в рамках темы "Разработка и исследование механизмов управления иерархическими активными системами".
+COUNTS:
+  DOT: 3
+  INITIAL: 1
+  DOT: 3
+  INITIAL: 1
+  DOT: 3
+  QUOTATION: 2
+  DOT: 3
+  DOT: 3
+  INITIAL: 1
+  DOT: 3
+  DOT: 3
+  INITIAL: 1
+  DOT: 3
+  QUOTATION: 2
+  DOT: 3
+  QUOTATION: 2
+  QUOTATION: 2
+  INITIAL: 1
+  INITIAL: 1
+  INITIAL: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 23
+  SEPARATOR: 8
+  SEPARATOR: 12
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 30
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 23
+  SEPARATOR: 13
+  SEPARATOR: 23
+  SEPARATOR: 30
+  SEPARATOR: 30
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 17
+
+LINE 29 (length=173)
+TEXT: Целью работы является повышение эффективности использования СК в организациях (на примере производственных цехов). Для этого потребовалось решить следующие основные задачи:
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  DOT: 1
+  COLON: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  PARENTHESIS: 2
+  COLON: 1
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 8
+  SEPARATOR: 8
+  SEPARATOR: 12
+  SEPARATOR: 12
+  SEPARATOR: 6
+  SEPARATOR: 14
+
+LINE 30 (length=40)
+TEXT: -	синтез АМФ СК и получение условий его
+COUNTS:
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 4
+
+LINE 31 (length=17)
+TEXT: прогрессивности;
+COUNTS:
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+
+LINE 32 (length=2)
+TEXT: 3
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 33 (length=86)
+TEXT: -	синтез АМФ СК, который учитывает независимое регулирование,	и	получение	условий	его
+COUNTS:
+  COMMA: 2
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 2
+  DASH: 1
+  DASH: 1
+  COMMA: 2
+  COMMA: 2
+  DASH: 1
+  COMMA: 2
+  DASH: 1
+  COMMA: 2
+  DASH: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 9
+  SEPARATOR: 9
+  SEPARATOR: 2
+  SEPARATOR: 9
+
+LINE 34 (length=17)
+TEXT: прогрессивности.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 35 (length=107)
+TEXT: Методы исследования. В работе использованы методы системного анализа, теории игр и теории активных систем.
+COUNTS:
+  DOT: 2
+  COMMA: 1
+  DOT: 2
+  DOT: 2
+  COMMA: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DOT: 2
+  DOT: 2
+  COMMA: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 13
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 8
+  SEPARATOR: 7
+  SEPARATOR: 13
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 8
+
+LINE 36 (length=285)
+TEXT: Научная новизна. На основании выполненных автором исследований впервые разработаны АМФ, позволяющие эффективно применять СК в организациях. В диссертации получены следующие новые научные результаты: - решена задача синтеза прогрессивного АМФ СК, получены	условия	его	прогрессивности	и
+COUNTS:
+  DOT: 2
+  COMMA: 2
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DASH: 1
+  DOT: 2
+  COLON: 1
+  COMMA: 2
+  DASH: 1
+  DOT: 2
+  DOT: 2
+  COLON: 1
+  DOT: 2
+  DASH: 1
+  COLON: 1
+  DOT: 2
+  COMMA: 2
+  COMMA: 2
+  DASH: 1
+  COMMA: 2
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  COLON: 1
+  COMMA: 2
+  DASH: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 13
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 20
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 20
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 20
+  SEPARATOR: 9
+  SEPARATOR: 20
+  SEPARATOR: 20
+  SEPARATOR: 20
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 21
+
+LINE 37 (length=33)
+TEXT: гарантированной прогрессивности;
+COUNTS:
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 38 (length=92)
+TEXT: -	решена задача синтеза прогрессивного АМФ СК, который	учитывает	независимое	регулирование;
+COUNTS:
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 4
+  SEPARATOR: 8
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 9
+
+LINE 39 (length=39)
+TEXT: получены	условия	его	прогрессивности	и
+COUNTS:
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 3
+
+LINE 40 (length=33)
+TEXT: гарантированной прогрессивности.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 41 (length=361)
+TEXT: Достоверность научных результатов. Научные положения, теоретические выводы и практические рекомендации, включенные в диссертацию, обоснованны математическими доказательствами. Они подтверждены расчетами на ЭВМ и производственными экспериментами, многократной их проверкой при создании пакета прикладных программ и внедрении в практику управления организациями.
+COUNTS:
+  DOT: 3
+  COMMA: 4
+  DOT: 3
+  DOT: 3
+  COMMA: 4
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  DOT: 3
+  DOT: 3
+  COMMA: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 26
+  SEPARATOR: 6
+  SEPARATOR: 13
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 34
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 26
+  SEPARATOR: 19
+  SEPARATOR: 26
+  SEPARATOR: 34
+  SEPARATOR: 2
+  SEPARATOR: 34
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 29
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+
+LINE 42 (length=150)
+TEXT: Практическая значимость и результаты внедрения. Использование полученных в диссертации прогрессивных АМФ, при внедрении СК в организациях позволяет 4
+COUNTS:
+  DOT: 1
+  NUMBER: 1
+  COMMA: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 1
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 1
+  DOT: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 6
+  SEPARATOR: 8
+  SEPARATOR: 14
+  SEPARATOR: 14
+  SEPARATOR: 4
+  SEPARATOR: 11
+
+LINE 43 (length=114)
+TEXT: повышать эффективность их деятельности. Разработанные прогрессивные АМФ СК используются в следующих организациях:
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  DOT: 1
+  COLON: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 7
+  SEPARATOR: 6
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 3
+  SEPARATOR: 7
+  SEPARATOR: 1
+
+LINE 44 (length=144)
+TEXT: -	федеральное государственное унитарное предприятие «Экспериментальный завод научного приборостроения со Специальным конструкторским бюро РАН»;
+COUNTS:
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  QUOTATION: 2
+  DASH: 1
+  DASH: 1
+  QUOTATION: 2
+  DASH: 1
+  QUOTATION: 2
+  DASH: 1
+  QUOTATION: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 8
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 12
+
+LINE 45 (length=24)
+TEXT: -	компания ООО «АЯКСИ»;
+COUNTS:
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  QUOTATION: 2
+  DASH: 1
+  DASH: 1
+  QUOTATION: 2
+  DASH: 1
+  QUOTATION: 2
+  DASH: 1
+  QUOTATION: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 46 (length=42)
+TEXT: -	Московский	областной	фонд	обязательного
+COUNTS:
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+
+LINE 47 (length=26)
+TEXT: медицинского страхования.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 48 (length=493)
+TEXT: Апробация работы. Материалы диссертации, её основные положения и результаты доложены и обсуждены на международных конференциях: «Теория активных систем (ТАС 2001)» (Москва, 2001); «Современные сложные системы (HTCS'2002)» (Старый Оскол, 2002); «Современные сложные системы (HTCS'2003)» (Воронеж, 2003); «Теория активных систем (ТАС 2003)» (Москва, 2003); «Современные сложные системы (HTCS'2004)» (Тверь, 2004); «Когнитивный анализ и управление развитием ситуаций (CASS'2004)» (Москва,	2004);
+COUNTS:
+  DOT: 1
+  YEAR: 12
+  NUMBER: 12
+  COMMA: 7
+  NUMBER: 12
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  COMMA: 7
+  NUMBER: 12
+  NUMBER: 12
+  QUOTATION: 12
+  DOT: 1
+  DOT: 1
+  YEAR: 12
+  COLON: 1
+  DOT: 1
+  COLON: 1
+  NUMBER: 12
+  DOT: 1
+  COMMA: 7
+  COMMA: 7
+  COMMA: 7
+  DOT: 1
+  QUOTATION: 12
+  DOT: 1
+  PARENTHESIS: 24
+  COLON: 1
+  COMMA: 7
+  QUOTATION: 12
+  NUMBER: 12
+  PARENTHESIS: 24
+  NUMBER: 12
+  QUOTATION: 12
+  NUMBER: 12
+  PARENTHESIS: 24
+  NUMBER: 12
+  YEAR: 12
+  PARENTHESIS: 24
+  YEAR: 12
+  ENTITY_SHAPE: 12
+  ENTITY_SHAPE: 15
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 37
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 15
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 15
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 19
+  SEPARATOR: 10
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 27
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 19
+  SEPARATOR: 2
+  SEPARATOR: 16
+  SEPARATOR: 14
+  SEPARATOR: 19
+  SEPARATOR: 27
+  SEPARATOR: 27
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 35
+  SEPARATOR: 1
+
+LINE 49 (length=85)
+TEXT: «Информационные технологии в науке, социологии, экономике и бизнесе» (Гурзуф, 2004).
+COUNTS:
+  DOT: 1
+  YEAR: 1
+  NUMBER: 1
+  COMMA: 3
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 3
+  NUMBER: 1
+  NUMBER: 1
+  QUOTATION: 2
+  DOT: 1
+  DOT: 1
+  YEAR: 1
+  DOT: 1
+  NUMBER: 1
+  DOT: 1
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  DOT: 1
+  QUOTATION: 2
+  DOT: 1
+  PARENTHESIS: 2
+  COMMA: 3
+  QUOTATION: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  QUOTATION: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  YEAR: 1
+  PARENTHESIS: 2
+  YEAR: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 9
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+
+LINE 50 (length=101)
+TEXT: Публикации. По теме диссертации опубликовано 8 научных работ, общим объемом более 3 печатных листов.
+COUNTS:
+  DOT: 2
+  NUMBER: 2
+  COMMA: 1
+  NUMBER: 2
+  DOT: 2
+  DOT: 2
+  COMMA: 1
+  NUMBER: 2
+  NUMBER: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  NUMBER: 2
+  DOT: 2
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DOT: 2
+  DOT: 2
+  COMMA: 1
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 9
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 5
+  SEPARATOR: 6
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 51 (length=211)
+TEXT: Структура и объем работы. Диссертация состоит из введения, трех глав, заключения, списка литературы и приложений. Работа содержит 121 страницу основного текста, включая 79 рисунков и 7 таблиц, а также 6 страниц
+COUNTS:
+  DOT: 2
+  NUMBER: 4
+  COMMA: 5
+  NUMBER: 4
+  DOT: 2
+  DOT: 2
+  COMMA: 5
+  NUMBER: 4
+  NUMBER: 4
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  NUMBER: 4
+  DOT: 2
+  COMMA: 5
+  COMMA: 5
+  COMMA: 5
+  DOT: 2
+  DOT: 2
+  COMMA: 5
+  NUMBER: 4
+  NUMBER: 4
+  NUMBER: 4
+  NUMBER: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 16
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 18
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 16
+  SEPARATOR: 2
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 18
+  SEPARATOR: 18
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 1
+
+LINE 52 (length=2)
+TEXT: 5
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 53 (length=70)
+TEXT: приложений. Список используемой литературы включает 111 наименований.
+COUNTS:
+  DOT: 2
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 5
+
+LINE 54 (length=18)
+TEXT: СОДЕРЖАНИЕ РАБОТЫ
+COUNTS:
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 16
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 55 (length=295)
+TEXT: Во введении рассмотрена актуальность проблемы, сформулированы цель и основная задача исследования, показана научная новизна и практическая значимость основных результатов работы, выносимых на защиту, их внедрение и апробация, описывается структура диссертации и её краткое содержание по главам.
+COUNTS:
+  DOT: 1
+  COMMA: 5
+  DOT: 1
+  DOT: 1
+  COMMA: 5
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 5
+  COMMA: 5
+  COMMA: 5
+  DOT: 1
+  DOT: 1
+  COMMA: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 32
+  SEPARATOR: 7
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 22
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 32
+  SEPARATOR: 14
+  SEPARATOR: 32
+  SEPARATOR: 22
+  SEPARATOR: 22
+  SEPARATOR: 6
+  SEPARATOR: 17
+
+LINE 56 (length=109)
+TEXT: В первой главе рассматриваются основные цели и принципы построения СК в организации, структура и синтез АМФ.
+COUNTS:
+  DOT: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 6
+  SEPARATOR: 7
+  SEPARATOR: 11
+  SEPARATOR: 11
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+
+LINE 57 (length=273)
+TEXT: В первом разделе показано, что управление качеством процессов в организации является важной и актуальной задачей. Многие организации внедряют у себя СК, основанные на международных и/или локальных стандартах качества. Стандарты качества принято относить к двум категориям:
+COUNTS:
+  DOT: 2
+  COMMA: 2
+  DOT: 2
+  DOT: 2
+  COLON: 1
+  COMMA: 2
+  DOT: 2
+  DOT: 2
+  COLON: 1
+  DOT: 2
+  COLON: 1
+  DOT: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 2
+  DOT: 2
+  SLASH: 1
+  COLON: 1
+  COMMA: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 28
+  SEPARATOR: 7
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 15
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 28
+  SEPARATOR: 15
+  SEPARATOR: 28
+  SEPARATOR: 15
+  SEPARATOR: 15
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 17
+
+LINE 58 (length=81)
+TEXT: -	требования к качеству продукта, т.е. область технологий производства продукта;
+COUNTS:
+  DOT: 2
+  COMMA: 1
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DASH: 1
+  DOT: 2
+  COMMA: 1
+  DASH: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  COMMA: 1
+  DASH: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 8
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+
+LINE 59 (length=113)
+TEXT: -	требования к качеству процессов получения продукта, т.е. область процессов управления качеством в организации.
+COUNTS:
+  DOT: 3
+  COMMA: 1
+  DASH: 1
+  DOT: 3
+  DASH: 1
+  DASH: 1
+  DOT: 3
+  COMMA: 1
+  DASH: 1
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  DASH: 1
+  DOT: 3
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  DOT: 3
+  DASH: 1
+  DOT: 3
+  COMMA: 1
+  DASH: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 8
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 8
+  SEPARATOR: 6
+  SEPARATOR: 8
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 8
+  SEPARATOR: 1
+
+LINE 60 (length=131)
+TEXT: В работе рассматривались СК, относящиеся к качеству процессов получения продукта. Назначение СК в организации состоит в следующем:
+COUNTS:
+  DOT: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  DOT: 1
+  COLON: 1
+  DOT: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  COMMA: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 10
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 7
+  SEPARATOR: 10
+  SEPARATOR: 9
+  SEPARATOR: 9
+  SEPARATOR: 3
+  SEPARATOR: 9
+
+LINE 61 (length=53)
+TEXT: -	получение информации о качестве работы организации
+COUNTS:
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 4
+
+LINE 62 (length=2)
+TEXT: 6
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 63 (length=121)
+TEXT: за прошедший период по ряду показателей качества (основным показателем является удовлетворенность клиентов организации);
+COUNTS:
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  SEPARATOR: 4
+  SEPARATOR: 9
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 9
+  SEPARATOR: 7
+  SEPARATOR: 9
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 11
+
+LINE 64 (length=83)
+TEXT: -	выработка рекомендаций на следующий период по улучшению	работы	организации	путем
+COUNTS:
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 2
+  SEPARATOR: 6
+
+LINE 65 (length=411)
+TEXT: повышения/уменьшения значений показателей качества. Во втором разделе показано, что суть адаптивного управления дальновидной активной системой заключается в использовании центром информации о планах, входах и выходах дальновидного активного элемента (кратко, ДАЭ) в предыдущих периодах функционирования. На основе этой информации формируется оценка параметров его модели	ограничений,	прогнозирования	состояний,
+COUNTS:
+  DOT: 2
+  COMMA: 5
+  DOT: 2
+  DOT: 2
+  COMMA: 5
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  COMMA: 5
+  COMMA: 5
+  COMMA: 5
+  DOT: 2
+  DOT: 2
+  SLASH: 1
+  PARENTHESIS: 2
+  COMMA: 5
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 34
+  SEPARATOR: 10
+  SEPARATOR: 10
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 32
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 34
+  SEPARATOR: 17
+  SEPARATOR: 34
+  SEPARATOR: 32
+  SEPARATOR: 32
+  SEPARATOR: 8
+  SEPARATOR: 8
+  SEPARATOR: 24
+
+LINE 66 (length=134)
+TEXT: определения планов, ресурсов и поощрения активного элемента в зависимости от соотношения между плановыми и фактическими показателями.
+COUNTS:
+  DOT: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 8
+  SEPARATOR: 5
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 7
+  SEPARATOR: 8
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 4
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 67 (length=84)
+TEXT: Общая структура АМФ представлена на рис. 1. Назначение АМФ заключается в следующем:
+COUNTS:
+  DOT: 2
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  COLON: 1
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  COLON: 1
+  DOT: 2
+  COLON: 1
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  COLON: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 9
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 9
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 7
+
+LINE 68 (length=71)
+TEXT: -	обработка показателей выхода ДАЭ и формирование прогноза потенциала;
+COUNTS:
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 9
+  SEPARATOR: 3
+  SEPARATOR: 9
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+
+LINE 69 (length=43)
+TEXT: -	выработка плана ДАЭ на следующий период;
+COUNTS:
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 70 (length=45)
+TEXT: -	формирование стимулов за прошедший период.
+COUNTS:
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 3
+
+LINE 71 (length=2)
+TEXT: 7
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 72 (length=28)
+TEXT: Рис. 1. Общая структура АМФ
+COUNTS:
+  DOT: 2
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 73 (length=636)
+TEXT: Рассмотрим функционирование системы, начиная с периода t, t=O,l,... На вход ДАЭ (см. рис. 1) подаются управляющие воздействия центра: план xt (желательное для центра значение выхода в периоде t) и управление ut (например, ресурсы различного типа). Кроме того, на вход воздействует внешняя среда в виде стохастической помехи ξh значение которой известно ДАЭ, но неизвестно центру. В результате ДАЭ становится известным множество возможных состояний в периоде г. ГМ, и он выбирает состояние y,eY(uhξi). Центр наблюдает выход yt ДАЭ за период t и определяет оценку потенциала at⅜ι в периоде t⅜l. Оценка потенциала определяется по формуле:
+COUNTS:
+  DOT: 10
+  NUMBER: 1
+  COMMA: 9
+  NUMBER: 1
+  DOT: 10
+  DOT: 10
+  COLON: 2
+  COMMA: 9
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 10
+  DOT: 10
+  COLON: 2
+  DOT: 10
+  COLON: 2
+  NUMBER: 1
+  DOT: 10
+  COMMA: 9
+  COMMA: 9
+  COMMA: 9
+  DOT: 10
+  DOT: 10
+  PARENTHESIS: 8
+  COLON: 2
+  COMMA: 9
+  NUMBER: 1
+  PARENTHESIS: 8
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 8
+  NUMBER: 1
+  PARENTHESIS: 8
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 22
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 33
+  SEPARATOR: 14
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 35
+  SEPARATOR: 10
+  SEPARATOR: 10
+  SEPARATOR: 33
+  SEPARATOR: 1
+  SEPARATOR: 32
+  SEPARATOR: 33
+  SEPARATOR: 35
+  SEPARATOR: 35
+  SEPARATOR: 13
+  SEPARATOR: 5
+  SEPARATOR: 56
+
+LINE 74 (length=2)
+TEXT: 8
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+
+LINE 75 (length=27)
+TEXT: at+1=I(abyt), где o0 = a0,
+COUNTS:
+  NUMBER: 3
+  COMMA: 2
+  NUMBER: 3
+  COMMA: 2
+  NUMBER: 3
+  NUMBER: 3
+  NUMBER: 3
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  PARENTHESIS: 2
+  COMMA: 2
+  NUMBER: 3
+  PARENTHESIS: 2
+  NUMBER: 3
+  NUMBER: 3
+  PARENTHESIS: 2
+  NUMBER: 3
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 76 (length=4)
+TEXT: (1)
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 77 (length=223)
+TEXT: с помощью рекуррентной процедуры прогнозирования I. Где at - оценка потенциала ДАЭ в периоде t. Предполагается, что 1(а,У) - непрерывная кусочнодифференцируемая функция своих аргументов, строго монотонно возрастающая по а.
+COUNTS:
+  DOT: 3
+  NUMBER: 1
+  COMMA: 3
+  NUMBER: 1
+  DASH: 2
+  DOT: 3
+  DASH: 2
+  DASH: 2
+  DOT: 3
+  COMMA: 3
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 2
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  DASH: 2
+  NUMBER: 1
+  DOT: 3
+  COMMA: 3
+  COMMA: 3
+  DASH: 2
+  COMMA: 3
+  DOT: 3
+  DASH: 2
+  DOT: 3
+  PARENTHESIS: 2
+  COMMA: 3
+  NUMBER: 1
+  DASH: 2
+  PARENTHESIS: 2
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 14
+  SEPARATOR: 8
+  SEPARATOR: 8
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 1
+
+LINE 78 (length=117)
+TEXT: Далее, на основе прогноза ань центр определяет необходимое управление (централизованные ресурсы) ut⅜ι в периоде t+1:
+COUNTS:
+  NUMBER: 1
+  COMMA: 1
+  NUMBER: 1
+  COLON: 1
+  COMMA: 1
+  NUMBER: 1
+  NUMBER: 1
+  COLON: 1
+  COLON: 1
+  NUMBER: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  PARENTHESIS: 2
+  COLON: 1
+  COMMA: 1
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 7
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 7
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 16
+
+LINE 79 (length=43)
+TEXT: ut⅜ι - Q(a<⅜ι), ut⅜ι е Ut⅜b Λ⅜ι-⅛Vt⅜ι∙	(2)
+COUNTS:
+  NUMBER: 1
+  COMMA: 1
+  NUMBER: 1
+  DASH: 2
+  DASH: 2
+  DASH: 2
+  COMMA: 1
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 2
+  DASH: 2
+  NUMBER: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 2
+  COMMA: 1
+  DASH: 2
+  PARENTHESIS: 4
+  COMMA: 1
+  NUMBER: 1
+  DASH: 2
+  PARENTHESIS: 4
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 4
+  NUMBER: 1
+  PARENTHESIS: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 80 (length=66)
+TEXT: Одновременно, центр определяет план (задание) xt⅜ι на период t+1:
+COUNTS:
+  NUMBER: 1
+  COMMA: 1
+  NUMBER: 1
+  COLON: 1
+  COMMA: 1
+  NUMBER: 1
+  NUMBER: 1
+  COLON: 1
+  COLON: 1
+  NUMBER: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  PARENTHESIS: 2
+  COLON: 1
+  COMMA: 1
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 8
+
+LINE 81 (length=16)
+TEXT: xhi ~ π(ttt⅜ι).
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 82 (length=4)
+TEXT: (3)
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 83 (length=205)
+TEXT: Здесь Qh к процедуры регулирования и планирования соответственно. Предполагается, что Q и тг являются непрерывными кусочно-дифференцируемыми функциями, причем π строго монотонно возрастающая функция по а.
+COUNTS:
+  DOT: 2
+  COMMA: 2
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DASH: 1
+  DOT: 2
+  COMMA: 2
+  DASH: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  COMMA: 2
+  COMMA: 2
+  DASH: 1
+  COMMA: 2
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  COMMA: 2
+  DASH: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 9
+  SEPARATOR: 4
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 14
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 9
+  SEPARATOR: 10
+  SEPARATOR: 9
+  SEPARATOR: 14
+  SEPARATOR: 14
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 1
+
+LINE 84 (length=143)
+TEXT: Далее, на основе сопоставления запланированного (xt) и фактического (у,) состояний ДАЭ центр определяет стимулы (поощрения и штрафы) элемента:
+COUNTS:
+  COMMA: 2
+  COLON: 1
+  COMMA: 2
+  COLON: 1
+  COLON: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  PARENTHESIS: 6
+  COLON: 1
+  COMMA: 2
+  PARENTHESIS: 6
+  PARENTHESIS: 6
+  PARENTHESIS: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 8
+  SEPARATOR: 9
+  SEPARATOR: 8
+  SEPARATOR: 8
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 12
+
+LINE 85 (length=12)
+TEXT: φt=∕(χ6yt)1
+COUNTS:
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  PARENTHESIS: 2
+  NUMBER: 2
+  PARENTHESIS: 2
+  NUMBER: 2
+  NUMBER: 2
+  PARENTHESIS: 2
+  NUMBER: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 86 (length=4)
+TEXT: (4)
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 87 (length=176)
+TEXT: где /- процедура стимулирования, причем /- непрерывная кусочно-дифференцируемая функция. На этом функционирование системы в периоде I завершается и наступает период t⅛l и т.д.
+COUNTS:
+  DOT: 3
+  COMMA: 1
+  DASH: 3
+  DOT: 3
+  DASH: 3
+  DASH: 3
+  DOT: 3
+  COMMA: 1
+  DASH: 3
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  DASH: 3
+  DOT: 3
+  COMMA: 1
+  COMMA: 1
+  DASH: 3
+  COMMA: 1
+  DOT: 3
+  DASH: 3
+  DOT: 3
+  SLASH: 2
+  COMMA: 1
+  DASH: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 15
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 7
+  SEPARATOR: 10
+  SEPARATOR: 15
+  SEPARATOR: 15
+  SEPARATOR: 5
+  SEPARATOR: 16
+
+LINE 88 (length=89)
+TEXT: Адаптивным механизмом функционирования системы качества называется совокупность процедур
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 5
+  SEPARATOR: 6
+  SEPARATOR: 7
+  SEPARATOR: 5
+  SEPARATOR: 7
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 5
+
+LINE 89 (length=59)
+TEXT: прогнозирования (1), регулирования (2), планирования (3) и
+COUNTS:
+  NUMBER: 3
+  COMMA: 2
+  NUMBER: 3
+  COMMA: 2
+  NUMBER: 3
+  NUMBER: 3
+  NUMBER: 3
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  PARENTHESIS: 6
+  COMMA: 2
+  NUMBER: 3
+  PARENTHESIS: 6
+  NUMBER: 3
+  NUMBER: 3
+  PARENTHESIS: 6
+  NUMBER: 3
+  PARENTHESIS: 6
+  ENTITY_SHAPE: 3
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 1
+
+LINE 90 (length=2)
+TEXT: 9
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+
+LINE 91 (length=34)
+TEXT: стимулирования (4): Σ=fZ,τr,(¾∕).
+COUNTS:
+  DOT: 1
+  NUMBER: 1
+  COMMA: 2
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  COMMA: 2
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  DOT: 1
+  COLON: 1
+  NUMBER: 1
+  DOT: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  PARENTHESIS: 4
+  COLON: 1
+  COMMA: 2
+  NUMBER: 1
+  PARENTHESIS: 4
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 4
+  NUMBER: 1
+  PARENTHESIS: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+
+LINE 92 (length=640)
+TEXT: В третьем разделе рассмотрены прогрессивные АМФ. Пусть целевая функция центра монотонно возрастает по показателям состояния Ь yeY(p), где Y(p) - множество возможных состояний ДАЭ, ар- потенциал ДАЭ. АМФ, при котором ДАЭ полностью использует свой потенциал (т.е. работает на границе своих возможностей), называется прогрессивным. Этот тип АМФ важен для прогнозирования состояния ДАЭ, поскольку он обеспечивает выбор ДАЭ своих состояний на границе. Следовательно, можно восстановить границу W(p) и всё множество Y(p) на основе изучения выбираемых состояний. В свою очередь, это используется для определения параметров модели ограничений ДАЭ.
+COUNTS:
+  DOT: 8
+  COMMA: 7
+  DASH: 2
+  DOT: 8
+  DASH: 2
+  DASH: 2
+  DOT: 8
+  COMMA: 7
+  DASH: 2
+  DOT: 8
+  DOT: 8
+  DOT: 8
+  DASH: 2
+  DOT: 8
+  COMMA: 7
+  COMMA: 7
+  DASH: 2
+  COMMA: 7
+  DOT: 8
+  DASH: 2
+  DOT: 8
+  PARENTHESIS: 10
+  COMMA: 7
+  DASH: 2
+  PARENTHESIS: 10
+  PARENTHESIS: 10
+  PARENTHESIS: 10
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 37
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 9
+  SEPARATOR: 3
+  SEPARATOR: 30
+  SEPARATOR: 15
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 31
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 30
+  SEPARATOR: 36
+  SEPARATOR: 30
+  SEPARATOR: 31
+  SEPARATOR: 31
+  SEPARATOR: 17
+  SEPARATOR: 6
+  SEPARATOR: 43
+
+LINE 93 (length=207)
+TEXT: Во второй главе рассматривается задача синтеза прогрессивного АМФ. В первом разделе рассмотрены ранговые экспертные механизмы, которые позволяют получать качественные оценки деятельности активного элемента.
+COUNTS:
+  DOT: 2
+  COMMA: 1
+  DOT: 2
+  DOT: 2
+  COMMA: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DOT: 2
+  DOT: 2
+  COMMA: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 16
+  SEPARATOR: 14
+  SEPARATOR: 16
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 21
+
+LINE 94 (length=441)
+TEXT: Во втором разделе рассмотрены задачи синтеза прогрессивных АМФ двух типов: без учета независимого регулирования (на основе алгоритма экспоненциального сглаживания) и с учетом независимого регулирования (на основе алгоритма Качмажа). АМФ на основе алгоритма экспоненциального сглаживания будем обозначать СМФ (сглаживающий механизм функционирования). Процедура прогнозирования задается алгоритмом, основанным на экспоненциальном сглаживании:
+COUNTS:
+  DOT: 2
+  COMMA: 1
+  DOT: 2
+  DOT: 2
+  COLON: 2
+  COMMA: 1
+  DOT: 2
+  DOT: 2
+  COLON: 2
+  DOT: 2
+  COLON: 2
+  DOT: 2
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DOT: 2
+  DOT: 2
+  PARENTHESIS: 6
+  COLON: 2
+  COMMA: 1
+  PARENTHESIS: 6
+  PARENTHESIS: 6
+  PARENTHESIS: 6
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 12
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 44
+  SEPARATOR: 14
+  SEPARATOR: 16
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 35
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 44
+  SEPARATOR: 12
+  SEPARATOR: 44
+  SEPARATOR: 35
+  SEPARATOR: 35
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 22
+  SEPARATOR: 1
+
+LINE 95 (length=3)
+TEXT: 10
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 96 (length=34)
+TEXT: Λt+ι~at - γ(at-у), t≈l,2,...,	(5)
+COUNTS:
+  DOT: 3
+  NUMBER: 2
+  COMMA: 4
+  NUMBER: 2
+  DASH: 2
+  DOT: 3
+  DASH: 2
+  DASH: 2
+  DOT: 3
+  COMMA: 4
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 2
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  DASH: 2
+  NUMBER: 2
+  DOT: 3
+  COMMA: 4
+  COMMA: 4
+  DASH: 2
+  COMMA: 4
+  DOT: 3
+  DASH: 2
+  DOT: 3
+  PARENTHESIS: 4
+  COMMA: 4
+  NUMBER: 2
+  DASH: 2
+  PARENTHESIS: 4
+  NUMBER: 2
+  NUMBER: 2
+  PARENTHESIS: 4
+  NUMBER: 2
+  PARENTHESIS: 4
+  ENTITY_SHAPE: 2
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 97 (length=36)
+TEXT: где у- параметр сглаживания, O<y<l.
+COUNTS:
+  DOT: 1
+  COMMA: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 1
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 1
+  DASH: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 98 (length=42)
+TEXT: Процедура	планирования	задается	следующей
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 4
+
+LINE 99 (length=10)
+TEXT: формулой:
+COUNTS:
+  COLON: 1
+  COLON: 1
+  COLON: 1
+  COLON: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 100 (length=16)
+TEXT: xt=(l-V)at,	(6)
+COUNTS:
+  NUMBER: 1
+  COMMA: 1
+  NUMBER: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  DASH: 1
+  NUMBER: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  PARENTHESIS: 4
+  COMMA: 1
+  NUMBER: 1
+  DASH: 1
+  PARENTHESIS: 4
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 4
+  NUMBER: 1
+  PARENTHESIS: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 101 (length=88)
+TEXT: где V - коэффициент вариации совокупности прогнозов за периоды от 1 до t, причем 0<V<1:
+COUNTS:
+  NUMBER: 3
+  COMMA: 1
+  NUMBER: 3
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COLON: 1
+  COMMA: 1
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 1
+  COLON: 1
+  DASH: 1
+  COLON: 1
+  NUMBER: 3
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  COLON: 1
+  COMMA: 1
+  NUMBER: 3
+  DASH: 1
+  NUMBER: 3
+  NUMBER: 3
+  NUMBER: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 8
+  SEPARATOR: 8
+  SEPARATOR: 4
+
+LINE 102 (length=11)
+TEXT: V≈ в№,	(7)
+COUNTS:
+  NUMBER: 1
+  COMMA: 1
+  NUMBER: 1
+  COMMA: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  PARENTHESIS: 2
+  COMMA: 1
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 103 (length=48)
+TEXT: где (fp - средний прогноз за периоды от 1 до t:
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COLON: 1
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  COLON: 1
+  DASH: 1
+  COLON: 1
+  NUMBER: 1
+  DASH: 1
+  DASH: 1
+  PARENTHESIS: 1
+  COLON: 1
+  NUMBER: 1
+  DASH: 1
+  PARENTHESIS: 1
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 1
+  NUMBER: 1
+  PARENTHESIS: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+
+LINE 104 (length=17)
+TEXT: ∣acp=⅛ ai∕t,	(8)
+COUNTS:
+  NUMBER: 1
+  COMMA: 1
+  NUMBER: 1
+  COMMA: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  PARENTHESIS: 2
+  COMMA: 1
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+
+LINE 105 (length=4)
+TEXT: ι=l
+COUNTS:
+
+LINE 106 (length=97)
+TEXT: а σ - стандартное или среднеквадратичное отклонение совокупности прогнозов за периоды от 1 до t:
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COLON: 1
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  COLON: 1
+  DASH: 1
+  COLON: 1
+  NUMBER: 1
+  DASH: 1
+  DASH: 1
+  COLON: 1
+  NUMBER: 1
+  DASH: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 7
+
+LINE 107 (length=152)
+TEXT: Использование коэффициента вариации совокупности предшествующих прогнозов при формировании плана ДАЭ на следующий период повышает надежность выполнения
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 15
+  SEPARATOR: 10
+  SEPARATOR: 5
+  SEPARATOR: 10
+  SEPARATOR: 15
+  SEPARATOR: 15
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+
+LINE 108 (length=13)
+TEXT: этого плана.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 109 (length=224)
+TEXT: Заметим, что yt имеет слабое влияние на величину коэффициента вариации V (см. формулы (7)-(9)) при достаточно больших t (t»n. Поэтому в первом приближении величина коэффициента вариации V будет считаться не зависящей от у,.
+COUNTS:
+  DOT: 3
+  NUMBER: 2
+  COMMA: 2
+  NUMBER: 2
+  DASH: 1
+  DOT: 3
+  DASH: 1
+  DASH: 1
+  DOT: 3
+  COMMA: 2
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 1
+  QUOTATION: 1
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  DASH: 1
+  NUMBER: 2
+  DOT: 3
+  COMMA: 2
+  COMMA: 2
+  DASH: 1
+  COMMA: 2
+  DOT: 3
+  QUOTATION: 1
+  DASH: 1
+  DOT: 3
+  PARENTHESIS: 7
+  COMMA: 2
+  QUOTATION: 1
+  NUMBER: 2
+  DASH: 1
+  PARENTHESIS: 7
+  NUMBER: 2
+  QUOTATION: 1
+  NUMBER: 2
+  PARENTHESIS: 7
+  NUMBER: 2
+  PARENTHESIS: 7
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 13
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 26
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 12
+  SEPARATOR: 13
+  SEPARATOR: 26
+  SEPARATOR: 26
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 1
+
+LINE 110 (length=44)
+TEXT: Процедура	стимулирования	задается	следующей
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 4
+
+LINE 111 (length=10)
+TEXT: формулой:
+COUNTS:
+  COLON: 1
+  COLON: 1
+  COLON: 1
+  COLON: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 112 (length=3)
+TEXT: 11
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+
+LINE 113 (length=29)
+TEXT: φr1Λ (X» yt)=kyt~ X(×t, yj ,
+COUNTS:
+  NUMBER: 1
+  COMMA: 2
+  NUMBER: 1
+  COMMA: 2
+  NUMBER: 1
+  NUMBER: 1
+  QUOTATION: 1
+  NUMBER: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  QUOTATION: 1
+  PARENTHESIS: 3
+  COMMA: 2
+  QUOTATION: 1
+  NUMBER: 1
+  PARENTHESIS: 3
+  NUMBER: 1
+  QUOTATION: 1
+  NUMBER: 1
+  PARENTHESIS: 3
+  NUMBER: 1
+  PARENTHESIS: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+
+LINE 114 (length=5)
+TEXT: (10)
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 115 (length=9)
+TEXT: X(x»yt)=
+COUNTS:
+  QUOTATION: 1
+  QUOTATION: 1
+  PARENTHESIS: 2
+  QUOTATION: 1
+  PARENTHESIS: 2
+  QUOTATION: 1
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+
+LINE 116 (length=40)
+TEXT: v(yt-xt), yt ^xt μ(×t - У< >» У1 < xt ’
+COUNTS:
+  NUMBER: 1
+  COMMA: 1
+  NUMBER: 1
+  DASH: 2
+  DASH: 2
+  DASH: 2
+  COMMA: 1
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 2
+  QUOTATION: 1
+  DASH: 2
+  NUMBER: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 2
+  COMMA: 1
+  QUOTATION: 1
+  DASH: 2
+  PARENTHESIS: 3
+  COMMA: 1
+  QUOTATION: 1
+  NUMBER: 1
+  DASH: 2
+  PARENTHESIS: 3
+  NUMBER: 1
+  QUOTATION: 1
+  NUMBER: 1
+  PARENTHESIS: 3
+  NUMBER: 1
+  PARENTHESIS: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+
+LINE 117 (length=133)
+TEXT: где χ(xti yt) - функция штрафов, а к, VИ //-коэффициенты значимости выхода, поощрения и штрафов соответственно, причем k>0, V>0,β>0.
+COUNTS:
+  DOT: 1
+  NUMBER: 3
+  COMMA: 6
+  NUMBER: 3
+  DASH: 2
+  DOT: 1
+  DASH: 2
+  DASH: 2
+  DOT: 1
+  COMMA: 6
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 2
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 2
+  NUMBER: 3
+  DOT: 1
+  COMMA: 6
+  COMMA: 6
+  DASH: 2
+  COMMA: 6
+  DOT: 1
+  DASH: 2
+  DOT: 1
+  SLASH: 2
+  PARENTHESIS: 2
+  DOUBLE_SLASH: 1
+  COMMA: 6
+  NUMBER: 3
+  DASH: 2
+  PARENTHESIS: 2
+  NUMBER: 3
+  NUMBER: 3
+  PARENTHESIS: 2
+  NUMBER: 3
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 7
+  SEPARATOR: 5
+  SEPARATOR: 8
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 1
+
+LINE 118 (length=425)
+TEXT: Заметим, что процедура стимулирования (10) дает только количественную оценку деятельности ДАЭ в прошедшем периоде t. Для получения более адекватного описания результатов деятельности ДАЭ в прошедшем периоде t используется процедура ранжирования, которая позволяет получить качественную оценку (ранг) деятельности на основе полученной с помощью процедуры стимулирования количественной оценки. Ранг ψt определяется по формуле:
+COUNTS:
+  DOT: 2
+  NUMBER: 1
+  COMMA: 2
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  COLON: 1
+  COMMA: 2
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  COLON: 1
+  DOT: 2
+  COLON: 1
+  NUMBER: 1
+  DOT: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 2
+  DOT: 2
+  PARENTHESIS: 4
+  COLON: 1
+  COMMA: 2
+  NUMBER: 1
+  PARENTHESIS: 4
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 4
+  NUMBER: 1
+  PARENTHESIS: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 9
+  SEPARATOR: 2
+  SEPARATOR: 17
+  SEPARATOR: 18
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 22
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 23
+  SEPARATOR: 17
+  SEPARATOR: 22
+  SEPARATOR: 1
+  SEPARATOR: 22
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 2
+  SEPARATOR: 41
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 119 (length=11)
+TEXT: ψ1=Ψ(⅜a^ =
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 1
+  NUMBER: 1
+  PARENTHESIS: 1
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 1
+  NUMBER: 1
+  PARENTHESIS: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 120 (length=4)
+TEXT: * 3
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 121 (length=11)
+TEXT: 5, φt ≥ at
+COUNTS:
+  NUMBER: 1
+  COMMA: 1
+  NUMBER: 1
+  COMMA: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 122 (length=11)
+TEXT: * 3 ≤φt<at
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 123 (length=16)
+TEXT: * 2 ’ ≤ Φt < at
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 124 (length=4)
+TEXT: (Н)
+COUNTS:
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 125 (length=4)
+TEXT: * 1
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 126 (length=11)
+TEXT: 2, φt < at
+COUNTS:
+  NUMBER: 1
+  COMMA: 1
+  NUMBER: 1
+  COMMA: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 127 (length=166)
+TEXT: где Ψ - процедура ранжирования, φt - количественная оценка, а α*jt - нормативные границы, учитывающие указания эксперта. Нормативные границы определяются по формуле:
+COUNTS:
+  DOT: 1
+  COMMA: 3
+  DASH: 3
+  DOT: 1
+  DASH: 3
+  DASH: 3
+  DOT: 1
+  COLON: 1
+  COMMA: 3
+  DASH: 3
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  DOT: 1
+  DASH: 3
+  COLON: 1
+  DOT: 1
+  COMMA: 3
+  COMMA: 3
+  DASH: 3
+  COMMA: 3
+  DOT: 1
+  DASH: 3
+  DOT: 1
+  COLON: 1
+  COMMA: 3
+  DASH: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 14
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 6
+  SEPARATOR: 14
+  SEPARATOR: 10
+  SEPARATOR: 10
+  SEPARATOR: 5
+  SEPARATOR: 12
+
+LINE 128 (length=43)
+TEXT: α*'ti=∕⅜*,cfl)=α*'r⅛*'r⅛4⅛+⅛0,⅞⅛p*!y, (12)
+COUNTS:
+  NUMBER: 3
+  COMMA: 3
+  NUMBER: 3
+  COMMA: 3
+  NUMBER: 3
+  NUMBER: 3
+  NUMBER: 3
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  PARENTHESIS: 3
+  COMMA: 3
+  NUMBER: 3
+  PARENTHESIS: 3
+  NUMBER: 3
+  NUMBER: 3
+  PARENTHESIS: 3
+  NUMBER: 3
+  PARENTHESIS: 3
+  ENTITY_SHAPE: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 129 (length=3)
+TEXT: 12
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 130 (length=10)
+TEXT: 0(<R,φ^)=
+COUNTS:
+  NUMBER: 1
+  COMMA: 1
+  NUMBER: 1
+  COMMA: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  PARENTHESIS: 2
+  COMMA: 1
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+
+LINE 131 (length=6)
+TEXT: 1, о,
+COUNTS:
+  NUMBER: 1
+  COMMA: 2
+  NUMBER: 1
+  COMMA: 2
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 132 (length=18)
+TEXT: Φt ^Φ*t φt <Φ*i ’
+COUNTS:
+
+LINE 133 (length=161)
+TEXT: где i - номер ранга, i=l,...,4-> cd 121 <^2i - потери при ошибочном определении ранга. ^(<pl) - функция Хевисайда, зависящая от указаний эксперта, в которой φ^-
+COUNTS:
+  DOT: 4
+  NUMBER: 3
+  COMMA: 5
+  NUMBER: 3
+  DASH: 5
+  DOT: 4
+  DASH: 5
+  DASH: 5
+  DOT: 4
+  COMMA: 5
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 5
+  DOT: 4
+  DOT: 4
+  DOT: 4
+  DASH: 5
+  NUMBER: 3
+  DOT: 4
+  COMMA: 5
+  COMMA: 5
+  DASH: 5
+  COMMA: 5
+  DOT: 4
+  DASH: 5
+  DOT: 4
+  PARENTHESIS: 2
+  COMMA: 5
+  NUMBER: 3
+  DASH: 5
+  PARENTHESIS: 2
+  NUMBER: 3
+  NUMBER: 3
+  PARENTHESIS: 2
+  NUMBER: 3
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 9
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 11
+  SEPARATOR: 9
+  SEPARATOR: 9
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 8
+  SEPARATOR: 1
+
+LINE 134 (length=101)
+TEXT: экспертное значение оценки эффективности деятельности ДАЭ в данном периоде, а Л = ci(t)∕t - параметр
+COUNTS:
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  PARENTHESIS: 2
+  COMMA: 1
+  DASH: 1
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 5
+  SEPARATOR: 6
+  SEPARATOR: 5
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 11
+
+LINE 135 (length=54)
+TEXT: сглаживания. Рекуррентная процедура (12) формирования
+COUNTS:
+  DOT: 1
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 3
+
+LINE 136 (length=434)
+TEXT: нормативных границ учитывает указания эксперта и потери, возникающие при ошибочном определении ранга. Величина С^п характеризует потери, которые возникают при неверном отнесении ситуации ранга 1 к рангу 2. Величина ^21 характеризует потери, которые возникают при неверном отнесении ситуации ранга 2 к рангу 1. СМФ 2¾7ζ∕+^ является совокупностью процедур прогнозирования (5), планирования (6), стимулирования (10) и ранжирования (11).
+COUNTS:
+  DOT: 4
+  NUMBER: 11
+  COMMA: 5
+  NUMBER: 11
+  DOT: 4
+  DOT: 4
+  COMMA: 5
+  NUMBER: 11
+  NUMBER: 11
+  DOT: 4
+  DOT: 4
+  DOT: 4
+  NUMBER: 11
+  DOT: 4
+  COMMA: 5
+  COMMA: 5
+  COMMA: 5
+  DOT: 4
+  DOT: 4
+  PARENTHESIS: 8
+  COMMA: 5
+  NUMBER: 11
+  PARENTHESIS: 8
+  NUMBER: 11
+  NUMBER: 11
+  PARENTHESIS: 8
+  NUMBER: 11
+  PARENTHESIS: 8
+  ENTITY_SHAPE: 11
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 12
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 31
+  SEPARATOR: 6
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 44
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 31
+  SEPARATOR: 6
+  SEPARATOR: 22
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 31
+  SEPARATOR: 44
+  SEPARATOR: 44
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 27
+  SEPARATOR: 3
+
+LINE 137 (length=240)
+TEXT: Предположим, что целью ДАЭ является максимизация суммы количественной и качественной оценки своей деятельности на всем периоде дальновидности, т.е. максимизация своего критерия эффективности. Критерий эффективности ДАЭ имеет следующий вид:
+COUNTS:
+  DOT: 3
+  COMMA: 2
+  DOT: 3
+  DOT: 3
+  COLON: 1
+  COMMA: 2
+  DOT: 3
+  DOT: 3
+  COLON: 1
+  DOT: 3
+  COLON: 1
+  DOT: 3
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 3
+  DOT: 3
+  COLON: 1
+  COMMA: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 9
+  SEPARATOR: 3
+  SEPARATOR: 25
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 7
+  SEPARATOR: 15
+  SEPARATOR: 7
+  SEPARATOR: 25
+  SEPARATOR: 1
+  SEPARATOR: 25
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 23
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 138 (length=45)
+TEXT: w(φb...,<j>nψb...,ψτ)= ∑ P(φΛψt)1 (13) t = l
+COUNTS:
+  DOT: 6
+  NUMBER: 2
+  COMMA: 2
+  NUMBER: 2
+  DOT: 6
+  DOT: 6
+  COMMA: 2
+  NUMBER: 2
+  NUMBER: 2
+  DOT: 6
+  DOT: 6
+  DOT: 6
+  NUMBER: 2
+  DOT: 6
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 6
+  DOT: 6
+  PARENTHESIS: 6
+  COMMA: 2
+  NUMBER: 2
+  PARENTHESIS: 6
+  NUMBER: 2
+  NUMBER: 2
+  PARENTHESIS: 6
+  NUMBER: 2
+  PARENTHESIS: 6
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+
+LINE 139 (length=101)
+TEXT: где р - коэффициент дисконтирования. Центр системы управления качеством заинтересован в максимальном
+COUNTS:
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 7
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 6
+  SEPARATOR: 7
+  SEPARATOR: 9
+  SEPARATOR: 9
+  SEPARATOR: 2
+  SEPARATOR: 8
+
+LINE 140 (length=3)
+TEXT: 13
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 141 (length=151)
+TEXT: раскрытии потенциала ДАЭ. Достаточным условием прогрессивности СМФ ∑=(I,π,∕⅛ψ) является строгое монотонное возрастание критерия эффективности ДАЭ (13)
+COUNTS:
+  DOT: 1
+  NUMBER: 1
+  COMMA: 2
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 2
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 1
+  DOT: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  PARENTHESIS: 4
+  COMMA: 2
+  NUMBER: 1
+  PARENTHESIS: 4
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 4
+  NUMBER: 1
+  PARENTHESIS: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 11
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 6
+  SEPARATOR: 11
+  SEPARATOR: 11
+  SEPARATOR: 4
+  SEPARATOR: 9
+
+LINE 142 (length=5)
+TEXT: no y
+COUNTS:
+
+LINE 143 (length=216)
+TEXT: Теорема 1. Пусть ДАЭ имеет критерий эффективности (13). Тогда СМФ Σ=(I, π, f+ψ) с процедурой прогнозирования (5), процедурой планирования (6), процедурой стимулирования (10) и процедурой ранжирования (11) приусловии
+COUNTS:
+  DOT: 2
+  NUMBER: 6
+  COMMA: 4
+  NUMBER: 6
+  DOT: 2
+  DOT: 2
+  COMMA: 4
+  NUMBER: 6
+  NUMBER: 6
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  NUMBER: 6
+  DOT: 2
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  DOT: 2
+  DOT: 2
+  PARENTHESIS: 12
+  COMMA: 4
+  NUMBER: 6
+  PARENTHESIS: 12
+  NUMBER: 6
+  NUMBER: 6
+  PARENTHESIS: 12
+  NUMBER: 6
+  PARENTHESIS: 12
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 10
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 18
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 8
+  SEPARATOR: 5
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 18
+  SEPARATOR: 18
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 10
+
+LINE 144 (length=39)
+TEXT: k-v>pttfa-V) (Нр(1-'йУ)∕(l-P<l-¾).	(Н)
+COUNTS:
+  DOT: 1
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 5
+  DOT: 1
+  DASH: 5
+  DASH: 5
+  DOT: 1
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 5
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 5
+  NUMBER: 1
+  DOT: 1
+  DASH: 5
+  DOT: 1
+  DASH: 5
+  DOT: 1
+  PARENTHESIS: 8
+  NUMBER: 1
+  DASH: 5
+  PARENTHESIS: 8
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 8
+  NUMBER: 1
+  PARENTHESIS: 8
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 145 (length=24)
+TEXT: является прогрессивным.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+
+LINE 146 (length=218)
+TEXT: Следствие 1. Пусть ДАЭ имеет критерий эффективности (13). Тогда СМФ S=(I, π, f+ψ) с процедурой прогнозирования (5), процедурой планирования (6), процедурой стимулирования (10) и процедурой ранжирования (11) приусловии
+COUNTS:
+  DOT: 2
+  NUMBER: 6
+  COMMA: 4
+  NUMBER: 6
+  DOT: 2
+  DOT: 2
+  COMMA: 4
+  NUMBER: 6
+  NUMBER: 6
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  NUMBER: 6
+  DOT: 2
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  DOT: 2
+  DOT: 2
+  PARENTHESIS: 12
+  COMMA: 4
+  NUMBER: 6
+  PARENTHESIS: 12
+  NUMBER: 6
+  NUMBER: 6
+  PARENTHESIS: 12
+  NUMBER: 6
+  PARENTHESIS: 12
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 11
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 19
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 5
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 19
+  SEPARATOR: 19
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 10
+
+LINE 147 (length=18)
+TEXT: k>μ(l-V)4∙v1	(15)
+COUNTS:
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 1
+  DASH: 1
+  NUMBER: 3
+  DASH: 1
+  DASH: 1
+  PARENTHESIS: 4
+  NUMBER: 3
+  DASH: 1
+  PARENTHESIS: 4
+  NUMBER: 3
+  NUMBER: 3
+  PARENTHESIS: 4
+  NUMBER: 3
+  PARENTHESIS: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+
+LINE 148 (length=39)
+TEXT: является гарантированно прогрессивным.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 2
+
+LINE 149 (length=230)
+TEXT: Рассмотрим теперь АМФ с независимым регулированием, в котором учитываются выделенные ДАЭ ресурсы. Прогноз выхода в зависимости от величины вложенных ресурсов определяется с помощью линейной модели с настраиваемыми коэффициентами:
+COUNTS:
+  DOT: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  DOT: 1
+  COLON: 1
+  DOT: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  COMMA: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 7
+  SEPARATOR: 12
+  SEPARATOR: 1
+  SEPARATOR: 18
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 10
+  SEPARATOR: 10
+  SEPARATOR: 18
+  SEPARATOR: 18
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 19
+  SEPARATOR: 1
+
+LINE 150 (length=190)
+TEXT: yt=αtq(u), (16) где at — настраиваемый коэффициент, ut - ресурс на период t, причем ut >0, a q(ut) - функция наблюдаемого входного воздействия ut. Линейная процедура настройки at задается с
+COUNTS:
+  DOT: 1
+  NUMBER: 2
+  COMMA: 4
+  NUMBER: 2
+  DASH: 3
+  DOT: 1
+  DASH: 3
+  DASH: 3
+  DOT: 1
+  COMMA: 4
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 3
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 3
+  NUMBER: 2
+  DOT: 1
+  COMMA: 4
+  COMMA: 4
+  DASH: 3
+  COMMA: 4
+  DOT: 1
+  DASH: 3
+  DOT: 1
+  PARENTHESIS: 6
+  COMMA: 4
+  NUMBER: 2
+  DASH: 3
+  PARENTHESIS: 6
+  NUMBER: 2
+  NUMBER: 2
+  PARENTHESIS: 6
+  NUMBER: 2
+  PARENTHESIS: 6
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 9
+  SEPARATOR: 9
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 11
+
+LINE 151 (length=3)
+TEXT: 14
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 152 (length=27)
+TEXT: помощью алгоритма Качмажа:
+COUNTS:
+  COLON: 1
+  COLON: 1
+  COLON: 1
+  COLON: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 153 (length=52)
+TEXT: at*ι≈^(al,u6yj)r4⅛ - У 4~ I(yratuf∕(l+βubh «г + oat
+COUNTS:
+  NUMBER: 3
+  COMMA: 1
+  NUMBER: 3
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 1
+  QUOTATION: 1
+  DASH: 1
+  NUMBER: 3
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  QUOTATION: 1
+  DASH: 1
+  PARENTHESIS: 4
+  COMMA: 1
+  QUOTATION: 1
+  NUMBER: 3
+  DASH: 1
+  PARENTHESIS: 4
+  NUMBER: 3
+  QUOTATION: 1
+  NUMBER: 3
+  PARENTHESIS: 4
+  NUMBER: 3
+  PARENTHESIS: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+
+LINE 154 (length=41)
+TEXT: +2 γut (yra1ul) ∕(l⅛βub,, β>0, У>0.	(17)
+COUNTS:
+  DOT: 1
+  NUMBER: 5
+  COMMA: 3
+  NUMBER: 5
+  DOT: 1
+  DOT: 1
+  COMMA: 3
+  NUMBER: 5
+  NUMBER: 5
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 5
+  DOT: 1
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  DOT: 1
+  DOT: 1
+  PARENTHESIS: 5
+  COMMA: 3
+  NUMBER: 5
+  PARENTHESIS: 5
+  NUMBER: 5
+  NUMBER: 5
+  PARENTHESIS: 5
+  NUMBER: 5
+  PARENTHESIS: 5
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+
+LINE 155 (length=234)
+TEXT: Рассмотрим АМФ 2^=(Ik,π, ∕⅜∙ψ), в котором процедура прогнозирования задается (17), процедура планирования π - (6), процедура стимулирования / - (10), а процедура ранжирования - (11). Критерий эффективности ДАЭ задается формулой (13).
+COUNTS:
+  DOT: 2
+  NUMBER: 6
+  COMMA: 6
+  NUMBER: 6
+  DASH: 3
+  DOT: 2
+  DASH: 3
+  DASH: 3
+  DOT: 2
+  COMMA: 6
+  NUMBER: 6
+  NUMBER: 6
+  DASH: 3
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DASH: 3
+  NUMBER: 6
+  DOT: 2
+  COMMA: 6
+  COMMA: 6
+  DASH: 3
+  COMMA: 6
+  DOT: 2
+  DASH: 3
+  DOT: 2
+  SLASH: 1
+  PARENTHESIS: 12
+  COMMA: 6
+  NUMBER: 6
+  DASH: 3
+  PARENTHESIS: 12
+  NUMBER: 6
+  NUMBER: 6
+  PARENTHESIS: 12
+  NUMBER: 6
+  PARENTHESIS: 12
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 14
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 5
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 14
+  SEPARATOR: 14
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 8
+
+LINE 156 (length=216)
+TEXT: Теорема 2. Пусть ДАЭ имеет критерий эффективности (13). Тогда АМФ ^=(^ π, ∕⅜ψ) с процедурой прогнозирования (17), процедурой планирования (6), процедурой стимулирования (10) и процедурой ранжирования (11) приусловии
+COUNTS:
+  DOT: 2
+  NUMBER: 6
+  COMMA: 3
+  NUMBER: 6
+  DOT: 2
+  DOT: 2
+  COMMA: 3
+  NUMBER: 6
+  NUMBER: 6
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  NUMBER: 6
+  DOT: 2
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  DOT: 2
+  DOT: 2
+  PARENTHESIS: 12
+  COMMA: 3
+  NUMBER: 6
+  PARENTHESIS: 12
+  NUMBER: 6
+  NUMBER: 6
+  PARENTHESIS: 12
+  NUMBER: 6
+  PARENTHESIS: 12
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 18
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 5
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 18
+  SEPARATOR: 18
+  SEPARATOR: 4
+  SEPARATOR: 5
+  SEPARATOR: 10
+
+LINE 157 (length=50)
+TEXT: k-v>pμ(2γu⅜l-V)∕(l⅜βa=))*Kl-(p(l⅛⅞(β.2⅛)∕(l*⅜)),)
+COUNTS:
+  DOT: 1
+  NUMBER: 2
+  COMMA: 1
+  NUMBER: 2
+  DASH: 3
+  DOT: 1
+  DASH: 3
+  DASH: 3
+  DOT: 1
+  COMMA: 1
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 3
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 3
+  NUMBER: 2
+  DOT: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 3
+  COMMA: 1
+  DOT: 1
+  DASH: 3
+  DOT: 1
+  PARENTHESIS: 13
+  COMMA: 1
+  NUMBER: 2
+  DASH: 3
+  PARENTHESIS: 13
+  NUMBER: 2
+  NUMBER: 2
+  PARENTHESIS: 13
+  NUMBER: 2
+  PARENTHESIS: 13
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 158 (length=29)
+TEXT: (l-p(l⅜uii(P-2¾y(Hβu⅛l,	(18)
+COUNTS:
+  NUMBER: 2
+  COMMA: 1
+  NUMBER: 2
+  DASH: 2
+  DASH: 2
+  DASH: 2
+  COMMA: 1
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 2
+  DASH: 2
+  NUMBER: 2
+  COMMA: 1
+  COMMA: 1
+  DASH: 2
+  COMMA: 1
+  DASH: 2
+  PARENTHESIS: 6
+  COMMA: 1
+  NUMBER: 2
+  DASH: 2
+  PARENTHESIS: 6
+  NUMBER: 2
+  NUMBER: 2
+  PARENTHESIS: 6
+  NUMBER: 2
+  PARENTHESIS: 6
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 159 (length=24)
+TEXT: является прогрессивным.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+
+LINE 160 (length=219)
+TEXT: Следствие 2. Пусть ДАЭ имеет критерий эффективности (13). Тогда АМФ ⅞=(β, π, ftψ) с процедурой прогнозирования (17), процедурой планирования (6), процедурой стимулирования (10) и процедурой ранжирования (11) приусловии
+COUNTS:
+  DOT: 2
+  NUMBER: 6
+  COMMA: 4
+  NUMBER: 6
+  DOT: 2
+  DOT: 2
+  COMMA: 4
+  NUMBER: 6
+  NUMBER: 6
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  NUMBER: 6
+  DOT: 2
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  DOT: 2
+  DOT: 2
+  PARENTHESIS: 12
+  COMMA: 4
+  NUMBER: 6
+  PARENTHESIS: 12
+  NUMBER: 6
+  NUMBER: 6
+  PARENTHESIS: 12
+  NUMBER: 6
+  PARENTHESIS: 12
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 19
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 5
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 19
+  SEPARATOR: 19
+  SEPARATOR: 4
+  SEPARATOR: 5
+  SEPARATOR: 10
+
+LINE 161 (length=20)
+TEXT: k>v+μ(l-V)∕u,.	(19)
+COUNTS:
+  DOT: 1
+  NUMBER: 1
+  COMMA: 1
+  NUMBER: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 1
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  NUMBER: 1
+  DOT: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  PARENTHESIS: 4
+  COMMA: 1
+  NUMBER: 1
+  DASH: 1
+  PARENTHESIS: 4
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 4
+  NUMBER: 1
+  PARENTHESIS: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 162 (length=39)
+TEXT: является гарантированно прогрессивным.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 2
+
+LINE 163 (length=161)
+TEXT: Теоремы 1 и 2 и следствия 1 и 2 определяют условия прогрессивности и гарантированной прогрессивности для двух типов АМФ: без учета независимого регулирования 15
+COUNTS:
+  NUMBER: 5
+  NUMBER: 5
+  COLON: 1
+  NUMBER: 5
+  NUMBER: 5
+  COLON: 1
+  COLON: 1
+  NUMBER: 5
+  COLON: 1
+  NUMBER: 5
+  NUMBER: 5
+  NUMBER: 5
+  NUMBER: 5
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 16
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 7
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 16
+  SEPARATOR: 16
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 11
+
+LINE 164 (length=105)
+TEXT: (см. (14) и (15) соответственно) и с учетом независимого регулирования (см. (18) и (19) соответственно).
+COUNTS:
+  DOT: 3
+  NUMBER: 4
+  NUMBER: 4
+  DOT: 3
+  DOT: 3
+  NUMBER: 4
+  NUMBER: 4
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  NUMBER: 4
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  PARENTHESIS: 12
+  NUMBER: 4
+  PARENTHESIS: 12
+  NUMBER: 4
+  NUMBER: 4
+  PARENTHESIS: 12
+  NUMBER: 4
+  PARENTHESIS: 12
+  ENTITY_SHAPE: 4
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 7
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+
+LINE 165 (length=249)
+TEXT: В третьей главе рассмотрены задачи проектирования АМФ на основе полученных решений в Главе 2. В первом разделе рассматривается структура ДАЭ «Цех», в состав которой входят участок по работе с клиентами, производственный участок и сервисный участок.
+COUNTS:
+  DOT: 2
+  NUMBER: 1
+  COMMA: 2
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  COMMA: 2
+  NUMBER: 1
+  NUMBER: 1
+  QUOTATION: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  NUMBER: 1
+  DOT: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 2
+  QUOTATION: 2
+  DOT: 2
+  COMMA: 2
+  QUOTATION: 2
+  NUMBER: 1
+  NUMBER: 1
+  QUOTATION: 2
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 10
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 18
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 10
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 18
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 18
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 19
+  SEPARATOR: 1
+
+LINE 166 (length=394)
+TEXT: Во втором разделе рассматривается функциональная структура управления (кратко, ФСУ). Место СК в ФСУ представлено на рис. 2. Должностные инструкции формируются либо путем добавления новых прав и обязанностей к уже существующим должностным инструкциям, либо путем создания новых должностей в организации с необходимым набором прав и обязанностей в соответствии с требованиями стандарта ISO 9001.
+COUNTS:
+  DOT: 4
+  NUMBER: 2
+  COMMA: 2
+  NUMBER: 2
+  DOT: 4
+  DOT: 4
+  COMMA: 2
+  NUMBER: 2
+  NUMBER: 2
+  DOT: 4
+  DOT: 4
+  DOT: 4
+  NUMBER: 2
+  DOT: 4
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 4
+  DOT: 4
+  PARENTHESIS: 2
+  COMMA: 2
+  NUMBER: 2
+  PARENTHESIS: 2
+  NUMBER: 2
+  NUMBER: 2
+  PARENTHESIS: 2
+  NUMBER: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 14
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 24
+  SEPARATOR: 10
+  SEPARATOR: 12
+  SEPARATOR: 4
+  SEPARATOR: 25
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 24
+  SEPARATOR: 1
+  SEPARATOR: 25
+  SEPARATOR: 1
+  SEPARATOR: 24
+  SEPARATOR: 25
+  SEPARATOR: 25
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 19
+  SEPARATOR: 1
+
+LINE 167 (length=38)
+TEXT: Функциональная структурауправления СК
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+
+LINE 168 (length=261)
+TEXT: В третьем разделе рассматривается процесс проектирования АМФ СК. При выборе процедуры прогнозирования необходимо обеспечить адекватность прогнозной модели (17). Для проверки соответствия прогнозной модели реальности используется следящий контрольный сигнал Kt.
+COUNTS:
+  DOT: 3
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 3
+  DOT: 3
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  NUMBER: 1
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  PARENTHESIS: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 9
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 16
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 10
+  SEPARATOR: 16
+  SEPARATOR: 16
+  SEPARATOR: 7
+  SEPARATOR: 4
+  SEPARATOR: 20
+
+LINE 169 (length=14)
+TEXT: Kpet∕et,	(20)
+COUNTS:
+  NUMBER: 1
+  COMMA: 1
+  NUMBER: 1
+  COMMA: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  PARENTHESIS: 2
+  COMMA: 1
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 170 (length=50)
+TEXT: е t =(l-λ) et4⅜λehe r(l-λ) е м+ЭД, e∏xt - Sl.1) .
+COUNTS:
+  DOT: 2
+  NUMBER: 2
+  COMMA: 1
+  NUMBER: 2
+  DASH: 3
+  DOT: 2
+  DASH: 3
+  DASH: 3
+  DOT: 2
+  COMMA: 1
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 3
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DASH: 3
+  NUMBER: 2
+  DOT: 2
+  COMMA: 1
+  COMMA: 1
+  DASH: 3
+  COMMA: 1
+  DOT: 2
+  DASH: 3
+  DOT: 2
+  PARENTHESIS: 5
+  COMMA: 1
+  NUMBER: 2
+  DASH: 3
+  PARENTHESIS: 5
+  NUMBER: 2
+  NUMBER: 2
+  PARENTHESIS: 5
+  NUMBER: 2
+  PARENTHESIS: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 171 (length=160)
+TEXT: Если прогнозирующая система неадекватна изучаемому процессу, все ошибки будут одного знака, и следящий контрольный сигнал Kt (20) будет стремиться к ⅛1 или -1.
+COUNTS:
+  DOT: 1
+  NUMBER: 3
+  COMMA: 2
+  NUMBER: 3
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 2
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  NUMBER: 3
+  DOT: 1
+  COMMA: 2
+  COMMA: 2
+  DASH: 1
+  COMMA: 2
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  PARENTHESIS: 2
+  COMMA: 2
+  NUMBER: 3
+  DASH: 1
+  PARENTHESIS: 2
+  NUMBER: 3
+  NUMBER: 3
+  PARENTHESIS: 2
+  NUMBER: 3
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 12
+  SEPARATOR: 12
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 9
+
+LINE 172 (length=18)
+TEXT: Рис. 3. График Kt
+COUNTS:
+  DOT: 2
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 173 (length=197)
+TEXT: Если известно, что прогнозирующая система адекватна реальному процессу и полученные ошибки образуют неавтокоррелированную, нормально распределенную случайную последовательность с нулевым средним и
+COUNTS:
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 10
+  SEPARATOR: 5
+  SEPARATOR: 10
+  SEPARATOR: 13
+  SEPARATOR: 8
+  SEPARATOR: 13
+  SEPARATOR: 10
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 16
+
+LINE 174 (length=3)
+TEXT: 17
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 175 (length=115)
+TEXT: стандартным отклонением σ, то для контрольного сигнала могут быть определены доверительные интервалы (см. рис. 3).
+COUNTS:
+  DOT: 3
+  NUMBER: 1
+  COMMA: 1
+  NUMBER: 1
+  DOT: 3
+  DOT: 3
+  COMMA: 1
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  NUMBER: 1
+  DOT: 3
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DOT: 3
+  DOT: 3
+  PARENTHESIS: 2
+  COMMA: 1
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 7
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 9
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 9
+
+LINE 176 (length=100)
+TEXT: Детальная структура СМФ СК, не учитывающего независимое регулирование, отражена на рис. 4. При этом
+COUNTS:
+  DOT: 2
+  NUMBER: 1
+  COMMA: 2
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  COMMA: 2
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  NUMBER: 1
+  DOT: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 2
+  DOT: 2
+  COMMA: 2
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 9
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 8
+
+LINE 177 (length=48)
+TEXT: процедура стимулирования имеет две составляющие
+COUNTS:
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 5
+
+LINE 178 (length=16)
+TEXT: (количественную
+COUNTS:
+  PARENTHESIS: 1
+  PARENTHESIS: 1
+  PARENTHESIS: 1
+  PARENTHESIS: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 179 (length=30)
+TEXT: (10) и качественную ψ (11)) и
+COUNTS:
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  PARENTHESIS: 5
+  NUMBER: 2
+  PARENTHESIS: 5
+  NUMBER: 2
+  NUMBER: 2
+  PARENTHESIS: 5
+  NUMBER: 2
+  PARENTHESIS: 5
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+
+LINE 180 (length=118)
+TEXT: подвержена неявным образом воздействию внешней помехи ξ. Также, на рис. 4 представлена подробная структура ДАЭ «Цех».
+COUNTS:
+  DOT: 3
+  NUMBER: 1
+  COMMA: 1
+  NUMBER: 1
+  DOT: 3
+  DOT: 3
+  COMMA: 1
+  NUMBER: 1
+  NUMBER: 1
+  QUOTATION: 2
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  NUMBER: 1
+  DOT: 3
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DOT: 3
+  QUOTATION: 2
+  DOT: 3
+  COMMA: 1
+  QUOTATION: 2
+  NUMBER: 1
+  NUMBER: 1
+  QUOTATION: 2
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 4
+  SEPARATOR: 8
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 11
+
+LINE 181 (length=35)
+TEXT: ___________СИСТЕМА КАЧЕСТВА_______
+COUNTS:
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 15
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+
+LINE 182 (length=26)
+TEXT: ! " СГЛАЖИВАЮЩИЙ МЕХАНИЗМ
+COUNTS:
+  QUOTATION: 1
+  QUOTATION: 1
+  QUOTATION: 1
+  QUOTATION: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 20
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 183 (length=5)
+TEXT: ПЛАН
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 184 (length=8)
+TEXT: СТИМУЛЫ
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 185 (length=3)
+TEXT: ф.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 186 (length=30)
+TEXT: ДАЛЬНОВИДНЫЙ АКГИВНЫП ЭЛЕМЕНТ
+COUNTS:
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 27
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+
+LINE 187 (length=4)
+TEXT: ЦЕХ
+COUNTS:
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 188 (length=29)
+TEXT: РЕЗУЛЬТАТЫ ПРОВЕДЕНИЯ АУДИТА
+COUNTS:
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 26
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 189 (length=7)
+TEXT: ПОМЕХА
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 190 (length=15)
+TEXT: Начальник Цеха
+COUNTS:
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 191 (length=30)
+TEXT: Участок по работе с капентамп
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 2
+
+LINE 192 (length=25)
+TEXT: Производи венный участок
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 193 (length=18)
+TEXT: Сервисный участок
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 194 (length=3)
+TEXT: yt
+COUNTS:
+
+LINE 195 (length=6)
+TEXT: ВЫХОД
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 196 (length=25)
+TEXT: Рис. 4. Структура СМФ СК
+COUNTS:
+  DOT: 2
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 197 (length=100)
+TEXT: Детальная структура АМФ СК отражена на рис. 5. Данный механизм учитывает независимое регулирование.
+COUNTS:
+  DOT: 3
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 3
+  DOT: 3
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  NUMBER: 1
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 11
+  SEPARATOR: 6
+  SEPARATOR: 11
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+
+LINE 198 (length=3)
+TEXT: 18
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 199 (length=306)
+TEXT: При этом процедура стимулирования, так же как и в СМФ СК, имеет две составляющие (количественную / (10) и качественную Ψ (И)) и подвержена неявным образом воздействию внешней помехи ξ. Процедура планирования (6) позволяет определить оптимальный план для ДАЭ «Цех», на основе которого возможно обоснованное
+COUNTS:
+  DOT: 1
+  NUMBER: 2
+  COMMA: 3
+  NUMBER: 2
+  DOT: 1
+  DOT: 1
+  COMMA: 3
+  NUMBER: 2
+  NUMBER: 2
+  QUOTATION: 2
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 2
+  DOT: 1
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  DOT: 1
+  QUOTATION: 2
+  DOT: 1
+  SLASH: 1
+  PARENTHESIS: 8
+  COMMA: 3
+  QUOTATION: 2
+  NUMBER: 2
+  PARENTHESIS: 8
+  NUMBER: 2
+  QUOTATION: 2
+  NUMBER: 2
+  PARENTHESIS: 8
+  NUMBER: 2
+  PARENTHESIS: 8
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 12
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 15
+  SEPARATOR: 9
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 15
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 1
+  SEPARATOR: 15
+  SEPARATOR: 16
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 24
+
+LINE 200 (length=21)
+TEXT: выделение ресурсов..
+COUNTS:
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+
+LINE 201 (length=17)
+TEXT: СИСТЕМА КАЧЕСТВА
+COUNTS:
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 15
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+
+LINE 202 (length=20)
+TEXT: АДАПТИВНЫЙ МЕХАНИЗМ
+COUNTS:
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 18
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 2
+
+LINE 203 (length=34)
+TEXT: ДАЛЬНОВИДНЫЙ АКТИВНЫЙ ЭЛЕМЕНТ	ЦЕХ
+COUNTS:
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 30
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 3
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 4
+
+LINE 204 (length=31)
+TEXT: РЕЗУЛЬТАТЫ ПРОВЕДЕНИЯ АУДИТА )
+COUNTS:
+  PARENTHESIS: 1
+  PARENTHESIS: 1
+  PARENTHESIS: 1
+  PARENTHESIS: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 26
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 205 (length=30)
+TEXT: „ |Начальнпк ξUexa t ι ПОМЕХА
+COUNTS:
+  QUOTATION: 1
+  QUOTATION: 1
+  QUOTATION: 1
+  QUOTATION: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+
+LINE 206 (length=20)
+TEXT: Сервисный ■ участок
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 207 (length=3)
+TEXT: yt
+COUNTS:
+
+LINE 208 (length=6)
+TEXT: ВЫХОД
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 209 (length=25)
+TEXT: Рис. 5. Структура АМФ СК
+COUNTS:
+  DOT: 2
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 210 (length=248)
+TEXT: В четвертом разделе рассматривается внедрение СМФ СК и АМФ СК в организации. Процедура прогнозирования /выполняется силами службы качества в лице внутренних аудиторов ((5) и (17) для СМФ СК и АМФ СК соответственно). Процедура планирования π (6) 19
+COUNTS:
+  DOT: 2
+  NUMBER: 4
+  NUMBER: 4
+  DOT: 2
+  DOT: 2
+  NUMBER: 4
+  NUMBER: 4
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  NUMBER: 4
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  SLASH: 1
+  PARENTHESIS: 8
+  NUMBER: 4
+  PARENTHESIS: 8
+  NUMBER: 4
+  NUMBER: 4
+  PARENTHESIS: 8
+  NUMBER: 4
+  PARENTHESIS: 8
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 23
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 15
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 17
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 15
+  SEPARATOR: 2
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 15
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 17
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 1
+
+LINE 211 (length=268)
+TEXT: выполняется силами службы качества в лице её руководителя (кратко, РСК). Регулирование выполняет руководитель направления ДАЭ «Цех». Процедуру стимулирования (10) выполняет представитель руководства по качеству (кратко, ПРК) и главный внутренний аудитор (см. рис. 6).
+COUNTS:
+  DOT: 5
+  NUMBER: 2
+  COMMA: 2
+  NUMBER: 2
+  DOT: 5
+  DOT: 5
+  COMMA: 2
+  NUMBER: 2
+  NUMBER: 2
+  QUOTATION: 2
+  DOT: 5
+  DOT: 5
+  DOT: 5
+  NUMBER: 2
+  DOT: 5
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 5
+  QUOTATION: 2
+  DOT: 5
+  PARENTHESIS: 8
+  COMMA: 2
+  QUOTATION: 2
+  NUMBER: 2
+  PARENTHESIS: 8
+  NUMBER: 2
+  QUOTATION: 2
+  NUMBER: 2
+  PARENTHESIS: 8
+  NUMBER: 2
+  PARENTHESIS: 8
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 12
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  SEPARATOR: 5
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 13
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 16
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 15
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 16
+  SEPARATOR: 16
+  SEPARATOR: 7
+  SEPARATOR: 2
+  SEPARATOR: 17
+
+LINE 212 (length=8)
+TEXT: iCmAVaW
+COUNTS:
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+
+LINE 213 (length=54)
+TEXT: π><ιιιιt юнппииппииаииллаагаамимлмяазгаавлваивил^лйяя
+COUNTS:
+  SEPARATOR: 9
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 9
+  SEPARATOR: 9
+  SEPARATOR: 9
+  SEPARATOR: 9
+  SEPARATOR: 9
+  SEPARATOR: 3
+  SEPARATOR: 1
+
+LINE 214 (length=20)
+TEXT: ‘	Рис. 6. График φl
+COUNTS:
+  DOT: 2
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+
+LINE 215 (length=330)
+TEXT: На основе плана xb который формирует РСК, и выхода yt для ДАЭ «Цех» по показателям «ассортимент продукции», «максимальное выполнение требований клиентов», «процент брака продукции» и «процент повторно обратившихся клиентов» ПРК и главный внутренний аудитор формируют общий ранг деятельности с помощью процедуры ранжирования (11).
+COUNTS:
+  DOT: 1
+  NUMBER: 1
+  COMMA: 3
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 3
+  NUMBER: 1
+  NUMBER: 1
+  QUOTATION: 10
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 1
+  DOT: 1
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  DOT: 1
+  QUOTATION: 10
+  DOT: 1
+  PARENTHESIS: 2
+  COMMA: 3
+  QUOTATION: 10
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  QUOTATION: 10
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 11
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 18
+  SEPARATOR: 9
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 23
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 18
+  SEPARATOR: 2
+  SEPARATOR: 17
+  SEPARATOR: 18
+  SEPARATOR: 23
+  SEPARATOR: 2
+  SEPARATOR: 23
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 17
+
+LINE 216 (length=47)
+TEXT: Общий ранг ДАЭ «Цех» может быть четырех типов:
+COUNTS:
+  COLON: 1
+  QUOTATION: 2
+  COLON: 1
+  COLON: 1
+  QUOTATION: 2
+  COLON: 1
+  QUOTATION: 2
+  QUOTATION: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 4
+
+LINE 217 (length=3)
+TEXT: 20
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 218 (length=54)
+TEXT: «плохой», «удовлетворительный», «хороший», «отличный»
+COUNTS:
+  COMMA: 3
+  COMMA: 3
+  QUOTATION: 8
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  QUOTATION: 8
+  COMMA: 3
+  QUOTATION: 8
+  QUOTATION: 8
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 2
+
+LINE 219 (length=12)
+TEXT: (см.рис.7).
+COUNTS:
+  DOT: 3
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 3
+  DOT: 3
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  NUMBER: 1
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  PARENTHESIS: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 220 (length=18)
+TEXT: Рис. 7. График ψt
+COUNTS:
+  DOT: 2
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  NUMBER: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+
+LINE 221 (length=100)
+TEXT: Полученный общий ранг деятельности ДАЭ «Цех» в текущем периоде передается подразделению бухгалтерии
+COUNTS:
+  QUOTATION: 2
+  QUOTATION: 2
+  QUOTATION: 2
+  QUOTATION: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 4
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 14
+
+LINE 222 (length=170)
+TEXT: организации для осуществления непосредственного стимулирования (штрафования и поощрения) ДАЭ «Цех» в виде соответствующего премирования и депремирования его сотрудников.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  QUOTATION: 2
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  QUOTATION: 2
+  DOT: 1
+  PARENTHESIS: 2
+  QUOTATION: 2
+  PARENTHESIS: 2
+  QUOTATION: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 8
+  SEPARATOR: 7
+  SEPARATOR: 17
+  SEPARATOR: 17
+  SEPARATOR: 7
+  SEPARATOR: 14
+  SEPARATOR: 1
+
+LINE 223 (length=106)
+TEXT: В заключении приводятся основные теоретические и практические результаты и выводы диссертационной работы.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 8
+  SEPARATOR: 5
+  SEPARATOR: 11
+  SEPARATOR: 11
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 10
+
+LINE 224 (length=67)
+TEXT: Приложение содержит документы о внедрении результатов диссертации.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 8
+  SEPARATOR: 1
+
+LINE 225 (length=3)
+TEXT: 21
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 226 (length=29)
+TEXT: ОСНОВНЫЕ ВЫВОДЫ И РЕЗУЛЬТАТЫ
+COUNTS:
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 25
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 227 (length=42)
+TEXT: 1.	Сформулирована	и решена задача синтеза
+COUNTS:
+  DOT: 1
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+
+LINE 228 (length=39)
+TEXT: прогрессивного	сглаживающего	механизма
+COUNTS:
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+
+LINE 229 (length=89)
+TEXT: функционирования системы качества. Найдены условия его	прогрессивности	и гарантированной
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 4
+  SEPARATOR: 7
+  SEPARATOR: 9
+  SEPARATOR: 9
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 5
+
+LINE 230 (length=17)
+TEXT: прогрессивности.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 231 (length=42)
+TEXT: 2.	Сформулирована	и решена	задача синтеза
+COUNTS:
+  DOT: 1
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+
+LINE 232 (length=37)
+TEXT: прогрессивного адаптивного	механизма
+COUNTS:
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 2
+
+LINE 233 (length=43)
+TEXT: функционирования	системы	качества, который
+COUNTS:
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 234 (length=45)
+TEXT: учитывает	независимое регулирование.	Найдены
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 6
+
+LINE 235 (length=63)
+TEXT: условия его прогрессивности и гарантированной прогрессивности.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+
+LINE 236 (length=46)
+TEXT: 3.	Разработан и внедрен сглаживающий	механизм
+COUNTS:
+  DOT: 1
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+
+LINE 237 (length=199)
+TEXT: функционирования системы качества на основе показателей: «ассортимент продукции», «максимальное выполнение требований клиентов», «процент брака продукции» и «процент повторно обратившихся клиентов».
+COUNTS:
+  DOT: 1
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  COMMA: 2
+  QUOTATION: 8
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  DOT: 1
+  COLON: 1
+  DOT: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 1
+  QUOTATION: 8
+  DOT: 1
+  COLON: 1
+  COMMA: 2
+  QUOTATION: 8
+  QUOTATION: 8
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 12
+  SEPARATOR: 13
+  SEPARATOR: 17
+  SEPARATOR: 2
+  SEPARATOR: 17
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 14
+
+LINE 238 (length=44)
+TEXT: 4.	Разработан	и	внедрен адаптивный механизм
+COUNTS:
+  DOT: 1
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+
+LINE 239 (length=218)
+TEXT: функционирования системы качества с независимым регулированием на основе показателей: «ассортимент продукции», «максимальное выполнение требований клиентов», «процент брака» и «процент повторно обратившихся клиентов».
+COUNTS:
+  DOT: 1
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  COMMA: 2
+  QUOTATION: 8
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  DOT: 1
+  COLON: 1
+  DOT: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 1
+  QUOTATION: 8
+  DOT: 1
+  COLON: 1
+  COMMA: 2
+  QUOTATION: 8
+  QUOTATION: 8
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 15
+  SEPARATOR: 6
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 19
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 15
+  SEPARATOR: 12
+  SEPARATOR: 15
+  SEPARATOR: 19
+  SEPARATOR: 2
+  SEPARATOR: 19
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 17
+
+LINE 240 (length=36)
+TEXT: 5.	Применение	адаптивных	механизмов
+COUNTS:
+  DOT: 1
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 4
+
+LINE 241 (length=84)
+TEXT: функционирования системы качества привело к повышению	эффективности	деятельности	в:
+COUNTS:
+  COLON: 1
+  COLON: 1
+  COLON: 1
+  COLON: 1
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 9
+  SEPARATOR: 9
+  SEPARATOR: 2
+  SEPARATOR: 7
+
+LINE 242 (length=53)
+TEXT: федеральном государственном унитарном предприятии 22
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 4
+
+LINE 243 (length=332)
+TEXT: «Экспериментальный завод научного приборостроения со Специальным конструкторским бюро РАН»; компании ООО «АЯКСИ»; Московском областном фонде обязательного медицинского страхования, где полученные адаптивные механизмы внедрены для решения задачи прогнозирования показателей по направлениям работ лечебно-профилактических учреждений.
+COUNTS:
+  DOT: 1
+  COMMA: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 1
+  DASH: 1
+  QUOTATION: 4
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  DOT: 1
+  QUOTATION: 4
+  DASH: 1
+  DOT: 1
+  COMMA: 1
+  QUOTATION: 4
+  DASH: 1
+  QUOTATION: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 14
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 21
+  SEPARATOR: 10
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 21
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 21
+  SEPARATOR: 11
+  SEPARATOR: 21
+  SEPARATOR: 21
+  SEPARATOR: 21
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 24
+
+LINE 244 (length=31)
+TEXT: ПУБЛИКАЦИИ ПО ТЕМЕ ДИССЕРТАЦИИ
+COUNTS:
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 27
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 245 (length=138)
+TEXT: 1.	Михеев Г.В. Система менеджмента качества как активная система. В сб. «Теория активных систем», труды	международной	научно-практической
+COUNTS:
+  DOT: 5
+  INITIAL: 2
+  INITIALS: 1
+  NUMBER: 1
+  COMMA: 1
+  NUMBER: 1
+  DASH: 1
+  DOT: 5
+  INITIAL: 2
+  DASH: 1
+  DASH: 1
+  DOT: 5
+  COMMA: 1
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  QUOTATION: 2
+  DOT: 5
+  DOT: 5
+  INITIAL: 2
+  DOT: 5
+  DASH: 1
+  NUMBER: 1
+  DOT: 5
+  COMMA: 1
+  COMMA: 1
+  INITIAL: 2
+  DASH: 1
+  COMMA: 1
+  DOT: 5
+  QUOTATION: 2
+  DASH: 1
+  DOT: 5
+  COMMA: 1
+  QUOTATION: 2
+  NUMBER: 1
+  DASH: 1
+  NUMBER: 1
+  QUOTATION: 2
+  NUMBER: 1
+  INITIAL: 2
+  INITIAL: 2
+  INITIALS: 1
+  INITIALS: 1
+  NUMBER: 1
+  INITIAL: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 8
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 12
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 12
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 12
+
+LINE 246 (length=55)
+TEXT: конференции в двух томах - Москва, 2001, Т.1, с.52-53.
+COUNTS:
+  DOT: 3
+  INITIAL: 1
+  YEAR: 1
+  NUMBER: 4
+  COMMA: 3
+  NUMBER: 4
+  DASH: 2
+  PAGES: 1
+  DOT: 3
+  INITIAL: 1
+  DASH: 2
+  DASH: 2
+  DOT: 3
+  COMMA: 3
+  NUMBER: 4
+  NUMBER: 4
+  DASH: 2
+  DOT: 3
+  DOT: 3
+  YEAR: 1
+  INITIAL: 1
+  DOT: 3
+  DASH: 2
+  NUMBER: 4
+  DOT: 3
+  COMMA: 3
+  COMMA: 3
+  INITIAL: 1
+  DASH: 2
+  COMMA: 3
+  DOT: 3
+  DASH: 2
+  DOT: 3
+  COMMA: 3
+  NUMBER: 4
+  DASH: 2
+  NUMBER: 4
+  NUMBER: 4
+  INITIAL: 1
+  INITIAL: 1
+  NUMBER: 4
+  YEAR: 1
+  INITIAL: 1
+  YEAR: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+
+LINE 247 (length=206)
+TEXT: 2.	Михеев Г.В. Адаптивные механизмы функционирования в системе менеджмента качества. В сб. «Современные сложные системы управления», труды международной научной конференции - Старый Оскол, 2002, с.387-388.
+COUNTS:
+  DOT: 7
+  INITIAL: 2
+  INITIALS: 1
+  YEAR: 1
+  NUMBER: 4
+  COMMA: 3
+  NUMBER: 4
+  DASH: 2
+  PAGES: 1
+  DOT: 7
+  INITIAL: 2
+  DASH: 2
+  DASH: 2
+  DOT: 7
+  COMMA: 3
+  NUMBER: 4
+  NUMBER: 4
+  DASH: 2
+  QUOTATION: 2
+  DOT: 7
+  DOT: 7
+  YEAR: 1
+  INITIAL: 2
+  DOT: 7
+  DASH: 2
+  NUMBER: 4
+  DOT: 7
+  COMMA: 3
+  COMMA: 3
+  INITIAL: 2
+  DASH: 2
+  COMMA: 3
+  DOT: 7
+  QUOTATION: 2
+  DASH: 2
+  DOT: 7
+  COMMA: 3
+  QUOTATION: 2
+  NUMBER: 4
+  DASH: 2
+  NUMBER: 4
+  QUOTATION: 2
+  NUMBER: 4
+  INITIAL: 2
+  INITIAL: 2
+  INITIALS: 1
+  INITIALS: 1
+  NUMBER: 4
+  YEAR: 1
+  INITIAL: 2
+  YEAR: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 7
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 3
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 7
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 10
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 19
+
+LINE 248 (length=218)
+TEXT: 3.	Михеев Г.В. Адаптивные механизмы обеспечения качества функционирования предприятия. В сб. «Современные сложные системы управления», труды международной научной конференции в двух томах -Воронеж, 2003, Т.1, с.33-38.
+COUNTS:
+  DOT: 8
+  INITIAL: 3
+  INITIALS: 1
+  YEAR: 1
+  NUMBER: 5
+  COMMA: 4
+  NUMBER: 5
+  DASH: 2
+  PAGES: 1
+  DOT: 8
+  INITIAL: 3
+  DASH: 2
+  DASH: 2
+  DOT: 8
+  COMMA: 4
+  NUMBER: 5
+  NUMBER: 5
+  DASH: 2
+  QUOTATION: 2
+  DOT: 8
+  DOT: 8
+  YEAR: 1
+  INITIAL: 3
+  DOT: 8
+  DASH: 2
+  NUMBER: 5
+  DOT: 8
+  COMMA: 4
+  COMMA: 4
+  INITIAL: 3
+  DASH: 2
+  COMMA: 4
+  DOT: 8
+  QUOTATION: 2
+  DASH: 2
+  DOT: 8
+  COMMA: 4
+  QUOTATION: 2
+  NUMBER: 5
+  DASH: 2
+  NUMBER: 5
+  QUOTATION: 2
+  NUMBER: 5
+  INITIAL: 3
+  INITIAL: 3
+  INITIALS: 1
+  INITIALS: 1
+  NUMBER: 5
+  YEAR: 1
+  INITIAL: 3
+  YEAR: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  SEPARATOR: 8
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 19
+
+LINE 249 (length=196)
+TEXT: 4.	Михеев Г.В. Активная система управления качеством на предприятии. В сб. «Теория активных систем», труды международной научно-практической конференции в двух томах - Москва, 2003, Т.2, с.57-59.
+COUNTS:
+  DOT: 8
+  INITIAL: 3
+  INITIALS: 1
+  YEAR: 1
+  NUMBER: 5
+  COMMA: 4
+  NUMBER: 5
+  DASH: 3
+  PAGES: 1
+  DOT: 8
+  INITIAL: 3
+  DASH: 3
+  DASH: 3
+  DOT: 8
+  COMMA: 4
+  NUMBER: 5
+  NUMBER: 5
+  DASH: 3
+  QUOTATION: 2
+  DOT: 8
+  DOT: 8
+  YEAR: 1
+  INITIAL: 3
+  DOT: 8
+  DASH: 3
+  NUMBER: 5
+  DOT: 8
+  COMMA: 4
+  COMMA: 4
+  INITIAL: 3
+  DASH: 3
+  COMMA: 4
+  DOT: 8
+  QUOTATION: 2
+  DASH: 3
+  DOT: 8
+  COMMA: 4
+  QUOTATION: 2
+  NUMBER: 5
+  DASH: 3
+  NUMBER: 5
+  QUOTATION: 2
+  NUMBER: 5
+  INITIAL: 3
+  INITIAL: 3
+  INITIALS: 1
+  INITIALS: 1
+  NUMBER: 5
+  YEAR: 1
+  INITIAL: 3
+  YEAR: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 13
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 2
+  SEPARATOR: 11
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 12
+  SEPARATOR: 1
+
+LINE 250 (length=3)
+TEXT: 23
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 251 (length=145)
+TEXT: 5.	Михеев Г.В., Клюквин А.Б., Цыганов В.В. Адаптивные механизмы управления качеством на предприятии. М.: Препринт/Институт	проблем	управления	им
+COUNTS:
+  DOT: 9
+  INITIAL: 7
+  INITIALS: 3
+  NUMBER: 1
+  COMMA: 2
+  NUMBER: 1
+  DOT: 9
+  INITIAL: 7
+  DOT: 9
+  COLON: 1
+  COMMA: 2
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 9
+  DOT: 9
+  INITIAL: 7
+  COLON: 1
+  DOT: 9
+  COLON: 1
+  NUMBER: 1
+  DOT: 9
+  COMMA: 2
+  COMMA: 2
+  INITIAL: 7
+  COMMA: 2
+  DOT: 9
+  DOT: 9
+  SLASH: 1
+  COLON: 1
+  COMMA: 2
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  INITIAL: 7
+  INITIAL: 7
+  INITIALS: 3
+  INITIALS: 3
+  NUMBER: 1
+  INITIAL: 7
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 13
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 6
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 4
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 12
+  SEPARATOR: 9
+  SEPARATOR: 9
+  SEPARATOR: 7
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 12
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 252 (length=34)
+TEXT: В.А.Трапезникова РАН-2004, с. 41.
+COUNTS:
+  DOT: 4
+  INITIAL: 2
+  INITIALS: 1
+  YEAR: 1
+  NUMBER: 2
+  COMMA: 1
+  NUMBER: 2
+  DASH: 1
+  PAGES: 1
+  DOT: 4
+  INITIAL: 2
+  DASH: 1
+  DASH: 1
+  DOT: 4
+  COMMA: 1
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 1
+  DOT: 4
+  DOT: 4
+  YEAR: 1
+  INITIAL: 2
+  DOT: 4
+  DASH: 1
+  NUMBER: 2
+  DOT: 4
+  COMMA: 1
+  COMMA: 1
+  INITIAL: 2
+  DASH: 1
+  COMMA: 1
+  DOT: 4
+  DASH: 1
+  DOT: 4
+  COMMA: 1
+  NUMBER: 2
+  DASH: 1
+  NUMBER: 2
+  NUMBER: 2
+  INITIAL: 2
+  INITIAL: 2
+  INITIALS: 1
+  INITIALS: 1
+  NUMBER: 2
+  YEAR: 1
+  INITIAL: 2
+  YEAR: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 253 (length=138)
+TEXT: 6.	Михеев Г.В. Адаптивные механизмы управления системой качества на предприятии. В сб. «Современные сложные	системы	управления»,	труды	VI
+COUNTS:
+  DOT: 5
+  INITIAL: 2
+  INITIALS: 1
+  NUMBER: 1
+  COMMA: 1
+  NUMBER: 1
+  DOT: 5
+  INITIAL: 2
+  DOT: 5
+  COMMA: 1
+  NUMBER: 1
+  NUMBER: 1
+  QUOTATION: 2
+  DOT: 5
+  DOT: 5
+  INITIAL: 2
+  DOT: 5
+  NUMBER: 1
+  DOT: 5
+  COMMA: 1
+  COMMA: 1
+  INITIAL: 2
+  COMMA: 1
+  DOT: 5
+  QUOTATION: 2
+  DOT: 5
+  COMMA: 1
+  QUOTATION: 2
+  NUMBER: 1
+  NUMBER: 1
+  QUOTATION: 2
+  NUMBER: 1
+  INITIAL: 2
+  INITIAL: 2
+  INITIALS: 1
+  INITIALS: 1
+  NUMBER: 1
+  INITIAL: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 10
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 7
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 1
+
+LINE 254 (length=64)
+TEXT: международной научной конференции- Тверь, ТГТУ-2004, с.407-410.
+COUNTS:
+  DOT: 2
+  YEAR: 1
+  NUMBER: 3
+  COMMA: 2
+  NUMBER: 3
+  DASH: 3
+  PAGES: 1
+  DOT: 2
+  DASH: 3
+  DASH: 3
+  DOT: 2
+  COMMA: 2
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 3
+  DOT: 2
+  DOT: 2
+  YEAR: 1
+  DOT: 2
+  DASH: 3
+  NUMBER: 3
+  DOT: 2
+  COMMA: 2
+  COMMA: 2
+  DASH: 3
+  COMMA: 2
+  DOT: 2
+  DASH: 3
+  DOT: 2
+  COMMA: 2
+  NUMBER: 3
+  DASH: 3
+  NUMBER: 3
+  NUMBER: 3
+  NUMBER: 3
+  YEAR: 1
+  YEAR: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 4
+
+LINE 255 (length=196)
+TEXT: 7.	Михеев Г.В. Адаптивные механизмы функционирования системы качества в организации. В сб. «Когнитивный анализ и управление развитием ситуаций», труды IV международной конференции - Москва, 2004.
+COUNTS:
+  DOT: 6
+  INITIAL: 2
+  INITIALS: 1
+  YEAR: 1
+  NUMBER: 2
+  COMMA: 2
+  NUMBER: 2
+  DASH: 1
+  DOT: 6
+  INITIAL: 2
+  DASH: 1
+  DASH: 1
+  DOT: 6
+  COMMA: 2
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 1
+  QUOTATION: 2
+  DOT: 6
+  DOT: 6
+  YEAR: 1
+  INITIAL: 2
+  DOT: 6
+  DASH: 1
+  NUMBER: 2
+  DOT: 6
+  COMMA: 2
+  COMMA: 2
+  INITIAL: 2
+  DASH: 1
+  COMMA: 2
+  DOT: 6
+  QUOTATION: 2
+  DASH: 1
+  DOT: 6
+  COMMA: 2
+  QUOTATION: 2
+  NUMBER: 2
+  DASH: 1
+  NUMBER: 2
+  QUOTATION: 2
+  NUMBER: 2
+  INITIAL: 2
+  INITIAL: 2
+  INITIALS: 1
+  INITIALS: 1
+  NUMBER: 2
+  YEAR: 1
+  INITIAL: 2
+  YEAR: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 21
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 21
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 21
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 12
+  SEPARATOR: 1
+
+LINE 256 (length=240)
+TEXT: 8.	Шишкин Г.Б., Михеев Г.В., Клюквин А.Б. Адаптивные механизмы оценки и ранжирования себестоимости и качества. В сб. «Информационные технологии в науке, социологии, экономике и бизнесе», труды XXXI международной конференции - Гурзуф, 2004.
+COUNTS:
+  DOT: 10
+  INITIAL: 6
+  INITIALS: 3
+  YEAR: 1
+  NUMBER: 2
+  COMMA: 6
+  NUMBER: 2
+  DASH: 1
+  DOT: 10
+  INITIAL: 6
+  DASH: 1
+  DASH: 1
+  DOT: 10
+  COMMA: 6
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 1
+  QUOTATION: 2
+  DOT: 10
+  DOT: 10
+  YEAR: 1
+  INITIAL: 6
+  DOT: 10
+  DASH: 1
+  NUMBER: 2
+  DOT: 10
+  COMMA: 6
+  COMMA: 6
+  INITIAL: 6
+  DASH: 1
+  COMMA: 6
+  DOT: 10
+  QUOTATION: 2
+  DASH: 1
+  DOT: 10
+  COMMA: 6
+  QUOTATION: 2
+  NUMBER: 2
+  DASH: 1
+  NUMBER: 2
+  QUOTATION: 2
+  NUMBER: 2
+  INITIAL: 6
+  INITIAL: 6
+  INITIALS: 3
+  INITIALS: 3
+  NUMBER: 2
+  YEAR: 1
+  INITIAL: 6
+  YEAR: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 17
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 24
+  SEPARATOR: 10
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 24
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 24
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 257 (length=72)
+TEXT: Личный вклад в работах, выполненных в соавторстве, состоит в следующем:
+COUNTS:
+  COMMA: 2
+  COLON: 1
+  COMMA: 2
+  COLON: 1
+  COLON: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  COLON: 1
+  COMMA: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 4
+
+LINE 258 (length=94)
+TEXT: -	в работе [5] поставлена и решена задача синтеза адаптивных механизмов управления качеством,
+COUNTS:
+  NUMBER: 1
+  COMMA: 1
+  NUMBER: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  DASH: 1
+  NUMBER: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  NUMBER: 1
+  DASH: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 13
+  SEPARATOR: 5
+  SEPARATOR: 13
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+
+LINE 259 (length=61)
+TEXT: -	в работе [8] рассмотрено проектирование СК в организациях.
+COUNTS:
+  DOT: 1
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DASH: 1
+  DOT: 1
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  NUMBER: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  NUMBER: 1
+  DASH: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 4
+
+LINE 260 (length=20)
+TEXT: Зак.74.Тир.100.ИПУ.
+COUNTS:
+  DOT: 5
+  NUMBER: 2
+  NUMBER: 2
+  DOT: 5
+  DOT: 5
+  NUMBER: 2
+  NUMBER: 2
+  DOT: 5
+  DOT: 5
+  DOT: 5
+  NUMBER: 2
+  DOT: 5
+  DOT: 5
+  DOT: 5
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 261 (length=8)
+TEXT: ⅛ 1697 5
+COUNTS:
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
