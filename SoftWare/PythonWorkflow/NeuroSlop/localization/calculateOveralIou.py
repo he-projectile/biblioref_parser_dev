@@ -131,7 +131,7 @@ def calculate_cwt(signal, min_width, max_width):
 
         padded_signal = (
             padded_signal
-            - np.mean(padded_signal)
+            - np.mean(padded_signal)*1.5
         )
 
         values = np.convolve(

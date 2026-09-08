@@ -60,10 +60,9 @@ def recognize_lines(lines, patterns):
             score += count * pattern["weight"]
 
         lengthSigma = 100
-        lengthOffset = 500
+        lengthOffset = 250
         line_length = max(len(line), 1)
-        normalized_score = score /(1+np.exp((line_length-lengthOffset-lengthSigma)/(0.5*lengthSigma)))
-        #normalized_score = score * np.exp(- np.pow(line_length,2) / lengthSigma**2)         
+        normalized_score = score*np.exp(-(line_length-lengthOffset)**2/lengthSigma**2)  
 
         result.append({
             "line": line_number,
