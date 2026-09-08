@@ -155,7 +155,7 @@ def calculate_cwt(signal, min_width, max_width):
         )
 
         # Сдвигаем весь дополненный массив вниз на его среднее значение
-        padded_signal = padded_signal - np.mean(padded_signal)*1.5
+        padded_signal = padded_signal - np.mean(padded_signal)*2.5
 
         values = np.convolve(
             padded_signal,
@@ -374,7 +374,7 @@ def main():
     parser.add_argument(
         "--cwt-max-scale",
         type=int,
-        default=500
+        default=75
     )
 
     parser.add_argument(

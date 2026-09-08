@@ -131,7 +131,7 @@ def calculate_cwt(signal, min_width, max_width):
 
         padded_signal = (
             padded_signal
-            - np.mean(padded_signal)*1.5
+            - np.mean(padded_signal)*2.5
         )
 
         values = np.convolve(
@@ -395,13 +395,13 @@ def make_histogram(results, output_filename):
     )
 
     plt.text(
-        0.98,
+        0.02,
         0.95,
         f"Среднее IoU = {mean_iou:.4f}\n"
         f"Медиана IoU = {median_iou:.4f}\n"
         f"N = {len(ious)}",
         transform=plt.gca().transAxes,
-        ha="right",
+        ha="left",
         va="top"
     )
 
