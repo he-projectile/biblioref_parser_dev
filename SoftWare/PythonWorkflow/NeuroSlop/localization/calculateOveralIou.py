@@ -5,28 +5,15 @@ from pathlib import Path
 import numpy as np
 import matplotlib.pyplot as plt
 
+from biblioBlockLocalization import localizeBiblioBlock
+
 
 REFERENCE_LABEL = "БИБЛ. ССЫЛКА"
 
 
-def load_machine_file(filename):
+def load_json(filename):
     with open(filename, "r", encoding="utf-8") as f:
         return json.load(f)
-
-
-def calculate_score(machine_data):
-    """
-    Использует уже рассчитанный score из MACHINE_*.json.
-    """
-
-    lines = machine_data["lines"]
-
-    scores = []
-
-    for line in lines:
-        scores.append(line["score"])
-
-    return np.array(scores, dtype=float)
 
 
 def get_reference_annotations(annotation_data):
@@ -34,6 +21,7 @@ def get_reference_annotations(annotation_data):
 
     def recursive_search(obj):
         if isinstance(obj, dict):
+
             if obj.get("label") == REFERENCE_LABEL:
                 if "start" in obj and "end" in obj:
                     result.append(
@@ -47,6 +35,7 @@ def get_reference_annotations(annotation_data):
                 recursive_search(value)
 
         elif isinstance(obj, list):
+
             for item in obj:
                 recursive_search(item)
 
@@ -56,9 +45,7 @@ def get_reference_annotations(annotation_data):
 
 
 def char_to_line(text, char_pos):
-    before = text[:char_pos]
-
-    return before.count("\n") + 1
+    return text[:char_pos].count("\n") + 1
 
 
 def get_reference_line_bounds(text, annotations):
@@ -69,8 +56,16 @@ def get_reference_line_bounds(text, annotations):
     ends = []
 
     for start, end in annotations:
-        start_line = char_to_line(text, start + 1)
-        end_line = char_to_line(text, end + 1)
+
+        start_line = char_to_line(
+            text,
+            start + 1
+        )
+
+        end_line = char_to_line(
+            text,
+            end + 1
+        )
 
         starts.append(start_line)
         ends.append(end_line)
@@ -78,118 +73,11 @@ def get_reference_line_bounds(text, annotations):
     return min(starts), max(ends)
 
 
-def nonlinear_median_filter(signal, window_size):
-    window_size = int(round(window_size))
-
-    if window_size < 3:
-        return signal.copy()
-
-    if window_size % 2 == 0:
-        window_size += 1
-
-    radius = window_size // 2
-
-    padded = np.pad(
-        signal,
-        radius,
-        mode="edge"
-    )
-
-    filtered = np.empty_like(signal)
-
-    for i in range(len(signal)):
-        window = padded[i:i + window_size]
-        filtered[i] = np.median(window)
-
-    return filtered
-
-
-def calculate_cwt(signal, min_width, max_width):
-    signal = np.asarray(signal)
-
-    widths = np.arange(
-        min_width,
-        min(max_width, len(signal)) + 1
-    )
-
-    result = np.zeros(
-        (len(widths), len(signal))
-    )
-
-    for i, width in enumerate(widths):
-        kernel = np.ones(width)
-
-        pad_left = width // 2
-        pad_right = width - 1 - pad_left
-
-        padded_signal = np.pad(
-            signal,
-            (pad_left, pad_right),
-            mode="constant",
-            constant_values=0
-        )
-
-        padded_signal = (
-            padded_signal
-            - np.mean(padded_signal)*2.5
-        )
-
-        values = np.convolve(
-            padded_signal,
-            kernel,
-            mode="valid"
-        )
-
-        result[i] = values
-
-    return result, widths
-
-
-def calculate_detected_bounds(
-    scores,
-    filter_size=3,
-    cwt_min_scale=1,
-    cwt_max_scale=75
-):
-    """
-    Полностью повторяет логику обнаружения
-    из plotRecognition.py.
-    """
-
-    filtered_scores = nonlinear_median_filter(
-        scores,
-        filter_size
-    )
-
-    cwt, widths = calculate_cwt(
-        filtered_scores,
-        cwt_min_scale,
-        cwt_max_scale
-    )
-
-    best_index = np.unravel_index(
-        np.argmax(cwt),
-        cwt.shape
-    )
-
-    best_width = widths[best_index[0]]
-    best_center = best_index[1]
-
-    det_start = max(
-        1,
-        best_center - best_width // 2 + 1
-    )
-
-    det_end = min(
-        len(filtered_scores),
-        det_start + best_width - 1
-    )
-
-    return [det_start, det_end]
-
-
 def calculate_iou(reference_bounds, detected_bounds):
-    if reference_bounds is None or detected_bounds is None:
+    if reference_bounds is None:
+        return 0.0
+
+    if detected_bounds is None:
         return 0.0
 
     ref_start, ref_end = reference_bounds
@@ -239,93 +127,34 @@ def calculate_iou(reference_bounds, detected_bounds):
 
 
 def process_file(
-    machine_filename,
-    filter_size,
-    cwt_min_scale,
-    cwt_max_scale
+    machine_file,
+    text_file,
+    annotation_file,
+    patterns_file
 ):
-    machine_filename = Path(machine_filename)
-
-    # ---------------------------------------------------------
-    # MACHINE
-    # ---------------------------------------------------------
-
-    machine_data = load_machine_file(
-        machine_filename
-    )
-
-    scores = calculate_score(
-        machine_data
-    )
-
-    # ---------------------------------------------------------
-    # DETECTION
-    # ---------------------------------------------------------
-
-    detected_bounds = calculate_detected_bounds(
-        scores,
-        filter_size=filter_size,
-        cwt_min_scale=cwt_min_scale,
-        cwt_max_scale=cwt_max_scale
-    )
-
-    # ---------------------------------------------------------
-    # ANNOTATION
-    # ---------------------------------------------------------
-
-    filename = machine_filename.name
-
-    if not filename.startswith("MACHINE_"):
-        print(
-            f"WARNING: unexpected filename: {filename}"
-        )
-        return None
-
-    stem = machine_filename.stem[len("MACHINE_"):]
-
-    annotation_filename = (
-        machine_filename.parent / f"{stem}.json"
-    )
-
-    if not annotation_filename.exists():
-        print(
-            f"WARNING: annotation not found: "
-            f"{annotation_filename}"
-        )
-        return None
-
-    with open(
-        annotation_filename,
-        "r",
-        encoding="utf-8"
-    ) as f:
-        annotation_data = json.load(f)
+    machine_file = Path(machine_file)
+    text_file = Path(text_file)
+    annotation_file = Path(annotation_file)
+    patterns_file = Path(patterns_file)
 
     # ---------------------------------------------------------
     # TXT
     # ---------------------------------------------------------
 
-    txt_filename = (
-        machine_filename.parent / f"{stem}.txt"
-    )
-
-    if not txt_filename.exists():
-        print(
-            f"WARNING: TXT not found: "
-            f"{txt_filename}"
-        )
-        return None
-
     with open(
-        txt_filename,
+        text_file,
         "r",
         encoding="utf-8"
     ) as f:
         text = f.read()
 
     # ---------------------------------------------------------
-    # REFERENCE
+    # ANNOTATION
     # ---------------------------------------------------------
+
+    annotation_data = load_json(
+        annotation_file
+    )
 
     annotations = get_reference_annotations(
         annotation_data
@@ -337,6 +166,23 @@ def process_file(
     )
 
     # ---------------------------------------------------------
+    # LOCALIZATION
+    # ---------------------------------------------------------
+
+    result = localizeBiblioBlock(
+        machine_file,
+        patterns_file
+    )
+
+    if result["start"] is None:
+        detected_bounds = None
+    else:
+        detected_bounds = (
+            result["start"],
+            result["end"]
+        )
+
+    # ---------------------------------------------------------
     # IoU
     # ---------------------------------------------------------
 
@@ -346,7 +192,7 @@ def process_file(
     )
 
     return {
-        "filename": stem,
+        "filename": machine_file.stem[len("MACHINE_"):],
         "reference": reference_bounds,
         "detected": detected_bounds,
         "iou": iou
@@ -354,12 +200,15 @@ def process_file(
 
 
 def make_histogram(results, output_filename):
-    ious = [
-        result["iou"]
-        for result in results
-    ]
+    ious = np.array(
+        [
+            result["iou"]
+            for result in results
+        ],
+        dtype=float
+    )
 
-    if not ious:
+    if len(ious) == 0:
         print("No IoU values to plot.")
         return
 
@@ -386,7 +235,10 @@ def make_histogram(results, output_filename):
         "библиографического блока"
     )
 
-    plt.xlim(0.0, 1.0)
+    plt.xlim(
+        0.0,
+        1.0
+    )
 
     plt.grid(
         True,
@@ -416,36 +268,40 @@ def make_histogram(results, output_filename):
 
 
 def main():
+
     parser = argparse.ArgumentParser(
         description=(
-            "Calculate IoU for all MACHINE_*.json "
-            "files and build IoU histogram."
+            "Calculate IoU for bibliography "
+            "block localization."
         )
     )
 
     parser.add_argument(
-        "directory",
+        "--texts",
         type=Path,
-        help="Directory containing MACHINE_*.json files"
+        required=True,
+        help="Directory with TXT files"
     )
 
     parser.add_argument(
-        "--filter",
-        type=float,
-        default=3,
-        help="Median filter window size"
+        "--annotations",
+        type=Path,
+        required=True,
+        help="Directory with annotation JSON files"
     )
 
     parser.add_argument(
-        "--cwt-min-scale",
-        type=int,
-        default=1
+        "--machine",
+        type=Path,
+        required=True,
+        help="Directory with MACHINE_*.json files"
     )
 
     parser.add_argument(
-        "--cwt-max-scale",
-        type=int,
-        default=75
+        "--patterns",
+        type=Path,
+        required=True,
+        help="patterns.json"
     )
 
     parser.add_argument(
@@ -457,11 +313,25 @@ def main():
 
     args = parser.parse_args()
 
-    directory = args.directory
+    text_dir = args.texts
+    annotation_dir = args.annotations
+    machine_dir = args.machine
+    patterns_file = args.patterns
 
-    machine_files = sorted(
-        directory.glob("MACHINE_*.json")
-    )
+    print(f"Machine dir: {machine_dir}")
+    print(f"Absolute path: {machine_dir.resolve()}")
+    print(f"Exists: {machine_dir.exists()}")
+    print(f"Is directory: {machine_dir.is_dir()}")
+
+    print("Files in directory:")
+    for f in machine_dir.iterdir():
+        print(f"  {f.name}")
+
+    machine_files = sorted(machine_dir.glob("MACHINE_*.json"))
+
+    print(f"Matched MACHINE files: {len(machine_files)}")
+    for f in machine_files:
+        print(f"  {f}")
 
     print(
         f"Found {len(machine_files)} MACHINE files."
@@ -474,16 +344,40 @@ def main():
 
     for machine_file in machine_files:
 
-        try:
-            result = process_file(
-                machine_file,
-                filter_size=args.filter,
-                cwt_min_scale=args.cwt_min_scale,
-                cwt_max_scale=args.cwt_max_scale
-            )
+        stem = machine_file.stem[
+            len("MACHINE_"):
+        ]
 
-            if result is None:
-                continue
+        text_file = (
+            text_dir / f"{stem}.txt"
+        )
+
+        annotation_file = (
+            annotation_dir / f"{stem}.json"
+        )
+
+        if not text_file.exists():
+            print(
+                f"WARNING: TXT not found: "
+                f"{text_file}"
+            )
+            continue
+
+        if not annotation_file.exists():
+            print(
+                f"WARNING: annotation not found: "
+                f"{annotation_file}"
+            )
+            continue
+
+        try:
+
+            result = process_file(
+                machine_file=machine_file,
+                text_file=text_file,
+                annotation_file=annotation_file,
+                patterns_file=patterns_file
+            )
 
             results.append(result)
 
@@ -495,8 +389,10 @@ def main():
             )
 
         except Exception as e:
+
             print(
-                f"ERROR: {machine_file.name}: {e}"
+                f"ERROR: "
+                f"{machine_file.name}: {e}"
             )
 
     if not results:
@@ -508,7 +404,10 @@ def main():
     # ---------------------------------------------------------
 
     ious = np.array(
-        [result["iou"] for result in results],
+        [
+            result["iou"]
+            for result in results
+        ],
         dtype=float
     )
 
@@ -557,10 +456,13 @@ def main():
     # ---------------------------------------------------------
 
     if args.output is None:
+
         output_filename = (
-            directory / "IoU_histogram.png"
+            machine_dir / "IoU_histogram.png"
         )
+
     else:
+
         output_filename = args.output
 
     make_histogram(

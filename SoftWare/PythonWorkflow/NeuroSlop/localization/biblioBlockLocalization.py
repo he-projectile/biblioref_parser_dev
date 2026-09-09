@@ -1,3 +1,4 @@
+import argparse
 import json
 from pathlib import Path
 
@@ -5,40 +6,97 @@ import numpy as np
 
 
 # ============================================================
-# PARAMETERS
+# Parameters
 # ============================================================
 
-# Нелинейный медианный фильтр
 FILTER_SIZE = 3
 
-# Диапазон ширины окна CWT
 CWT_MIN_SCALE = 1
 CWT_MAX_SCALE = 75
 
-# Нормализация score по длине строки
+# Коэффициент вычитания среднего перед CWT.
+# Соответствует старой реализации plotRecognition.py.
+CWT_MEAN_MULTIPLIER = 2.5
+
 LENGTH_SIGMA = 100
 LENGTH_OFFSET = 250
 
-# Множитель вычитания среднего значения в CWT
-CWT_MEAN_MULTIPLIER = 2.5
-
 
 # ============================================================
-# DATA LOADING
+# Loading
 # ============================================================
 
 def load_machine_file(filename):
     """
-    Загрузка MACHINE_*.json.
+    Загружает MACHINE_*.json.
+
+    Ожидаемый формат:
+
+    {
+        "patterns": [...],
+        "lines": [
+            {
+                "line": 1,
+                "length": 83,
+                "counts": [0, 1, 0, ...],
+                "text": "..."
+            },
+            ...
+        ]
+    }
     """
+
+    filename = Path(filename)
 
     with open(filename, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
-def load_weights(filename):
+def loadLocalizationData(machine_filename):
+    machine_data = load_machine_file(machine_filename)
+
+    counts = np.asarray(
+        [line["counts"] for line in machine_data["lines"]],
+        dtype=float
+    )
+
+    lengths = np.asarray(
+        [line["length"] for line in machine_data["lines"]],
+        dtype=float
+    )
+
+    return {
+        "counts": counts,
+        "lengths": lengths,
+    }
+
+def load_localization_data(machine_filename):
     """
-    Загрузка весов паттернов из patterns.json.
+    Загружает MACHINE JSON один раз.
+
+    Возвращает данные, необходимые для локализации.
+    """
+
+    machine_data = load_machine_file(machine_filename)
+
+    counts = np.asarray(
+        [line["counts"] for line in machine_data["lines"]],
+        dtype=float
+    )
+
+    lengths = np.asarray(
+        [line["length"] for line in machine_data["lines"]],
+        dtype=float
+    )
+
+    return {
+        "counts": counts,
+        "lengths": lengths,
+    }
+
+def load_patterns(filename):
+    """
+    Загружает patterns.json.
 
     Ожидаемый формат:
 
@@ -53,126 +111,120 @@ def load_weights(filename):
         ]
     }
 
-    Возвращает numpy-массив весов.
+    Возвращает:
+        patterns
+        weights
     """
+
+    filename = Path(filename)
 
     with open(filename, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    patterns = data.get("patterns", [])
+    if "patterns" not in data:
+        raise ValueError(
+            f"В файле {filename} отсутствует ключ 'patterns'"
+        )
+
+    patterns = data["patterns"]
 
     weights = []
 
-    for pattern in patterns:
-        weights.append(
-            float(pattern.get("weight", 0.0))
-        )
+    for index, pattern in enumerate(patterns):
 
-    return np.asarray(
-        weights,
-        dtype=float
+        if "weight" not in pattern:
+            raise ValueError(
+                f"У паттерна №{index} "
+                f"({pattern.get('name', '<без имени>')}) "
+                f"отсутствует поле 'weight'"
+            )
+
+        try:
+            weight = float(pattern["weight"])
+        except (TypeError, ValueError):
+            raise ValueError(
+                f"Некорректный weight у паттерна №{index}: "
+                f"{pattern['weight']}"
+            )
+
+        weights.append(weight)
+
+    return (
+        patterns,
+        np.asarray(weights, dtype=float)
     )
 
 
 # ============================================================
-# SCORE
+# Score calculation
 # ============================================================
 
-def calculate_scores(
-    machine_data,
-    weights
-):
+def calculate_scores(machine_data, weights):
     """
-    Рассчитать SCORE для всех строк.
+    Вычисляет SCORE для каждой строки.
 
-    SCORE сначала вычисляется как:
+    Для каждой строки:
 
-        score = counts @ weights
+        SCORE = sum(count[i] * weight[i])
 
-    Затем применяется нормализация по длине строки:
-
-        score *= exp(
-            -(length - LENGTH_OFFSET)^2
-            / LENGTH_SIGMA^2
-        )
-
-    Важно:
-        веса НЕ хранятся в MACHINE JSON.
+    где:
+        count[i]  — количество срабатываний i-го паттерна
+        weight[i] — вес i-го паттерна
     """
 
-    lines = machine_data["lines"]
+    lines = machine_data.get("lines", [])
 
     if not lines:
         return np.array([], dtype=float)
 
-    counts = np.asarray(
-        [
-            line["counts"]
-            for line in lines
-        ],
-        dtype=float
-    )
+    scores = []
 
-    lengths = np.asarray(
-        [
-            line["length"]
-            for line in lines
-        ],
-        dtype=float
-    )
+    number_of_patterns = len(weights)
 
-    weights = np.asarray(
-        weights,
-        dtype=float
-    )
+    for line in lines:
 
-    if counts.shape[1] != len(weights):
-        raise ValueError(
-            "Number of weights does not match "
-            "number of pattern counts: "
-            f"{len(weights)} weights vs "
-            f"{counts.shape[1]} patterns"
+        if "counts" not in line:
+            raise ValueError(
+                f"В строке {line.get('line', '?')} "
+                f"отсутствует поле 'counts'"
+            )
+
+        counts = np.asarray(
+            line["counts"],
+            dtype=float
         )
 
-    # --------------------------------------------------------
-    # Linear combination of pattern activations
-    # --------------------------------------------------------
+        if len(counts) != number_of_patterns:
+            raise ValueError(
+                "Количество элементов 'counts' "
+                "не совпадает с количеством паттернов.\n"
+                f"Строка: {line.get('line', '?')}\n"
+                f"counts: {len(counts)}\n"
+                f"patterns: {number_of_patterns}"
+            )
 
-    scores = counts @ weights
-
-    # --------------------------------------------------------
-    # Length normalization
-    # --------------------------------------------------------
-
-    lengths = np.maximum(
-        lengths,
-        1
-    )
-
-    length_factor = np.exp(
-        -(
-            (lengths - LENGTH_OFFSET) ** 2
+        score = np.dot(
+            counts,
+            weights
         )
-        / LENGTH_SIGMA ** 2
+
+        scores.append(score)
+
+    return np.asarray(
+        scores,
+        dtype=float
     )
-
-    scores *= length_factor
-
-    return scores
 
 
 # ============================================================
-# NONLINEAR MEDIAN FILTER
+# Nonlinear median filter
 # ============================================================
 
-def nonlinear_median_filter(
-    signal,
-    window_size=FILTER_SIZE
-):
+def nonlinear_median_filter(signal, window_size):
     """
     Нелинейный медианный фильтр.
 
-    Логика полностью соответствует текущему
+    Реализация соответствует старому
     plotRecognition.py.
     """
 
@@ -222,21 +274,24 @@ def nonlinear_median_filter(
 
 def calculate_cwt(
     signal,
-    min_width=CWT_MIN_SCALE,
-    max_width=CWT_MAX_SCALE
+    min_width,
+    max_width
 ):
     """
-    CWT-подобное преобразование прямоугольным окном.
+    Вычисляет CWT прямоугольным окном.
 
-    Это намеренно оставляет ту же реализацию,
-    которая использовалась в plotRecognition.py.
+    Возвращает:
 
-    Для каждой ширины окна:
+        cwt
+            numpy.ndarray размера:
 
-        1. дополняем сигнал нулями;
-        2. вычитаем среднее * CWT_MEAN_MULTIPLIER;
-        3. сворачиваем с прямоугольным окном;
-        4. получаем строку CWT.
+            [количество масштабов, количество строк]
+
+        widths
+            numpy.ndarray с реальными ширинами окон.
+
+    Используется та же реализация, что была
+    в исходном plotRecognition.py.
     """
 
     signal = np.asarray(
@@ -250,24 +305,22 @@ def calculate_cwt(
             np.array([], dtype=int)
         )
 
-    min_width = int(
-        round(min_width)
-    )
-
-    max_width = int(
-        round(max_width)
-    )
+    min_width = int(min_width)
+    max_width = int(max_width)
 
     if min_width < 1:
         min_width = 1
-
-    if max_width < min_width:
-        max_width = min_width
 
     max_width = min(
         max_width,
         len(signal)
     )
+
+    if min_width > max_width:
+        return (
+            np.empty((0, len(signal))),
+            np.array([], dtype=int)
+        )
 
     widths = np.arange(
         min_width,
@@ -284,6 +337,7 @@ def calculate_cwt(
 
     for i, width in enumerate(widths):
 
+        # Прямоугольное окно
         kernel = np.ones(
             width,
             dtype=float
@@ -321,54 +375,109 @@ def calculate_cwt(
 
         result[i] = values
 
-    return result, widths
+    return (
+        result,
+        widths
+    )
 
 
 # ============================================================
-# DETECTION
+# Detection
 # ============================================================
 
 def detect_biblio_block(
-    scores,
-    filter_size=FILTER_SIZE,
-    cwt_min_scale=CWT_MIN_SCALE,
-    cwt_max_scale=CWT_MAX_SCALE
+    cwt,
+    widths
 ):
     """
-    Найти границы библиографического блока.
-
-    Pipeline:
-
-        SCORE
-          ↓
-        median filter
-          ↓
-        CWT
-          ↓
-        global argmax
-          ↓
-        block bounds
+    Находит положение максимума CWT и преобразует его
+    в границы библиографического блока.
 
     Возвращает:
 
-        detected_bounds
-        filtered_scores
-        cwt
-        widths
+        start
+        end
+
+    Нумерация строк начинается с 1.
     """
 
-    scores = np.asarray(
-        scores,
+    if cwt.size == 0:
+        return None, None
+
+    if len(widths) == 0:
+        return None, None
+
+    # Индекс максимального значения CWT.
+    best_index = np.unravel_index(
+        np.argmax(cwt),
+        cwt.shape
+    )
+
+    width_index = best_index[0]
+    best_center = best_index[1]
+
+    best_width = widths[
+        width_index
+    ]
+
+    # Преобразование индекса массива
+    # в номер строки.
+    start = max(
+        1,
+        best_center
+        - best_width // 2
+        + 1
+    )
+
+    end = min(
+        len(cwt[0]),
+        start
+        + best_width
+        - 1
+    )
+
+    return (
+        int(start),
+        int(end)
+    )
+
+
+# ============================================================
+# Main localization function
+# ============================================================
+
+def localizeBiblioBlockData(
+    localization_data,
+    weights
+):
+    counts = localization_data["counts"]
+    lengths = localization_data["lengths"]
+
+    weights = np.asarray(
+        weights,
         dtype=float
     )
 
-    if len(scores) == 0:
-        return (
-            None,
-            np.array([], dtype=float),
-            np.empty((0, 0)),
-            np.array([], dtype=int)
+    if counts.ndim != 2:
+        raise ValueError(
+            "counts должен быть двумерным массивом"
         )
+
+    if counts.shape[1] != len(weights):
+        raise ValueError(
+            f"Количество весов ({len(weights)}) "
+            f"не совпадает с количеством паттернов "
+            f"({counts.shape[1]})"
+        )
+
+    # --------------------------------------------------------
+    # Pattern score
+    # --------------------------------------------------------
+
+    scores = np.dot(
+        counts,
+        weights
+    )
 
     # --------------------------------------------------------
     # Median filter
@@ -376,8 +485,19 @@ def detect_biblio_block(
 
     filtered_scores = nonlinear_median_filter(
         scores,
-        filter_size
+        FILTER_SIZE
     )
+
+    # --------------------------------------------------------
+    # Length penalty
+    # --------------------------------------------------------
+
+    length_penalty = np.exp(
+        -(lengths - LENGTH_OFFSET) ** 2
+        / LENGTH_SIGMA ** 2
+    )
+
+    filtered_scores = filtered_scores * length_penalty   
 
     # --------------------------------------------------------
     # CWT
@@ -385,161 +505,18 @@ def detect_biblio_block(
 
     cwt, widths = calculate_cwt(
         filtered_scores,
-        cwt_min_scale,
-        cwt_max_scale
-    )
-
-    if cwt.size == 0:
-        return (
-            None,
-            filtered_scores,
-            cwt,
-            widths
-        )
-
-    # --------------------------------------------------------
-    # Global maximum
-    # --------------------------------------------------------
-
-    best_index = np.unravel_index(
-        np.argmax(cwt),
-        cwt.shape
-    )
-
-    best_width = widths[
-        best_index[0]
-    ]
-
-    best_center = best_index[1]
-
-    # --------------------------------------------------------
-    # Convert center + width into line bounds
-    # --------------------------------------------------------
-
-    det_start = max(
-        1,
-        best_center
-        - best_width // 2
-        + 1
-    )
-
-    det_end = min(
-        len(filtered_scores),
-        det_start
-        + best_width
-        - 1
-    )
-
-    detected_bounds = [
-        int(det_start),
-        int(det_end)
-    ]
-
-    return (
-        detected_bounds,
-        filtered_scores,
-        cwt,
-        widths
-    )
-
-
-# ============================================================
-# MAIN LOCALIZATION FUNCTION
-# ============================================================
-
-def localizeBiblioBlock(
-    machine_filename,
-    patterns_filename,
-    filter_size=FILTER_SIZE,
-    cwt_min_scale=CWT_MIN_SCALE,
-    cwt_max_scale=CWT_MAX_SCALE
-):
-    """
-    Полный pipeline локализации библиографического блока.
-
-    Вход:
-
-        MACHINE_*.json
-        patterns.json
-
-    Выход:
-
-        {
-            "start": ...,
-            "end": ...,
-            "scores": ...,
-            "filtered_scores": ...,
-            "cwt": ...,
-            "widths": ...
-        }
-
-    Эта функция является единственной точкой,
-    через которую другие модули должны запускать
-    локализацию.
-
-    Таким образом:
-
-        plot
-        IoU calculation
-        optimizer
-
-    используют абсолютно одинаковый алгоритм.
-    """
-
-    machine_filename = Path(
-        machine_filename
-    )
-
-    patterns_filename = Path(
-        patterns_filename
-    )
-
-    # --------------------------------------------------------
-    # Load data
-    # --------------------------------------------------------
-
-    machine_data = load_machine_file(
-        machine_filename
-    )
-
-    weights = load_weights(
-        patterns_filename
-    )
-
-    # --------------------------------------------------------
-    # SCORE
-    # --------------------------------------------------------
-
-    scores = calculate_scores(
-        machine_data,
-        weights
+        CWT_MIN_SCALE,
+        CWT_MAX_SCALE
     )
 
     # --------------------------------------------------------
     # Detection
     # --------------------------------------------------------
 
-    (
-        detected_bounds,
-        filtered_scores,
+    start, end = detect_biblio_block(
         cwt,
         widths
-    ) = detect_biblio_block(
-        scores,
-        filter_size,
-        cwt_min_scale,
-        cwt_max_scale
     )
-
-    # --------------------------------------------------------
-    # Return
-    # --------------------------------------------------------
-
-    if detected_bounds is None:
-        start = None
-        end = None
-    else:
-        start, end = detected_bounds
 
     return {
         "start": start,
@@ -550,323 +527,136 @@ def localizeBiblioBlock(
         "widths": widths,
     }
 
-
-# ============================================================
-# IoU
-# ============================================================
-
-def calculate_iou(
-    reference_bounds,
-    detected_bounds
-):
-    """
-    Intersection over Union для двух интервалов строк.
-
-    Интервалы считаются inclusive:
-
-        [start, end]
-
-    Это соответствует текущей реализации
-    calculateOveralIou.py.
-    """
-
-    if (
-        reference_bounds is None
-        or detected_bounds is None
-    ):
-        return 0.0
-
-    ref_start, ref_end = reference_bounds
-    det_start, det_end = detected_bounds
-
-    intersection_start = max(
-        ref_start,
-        det_start
-    )
-
-    intersection_end = min(
-        ref_end,
-        det_end
-    )
-
-    if intersection_end < intersection_start:
-        intersection = 0
-    else:
-        intersection = (
-            intersection_end
-            - intersection_start
-            + 1
-        )
-
-    reference_length = (
-        ref_end
-        - ref_start
-        + 1
-    )
-
-    detected_length = (
-        det_end
-        - det_start
-        + 1
-    )
-
-    union = (
-        reference_length
-        + detected_length
-        - intersection
-    )
-
-    if union == 0:
-        return 0.0
-
-    return (
-        intersection / union
-    )
-
-
-# ============================================================
-# ANNOTATIONS
-# ============================================================
-
-REFERENCE_LABEL = "БИБЛ. ССЫЛКА"
-
-
-def get_reference_annotations(
-    annotation_data
-):
-    """
-    Рекурсивно найти все annotations
-    с label == БИБЛ. ССЫЛКА.
-
-    Возвращает:
-
-        [
-            (start, end),
-            ...
-        ]
-    """
-
-    result = []
-
-    def recursive_search(obj):
-
-        if isinstance(obj, dict):
-
-            if (
-                obj.get("label")
-                == REFERENCE_LABEL
-            ):
-
-                if (
-                    "start" in obj
-                    and "end" in obj
-                ):
-
-                    result.append(
-                        (
-                            int(obj["start"]),
-                            int(obj["end"])
-                        )
-                    )
-
-            for value in obj.values():
-                recursive_search(value)
-
-        elif isinstance(obj, list):
-
-            for item in obj:
-                recursive_search(item)
-
-    recursive_search(
-        annotation_data
-    )
-
-    return result
-
-
-def char_to_line(
-    text,
-    char_pos
-):
-    """
-    Перевести позицию символа в номер строки.
-
-    Нумерация строк начинается с 1.
-    """
-
-    before = text[:char_pos]
-
-    return (
-        before.count("\n")
-        + 1
-    )
-
-
-def get_reference_line_bounds(
-    text,
-    annotations
-):
-    """
-    Перевести char annotations библиографических
-    ссылок в общий диапазон строк.
-
-    Если имеется несколько ссылок:
-
-        [10, 20]
-        [25, 40]
-        [100, 120]
-
-    результат:
-
-        (строка_10, строка_120)
-    """
-
-    if not annotations:
-        return None
-
-    starts = []
-    ends = []
-
-    for start, end in annotations:
-
-        start_line = char_to_line(
-            text,
-            start + 1
-        )
-
-        end_line = char_to_line(
-            text,
-            end + 1
-        )
-
-        starts.append(
-            start_line
-        )
-
-        ends.append(
-            end_line
-        )
-
-    return (
-        min(starts),
-        max(ends)
-    )
-
-
-def load_reference_bounds(
-    annotation_filename,
-    text_filename=None
-):
-    """
-    Загрузить annotation JSON и соответствующий TXT,
-    после чего вернуть эталонные границы блока.
-
-    Если text_filename не указан, TXT берётся
-    из annotation_filename с заменой расширения.
-    """
-
-    annotation_filename = Path(
-        annotation_filename
-    )
-
-    if text_filename is None:
-        text_filename = (
-            annotation_filename.with_suffix(
-                ".txt"
-            )
-        )
-    else:
-        text_filename = Path(
-            text_filename
-        )
-
-    with open(
-        annotation_filename,
-        "r",
-        encoding="utf-8"
-    ) as f:
-
-        annotation_data = json.load(f)
-
-    with open(
-        text_filename,
-        "r",
-        encoding="utf-8"
-    ) as f:
-
-        text = f.read()
-
-    annotations = get_reference_annotations(
-        annotation_data
-    )
-
-    return get_reference_line_bounds(
-        text,
-        annotations
-    )
-
-
-# ============================================================
-# LOCALIZATION + IoU
-# ============================================================
-
-def localizeBiblioBlockWithIoU(
+def localizeBiblioBlock(
     machine_filename,
     patterns_filename,
-    annotation_filename,
-    text_filename=None,
-    filter_size=FILTER_SIZE,
-    cwt_min_scale=CWT_MIN_SCALE,
-    cwt_max_scale=CWT_MAX_SCALE
+    weights_override=None
 ):
     """
-    Локализовать библиографический блок
-    и сразу рассчитать IoU с разметкой.
+    Основная функция локализации библиографического блока.
 
-    Удобно для:
+    Параметры
+    ---------
+    machine_filename:
+        MACHINE_*.json с результатами patternRecognition.py.
 
-        plot
-        evaluation
-        optimizer
+    patterns_filename:
+        patterns.json, содержащий паттерны и их веса.
+
+    Возвращает
+    ----------
+    dict:
+
+        {
+            "start": int | None,
+            "end": int | None,
+
+            "scores": numpy.ndarray,
+
+            "filtered_scores": numpy.ndarray,
+
+            "cwt": numpy.ndarray,
+
+            "widths": numpy.ndarray
+        }
+
+    ВАЖНО:
+        Функция НЕ читает annotation-файл
+        и НЕ вычисляет IoU.
+
+        Она отвечает только за локализацию.
     """
 
+    # --------------------------------------------------------
+    # Load input
+    # --------------------------------------------------------
+
+    machine_data = load_machine_file(
+        machine_filename
+    )
+
+    localization_data = loadLocalizationData(
+        machine_filename
+    )
+
+    patterns, weights = load_patterns(
+        patterns_filename
+    )
+
+    if weights_override is not None:
+        weights = np.asarray(
+            weights_override,
+            dtype=float
+        )
+
+    pattern_count = len(
+        machine_data["lines"][0]["counts"]
+    )
+    if len(weights) != pattern_count:
+        raise ValueError(
+            f"Количество весов ({len(weights)}) "
+            f"не совпадает с количеством паттернов "
+            f"({pattern_count})"
+        )        
+
+    # --------------------------------------------------------
+    # Return everything needed by other modules
+    # --------------------------------------------------------
+
+    return localizeBiblioBlockData(
+        localization_data,
+        weights
+    )
+
+
+# ============================================================
+# CLI
+# ============================================================
+
+def main():
+
+    parser = argparse.ArgumentParser(
+        description=(
+            "Локализация блока библиографических ссылок"
+        )
+    )
+
+    parser.add_argument(
+        "machine_file",
+        type=Path,
+        help="MACHINE_*.json"
+    )
+
+    parser.add_argument(
+        "--patterns",
+        required=True,
+        type=Path,
+        help="patterns.json"
+    )
+
+    args = parser.parse_args()
+
     result = localizeBiblioBlock(
-        machine_filename=machine_filename,
-        patterns_filename=patterns_filename,
-        filter_size=filter_size,
-        cwt_min_scale=cwt_min_scale,
-        cwt_max_scale=cwt_max_scale
+        args.machine_file,
+        args.patterns
     )
 
-    detected_bounds = None
-
-    if (
-        result["start"] is not None
-        and result["end"] is not None
-    ):
-        detected_bounds = [
-            result["start"],
-            result["end"]
-        ]
-
-    reference_bounds = load_reference_bounds(
-        annotation_filename,
-        text_filename
+    print(
+        f"Распознано: "
+        f"строки {result['start']}–{result['end']}"
     )
 
-    iou = calculate_iou(
-        reference_bounds,
-        detected_bounds
+    print(
+        f"Количество строк: "
+        f"{len(result['scores'])}"
     )
 
-    result["reference_bounds"] = (
-        reference_bounds
+    print(
+        f"Размер CWT: "
+        f"{result['cwt'].shape}"
     )
 
-    result["detected_bounds"] = (
-        detected_bounds
-    )
 
-    result["iou"] = iou
+if __name__ == "__main__":
+    main()
 
-    return result

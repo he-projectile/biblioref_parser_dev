@@ -3,208 +3,177 @@ import json
 import random
 from pathlib import Path
 
+import matplotlib.pyplot as plt
 import numpy as np
 from scipy.optimize import differential_evolution
 
+from biblioBlockLocalization import localizeBiblioBlockData, loadLocalizationData
 
-REFERENCE_LABEL = "БИБЛ. ССЫЛКА"
+
+# ============================================================
+# Configuration
+# ============================================================
+
 DEFAULT_SEED = 42
 
+WEIGHT_MIN = -10.0
+WEIGHT_MAX = 10.0
 
-# ============================================================
-# Работа с разметкой
-# ============================================================
+POP_SIZE = 1
+MAX_ITER = 1
+TOL = 1e-7
 
-def get_references(annotations):
-    """Рекурсивно находит все библиографические ссылки."""
-
-    result = []
-
-    def walk(nodes):
-        for node in nodes:
-            if not isinstance(node, dict):
-                continue
-
-            if node.get("label") == REFERENCE_LABEL:
-                result.append(node)
-
-            children = node.get("children", [])
-            if children:
-                walk(children)
-
-    walk(annotations)
-
-    return result
-
-
-def get_document_reference_lines(json_file, text_file):
-    """Возвращает номера строк, входящих в библиографический блок."""
-
-    with open(text_file, "r", encoding="utf-8") as f:
-        text = f.read()
-
-    with open(json_file, "r", encoding="utf-8") as f:
-        data = json.load(f)
-
-    references = get_references(
-        data.get("annotations", [])
-    )
-
-    if not references:
-        return set()
-
-    line_starts = [0]
-
-    for i, char in enumerate(text):
-        if char == "\n":
-            line_starts.append(i + 1)
-
-    def char_to_line(position):
-        left = 0
-        right = len(line_starts) - 1
-
-        while left <= right:
-            mid = (left + right) // 2
-
-            if line_starts[mid] <= position:
-                left = mid + 1
-            else:
-                right = mid - 1
-
-        return right + 1
-
-    target_lines = set()
-
-    for reference in references:
-        start = reference.get("start")
-        end = reference.get("end")
-
-        if start is None or end is None:
-            continue
-
-        start_line = char_to_line(start)
-        end_line = char_to_line(max(start, end - 1))
-
-        for line in range(start_line, end_line + 1):
-            target_lines.add(line)
-
-    return target_lines
+REFERENCE_LABEL = "БИБЛ. ССЫЛКА"
 
 
 # ============================================================
-# MACHINE JSON
+# JSON
 # ============================================================
 
-def load_machine_file(filename):
+def load_json(filename):
     with open(filename, "r", encoding="utf-8") as f:
         return json.load(f)
 
 
 # ============================================================
-# Score
+# Annotation processing
 # ============================================================
 
-def scores_from_counts(counts, weights):
-    return counts @ weights
-
-
-# ============================================================
-# Поиск библиографического блока
-# ============================================================
-
-def find_best_block(scores, threshold):
+def get_reference_annotations(annotation_data):
     """
-    Находит непрерывный блок строк, score которых >= threshold.
+    Recursively finds all annotations with label:
+        БИБЛ. ССЫЛКА
 
-    Если блоков несколько, выбирается блок с максимальной
-    суммой score.
+    Returns:
+        [(start_char, end_char), ...]
     """
 
-    best_start = None
-    best_end = None
-    best_value = -float("inf")
+    result = []
 
-    current_start = None
-    current_value = 0.0
+    def recursive_search(obj):
 
-    for i, score in enumerate(scores):
+        if isinstance(obj, dict):
 
-        if score >= threshold:
+            if (
+                obj.get("label") == REFERENCE_LABEL
+                and "start" in obj
+                and "end" in obj
+            ):
+                result.append(
+                    (
+                        int(obj["start"]),
+                        int(obj["end"])
+                    )
+                )
 
-            if current_start is None:
-                current_start = i
-                current_value = score
-            else:
-                current_value += score
+            for value in obj.values():
+                recursive_search(value)
 
-        else:
+        elif isinstance(obj, list):
 
-            if current_start is not None:
+            for item in obj:
+                recursive_search(item)
 
-                if current_value > best_value:
-                    best_value = current_value
-                    best_start = current_start
-                    best_end = i - 1
+    recursive_search(annotation_data)
 
-                current_start = None
-                current_value = 0.0
+    return result
 
-    if current_start is not None:
 
-        if current_value > best_value:
-            best_value = current_value
-            best_start = current_start
-            best_end = len(scores) - 1
+def char_to_line(text, char_pos):
+    """
+    Converts character position to 1-based line number.
+    """
 
-    if best_start is None:
+    return text[:char_pos].count("\n") + 1
+
+
+def get_reference_line_bounds(text, annotations):
+    """
+    Converts bibliography reference character spans
+    into one enclosing line interval.
+
+    Returns:
+        (start_line, end_line)
+
+    or:
+        None
+    """
+
+    if not annotations:
         return None
 
-    return best_start + 1, best_end + 1
+    starts = []
+    ends = []
+
+    for start, end in annotations:
+
+        start_line = char_to_line(
+            text,
+            start + 1
+        )
+
+        end_line = char_to_line(
+            text,
+            end + 1
+        )
+
+        starts.append(start_line)
+        ends.append(end_line)
+
+    return min(starts), max(ends)
 
 
 # ============================================================
 # IoU
 # ============================================================
 
-def interval_iou(predicted, target):
-    if predicted is None or not target:
+def calculate_iou(reference_bounds, detected_bounds):
+    """
+    Calculates IoU between two inclusive line intervals.
+    """
+
+    if reference_bounds is None or detected_bounds is None:
         return 0.0
 
-    pred_start, pred_end = predicted
-
-    target_start = min(target)
-    target_end = max(target)
+    ref_start, ref_end = reference_bounds
+    det_start, det_end = detected_bounds
 
     intersection_start = max(
-        pred_start,
-        target_start
+        ref_start,
+        det_start
     )
 
     intersection_end = min(
-        pred_end,
-        target_end
+        ref_end,
+        det_end
     )
 
-    if intersection_start <= intersection_end:
+    if intersection_end < intersection_start:
+        intersection = 0
+    else:
         intersection = (
             intersection_end
             - intersection_start
             + 1
         )
-    else:
-        intersection = 0
 
-    union_start = min(
-        pred_start,
-        target_start
+    reference_length = (
+        ref_end
+        - ref_start
+        + 1
     )
 
-    union_end = max(
-        pred_end,
-        target_end
+    detected_length = (
+        det_end
+        - det_start
+        + 1
     )
 
-    union = union_end - union_start + 1
+    union = (
+        reference_length
+        + detected_length
+        - intersection
+    )
 
     if union == 0:
         return 0.0
@@ -213,475 +182,126 @@ def interval_iou(predicted, target):
 
 
 # ============================================================
-# Margin
-# ============================================================
-
-def calculate_margin(document, scores):
-    """
-    Разница между средним score библиографических
-    и обычных строк.
-
-    Используется только как слабый дополнительный
-    критерий при оптимизации.
-    """
-
-    target = document["target"]
-
-    positive_scores = []
-    negative_scores = []
-
-    for i, score in enumerate(scores, start=1):
-
-        if i in target:
-            positive_scores.append(score)
-        else:
-            negative_scores.append(score)
-
-    if not positive_scores or not negative_scores:
-        return 0.0
-
-    return (
-        np.mean(positive_scores)
-        - np.mean(negative_scores)
-    )
-
-
-# ============================================================
 # Dataset
 # ============================================================
 
-def prepare_dataset(source_dir):
-
-    source_dir = Path(source_dir)
+def prepare_dataset(
+    texts_dir,
+    annotations_dir,
+    machine_dir
+):
+    texts_dir = Path(texts_dir)
+    annotations_dir = Path(annotations_dir)
+    machine_dir = Path(machine_dir)
 
     dataset = []
 
-    for text_file in sorted(source_dir.glob("*.txt")):
+    txt_files = sorted(
+        texts_dir.glob("*.txt")
+    )
 
-        if text_file.name.startswith("RECOGNISE_"):
-            continue
+    for text_file in txt_files:
 
-        if text_file.name.startswith("MACHINE_"):
-            continue
+        stem = text_file.stem
 
-        json_file = text_file.with_suffix(".json")
-
-        if not json_file.exists():
-            continue
+        annotation_file = (
+            annotations_dir / f"{stem}.json"
+        )
 
         machine_file = (
-            source_dir /
-            f"MACHINE_{text_file.stem}.json"
+            machine_dir / f"MACHINE_{stem}.json"
         )
+
+        if not annotation_file.exists():
+            print(
+                f"[WARNING] Нет annotation: "
+                f"{annotation_file}"
+            )
+            continue
 
         if not machine_file.exists():
             print(
-                f"WARNING: no machine file for "
-                f"{text_file.name}"
+                f"[WARNING] Нет MACHINE: "
+                f"{machine_file}"
             )
             continue
 
-        target_lines = get_document_reference_lines(
-            json_file,
-            text_file
+        with open(
+            text_file,
+            "r",
+            encoding="utf-8"
+        ) as f:
+            text = f.read()
+
+        annotation_data = load_json(
+            annotation_file
         )
 
-        if not target_lines:
+        annotations = get_reference_annotations(
+            annotation_data
+        )
+
+        target = get_reference_line_bounds(
+            text,
+            annotations
+        )
+
+        if target is None:
             print(
-                f"WARNING: no references in "
-                f"{text_file.name}"
+                f"[WARNING] Нет БИБЛ. ССЫЛКА: "
+                f"{text_file}"
             )
             continue
 
-        machine = load_machine_file(
+        localization_data = loadLocalizationData(
             machine_file
         )
 
-        counts = np.asarray(
-            [
-                line["counts"]
-                for line in machine["lines"]
-            ],
-            dtype=float
+        dataset.append(
+            {
+                "name": stem,
+                "text_file": str(text_file),
+                "annotation_file": str(annotation_file),
+                "machine_file": str(machine_file),
+                "localization_data": localization_data,
+                "target": target
+            }
         )
-
-        dataset.append({
-            "name": text_file.stem,
-            "counts": counts,
-            "target": target_lines
-        })
 
     return dataset
 
 
 # ============================================================
-# Оценка одного документа
+# Dataset split
 # ============================================================
 
-def evaluate_document(
-    document,
-    weights,
-    threshold
-):
-    scores = scores_from_counts(
-        document["counts"],
-        weights
-    )
-
-    predicted = find_best_block(
-        scores,
-        threshold
-    )
-
-    iou = interval_iou(
-        predicted,
-        document["target"]
-    )
-
-    margin = calculate_margin(
-        document,
-        scores
-    )
-
-    return iou, margin
-
-
-# ============================================================
-# Оценка dataset
-# ============================================================
-
-def evaluate_dataset(
+def split_dataset(
     dataset,
-    weights,
-    threshold
+    train_ratio=0.7,
+    validation_ratio=0.15,
+    seed=DEFAULT_SEED
 ):
-    if not dataset:
-        return 0.0, 0.0
+    """
+    Splits dataset into:
 
-    ious = []
-    margins = []
+        train
+        validation
+        test
+    """
 
-    for document in dataset:
+    dataset = list(dataset)
 
-        iou, margin = evaluate_document(
-            document,
-            weights,
-            threshold
-        )
-
-        ious.append(iou)
-        margins.append(margin)
-
-    return (
-        float(np.mean(ious)),
-        float(np.mean(margins))
-    )
-
-
-# ============================================================
-# Optimization
-# ============================================================
-
-def optimize(train, pattern_count):
-
-    dimension = pattern_count + 1
-
-    weight_bounds = [
-        (-10.0, 10.0)
-        for _ in range(pattern_count)
-    ]
-
-    threshold_bounds = (0.0, 50.0)
-
-    bounds = weight_bounds + [
-        threshold_bounds
-    ]
-
-    # Очень маленький вклад margin.
-    #
-    # IoU остаётся главным критерием.
-    #
-    # Margin нужен только для того, чтобы отличать
-    # решения с одинаковым IoU.
-
-    MARGIN_COEFFICIENT = 0.001
-
-    history = []
-
-    def objective(parameters):
-
-        weights = parameters[:-1]
-        threshold = parameters[-1]
-
-        mean_iou, mean_margin = evaluate_dataset(
-            train,
-            weights,
-            threshold
-        )
-
-        # Максимизируем:
-        #
-        # IoU + lambda * margin
-        #
-        # scipy минимизирует функцию,
-        # поэтому возвращаем отрицательное значение.
-
-        objective_value = (
-            mean_iou
-            + MARGIN_COEFFICIENT * mean_margin
-        )
-
-        return -objective_value
-
-    def callback(xk, convergence):
-
-        weights = xk[:-1]
-        threshold = xk[-1]
-
-        mean_iou, mean_margin = evaluate_dataset(
-            train,
-            weights,
-            threshold
-        )
-
-        history.append({
-            "iteration": len(history) + 1,
-            "best_iou": mean_iou,
-            "mean_margin": mean_margin,
-            "convergence": float(convergence),
-        })
-
-        print(
-            f"Iteration "
-            f"{len(history):3d} | "
-            f"IoU = {mean_iou:.10f} | "
-            f"Margin = {mean_margin:.6f}"
-        )
-
-        return False
-
-    print()
-    print("=" * 60)
-    print(" OPTIMIZATION")
-    print("=" * 60)
-    print()
-
-    print(f"Documents : {len(train)}")
-    print(f"Patterns  : {pattern_count}")
-    print(f"Parameters: {dimension}")
-    print()
-
-    result = differential_evolution(
-        objective,
-        bounds,
-        seed=DEFAULT_SEED,
-
-        # Размер популяции.
-        # 5 * 430 ≈ 2150 кандидатов.
-        popsize=5,
-
-        maxiter=100,
-
-        # Пока не делаем агрессивную остановку.
-        # Хотим увидеть реальную динамику.
-        tol=1e-7,
-
-        polish=False,
-
-        workers=1,
-
-        updating="immediate",
-
-        disp=False,
-
-        callback=callback
-    )
-
-    weights = result.x[:-1]
-    threshold = result.x[-1]
-
-    return (
-        weights,
-        threshold,
-        result,
-        history
-    )
-
-
-# ============================================================
-# Сохранение весов
-# ============================================================
-
-def save_weights(patterns_file, weights):
-
-    with open(patterns_file, "r", encoding="utf-8") as f:
-        data = json.load(f)
-
-    patterns = data.get("patterns", [])
-
-    if len(patterns) != len(weights):
-        raise RuntimeError(
-            "Number of patterns changed!"
-        )
-
-    for pattern, weight in zip(
-        patterns,
-        weights
-    ):
-        pattern["weight"] = float(weight)
-
-    data["patterns"] = patterns
-
-    with open(patterns_file, "w", encoding="utf-8") as f:
-        json.dump(
-            data,
-            f,
-            ensure_ascii=False,
-            indent=2
-        )
-
-
-# ============================================================
-# Сохранение истории
-# ============================================================
-
-def save_history(
-    source_dir,
-    history
-):
-
-    source_dir = Path(source_dir)
-
-    filename = (
-        source_dir /
-        "OPTIMIZATION_HISTORY.json"
-    )
-
-    data = {
-        "iterations": history
-    }
-
-    with open(filename, "w", encoding="utf-8") as f:
-        json.dump(
-            data,
-            f,
-            ensure_ascii=False,
-            indent=2
-        )
-
-    return filename
-
-
-# ============================================================
-# Dataset result
-# ============================================================
-
-def print_dataset_result(
-    name,
-    dataset,
-    weights,
-    threshold
-):
-
-    iou, margin = evaluate_dataset(
-        dataset,
-        weights,
-        threshold
-    )
-
-    print(
-        f"{name:12s}: "
-        f"IoU = {iou:.4f} "
-        f"({len(dataset)} documents)"
-    )
-
-    print(
-        f"{'':12s}  "
-        f"Margin = {margin:.6f}"
-    )
-
-    return iou
-
-
-# ============================================================
-# Main
-# ============================================================
-
-def main():
-
-    parser = argparse.ArgumentParser(
-        description="Optimize bibliographic pattern weights"
-    )
-
-    parser.add_argument(
-        "source",
-        help="Directory containing TXT and JSON dataset"
-    )
-
-    parser.add_argument(
-        "-p",
-        "--patterns",
-        required=True,
-        help="patterns.json"
-    )
-
-    parser.add_argument(
-        "--train",
-        type=float,
-        default=0.6
-    )
-
-    parser.add_argument(
-        "--validation",
-        type=float,
-        default=0.2
-    )
-
-    parser.add_argument(
-        "--seed",
-        type=int,
-        default=DEFAULT_SEED
-    )
-
-    args = parser.parse_args()
-
-    random.seed(args.seed)
-    np.random.seed(args.seed)
-
-    # --------------------------------------------------------
-    # Dataset
-    # --------------------------------------------------------
-
-    print()
-    print("=" * 60)
-    print(" LOADING DATASET")
-    print("=" * 60)
-    print()
-
-    dataset = prepare_dataset(
-        args.source
-    )
-
-    if len(dataset) < 3:
-        raise RuntimeError(
-            "Need at least 3 documents."
-        )
-
-    print(
-        f"Documents found: {len(dataset)}"
-    )
-
-    random.shuffle(dataset)
+    rng = random.Random(seed)
+    rng.shuffle(dataset)
 
     n = len(dataset)
 
     train_end = int(
-        n * args.train
+        n * train_ratio
     )
 
-    validation_end = (
-        train_end
-        + int(n * args.validation)
+    validation_end = train_end + int(
+        n * validation_ratio
     )
 
     train = dataset[:train_end]
@@ -694,42 +314,581 @@ def main():
         validation_end:
     ]
 
+    return train, validation, test
+
+
+# ============================================================
+# IoU evaluation
+# ============================================================
+
+def evaluate_weights(
+    dataset,
+    weights
+):
+    """
+    Runs the bibliography localizer on the whole dataset
+    using the supplied weight vector.
+
+    Returns:
+
+        mean_iou
+        ious
+    """
+
+    if len(dataset) == 0:
+        return 0.0, []
+
+    ious = []
+
+    for document in dataset:
+
+        try:
+
+            result = localizeBiblioBlockData(
+                document["localization_data"],
+                weights
+            )
+
+            if result["start"] is None:
+                detected_bounds = None
+            else:
+                detected_bounds = (
+                    result["start"],
+                    result["end"]
+                )
+
+            iou = calculate_iou(
+                document["target"],
+                detected_bounds
+            )
+
+            ious.append(iou)
+
+        except Exception as e:
+
+            print(
+                f"\n[WARNING] Localization failed "
+                f"for {document['name']}: {e}"
+            )
+
+            ious.append(0.0)
+
+    mean_iou = float(
+        np.mean(ious)
+    )
+
+    return mean_iou, ious
+
+
+# ============================================================
+# Optimizer
+# ============================================================
+
+def optimize(
+    train,
+    patterns_filename,
+    pattern_count,
+    seed=DEFAULT_SEED
+):
+    """
+    Optimizes pattern weights using
+    scipy.optimize.differential_evolution.
+
+    Objective:
+
+        error = -mean(IoU)
+
+    """
+
+    dimension = pattern_count
+
+    bounds = [
+        (WEIGHT_MIN, WEIGHT_MAX)
+        for _ in range(dimension)
+    ]
+
+    iteration_history = []
+
+    evaluation_counter = 0
+    best_iou = -1.0
+
+    def objective(weights):
+
+        nonlocal evaluation_counter
+        nonlocal best_iou
+
+        evaluation_counter += 1
+
+        mean_iou, _ = evaluate_weights(
+            train,
+            weights
+        )
+
+        if mean_iou > best_iou:
+
+            best_iou = mean_iou
+
+            print(
+                f"\nNEW BEST | "
+                f"evaluation {evaluation_counter} | "
+                f"mean IoU = {mean_iou:.6f}",
+                flush=True
+            )
+
+        elif evaluation_counter % 10 == 0:
+
+            print(
+                f"Evaluation {evaluation_counter} | "
+                f"mean IoU = {mean_iou:.6f} | "
+                f"best = {best_iou:.6f}",
+                flush=True
+            )
+
+        return -mean_iou
+
+    def callback(xk, convergence):
+
+        mean_iou, _ = evaluate_weights(
+            train,
+            xk
+        )
+
+        iteration_number = (
+            len(iteration_history) + 1
+        )
+
+        iteration_history.append(
+            mean_iou
+        )
+
+        print(
+            f"Iteration "
+            f"{iteration_number:3d}/{MAX_ITER} | "
+            f"mean IoU = {mean_iou:.6f}"
+        )
+
+        return False
+
     print()
-    print("Dataset split:")
+    print("=" * 70)
+    print("Starting differential evolution")
+    print("=" * 70)
+
     print(
-        f"  Train      : {len(train)}"
+        f"Patterns: {pattern_count}"
     )
+
     print(
-        f"  Validation : {len(validation)}"
+        f"Training documents: {len(train)}"
     )
+
     print(
-        f"  Test       : {len(test)}"
+        f"Weight bounds: "
+        f"[{WEIGHT_MIN}, {WEIGHT_MAX}]"
+    )
+
+    print(
+        f"Population size: {POP_SIZE}"
+    )
+
+    print(
+        f"Maximum iterations: {MAX_ITER}"
+    )
+
+    print(
+        f"Seed: {seed}"
+    )
+
+    print("=" * 70)
+    print()
+
+    result = differential_evolution(
+        objective,
+        bounds,
+        seed=seed,
+        popsize=POP_SIZE,
+        maxiter=MAX_ITER,
+        tol=TOL,
+        polish=False,
+        workers=1,
+        updating="immediate",
+        disp=False,
+        callback=callback
+    )
+
+    # In case scipy finishes before callback is called
+    # for the final solution.
+    final_iou, _ = evaluate_weights(
+        train,
+        result.x
+    )
+
+    if (
+        not iteration_history
+        or abs(
+            iteration_history[-1]
+            - final_iou
+        ) > 1e-12
+    ):
+        iteration_history.append(
+            final_iou
+        )
+
+    print()
+    print("=" * 70)
+    print("Optimization finished")
+    print("=" * 70)
+
+    print(
+        f"Best mean IoU: "
+        f"{final_iou:.6f}"
+    )
+
+    print(
+        f"Function evaluations: "
+        f"{result.nfev}"
+    )
+
+    print(
+        f"Iterations: "
+        f"{result.nit}"
+    )
+
+    print("=" * 70)
+    print()
+
+    return result, iteration_history
+
+
+# ============================================================
+# Save optimized patterns
+# ============================================================
+
+def save_optimized_patterns(
+    patterns_filename,
+    weights,
+    output_filename
+):
+    """
+    Saves patterns.json with optimized weights.
+    """
+
+    data = load_json(
+        patterns_filename
+    )
+
+    patterns = data["patterns"]
+
+    if len(patterns) != len(weights):
+
+        raise ValueError(
+            f"Pattern count "
+            f"({len(patterns)}) does not match "
+            f"weight count ({len(weights)})"
+        )
+
+    for pattern, weight in zip(
+        patterns,
+        weights
+    ):
+        pattern["weight"] = float(weight)
+
+    with open(
+        output_filename,
+        "w",
+        encoding="utf-8"
+    ) as f:
+
+        json.dump(
+            data,
+            f,
+            ensure_ascii=False,
+            indent=4
+        )
+
+
+# ============================================================
+# Save optimization history
+# ============================================================
+
+def save_history(
+    history,
+    output_filename
+):
+    data = {
+        "iterations": list(
+            range(
+                1,
+                len(history) + 1
+            )
+        ),
+        "mean_iou": [
+            float(x)
+            for x in history
+        ]
+    }
+
+    with open(
+        output_filename,
+        "w",
+        encoding="utf-8"
+    ) as f:
+
+        json.dump(
+            data,
+            f,
+            ensure_ascii=False,
+            indent=4
+        )
+
+
+# ============================================================
+# Plot IoU
+# ============================================================
+
+def plot_iou_history(
+    history,
+    output_filename
+):
+    """
+    Plots mean IoU versus optimization iteration.
+    """
+
+    if not history:
+        return
+
+    iterations = np.arange(
+        1,
+        len(history) + 1
+    )
+
+    fig, ax = plt.subplots(
+        figsize=(10, 6),
+        dpi=150
+    )
+
+    ax.plot(
+        iterations,
+        history,
+        linewidth=2.0,
+        marker="o",
+        markersize=3
+    )
+
+    ax.set_xlabel(
+        "Итерация"
+    )
+
+    ax.set_ylabel(
+        "Средний IoU"
+    )
+
+    ax.set_title(
+        "Изменение среднего IoU в процессе оптимизации"
+    )
+
+    ax.grid(
+        True,
+        alpha=0.3
+    )
+
+    ax.set_xlim(
+        1,
+        len(history)
+    )
+
+    ax.set_ylim(
+        0.0,
+        1.0
+    )
+
+    fig.tight_layout()
+
+    fig.savefig(
+        output_filename,
+        dpi=300
+    )
+
+    plt.close(fig)
+
+
+# ============================================================
+# Print weights
+# ============================================================
+
+def print_optimized_weights(
+    patterns_filename,
+    weights
+):
+    patterns_data = load_json(
+        patterns_filename
+    )
+
+    patterns = patterns_data["patterns"]
+
+    print()
+    print("=" * 70)
+    print("Optimized weights")
+    print("=" * 70)
+
+    for i, (pattern, weight) in enumerate(
+        zip(patterns, weights)
+    ):
+
+        print(
+            f"{i:3d} | "
+            f"{weight: .6f} | "
+            f"{pattern['name']}"
+        )
+
+    print("=" * 70)
+    print()
+
+
+# ============================================================
+# Main
+# ============================================================
+
+def main():
+
+    parser = argparse.ArgumentParser(
+        description=(
+            "Optimize bibliography localization "
+            "pattern weights using differential evolution."
+        )
+    )
+
+    parser.add_argument(
+        "--texts",
+        required=True
+    )
+
+    parser.add_argument(
+        "--annotations",
+        required=True
+    )
+
+    parser.add_argument(
+        "--machine",
+        required=True
+    )
+
+    parser.add_argument(
+        "--patterns",
+        required=True,
+        help="patterns.json"
+    )
+
+    parser.add_argument(
+        "--output-patterns",
+        default="patterns_optimized.json",
+        help=(
+            "Output file for optimized patterns "
+            "(default: patterns_optimized.json)"
+        )
+    )
+
+    parser.add_argument(
+        "--plot",
+        default="optimization_iou.png",
+        help=(
+            "Output IoU plot "
+            "(default: optimization_iou.png)"
+        )
+    )
+
+    parser.add_argument(
+        "--history",
+        default="optimization_history.json",
+        help=(
+            "Output optimization history "
+            "(default: optimization_history.json)"
+        )
+    )
+
+    parser.add_argument(
+        "--seed",
+        type=int,
+        default=DEFAULT_SEED,
+        help=(
+            f"Random seed "
+            f"(default: {DEFAULT_SEED})"
+        )
+    )
+
+    args = parser.parse_args()
+
+    # --------------------------------------------------------
+    # Random seeds
+    # --------------------------------------------------------
+
+    random.seed(
+        args.seed
+    )
+
+    np.random.seed(
+        args.seed
+    )
+
+    # --------------------------------------------------------
+    # Dataset
+    # --------------------------------------------------------
+
+    print(
+        "Preparing dataset..."
+    )
+
+    dataset = prepare_dataset(
+        args.texts,
+        args.annotations,
+        args.machine
+    )
+
+    if not dataset:
+
+        raise RuntimeError(
+            "Dataset is empty."
+        )
+
+    print(
+        f"Found {len(dataset)} documents."
+    )
+
+    # --------------------------------------------------------
+    # Split
+    # --------------------------------------------------------
+
+    train, validation, test = split_dataset(
+        dataset,
+        seed=args.seed
+    )
+
+    print(
+        f"Train:      {len(train)}"
+    )
+
+    print(
+        f"Validation: {len(validation)}"
+    )
+
+    print(
+        f"Test:       {len(test)}"
     )
 
     # --------------------------------------------------------
     # Patterns
     # --------------------------------------------------------
 
-    with open(
-        args.patterns,
-        "r",
-        encoding="utf-8"
-    ) as f:
-        pattern_data = json.load(f)
-
-    patterns = pattern_data.get(
-        "patterns",
-        []
+    patterns_data = load_json(
+        args.patterns
     )
 
-    if not patterns:
-        raise RuntimeError(
-            "patterns.json contains no patterns."
-        )
+    patterns = patterns_data["patterns"]
 
-    pattern_count = len(patterns)
+    pattern_count = len(
+        patterns
+    )
 
-    print()
     print(
         f"Patterns: {pattern_count}"
     )
@@ -738,98 +897,112 @@ def main():
     # Optimization
     # --------------------------------------------------------
 
-    (
-        weights,
-        threshold,
-        result,
-        history
-    ) = optimize(
-        train,
-        pattern_count
+    result, history = optimize(
+        train=train,
+        patterns_filename=args.patterns,
+        pattern_count=pattern_count,
+        seed=args.seed
+    )
+
+    optimized_weights = np.asarray(
+        result.x,
+        dtype=float
     )
 
     # --------------------------------------------------------
-    # Results
+    # Print optimized weights
     # --------------------------------------------------------
 
-    print()
-    print("=" * 60)
-    print(" RESULTS")
-    print("=" * 60)
-    print()
-
-    print(
-        f"Threshold: {threshold:.10f}"
-    )
-
-    print()
-
-    print_dataset_result(
-        "TRAIN",
-        train,
-        weights,
-        threshold
-    )
-
-    print_dataset_result(
-        "VALIDATION",
-        validation,
-        weights,
-        threshold
-    )
-
-    print_dataset_result(
-        "TEST",
-        test,
-        weights,
-        threshold
-    )
-
-    # --------------------------------------------------------
-    # Weights
-    # --------------------------------------------------------
-
-    print()
-    print("Weights:")
-
-    for i, (pattern, weight) in enumerate(
-        zip(patterns, weights)
-    ):
-
-        print(
-            f"  {i:3d} "
-            f"{pattern.get('name', ''):35s} "
-            f"{weight:12.6f}"
-        )
-
-    # --------------------------------------------------------
-    # Save
-    # --------------------------------------------------------
-
-    save_weights(
+    print_optimized_weights(
         args.patterns,
-        weights
+        optimized_weights
     )
 
-    history_file = save_history(
-        args.source,
-        history
+    # --------------------------------------------------------
+    # Evaluation
+    # --------------------------------------------------------
+
+    print(
+        "Evaluating optimized weights..."
+    )
+
+    train_iou, _ = evaluate_weights(
+        train,
+        optimized_weights
+    )
+
+    validation_iou, _ = evaluate_weights(
+        validation,
+        optimized_weights
+    )
+
+    test_iou, _ = evaluate_weights(
+        test,
+        optimized_weights
     )
 
     print()
-    print("=" * 60)
+    print("=" * 70)
+    print("Final evaluation")
+    print("=" * 70)
+
     print(
-        f"Weights written to: "
-        f"{args.patterns}"
+        f"Train IoU:      {train_iou:.6f}"
     )
 
     print(
-        f"History written to: "
-        f"{history_file}"
+        f"Validation IoU: {validation_iou:.6f}"
     )
 
-    print("=" * 60)
+    print(
+        f"Test IoU:       {test_iou:.6f}"
+    )
+
+    print("=" * 70)
     print()
+
+    # --------------------------------------------------------
+    # Save optimized patterns
+    # --------------------------------------------------------
+
+    save_optimized_patterns(
+        args.patterns,
+        optimized_weights,
+        args.output_patterns
+    )
+
+    print(
+        f"Optimized patterns saved to: "
+        f"{args.output_patterns}"
+    )
+
+    # --------------------------------------------------------
+    # Save history
+    # --------------------------------------------------------
+
+    save_history(
+        history,
+        args.history
+    )
+
+    print(
+        f"Optimization history saved to: "
+        f"{args.history}"
+    )
+
+    # --------------------------------------------------------
+    # Plot
+    # --------------------------------------------------------
+
+    plot_iou_history(
+        history,
+        args.plot
+    )
+
+    print(
+        f"IoU plot saved to: "
+        f"{args.plot}"
+    )
 
 
 if __name__ == "__main__":
