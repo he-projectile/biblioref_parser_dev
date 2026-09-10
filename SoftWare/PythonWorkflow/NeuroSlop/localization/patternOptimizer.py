@@ -14,13 +14,13 @@ from biblioBlockLocalization import localizeBiblioBlockData, loadLocalizationDat
 # Configuration
 # ============================================================
 
-DEFAULT_SEED = 42
+DEFAULT_SEED = 10
 
 WEIGHT_MIN = -10.0
 WEIGHT_MAX = 10.0
 
-POP_SIZE = 1
-MAX_ITER = 1
+POP_SIZE = 5
+MAX_ITER = 10
 TOL = 1e-7
 
 REFERENCE_LABEL = "БИБЛ. ССЫЛКА"

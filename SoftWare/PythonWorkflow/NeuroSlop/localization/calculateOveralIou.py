@@ -4,6 +4,8 @@ from pathlib import Path
 
 import numpy as np
 import matplotlib.pyplot as plt
+import matplotlib.ticker as ticker
+
 
 from biblioBlockLocalization import localizeBiblioBlock
 
@@ -257,6 +259,9 @@ def make_histogram(results, output_filename):
         va="top"
     )
 
+    ax = plt.gca()  # Получаем текущую ось
+    ax.yaxis.set_major_locator(ticker.MaxNLocator(integer=True))  # Делаем тики целыми
+
     plt.tight_layout()
 
     plt.savefig(
@@ -265,7 +270,6 @@ def make_histogram(results, output_filename):
     )
 
     plt.close()
-
 
 def main():
 

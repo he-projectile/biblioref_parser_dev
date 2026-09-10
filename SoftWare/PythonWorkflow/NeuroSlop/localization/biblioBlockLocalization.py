@@ -16,7 +16,7 @@ CWT_MAX_SCALE = 75
 
 # Коэффициент вычитания среднего перед CWT.
 # Соответствует старой реализации plotRecognition.py.
-CWT_MEAN_MULTIPLIER = 2.5
+CWT_MEAN_MULTIPLIER = 3
 
 LENGTH_SIGMA = 100
 LENGTH_OFFSET = 250
@@ -268,6 +268,46 @@ def nonlinear_median_filter(signal, window_size):
     return filtered
 
 
+def create_mexican_hat_kernel(width):
+    """
+    Дискретное Mexican-Hat-подобное ядро.
+
+    width — длина положительной центральной части.
+
+    Для чётного width:
+        [-1 ... -1] [1 ... 1] [-1 ... -1]
+
+    Для нечётного width:
+        то же ядро, после чего из него
+        вычитается среднее значение.
+    """
+
+    width = int(width)
+
+    if width < 1:
+        raise ValueError("width должен быть >= 1")
+
+    side = width // 2
+
+    # Центральная положительная часть
+    positive = np.ones(width, dtype=float)
+
+    # Отрицательные боковые части
+    negative = -np.ones(side, dtype=float)
+
+    kernel = np.concatenate([
+        negative,
+        positive,
+        negative
+    ])
+
+    # Для нечётной длины центральной части
+    # компенсируем DC-составляющую.
+    if width % 2 == 1:
+        kernel = kernel - np.mean(kernel)
+
+    return kernel
+
 # ============================================================
 # CWT
 # ============================================================
@@ -343,13 +383,13 @@ def calculate_cwt(
             dtype=float
         )
 
-        pad_left = width // 2
+#        kernel = create_mexican_hat_kernel(width)
 
-        pad_right = (
-            width
-            - 1
-            - pad_left
-        )
+        kernel_length = len(kernel)
+
+        pad_left = kernel_length // 2
+        pad_right = kernel_length - 1 - pad_left
+
 
         padded_signal = np.pad(
             signal,
@@ -480,15 +520,6 @@ def localizeBiblioBlockData(
     )
 
     # --------------------------------------------------------
-    # Median filter
-    # --------------------------------------------------------
-
-    filtered_scores = nonlinear_median_filter(
-        scores,
-        FILTER_SIZE
-    )
-
-    # --------------------------------------------------------
     # Length penalty
     # --------------------------------------------------------
 
@@ -497,7 +528,16 @@ def localizeBiblioBlockData(
         / LENGTH_SIGMA ** 2
     )
 
-    filtered_scores = filtered_scores * length_penalty   
+    scores = scores * length_penalty   
+
+    # --------------------------------------------------------
+    # Median filter
+    # --------------------------------------------------------
+
+    filtered_scores = nonlinear_median_filter(
+        scores,
+        FILTER_SIZE
+    )
 
     # --------------------------------------------------------
     # CWT
