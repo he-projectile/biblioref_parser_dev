@@ -1,6 +1,6 @@
 # Пути к файлам и папкам
 $SCRIPT_PATH = ".\NeuroSlop\localization\plotBiblioBlockLocalization.py"
-$PATTERNS_PATH = ".\NeuroSlop\localization\patterns_optimized.json"
+$PATTERNS_PATH = ".\NeuroSlop\localization\patterns_optimized_6.json"
 $OUTPUT_DIR = ".\NeuroSlop\localization\localizationProducts"
 $INPUT_DIR = ".\DataSource"
 
@@ -23,7 +23,7 @@ foreach ($file in $files) {
         Write-Host "Plotting for: $($file.Name)" -ForegroundColor Cyan
         
         # Запуск Python скрипта для построения графика (передаем оба файла)
-        python $SCRIPT_PATH $machineFilePath $file.FullName --patterns $PATTERNS_PATH --output-dir $OUTPUT_DIR
+        python $SCRIPT_PATH $machineFilePath --annotation-file $file.FullName --patterns $PATTERNS_PATH --output-dir $OUTPUT_DIR
     } else {
         Write-Host "Skipping $($file.Name): Matching MACHINE_ file not found in output directory." -ForegroundColor Yellow
     }

@@ -19,9 +19,12 @@ DEFAULT_SEED = 10
 WEIGHT_MIN = -10.0
 WEIGHT_MAX = 10.0
 
-POP_SIZE = 5
-MAX_ITER = 10
+POP_SIZE = 15
+MAX_ITER = 30
 TOL = 1e-7
+
+TRAIN_RATIO = 0.8
+VALIDATION_RATIO = 0
 
 REFERENCE_LABEL = "БИБЛ. ССЫЛКА"
 
@@ -277,8 +280,8 @@ def prepare_dataset(
 
 def split_dataset(
     dataset,
-    train_ratio=0.7,
-    validation_ratio=0.15,
+    train_ratio=TRAIN_RATIO,
+    validation_ratio=VALIDATION_RATIO,
     seed=DEFAULT_SEED
 ):
     """
@@ -386,7 +389,6 @@ def evaluate_weights(
 
 def optimize(
     train,
-    patterns_filename,
     pattern_count,
     seed=DEFAULT_SEED
 ):
@@ -612,20 +614,99 @@ def save_optimized_patterns(
 # ============================================================
 
 def save_history(
-    history,
-    output_filename
+    iteration_history,
+    output_filename,
+    train,
+    validation,
+    test,
+    args,
+    pattern_count,
+    result,
+    train_mean_iou,
+    validation_mean_iou,
+    test_mean_iou,
 ):
     data = {
+        "configuration": {
+            "seed": args.seed,
+            "weight_min": WEIGHT_MIN,
+            "weight_max": WEIGHT_MAX,
+            "population_size": POP_SIZE,
+            "max_iterations": MAX_ITER,
+            "tolerance": TOL,
+
+            "train_ratio": TRAIN_RATIO,
+            "validation_ratio": VALIDATION_RATIO,
+            "test_ratio": 1-TRAIN_RATIO-VALIDATION_RATIO,
+
+            "pattern_count": pattern_count,
+
+            "iterations_completed": int(result.nit),
+            "function_evaluations": int(result.nfev),
+        },
+
+        "input": {
+            "texts": str(args.texts),
+            "annotations": str(args.annotations),
+            "machine": str(args.machine),
+            "patterns": str(args.patterns),
+        },
+
+        "dataset": {
+            "total": (
+                len(train)
+                + len(validation)
+                + len(test)
+            ),
+
+            "train": {
+                "count": len(train),
+                "documents": [
+                    item["name"]
+                    for item in train
+                ],
+            },
+
+            "validation": {
+                "count": len(validation),
+                "documents": [
+                    item["name"]
+                    for item in validation
+                ],
+            },
+
+            "test": {
+                "count": len(test),
+                "documents": [
+                    item["name"]
+                    for item in test
+                ],
+            },
+        },
+
         "iterations": list(
             range(
                 1,
-                len(history) + 1
+                len(iteration_history) + 1
             )
         ),
+
         "mean_iou": [
-            float(x)
-            for x in history
-        ]
+            float(value)
+            for value in iteration_history
+        ],
+
+        "final_evaluation": {
+            "train_mean_iou": float(
+                train_mean_iou
+            ),
+            "validation_mean_iou": float(
+                validation_mean_iou
+            ),
+            "test_mean_iou": float(
+                test_mean_iou
+            ),
+        },
     }
 
     with open(
@@ -638,9 +719,8 @@ def save_history(
             data,
             f,
             ensure_ascii=False,
-            indent=4
+            indent=2
         )
-
 
 # ============================================================
 # Plot IoU
@@ -711,6 +791,88 @@ def plot_iou_history(
 
     plt.close(fig)
 
+
+def plot_iou_histogram(
+    train_ious,
+    validation_ious,
+    test_ious,
+    output_filename,
+):
+    bins = np.linspace(0.0, 1.0, 21)
+
+    datasets = [
+        ("Train", train_ious, "#1f77b4"),  # Синий
+        ("Validation", validation_ious, "#ff7f0e"),  # Оранжевый
+        ("Test", test_ious, "#2ca02c"),  # Зеленый
+    ]
+
+    # Фильтруем только непустые датасеты
+    active_datasets = [d for d in datasets if len(d[1]) > 0]
+    num_plots = len(active_datasets)
+
+    if num_plots == 0:
+        return
+
+    # Создаем вертикальную сетку графиков со следующими параметрами:
+    # sharex=True — общая ось X для удобного сравнения
+    # sharey=True — (опционально) одинаковый масштаб по вертикали
+    fig, axes = plt.subplots(
+        num_plots, 1, figsize=(10, 3 * num_plots), sharex=True, sharey=True
+    )
+
+    # Если график всего один, Matplotlib возвращает объект осей не в списке
+    if num_plots == 1:
+        axes = [axes]
+
+    for ax, (name, ious, color) in zip(axes, active_datasets):
+        weights = np.ones(len(ious), dtype=float) / len(ious)
+
+        mean_val = np.mean(ious)
+        median_val = np.median(ious)        
+
+        n, bins_out, patches = ax.hist(
+            ious,
+            bins=bins,
+            weights=weights,
+            color=color,
+            alpha=0.75,
+            edgecolor="black",  # Темная граница делает столбики аккуратными
+            linewidth=0.5,
+        )
+
+        lineMean = ax.axvline(mean_val, color='red', linestyle='--', linewidth=1.5, alpha=0.8)
+        lineMedian  = ax.axvline(median_val, color='darkgreen', linestyle=':', linewidth=2, alpha=0.8)
+
+
+        # Настройки для каждого подграфика
+        ax.set_ylabel("Доля документов")
+        ax.set_xlim(0.0, 1.0)
+        ax.grid(True, linestyle="--", alpha=0.5)
+
+        legend_text = [
+            f"{name} (n={len(ious)})\n",
+            f"Mean: {mean_val:.3f}\n",
+            f"Median: {median_val:.3f}"
+        ]
+
+        ax.legend(
+            handles=[patches, lineMean, lineMedian],  # Передаем именно визуальный контейнер гистограммы
+            labels=legend_text,   # Передаем ваш текст
+            loc="upper left", 
+            frameon=True
+        )
+
+    # Общая подпись для оси X в самом низу
+    axes[-1].set_xlabel("IoU")
+
+    # Общий заголовок для всей картинки
+    plt.suptitle(
+        "Распределение IoU по поддатасетам", fontsize=14, y=0.98
+    )
+
+    plt.tight_layout()
+    plt.savefig(output_filename, dpi=150, bbox_inches="tight")
+    plt.close()
 
 # ============================================================
 # Print weights
@@ -816,6 +978,12 @@ def main():
         )
     )
 
+    parser.add_argument(
+        "--iou-histogram",
+        default=None,
+        help="Path to IoU histogram image. If omitted, histogram is not created.",
+    )
+
     args = parser.parse_args()
 
     # --------------------------------------------------------
@@ -899,7 +1067,6 @@ def main():
 
     result, history = optimize(
         train=train,
-        patterns_filename=args.patterns,
         pattern_count=pattern_count,
         seed=args.seed
     )
@@ -926,19 +1093,19 @@ def main():
         "Evaluating optimized weights..."
     )
 
-    train_iou, _ = evaluate_weights(
+    train_mean_iou, train_ious = evaluate_weights(
         train,
-        optimized_weights
+        optimized_weights,
     )
 
-    validation_iou, _ = evaluate_weights(
+    validation_mean_iou, validation_ious = evaluate_weights(
         validation,
-        optimized_weights
+        optimized_weights,
     )
 
-    test_iou, _ = evaluate_weights(
+    test_mean_iou, test_ious = evaluate_weights(
         test,
-        optimized_weights
+        optimized_weights,
     )
 
     print()
@@ -947,15 +1114,15 @@ def main():
     print("=" * 70)
 
     print(
-        f"Train IoU:      {train_iou:.6f}"
+        f"Train IoU:      {train_mean_iou:.6f}"
     )
 
     print(
-        f"Validation IoU: {validation_iou:.6f}"
+        f"Validation IoU: {validation_mean_iou:.6f}"
     )
 
     print(
-        f"Test IoU:       {test_iou:.6f}"
+        f"Test IoU:       {test_mean_iou:.6f}"
     )
 
     print("=" * 70)
@@ -981,14 +1148,23 @@ def main():
     # --------------------------------------------------------
 
     save_history(
-        history,
-        args.history
+        iteration_history=history,
+        output_filename=args.history,
+        train=train,
+        validation=validation,
+        test=test,
+        args=args,
+        pattern_count=pattern_count,
+        result=result,
+        train_mean_iou=train_mean_iou,
+        validation_mean_iou=validation_mean_iou,
+        test_mean_iou=test_mean_iou,
     )
 
     print(
         f"Optimization history saved to: "
         f"{args.history}"
-    )
+    )    
 
     # --------------------------------------------------------
     # Plot
@@ -1004,6 +1180,13 @@ def main():
         f"{args.plot}"
     )
 
+    if args.iou_histogram:
+        plot_iou_histogram(
+            train_ious,
+            validation_ious,
+            test_ious,
+            args.iou_histogram,
+        )
 
 if __name__ == "__main__":
     main()

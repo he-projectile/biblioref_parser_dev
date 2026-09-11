@@ -18,7 +18,7 @@ CWT_MAX_SCALE = 75
 # Соответствует старой реализации plotRecognition.py.
 CWT_MEAN_MULTIPLIER = 3
 
-LENGTH_SIGMA = 100
+LENGTH_SIGMA = 150
 LENGTH_OFFSET = 250
 
 
@@ -267,47 +267,6 @@ def nonlinear_median_filter(signal, window_size):
 
     return filtered
 
-
-def create_mexican_hat_kernel(width):
-    """
-    Дискретное Mexican-Hat-подобное ядро.
-
-    width — длина положительной центральной части.
-
-    Для чётного width:
-        [-1 ... -1] [1 ... 1] [-1 ... -1]
-
-    Для нечётного width:
-        то же ядро, после чего из него
-        вычитается среднее значение.
-    """
-
-    width = int(width)
-
-    if width < 1:
-        raise ValueError("width должен быть >= 1")
-
-    side = width // 2
-
-    # Центральная положительная часть
-    positive = np.ones(width, dtype=float)
-
-    # Отрицательные боковые части
-    negative = -np.ones(side, dtype=float)
-
-    kernel = np.concatenate([
-        negative,
-        positive,
-        negative
-    ])
-
-    # Для нечётной длины центральной части
-    # компенсируем DC-составляющую.
-    if width % 2 == 1:
-        kernel = kernel - np.mean(kernel)
-
-    return kernel
-
 # ============================================================
 # CWT
 # ============================================================
@@ -324,14 +283,18 @@ def calculate_cwt(
 
         cwt
             numpy.ndarray размера:
-
             [количество масштабов, количество строк]
 
         widths
             numpy.ndarray с реальными ширинами окон.
 
-    Используется та же реализация, что была
-    в исходном plotRecognition.py.
+        mean_threshold
+            значение:
+
+                np.mean(padded_signal)
+                * CWT_MEAN_MULTIPLIER
+
+            для каждого масштаба.
     """
 
     signal = np.asarray(
@@ -342,7 +305,8 @@ def calculate_cwt(
     if len(signal) == 0:
         return (
             np.empty((0, 0)),
-            np.array([], dtype=int)
+            np.array([], dtype=int),
+            np.array([], dtype=float)
         )
 
     min_width = int(min_width)
@@ -359,7 +323,8 @@ def calculate_cwt(
     if min_width > max_width:
         return (
             np.empty((0, len(signal))),
-            np.array([], dtype=int)
+            np.array([], dtype=int),
+            np.array([], dtype=float)
         )
 
     widths = np.arange(
@@ -375,21 +340,26 @@ def calculate_cwt(
         dtype=float
     )
 
+    mean_thresholds = np.zeros(
+        len(widths),
+        dtype=float
+    )
+
     for i, width in enumerate(widths):
 
-        # Прямоугольное окно
         kernel = np.ones(
             width,
             dtype=float
         )
 
-#        kernel = create_mexican_hat_kernel(width)
-
         kernel_length = len(kernel)
 
         pad_left = kernel_length // 2
-        pad_right = kernel_length - 1 - pad_left
-
+        pad_right = (
+            kernel_length
+            - 1
+            - pad_left
+        )
 
         padded_signal = np.pad(
             signal,
@@ -401,10 +371,16 @@ def calculate_cwt(
             constant_values=0
         )
 
+        mean_threshold = (
+            np.mean(padded_signal)
+            * CWT_MEAN_MULTIPLIER
+        )
+
+        mean_thresholds[i] = mean_threshold
+
         padded_signal = (
             padded_signal
-            - np.mean(padded_signal)
-            * CWT_MEAN_MULTIPLIER
+            - mean_threshold
         )
 
         values = np.convolve(
@@ -417,7 +393,8 @@ def calculate_cwt(
 
     return (
         result,
-        widths
+        widths,
+        mean_thresholds
     )
 
 
@@ -427,7 +404,8 @@ def calculate_cwt(
 
 def detect_biblio_block(
     cwt,
-    widths
+    widths,
+    mean_thresholds
 ):
     """
     Находит положение максимума CWT и преобразует его
@@ -460,6 +438,10 @@ def detect_biblio_block(
         width_index
     ]
 
+    mean_threshold = mean_thresholds[
+        width_index
+    ]    
+
     # Преобразование индекса массива
     # в номер строки.
     start = max(
@@ -478,7 +460,8 @@ def detect_biblio_block(
 
     return (
         int(start),
-        int(end)
+        int(end),
+        float(mean_threshold)
     )
 
 
@@ -528,22 +511,22 @@ def localizeBiblioBlockData(
         / LENGTH_SIGMA ** 2
     )
 
-    scores = scores * length_penalty   
+    filtered_scores = scores * length_penalty   
 
     # --------------------------------------------------------
     # Median filter
     # --------------------------------------------------------
 
-    filtered_scores = nonlinear_median_filter(
-        scores,
-        FILTER_SIZE
-    )
+#    filtered_scores = nonlinear_median_filter(
+#        scores,
+#        FILTER_SIZE
+#    )
 
     # --------------------------------------------------------
     # CWT
     # --------------------------------------------------------
 
-    cwt, widths = calculate_cwt(
+    cwt, widths, mean_thresholds  = calculate_cwt(
         filtered_scores,
         CWT_MIN_SCALE,
         CWT_MAX_SCALE
@@ -553,9 +536,10 @@ def localizeBiblioBlockData(
     # Detection
     # --------------------------------------------------------
 
-    start, end = detect_biblio_block(
+    start, end, mean_threshold = detect_biblio_block(
         cwt,
-        widths
+        widths,
+        mean_thresholds
     )
 
     return {
@@ -565,6 +549,7 @@ def localizeBiblioBlockData(
         "filtered_scores": filtered_scores,
         "cwt": cwt,
         "widths": widths,
+        "mean_threshold": mean_threshold,
     }
 
 def localizeBiblioBlock(

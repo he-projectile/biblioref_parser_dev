@@ -1,0 +1,97 @@
+{
+  "configuration": {
+    "seed": 10,
+    "weight_min": -10.0,
+    "weight_max": 10.0,
+    "population_size": 1,
+    "max_iterations": 1,
+    "tolerance": 1e-07,
+    "train_ratio": 0.85,
+    "validation_ratio": 0,
+    "test_ratio": 0.15000000000000002,
+    "pattern_count": 429,
+    "iterations_completed": 1,
+    "function_evaluations": 858
+  },
+  "input": {
+    "texts": ".\\DataSource",
+    "annotations": ".\\DataSource",
+    "machine": ".\\NeuroSlop\\localization\\localizationProducts",
+    "patterns": ".\\NeuroSlop\\localization\\patterns.json"
+  },
+  "dataset": {
+    "total": 47,
+    "train": {
+      "count": 39,
+      "documents": [
+        "analiticheskaya-sistema-kompleksnoi-otsenki-ekologicheskoi-bezopasnosti-promyshlennykh-predp",
+        "algoritmy-metody-i-programmnye-sredstva-intellektualnoi-podderzhki-prinyatiya-upravlencheski",
+        "avtomatizirovannaya-sistema-distantsionnogo-obucheniya-voennogo-vuza",
+        "analiz-i-sintez-integrirovannykh-informatsionno-upravlyayushchikh-sistem-raspredelennogo-tip",
+        "avtomatizirovannoe-upravlenie-proektami-na-osnove-protsessnoi-modeli-na-primere-priborostroi",
+        "avtomatizirovannaya-sistema-restavratsii-izobrazhenii-arkhivnykh-fotodokumentov",
+        "analiz-i-sintez-mekhanizmov-sbalansirovannogo-razvitiya-banka",
+        "avtomatizirovannaya-sistema-podderzhki-prinyatiya-reshenii-v-oblasti-torgovli-kreditnymi-der",
+        "adaptivnye-ekonomicheskie-mekhanizmy-upravleniya-vuzom-v-usloviyakh-rynka",
+        "analiticheskaya-funktsiya-upravleniya-v-proizvodstvennykh-sistemakh-na-primere-predpriyatii-",
+        "analiticheskoe-planirovanie-v-strukture-proizvodstvennogo-menedzhmenta",
+        "adaptivnoe-upravlenie-kachestvom-predmetnoi-podgotovki-v-tekhnicheskom-vuze-na-osnove-kompet",
+        "analiz-i-otsenka-riskov-pozharnoi-opasnosti-promyshlennykh-obektov",
+        "avtomatizirovannaya-sistema-upravleniya-operatsionnymi-riskami-bankovskogo-platezhnogo-elekt",
+        "avtomatizirovannaya-obuchayushchaya-sistema-s-rasshirennymi-funktsiyami-testovogo-kontrolya-",
+        "avtomatizirovannaya-sistema-monitoringa-sotsialno-ekonomicheskoi-sfery-regiona-na-osnove-tek",
+        "avtomatizatsiya-upravlencheskogo-ucheta-vnebyudzhetnoi-obrazovatelnoi-deyatelnosti-podrazdel",
+        "adaptivnoe-upravlenie-v-sisteme-nepreryvnogo-obrazovaniya-na-osnove-kompetentnostnogo-podkho",
+        "algoritmy-i-metodiki-analiza-informatsii-v-sisteme-upravleniya-kachestvom-obrazovaniya",
+        "adaptivnye-mekhanizmy-otsenki-i-ranzhirovaniya-v-sisteme-upravleniya-predpriyatiem",
+        "aktivnoe-upravlenie-kollektivnymi-investitsiyami-na-osnove-otsenok-robastnosti",
+        "analiz-otsenka-i-optimizatsiya-sistemy-menedzhmenta-kachestva-avtoservisnykh-regionalnykh-pr",
+        "algoritmizatsiya-postroeniya-soglasovannykh-raspisanii-funktsionirovaniya-mnogoagentnykh-sis",
+        "antikrizisnoe-upravlenie-predpriyatiyami-regionalnyi-aspekt",
+        "analiticheskaya-sistema-otsenki-professionalnoi-prigodnosti-vypusknikov-vuza-na-osnove-gibri",
+        "avtomatizirovannaya-informatsionnaya-sistema-tekhniko-ekonomicheskogo-ucheta-lineinykh-sooru",
+        "avtomatizirovannaya-sistema-podderzhki-prinimaemykh-ekonomicheskikh-reshenii-pri-razrabotke-",
+        "adaptivnaya-sistema-menedzhmenta-kachestva-predpriyatiya-dorozhno-stroitelnoi-otrasli",
+        "algoritmicheskaya-model-upravleniya-biznes-protsessom-ekspluatatsii-tekhnicheskikh-sredstv-r",
+        "analiz-i-ratsionalizatsiya-informatsionnykh-protsessov-v-sisteme-upravleniya-marketingom-na-",
+        "adaptivnye-mekhanizmy-funktsionirovaniya-sistemy-kachestva-v-organizatsii",
+        "adaptivnoe-upravlenie-kadrovoi-politikoi-predpriyatiya",
+        "analiticheskoe-planirovanie-kak-osnova-informatsionnykh-tekhnologii-proizvodstvennogo-menedz",
+        "avtomatizirovannaya-sistema-formirovaniya-uchebnykh-planov-s-protseduroi-vychisleniya-kredit",
+        "avtomatizirovannaya-informatsionnaya-sistema-podderzhki-operativnogo-kategorirovaniya-passaz",
+        "avtomatizirovannoe-upravlenie-protsessom-formirovaniya-individualizirovannykh-traektorii-obu",
+        "algoritm-upravleniya-informatsionnymi-resursami-regionalnogo-muzeya-i-metody-restavratsii-iz",
+        "analiticheskaya-informatsionnaya-sistema-otsenki-innovatsionnogo-potentsiala-tekhnicheskogo-",
+        "avtomatizatsiya-razrabotki-upravlencheskikh-reshenii-v-sotsialno-ekonomicheskikh-sistemakh-n"
+      ]
+    },
+    "validation": {
+      "count": 0,
+      "documents": []
+    },
+    "test": {
+      "count": 8,
+      "documents": [
+        "antikrizisnyi-menedzhment-v-sisteme-upravleniya-rossiiskimi-predpriyatiyami-sotsialno-trudov",
+        "algoritmy-avtomatizirovannogo-kontrolya-uspevaemosti-i-formirovaniya-informatsionno-obrazova",
+        "adaptivnaya-informatsionnaya-sistema-podderzhki-upravleniya-avariino-vosstanovitelnymi-merop",
+        "bankovskii-sektor-v-sisteme-upravleniya-ekonomikoi-rossiiskoi-federatsii",
+        "avtomatizatsiya-protsessov-upravleniya-kachestvom-v-sisteme-pravovoi-podgotovki-vuzov-mvd-ro",
+        "analiz-vosproizvodstvennykh-protsessov-makroekonomicheskoi-sistemy-na-osnove-dinamicheskikh-",
+        "adaptivnoe-upravlenie-deyatelnostyu-mnogoprofilnogo-predpriyatiya",
+        "avtomatizirovannaya-podgotovka-elektronnykh-obrazovatelnykh-resursov"
+      ]
+    }
+  },
+  "iterations": [
+    1
+  ],
+  "mean_iou": [
+    0.9310109183431337
+  ],
+  "final_evaluation": {
+    "train_mean_iou": 0.9310109183431337,
+    "validation_mean_iou": 0.0,
+    "test_mean_iou": 0.6503787878787879
+  }
+}

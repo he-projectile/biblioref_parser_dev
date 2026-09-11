@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 from biblioBlockLocalization import (
     localizeBiblioBlock,
 )
+import matplotlib.patches as mpatches
 
 
 REFERENCE_LABEL = "БИБЛ. ССЫЛКА"
@@ -80,36 +81,43 @@ def get_reference_line_bounds(text, annotations):
 
 def load_reference_bounds(annotation_filename):
 
-    annotation_filename = Path(
-        annotation_filename
-    )
+    reference_bounds = None
 
-    txt_filename = annotation_filename.with_suffix(
-        ".txt"
-    )
+    if annotation_filename is not None:
 
-    with open(
-        annotation_filename,
-        "r",
-        encoding="utf-8"
-    ) as f:
-        annotation_data = json.load(f)
+        annotation_filename = Path(
+            annotation_filename
+        )
 
-    with open(
-        txt_filename,
-        "r",
-        encoding="utf-8"
-    ) as f:
-        text = f.read()
+        txt_filename = annotation_filename.with_suffix(
+            ".txt"
+        )
 
-    annotations = get_reference_annotations(
-        annotation_data
-    )
+        with open(
+            annotation_filename,
+            "r",
+            encoding="utf-8"
+        ) as f:
+            annotation_data = json.load(f)
 
-    return get_reference_line_bounds(
-        text,
-        annotations
-    )
+        with open(
+            txt_filename,
+            "r",
+            encoding="utf-8"
+        ) as f:
+            text = f.read()
+
+        annotations = get_reference_annotations(
+            annotation_data
+        )
+
+        reference_bounds = get_reference_line_bounds(
+            text,
+            annotations
+        )
+
+    return reference_bounds
+
 
 
 def calculate_iou(
@@ -177,8 +185,10 @@ def make_plot(
     scales,
     reference_bounds,
     detected_bounds,
+    scoreMeanValue,
     IoUvalue,
-    output_filename
+    output_filename,
+    source_filename
 ):
 
     fig = plt.figure(
@@ -186,19 +196,21 @@ def make_plot(
         dpi=300
     )
 
+    
+
     gs = fig.add_gridspec(
         2,
         3,
-        width_ratios=[30, 1, 5],
+        width_ratios=[30, 0.5, 5],
         height_ratios=[1.5, 1],
-        hspace=0.18,
+        hspace=0.12,
         wspace=0.08
     )
 
     fig.subplots_adjust(
         left=0.05,
         right=0.95,
-        top=0.95,
+        top=0.90,
         bottom=0.05
     )
 
@@ -257,7 +269,7 @@ def make_plot(
     )
 
     ax_cwt.set_title(
-        "CWT прямоугольного окна"
+        "CWT результата обнаружения строк"
     )
 
     fig.colorbar(
@@ -283,7 +295,20 @@ def make_plot(
         filtered_scores,
         linewidth=2.0,
         where="mid",
-        label="SCORE после нелинейного ФНЧ"
+        label="SCORE после фильтра длины"
+    )
+
+    mean_threshold = scoreMeanValue
+
+    ax_score.axhline(
+        mean_threshold,
+        linestyle="--",
+        linewidth=1.5,
+        label=f"Смещение сигнала на {mean_threshold:.3f}"
+    )    
+
+    ax_score.set_title(
+        f"SCORE и результат обнаружения"
     )
 
     # --------------------------------------------------
@@ -365,24 +390,34 @@ def make_plot(
         ax_score.get_legend_handles_labels()
     )
 
+    if IoUvalue is not None:
+        # Создаем невидимый маркер для строки с текстом
+        empty_handle = mpatches.Rectangle((0, 0), 0, 0, fill=False, edgecolor='none', visible=False)
+        
+        # Добавляем в конец списков (или в начало, если хотите IoU сверху)
+        handles.append(empty_handle)
+        labels.append(f"IoU = {IoUvalue:.4f}")
+
     ax_legend.legend(
         handles,
         labels,
         loc="center left"
     )
 
-    ax_legend.text(
-        0,
-        0.35,
-        f"IoU = {IoUvalue:.4f}",
-        transform=ax_legend.transAxes
-    )
+
 
     ax_cwt.grid(False)
 
     ax_cwt.set_xlim(
         1,
         len(scores)
+    )
+
+    plt.suptitle(
+        f"Выделение библиографического блока из документа\n"
+        f"{source_filename}",
+        fontsize=14, 
+        y=0.98  # координата Y: 1.0 — это самый верхний край, 0.98 оставляет небольшой отступ
     )
 
     plt.savefig(
@@ -403,8 +438,11 @@ def main():
     )
 
     parser.add_argument(
-        "annotation_file",
-        type=Path
+        "--annotation-file",
+        type=Path,
+        nargs="?",
+        default=None,
+        help="JSON-файл разметки. Если не указан, IoU и эталонная область не вычисляются."
     )
 
     parser.add_argument(
@@ -426,6 +464,8 @@ def main():
         exist_ok=True
     )
 
+    source_filename = args.machine_file.with_suffix(".txt").name
+
     # --------------------------------------------------
     # Localization
     # --------------------------------------------------
@@ -444,6 +484,8 @@ def main():
     cwt = result["cwt"]
 
     widths = result["widths"]
+
+    scoreMeanValue = result["mean_threshold"]
 
     detected_bounds = None
 
@@ -485,33 +527,32 @@ def main():
     )
 
     make_plot(
-        scores,
-        filtered_scores,
-        cwt,
-        widths,
-        reference_bounds,
-        detected_bounds,
-        IoUvalue,
-        output_filename
+        scores = scores,
+        filtered_scores = filtered_scores,
+        cwt = cwt,
+        scales = widths,
+        reference_bounds = reference_bounds,
+        detected_bounds = detected_bounds,
+        scoreMeanValue= scoreMeanValue,
+        IoUvalue = IoUvalue,
+        output_filename = output_filename,
+        source_filename=source_filename
     )
 
-    print(
-        f"Эталон: "
-        f"{reference_bounds}"
-    )
+    print()
+    print(f"Источник : {source_filename}")
+    print(f"Распознные границы : {detected_bounds}")
+
+    if reference_bounds is not None:
+        print(f"Эталонные границы: {reference_bounds}")
+        print(f"IoU      : {IoUvalue:.6f}")
+    else:
+        print("Эталон не указан")
+        print("IoU не вычислен")
+
 
     print(
-        f"Распознано: "
-        f"{detected_bounds}"
-    )
-
-    print(
-        f"IoU = {IoUvalue:.4f}"
-    )
-
-    print(
-        f"График сохранён: "
-        f"{output_filename}"
+        f"Output   : {output_filename}"
     )
 
 
