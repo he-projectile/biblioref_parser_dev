@@ -1,8 +1,9 @@
 # Пути к файлам и папкам
 $SCRIPT_PATH = ".\VerifiedCode\localization\plotBiblioBlockLocalization.py"
-$PATTERNS_PATH = ".\VerifiedCode\localization\patterns_optimized_9.json"
-$OUTPUT_DIR = ".\VerifiedCode\localization\localizationProducts"
+$PATTERNS_PATH = ".\VerifiedCode\localization\patterns_optimized.json"
+$OUTPUT_DIR = ".\VerifiedCode\localization\localizationPlots"
 $INPUT_DIR = ".\DataSource"
+$MACHINE_DIR = ".\VerifiedCode\localization\localizationProducts"
 
 # Ищем все исходные файлы .json в папке DataSource
 $files = Get-ChildItem -Path "$INPUT_DIR\*.json" -ErrorAction SilentlyContinue
@@ -16,7 +17,7 @@ if ($files.Count -eq 0) {
 foreach ($file in $files) {
     # Формируем имя файла с результатом (добавляем префикс MACHINE_)
     $machineFileName = "MACHINE_" + $file.Name
-    $machineFilePath = Join-Path $OUTPUT_DIR $machineFileName
+    $machineFilePath = Join-Path $MACHINE_DIR $machineFileName
 
     # Проверяем, существует ли уже обработанный MACHINE_ файл
     if (Test-Path $machineFilePath) {
