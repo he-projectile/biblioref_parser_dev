@@ -1,6 +1,6 @@
 # Пути к файлам и папкам
 $SCRIPT_PATH = ".\NeuroSlop\localization\plotBiblioBlockLocalization.py"
-$PATTERNS_PATH = ".\NeuroSlop\localization\patterns_optimized_6.json"
+$PATTERNS_PATH = ".\NeuroSlop\localization\patterns_optimized_9.json"
 $OUTPUT_DIR = ".\NeuroSlop\localization\localizationProducts"
 $INPUT_DIR = ".\DataSource"
 

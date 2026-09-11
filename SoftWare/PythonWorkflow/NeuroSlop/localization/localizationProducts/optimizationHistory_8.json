@@ -3,15 +3,15 @@
     "seed": 10,
     "weight_min": -10.0,
     "weight_max": 10.0,
-    "population_size": 1,
-    "max_iterations": 1,
+    "population_size": 15,
+    "max_iterations": 30,
     "tolerance": 1e-07,
-    "train_ratio": 0.85,
+    "train_ratio": 0.8,
     "validation_ratio": 0,
-    "test_ratio": 0.15000000000000002,
+    "test_ratio": 0.19999999999999996,
     "pattern_count": 429,
-    "iterations_completed": 1,
-    "function_evaluations": 858
+    "iterations_completed": 30,
+    "function_evaluations": 199485
   },
   "input": {
     "texts": ".\\DataSource",
@@ -22,7 +22,7 @@
   "dataset": {
     "total": 47,
     "train": {
-      "count": 39,
+      "count": 37,
       "documents": [
         "analiticheskaya-sistema-kompleksnoi-otsenki-ekologicheskoi-bezopasnosti-promyshlennykh-predp",
         "algoritmy-metody-i-programmnye-sredstva-intellektualnoi-podderzhki-prinyatiya-upravlencheski",
@@ -60,9 +60,7 @@
         "avtomatizirovannaya-sistema-formirovaniya-uchebnykh-planov-s-protseduroi-vychisleniya-kredit",
         "avtomatizirovannaya-informatsionnaya-sistema-podderzhki-operativnogo-kategorirovaniya-passaz",
         "avtomatizirovannoe-upravlenie-protsessom-formirovaniya-individualizirovannykh-traektorii-obu",
-        "algoritm-upravleniya-informatsionnymi-resursami-regionalnogo-muzeya-i-metody-restavratsii-iz",
-        "analiticheskaya-informatsionnaya-sistema-otsenki-innovatsionnogo-potentsiala-tekhnicheskogo-",
-        "avtomatizatsiya-razrabotki-upravlencheskikh-reshenii-v-sotsialno-ekonomicheskikh-sistemakh-n"
+        "algoritm-upravleniya-informatsionnymi-resursami-regionalnogo-muzeya-i-metody-restavratsii-iz"
       ]
     },
     "validation": {
@@ -70,8 +68,10 @@
       "documents": []
     },
     "test": {
-      "count": 8,
+      "count": 10,
       "documents": [
+        "analiticheskaya-informatsionnaya-sistema-otsenki-innovatsionnogo-potentsiala-tekhnicheskogo-",
+        "avtomatizatsiya-razrabotki-upravlencheskikh-reshenii-v-sotsialno-ekonomicheskikh-sistemakh-n",
         "antikrizisnyi-menedzhment-v-sisteme-upravleniya-rossiiskimi-predpriyatiyami-sotsialno-trudov",
         "algoritmy-avtomatizirovannogo-kontrolya-uspevaemosti-i-formirovaniya-informatsionno-obrazova",
         "adaptivnaya-informatsionnaya-sistema-podderzhki-upravleniya-avariino-vosstanovitelnymi-merop",
@@ -84,14 +84,72 @@
     }
   },
   "iterations": [
-    1
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
   ],
   "mean_iou": [
-    0.9310109183431337
+    0.9492159748970894,
+    0.9598337355148501,
+    0.9598337355148501,
+    0.9598337355148501,
+    0.9728730906594681,
+    0.9728730906594681,
+    0.9728730906594681,
+    0.9745018537409841,
+    0.9745018537409841,
+    0.9745087945087942,
+    0.9745087945087942,
+    0.9745087945087942,
+    0.985818802557933,
+    0.985818802557933,
+    0.985818802557933,
+    0.985818802557933,
+    0.985818802557933,
+    0.985818802557933,
+    0.985818802557933,
+    0.985818802557933,
+    0.985818802557933,
+    0.985818802557933,
+    0.985818802557933,
+    0.985818802557933,
+    0.985818802557933,
+    0.985818802557933,
+    0.985818802557933,
+    0.985818802557933,
+    0.985818802557933,
+    0.985818802557933
   ],
   "final_evaluation": {
-    "train_mean_iou": 0.9310109183431337,
+    "train_mean_iou": 0.985818802557933,
     "validation_mean_iou": 0.0,
-    "test_mean_iou": 0.6503787878787879
+    "test_mean_iou": 0.8
   }
 }

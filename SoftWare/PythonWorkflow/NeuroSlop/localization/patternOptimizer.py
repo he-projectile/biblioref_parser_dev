@@ -2,6 +2,9 @@ import argparse
 import json
 import random
 from pathlib import Path
+import os
+import functools
+import time
 
 import matplotlib.pyplot as plt
 import numpy as np
@@ -20,13 +23,15 @@ WEIGHT_MIN = -10.0
 WEIGHT_MAX = 10.0
 
 POP_SIZE = 15
-MAX_ITER = 30
+MAX_ITER = 20
 TOL = 1e-7
 
 TRAIN_RATIO = 0.8
 VALIDATION_RATIO = 0
 
 REFERENCE_LABEL = "БИБЛ. ССЫЛКА"
+
+start_time = time.time()
 
 
 # ============================================================
@@ -387,6 +392,10 @@ def evaluate_weights(
 # Optimizer
 # ============================================================
 
+def optimization_objective(weights, train):
+    mean_iou, _ = evaluate_weights(train, weights)
+    return -mean_iou
+
 def optimize(
     train,
     pattern_count,
@@ -414,59 +423,59 @@ def optimize(
     evaluation_counter = 0
     best_iou = -1.0
 
-    def objective(weights):
+#    def objective(weights):
+#
+#        nonlocal evaluation_counter
+#        nonlocal best_iou
+#
+#        evaluation_counter += 1
+#
+#        mean_iou, _ = evaluate_weights(
+#            train,
+#            weights
+#        )
+#
+#        if mean_iou > best_iou:
+#
+#            best_iou = mean_iou
+#
+#            print(
+#                f"\nNEW BEST | "
+#                f"evaluation {evaluation_counter} | "
+#                f"mean IoU = {mean_iou:.6f}",
+#                flush=True
+#            )
+#
+#        elif evaluation_counter % 10 == 0:
+#
+#            print(
+#                f"Evaluation {evaluation_counter} | "
+#                f"mean IoU = {mean_iou:.6f} | "
+#                f"best = {best_iou:.6f}",
+#                flush=True
+#            )
+#
+#        return -mean_iou
 
-        nonlocal evaluation_counter
-        nonlocal best_iou
-
-        evaluation_counter += 1
-
-        mean_iou, _ = evaluate_weights(
-            train,
-            weights
-        )
-
-        if mean_iou > best_iou:
-
-            best_iou = mean_iou
-
-            print(
-                f"\nNEW BEST | "
-                f"evaluation {evaluation_counter} | "
-                f"mean IoU = {mean_iou:.6f}",
-                flush=True
-            )
-
-        elif evaluation_counter % 10 == 0:
-
-            print(
-                f"Evaluation {evaluation_counter} | "
-                f"mean IoU = {mean_iou:.6f} | "
-                f"best = {best_iou:.6f}",
-                flush=True
-            )
-
-        return -mean_iou
+    objective = functools.partial(
+        optimization_objective,
+        train=train
+    )
 
     def callback(xk, convergence):
+        mean_iou, _ = evaluate_weights(train, xk)
 
-        mean_iou, _ = evaluate_weights(
-            train,
-            xk
-        )
+        iteration_history.append(mean_iou)
 
-        iteration_number = (
-            len(iteration_history) + 1
-        )
-
-        iteration_history.append(
-            mean_iou
-        )
+        iteration = len(iteration_history)
+        elapsed = time.time() - start_time
 
         print(
-            f"Iteration "
-            f"{iteration_number:3d}/{MAX_ITER} | "
-            f"mean IoU = {mean_iou:.6f}"
+            f"[Iteration {iteration:3d}/{MAX_ITER}] "
+            f"IoU = {mean_iou:.6f} | "
+            f"Time = {elapsed / 60:.1f} min | "
+            f"Conv = {convergence:.3e}",
+            flush=True
         )
 
         return False
@@ -512,8 +521,8 @@ def optimize(
         maxiter=MAX_ITER,
         tol=TOL,
         polish=False,
-        workers=1,
-        updating="immediate",
+        workers=max(1, os.cpu_count() - 2),
+        updating="deferred",
         disp=False,
         callback=callback
     )

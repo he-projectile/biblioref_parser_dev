@@ -1,0 +1,9333 @@
+PATTERN RECOGNITION RESULT
+================================================================================
+
+PATTERNS:
+0: DOT
+   regex: \.
+1: INITIAL
+   regex: \b[А-ЯЁ]\.
+2: INITIALS
+   regex: \b[А-ЯЁ]\.\s*[А-ЯЁ]\.
+3: YEAR
+   regex: (?<!\d)(17|18|19|20|21)\d{2}(?!\d)
+4: NUMBER
+   regex: \d+
+5: COMMA
+   regex: ,
+6: NUMBER
+   regex: \d+
+7: DASH
+   regex: [-–—]
+8: PAGES
+   regex: \b[Сс]\.?\s*\d+(?:\s*[-–—]\s*\d+)?
+9: DOT
+   regex: \.
+10: INITIAL
+   regex: \b[А-ЯЁ]\.
+11: DASH
+   regex: [-–—]
+12: DOT
+   regex: \.
+13: DASH
+   regex: [-–—]
+14: COLON
+   regex: :
+15: COMMA
+   regex: ,
+16: NUMBER
+   regex: \d+
+17: NUMBER
+   regex: \d+
+18: DASH
+   regex: [-–—]
+19: DOT
+   regex: \.
+20: QUOTATION
+   regex: [«»\"„“”]
+21: DOT
+   regex: \.
+22: INITIAL
+   regex: \b[А-ЯЁ]\.
+23: YEAR
+   regex: (?<!\d)(17|18|19|20|21)\d{2}(?!\d)
+24: DOT
+   regex: \.
+25: COLON
+   regex: :
+26: COLON
+   regex: :
+27: DASH
+   regex: [-–—]
+28: NUMBER
+   regex: \d+
+29: DOT
+   regex: \.
+30: COMMA
+   regex: ,
+31: COMMA
+   regex: ,
+32: COMMA
+   regex: ,
+33: DASH
+   regex: [-–—]
+34: INITIAL
+   regex: \b[А-ЯЁ]\.
+35: DOT
+   regex: \.
+36: QUOTATION
+   regex: [«»\"„“”]
+37: DASH
+   regex: [-–—]
+38: QUOTATION
+   regex: [«»\"„“”]
+39: DOT
+   regex: \.
+40: URL
+   regex: (?:https?://|www\.)[^\s]+
+41: SLASH
+   regex: /
+42: PARENTHESIS
+   regex: [()]
+43: DOUBLE_SLASH
+   regex: //
+44: COLON
+   regex: :
+45: COMMA
+   regex: ,
+46: NUMBER
+   regex: \d+
+47: DASH
+   regex: [-–—]
+48: PARENTHESIS
+   regex: [()]
+49: NUMBER
+   regex: \d+
+50: QUOTATION
+   regex: [«»\"„“”]
+51: NUMBER
+   regex: \d+
+52: PARENTHESIS
+   regex: [()]
+53: INITIAL
+   regex: \b[А-ЯЁ]\.
+54: DOT
+   regex: \.
+55: INITIAL
+   regex: \b[А-ЯЁ]\.
+56: INITIALS
+   regex: \b[А-ЯЁ]\.\s*[А-ЯЁ]\.
+57: INITIALS
+   regex: \b[А-ЯЁ]\.\s*[А-ЯЁ]\.
+58: NUMBER
+   regex: \d+
+59: YEAR
+   regex: (?<!\d)(17|18|19|20|21)\d{2}(?!\d)
+60: SLASH
+   regex: /
+61: PARENTHESIS
+   regex: [()]
+62: INITIAL
+   regex: \b[А-ЯЁ]\.
+63: YEAR
+   regex: (?<!\d)(17|18|19|20|21)\d{2}(?!\d)
+64: ENTITY_SHAPE
+   regex: \d+
+65: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+
+66: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+\d+\-\d+
+67: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+68: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.
+69: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+70: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+71: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\s+\d+\-\d+
+72: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.
+73: ENTITY_SHAPE
+   regex: \d+\-\d+
+74: ENTITY_SHAPE
+   regex: №\s+\d+
+75: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+76: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+77: ENTITY_SHAPE
+   regex: №\d+
+78: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+79: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+80: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+81: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]
+82: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+83: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+84: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+85: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]
+86: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\d+\-\d+
+87: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё][а-яё][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+88: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+89: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+
+90: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+91: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][а-яё]\.
+92: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+93: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+94: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]
+95: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+\d+
+96: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+97: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+98: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+\d+\s+\-\s+\d+
+99: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+
+100: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.
+101: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+102: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+103: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+
+104: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+105: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+106: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+107: ENTITY_SHAPE
+   regex: [а-яё]+\.\d+\-\d+
+108: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+
+109: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+110: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁ][а-яё]+
+111: ENTITY_SHAPE
+   regex: [а-яё]+\.\s+\d+
+112: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ]\.
+113: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+
+114: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+
+115: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\d+
+116: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+\d+
+117: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+118: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+
+119: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\.\s+[а-яё]+\-[а-яё]+
+120: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
+121: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+122: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+\-[а-яё]+\.
+123: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+
+124: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+125: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]
+126: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+127: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+,\s+[а-яё]+\-[а-яё]+
+128: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\s+\([А-ЯЁ][а-яё]+\)
+129: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+
+130: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁ][А-ЯЁ]
+131: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+
+132: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+
+133: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+
+134: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+\-[а-яё]+
+135: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ]
+136: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\s+\([А-ЯЁ][а-яё]+\)
+137: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+
+138: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\s+\d+
+139: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+140: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][а-яё][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+
+141: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\-[А-ЯЁ][а-яё]+
+142: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+\s+[а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+
+143: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+144: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+145: ENTITY_SHAPE
+   regex: [a-z]+://[a-z]+\.[a-z]+\.[a-z]+/[a-z]+
+146: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+
+147: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
+148: ENTITY_SHAPE
+   regex: [а-яё]+\s+\d+\-\d+
+149: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ]\.
+150: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\-[а-яё]+
+151: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+«[А-ЯЁ][а-яё]+»
+152: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ]
+153: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+,\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+154: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ],\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+155: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁ][а-яё]+
+156: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\-[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+157: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
+158: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+\d+
+159: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+160: ENTITY_SHAPE
+   regex: \s+№\s+\d+
+161: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
+162: ENTITY_SHAPE
+   regex: №\s+[а-яё]+\.\s+[а-яё]+\s+\d+
+163: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][а-яё][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+164: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+165: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+\-\s+[А-ЯЁ][а-яё]+
+166: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+
+167: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\-[А-ЯЁ][а-яё]+
+168: ENTITY_SHAPE
+   regex: [а-яё]+\.\s+\d+\-\d+
+169: ENTITY_SHAPE
+   regex: [а-яё]+\.\d+
+170: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+171: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\.
+172: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
+173: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+,\s+[а-яё]+,\s+[а-яё]+
+174: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+175: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+176: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+,\s+[а-яё]+\-[а-яё]+
+177: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.
+178: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+:\s+[а-яё]+\-[а-яё]+
+179: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][а-яё]+
+180: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
+181: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\-[а-яё]+\s+[а-яё]+
+182: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+183: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][а-яё]
+184: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+:\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+185: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[А-ЯЁ][а-яё]+
+186: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]
+187: ENTITY_SHAPE
+   regex: [A-Z][a-z]+,\s+[A-Z][a-z]+
+188: ENTITY_SHAPE
+   regex: \s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+189: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+:\s+[А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+\.
+190: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+191: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+192: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+:\s+[А-ЯЁ][а-яё]+\.\s+[A-Z][A-Z][A-Z]\s+[а-яё]+\.\s+[а-яё]+\.
+193: ENTITY_SHAPE
+   regex: [A-Z][a-z]+
+194: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+:\s+[а-яё]+\.\s+[а-яё]+\.\s+\d+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+\.\-[а-яё]+\.\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+195: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+196: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+,\s+[а-яё]+\-[а-яё]+\.\s+[а-яё]+\.\s+«[А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+»
+197: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\-[а-яё]+\s+[а-яё]+
+198: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+199: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+:\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[А-ЯЁ][а-яё]+
+200: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+201: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ]
+202: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\.\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
+203: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\-[а-яё]+\s+[а-яё]+
+204: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+205: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+206: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ],\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ]\.
+207: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+
+208: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+
+209: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+210: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+
+211: SEPARATOR
+   regex: \.
+212: SEPARATOR
+   regex: У,
+213: SEPARATOR
+   regex: \.:
+214: SEPARATOR
+   regex: а:
+215: SEPARATOR
+   regex: а,
+216: SEPARATOR
+   regex: я\s+/
+217: SEPARATOR
+   regex: \.\s+\-
+218: SEPARATOR
+   regex: в\s+/
+219: SEPARATOR
+   regex: а\s+/
+220: SEPARATOR
+   regex: и,
+221: SEPARATOR
+   regex: а\s+//
+222: SEPARATOR
+   regex: »\.\s+\-
+223: SEPARATOR
+   regex: \.,
+224: SEPARATOR
+   regex: и\s+/
+225: SEPARATOR
+   regex: а,
+226: SEPARATOR
+   regex: л:
+227: SEPARATOR
+   regex: а\s+//
+228: SEPARATOR
+   regex: В
+229: SEPARATOR
+   regex: м\s+/
+230: SEPARATOR
+   regex: й\s+/
+231: SEPARATOR
+   regex: ь:
+232: SEPARATOR
+   regex: к
+233: SEPARATOR
+   regex: ф,
+234: SEPARATOR
+   regex: 2\.
+235: SEPARATOR
+   regex: Е
+236: SEPARATOR
+   regex: 1\.\s+\-
+237: SEPARATOR
+   regex: в\s+//
+238: SEPARATOR
+   regex: ж:
+239: SEPARATOR
+   regex: »,
+240: SEPARATOR
+   regex: г:
+241: SEPARATOR
+   regex: И,
+242: SEPARATOR
+   regex: к:
+243: SEPARATOR
+   regex: 3\.
+244: SEPARATOR
+   regex: в\s+/
+245: SEPARATOR
+   regex: н\s+//
+246: SEPARATOR
+   regex: О
+247: SEPARATOR
+   regex: ж,
+248: SEPARATOR
+   regex: М:
+249: SEPARATOR
+   regex: а\s+//
+250: SEPARATOR
+   regex: а\s+И
+251: SEPARATOR
+   regex: 0\.
+252: SEPARATOR
+   regex: к,
+253: SEPARATOR
+   regex: х\s+/
+254: SEPARATOR
+   regex: »\.
+255: SEPARATOR
+   regex: А
+256: SEPARATOR
+   regex: 8\.\s+\-
+257: SEPARATOR
+   regex: а\s+:
+258: SEPARATOR
+   regex: т,
+259: SEPARATOR
+   regex: 1\.
+260: SEPARATOR
+   regex: й\s+//
+261: SEPARATOR
+   regex: д,
+262: SEPARATOR
+   regex: а\s+//
+263: SEPARATOR
+   regex: а\s+И
+264: SEPARATOR
+   regex: 4\.
+265: SEPARATOR
+   regex: 7\.\s+\-
+266: SEPARATOR
+   regex: и\s+//
+267: SEPARATOR
+   regex: М
+268: SEPARATOR
+   regex: а
+269: SEPARATOR
+   regex: в\s+//
+270: SEPARATOR
+   regex: е\s+/
+271: SEPARATOR
+   regex: 7\.
+272: SEPARATOR
+   regex: о\.\s+\-
+273: SEPARATOR
+   regex: 4\.\s+\-
+274: SEPARATOR
+   regex: \.\s+/
+275: SEPARATOR
+   regex: Н,
+276: SEPARATOR
+   regex: в\s+\[Текст\]/
+277: SEPARATOR
+   regex: н\s+//
+278: SEPARATOR
+   regex: л
+279: SEPARATOR
+   regex: м\s+//
+280: SEPARATOR
+   regex: и\s+//
+281: SEPARATOR
+   regex: ы\s+/
+282: SEPARATOR
+   regex: 2\.\s+\-
+283: SEPARATOR
+   regex: 2\.\s+\-
+284: SEPARATOR
+   regex: \)\s+//
+285: SEPARATOR
+   regex: м
+286: SEPARATOR
+   regex: 6\.
+287: SEPARATOR
+   regex: Г
+288: SEPARATOR
+   regex: в:
+289: SEPARATOR
+   regex: ь,
+290: SEPARATOR
+   regex: и//
+291: SEPARATOR
+   regex: \.
+292: SEPARATOR
+   regex: е\s+//
+293: SEPARATOR
+   regex: и\.\s+\-
+294: SEPARATOR
+   regex: в\s+//
+295: SEPARATOR
+   regex: я\s+//
+296: SEPARATOR
+   regex: 5\.\s+\-
+297: SEPARATOR
+   regex: 9\.
+298: SEPARATOR
+   regex: 6\.\s+\-
+299: SEPARATOR
+   regex: е\.\s+\-
+300: SEPARATOR
+   regex: 8\.
+301: SEPARATOR
+   regex: Н
+302: SEPARATOR
+   regex: У\.
+303: SEPARATOR
+   regex: и
+304: SEPARATOR
+   regex: и\.\s+\-
+305: SEPARATOR
+   regex: 3\.\s+\-
+306: SEPARATOR
+   regex: З,
+307: SEPARATOR
+   regex: 5\.\s+\-
+308: SEPARATOR
+   regex: 2\.\s+\-
+309: SEPARATOR
+   regex: а\s+/
+310: SEPARATOR
+   regex: а//
+311: SEPARATOR
+   regex: У
+312: SEPARATOR
+   regex: \.
+313: SEPARATOR
+   regex: 1\.
+314: SEPARATOR
+   regex: 1\.
+315: SEPARATOR
+   regex: 3\.
+316: SEPARATOR
+   regex: 0\.
+317: SEPARATOR
+   regex: С
+318: SEPARATOR
+   regex: 3
+319: SEPARATOR
+   regex: в\s+И
+320: SEPARATOR
+   regex: 6\s+\-
+321: SEPARATOR
+   regex: й\s+И
+322: SEPARATOR
+   regex: у,
+323: SEPARATOR
+   regex: \.
+324: SEPARATOR
+   regex: я\s+//
+325: SEPARATOR
+   regex: и/
+326: SEPARATOR
+   regex: я\.
+327: SEPARATOR
+   regex: и\.\s+\-
+328: SEPARATOR
+   regex: я»\.
+329: SEPARATOR
+   regex: 8\.\s+\-
+330: SEPARATOR
+   regex: \.\s+\-
+331: SEPARATOR
+   regex: и
+332: SEPARATOR
+   regex: а\s+/
+333: SEPARATOR
+   regex: 4\.\s+\-
+334: SEPARATOR
+   regex: 7\.\s+\-
+335: SEPARATOR
+   regex: Ц,
+336: SEPARATOR
+   regex: л,
+337: SEPARATOR
+   regex: 7
+338: SEPARATOR
+   regex: 4
+339: SEPARATOR
+   regex: ф\s+\-
+340: SEPARATOR
+   regex: я\.//
+341: SEPARATOR
+   regex: а//
+342: SEPARATOR
+   regex: О\.\s+\-
+343: SEPARATOR
+   regex: и\s+/
+344: SEPARATOR
+   regex: \.\s+—
+345: SEPARATOR
+   regex: 7
+346: SEPARATOR
+   regex: й\s+//
+347: SEPARATOR
+   regex: 3\.\s+\-
+348: SEPARATOR
+   regex: А\.\s+\-
+349: SEPARATOR
+   regex: н//
+350: SEPARATOR
+   regex: а
+351: SEPARATOR
+   regex: и\s+И
+352: SEPARATOR
+   regex: 9\.\s+\-\s+С\.
+353: SEPARATOR
+   regex: \.,
+354: SEPARATOR
+   regex: я\s+И
+355: SEPARATOR
+   regex: С,
+356: SEPARATOR
+   regex: я\.\s+\-
+357: SEPARATOR
+   regex: е\.\s+\-
+358: SEPARATOR
+   regex: 3\.
+359: SEPARATOR
+   regex: я
+360: SEPARATOR
+   regex: а\.\s+\-
+361: SEPARATOR
+   regex: 2\.
+362: SEPARATOR
+   regex: 1\.\s+\-
+363: SEPARATOR
+   regex: 6\.\s+\-
+364: SEPARATOR
+   regex: 1\.\s+\-
+365: SEPARATOR
+   regex: к\s+/
+366: SEPARATOR
+   regex: 4,
+367: SEPARATOR
+   regex: и\s+\-
+368: SEPARATOR
+   regex: а\.\s+//
+369: SEPARATOR
+   regex: \.\s+\(осенняя\s+сессия\)\.
+370: SEPARATOR
+   regex: 4\.
+371: SEPARATOR
+   regex: 1
+372: SEPARATOR
+   regex: »\s+\-
+373: SEPARATOR
+   regex: т
+374: SEPARATOR
+   regex: 2
+375: SEPARATOR
+   regex: 6
+376: SEPARATOR
+   regex: 5\.\s+\-
+377: SEPARATOR
+   regex: а
+378: SEPARATOR
+   regex: й\s+//
+379: SEPARATOR
+   regex: в\s+//
+380: SEPARATOR
+   regex: 2\s+г\.,
+381: SEPARATOR
+   regex: \.:
+382: SEPARATOR
+   regex: и\s+//
+383: SEPARATOR
+   regex: И
+384: SEPARATOR
+   regex: л\.\s+\-
+385: SEPARATOR
+   regex: а\s+\-
+386: SEPARATOR
+   regex: У\.\-
+387: SEPARATOR
+   regex: и\.
+388: SEPARATOR
+   regex: »,
+389: SEPARATOR
+   regex: 8\.
+390: SEPARATOR
+   regex: и
+391: SEPARATOR
+   regex: ы\s+//
+392: SEPARATOR
+   regex: 0\.\s+\-\s+С\.
+393: SEPARATOR
+   regex: е\s+//
+394: SEPARATOR
+   regex: а\s+И
+395: SEPARATOR
+   regex: а;
+396: SEPARATOR
+   regex: \.\s+\-
+397: SEPARATOR
+   regex: \.\s+\-
+398: SEPARATOR
+   regex: м,
+399: SEPARATOR
+   regex: 9\.
+400: SEPARATOR
+   regex: к\s+:
+401: SEPARATOR
+   regex: s\s+/
+402: SEPARATOR
+   regex: 0\.\s+\-
+403: SEPARATOR
+   regex: 7\.
+404: SEPARATOR
+   regex: 4\.
+405: SEPARATOR
+   regex: У
+406: SEPARATOR
+   regex: 6\.
+407: SEPARATOR
+   regex: »\s+/
+408: SEPARATOR
+   regex: н\.\s+\-
+409: SEPARATOR
+   regex: й\s+/
+410: SEPARATOR
+   regex: а\.\s+В\s+сб\.
+411: SEPARATOR
+   regex: и\.\s+В\s+сб\.
+412: SEPARATOR
+   regex: \.\s+\(весенняя\s+сессия\)\.
+413: SEPARATOR
+   regex: \)\s+//
+414: SEPARATOR
+   regex: 3\.
+415: SEPARATOR
+   regex: 5
+416: SEPARATOR
+   regex: в\s+/
+417: SEPARATOR
+   regex: и,
+418: SEPARATOR
+   regex: в\s+\-
+419: SEPARATOR
+   regex: в\.\s+\-
+420: SEPARATOR
+   regex: я//
+421: SEPARATOR
+   regex: 9\.\s+\-
+422: SEPARATOR
+   regex: а\.\s+\-
+423: SEPARATOR
+   regex: 4\.\s+\-
+424: SEPARATOR
+   regex: 9\.\s+\-
+425: SEPARATOR
+   regex: х\s+//
+426: SEPARATOR
+   regex: \.\s+/
+427: SEPARATOR
+   regex: »\s+\(ПРОЕКТ\-2009\)\.\s+\-
+428: SEPARATOR
+   regex: м»,
+429: SEPARATOR
+   regex: й
+430: SEPARATOR
+   regex: 1\.
+431: SEPARATOR
+   regex: ш\s+//
+432: SEPARATOR
+   regex: 5\s+\-
+433: SEPARATOR
+   regex: 2\s+\-
+434: SEPARATOR
+   regex: а\s+\-
+435: SEPARATOR
+   regex: 4\s+\-
+436: SEPARATOR
+   regex: й\s+И
+437: SEPARATOR
+   regex: 7\s+\-
+438: SEPARATOR
+   regex: И\.
+439: SEPARATOR
+   regex: е
+440: SEPARATOR
+   regex: и\.
+441: SEPARATOR
+   regex: й/
+442: SEPARATOR
+   regex: н,
+443: SEPARATOR
+   regex: и,
+444: SEPARATOR
+   regex: А,
+445: SEPARATOR
+   regex: У/
+446: SEPARATOR
+   regex: в/
+447: SEPARATOR
+   regex: н//
+448: SEPARATOR
+   regex: \.,
+449: SEPARATOR
+   regex: в,
+450: SEPARATOR
+   regex: ж\.
+451: SEPARATOR
+   regex: в\.
+452: SEPARATOR
+   regex: м,
+
+================================================================================
+
+LINE 1 (length=20)
+TEXT: ﻿На правах рукописи
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 2
+
+LINE 2 (length=26)
+TEXT: Соловей Марина Викторовна
+COUNTS:
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 3 (length=1)
+TEXT: 
+COUNTS:
+
+LINE 4 (length=109)
+TEXT: АНАЛИЗ И РАЦИОНАЛИЗАЦИЯ ИНФОРМАЦИОННЫХ ПРОЦЕССОВ В СИСТЕМЕ УПРАВЛЕНИЯ МАРКЕТИНГОМ НА ПРЕДПРИЯТИЯХ ПОЛИГРАФИИ
+COUNTS:
+  ENTITY_SHAPE: 19
+  ENTITY_SHAPE: 15
+  ENTITY_SHAPE: 97
+  ENTITY_SHAPE: 28
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 28
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 7
+  SEPARATOR: 10
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 15
+  SEPARATOR: 1
+
+LINE 5 (length=52)
+TEXT: Специальность 05.13.10 -	У правление в социальных и
+COUNTS:
+  DOT: 2
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DASH: 1
+  NUMBER: 3
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  NUMBER: 3
+  DASH: 1
+  NUMBER: 3
+  NUMBER: 3
+  DOT: 2
+  NUMBER: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+
+LINE 6 (length=23)
+TEXT: экономических системах
+COUNTS:
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+
+LINE 7 (length=81)
+TEXT: АВТОРЕФЕРАТ диссертации на соискание ученой степени кандидата экономических наук
+COUNTS:
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 11
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 9
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 7
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 6
+
+LINE 8 (length=15)
+TEXT: Ростов-на-Дону
+COUNTS:
+  DASH: 2
+  DASH: 2
+  DASH: 2
+  DASH: 2
+  DASH: 2
+  DASH: 2
+  DASH: 2
+  DASH: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 9 (length=5)
+TEXT: 2000
+COUNTS:
+  YEAR: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  YEAR: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  YEAR: 1
+  YEAR: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 10 (length=134)
+TEXT: Работа выполнена в Ростовской государственной экономической академии на кафедре Экономической информатики и автоматизации управления.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 13
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 13
+  SEPARATOR: 12
+  SEPARATOR: 4
+  SEPARATOR: 8
+
+LINE 11 (length=86)
+TEXT: Научный руководитель -	доктор экономических наук, профессор Хубаев Георгий Николаевич
+COUNTS:
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 6
+
+LINE 12 (length=151)
+TEXT: Официальные оппоненты:	доктор экономических наук, профессор Шумин Николай Михайлович, кандидат экономических наук, доцент Дуканич Людмила Владимировна
+COUNTS:
+  COMMA: 3
+  COLON: 1
+  COMMA: 3
+  COLON: 1
+  COLON: 1
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  COLON: 1
+  COMMA: 3
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 15
+  SEPARATOR: 15
+  SEPARATOR: 11
+  SEPARATOR: 4
+  SEPARATOR: 11
+  SEPARATOR: 15
+  SEPARATOR: 2
+  SEPARATOR: 6
+
+LINE 13 (length=70)
+TEXT: Ведущая организация -	Донской государственный технический университет
+COUNTS:
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 6
+
+LINE 14 (length=48)
+TEXT: Защита диссертации состоится « у »	2000г. в ча-
+COUNTS:
+  DOT: 1
+  YEAR: 1
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  DOT: 1
+  QUOTATION: 2
+  DOT: 1
+  YEAR: 1
+  DOT: 1
+  DASH: 1
+  NUMBER: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  QUOTATION: 2
+  DASH: 1
+  QUOTATION: 2
+  DOT: 1
+  NUMBER: 1
+  DASH: 1
+  NUMBER: 1
+  QUOTATION: 2
+  NUMBER: 1
+  DOT: 1
+  NUMBER: 1
+  YEAR: 1
+  YEAR: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 5
+  SEPARATOR: 1
+
+LINE 15 (length=73)
+TEXT: сов на заседании диссертационного Совета К 064.24.02. в Ростовской госу-
+COUNTS:
+  DOT: 3
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 1
+  DOT: 3
+  DASH: 1
+  DOT: 3
+  DASH: 1
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 1
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  DASH: 1
+  NUMBER: 3
+  DOT: 3
+  DASH: 1
+  DOT: 3
+  DASH: 1
+  DOT: 3
+  NUMBER: 3
+  DASH: 1
+  NUMBER: 3
+  NUMBER: 3
+  DOT: 3
+  NUMBER: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+
+LINE 16 (length=99)
+TEXT: дарственной экономической академии по адресу: 344007, г. Ростов-на-Дону, ул. Б. Садовая, 69, РГЭА.
+COUNTS:
+  DOT: 4
+  INITIAL: 1
+  NUMBER: 2
+  COMMA: 4
+  NUMBER: 2
+  DASH: 2
+  DOT: 4
+  INITIAL: 1
+  DASH: 2
+  DOT: 4
+  DASH: 2
+  COLON: 1
+  COMMA: 4
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 2
+  DOT: 4
+  DOT: 4
+  INITIAL: 1
+  DOT: 4
+  COLON: 1
+  COLON: 1
+  DASH: 2
+  NUMBER: 2
+  DOT: 4
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  DASH: 2
+  INITIAL: 1
+  DOT: 4
+  DASH: 2
+  DOT: 4
+  COLON: 1
+  COMMA: 4
+  NUMBER: 2
+  DASH: 2
+  NUMBER: 2
+  NUMBER: 2
+  INITIAL: 1
+  DOT: 4
+  INITIAL: 1
+  NUMBER: 2
+  INITIAL: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 4
+
+LINE 17 (length=65)
+TEXT: С диссертацией можно ознакомиться в научной библиотеке академии.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 1
+
+LINE 18 (length=21)
+TEXT: Автореферат разослан
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 2
+
+LINE 19 (length=22)
+TEXT: «g^» ,^4¾^⅛^-^ 2000г.
+COUNTS:
+  DOT: 1
+  YEAR: 1
+  NUMBER: 2
+  COMMA: 1
+  NUMBER: 2
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  COMMA: 1
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 1
+  DOT: 1
+  QUOTATION: 2
+  DOT: 1
+  YEAR: 1
+  DOT: 1
+  DASH: 1
+  NUMBER: 2
+  DOT: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  DOT: 1
+  QUOTATION: 2
+  DASH: 1
+  QUOTATION: 2
+  DOT: 1
+  COMMA: 1
+  NUMBER: 2
+  DASH: 1
+  NUMBER: 2
+  QUOTATION: 2
+  NUMBER: 2
+  DOT: 1
+  NUMBER: 2
+  YEAR: 1
+  YEAR: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 20 (length=17)
+TEXT: Ученый секретарь
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+
+LINE 21 (length=25)
+TEXT: диссертационного Совета,
+COUNTS:
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+
+LINE 22 (length=28)
+TEXT: кандидат экономических наук
+COUNTS:
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+
+LINE 23 (length=16)
+TEXT: Островская И.Я.
+COUNTS:
+  DOT: 2
+  INITIAL: 2
+  INITIALS: 1
+  DOT: 2
+  INITIAL: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  INITIAL: 2
+  DOT: 2
+  DOT: 2
+  INITIAL: 2
+  DOT: 2
+  DOT: 2
+  INITIAL: 2
+  DOT: 2
+  INITIAL: 2
+  INITIALS: 1
+  INITIALS: 1
+  INITIAL: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 24 (length=2)
+TEXT: 3
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 25 (length=28)
+TEXT: ОБЩАЯ ХАРАКТЕРИСТИКА РАБОТЫ
+COUNTS:
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 25
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 26 (length=31)
+TEXT: Актуальность темы диссертации.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+
+LINE 27 (length=732)
+TEXT: Экономический кризис, в котором находится экономика страны, затрагивает практически все отрасли промышленного производства. Однако, несмотря на сложную экономическую ситуацию, полиграфические предприятия продолжают наращивать выпуск продукции, расширяя спектр оказываемых услуг. Так, по данным комитета по статистике Ростовской области, удельный вес отрасли полиграфии по отношению к другим отраслям промышленности составлял в 1994 году - 1,1%; в 1995 - 1,3%; в 1996 - 2%; в 1997 - 2,2% и в 1998 - 3,8%. Выпуск товаров и услуг в фактических ценах в 1998 году увеличился на 1,5% по сравнению с 1997 годом. Рост физического объема в 1997 году по сравнению с 1996 годом составил 104,2%; в 1998 году по сравнению с 1996 годом - 105,8%.
+COUNTS:
+  DOT: 5
+  YEAR: 11
+  NUMBER: 26
+  COMMA: 14
+  NUMBER: 26
+  DASH: 6
+  PAGES: 3
+  DOT: 5
+  DASH: 6
+  DOT: 5
+  DASH: 6
+  COMMA: 14
+  NUMBER: 26
+  NUMBER: 26
+  DASH: 6
+  DOT: 5
+  DOT: 5
+  YEAR: 11
+  DOT: 5
+  DASH: 6
+  NUMBER: 26
+  DOT: 5
+  COMMA: 14
+  COMMA: 14
+  COMMA: 14
+  DASH: 6
+  DOT: 5
+  DASH: 6
+  DOT: 5
+  COMMA: 14
+  NUMBER: 26
+  DASH: 6
+  NUMBER: 26
+  NUMBER: 26
+  DOT: 5
+  NUMBER: 26
+  YEAR: 11
+  YEAR: 11
+  ENTITY_SHAPE: 26
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 25
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 38
+  SEPARATOR: 18
+  SEPARATOR: 16
+  SEPARATOR: 5
+  SEPARATOR: 46
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 46
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 38
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 17
+  SEPARATOR: 30
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 38
+  SEPARATOR: 46
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 26
+  SEPARATOR: 2
+
+LINE 28 (length=242)
+TEXT: В рыночных условиях роль управленческой деятельности на промышленном предприятии значительно возрастает. Поэтому предприятия любой формы собственности, чтобы выжить, вынуждены совершенствовать процессы управления хозяйственной деятельностью.
+COUNTS:
+  DOT: 2
+  COMMA: 2
+  DOT: 2
+  DOT: 2
+  COMMA: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 2
+  DOT: 2
+  COMMA: 2
+  DOT: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 9
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 11
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 11
+  SEPARATOR: 7
+  SEPARATOR: 8
+  SEPARATOR: 17
+  SEPARATOR: 7
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 18
+  SEPARATOR: 1
+
+LINE 29 (length=812)
+TEXT: Способность предприятия к адаптации в условиях нестабильной экономики и несовершенства законодательной базы в значительной степени определяется выбранной стратегией, а рациональная организация процессов функционирования системы управления позволяет предприятию разработать более гибкую рыночную стратегию, решая возникающие задачи с позиции известной концепции маркетинга. Очевидно, что управленческая деятельность на предприятии должна охватывать совокупность всех задач управления, отражая сложность их взаимосвязей и иерархической структуры, множественность функциональных целей и их изменчивость. При планировании управленческой деятельности на предприятии необходимо проанализировать большое количество факторов, как внешней среды (состояние рынка, его потребности и особенности конкурентной борьбы), так и
+COUNTS:
+  DOT: 2
+  COMMA: 8
+  DOT: 2
+  DOT: 2
+  COMMA: 8
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  COMMA: 8
+  COMMA: 8
+  COMMA: 8
+  DOT: 2
+  DOT: 2
+  PARENTHESIS: 2
+  COMMA: 8
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  DOT: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 23
+  SEPARATOR: 1
+  SEPARATOR: 54
+  SEPARATOR: 22
+  SEPARATOR: 7
+  SEPARATOR: 2
+  SEPARATOR: 66
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 66
+  SEPARATOR: 54
+  SEPARATOR: 21
+  SEPARATOR: 46
+  SEPARATOR: 54
+  SEPARATOR: 66
+  SEPARATOR: 12
+  SEPARATOR: 59
+  SEPARATOR: 1
+
+LINE 30 (length=2)
+TEXT: 4
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 31 (length=192)
+TEXT: внутренней (общие характеристики предприятия, особенности сложившейся структуры управления, общие принципы построения информационной системы, объем и структуру производимого продукта и т.д.).
+COUNTS:
+  DOT: 3
+  COMMA: 3
+  DOT: 3
+  DOT: 3
+  COMMA: 3
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  DOT: 3
+  DOT: 3
+  PARENTHESIS: 2
+  COMMA: 3
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  DOT: 3
+  PARENTHESIS: 2
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 20
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 20
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 13
+  SEPARATOR: 5
+  SEPARATOR: 20
+  SEPARATOR: 3
+  SEPARATOR: 12
+
+LINE 32 (length=971)
+TEXT: Проблемам анализа информационных процессов в системе управления маркетингом посвящено значительное число работ зарубежных авторов (Ф. Котлер, А. Вайсман, Ж. Эванс, Н. Берман и др.). Общий методологический подход к системным исследованиям проблем развития полиграфической промышленности отражен в трудах Аникиной К.А., Волковой Л.П., Машталер Р.М., Никольской Э.В., Полянского Н.Н., Чванова Р.А. и др. Но в этих работах анализ деятельности полиграфических предприятий рассматривается с позиций централизованного управления и планирования Проблемы переходного периода, с которыми сталкивается полиграфическая промышленность в настоящее время, не нашли своего отражения в трудах современных экономистов. Полностью отсутствует какая-либо информация о структуре и деятельности маркетинговых служб на полиграфических предприятиях, о практическом опыте применения маркетинговых принципов в управлении производственно-хозяйственной деятельностью на полиграфических предприятиях.
+COUNTS:
+  DOT: 21
+  INITIAL: 16
+  INITIALS: 6
+  COMMA: 11
+  DASH: 2
+  DOT: 21
+  INITIAL: 16
+  DASH: 2
+  DOT: 21
+  DASH: 2
+  COMMA: 11
+  DASH: 2
+  DOT: 21
+  DOT: 21
+  INITIAL: 16
+  DOT: 21
+  DASH: 2
+  DOT: 21
+  COMMA: 11
+  COMMA: 11
+  COMMA: 11
+  DASH: 2
+  INITIAL: 16
+  DOT: 21
+  DASH: 2
+  DOT: 21
+  PARENTHESIS: 2
+  COMMA: 11
+  DASH: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  INITIAL: 16
+  DOT: 21
+  INITIAL: 16
+  INITIALS: 6
+  INITIALS: 6
+  PARENTHESIS: 2
+  INITIAL: 16
+  ENTITY_SHAPE: 15
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 16
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 31
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 15
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 15
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  SEPARATOR: 21
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 23
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 57
+  SEPARATOR: 34
+  SEPARATOR: 26
+  SEPARATOR: 21
+  SEPARATOR: 5
+  SEPARATOR: 73
+  SEPARATOR: 21
+  SEPARATOR: 21
+  SEPARATOR: 73
+  SEPARATOR: 57
+  SEPARATOR: 5
+  SEPARATOR: 25
+  SEPARATOR: 48
+  SEPARATOR: 57
+  SEPARATOR: 73
+  SEPARATOR: 11
+  SEPARATOR: 62
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+
+LINE 33 (length=634)
+TEXT: В современных условиях обобщить опыт успешной маркетинговой деятельности, либо проанализировать ее недостатки сложно, так как директора предприятий предпочитают не показывать реальные данные о выпуске и реализации продукции, о финансовом положении предприятия, о себестоимости отдельных видов продукции. В то же время ощущается потребность в разработке рекомендаций по улучшению процесса управления в нестабильной экономической обстановке, в частности, по рационализации маркетинговой деятельности, так как непредсказуемость экономической политики часто ставит новые задачи перед аппаратом управления, требующие оперативного решения.
+COUNTS:
+  DOT: 2
+  COMMA: 8
+  DOT: 2
+  DOT: 2
+  COMMA: 8
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  COMMA: 8
+  COMMA: 8
+  COMMA: 8
+  DOT: 2
+  DOT: 2
+  COMMA: 8
+  DOT: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 23
+  SEPARATOR: 41
+  SEPARATOR: 16
+  SEPARATOR: 11
+  SEPARATOR: 2
+  SEPARATOR: 50
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 50
+  SEPARATOR: 41
+  SEPARATOR: 11
+  SEPARATOR: 39
+  SEPARATOR: 41
+  SEPARATOR: 1
+  SEPARATOR: 50
+  SEPARATOR: 4
+  SEPARATOR: 8
+  SEPARATOR: 52
+  SEPARATOR: 1
+  SEPARATOR: 4
+
+LINE 34 (length=2)
+TEXT: 5
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 35 (length=481)
+TEXT: В качестве объекта исследования автором выбрана группа полиграфических предприятий, которая охватывает по структуре систем управления, формам собственности и составу функциональных подразделений весь диапазон предприятий, характерный для данной отрасли. Это издательско-полиграфическое предприятие (ГИПП) «Янтарный сказ» (г. Калининград), издательско-полиграфическая фирма (ИПФ) «Малыш», типография газеты «Военный вестник Юга России» и фирма «Полиграфсервис» (г. Ростов-на-Дону).
+COUNTS:
+  DOT: 4
+  COMMA: 5
+  DASH: 4
+  DOT: 4
+  DASH: 4
+  DOT: 4
+  DASH: 4
+  COMMA: 5
+  DASH: 4
+  DOT: 4
+  QUOTATION: 8
+  DOT: 4
+  DOT: 4
+  DASH: 4
+  DOT: 4
+  COMMA: 5
+  COMMA: 5
+  COMMA: 5
+  DASH: 4
+  DOT: 4
+  QUOTATION: 8
+  DASH: 4
+  QUOTATION: 8
+  DOT: 4
+  PARENTHESIS: 8
+  COMMA: 5
+  DASH: 4
+  PARENTHESIS: 8
+  QUOTATION: 8
+  PARENTHESIS: 8
+  DOT: 4
+  PARENTHESIS: 8
+  ENTITY_SHAPE: 10
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 18
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 10
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 10
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 39
+  SEPARATOR: 14
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 37
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 37
+  SEPARATOR: 39
+  SEPARATOR: 9
+  SEPARATOR: 25
+  SEPARATOR: 39
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 37
+  SEPARATOR: 7
+  SEPARATOR: 27
+  SEPARATOR: 1
+
+LINE 36 (length=107)
+TEXT: Предметом исследования являются информационные процессы в системе управления полиграфического предприятия.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 4
+  SEPARATOR: 7
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 10
+  SEPARATOR: 10
+
+LINE 37 (length=335)
+TEXT: Цель работы - исследование и рационализация информационных процессов в системе управления маркетингом на предприятиях полиграфической промышленности с использованием количественных методов анализа для выработки комплекса теоретических и методических положений по повышению эффективности процесса управления маркетингом на предприятии.
+COUNTS:
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 20
+  SEPARATOR: 13
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 35
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 35
+  SEPARATOR: 20
+  SEPARATOR: 7
+  SEPARATOR: 15
+  SEPARATOR: 20
+  SEPARATOR: 1
+  SEPARATOR: 35
+  SEPARATOR: 2
+  SEPARATOR: 28
+  SEPARATOR: 1
+
+LINE 38 (length=69)
+TEXT: Достижение поставленной цели предполагает решение следующих задач: .
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  COLON: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  DOT: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 10
+
+LINE 39 (length=158)
+TEXT: -	проанализировать сложившиеся на полиграфических предприятиях структуры управления, выявить их достоинства и недостатки с точки зрения концепции маркетинга;
+COUNTS:
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  SEPARATOR: 6
+  SEPARATOR: 10
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 20
+  SEPARATOR: 20
+  SEPARATOR: 10
+  SEPARATOR: 6
+  SEPARATOR: 11
+  SEPARATOR: 10
+  SEPARATOR: 20
+  SEPARATOR: 1
+  SEPARATOR: 8
+
+LINE 40 (length=224)
+TEXT: -	оценить статистические характеристики информационных потоков в системе управления полиграфического предприятия: математические ожидания, дисперсии, коэффициенты вариации, законы распределения объемно-временных параметров;
+COUNTS:
+  COMMA: 3
+  DASH: 2
+  DASH: 2
+  DASH: 2
+  COLON: 1
+  COMMA: 3
+  DASH: 2
+  COLON: 1
+  COLON: 1
+  DASH: 2
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  DASH: 2
+  DASH: 2
+  COLON: 1
+  COMMA: 3
+  DASH: 2
+  SEPARATOR: 2
+  SEPARATOR: 8
+  SEPARATOR: 15
+  SEPARATOR: 3
+  SEPARATOR: 7
+  SEPARATOR: 28
+  SEPARATOR: 28
+  SEPARATOR: 15
+  SEPARATOR: 5
+  SEPARATOR: 13
+  SEPARATOR: 15
+  SEPARATOR: 28
+  SEPARATOR: 2
+  SEPARATOR: 21
+  SEPARATOR: 2
+
+LINE 41 (length=205)
+TEXT: -	построить совокупность экономико-математических моделей, позволяющих рационализировать процессы принятия решений при планировании объема и ассортимента печатной продукции на полиграфическом предприятии;
+COUNTS:
+  COMMA: 1
+  DASH: 2
+  DASH: 2
+  DASH: 2
+  COMMA: 1
+  DASH: 2
+  DASH: 2
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 2
+  DASH: 2
+  COMMA: 1
+  DASH: 2
+  SEPARATOR: 6
+  SEPARATOR: 13
+  SEPARATOR: 5
+  SEPARATOR: 7
+  SEPARATOR: 24
+  SEPARATOR: 24
+  SEPARATOR: 13
+  SEPARATOR: 4
+  SEPARATOR: 11
+  SEPARATOR: 13
+  SEPARATOR: 24
+  SEPARATOR: 3
+  SEPARATOR: 12
+
+LINE 42 (length=2)
+TEXT: 6
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 43 (length=230)
+TEXT: ’	- разработать методику оценки затрат времени на документирование заказов и обслуживание клиентов, позволяющую определить степень загруженности работников аппарата управления, непосредственно участвующих в процессе обслуживания;
+COUNTS:
+  COMMA: 2
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 2
+  DASH: 1
+  DASH: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DASH: 1
+  DASH: 1
+  COMMA: 2
+  DASH: 1
+  SEPARATOR: 6
+  SEPARATOR: 19
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 16
+  SEPARATOR: 16
+  SEPARATOR: 19
+  SEPARATOR: 3
+  SEPARATOR: 14
+  SEPARATOR: 19
+  SEPARATOR: 16
+  SEPARATOR: 19
+  SEPARATOR: 1
+
+LINE 44 (length=228)
+TEXT: -	исследовать сложившийся рынок полиграфических услуг, выявить его особенности, оценить потребности в отдельных видах печатной продукции, изучить потенциальных потребителей полиграфических услуг (на примере Ростовской области);
+COUNTS:
+  COMMA: 3
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 3
+  DASH: 1
+  DASH: 1
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  DASH: 1
+  DASH: 1
+  PARENTHESIS: 2
+  COMMA: 3
+  DASH: 1
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 8
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 22
+  SEPARATOR: 22
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 14
+  SEPARATOR: 8
+  SEPARATOR: 22
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 15
+  SEPARATOR: 2
+
+LINE 45 (length=116)
+TEXT: -	сформулировать требования, предъявляемые к маркетинговым информационным системам на полиграфических предприятиях;
+COUNTS:
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  SEPARATOR: 3
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 8
+  SEPARATOR: 11
+  SEPARATOR: 11
+  SEPARATOR: 7
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 7
+  SEPARATOR: 11
+  SEPARATOR: 8
+
+LINE 46 (length=305)
+TEXT: -	оценить степень взаимосвязи между документами в системе приема и исполнения заказов полиграфическим предприятием, разработать рекомендации по проектированию базы данных подсистемы внутренней отчетности маркетинговой информационной системы; оптимизировать документооборот на полиграфическом предприятии.
+COUNTS:
+  DOT: 1
+  COMMA: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 1
+  DASH: 1
+  DOT: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 18
+  SEPARATOR: 3
+  SEPARATOR: 16
+  SEPARATOR: 1
+  SEPARATOR: 32
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 32
+  SEPARATOR: 18
+  SEPARATOR: 4
+  SEPARATOR: 20
+  SEPARATOR: 18
+  SEPARATOR: 1
+  SEPARATOR: 32
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 24
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 47 (length=179)
+TEXT: В качестве инструмента для решения поставленных задач использовались: системный анализ, теория вероятностей и математическая статистика, а также современные программные средства.
+COUNTS:
+  DOT: 1
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  COLON: 1
+  DOT: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  COMMA: 2
+  DOT: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 17
+  SEPARATOR: 5
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 17
+  SEPARATOR: 5
+  SEPARATOR: 15
+  SEPARATOR: 17
+  SEPARATOR: 11
+  SEPARATOR: 2
+  SEPARATOR: 18
+
+LINE 48 (length=143)
+TEXT: Эмпирическую базу исследования составили данные, собранные в ходе изучения внутреннего документооборота отдельных полиграфических предприятий.
+COUNTS:
+  DOT: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 1
+  DOT: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 7
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 7
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 12
+
+LINE 49 (length=104)
+TEXT: Наиболее существенные результаты, полученные автором в ходе проведенного диссертационного исследования:
+COUNTS:
+  COMMA: 1
+  COLON: 1
+  COMMA: 1
+  COLON: 1
+  COLON: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COLON: 1
+  COMMA: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 13
+
+LINE 50 (length=250)
+TEXT: -	проведена рационализация документооборота на исследуемых полиграфических предприятиях на основе полученных количественных оценок информационной связи между документами; разработаны рекомендации к проектированию маркетинговых информационных систем;
+COUNTS:
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  SEPARATOR: 9
+  SEPARATOR: 17
+  SEPARATOR: 5
+  SEPARATOR: 10
+  SEPARATOR: 22
+  SEPARATOR: 22
+  SEPARATOR: 17
+  SEPARATOR: 4
+  SEPARATOR: 9
+  SEPARATOR: 17
+  SEPARATOR: 22
+  SEPARATOR: 1
+  SEPARATOR: 19
+
+LINE 51 (length=133)
+TEXT: -	доказано в результате количественного анализа информационных потоков в системе управления на предприятиях полиграфии, что информа-
+COUNTS:
+  COMMA: 1
+  DASH: 2
+  DASH: 2
+  DASH: 2
+  COMMA: 1
+  DASH: 2
+  DASH: 2
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 2
+  DASH: 2
+  COMMA: 1
+  DASH: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 11
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 12
+  SEPARATOR: 12
+  SEPARATOR: 11
+  SEPARATOR: 3
+  SEPARATOR: 7
+  SEPARATOR: 11
+  SEPARATOR: 12
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+
+LINE 52 (length=2)
+TEXT: 7
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 53 (length=267)
+TEXT: ционные процессы на исследованных объектах носят четко выраженный стохастический характер. Это обстоятельство обусловливает необходимость применения соответствующего инструментария при анализе информационных процессов в системе управления на предприятиях полиграфии;
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 15
+  SEPARATOR: 7
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 21
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 21
+  SEPARATOR: 15
+  SEPARATOR: 7
+  SEPARATOR: 19
+  SEPARATOR: 15
+  SEPARATOR: 21
+  SEPARATOR: 2
+  SEPARATOR: 22
+
+LINE 54 (length=485)
+TEXT: -	на основе статистического анализа эмпирических данных объемно-временных параметров функционирования информационной системы полиграфического предприятия количественно обоснованы наблюдаемые в реальной практике трудности с согласованием спроса и предложения. Рассчитанные статистические характеристики (в частности, экспоненциальный характер распределения интенсивности входного потока заказов; коэффициенты вариации, близкие к единице) оказались инвариантными к размерам предприятий;
+COUNTS:
+  DOT: 1
+  COMMA: 2
+  DASH: 2
+  DOT: 1
+  DASH: 2
+  DOT: 1
+  DASH: 2
+  COMMA: 2
+  DASH: 2
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 2
+  DOT: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DASH: 2
+  DOT: 1
+  DASH: 2
+  DOT: 1
+  PARENTHESIS: 2
+  COMMA: 2
+  DASH: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  DOT: 1
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 19
+  SEPARATOR: 40
+  SEPARATOR: 11
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 50
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 50
+  SEPARATOR: 40
+  SEPARATOR: 6
+  SEPARATOR: 25
+  SEPARATOR: 40
+  SEPARATOR: 50
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 35
+  SEPARATOR: 2
+
+LINE 55 (length=224)
+TEXT: -	показана возможность применения регрессионных моделей для рационализации процессов принятия решений аппаратом управления полиграфического предприятия, в частности, по планированию объема и ассортимента печатной продукции;
+COUNTS:
+  COMMA: 2
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 2
+  DASH: 1
+  DASH: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DASH: 1
+  DASH: 1
+  COMMA: 2
+  DASH: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 18
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 22
+  SEPARATOR: 22
+  SEPARATOR: 18
+  SEPARATOR: 7
+  SEPARATOR: 9
+  SEPARATOR: 18
+  SEPARATOR: 22
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 15
+  SEPARATOR: 1
+
+LINE 56 (length=503)
+TEXT: -	определено на основании исследования организационных структур полиграфических предприятий, охватывающих по формам собственности и структурам систем управления весь диапазон предприятий, характерный для данной отрасли, что в составе аппарата управления отсутствуют подразделения, непосредственно осуществляющие сбор и анализ маркетинговой информации. Разработаны рекомендации по совершенствованию информационных процессов в системе управления на предприятиях полиграфии с позиции концепции маркетинга.
+COUNTS:
+  DOT: 2
+  COMMA: 4
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  COMMA: 4
+  DASH: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  COMMA: 4
+  DASH: 1
+  DOT: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 39
+  SEPARATOR: 12
+  SEPARATOR: 10
+  SEPARATOR: 2
+  SEPARATOR: 47
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 47
+  SEPARATOR: 39
+  SEPARATOR: 11
+  SEPARATOR: 27
+  SEPARATOR: 39
+  SEPARATOR: 1
+  SEPARATOR: 47
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 33
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 57 (length=71)
+TEXT: Научная новизна диссертационного исследования заключается в следующем:
+COUNTS:
+  COLON: 1
+  COLON: 1
+  COLON: 1
+  COLON: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 5
+  SEPARATOR: 5
+
+LINE 58 (length=195)
+TEXT: -	разработаны рекомендации по рационализации информационных процессов на полиграфических предприятиях на основе полученных количественных оценок информационной связи между документами, позволив-
+COUNTS:
+  COMMA: 1
+  DASH: 2
+  DASH: 2
+  DASH: 2
+  COMMA: 1
+  DASH: 2
+  DASH: 2
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 2
+  DASH: 2
+  COMMA: 1
+  DASH: 2
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 13
+  SEPARATOR: 5
+  SEPARATOR: 6
+  SEPARATOR: 19
+  SEPARATOR: 19
+  SEPARATOR: 13
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 13
+  SEPARATOR: 19
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 1
+
+LINE 59 (length=2)
+TEXT: 8
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+
+LINE 60 (length=258)
+TEXT: ших выявить внутренние логические связи между данными, проанализировать применяемость реквизитов в документах и выделить сильно (слабо) связанные группы реквизитов; по результатам анализа проведена оптимизация документооборота на исследованных предприятиях;
+COUNTS:
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  PARENTHESIS: 2
+  COMMA: 1
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 17
+  SEPARATOR: 8
+  SEPARATOR: 8
+  SEPARATOR: 24
+  SEPARATOR: 24
+  SEPARATOR: 17
+  SEPARATOR: 7
+  SEPARATOR: 14
+  SEPARATOR: 17
+  SEPARATOR: 24
+  SEPARATOR: 1
+  SEPARATOR: 18
+  SEPARATOR: 1
+
+LINE 61 (length=155)
+TEXT: -	предложены рекомендации по проектированию подсистемы внутренней отчетности маркетинговой информационной системы, определяющие ее структуру и содержание;
+COUNTS:
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  SEPARATOR: 4
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 13
+  SEPARATOR: 13
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 5
+  SEPARATOR: 13
+  SEPARATOR: 3
+  SEPARATOR: 18
+
+LINE 62 (length=571)
+TEXT: -	доказана стохастическая природа информационных процессов в системе управления полиграфическим предприятием на основе анализа большого отчетного материала. Результаты статистического анализа информационных потоков в системе управления полиграфических предприятий (сплошная выборка за 2 года, всего около 2500 наблюдений) выявили большой разброс параметров, поэтому для рационализации информационных процессов предложены мероприятия, сглаживающие дисперсию интенсивности входного потока заказов и, соответственно, уменьшающие издержки от нестабильной работы предприятий;
+COUNTS:
+  DOT: 1
+  NUMBER: 2
+  COMMA: 5
+  NUMBER: 2
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  COMMA: 5
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  NUMBER: 2
+  DOT: 1
+  COMMA: 5
+  COMMA: 5
+  COMMA: 5
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  PARENTHESIS: 2
+  COMMA: 5
+  NUMBER: 2
+  DASH: 1
+  PARENTHESIS: 2
+  NUMBER: 2
+  NUMBER: 2
+  PARENTHESIS: 2
+  DOT: 1
+  NUMBER: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 44
+  SEPARATOR: 19
+  SEPARATOR: 12
+  SEPARATOR: 1
+  SEPARATOR: 50
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 50
+  SEPARATOR: 44
+  SEPARATOR: 11
+  SEPARATOR: 28
+  SEPARATOR: 2
+  SEPARATOR: 44
+  SEPARATOR: 50
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 35
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 63 (length=328)
+TEXT: -	показано, что при рационализации информационных процессов в системе управления полиграфическими предприятиями, в частности, при принятии решений по планированию объема и ассортимента печатной продукции, применимы регрессионные модели, описывающие зависимость между объемами прибыли и объемами производимой продукции по видам;
+COUNTS:
+  COMMA: 5
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 5
+  DASH: 1
+  DASH: 1
+  COMMA: 5
+  COMMA: 5
+  COMMA: 5
+  DASH: 1
+  DASH: 1
+  COMMA: 5
+  DASH: 1
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 20
+  SEPARATOR: 6
+  SEPARATOR: 17
+  SEPARATOR: 46
+  SEPARATOR: 46
+  SEPARATOR: 20
+  SEPARATOR: 4
+  SEPARATOR: 10
+  SEPARATOR: 20
+  SEPARATOR: 46
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 20
+  SEPARATOR: 4
+
+LINE 64 (length=370)
+TEXT: -	разработана методика оценки затрат рабочего времени на документальное оформление заказов, поступающих в производство. Применение методики позволило определить степень загруженности работников аппарата управления, непосредственно участвующих в этом процессе и разработать мероприятия, рационализирующие информационные потоки, связанные с процессом изготовления заказа.
+COUNTS:
+  DOT: 2
+  COMMA: 4
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  COMMA: 4
+  DASH: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  COMMA: 4
+  DASH: 1
+  DOT: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 31
+  SEPARATOR: 8
+  SEPARATOR: 10
+  SEPARATOR: 2
+  SEPARATOR: 28
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 28
+  SEPARATOR: 31
+  SEPARATOR: 5
+  SEPARATOR: 21
+  SEPARATOR: 31
+  SEPARATOR: 28
+  SEPARATOR: 1
+  SEPARATOR: 30
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 65 (length=128)
+TEXT: Результаты диссертационного исследования представляют практическую ценность для руководителей полиграфических предприятий. Так,
+COUNTS:
+  DOT: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 1
+  DOT: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 7
+  SEPARATOR: 4
+  SEPARATOR: 9
+  SEPARATOR: 7
+  SEPARATOR: 11
+  SEPARATOR: 2
+  SEPARATOR: 10
+
+LINE 66 (length=2)
+TEXT: 9
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+
+LINE 67 (length=716)
+TEXT: выявленные особенности сложившегося рынка полиграфических услуг вызвали интерес у руководителей ИПФ «Малыш». Выводы, полученные в результате экономико-статистического анализа отдельных экономических параметров, и методика оценки интенсивности труда сотрудников аппарата управления использованы на предприятии ГИПП «Янтарный сказ». Результаты применения методики формализованного анализа информационных характеристик предметной области заинтересовали руководителей отделения маркетинга Западного центра Российской академии естественных наук (представлены акты апробации результатов диссертационного исследования). Это позволяет сделать вывод о прикладной полезности проведенных исследований и полученных результатов.
+COUNTS:
+  DOT: 4
+  COMMA: 2
+  DASH: 1
+  DOT: 4
+  DASH: 1
+  DOT: 4
+  DASH: 1
+  COMMA: 2
+  DASH: 1
+  DOT: 4
+  QUOTATION: 4
+  DOT: 4
+  DOT: 4
+  DASH: 1
+  DOT: 4
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DASH: 1
+  DOT: 4
+  QUOTATION: 4
+  DASH: 1
+  QUOTATION: 4
+  DOT: 4
+  PARENTHESIS: 2
+  COMMA: 2
+  DASH: 1
+  PARENTHESIS: 2
+  QUOTATION: 4
+  PARENTHESIS: 2
+  DOT: 4
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 14
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 22
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 53
+  SEPARATOR: 30
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 56
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 56
+  SEPARATOR: 53
+  SEPARATOR: 8
+  SEPARATOR: 43
+  SEPARATOR: 53
+  SEPARATOR: 2
+  SEPARATOR: 56
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 54
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 68 (length=73)
+TEXT: Положения и выводы диссертационной работы могут быть также использованы:
+COUNTS:
+  COLON: 1
+  COLON: 1
+  COLON: 1
+  COLON: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 3
+
+LINE 69 (length=103)
+TEXT: -	при проектировании или реорганизации действующих структур управления полиграфическими предприятиями;
+COUNTS:
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 18
+  SEPARATOR: 18
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 18
+  SEPARATOR: 1
+  SEPARATOR: 6
+
+LINE 70 (length=84)
+TEXT: -	при создании маркетинговых информационных систем на полиграфических предприятиях;
+COUNTS:
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 12
+  SEPARATOR: 12
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 12
+  SEPARATOR: 4
+
+LINE 71 (length=96)
+TEXT: -	при организации схем обслуживания клиентов в системе управления полиграфическим предприятием;
+COUNTS:
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 14
+  SEPARATOR: 14
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 14
+  SEPARATOR: 8
+
+LINE 72 (length=210)
+TEXT: -	при разработке маркетинговых мероприятий, позволяющих регулировать потоки заявок в систему управления предприятиями (для уменьшения издержек от неравномерной загрузки производственных мощностей и персонала);
+COUNTS:
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  PARENTHESIS: 2
+  COMMA: 1
+  DASH: 1
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  SEPARATOR: 6
+  SEPARATOR: 10
+  SEPARATOR: 5
+  SEPARATOR: 7
+  SEPARATOR: 17
+  SEPARATOR: 17
+  SEPARATOR: 10
+  SEPARATOR: 8
+  SEPARATOR: 10
+  SEPARATOR: 10
+  SEPARATOR: 17
+  SEPARATOR: 3
+  SEPARATOR: 16
+
+LINE 73 (length=92)
+TEXT: -	при принятии решений аппаратом управления о планировании ассортимента печатной продукции.
+COUNTS:
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 9
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 1
+
+LINE 74 (length=18)
+TEXT: Апробация работы.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+
+LINE 75 (length=196)
+TEXT: Основные положения диссертации доложены на Межгосударственной научно-практической конференции «Организационно-экономические проблемы проектирования и применения информационных систем» (Ростов-на-
+COUNTS:
+  DASH: 4
+  DASH: 4
+  DASH: 4
+  DASH: 4
+  QUOTATION: 2
+  DASH: 4
+  DASH: 4
+  QUOTATION: 2
+  DASH: 4
+  QUOTATION: 2
+  PARENTHESIS: 1
+  DASH: 4
+  PARENTHESIS: 1
+  QUOTATION: 2
+  PARENTHESIS: 1
+  PARENTHESIS: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 19
+  SEPARATOR: 19
+  SEPARATOR: 10
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 10
+  SEPARATOR: 19
+  SEPARATOR: 2
+  SEPARATOR: 16
+
+LINE 76 (length=3)
+TEXT: 10
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 77 (length=886)
+TEXT: Дону, январь, 1996 г.), на Межгосударственной научно-практической конференции «Экономико-организационные проблемы анализа, проектирования и применения информационных систем» (Ростов-на-Дону, ноябрь, 1997 г.), на Межгосударственной научно-практической конференции «Проблемы проектирования и управления экономическими системами: инвестиционный аспект» (Ростов-на-Дону, март, 1998 г.); на Межгосударственной научно-практической конференции «Экономико-организационные проблемы проектирования и применения информационных систем» (Ростов-на-Дону, ноябрь, 1999 г.); на Региональной научно-практической конференции профессорско-преподавательского состава «Рынок труда в России: состояние, трансформация, прогноз» (Ростов-на-Дону, март, 1999). Основные положения диссертации отражены в 7 печатных работах. По теме диссертационного исследования автором опубликованы работы общим объемом 2,7 п.л.
+COUNTS:
+  DOT: 8
+  YEAR: 5
+  NUMBER: 8
+  COMMA: 16
+  NUMBER: 8
+  DASH: 15
+  DOT: 8
+  DASH: 15
+  DOT: 8
+  DASH: 15
+  COLON: 2
+  COMMA: 16
+  NUMBER: 8
+  NUMBER: 8
+  DASH: 15
+  DOT: 8
+  QUOTATION: 8
+  DOT: 8
+  YEAR: 5
+  DOT: 8
+  COLON: 2
+  COLON: 2
+  DASH: 15
+  NUMBER: 8
+  DOT: 8
+  COMMA: 16
+  COMMA: 16
+  COMMA: 16
+  DASH: 15
+  DOT: 8
+  QUOTATION: 8
+  DASH: 15
+  QUOTATION: 8
+  DOT: 8
+  PARENTHESIS: 9
+  COLON: 2
+  COMMA: 16
+  NUMBER: 8
+  DASH: 15
+  PARENTHESIS: 9
+  NUMBER: 8
+  QUOTATION: 8
+  NUMBER: 8
+  PARENTHESIS: 9
+  DOT: 8
+  NUMBER: 8
+  YEAR: 5
+  PARENTHESIS: 9
+  YEAR: 5
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 20
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 20
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 20
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 20
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 26
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 55
+  SEPARATOR: 11
+  SEPARATOR: 23
+  SEPARATOR: 3
+  SEPARATOR: 8
+  SEPARATOR: 62
+  SEPARATOR: 8
+  SEPARATOR: 5
+  SEPARATOR: 8
+  SEPARATOR: 62
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 55
+  SEPARATOR: 13
+  SEPARATOR: 5
+  SEPARATOR: 34
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 55
+  SEPARATOR: 62
+  SEPARATOR: 9
+  SEPARATOR: 52
+
+LINE 78 (length=28)
+TEXT: ' Объем и структура работы.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 79 (length=149)
+TEXT: Диссертация состоит из введения, четырех глав, заключения, 39 таблиц, 14 рисунков, библиографического списка использованных источников и приложений.
+COUNTS:
+  DOT: 1
+  NUMBER: 2
+  COMMA: 5
+  NUMBER: 2
+  DOT: 1
+  DOT: 1
+  COMMA: 5
+  NUMBER: 2
+  NUMBER: 2
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 2
+  DOT: 1
+  COMMA: 5
+  COMMA: 5
+  COMMA: 5
+  DOT: 1
+  DOT: 1
+  COMMA: 5
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  DOT: 1
+  NUMBER: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 7
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 18
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 18
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 7
+  SEPARATOR: 18
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 2
+
+LINE 80 (length=342)
+TEXT: Во введении обоснована актуальность темы диссертационной работы; сформулированы цель и задачи исследования; определены объект, предмет, теоретические и методологические основы исследования; выявлены научная новизна и практическая значимость результатов, представленных в диссертации; описаны результаты апробации и раскрыта структура работы.
+COUNTS:
+  DOT: 1
+  COMMA: 3
+  DOT: 1
+  DOT: 1
+  COMMA: 3
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  DOT: 1
+  DOT: 1
+  COMMA: 3
+  DOT: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 28
+  SEPARATOR: 11
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 27
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 27
+  SEPARATOR: 28
+  SEPARATOR: 5
+  SEPARATOR: 22
+  SEPARATOR: 28
+  SEPARATOR: 27
+  SEPARATOR: 1
+  SEPARATOR: 27
+  SEPARATOR: 1
+
+LINE 81 (length=463)
+TEXT: В первой главе «Экономико-организационные аспекты управления маркетинговой деятельностью на полиграфических предприятиях» сформулированы требования к аппарату управления полиграфическим предприятием с позиции концепции маркетинга. В состав этих требований включены такие, как: согласованная работа всех служб аппарата управления в целях реализации единой рыночной стратегии, включая повышение общей культуры предприятия и создание привлекательного, явно отличаю-
+COUNTS:
+  DOT: 1
+  COMMA: 3
+  DASH: 2
+  DOT: 1
+  DASH: 2
+  DOT: 1
+  DASH: 2
+  COLON: 1
+  COMMA: 3
+  DASH: 2
+  DOT: 1
+  QUOTATION: 2
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  COLON: 1
+  DASH: 2
+  DOT: 1
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  DASH: 2
+  DOT: 1
+  QUOTATION: 2
+  DASH: 2
+  QUOTATION: 2
+  DOT: 1
+  COLON: 1
+  COMMA: 3
+  DASH: 2
+  QUOTATION: 2
+  DOT: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 16
+  SEPARATOR: 1
+  SEPARATOR: 38
+  SEPARATOR: 18
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 41
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 41
+  SEPARATOR: 38
+  SEPARATOR: 14
+  SEPARATOR: 21
+  SEPARATOR: 38
+  SEPARATOR: 41
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 33
+  SEPARATOR: 1
+
+LINE 82 (length=3)
+TEXT: 11
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+
+LINE 83 (length=682)
+TEXT: щегося от конкурентов, индивидуального образа фирмы; гибкая структура управления, позволяющая быстро реагировать на изменение экономической ситуации на рынке полиграфических услуг (возможность быстрой переориентации производства на другие виды печатной продукции, отказ от принципа специализации по отдельному виду продукции); максимальная децентрализация управления. Это, как показал опыт зарубежных фирм, повышает ответственность каждого работника аппарата управления, укрепляет конкурентные рыночные позиции предприятия в целом; минимизация расходов на содержание аппарата управления, что позволяет уменьшить себестоимость выпускаемой продукции при сохранении ее качества; и др.
+COUNTS:
+  DOT: 2
+  COMMA: 7
+  DOT: 2
+  DOT: 2
+  COMMA: 7
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  COMMA: 7
+  COMMA: 7
+  COMMA: 7
+  DOT: 2
+  DOT: 2
+  PARENTHESIS: 2
+  COMMA: 7
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  DOT: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 23
+  SEPARATOR: 53
+  SEPARATOR: 16
+  SEPARATOR: 14
+  SEPARATOR: 2
+  SEPARATOR: 59
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 59
+  SEPARATOR: 53
+  SEPARATOR: 15
+  SEPARATOR: 35
+  SEPARATOR: 53
+  SEPARATOR: 59
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 44
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 84 (length=359)
+TEXT: Проводится анализ выполненных зарубежными и отечественными экономистами исследований организационных структур предприятий. Рассмотрены примеры оргструктур отдельных полиграфических предприятий. Показано, что ни на одном из исследуемых предприятий не ведется комплексная маркетинговая политика. В структуре аппарата управления отсутствует маркетинговый отдел.
+COUNTS:
+  DOT: 4
+  COMMA: 1
+  DOT: 4
+  DOT: 4
+  COMMA: 1
+  DOT: 4
+  DOT: 4
+  DOT: 4
+  DOT: 4
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DOT: 4
+  DOT: 4
+  COMMA: 1
+  DOT: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 22
+  SEPARATOR: 10
+  SEPARATOR: 11
+  SEPARATOR: 4
+  SEPARATOR: 29
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 29
+  SEPARATOR: 22
+  SEPARATOR: 8
+  SEPARATOR: 26
+  SEPARATOR: 22
+  SEPARATOR: 29
+  SEPARATOR: 5
+  SEPARATOR: 25
+
+LINE 85 (length=360)
+TEXT: В результате количественного анализа документооборота в системе управления обнаружено, что информационные процессы на полиграфических предприятиях носят четко выраженный вероятностный характер. Данное обстоятельство обусловливает необходимость применения соответствующего инструментария при анализе деятельности аппарата управления маркетингом на предприятии.
+COUNTS:
+  DOT: 2
+  COMMA: 1
+  DOT: 2
+  DOT: 2
+  COMMA: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DOT: 2
+  DOT: 2
+  COMMA: 1
+  DOT: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 25
+  SEPARATOR: 11
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 25
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 25
+  SEPARATOR: 25
+  SEPARATOR: 11
+  SEPARATOR: 28
+  SEPARATOR: 25
+  SEPARATOR: 1
+  SEPARATOR: 25
+  SEPARATOR: 2
+  SEPARATOR: 32
+  SEPARATOR: 1
+
+LINE 86 (length=285)
+TEXT: Во второй главе «Исследование входного потока заявок в систему управления полиграфического предприятия» приводится статистическое исследование характеристик входного потока заказов на выпуск полиграфической продукции (интенсивность поступления, тиражи, стоимость, время изготовления).
+COUNTS:
+  DOT: 1
+  COMMA: 3
+  DOT: 1
+  DOT: 1
+  COMMA: 3
+  DOT: 1
+  QUOTATION: 2
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  DOT: 1
+  QUOTATION: 2
+  QUOTATION: 2
+  DOT: 1
+  PARENTHESIS: 2
+  COMMA: 3
+  PARENTHESIS: 2
+  QUOTATION: 2
+  PARENTHESIS: 2
+  DOT: 1
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 16
+  SEPARATOR: 8
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 27
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 27
+  SEPARATOR: 16
+  SEPARATOR: 8
+  SEPARATOR: 18
+  SEPARATOR: 16
+  SEPARATOR: 1
+  SEPARATOR: 27
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 17
+  SEPARATOR: 1
+
+LINE 87 (length=135)
+TEXT: Результаты анализа входного потока заказов показали, что закон распределения интенсивности поступления заказов на исследуемых предпри-
+COUNTS:
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 14
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 9
+  SEPARATOR: 14
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 14
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
+
+LINE 88 (length=3)
+TEXT: 12
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 89 (length=283)
+TEXT: ятиях носит экспоненциальный характер. Полученные в процессе обработки отчетных данных предприятия за период более, чем два года, (сплошная выборка, всего 2389 записей) функции плотности распределения входного потока заказов для предприятия «Янтарный сказ» представлены в таблице 1.
+COUNTS:
+  DOT: 2
+  NUMBER: 2
+  COMMA: 3
+  NUMBER: 2
+  DOT: 2
+  DOT: 2
+  COMMA: 3
+  NUMBER: 2
+  NUMBER: 2
+  DOT: 2
+  QUOTATION: 2
+  DOT: 2
+  DOT: 2
+  NUMBER: 2
+  DOT: 2
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  DOT: 2
+  QUOTATION: 2
+  QUOTATION: 2
+  DOT: 2
+  PARENTHESIS: 2
+  COMMA: 3
+  NUMBER: 2
+  PARENTHESIS: 2
+  NUMBER: 2
+  QUOTATION: 2
+  NUMBER: 2
+  PARENTHESIS: 2
+  DOT: 2
+  NUMBER: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 19
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 15
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 15
+  SEPARATOR: 19
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 19
+  SEPARATOR: 15
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 21
+
+LINE 90 (length=109)
+TEXT: Аналогичные результаты были получены при исследовании интенсивности входного потока заказов для ИПФ «Малыш».
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  QUOTATION: 2
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  QUOTATION: 2
+  QUOTATION: 2
+  DOT: 1
+  QUOTATION: 2
+  DOT: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 5
+
+LINE 91 (length=159)
+TEXT: Таблица 1 - Функции плотности распределения входного по тока заказов по отдельными видам продукции на ГИПП «Янтарный сказ» (χ2κp при α=0,01 равны 13,3 и 15,1)
+COUNTS:
+  NUMBER: 8
+  COMMA: 3
+  NUMBER: 8
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 3
+  NUMBER: 8
+  NUMBER: 8
+  DASH: 1
+  QUOTATION: 2
+  DASH: 1
+  NUMBER: 8
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  DASH: 1
+  QUOTATION: 2
+  DASH: 1
+  QUOTATION: 2
+  PARENTHESIS: 2
+  COMMA: 3
+  NUMBER: 8
+  DASH: 1
+  PARENTHESIS: 2
+  NUMBER: 8
+  QUOTATION: 2
+  NUMBER: 8
+  PARENTHESIS: 2
+  NUMBER: 8
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 5
+  SEPARATOR: 11
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 2
+  SEPARATOR: 11
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+
+LINE 92 (length=90)
+TEXT: Составляющая входного потока	Предполагаемые дифференциальные функции распределения	X набл
+COUNTS:
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 8
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 8
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 8
+  SEPARATOR: 5
+  SEPARATOR: 9
+
+LINE 93 (length=41)
+TEXT: Бланки 1995 г.	/(х) = 0,18 ∙e^0'l8 x	1,7
+COUNTS:
+  DOT: 1
+  YEAR: 1
+  NUMBER: 7
+  COMMA: 2
+  NUMBER: 7
+  DOT: 1
+  DOT: 1
+  COMMA: 2
+  NUMBER: 7
+  NUMBER: 7
+  DOT: 1
+  DOT: 1
+  YEAR: 1
+  DOT: 1
+  NUMBER: 7
+  DOT: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  SLASH: 1
+  PARENTHESIS: 2
+  COMMA: 2
+  NUMBER: 7
+  PARENTHESIS: 2
+  NUMBER: 7
+  NUMBER: 7
+  PARENTHESIS: 2
+  DOT: 1
+  NUMBER: 7
+  YEAR: 1
+  SLASH: 1
+  PARENTHESIS: 2
+  YEAR: 1
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 94 (length=38)
+TEXT: Бланки 1996 г	∕(x) = 0,21∙e-°∙21x	н,з
+COUNTS:
+  YEAR: 1
+  NUMBER: 4
+  COMMA: 2
+  NUMBER: 4
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 2
+  NUMBER: 4
+  NUMBER: 4
+  DASH: 1
+  YEAR: 1
+  DASH: 1
+  NUMBER: 4
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DASH: 1
+  DASH: 1
+  PARENTHESIS: 2
+  COMMA: 2
+  NUMBER: 4
+  DASH: 1
+  PARENTHESIS: 2
+  NUMBER: 4
+  NUMBER: 4
+  PARENTHESIS: 2
+  NUMBER: 4
+  YEAR: 1
+  PARENTHESIS: 2
+  YEAR: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 95 (length=59)
+TEXT: Изобразительная продукция 1995 г.	/(х) = 1,13 ∙e^l,n 1	и,з
+COUNTS:
+  DOT: 1
+  YEAR: 1
+  NUMBER: 4
+  COMMA: 3
+  NUMBER: 4
+  DOT: 1
+  DOT: 1
+  COMMA: 3
+  NUMBER: 4
+  NUMBER: 4
+  DOT: 1
+  DOT: 1
+  YEAR: 1
+  DOT: 1
+  NUMBER: 4
+  DOT: 1
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  DOT: 1
+  DOT: 1
+  SLASH: 1
+  PARENTHESIS: 2
+  COMMA: 3
+  NUMBER: 4
+  PARENTHESIS: 2
+  NUMBER: 4
+  NUMBER: 4
+  PARENTHESIS: 2
+  DOT: 1
+  NUMBER: 4
+  YEAR: 1
+  SLASH: 1
+  PARENTHESIS: 2
+  YEAR: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 96 (length=58)
+TEXT: Изобразительная продукция 1996 г.	∕(x) = 0,77-e'o',,'	9,4
+COUNTS:
+  DOT: 1
+  YEAR: 1
+  NUMBER: 5
+  COMMA: 4
+  NUMBER: 5
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  COMMA: 4
+  NUMBER: 5
+  NUMBER: 5
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  YEAR: 1
+  DOT: 1
+  DASH: 1
+  NUMBER: 5
+  DOT: 1
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  PARENTHESIS: 2
+  COMMA: 4
+  NUMBER: 5
+  DASH: 1
+  PARENTHESIS: 2
+  NUMBER: 5
+  NUMBER: 5
+  PARENTHESIS: 2
+  DOT: 1
+  NUMBER: 5
+  YEAR: 1
+  PARENTHESIS: 2
+  YEAR: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+
+LINE 97 (length=43)
+TEXT: Этикетки 1995 г.	/(х) = 0,59 ■ e'0,59x	6,3
+COUNTS:
+  DOT: 1
+  YEAR: 1
+  NUMBER: 7
+  COMMA: 3
+  NUMBER: 7
+  DOT: 1
+  DOT: 1
+  COMMA: 3
+  NUMBER: 7
+  NUMBER: 7
+  DOT: 1
+  DOT: 1
+  YEAR: 1
+  DOT: 1
+  NUMBER: 7
+  DOT: 1
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  DOT: 1
+  DOT: 1
+  SLASH: 1
+  PARENTHESIS: 2
+  COMMA: 3
+  NUMBER: 7
+  PARENTHESIS: 2
+  NUMBER: 7
+  NUMBER: 7
+  PARENTHESIS: 2
+  DOT: 1
+  NUMBER: 7
+  YEAR: 1
+  SLASH: 1
+  PARENTHESIS: 2
+  YEAR: 1
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 98 (length=44)
+TEXT: Этикетки 1996 г.	/(х) = 0,54 ∙e^0,54'x	6Д	'
+COUNTS:
+  DOT: 1
+  YEAR: 1
+  NUMBER: 6
+  COMMA: 2
+  NUMBER: 6
+  DOT: 1
+  DOT: 1
+  COMMA: 2
+  NUMBER: 6
+  NUMBER: 6
+  DOT: 1
+  DOT: 1
+  YEAR: 1
+  DOT: 1
+  NUMBER: 6
+  DOT: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  SLASH: 1
+  PARENTHESIS: 2
+  COMMA: 2
+  NUMBER: 6
+  PARENTHESIS: 2
+  NUMBER: 6
+  NUMBER: 6
+  PARENTHESIS: 2
+  DOT: 1
+  NUMBER: 6
+  YEAR: 1
+  SLASH: 1
+  PARENTHESIS: 2
+  YEAR: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 99 (length=42)
+TEXT: Визитки 1996 г.	/(х) = 0,65 ∙e"0'65 x	2,9
+COUNTS:
+  DOT: 1
+  YEAR: 1
+  NUMBER: 7
+  COMMA: 2
+  NUMBER: 7
+  DOT: 1
+  DOT: 1
+  COMMA: 2
+  NUMBER: 7
+  NUMBER: 7
+  DOT: 1
+  QUOTATION: 1
+  DOT: 1
+  YEAR: 1
+  DOT: 1
+  NUMBER: 7
+  DOT: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 1
+  QUOTATION: 1
+  QUOTATION: 1
+  DOT: 1
+  SLASH: 1
+  PARENTHESIS: 2
+  COMMA: 2
+  NUMBER: 7
+  PARENTHESIS: 2
+  NUMBER: 7
+  QUOTATION: 1
+  NUMBER: 7
+  PARENTHESIS: 2
+  DOT: 1
+  NUMBER: 7
+  YEAR: 1
+  SLASH: 1
+  PARENTHESIS: 2
+  YEAR: 1
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+
+LINE 100 (length=165)
+TEXT: Распределение числа заказов в день на ГИПП «Янтарный сказ» и ИПФ «Малыш» представлено на рисунках 1 и 2. Здесь «Ряд 1» - наблюденные, «Ряд 2» - выровненные частоты.
+COUNTS:
+  DOT: 2
+  NUMBER: 4
+  COMMA: 1
+  NUMBER: 4
+  DASH: 2
+  DOT: 2
+  DASH: 2
+  DOT: 2
+  DASH: 2
+  COMMA: 1
+  NUMBER: 4
+  NUMBER: 4
+  DASH: 2
+  DOT: 2
+  QUOTATION: 8
+  DOT: 2
+  DOT: 2
+  DASH: 2
+  NUMBER: 4
+  DOT: 2
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 2
+  DOT: 2
+  QUOTATION: 8
+  DASH: 2
+  QUOTATION: 8
+  DOT: 2
+  COMMA: 1
+  NUMBER: 4
+  DASH: 2
+  NUMBER: 4
+  QUOTATION: 8
+  NUMBER: 4
+  DOT: 2
+  NUMBER: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 13
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 13
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 12
+
+LINE 101 (length=3)
+TEXT: 13
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 102 (length=26)
+TEXT: Количество заказов в день
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 103 (length=72)
+TEXT: Рисунок 1 - Распределение числа заказов в день на ГИ1П1 «Янтарный сказ»
+COUNTS:
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 1
+  QUOTATION: 2
+  DASH: 1
+  NUMBER: 3
+  DASH: 1
+  QUOTATION: 2
+  DASH: 1
+  QUOTATION: 2
+  NUMBER: 3
+  DASH: 1
+  NUMBER: 3
+  QUOTATION: 2
+  NUMBER: 3
+  NUMBER: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 7
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 5
+
+LINE 104 (length=21)
+TEXT: Число заказов в день
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 105 (length=62)
+TEXT: Рисунок 2 - Распределение числа заказов в день на ИПФ «Малыш»
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  QUOTATION: 2
+  DASH: 1
+  NUMBER: 1
+  DASH: 1
+  QUOTATION: 2
+  DASH: 1
+  QUOTATION: 2
+  NUMBER: 1
+  DASH: 1
+  NUMBER: 1
+  QUOTATION: 2
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+
+LINE 106 (length=129)
+TEXT: Статистическое исследование потока заказов по стоимости, тиражам, времени изготовления также выявило большой разброс параметров.
+COUNTS:
+  DOT: 1
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  COMMA: 2
+  DOT: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 11
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 11
+  SEPARATOR: 2
+  SEPARATOR: 10
+  SEPARATOR: 11
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 107 (length=619)
+TEXT: К новым результатам представленных во второй главе исследований можно отнести не только полученные на основании анализа большого фактического материала общие выводы о стохастической природе информационных процессов в системе управления полиграфическими предприятиями, но и конкретные эмпирические данные о виде законов распределения потока заказов на изготовление продукции и рассчитанные статистические характеристики этого потока. При этом впервые обнаружено, что такая характеристика выборки, как коэффициент вариации, статистически инвариантна к размерам предприятия, то есть и на малых, и на средних, и на крупных
+COUNTS:
+  DOT: 1
+  COMMA: 7
+  DOT: 1
+  DOT: 1
+  COMMA: 7
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 7
+  COMMA: 7
+  COMMA: 7
+  DOT: 1
+  DOT: 1
+  COMMA: 7
+  DOT: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 26
+  SEPARATOR: 50
+  SEPARATOR: 14
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 60
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 60
+  SEPARATOR: 50
+  SEPARATOR: 7
+  SEPARATOR: 37
+  SEPARATOR: 50
+  SEPARATOR: 60
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 45
+  SEPARATOR: 3
+
+LINE 108 (length=3)
+TEXT: 14
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 109 (length=1001)
+TEXT: предприятиях полиграфической промышленности коэффициент вариации числа заказов в единицу времени (сутки) примерно одинаков и близок к единице. Этот результат количественно объясняет наблюдаемые в реальной практике трудности с согласованием спроса и предложения. Неравномерность спроса значительно увеличивает издержки от простоя персонала и оборудования в ожидании заказов, что приводит к нестабильной работе предприятия в целом. Действительно, как следует из теории массового обслуживания, большая дисперсия входного потока требований на обслуживание ведет к возрастанию вероятности отказа в обслуживании, увеличению времени ожидания заявок в очереди и т.п. Расчеты доказывают необходимость уменьшения дисперсии интенсивности поступления входного потока заказов, повышения его регулярности. Это, в свою очередь, приведет к более равномерной загрузке оборудования и персонала, к снижению себестоимости продукции, улучшению показателей конкурентоспособности предприятия и адаптивности к внешней среде.
+COUNTS:
+  DOT: 7
+  COMMA: 9
+  DOT: 7
+  DOT: 7
+  COMMA: 9
+  DOT: 7
+  DOT: 7
+  DOT: 7
+  DOT: 7
+  COMMA: 9
+  COMMA: 9
+  COMMA: 9
+  DOT: 7
+  DOT: 7
+  PARENTHESIS: 2
+  COMMA: 9
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  DOT: 7
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 30
+  SEPARATOR: 57
+  SEPARATOR: 28
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 92
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 92
+  SEPARATOR: 57
+  SEPARATOR: 22
+  SEPARATOR: 53
+  SEPARATOR: 57
+  SEPARATOR: 1
+  SEPARATOR: 92
+  SEPARATOR: 2
+  SEPARATOR: 8
+  SEPARATOR: 80
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+
+LINE 110 (length=524)
+TEXT: Решение задачи увеличения эффективности работы полиграфических предприятий за счет уменьшения издержек от простоя производственных мощностей и персонала в ожидании заявок на изготовление продукции может быть возложено на маркетинговые отделы предприятий. Таким образом, результаты проведенного статистического исследования входного потока заказов по интенсивности, тиражам, стоимости и времени изготовления доказывают необходимость введения маркетингового отдела в структуру системы управления полиграфическим предприятием.
+COUNTS:
+  DOT: 2
+  COMMA: 3
+  DOT: 2
+  DOT: 2
+  COMMA: 3
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  DOT: 2
+  DOT: 2
+  COMMA: 3
+  DOT: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 28
+  SEPARATOR: 12
+  SEPARATOR: 14
+  SEPARATOR: 2
+  SEPARATOR: 50
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 50
+  SEPARATOR: 28
+  SEPARATOR: 11
+  SEPARATOR: 35
+  SEPARATOR: 28
+  SEPARATOR: 50
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 43
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 111 (length=258)
+TEXT: Но, спрашивается, какова должна быть структура самой маркетинговой службы и численность ее персонала? Для ответа на поставленный вопрос нами разработана и апробирована методика оценки затрат времени: ' а) на документирование заказов и обслуживание клиентов;
+COUNTS:
+  COMMA: 2
+  COLON: 1
+  COMMA: 2
+  COLON: 1
+  COLON: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  PARENTHESIS: 1
+  COLON: 1
+  COMMA: 2
+  PARENTHESIS: 1
+  PARENTHESIS: 1
+  PARENTHESIS: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 9
+  SEPARATOR: 30
+  SEPARATOR: 8
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 16
+  SEPARATOR: 30
+  SEPARATOR: 2
+  SEPARATOR: 15
+  SEPARATOR: 30
+  SEPARATOR: 16
+  SEPARATOR: 3
+  SEPARATOR: 16
+
+LINE 112 (length=83)
+TEXT: б) на осуществление внутреннего документооборота сотрудниками аппарата управления.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  PARENTHESIS: 1
+  PARENTHESIS: 1
+  PARENTHESIS: 1
+  DOT: 1
+  PARENTHESIS: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 8
+  SEPARATOR: 4
+  SEPARATOR: 7
+
+LINE 113 (length=3)
+TEXT: 15
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 114 (length=307)
+TEXT: В результате применения этой методики была оценена загрузка инженера-диспетчера стола заказов ГИПП «Янтарный сказ», доказана необходимость пересмотра его должностных обязанностей, а также рассчитаны затраты времени на документирование продукции планового и производственно-технического отделов ИПФ «Малыш».
+COUNTS:
+  DOT: 1
+  COMMA: 2
+  DASH: 2
+  DOT: 1
+  DASH: 2
+  DOT: 1
+  DASH: 2
+  COMMA: 2
+  DASH: 2
+  DOT: 1
+  QUOTATION: 4
+  DOT: 1
+  DOT: 1
+  DASH: 2
+  DOT: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DASH: 2
+  DOT: 1
+  QUOTATION: 4
+  DASH: 2
+  QUOTATION: 4
+  DOT: 1
+  COMMA: 2
+  DASH: 2
+  QUOTATION: 4
+  DOT: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 10
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 27
+  SEPARATOR: 7
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 27
+  SEPARATOR: 2
+  SEPARATOR: 19
+  SEPARATOR: 27
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 3
+  SEPARATOR: 25
+
+LINE 115 (length=968)
+TEXT: В третьей главе «Исследование процесса управления маркетингом на полиграфическом предприятии» проведен анализ рыночных возможностей полиграфических предприятий. В результате изучения рынка полиграфических услуг были определены его следующие особенности: субъекты рынка - полиграфические предприятия - в большинстве своем вынуждены диверсифицировать свою деятельность. Нет четкой специализации, существует неявная ориентация на определенные виды полиграфической продукции; резко увеличилось количество фирм, оказывающих полиграфические услуги. Это, как правило, небольшие предприятия, имеющие одну или две печатные машины и штат сотрудников до 20 человек; отсутствует информация о технической оснащенности и возможностях полиграфических предприятий, поэтому заказчику сложно сделать выбор в пользу того или иного производителя полиграфических услуг; полиграфические предприятия функционируют в высоко конкурентной среде, при этом конкуренция носит предметный характер.
+COUNTS:
+  DOT: 4
+  NUMBER: 1
+  COMMA: 7
+  NUMBER: 1
+  DASH: 2
+  DOT: 4
+  DASH: 2
+  DOT: 4
+  DASH: 2
+  COLON: 1
+  COMMA: 7
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 2
+  DOT: 4
+  QUOTATION: 2
+  DOT: 4
+  DOT: 4
+  COLON: 1
+  COLON: 1
+  DASH: 2
+  NUMBER: 1
+  DOT: 4
+  COMMA: 7
+  COMMA: 7
+  COMMA: 7
+  DASH: 2
+  DOT: 4
+  QUOTATION: 2
+  DASH: 2
+  QUOTATION: 2
+  DOT: 4
+  COLON: 1
+  COMMA: 7
+  NUMBER: 1
+  DASH: 2
+  NUMBER: 1
+  QUOTATION: 2
+  NUMBER: 1
+  DOT: 4
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 32
+  SEPARATOR: 40
+  SEPARATOR: 36
+  SEPARATOR: 13
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 92
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 92
+  SEPARATOR: 40
+  SEPARATOR: 19
+  SEPARATOR: 46
+  SEPARATOR: 1
+  SEPARATOR: 40
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 92
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 82
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 116 (length=276)
+TEXT: Выявленные особенности рынка полиграфических услуг доказывают необходимость активной маркетинговой деятельности предприятий полиграфии в целях непрерывного отслеживания потребностей рынка и удов-* летворение этих потребностей более эффективными, чем у конкурентов, способами.
+COUNTS:
+  DOT: 1
+  COMMA: 2
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  COMMA: 2
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 2
+  DASH: 1
+  DOT: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 10
+  SEPARATOR: 9
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 21
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 21
+  SEPARATOR: 10
+  SEPARATOR: 5
+  SEPARATOR: 17
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 21
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 25
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 117 (length=199)
+TEXT: Исследованы потенциальные потребители полиграфических услуг. Обоснован вывод о том, что потребность в полиграфических услугах с развитием рыночных отношений возрастает, и, соответственно, возрастает
+COUNTS:
+  DOT: 1
+  COMMA: 4
+  DOT: 1
+  DOT: 1
+  COMMA: 4
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  DOT: 1
+  DOT: 1
+  COMMA: 4
+  DOT: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 7
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 11
+  SEPARATOR: 16
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 118 (length=3)
+TEXT: 16
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 119 (length=73)
+TEXT: роль маркетинговой службы в системе управления предприятиями полиграфии.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+
+LINE 120 (length=142)
+TEXT: На рисунке 3 представлена гистограмма распределения объемов реализации книжной продукции на предприятии «Янтарный сказ» за трехлетний период.
+COUNTS:
+  DOT: 1
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 1
+  QUOTATION: 2
+  DOT: 1
+  DOT: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  QUOTATION: 2
+  QUOTATION: 2
+  DOT: 1
+  NUMBER: 1
+  NUMBER: 1
+  QUOTATION: 2
+  NUMBER: 1
+  DOT: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 12
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 12
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 12
+  SEPARATOR: 14
+  SEPARATOR: 3
+  SEPARATOR: 12
+
+LINE 121 (length=7)
+TEXT: Месяцы
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 122 (length=97)
+TEXT: Рисунок 3 - Помесячная реализация книжной продукции в денежном выражении на ГИПП «Янтарный сказ»
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  QUOTATION: 2
+  DASH: 1
+  NUMBER: 1
+  DASH: 1
+  QUOTATION: 2
+  DASH: 1
+  QUOTATION: 2
+  NUMBER: 1
+  DASH: 1
+  NUMBER: 1
+  QUOTATION: 2
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 4
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 5
+
+LINE 123 (length=337)
+TEXT: Как видно из рисунка 3, объемы продаж как внутри одного года, так и за весь период достаточно стабильны. Коэффициент вариации объемов реализации печатной продукции в течение всего периода наблюдений (два года и девять месяцев) оказался равным 0,07. Поэтому можно утверждать, что торговля книжной продукцией не носит сезонного характера.
+COUNTS:
+  DOT: 3
+  NUMBER: 3
+  COMMA: 4
+  NUMBER: 3
+  DOT: 3
+  DOT: 3
+  COMMA: 4
+  NUMBER: 3
+  NUMBER: 3
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  NUMBER: 3
+  DOT: 3
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  DOT: 3
+  DOT: 3
+  PARENTHESIS: 2
+  COMMA: 4
+  NUMBER: 3
+  PARENTHESIS: 2
+  NUMBER: 3
+  NUMBER: 3
+  PARENTHESIS: 2
+  DOT: 3
+  NUMBER: 3
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 25
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 24
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 24
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 25
+  SEPARATOR: 4
+  SEPARATOR: 16
+  SEPARATOR: 25
+  SEPARATOR: 24
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 21
+
+LINE 124 (length=318)
+TEXT: С использованием методов регрессионного анализа нами были построены модели, облегчающие процессы управления маркетингом на предприятиях полиграфии. Так, нами получена зависимость между объемом прибыли и объемами производства по видам производимой продукции (на основании отчетных данных планового отдела ИПФ «Малыш»),
+COUNTS:
+  DOT: 1
+  COMMA: 3
+  DOT: 1
+  DOT: 1
+  COMMA: 3
+  DOT: 1
+  QUOTATION: 2
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  DOT: 1
+  QUOTATION: 2
+  QUOTATION: 2
+  DOT: 1
+  PARENTHESIS: 2
+  COMMA: 3
+  PARENTHESIS: 2
+  QUOTATION: 2
+  PARENTHESIS: 2
+  DOT: 1
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 23
+  SEPARATOR: 12
+  SEPARATOR: 15
+  SEPARATOR: 1
+  SEPARATOR: 30
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 30
+  SEPARATOR: 23
+  SEPARATOR: 3
+  SEPARATOR: 9
+  SEPARATOR: 23
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 30
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 18
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 125 (length=187)
+TEXT: Независимые переменные: х( - месячный объем производства книжной продукции; х2 - месячный объем производства услуг; х3 - месячный объем производства предметов народного потребления и др.
+COUNTS:
+  DOT: 1
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 3
+  DOT: 1
+  DASH: 3
+  DOT: 1
+  DASH: 3
+  COLON: 1
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 3
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  COLON: 1
+  DASH: 3
+  NUMBER: 2
+  DOT: 1
+  DASH: 3
+  DOT: 1
+  DASH: 3
+  DOT: 1
+  PARENTHESIS: 1
+  COLON: 1
+  NUMBER: 2
+  DASH: 3
+  PARENTHESIS: 1
+  NUMBER: 2
+  NUMBER: 2
+  PARENTHESIS: 1
+  DOT: 1
+  NUMBER: 2
+  PARENTHESIS: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 10
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 16
+
+LINE 126 (length=3)
+TEXT: 17
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 127 (length=56)
+TEXT: Зависимая переменная у - месячный объем чистой прибыли.
+COUNTS:
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 1
+
+LINE 128 (length=75)
+TEXT: В результате расчетов получено следующее статистически значимое уравнение:
+COUNTS:
+  COLON: 1
+  COLON: 1
+  COLON: 1
+  COLON: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 6
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 11
+
+LINE 129 (length=20)
+TEXT: у = 0,13 x1 - 9,95.
+COUNTS:
+  DOT: 1
+  NUMBER: 5
+  COMMA: 2
+  NUMBER: 5
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  COMMA: 2
+  NUMBER: 5
+  NUMBER: 5
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  NUMBER: 5
+  DOT: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 2
+  NUMBER: 5
+  DASH: 1
+  NUMBER: 5
+  NUMBER: 5
+  DOT: 1
+  NUMBER: 5
+  ENTITY_SHAPE: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+
+LINE 130 (length=122)
+TEXT: Коэффициент детерминации г" = 0,87. b(xθ / σ[b(x1)] = 5,33. Расчетный F-критерий равен 28,48; Fτa6,, = 4,64 при а ==0,05.
+COUNTS:
+  DOT: 3
+  NUMBER: 12
+  COMMA: 7
+  NUMBER: 12
+  DASH: 1
+  DOT: 3
+  DASH: 1
+  DOT: 3
+  DASH: 1
+  COMMA: 7
+  NUMBER: 12
+  NUMBER: 12
+  DASH: 1
+  DOT: 3
+  QUOTATION: 1
+  DOT: 3
+  DOT: 3
+  DASH: 1
+  NUMBER: 12
+  DOT: 3
+  COMMA: 7
+  COMMA: 7
+  COMMA: 7
+  DASH: 1
+  DOT: 3
+  QUOTATION: 1
+  DASH: 1
+  QUOTATION: 1
+  DOT: 3
+  SLASH: 1
+  PARENTHESIS: 3
+  COMMA: 7
+  NUMBER: 12
+  DASH: 1
+  PARENTHESIS: 3
+  NUMBER: 12
+  QUOTATION: 1
+  NUMBER: 12
+  PARENTHESIS: 3
+  DOT: 3
+  NUMBER: 12
+  SLASH: 1
+  PARENTHESIS: 3
+  ENTITY_SHAPE: 12
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 8
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 6
+
+LINE 131 (length=186)
+TEXT: Коэффициенты корреляции между у и остальными независимыми переменными, в том числе переменными х2 и х3, и коэффициенты b(x2) и b(x3) в уравнении у = f(x(, x2, x3) оказались незначимыми.
+COUNTS:
+  DOT: 1
+  NUMBER: 6
+  COMMA: 4
+  NUMBER: 6
+  DOT: 1
+  DOT: 1
+  COMMA: 4
+  NUMBER: 6
+  NUMBER: 6
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 6
+  DOT: 1
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  DOT: 1
+  DOT: 1
+  PARENTHESIS: 7
+  COMMA: 4
+  NUMBER: 6
+  PARENTHESIS: 7
+  NUMBER: 6
+  NUMBER: 6
+  PARENTHESIS: 7
+  DOT: 1
+  NUMBER: 6
+  PARENTHESIS: 7
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 4
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 22
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 22
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 22
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 132 (length=248)
+TEXT: Для решения вопроса о том, как влияет расширение ассортимента выпуска на месячный доход предприятия, нами была построена регрессионная модель, исходными данными для которой послужили сводные показатели деятельности ИПФ «Малыш» за 1996 и 1997 годы.
+COUNTS:
+  DOT: 1
+  YEAR: 2
+  NUMBER: 2
+  COMMA: 3
+  NUMBER: 2
+  DOT: 1
+  DOT: 1
+  COMMA: 3
+  NUMBER: 2
+  NUMBER: 2
+  DOT: 1
+  QUOTATION: 2
+  DOT: 1
+  YEAR: 2
+  DOT: 1
+  NUMBER: 2
+  DOT: 1
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  DOT: 1
+  QUOTATION: 2
+  QUOTATION: 2
+  DOT: 1
+  COMMA: 3
+  NUMBER: 2
+  NUMBER: 2
+  QUOTATION: 2
+  NUMBER: 2
+  DOT: 1
+  NUMBER: 2
+  YEAR: 2
+  YEAR: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 10
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 2
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 1
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 16
+  SEPARATOR: 1
+
+LINE 133 (length=226)
+TEXT: Независимые переменные в модели: x1 - общее число ассортиментных групп печатной продукции, выпускаемой предприятием; х2 - месячный объем производства книжной продукции и др. Зависимая переменная у -месячный доход предприятия.
+COUNTS:
+  DOT: 2
+  NUMBER: 2
+  COMMA: 1
+  NUMBER: 2
+  DASH: 3
+  DOT: 2
+  DASH: 3
+  DOT: 2
+  DASH: 3
+  COLON: 1
+  COMMA: 1
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 3
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  COLON: 1
+  COLON: 1
+  DASH: 3
+  NUMBER: 2
+  DOT: 2
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 3
+  DOT: 2
+  DASH: 3
+  DOT: 2
+  COLON: 1
+  COMMA: 1
+  NUMBER: 2
+  DASH: 3
+  NUMBER: 2
+  NUMBER: 2
+  DOT: 2
+  NUMBER: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 11
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 18
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 18
+  SEPARATOR: 8
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 18
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 21
+  SEPARATOR: 1
+
+LINE 134 (length=52)
+TEXT: В результате расчетов получено следующее уравнение:
+COUNTS:
+  COLON: 1
+  COLON: 1
+  COLON: 1
+  COLON: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 9
+
+LINE 135 (length=45)
+TEXT: у = - 16,21x1 - 0,71x2 + 11,22x1x2 + 614,04.
+COUNTS:
+  DOT: 1
+  NUMBER: 12
+  COMMA: 4
+  NUMBER: 12
+  DASH: 2
+  DOT: 1
+  DASH: 2
+  DOT: 1
+  DASH: 2
+  COMMA: 4
+  NUMBER: 12
+  NUMBER: 12
+  DASH: 2
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 2
+  NUMBER: 12
+  DOT: 1
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  DASH: 2
+  DOT: 1
+  DASH: 2
+  DOT: 1
+  COMMA: 4
+  NUMBER: 12
+  DASH: 2
+  NUMBER: 12
+  NUMBER: 12
+  DOT: 1
+  NUMBER: 12
+  ENTITY_SHAPE: 12
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 1
+
+LINE 136 (length=267)
+TEXT: Уравнение является статистически значимым. Коэффициент множественной корреляции г = 0,91; коэффициент детерминации r2 = 0,84. b(xι) / σ[b(xι)] = 4,74; b(x2) / σ[b(x2)] = 3,37; b(x1x2) / σ[b(xlx2)] = 2,32. Расчетный F-критерий равен 30,22; Fτa6jl = 4,45 при а = 0,05.
+COUNTS:
+  DOT: 4
+  NUMBER: 23
+  COMMA: 8
+  NUMBER: 23
+  DASH: 1
+  DOT: 4
+  DASH: 1
+  DOT: 4
+  DASH: 1
+  COMMA: 8
+  NUMBER: 23
+  NUMBER: 23
+  DASH: 1
+  DOT: 4
+  DOT: 4
+  DOT: 4
+  DASH: 1
+  NUMBER: 23
+  DOT: 4
+  COMMA: 8
+  COMMA: 8
+  COMMA: 8
+  DASH: 1
+  DOT: 4
+  DASH: 1
+  DOT: 4
+  SLASH: 3
+  PARENTHESIS: 12
+  COMMA: 8
+  NUMBER: 23
+  DASH: 1
+  PARENTHESIS: 12
+  NUMBER: 23
+  NUMBER: 23
+  PARENTHESIS: 12
+  DOT: 4
+  NUMBER: 23
+  SLASH: 3
+  PARENTHESIS: 12
+  ENTITY_SHAPE: 23
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 17
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 10
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 14
+
+LINE 137 (length=330)
+TEXT: Следующая модель определяет зависимость между объемом прибыли и объемами производства по видам продукции для ГИНН «Янтарный сказ». Независимые переменные: x1 - месячный объем производства изобразительной продукции; х2 - месячный объем производства этикеточной продукции; х3 - месячный объем производства бланочной продукции; х< -
+COUNTS:
+  DOT: 1
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 4
+  DOT: 1
+  DASH: 4
+  DOT: 1
+  DASH: 4
+  COLON: 1
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 4
+  DOT: 1
+  QUOTATION: 2
+  DOT: 1
+  DOT: 1
+  COLON: 1
+  COLON: 1
+  DASH: 4
+  NUMBER: 3
+  DOT: 1
+  DASH: 4
+  DOT: 1
+  QUOTATION: 2
+  DASH: 4
+  QUOTATION: 2
+  DOT: 1
+  COLON: 1
+  NUMBER: 3
+  DASH: 4
+  NUMBER: 3
+  QUOTATION: 2
+  NUMBER: 3
+  DOT: 1
+  NUMBER: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 7
+  SEPARATOR: 16
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 24
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 24
+  SEPARATOR: 13
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 24
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 22
+
+LINE 138 (length=3)
+TEXT: 18
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 139 (length=98)
+TEXT: месячный объем производства визиток и др. Зависимая переменная у - месячный объем чистой прибыли.
+COUNTS:
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DASH: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 9
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 9
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 3
+  SEPARATOR: 7
+  SEPARATOR: 1
+
+LINE 140 (length=46)
+TEXT: Полученное регрессионное уравнение имеет вид:
+COUNTS:
+  COLON: 1
+  COLON: 1
+  COLON: 1
+  COLON: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 9
+
+LINE 141 (length=30)
+TEXT: у = 0,74x1 + 1,99 х2 - 40,57.
+COUNTS:
+  DOT: 1
+  NUMBER: 8
+  COMMA: 3
+  NUMBER: 8
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  COMMA: 3
+  NUMBER: 8
+  NUMBER: 8
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  NUMBER: 8
+  DOT: 1
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 3
+  NUMBER: 8
+  DASH: 1
+  NUMBER: 8
+  NUMBER: 8
+  DOT: 1
+  NUMBER: 8
+  ENTITY_SHAPE: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 142 (length=234)
+TEXT: Уравнение является статистически значимым. Коэффициент множественной корреляции г = 0,98, коэффициент детерминации r2 = 0,97. b(x1) / σ[b(x1)] = 4,83, b(x2) / σ[b(x2)] = 8,16. Расчетный F-критерий равен 71,69; Fτ,⅛=4,75 при а = 0,05.
+COUNTS:
+  DOT: 4
+  NUMBER: 19
+  COMMA: 10
+  NUMBER: 19
+  DASH: 1
+  DOT: 4
+  DASH: 1
+  DOT: 4
+  DASH: 1
+  COMMA: 10
+  NUMBER: 19
+  NUMBER: 19
+  DASH: 1
+  DOT: 4
+  DOT: 4
+  DOT: 4
+  DASH: 1
+  NUMBER: 19
+  DOT: 4
+  COMMA: 10
+  COMMA: 10
+  COMMA: 10
+  DASH: 1
+  DOT: 4
+  DASH: 1
+  DOT: 4
+  SLASH: 2
+  PARENTHESIS: 8
+  COMMA: 10
+  NUMBER: 19
+  DASH: 1
+  PARENTHESIS: 8
+  NUMBER: 19
+  NUMBER: 19
+  PARENTHESIS: 8
+  DOT: 4
+  NUMBER: 19
+  SLASH: 2
+  PARENTHESIS: 8
+  ENTITY_SHAPE: 19
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 17
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 7
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 10
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 14
+
+LINE 143 (length=219)
+TEXT: В работе также построена модель, которая определяет зависимость месячной реализации продукции от объема средств, вложенных в рекламу. Исходные данные были взяты из отчетных документов бухгалтерии ГИ1И1 «Янтарный сказ».
+COUNTS:
+  DOT: 2
+  NUMBER: 2
+  COMMA: 2
+  NUMBER: 2
+  DOT: 2
+  DOT: 2
+  COMMA: 2
+  NUMBER: 2
+  NUMBER: 2
+  DOT: 2
+  QUOTATION: 2
+  DOT: 2
+  DOT: 2
+  NUMBER: 2
+  DOT: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 2
+  QUOTATION: 2
+  QUOTATION: 2
+  DOT: 2
+  COMMA: 2
+  NUMBER: 2
+  NUMBER: 2
+  QUOTATION: 2
+  NUMBER: 2
+  DOT: 2
+  NUMBER: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 7
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 11
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 11
+  SEPARATOR: 13
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 14
+  SEPARATOR: 13
+  SEPARATOR: 3
+  SEPARATOR: 11
+  SEPARATOR: 2
+  SEPARATOR: 18
+  SEPARATOR: 1
+
+LINE 144 (length=193)
+TEXT: Зависимая переменная в модели y(t) - объем реализованной продукции в рассматриваемый период. Независимая переменная x(t-l) - объем денежных средств, затраченных на рекламу в предыдущем месяце.
+COUNTS:
+  DOT: 2
+  COMMA: 1
+  DASH: 3
+  DOT: 2
+  DASH: 3
+  DOT: 2
+  DASH: 3
+  COMMA: 1
+  DASH: 3
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DASH: 3
+  DOT: 2
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 3
+  DOT: 2
+  DASH: 3
+  DOT: 2
+  PARENTHESIS: 4
+  COMMA: 1
+  DASH: 3
+  PARENTHESIS: 4
+  PARENTHESIS: 4
+  DOT: 2
+  PARENTHESIS: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 15
+  SEPARATOR: 3
+  SEPARATOR: 12
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 10
+  SEPARATOR: 15
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 15
+  SEPARATOR: 10
+  SEPARATOR: 2
+  SEPARATOR: 22
+  SEPARATOR: 1
+
+LINE 145 (length=52)
+TEXT: В результате расчетов получено следующее уравнение:
+COUNTS:
+  COLON: 1
+  COLON: 1
+  COLON: 1
+  COLON: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 9
+
+LINE 146 (length=28)
+TEXT: y(t) = 2,84 x(t-l) +947,42.
+COUNTS:
+  DOT: 1
+  NUMBER: 4
+  COMMA: 2
+  NUMBER: 4
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  COMMA: 2
+  NUMBER: 4
+  NUMBER: 4
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  NUMBER: 4
+  DOT: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  PARENTHESIS: 4
+  COMMA: 2
+  NUMBER: 4
+  DASH: 1
+  PARENTHESIS: 4
+  NUMBER: 4
+  NUMBER: 4
+  PARENTHESIS: 4
+  DOT: 1
+  NUMBER: 4
+  PARENTHESIS: 4
+  ENTITY_SHAPE: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 147 (length=172)
+TEXT: Уравнение является статистически значимым. Коэффициент детерминации г2 = 0,81; b(x(t-l))∕σ[b(x(t-l))] = 5,56. Расчетный F-критерий равен 30,96; Р„бл = 5,12 при а = 0,05. ,
+COUNTS:
+  DOT: 3
+  NUMBER: 11
+  COMMA: 6
+  NUMBER: 11
+  DASH: 3
+  DOT: 3
+  DASH: 3
+  DOT: 3
+  DASH: 3
+  COMMA: 6
+  NUMBER: 11
+  NUMBER: 11
+  DASH: 3
+  DOT: 3
+  QUOTATION: 1
+  DOT: 3
+  DOT: 3
+  DASH: 3
+  NUMBER: 11
+  DOT: 3
+  COMMA: 6
+  COMMA: 6
+  COMMA: 6
+  DASH: 3
+  DOT: 3
+  QUOTATION: 1
+  DASH: 3
+  QUOTATION: 1
+  DOT: 3
+  PARENTHESIS: 8
+  COMMA: 6
+  NUMBER: 11
+  DASH: 3
+  PARENTHESIS: 8
+  NUMBER: 11
+  QUOTATION: 1
+  NUMBER: 11
+  PARENTHESIS: 8
+  DOT: 3
+  NUMBER: 11
+  PARENTHESIS: 8
+  ENTITY_SHAPE: 11
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 13
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 10
+
+LINE 148 (length=282)
+TEXT: На основе полученного уравнения можно утверждать, что объем средств, вложенных в рекламу, значительно влияет на месячный объем реализации ( коэффициент регрессии при переменной - положительное число). Рекламная кампания, проводимая предприятием, является действенной и эффективной.
+COUNTS:
+  DOT: 2
+  COMMA: 5
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  COMMA: 5
+  DASH: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  COMMA: 5
+  COMMA: 5
+  COMMA: 5
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  PARENTHESIS: 2
+  COMMA: 5
+  DASH: 1
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  DOT: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 13
+  SEPARATOR: 11
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 19
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 19
+  SEPARATOR: 13
+  SEPARATOR: 10
+  SEPARATOR: 12
+  SEPARATOR: 13
+  SEPARATOR: 19
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 28
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 149 (length=129)
+TEXT: Полученные результаты, как нам представляется, имеют практическое значение не только для исследуемых предприятий, и предложенный
+COUNTS:
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 5
+  SEPARATOR: 6
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 6
+  SEPARATOR: 4
+  SEPARATOR: 8
+  SEPARATOR: 6
+  SEPARATOR: 7
+  SEPARATOR: 2
+  SEPARATOR: 16
+
+LINE 150 (length=3)
+TEXT: 19
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 151 (length=99)
+TEXT: подход к решению подобных проблем может быть использован маркетинговым отделом любого предприятия.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 7
+
+LINE 152 (length=306)
+TEXT: По итогам проведенных статистических исследований делается вывод, что наличие маркетингового отдела на предприятии - обязательное условие успешной деятельности предприятия в целом. Даются рекомендации по проектированию структуры отдела и его функциональным обязанностям в процессе управления предприятием.
+COUNTS:
+  DOT: 2
+  COMMA: 1
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  COMMA: 1
+  DASH: 1
+  DOT: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 11
+  SEPARATOR: 7
+  SEPARATOR: 2
+  SEPARATOR: 25
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 25
+  SEPARATOR: 16
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 20
+  SEPARATOR: 16
+  SEPARATOR: 25
+  SEPARATOR: 2
+  SEPARATOR: 28
+
+LINE 153 (length=1177)
+TEXT: В четвертой главе «Совершенствование информационной системы для управления маркетинговой деятельностью на полиграфическом предприятии» разработаны рекомендации по совершенствованию маркетинговых информационных систем (МИС) на полиграфических предприятиях. Очевидно, что первоочередной задачей при построении МИС является детальное исследование предметной области, в том числе: изучение документов, содержащих маркетинговую информацию; выявление информационных связей между документами; исследование информационной значимости реквизитов и документов; исследование информационного веса документов; исследование применяемости реквизитов в документах и степени взаимосвязи документов. Нами проведен анализ документооборота, непосредственно связанного с входным потоком заказов. Так, на НПФ «Малыш» было изучено 12 форм документов, включающих 148 реквизитов, на ГИ1111 «Янтарный сказ», соответственно, 20 форм документов и 203 реквизита и исследование проводилось по методике анализа предметной области1. Формализованный анализ информационных потоков позволил установить информационные взаимосвязи между документами (см. рисунок 4), оптимизировать документооборот на предприятии. '
+COUNTS:
+  DOT: 6
+  NUMBER: 7
+  COMMA: 10
+  NUMBER: 7
+  DOT: 6
+  DOT: 6
+  COLON: 1
+  COMMA: 10
+  NUMBER: 7
+  NUMBER: 7
+  DOT: 6
+  QUOTATION: 6
+  DOT: 6
+  DOT: 6
+  COLON: 1
+  COLON: 1
+  NUMBER: 7
+  DOT: 6
+  COMMA: 10
+  COMMA: 10
+  COMMA: 10
+  DOT: 6
+  QUOTATION: 6
+  QUOTATION: 6
+  DOT: 6
+  PARENTHESIS: 4
+  COLON: 1
+  COMMA: 10
+  NUMBER: 7
+  PARENTHESIS: 4
+  NUMBER: 7
+  QUOTATION: 6
+  NUMBER: 7
+  PARENTHESIS: 4
+  DOT: 6
+  NUMBER: 7
+  PARENTHESIS: 4
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 19
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 29
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 66
+  SEPARATOR: 27
+  SEPARATOR: 47
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 98
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 98
+  SEPARATOR: 2
+  SEPARATOR: 66
+  SEPARATOR: 16
+  SEPARATOR: 7
+  SEPARATOR: 56
+  SEPARATOR: 3
+  SEPARATOR: 66
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 98
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 86
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+
+LINE 154 (length=163)
+TEXT: 'Хубаев Г.Н. Сравнение сложных программных систем по кригерию функциональной полноты И Программные продукты и системы (SOFTWARE & SYSTEMS). - 1998. -№ 2. - с.6-9.
+COUNTS:
+  DOT: 7
+  INITIAL: 2
+  INITIALS: 1
+  YEAR: 1
+  NUMBER: 4
+  NUMBER: 4
+  DASH: 4
+  PAGES: 1
+  DOT: 7
+  INITIAL: 2
+  DASH: 4
+  DOT: 7
+  DASH: 4
+  NUMBER: 4
+  NUMBER: 4
+  DASH: 4
+  DOT: 7
+  DOT: 7
+  INITIAL: 2
+  YEAR: 1
+  DOT: 7
+  DASH: 4
+  NUMBER: 4
+  DOT: 7
+  DASH: 4
+  INITIAL: 2
+  DOT: 7
+  DASH: 4
+  DOT: 7
+  PARENTHESIS: 2
+  NUMBER: 4
+  DASH: 4
+  PARENTHESIS: 2
+  NUMBER: 4
+  NUMBER: 4
+  PARENTHESIS: 2
+  INITIAL: 2
+  DOT: 7
+  INITIAL: 2
+  INITIALS: 1
+  INITIALS: 1
+  NUMBER: 4
+  YEAR: 1
+  PARENTHESIS: 2
+  INITIAL: 2
+  YEAR: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 21
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 7
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+
+LINE 155 (length=3)
+TEXT: 20
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 156 (length=62)
+TEXT: Рисунок 4 - Граф взаимосвязи документов ГИ1Н1 «Янтарный сказ»
+COUNTS:
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 1
+  QUOTATION: 2
+  DASH: 1
+  NUMBER: 3
+  DASH: 1
+  QUOTATION: 2
+  DASH: 1
+  QUOTATION: 2
+  NUMBER: 3
+  DASH: 1
+  NUMBER: 3
+  QUOTATION: 2
+  NUMBER: 3
+  NUMBER: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 157 (length=3)
+TEXT: Z6
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 158 (length=3)
+TEXT: Z5
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 159 (length=12)
+TEXT: Z15 ◄—► Z11
+COUNTS:
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 1
+  DASH: 1
+  NUMBER: 2
+  DASH: 1
+  DASH: 1
+  NUMBER: 2
+  DASH: 1
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 3
+  SEPARATOR: 1
+
+LINE 160 (length=421)
+TEXT: Таким образом, нами решена задача оптимизации количества циркулирующих в системе управления документов и состава реквизитов в них, существенного снижения затрат времени и средств на организацию документооборота. Так, исключение только одного документа из документооборота на ГИПП «Янтарный сказ» позволило сэкономить 11,2 дня (оценка снизу) из годового фонда рабочего времени инженера-технолога производственного отдела.
+COUNTS:
+  DOT: 2
+  NUMBER: 2
+  COMMA: 4
+  NUMBER: 2
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  COMMA: 4
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 1
+  DOT: 2
+  QUOTATION: 2
+  DOT: 2
+  DOT: 2
+  DASH: 1
+  NUMBER: 2
+  DOT: 2
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  DASH: 1
+  DOT: 2
+  QUOTATION: 2
+  DASH: 1
+  QUOTATION: 2
+  DOT: 2
+  PARENTHESIS: 2
+  COMMA: 4
+  NUMBER: 2
+  DASH: 1
+  PARENTHESIS: 2
+  NUMBER: 2
+  QUOTATION: 2
+  NUMBER: 2
+  PARENTHESIS: 2
+  DOT: 2
+  NUMBER: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 30
+  SEPARATOR: 9
+  SEPARATOR: 12
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 32
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 32
+  SEPARATOR: 30
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 21
+  SEPARATOR: 1
+  SEPARATOR: 30
+  SEPARATOR: 1
+  SEPARATOR: 32
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 28
+  SEPARATOR: 1
+
+LINE 161 (length=218)
+TEXT: По результатам выполненного анализа разработаны рекомендации, которые могут значительно облегчить процесс проектирования подсистемы внутренней отчетности маркетинговой информационной системы на конкретном предприятии.
+COUNTS:
+  DOT: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 1
+  DOT: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 14
+  SEPARATOR: 5
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 14
+  SEPARATOR: 2
+  SEPARATOR: 17
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 162 (length=93)
+TEXT: ■ В заключении диссертации сформулированы выводы по результатам проведенного исследования. .
+COUNTS:
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  DOT: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 8
+  SEPARATOR: 6
+
+LINE 163 (length=52)
+TEXT: По теме диссертационного исследования опубликованы:
+COUNTS:
+  COLON: 1
+  COLON: 1
+  COLON: 1
+  COLON: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 4
+
+LINE 164 (length=251)
+TEXT: 1.	Организационно-экономические аспекты функционирования информационной системы полиграфического предприятия И Проблемы стабилизации экономики России и региона: Сб. статей. - Владикавказ: СевероОсетинский государственный университет, 1998. - 0,8 п.л.
+COUNTS:
+  DOT: 6
+  YEAR: 1
+  NUMBER: 4
+  COMMA: 2
+  NUMBER: 4
+  DASH: 3
+  DOT: 6
+  DASH: 3
+  DOT: 6
+  DASH: 3
+  COLON: 2
+  COMMA: 2
+  NUMBER: 4
+  NUMBER: 4
+  DASH: 3
+  DOT: 6
+  DOT: 6
+  YEAR: 1
+  DOT: 6
+  COLON: 2
+  COLON: 2
+  DASH: 3
+  NUMBER: 4
+  DOT: 6
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DASH: 3
+  DOT: 6
+  DASH: 3
+  DOT: 6
+  COLON: 2
+  COMMA: 2
+  NUMBER: 4
+  DASH: 3
+  NUMBER: 4
+  NUMBER: 4
+  DOT: 6
+  NUMBER: 4
+  YEAR: 1
+  YEAR: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 29
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 29
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 10
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 29
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 15
+
+LINE 165 (length=3)
+TEXT: 21
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 166 (length=286)
+TEXT: 2.	Выделение функциональных операций в процессе бухгалтерского учета на предприятии // Экономико-организационные проблемы анализа, проектирования и применения информационных систем: Материалы Межгосударственной научно-практической конференции / РГЭА. - Ростов-на-Дону, 1997. - 0,4 п.л.
+COUNTS:
+  DOT: 5
+  YEAR: 1
+  NUMBER: 4
+  COMMA: 3
+  NUMBER: 4
+  DASH: 6
+  DOT: 5
+  DASH: 6
+  DOT: 5
+  DASH: 6
+  COLON: 1
+  COMMA: 3
+  NUMBER: 4
+  NUMBER: 4
+  DASH: 6
+  DOT: 5
+  DOT: 5
+  YEAR: 1
+  DOT: 5
+  COLON: 1
+  COLON: 1
+  DASH: 6
+  NUMBER: 4
+  DOT: 5
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  DASH: 6
+  DOT: 5
+  DASH: 6
+  DOT: 5
+  SLASH: 3
+  DOUBLE_SLASH: 1
+  COLON: 1
+  COMMA: 3
+  NUMBER: 4
+  DASH: 6
+  NUMBER: 4
+  NUMBER: 4
+  DOT: 5
+  NUMBER: 4
+  YEAR: 1
+  SLASH: 3
+  YEAR: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 10
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 18
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 22
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 22
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 18
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 18
+  SEPARATOR: 1
+  SEPARATOR: 22
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 21
+
+LINE 167 (length=295)
+TEXT: 3.	Использование результатов моделирования бухгалтерского учета при выборе программных средств И Экономико-организационные проблемы анализа, проектирования и применения информационных систем: Материалы Межгосударственной научно-практической конференции / РГЭА. -Ростов-на-Дону, 1997. - 0,3 п.л.
+COUNTS:
+  DOT: 5
+  YEAR: 1
+  NUMBER: 4
+  COMMA: 3
+  NUMBER: 4
+  DASH: 6
+  DOT: 5
+  DASH: 6
+  DOT: 5
+  DASH: 6
+  COLON: 1
+  COMMA: 3
+  NUMBER: 4
+  NUMBER: 4
+  DASH: 6
+  DOT: 5
+  DOT: 5
+  YEAR: 1
+  DOT: 5
+  COLON: 1
+  COLON: 1
+  DASH: 6
+  NUMBER: 4
+  DOT: 5
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  DASH: 6
+  DOT: 5
+  DASH: 6
+  DOT: 5
+  SLASH: 1
+  COLON: 1
+  COMMA: 3
+  NUMBER: 4
+  DASH: 6
+  NUMBER: 4
+  NUMBER: 4
+  DOT: 5
+  NUMBER: 4
+  YEAR: 1
+  SLASH: 1
+  YEAR: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 11
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 19
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 20
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 20
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 19
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 19
+  SEPARATOR: 2
+  SEPARATOR: 20
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 19
+
+LINE 168 (length=257)
+TEXT: 4.	Статистическое исследование входного потока заказов на полиграфическом предприятии // Проблемы теории и практики статистики в условиях кризисной экономики: Материалы межвузовской научно-практической конференции / РГЭА. - Ростов-на-Дону, 1999. - 0,2 п.л.
+COUNTS:
+  DOT: 5
+  YEAR: 1
+  NUMBER: 4
+  COMMA: 2
+  NUMBER: 4
+  DASH: 5
+  DOT: 5
+  DASH: 5
+  DOT: 5
+  DASH: 5
+  COLON: 1
+  COMMA: 2
+  NUMBER: 4
+  NUMBER: 4
+  DASH: 5
+  DOT: 5
+  DOT: 5
+  YEAR: 1
+  DOT: 5
+  COLON: 1
+  COLON: 1
+  DASH: 5
+  NUMBER: 4
+  DOT: 5
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DASH: 5
+  DOT: 5
+  DASH: 5
+  DOT: 5
+  SLASH: 3
+  DOUBLE_SLASH: 1
+  COLON: 1
+  COMMA: 2
+  NUMBER: 4
+  DASH: 5
+  NUMBER: 4
+  NUMBER: 4
+  DOT: 5
+  NUMBER: 4
+  YEAR: 1
+  SLASH: 3
+  YEAR: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 26
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 26
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 26
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 13
+
+LINE 169 (length=325)
+TEXT: 5.	Регрессионная модель для планирования объема производства и ассортимента печатной продукции на полиграфическом предприятии // Организационно-экономические проблемы проектирования и применения информационных систем: Материалы III Межгосударственной научнопрактической конференции / РГЭА. - Ростов-на-Дону, 1998. - 0,3 п.л.
+COUNTS:
+  DOT: 5
+  YEAR: 1
+  NUMBER: 4
+  COMMA: 2
+  NUMBER: 4
+  DASH: 5
+  DOT: 5
+  DASH: 5
+  DOT: 5
+  DASH: 5
+  COLON: 1
+  COMMA: 2
+  NUMBER: 4
+  NUMBER: 4
+  DASH: 5
+  DOT: 5
+  DOT: 5
+  YEAR: 1
+  DOT: 5
+  COLON: 1
+  COLON: 1
+  DASH: 5
+  NUMBER: 4
+  DOT: 5
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DASH: 5
+  DOT: 5
+  DASH: 5
+  DOT: 5
+  SLASH: 3
+  DOUBLE_SLASH: 1
+  COLON: 1
+  COMMA: 2
+  NUMBER: 4
+  DASH: 5
+  NUMBER: 4
+  NUMBER: 4
+  DOT: 5
+  NUMBER: 4
+  YEAR: 1
+  SLASH: 3
+  YEAR: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 13
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 20
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 29
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 29
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 20
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 20
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 29
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 21
+
+LINE 170 (length=286)
+TEXT: 6.	О некоторых результатах анализа информационной системы полиграфического предприятия // Рынок труда в России: состояние, трансформация, прогноз : Материалы региональной научно-практической конференции профессорско-преподавательского состава / РГЭА. - Ростов-на-Дону, 1999. - 0,2 п.л.
+COUNTS:
+  DOT: 5
+  YEAR: 1
+  NUMBER: 4
+  COMMA: 4
+  NUMBER: 4
+  DASH: 6
+  DOT: 5
+  DASH: 6
+  DOT: 5
+  DASH: 6
+  COLON: 2
+  COMMA: 4
+  NUMBER: 4
+  NUMBER: 4
+  DASH: 6
+  DOT: 5
+  DOT: 5
+  YEAR: 1
+  DOT: 5
+  COLON: 2
+  COLON: 2
+  DASH: 6
+  NUMBER: 4
+  DOT: 5
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  DASH: 6
+  DOT: 5
+  DASH: 6
+  DOT: 5
+  SLASH: 3
+  DOUBLE_SLASH: 1
+  COLON: 2
+  COMMA: 4
+  NUMBER: 4
+  DASH: 6
+  NUMBER: 4
+  NUMBER: 4
+  DOT: 5
+  NUMBER: 4
+  YEAR: 1
+  SLASH: 3
+  YEAR: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 10
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 20
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 20
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 20
+  SEPARATOR: 17
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 14
+
+LINE 171 (length=197)
+TEXT: 7.	Статистический анализ входного потока заказов на полиграфическом предприятии // Проблемы федеральной и региональной экономики: Ученые записки. Выпуск 3 / РГЭА. - Ростов-на-Дону, 1999. - 0,5 п.л.
+COUNTS:
+  DOT: 6
+  YEAR: 1
+  NUMBER: 5
+  COMMA: 2
+  NUMBER: 5
+  DASH: 4
+  DOT: 6
+  DASH: 4
+  DOT: 6
+  DASH: 4
+  COLON: 1
+  COMMA: 2
+  NUMBER: 5
+  NUMBER: 5
+  DASH: 4
+  DOT: 6
+  DOT: 6
+  YEAR: 1
+  DOT: 6
+  COLON: 1
+  COLON: 1
+  DASH: 4
+  NUMBER: 5
+  DOT: 6
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DASH: 4
+  DOT: 6
+  DASH: 4
+  DOT: 6
+  SLASH: 3
+  DOUBLE_SLASH: 1
+  COLON: 1
+  COMMA: 2
+  NUMBER: 5
+  DASH: 4
+  NUMBER: 5
+  NUMBER: 5
+  DOT: 6
+  NUMBER: 5
+  YEAR: 1
+  SLASH: 3
+  YEAR: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 10
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 15
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 15
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 12
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 15
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 9
+  SEPARATOR: 1
+

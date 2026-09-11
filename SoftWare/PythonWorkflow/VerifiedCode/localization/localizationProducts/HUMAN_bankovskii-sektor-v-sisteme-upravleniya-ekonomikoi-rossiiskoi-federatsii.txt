@@ -1,0 +1,9372 @@
+PATTERN RECOGNITION RESULT
+================================================================================
+
+PATTERNS:
+0: DOT
+   regex: \.
+1: INITIAL
+   regex: \b[А-ЯЁ]\.
+2: INITIALS
+   regex: \b[А-ЯЁ]\.\s*[А-ЯЁ]\.
+3: YEAR
+   regex: (?<!\d)(17|18|19|20|21)\d{2}(?!\d)
+4: NUMBER
+   regex: \d+
+5: COMMA
+   regex: ,
+6: NUMBER
+   regex: \d+
+7: DASH
+   regex: [-–—]
+8: PAGES
+   regex: \b[Сс]\.?\s*\d+(?:\s*[-–—]\s*\d+)?
+9: DOT
+   regex: \.
+10: INITIAL
+   regex: \b[А-ЯЁ]\.
+11: DASH
+   regex: [-–—]
+12: DOT
+   regex: \.
+13: DASH
+   regex: [-–—]
+14: COLON
+   regex: :
+15: COMMA
+   regex: ,
+16: NUMBER
+   regex: \d+
+17: NUMBER
+   regex: \d+
+18: DASH
+   regex: [-–—]
+19: DOT
+   regex: \.
+20: QUOTATION
+   regex: [«»\"„“”]
+21: DOT
+   regex: \.
+22: INITIAL
+   regex: \b[А-ЯЁ]\.
+23: YEAR
+   regex: (?<!\d)(17|18|19|20|21)\d{2}(?!\d)
+24: DOT
+   regex: \.
+25: COLON
+   regex: :
+26: COLON
+   regex: :
+27: DASH
+   regex: [-–—]
+28: NUMBER
+   regex: \d+
+29: DOT
+   regex: \.
+30: COMMA
+   regex: ,
+31: COMMA
+   regex: ,
+32: COMMA
+   regex: ,
+33: DASH
+   regex: [-–—]
+34: INITIAL
+   regex: \b[А-ЯЁ]\.
+35: DOT
+   regex: \.
+36: QUOTATION
+   regex: [«»\"„“”]
+37: DASH
+   regex: [-–—]
+38: QUOTATION
+   regex: [«»\"„“”]
+39: DOT
+   regex: \.
+40: URL
+   regex: (?:https?://|www\.)[^\s]+
+41: SLASH
+   regex: /
+42: PARENTHESIS
+   regex: [()]
+43: DOUBLE_SLASH
+   regex: //
+44: COLON
+   regex: :
+45: COMMA
+   regex: ,
+46: NUMBER
+   regex: \d+
+47: DASH
+   regex: [-–—]
+48: PARENTHESIS
+   regex: [()]
+49: NUMBER
+   regex: \d+
+50: QUOTATION
+   regex: [«»\"„“”]
+51: NUMBER
+   regex: \d+
+52: PARENTHESIS
+   regex: [()]
+53: INITIAL
+   regex: \b[А-ЯЁ]\.
+54: DOT
+   regex: \.
+55: INITIAL
+   regex: \b[А-ЯЁ]\.
+56: INITIALS
+   regex: \b[А-ЯЁ]\.\s*[А-ЯЁ]\.
+57: INITIALS
+   regex: \b[А-ЯЁ]\.\s*[А-ЯЁ]\.
+58: NUMBER
+   regex: \d+
+59: YEAR
+   regex: (?<!\d)(17|18|19|20|21)\d{2}(?!\d)
+60: SLASH
+   regex: /
+61: PARENTHESIS
+   regex: [()]
+62: INITIAL
+   regex: \b[А-ЯЁ]\.
+63: YEAR
+   regex: (?<!\d)(17|18|19|20|21)\d{2}(?!\d)
+64: ENTITY_SHAPE
+   regex: \d+
+65: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+
+66: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+\d+\-\d+
+67: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+68: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.
+69: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+70: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+71: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\s+\d+\-\d+
+72: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.
+73: ENTITY_SHAPE
+   regex: \d+\-\d+
+74: ENTITY_SHAPE
+   regex: №\s+\d+
+75: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+76: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+77: ENTITY_SHAPE
+   regex: №\d+
+78: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+79: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+80: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+81: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]
+82: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+83: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+84: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+85: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]
+86: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\d+\-\d+
+87: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё][а-яё][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+88: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+89: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+
+90: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+91: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][а-яё]\.
+92: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+93: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+94: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]
+95: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+\d+
+96: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+97: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+98: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+\d+\s+\-\s+\d+
+99: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+
+100: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.
+101: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+102: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+103: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+
+104: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+105: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+106: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+107: ENTITY_SHAPE
+   regex: [а-яё]+\.\d+\-\d+
+108: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+
+109: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+110: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁ][а-яё]+
+111: ENTITY_SHAPE
+   regex: [а-яё]+\.\s+\d+
+112: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ]\.
+113: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+
+114: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+
+115: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\d+
+116: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+\d+
+117: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+118: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+
+119: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\.\s+[а-яё]+\-[а-яё]+
+120: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
+121: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+122: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+\-[а-яё]+\.
+123: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+
+124: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+125: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]
+126: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+127: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+,\s+[а-яё]+\-[а-яё]+
+128: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\s+\([А-ЯЁ][а-яё]+\)
+129: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+
+130: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁ][А-ЯЁ]
+131: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+
+132: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+
+133: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+
+134: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+\-[а-яё]+
+135: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ]
+136: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\s+\([А-ЯЁ][а-яё]+\)
+137: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+
+138: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\s+\d+
+139: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+140: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][а-яё][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+
+141: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\-[А-ЯЁ][а-яё]+
+142: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+\s+[а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+
+143: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+144: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+145: ENTITY_SHAPE
+   regex: [a-z]+://[a-z]+\.[a-z]+\.[a-z]+/[a-z]+
+146: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+
+147: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
+148: ENTITY_SHAPE
+   regex: [а-яё]+\s+\d+\-\d+
+149: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ]\.
+150: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\-[а-яё]+
+151: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+«[А-ЯЁ][а-яё]+»
+152: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ]
+153: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+,\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+154: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ],\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+155: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁ][а-яё]+
+156: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\-[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+157: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
+158: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+\d+
+159: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+160: ENTITY_SHAPE
+   regex: \s+№\s+\d+
+161: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
+162: ENTITY_SHAPE
+   regex: №\s+[а-яё]+\.\s+[а-яё]+\s+\d+
+163: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][а-яё][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+164: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+165: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+\-\s+[А-ЯЁ][а-яё]+
+166: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+
+167: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\-[А-ЯЁ][а-яё]+
+168: ENTITY_SHAPE
+   regex: [а-яё]+\.\s+\d+\-\d+
+169: ENTITY_SHAPE
+   regex: [а-яё]+\.\d+
+170: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+171: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\.
+172: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
+173: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+,\s+[а-яё]+,\s+[а-яё]+
+174: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+175: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+176: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+,\s+[а-яё]+\-[а-яё]+
+177: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.
+178: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+:\s+[а-яё]+\-[а-яё]+
+179: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][а-яё]+
+180: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
+181: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\-[а-яё]+\s+[а-яё]+
+182: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+183: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][а-яё]
+184: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+:\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+185: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[А-ЯЁ][а-яё]+
+186: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]
+187: ENTITY_SHAPE
+   regex: [A-Z][a-z]+,\s+[A-Z][a-z]+
+188: ENTITY_SHAPE
+   regex: \s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+189: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+:\s+[А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+\.
+190: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+191: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+192: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+:\s+[А-ЯЁ][а-яё]+\.\s+[A-Z][A-Z][A-Z]\s+[а-яё]+\.\s+[а-яё]+\.
+193: ENTITY_SHAPE
+   regex: [A-Z][a-z]+
+194: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+:\s+[а-яё]+\.\s+[а-яё]+\.\s+\d+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+\.\-[а-яё]+\.\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+195: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+196: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+,\s+[а-яё]+\-[а-яё]+\.\s+[а-яё]+\.\s+«[А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+»
+197: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\-[а-яё]+\s+[а-яё]+
+198: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+199: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+:\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[А-ЯЁ][а-яё]+
+200: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+201: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ]
+202: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\.\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
+203: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\-[а-яё]+\s+[а-яё]+
+204: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+205: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+206: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ],\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ]\.
+207: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+
+208: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+
+209: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+210: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+
+211: SEPARATOR
+   regex: \.
+212: SEPARATOR
+   regex: У,
+213: SEPARATOR
+   regex: \.:
+214: SEPARATOR
+   regex: а:
+215: SEPARATOR
+   regex: а,
+216: SEPARATOR
+   regex: я\s+/
+217: SEPARATOR
+   regex: \.\s+\-
+218: SEPARATOR
+   regex: в\s+/
+219: SEPARATOR
+   regex: а\s+/
+220: SEPARATOR
+   regex: и,
+221: SEPARATOR
+   regex: а\s+//
+222: SEPARATOR
+   regex: »\.\s+\-
+223: SEPARATOR
+   regex: \.,
+224: SEPARATOR
+   regex: и\s+/
+225: SEPARATOR
+   regex: а,
+226: SEPARATOR
+   regex: л:
+227: SEPARATOR
+   regex: а\s+//
+228: SEPARATOR
+   regex: В
+229: SEPARATOR
+   regex: м\s+/
+230: SEPARATOR
+   regex: й\s+/
+231: SEPARATOR
+   regex: ь:
+232: SEPARATOR
+   regex: к
+233: SEPARATOR
+   regex: ф,
+234: SEPARATOR
+   regex: 2\.
+235: SEPARATOR
+   regex: Е
+236: SEPARATOR
+   regex: 1\.\s+\-
+237: SEPARATOR
+   regex: в\s+//
+238: SEPARATOR
+   regex: ж:
+239: SEPARATOR
+   regex: »,
+240: SEPARATOR
+   regex: г:
+241: SEPARATOR
+   regex: И,
+242: SEPARATOR
+   regex: к:
+243: SEPARATOR
+   regex: 3\.
+244: SEPARATOR
+   regex: в\s+/
+245: SEPARATOR
+   regex: н\s+//
+246: SEPARATOR
+   regex: О
+247: SEPARATOR
+   regex: ж,
+248: SEPARATOR
+   regex: М:
+249: SEPARATOR
+   regex: а\s+//
+250: SEPARATOR
+   regex: а\s+И
+251: SEPARATOR
+   regex: 0\.
+252: SEPARATOR
+   regex: к,
+253: SEPARATOR
+   regex: х\s+/
+254: SEPARATOR
+   regex: »\.
+255: SEPARATOR
+   regex: А
+256: SEPARATOR
+   regex: 8\.\s+\-
+257: SEPARATOR
+   regex: а\s+:
+258: SEPARATOR
+   regex: т,
+259: SEPARATOR
+   regex: 1\.
+260: SEPARATOR
+   regex: й\s+//
+261: SEPARATOR
+   regex: д,
+262: SEPARATOR
+   regex: а\s+//
+263: SEPARATOR
+   regex: а\s+И
+264: SEPARATOR
+   regex: 4\.
+265: SEPARATOR
+   regex: 7\.\s+\-
+266: SEPARATOR
+   regex: и\s+//
+267: SEPARATOR
+   regex: М
+268: SEPARATOR
+   regex: а
+269: SEPARATOR
+   regex: в\s+//
+270: SEPARATOR
+   regex: е\s+/
+271: SEPARATOR
+   regex: 7\.
+272: SEPARATOR
+   regex: о\.\s+\-
+273: SEPARATOR
+   regex: 4\.\s+\-
+274: SEPARATOR
+   regex: \.\s+/
+275: SEPARATOR
+   regex: Н,
+276: SEPARATOR
+   regex: в\s+\[Текст\]/
+277: SEPARATOR
+   regex: н\s+//
+278: SEPARATOR
+   regex: л
+279: SEPARATOR
+   regex: м\s+//
+280: SEPARATOR
+   regex: и\s+//
+281: SEPARATOR
+   regex: ы\s+/
+282: SEPARATOR
+   regex: 2\.\s+\-
+283: SEPARATOR
+   regex: 2\.\s+\-
+284: SEPARATOR
+   regex: \)\s+//
+285: SEPARATOR
+   regex: м
+286: SEPARATOR
+   regex: 6\.
+287: SEPARATOR
+   regex: Г
+288: SEPARATOR
+   regex: в:
+289: SEPARATOR
+   regex: ь,
+290: SEPARATOR
+   regex: и//
+291: SEPARATOR
+   regex: \.
+292: SEPARATOR
+   regex: е\s+//
+293: SEPARATOR
+   regex: и\.\s+\-
+294: SEPARATOR
+   regex: в\s+//
+295: SEPARATOR
+   regex: я\s+//
+296: SEPARATOR
+   regex: 5\.\s+\-
+297: SEPARATOR
+   regex: 9\.
+298: SEPARATOR
+   regex: 6\.\s+\-
+299: SEPARATOR
+   regex: е\.\s+\-
+300: SEPARATOR
+   regex: 8\.
+301: SEPARATOR
+   regex: Н
+302: SEPARATOR
+   regex: У\.
+303: SEPARATOR
+   regex: и
+304: SEPARATOR
+   regex: и\.\s+\-
+305: SEPARATOR
+   regex: 3\.\s+\-
+306: SEPARATOR
+   regex: З,
+307: SEPARATOR
+   regex: 5\.\s+\-
+308: SEPARATOR
+   regex: 2\.\s+\-
+309: SEPARATOR
+   regex: а\s+/
+310: SEPARATOR
+   regex: а//
+311: SEPARATOR
+   regex: У
+312: SEPARATOR
+   regex: \.
+313: SEPARATOR
+   regex: 1\.
+314: SEPARATOR
+   regex: 1\.
+315: SEPARATOR
+   regex: 3\.
+316: SEPARATOR
+   regex: 0\.
+317: SEPARATOR
+   regex: С
+318: SEPARATOR
+   regex: 3
+319: SEPARATOR
+   regex: в\s+И
+320: SEPARATOR
+   regex: 6\s+\-
+321: SEPARATOR
+   regex: й\s+И
+322: SEPARATOR
+   regex: у,
+323: SEPARATOR
+   regex: \.
+324: SEPARATOR
+   regex: я\s+//
+325: SEPARATOR
+   regex: и/
+326: SEPARATOR
+   regex: я\.
+327: SEPARATOR
+   regex: и\.\s+\-
+328: SEPARATOR
+   regex: я»\.
+329: SEPARATOR
+   regex: 8\.\s+\-
+330: SEPARATOR
+   regex: \.\s+\-
+331: SEPARATOR
+   regex: и
+332: SEPARATOR
+   regex: а\s+/
+333: SEPARATOR
+   regex: 4\.\s+\-
+334: SEPARATOR
+   regex: 7\.\s+\-
+335: SEPARATOR
+   regex: Ц,
+336: SEPARATOR
+   regex: л,
+337: SEPARATOR
+   regex: 7
+338: SEPARATOR
+   regex: 4
+339: SEPARATOR
+   regex: ф\s+\-
+340: SEPARATOR
+   regex: я\.//
+341: SEPARATOR
+   regex: а//
+342: SEPARATOR
+   regex: О\.\s+\-
+343: SEPARATOR
+   regex: и\s+/
+344: SEPARATOR
+   regex: \.\s+—
+345: SEPARATOR
+   regex: 7
+346: SEPARATOR
+   regex: й\s+//
+347: SEPARATOR
+   regex: 3\.\s+\-
+348: SEPARATOR
+   regex: А\.\s+\-
+349: SEPARATOR
+   regex: н//
+350: SEPARATOR
+   regex: а
+351: SEPARATOR
+   regex: и\s+И
+352: SEPARATOR
+   regex: 9\.\s+\-\s+С\.
+353: SEPARATOR
+   regex: \.,
+354: SEPARATOR
+   regex: я\s+И
+355: SEPARATOR
+   regex: С,
+356: SEPARATOR
+   regex: я\.\s+\-
+357: SEPARATOR
+   regex: е\.\s+\-
+358: SEPARATOR
+   regex: 3\.
+359: SEPARATOR
+   regex: я
+360: SEPARATOR
+   regex: а\.\s+\-
+361: SEPARATOR
+   regex: 2\.
+362: SEPARATOR
+   regex: 1\.\s+\-
+363: SEPARATOR
+   regex: 6\.\s+\-
+364: SEPARATOR
+   regex: 1\.\s+\-
+365: SEPARATOR
+   regex: к\s+/
+366: SEPARATOR
+   regex: 4,
+367: SEPARATOR
+   regex: и\s+\-
+368: SEPARATOR
+   regex: а\.\s+//
+369: SEPARATOR
+   regex: \.\s+\(осенняя\s+сессия\)\.
+370: SEPARATOR
+   regex: 4\.
+371: SEPARATOR
+   regex: 1
+372: SEPARATOR
+   regex: »\s+\-
+373: SEPARATOR
+   regex: т
+374: SEPARATOR
+   regex: 2
+375: SEPARATOR
+   regex: 6
+376: SEPARATOR
+   regex: 5\.\s+\-
+377: SEPARATOR
+   regex: а
+378: SEPARATOR
+   regex: й\s+//
+379: SEPARATOR
+   regex: в\s+//
+380: SEPARATOR
+   regex: 2\s+г\.,
+381: SEPARATOR
+   regex: \.:
+382: SEPARATOR
+   regex: и\s+//
+383: SEPARATOR
+   regex: И
+384: SEPARATOR
+   regex: л\.\s+\-
+385: SEPARATOR
+   regex: а\s+\-
+386: SEPARATOR
+   regex: У\.\-
+387: SEPARATOR
+   regex: и\.
+388: SEPARATOR
+   regex: »,
+389: SEPARATOR
+   regex: 8\.
+390: SEPARATOR
+   regex: и
+391: SEPARATOR
+   regex: ы\s+//
+392: SEPARATOR
+   regex: 0\.\s+\-\s+С\.
+393: SEPARATOR
+   regex: е\s+//
+394: SEPARATOR
+   regex: а\s+И
+395: SEPARATOR
+   regex: а;
+396: SEPARATOR
+   regex: \.\s+\-
+397: SEPARATOR
+   regex: \.\s+\-
+398: SEPARATOR
+   regex: м,
+399: SEPARATOR
+   regex: 9\.
+400: SEPARATOR
+   regex: к\s+:
+401: SEPARATOR
+   regex: s\s+/
+402: SEPARATOR
+   regex: 0\.\s+\-
+403: SEPARATOR
+   regex: 7\.
+404: SEPARATOR
+   regex: 4\.
+405: SEPARATOR
+   regex: У
+406: SEPARATOR
+   regex: 6\.
+407: SEPARATOR
+   regex: »\s+/
+408: SEPARATOR
+   regex: н\.\s+\-
+409: SEPARATOR
+   regex: й\s+/
+410: SEPARATOR
+   regex: а\.\s+В\s+сб\.
+411: SEPARATOR
+   regex: и\.\s+В\s+сб\.
+412: SEPARATOR
+   regex: \.\s+\(весенняя\s+сессия\)\.
+413: SEPARATOR
+   regex: \)\s+//
+414: SEPARATOR
+   regex: 3\.
+415: SEPARATOR
+   regex: 5
+416: SEPARATOR
+   regex: в\s+/
+417: SEPARATOR
+   regex: и,
+418: SEPARATOR
+   regex: в\s+\-
+419: SEPARATOR
+   regex: в\.\s+\-
+420: SEPARATOR
+   regex: я//
+421: SEPARATOR
+   regex: 9\.\s+\-
+422: SEPARATOR
+   regex: а\.\s+\-
+423: SEPARATOR
+   regex: 4\.\s+\-
+424: SEPARATOR
+   regex: 9\.\s+\-
+425: SEPARATOR
+   regex: х\s+//
+426: SEPARATOR
+   regex: \.\s+/
+427: SEPARATOR
+   regex: »\s+\(ПРОЕКТ\-2009\)\.\s+\-
+428: SEPARATOR
+   regex: м»,
+429: SEPARATOR
+   regex: й
+430: SEPARATOR
+   regex: 1\.
+431: SEPARATOR
+   regex: ш\s+//
+432: SEPARATOR
+   regex: 5\s+\-
+433: SEPARATOR
+   regex: 2\s+\-
+434: SEPARATOR
+   regex: а\s+\-
+435: SEPARATOR
+   regex: 4\s+\-
+436: SEPARATOR
+   regex: й\s+И
+437: SEPARATOR
+   regex: 7\s+\-
+438: SEPARATOR
+   regex: И\.
+439: SEPARATOR
+   regex: е
+440: SEPARATOR
+   regex: и\.
+441: SEPARATOR
+   regex: й/
+442: SEPARATOR
+   regex: н,
+443: SEPARATOR
+   regex: и,
+444: SEPARATOR
+   regex: А,
+445: SEPARATOR
+   regex: У/
+446: SEPARATOR
+   regex: в/
+447: SEPARATOR
+   regex: н//
+448: SEPARATOR
+   regex: \.,
+449: SEPARATOR
+   regex: в,
+450: SEPARATOR
+   regex: ж\.
+451: SEPARATOR
+   regex: в\.
+452: SEPARATOR
+   regex: м,
+
+================================================================================
+
+LINE 1 (length=20)
+TEXT: ﻿На правах рукописи
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 2
+
+LINE 2 (length=27)
+TEXT: КОНДРАТЬЕВ Олег Николаевич
+COUNTS:
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 12
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+
+LINE 3 (length=72)
+TEXT: БАНКОВСКИЙ СЕКТОР В СИСТЕМЕ УНРАВЛ1 НИЯ ЭКОНОМИКОЙ РОССИЙСКОЙ ФЕДЕРАЦИИ
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 11
+  ENTITY_SHAPE: 10
+  ENTITY_SHAPE: 62
+  ENTITY_SHAPE: 19
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 19
+  ENTITY_SHAPE: 4
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+
+LINE 4 (length=74)
+TEXT: Специальность 05 13 10 - Управление в социальных и экономических системах
+COUNTS:
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 1
+  DASH: 1
+  NUMBER: 3
+  DASH: 1
+  DASH: 1
+  NUMBER: 3
+  DASH: 1
+  NUMBER: 3
+  NUMBER: 3
+  NUMBER: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+
+LINE 5 (length=81)
+TEXT: АВТОРЕФЕРАТ диссертации на соискание ученой степени кандидата экономических наук
+COUNTS:
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 11
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 9
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 7
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 6
+
+LINE 6 (length=5)
+TEXT: ■■■■
+COUNTS:
+
+LINE 7 (length=10)
+TEXT: 003060324
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 8 (length=14)
+TEXT: Москва - 2007
+COUNTS:
+  YEAR: 1
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  YEAR: 1
+  DASH: 1
+  NUMBER: 1
+  DASH: 1
+  DASH: 1
+  NUMBER: 1
+  DASH: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  YEAR: 1
+  YEAR: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 9 (length=2)
+TEXT: 2
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 10 (length=138)
+TEXT: Диссертация выполнена на кафедре национальной безопасности Российской академии государственной службы при Президенте Российской Федерации
+COUNTS:
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  SEPARATOR: 4
+  SEPARATOR: 11
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 12
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 11
+  SEPARATOR: 12
+  SEPARATOR: 6
+  SEPARATOR: 12
+
+LINE 11 (length=21)
+TEXT: Научный руководитель
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 12 (length=37)
+TEXT: доктор экономических наук, профессор
+COUNTS:
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+
+LINE 13 (length=26)
+TEXT: Корнилов Михаил Яковлевич
+COUNTS:
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+
+LINE 14 (length=23)
+TEXT: Официальные оппоненты:
+COUNTS:
+  COLON: 1
+  COLON: 1
+  COLON: 1
+  COLON: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+
+LINE 15 (length=37)
+TEXT: доктор экономических наук, профессор
+COUNTS:
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+
+LINE 16 (length=27)
+TEXT: Егорова Наталья Евгеньевна
+COUNTS:
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 2
+
+LINE 17 (length=28)
+TEXT: кандидат экономических наук
+COUNTS:
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+
+LINE 18 (length=30)
+TEXT: Павлюкова Оксана Вячеславовна
+COUNTS:
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+
+LINE 19 (length=67)
+TEXT: Ведущая организация Академия экономической безопасности МВД России
+COUNTS:
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 4
+
+LINE 20 (length=17)
+TEXT: Защита состоится
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 2
+
+LINE 21 (length=19)
+TEXT: часов на заседании
+COUNTS:
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 1
+
+LINE 22 (length=172)
+TEXT: диссертационного совета ДСПР 502 001 02 при Российской академии государственной службы при Президенте Российской Федерации по адресу 119606, Москва, пр Вернадского 84, ауд
+COUNTS:
+  NUMBER: 5
+  COMMA: 3
+  NUMBER: 5
+  COMMA: 3
+  NUMBER: 5
+  NUMBER: 5
+  NUMBER: 5
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  NUMBER: 5
+  NUMBER: 5
+  NUMBER: 5
+  NUMBER: 5
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 10
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 10
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 11
+
+LINE 23 (length=126)
+TEXT: С диссертацией можно ознакомиться в библиотеке Российской академии государственной службы при Президенте Российской Федерации
+COUNTS:
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  SEPARATOR: 5
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 6
+  SEPARATOR: 13
+  SEPARATOR: 6
+  SEPARATOR: 11
+
+LINE 24 (length=38)
+TEXT: Автореферат разослан «У/» мая 2007 г.
+COUNTS:
+  DOT: 1
+  YEAR: 1
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 1
+  QUOTATION: 2
+  DOT: 1
+  YEAR: 1
+  DOT: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  QUOTATION: 2
+  QUOTATION: 2
+  DOT: 1
+  SLASH: 1
+  NUMBER: 1
+  NUMBER: 1
+  QUOTATION: 2
+  NUMBER: 1
+  DOT: 1
+  NUMBER: 1
+  YEAR: 1
+  SLASH: 1
+  YEAR: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+
+LINE 25 (length=42)
+TEXT: Ученый секретарь диссертационного совета,
+COUNTS:
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+
+LINE 26 (length=34)
+TEXT: кандидат философских наук, доцент
+COUNTS:
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+
+LINE 27 (length=10)
+TEXT: Мотин Ю Н
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 28 (length=2)
+TEXT: 3
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 29 (length=28)
+TEXT: ОБЩАЯ ХАРАКТЕРИСТИКА РАБОТЫ
+COUNTS:
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 25
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 30 (length=1001)
+TEXT: Актуальность темы исследования Актуальность темы настоящей диссертации определяется, прежде всего, характером рыночной экономики, который начал складываться в мире в последней трети XX века и проявляется сегодня в особо важной роли финансового сектора, призванного удовлетворять повышенный спрос реального сектора экономики в инвестициях, необходимых для достижения устойчивого экономического роста Рыночная экономика не всегда работала на приоритет устойчивого роста Такой приоритет всегда существовал на уровне частного предпринимательства, но он до определенного времени не проникал на уровень экономической политики государства Это время наступило в связи с ускорением мирового социально-экономического развития под влиянием прогресса информационно-коммуникационных технологий, которые предъявили гораздо более высокие, чем ранее, требования к эффективности управления, поставив перед государством задачу обеспечения конкурентоспособности страны на основе устойчивого роста национальной экономики
+COUNTS:
+  COMMA: 10
+  DASH: 2
+  DASH: 2
+  DASH: 2
+  COMMA: 10
+  DASH: 2
+  DASH: 2
+  COMMA: 10
+  COMMA: 10
+  COMMA: 10
+  DASH: 2
+  DASH: 2
+  COMMA: 10
+  DASH: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 34
+  SEPARATOR: 2
+  SEPARATOR: 57
+  SEPARATOR: 26
+  SEPARATOR: 23
+  SEPARATOR: 66
+  SEPARATOR: 66
+  SEPARATOR: 57
+  SEPARATOR: 22
+  SEPARATOR: 51
+  SEPARATOR: 57
+  SEPARATOR: 66
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 70
+  SEPARATOR: 1
+
+LINE 31 (length=676)
+TEXT: Так, на рубеже XX-XXI веков структурно оформилась принципиально новая рыночная экономика - экономика повышенного инвестиционного спроса и устойчивого роста, прочно связанная с передовыми информационно-коммуникационными технологиями и процессами глобализации с их не только большими возможностями, но и серьезными угрозами для национального экономического развития И главная угроза для национального государства - его отказ от полноценного участия в этих процессах, предполагающего перевод национальной экономики на структуру экономики повышенного инвестиционного спроса и устойчивого роста Отсюда - актуальность решения задачи такого позиционирования финансового, в том числе
+COUNTS:
+  COMMA: 5
+  DASH: 5
+  DASH: 5
+  DASH: 5
+  COMMA: 5
+  DASH: 5
+  DASH: 5
+  COMMA: 5
+  COMMA: 5
+  COMMA: 5
+  DASH: 5
+  DASH: 5
+  COMMA: 5
+  DASH: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 20
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 46
+  SEPARATOR: 17
+  SEPARATOR: 19
+  SEPARATOR: 56
+  SEPARATOR: 56
+  SEPARATOR: 46
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 24
+  SEPARATOR: 46
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 56
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 25
+  SEPARATOR: 1
+
+LINE 32 (length=2)
+TEXT: 4
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 33 (length=194)
+TEXT: банковского, сектора рыночной экономики, которое бы обеспечило эффективное инвестиционное обслуживание устойчивого экономического роста как гарантии конкурентоспособности национальной экономики
+COUNTS:
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  SEPARATOR: 1
+  SEPARATOR: 15
+  SEPARATOR: 9
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 17
+  SEPARATOR: 17
+  SEPARATOR: 9
+  SEPARATOR: 9
+  SEPARATOR: 9
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 11
+  SEPARATOR: 1
+
+LINE 34 (length=708)
+TEXT: В Российской Федерации актуальность решения данной проблемы возрастает во много раз В России, во-первых, слабы институты рыночной экономики Во-вторых, есть большие вопросы с российскими реформами - их системным обеспечением и политической волей проводить их вообще В-третьих, тот факт, что институт финансового посредничества не вносит сколько-нибудь существенного вклада в тот экономический рост, который сегодня есть в стране Уровень инвестиций в России низок - всего 18 % ВВП против 25-30 % в таких же переходных, как российская, но более динамично развивающихся экономиках Притом, что высокая доля экспорта природных ресурсов делает российскую экономику уязвимой и по отношению к колебаниям цен на сырье
+COUNTS:
+  NUMBER: 3
+  COMMA: 9
+  NUMBER: 3
+  DASH: 7
+  DASH: 7
+  DASH: 7
+  COMMA: 9
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 7
+  DASH: 7
+  NUMBER: 3
+  COMMA: 9
+  COMMA: 9
+  COMMA: 9
+  DASH: 7
+  DASH: 7
+  COMMA: 9
+  NUMBER: 3
+  DASH: 7
+  NUMBER: 3
+  NUMBER: 3
+  NUMBER: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 13
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 27
+  SEPARATOR: 2
+  SEPARATOR: 27
+  SEPARATOR: 12
+  SEPARATOR: 16
+  SEPARATOR: 54
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 54
+  SEPARATOR: 27
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 38
+  SEPARATOR: 1
+  SEPARATOR: 27
+  SEPARATOR: 54
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 43
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 35 (length=759)
+TEXT: Приходится констатировать, что сегодня банковский сектор России, и по своей недостаточной инфраструктуре, и по низкому уровню своего участия в экономическом росте сдерживает структурные преобразования российской экономики, вместо того, чтобы быть их важнейшим локомотивом Достаточно сказать, что на сегодняшний день совокупный капитал российских банков сопоставим с капиталом крупного европейского банка или американского банка не из первой десятки Естественно, что бедные банки с явным дефицитом "длинных" кредитов, спрос на которые банковский сектор России обеспечивает в лучшем случае на 20 %1, не могут быть инвесторами, не могут финансировать масштабные национальные проекты, задача реализации которых была поставлена Президентом РФ, призвавшим «создать
+COUNTS:
+  NUMBER: 2
+  COMMA: 12
+  NUMBER: 2
+  COMMA: 12
+  NUMBER: 2
+  NUMBER: 2
+  QUOTATION: 3
+  NUMBER: 2
+  COMMA: 12
+  COMMA: 12
+  COMMA: 12
+  QUOTATION: 3
+  QUOTATION: 3
+  COMMA: 12
+  NUMBER: 2
+  NUMBER: 2
+  QUOTATION: 3
+  NUMBER: 2
+  NUMBER: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 34
+  SEPARATOR: 1
+  SEPARATOR: 49
+  SEPARATOR: 11
+  SEPARATOR: 20
+  SEPARATOR: 2
+  SEPARATOR: 51
+  SEPARATOR: 51
+  SEPARATOR: 49
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 47
+  SEPARATOR: 1
+  SEPARATOR: 49
+  SEPARATOR: 51
+  SEPARATOR: 3
+  SEPARATOR: 12
+  SEPARATOR: 45
+  SEPARATOR: 3
+  SEPARATOR: 1
+
+LINE 36 (length=80)
+TEXT: 1 Мытарев В Кто оплатит удвоение ВВП // Российская газета - М, 2004 - 15 апреля
+COUNTS:
+  YEAR: 1
+  NUMBER: 3
+  COMMA: 1
+  NUMBER: 3
+  DASH: 2
+  DASH: 2
+  DASH: 2
+  COMMA: 1
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 2
+  YEAR: 1
+  DASH: 2
+  NUMBER: 3
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 2
+  DASH: 2
+  SLASH: 2
+  DOUBLE_SLASH: 1
+  COMMA: 1
+  NUMBER: 3
+  DASH: 2
+  NUMBER: 3
+  NUMBER: 3
+  NUMBER: 3
+  YEAR: 1
+  SLASH: 2
+  YEAR: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+
+LINE 37 (length=2)
+TEXT: 5
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 38 (length=351)
+TEXT: условия для активного привлечения инвестиций из других, помимо государственных, источников - в здравоохранение, образование, науку и культуру»1 Не решив задачу наполнения банковской системы долгосрочными и доступными по цене ресурсами, бессмысленно обсуждать вопросы ускорения экономического роста, удвоения ВВП, развития малого бизнеса, ипотеки и др
+COUNTS:
+  NUMBER: 1
+  COMMA: 8
+  NUMBER: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 8
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  QUOTATION: 1
+  DASH: 1
+  NUMBER: 1
+  COMMA: 8
+  COMMA: 8
+  COMMA: 8
+  DASH: 1
+  QUOTATION: 1
+  DASH: 1
+  QUOTATION: 1
+  COMMA: 8
+  NUMBER: 1
+  DASH: 1
+  NUMBER: 1
+  QUOTATION: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 10
+  SEPARATOR: 17
+  SEPARATOR: 8
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 31
+  SEPARATOR: 31
+  SEPARATOR: 17
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 17
+  SEPARATOR: 31
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 21
+  SEPARATOR: 1
+
+LINE 39 (length=508)
+TEXT: В России для банковского сектора актуальна и такая специфическая задача, как преодоление сырьевой направленности российской экономики, препятствующей стране выйти на путь экономического роста, опирающейся как раз на высокие инвестиционные возможности банков По этому поводу Президент РФ высказался следующим образом " банковский сектор это -кровеносная система всей экономики Вся экономика страны заинтересована в том, чтобы банковская система развивалась эффективно, может быть, даже опережающими темпами2.
+COUNTS:
+  DOT: 1
+  NUMBER: 1
+  COMMA: 6
+  NUMBER: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  COMMA: 6
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  DOT: 1
+  QUOTATION: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  NUMBER: 1
+  DOT: 1
+  COMMA: 6
+  COMMA: 6
+  COMMA: 6
+  DASH: 1
+  DOT: 1
+  QUOTATION: 1
+  DASH: 1
+  QUOTATION: 1
+  DOT: 1
+  COMMA: 6
+  NUMBER: 1
+  DASH: 1
+  NUMBER: 1
+  QUOTATION: 1
+  NUMBER: 1
+  DOT: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 29
+  SEPARATOR: 1
+  SEPARATOR: 42
+  SEPARATOR: 7
+  SEPARATOR: 15
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 32
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 32
+  SEPARATOR: 42
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 26
+  SEPARATOR: 1
+  SEPARATOR: 42
+  SEPARATOR: 32
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 32
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 40 (length=226)
+TEXT: Исходя из вышеизложенного, актуальность темы настоящего исследования обуславливает необходимость решения следующей научной задачи: теоретического обоснования роли банковского сектора в системе управления российской экономикой
+COUNTS:
+  COMMA: 1
+  COLON: 1
+  COMMA: 1
+  COLON: 1
+  COLON: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COLON: 1
+  COMMA: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 8
+  SEPARATOR: 13
+  SEPARATOR: 8
+  SEPARATOR: 4
+  SEPARATOR: 15
+  SEPARATOR: 15
+  SEPARATOR: 13
+  SEPARATOR: 6
+  SEPARATOR: 10
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 15
+  SEPARATOR: 5
+  SEPARATOR: 18
+
+LINE 41 (length=61)
+TEXT: Объект исследования система управления российской экономикой
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 4
+
+LINE 42 (length=82)
+TEXT: Предмет исследования банковский сектор в системе управления российской экономикой
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 7
+  SEPARATOR: 4
+  SEPARATOR: 7
+
+LINE 43 (length=188)
+TEXT: Цель исследования выявление современных угроз развитию банковского сектора российской экономики и разработка на его основе конкретных рекомендаций по выполнению банковским сектором задачи
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 13
+  SEPARATOR: 12
+  SEPARATOR: 4
+  SEPARATOR: 5
+  SEPARATOR: 13
+  SEPARATOR: 13
+  SEPARATOR: 12
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 12
+  SEPARATOR: 13
+  SEPARATOR: 3
+  SEPARATOR: 14
+
+LINE 44 (length=118)
+TEXT: * Послание Президента РФ В В Путина Федеральному Собранию РФ 25 апреля 2005 года// Российская газета. 2005 -26 апреля
+COUNTS:
+  DOT: 1
+  YEAR: 2
+  NUMBER: 4
+  NUMBER: 4
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  NUMBER: 4
+  NUMBER: 4
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  YEAR: 2
+  DOT: 1
+  DASH: 1
+  NUMBER: 4
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  SLASH: 2
+  DOUBLE_SLASH: 1
+  NUMBER: 4
+  DASH: 1
+  NUMBER: 4
+  NUMBER: 4
+  DOT: 1
+  NUMBER: 4
+  YEAR: 2
+  SLASH: 2
+  YEAR: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 12
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+
+LINE 45 (length=224)
+TEXT: 2 Заключительное слово Президента РФ В В Путина на совещании о роли банковского сектора в решении задач социально-экономического развития регионов 14 декабря 2005 года// http∕∕www kremlin ru∕text∕aρρears∕2005∕12∕98955 shtml
+COUNTS:
+  YEAR: 2
+  NUMBER: 6
+  NUMBER: 6
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  NUMBER: 6
+  NUMBER: 6
+  DASH: 1
+  YEAR: 2
+  DASH: 1
+  NUMBER: 6
+  DASH: 1
+  DASH: 1
+  SLASH: 2
+  DOUBLE_SLASH: 1
+  NUMBER: 6
+  DASH: 1
+  NUMBER: 6
+  NUMBER: 6
+  NUMBER: 6
+  YEAR: 2
+  SLASH: 2
+  YEAR: 2
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 13
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 13
+  SEPARATOR: 13
+  SEPARATOR: 4
+  SEPARATOR: 11
+
+LINE 46 (length=2)
+TEXT: 6
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 47 (length=118)
+TEXT: укрепления финансовой безопасности РФ в условиях современных требований к экономической конкурентоспособности страны.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 8
+
+LINE 48 (length=20)
+TEXT: Задачи исследования
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+
+LINE 49 (length=107)
+TEXT: -	определение места и роли банковского сектора в системе финансовой безопасности современного государства,
+COUNTS:
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 7
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 7
+  SEPARATOR: 5
+  SEPARATOR: 7
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 11
+
+LINE 50 (length=60)
+TEXT: -	выявление современных угроз развитию банковского сектора,
+COUNTS:
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 5
+
+LINE 51 (length=85)
+TEXT: -	анализ правового обеспечения проведения в Российской Федерации банковской реформы,
+COUNTS:
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 8
+
+LINE 52 (length=61)
+TEXT: -	изучение хода реформирования в России банковского сектора;
+COUNTS:
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 4
+
+LINE 53 (length=124)
+TEXT: -	исследование фактора экономической макросреды в отношении возможности построения в России эффективной банковской системы,
+COUNTS:
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 7
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 11
+  SEPARATOR: 11
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 5
+  SEPARATOR: 11
+  SEPARATOR: 3
+  SEPARATOR: 8
+
+LINE 54 (length=124)
+TEXT: -	формулирование конкретных рекомендаций в отношении задач государства по повышению конкурентоспособности российских банков
+COUNTS:
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 9
+  SEPARATOR: 9
+  SEPARATOR: 7
+  SEPARATOR: 5
+  SEPARATOR: 7
+  SEPARATOR: 9
+  SEPARATOR: 2
+  SEPARATOR: 7
+
+LINE 55 (length=48)
+TEXT: Методология исследования заключается в подходах
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 3
+
+LINE 56 (length=93)
+TEXT: -	системно-эволюционном- с позиций теории систем и методологии универсального эволюционизма,
+COUNTS:
+  COMMA: 1
+  DASH: 3
+  DASH: 3
+  DASH: 3
+  COMMA: 1
+  DASH: 3
+  DASH: 3
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 3
+  DASH: 3
+  COMMA: 1
+  DASH: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 5
+  SEPARATOR: 13
+  SEPARATOR: 13
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 5
+
+LINE 57 (length=103)
+TEXT: -	междисциплинарном, в том числе с позиций экономического, социолого-экономического, правового анализа
+COUNTS:
+  COMMA: 3
+  DASH: 2
+  DASH: 2
+  DASH: 2
+  COMMA: 3
+  DASH: 2
+  DASH: 2
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  DASH: 2
+  DASH: 2
+  COMMA: 3
+  DASH: 2
+  SEPARATOR: 4
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 5
+  SEPARATOR: 10
+  SEPARATOR: 10
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+
+LINE 58 (length=149)
+TEXT: Теоретическая база диссертации, характеризующая степень разработанности в научной литературе проблемы диссертационного исследования, включает труды.
+COUNTS:
+  DOT: 1
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  COMMA: 2
+  DOT: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 15
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 15
+  SEPARATOR: 3
+  SEPARATOR: 11
+  SEPARATOR: 15
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 1
+
+LINE 59 (length=283)
+TEXT: -	по финансовой, банковской политике государства классиков экономической теории - Ч Вулфера, Дж Кейнса, Р Миллера, Д Ван-Хуза, Дж Стиглица, М. Фридмена, - а также российских авторов Л Абалкина, А Аганбегяна, А Викулина, Д. Львова, В Мехрякова, А Мурычева, А Саркисянца, Г Тосуняна1,
+COUNTS:
+  DOT: 2
+  INITIAL: 2
+  NUMBER: 1
+  COMMA: 15
+  NUMBER: 1
+  DASH: 4
+  DOT: 2
+  INITIAL: 2
+  DASH: 4
+  DOT: 2
+  DASH: 4
+  COMMA: 15
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 4
+  DOT: 2
+  DOT: 2
+  INITIAL: 2
+  DOT: 2
+  DASH: 4
+  NUMBER: 1
+  DOT: 2
+  COMMA: 15
+  COMMA: 15
+  COMMA: 15
+  DASH: 4
+  INITIAL: 2
+  DOT: 2
+  DASH: 4
+  DOT: 2
+  COMMA: 15
+  NUMBER: 1
+  DASH: 4
+  NUMBER: 1
+  NUMBER: 1
+  INITIAL: 2
+  DOT: 2
+  INITIAL: 2
+  NUMBER: 1
+  INITIAL: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 17
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 29
+  ENTITY_SHAPE: 17
+  ENTITY_SHAPE: 17
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 2
+  SEPARATOR: 13
+  SEPARATOR: 13
+  SEPARATOR: 4
+  SEPARATOR: 13
+  SEPARATOR: 6
+  SEPARATOR: 4
+  SEPARATOR: 26
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 17
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 17
+  SEPARATOR: 26
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 26
+  SEPARATOR: 17
+  SEPARATOR: 5
+  SEPARATOR: 11
+
+LINE 60 (length=439)
+TEXT: 1 См Вулфер Ч Энциклопедия банковского дела и финансов - М, 2000, Кейнс Дж Избранные произведения - М, 1993, Миллер Р, Ван-Хуз Д Современные деньги и банковское дело ∙M,2000, Стиглиц Дж В тени глобализации/ХПроблемы теории и практики управления - М , 2003 ∙ Ns 2, Фридман М Количественная теория денег * М, 1996, Абалкин Л И Экономическая безопасность России угрозы и их отражение// Вопросы экономики 1994 - № 12, Аганбегян А Снова грядет
+COUNTS:
+  YEAR: 6
+  NUMBER: 9
+  COMMA: 12
+  NUMBER: 9
+  DASH: 5
+  DASH: 5
+  DASH: 5
+  COMMA: 12
+  NUMBER: 9
+  NUMBER: 9
+  DASH: 5
+  YEAR: 6
+  DASH: 5
+  NUMBER: 9
+  COMMA: 12
+  COMMA: 12
+  COMMA: 12
+  DASH: 5
+  DASH: 5
+  SLASH: 3
+  DOUBLE_SLASH: 1
+  COMMA: 12
+  NUMBER: 9
+  DASH: 5
+  NUMBER: 9
+  NUMBER: 9
+  NUMBER: 9
+  YEAR: 6
+  SLASH: 3
+  YEAR: 6
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 21
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 36
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 21
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 21
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 4
+  SEPARATOR: 12
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 18
+  SEPARATOR: 13
+  SEPARATOR: 6
+  SEPARATOR: 33
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 33
+  SEPARATOR: 1
+  SEPARATOR: 18
+  SEPARATOR: 8
+  SEPARATOR: 5
+  SEPARATOR: 9
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 18
+  SEPARATOR: 2
+  SEPARATOR: 33
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 29
+
+LINE 61 (length=2)
+TEXT: 7
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 62 (length=179)
+TEXT: -	по общим проблемам финансовой безопасности России таких авторов, как Л Барон, О Борисов, В Бурцев, С Глинкина, А Илларионов, Г Клейнер, М Корнилов, А Прохожее, В Ярочкин и др 1
+COUNTS:
+  NUMBER: 1
+  COMMA: 9
+  NUMBER: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 9
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  DASH: 1
+  NUMBER: 1
+  COMMA: 9
+  COMMA: 9
+  COMMA: 9
+  DASH: 1
+  DASH: 1
+  COMMA: 9
+  NUMBER: 1
+  DASH: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 10
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 19
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 10
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 10
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 5
+
+LINE 63 (length=1012)
+TEXT: Эта научная база дает хороший материал для вторичного анализа проблемы, поставленной в диссертации Такой анализ необходим по двум причинам Во-первых, российская экономика объективно стала частью быстро меняющейся мировой экономики, и эмпирическое развитие российского рынка, так или иначе встроенного в мировой рынок, стихийно опережает (во всяком случае - в некоторых секторах экономики России) политику рыночных реформ в стране, предъявляя к этой политике новые требования, в том числе в отношении отечественного банковского сектора Словом, ситуация стремительно меняется, и ее научный анализ быстро устаревает - возникают новые обстоятельства, которых не было еще совсем недавно, и они требуют новых решений Во-вторых, упомянутая теоретическая база, хотя в целом и дает развернутую картину процессов, происходящих в российской экономике, в том числе ее банковском секторе, является фрагментарной Ее составляют работы по разным проблемам, но практически нет работ, которые бы увязывали деятельность российских
+COUNTS:
+  COMMA: 18
+  DASH: 4
+  DASH: 4
+  DASH: 4
+  COMMA: 18
+  DASH: 4
+  DASH: 4
+  COMMA: 18
+  COMMA: 18
+  COMMA: 18
+  DASH: 4
+  DASH: 4
+  PARENTHESIS: 2
+  COMMA: 18
+  DASH: 4
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 37
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 59
+  SEPARATOR: 25
+  SEPARATOR: 28
+  SEPARATOR: 63
+  SEPARATOR: 1
+  SEPARATOR: 63
+  SEPARATOR: 59
+  SEPARATOR: 25
+  SEPARATOR: 62
+  SEPARATOR: 59
+  SEPARATOR: 63
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 73
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 64 (length=604)
+TEXT: критический момент// Национальный банковский журнал 2005 - № 4, Путь в XXI век стратегические проблемы и перспективы российской экономики /Под ред ДСЛьвова - M,1999, Мехряков В Губернская история Бизнес растет, а банки умирают // Национальный банковский журнал 2005 • № 11, Мурычев А Российский банковский сектор вопросы консолидации и корпоративного управления // Вопросы экономики 2005 - № 5, Саркисянц А О роли банков в экономике// Вопросы экономики 2003 - № 3, Тосунян Г А, Викулин А Ю Деньги и власть Теория разделения властей в современных условиях и реструктуризация банковской системы - М , 2000
+COUNTS:
+  YEAR: 6
+  NUMBER: 10
+  COMMA: 9
+  NUMBER: 10
+  DASH: 5
+  DASH: 5
+  DASH: 5
+  COMMA: 9
+  NUMBER: 10
+  NUMBER: 10
+  DASH: 5
+  YEAR: 6
+  DASH: 5
+  NUMBER: 10
+  COMMA: 9
+  COMMA: 9
+  COMMA: 9
+  DASH: 5
+  DASH: 5
+  SLASH: 9
+  DOUBLE_SLASH: 4
+  COMMA: 9
+  NUMBER: 10
+  DASH: 5
+  NUMBER: 10
+  NUMBER: 10
+  NUMBER: 10
+  YEAR: 6
+  SLASH: 9
+  YEAR: 6
+  ENTITY_SHAPE: 10
+  ENTITY_SHAPE: 17
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 32
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 11
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 17
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 11
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 17
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 33
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 26
+  SEPARATOR: 13
+  SEPARATOR: 10
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 46
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 46
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 26
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 17
+  SEPARATOR: 5
+  SEPARATOR: 26
+  SEPARATOR: 1
+  SEPARATOR: 46
+  SEPARATOR: 4
+  SEPARATOR: 12
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 27
+  SEPARATOR: 1
+
+LINE 65 (length=813)
+TEXT: 1 См Барон Л, Захарова Т Диспропорции в развитии банковского и нефинансового секторов экономики России// Вопросы экономики 2003 • № 3, Борисов О Проблемы налогового стимулирования инвестиционной деятельности банков//Вопросы экономики 2005 - № 5, Бурцев В В Факторы финансовой безопасности России//Менеджмент в России и за рубежом 2001 - № 1, Глинкина С., Клейнер Г "Высветвление" экономики и укрепление национальной безопасности России//Российский экономический журнал 2003 -№ 5-6, Илларионов А Критерии экономической безопасности// Вопросы экономики 1998 - № 10, Корнилов МЛ Экономическая безопасность России Основы теории и методологии исследования - Мм 2005, Общая теория национальной безопасности Под ред А А Прохожева. - М, 2002, Ярочкин В И Секьюритология • наука о безопасности жизнедеятельности - М, 2000
+COUNTS:
+  DOT: 2
+  INITIAL: 1
+  YEAR: 8
+  NUMBER: 15
+  COMMA: 11
+  NUMBER: 15
+  DASH: 8
+  DOT: 2
+  INITIAL: 1
+  DASH: 8
+  DOT: 2
+  DASH: 8
+  COMMA: 11
+  NUMBER: 15
+  NUMBER: 15
+  DASH: 8
+  DOT: 2
+  QUOTATION: 2
+  DOT: 2
+  INITIAL: 1
+  YEAR: 8
+  DOT: 2
+  DASH: 8
+  NUMBER: 15
+  DOT: 2
+  COMMA: 11
+  COMMA: 11
+  COMMA: 11
+  DASH: 8
+  INITIAL: 1
+  DOT: 2
+  QUOTATION: 2
+  DASH: 8
+  QUOTATION: 2
+  DOT: 2
+  SLASH: 10
+  DOUBLE_SLASH: 5
+  COMMA: 11
+  NUMBER: 15
+  DASH: 8
+  NUMBER: 15
+  QUOTATION: 2
+  NUMBER: 15
+  INITIAL: 1
+  DOT: 2
+  INITIAL: 1
+  NUMBER: 15
+  YEAR: 8
+  SLASH: 10
+  INITIAL: 1
+  YEAR: 8
+  ENTITY_SHAPE: 15
+  ENTITY_SHAPE: 32
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 48
+  ENTITY_SHAPE: 14
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 32
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 14
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 32
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 27
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 32
+  SEPARATOR: 18
+  SEPARATOR: 15
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 74
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 74
+  SEPARATOR: 32
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 22
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 32
+  SEPARATOR: 2
+  SEPARATOR: 74
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 39
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 66 (length=2)
+TEXT: 8
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+
+LINE 67 (length=116)
+TEXT: банков с решением проблем российских реформ в целом, причем не только экономических реформ, но и реформы управления
+COUNTS:
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 8
+  SEPARATOR: 8
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 2
+
+LINE 68 (length=102)
+TEXT: Этими двумя причинами и обусловлена необходимость проведения настоящего диссертационного исследования
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 12
+  SEPARATOR: 12
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 5
+  SEPARATOR: 12
+  SEPARATOR: 7
+
+LINE 69 (length=49)
+TEXT: Научная новизна исследования состоит в следующем
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 3
+
+LINE 70 (length=478)
+TEXT: 1	. Выявлена роль банковского сектора в системе управления экономикой национального государства в современных условиях Она заключается в том, что банки обязаны стать структурной, и притом важнейшей, частью рыночной экономики нового типа - так называемой "финансовой экономики", раскручивающей "спираль" инвестиционного обслуживания устойчивого экономического роста Наряду с другими финансовыми институтами, банки, призваны быть активными и надежными участниками этой "спирали".
+COUNTS:
+  DOT: 2
+  NUMBER: 1
+  COMMA: 6
+  NUMBER: 1
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  COMMA: 6
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  DOT: 2
+  QUOTATION: 6
+  DOT: 2
+  DOT: 2
+  DASH: 1
+  NUMBER: 1
+  DOT: 2
+  COMMA: 6
+  COMMA: 6
+  COMMA: 6
+  DASH: 1
+  DOT: 2
+  QUOTATION: 6
+  DASH: 1
+  QUOTATION: 6
+  DOT: 2
+  COMMA: 6
+  NUMBER: 1
+  DASH: 1
+  NUMBER: 1
+  QUOTATION: 6
+  NUMBER: 1
+  DOT: 2
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 19
+  SEPARATOR: 1
+  SEPARATOR: 36
+  SEPARATOR: 9
+  SEPARATOR: 15
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 40
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 40
+  SEPARATOR: 36
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 24
+  SEPARATOR: 36
+  SEPARATOR: 1
+  SEPARATOR: 40
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 15
+  SEPARATOR: 2
+  SEPARATOR: 1
+
+LINE 71 (length=445)
+TEXT: 2	Вскрыты современные угрозы развитию банковского сектора, которые связаны с процессами информационной и экономической глобализации, сводятся к "давлению" глобальной экономики на национальную экономику, в том числе со стороны трансграничной финансовой преступности Угрозы резко усиливаются в том случае, когда национальная экономика по каким-то причинам (политическим и т д ) не готова к тому, чтобы становиться полноценным "глобальным игроком"
+COUNTS:
+  NUMBER: 1
+  COMMA: 5
+  NUMBER: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 5
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  QUOTATION: 4
+  DASH: 1
+  NUMBER: 1
+  COMMA: 5
+  COMMA: 5
+  COMMA: 5
+  DASH: 1
+  QUOTATION: 4
+  DASH: 1
+  QUOTATION: 4
+  PARENTHESIS: 2
+  COMMA: 5
+  NUMBER: 1
+  DASH: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  QUOTATION: 4
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 21
+  SEPARATOR: 28
+  SEPARATOR: 14
+  SEPARATOR: 16
+  SEPARATOR: 32
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 32
+  SEPARATOR: 28
+  SEPARATOR: 6
+  SEPARATOR: 20
+  SEPARATOR: 1
+  SEPARATOR: 28
+  SEPARATOR: 32
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 15
+  SEPARATOR: 1
+
+LINE 72 (length=444)
+TEXT: 3	Доказывается необходимость конкретных мер по правовому обеспечению реформы банковского сектора России, призванных - через согласование специального (банковского) законодательства с общим законодательством России (Конституцией РФ, основными Кодексами РФ), а также принятие необходимых новых законодательных актов -сформировать эффективную правовую основу для развития банковского сектора как важнейшей структурной части национальной экономики
+COUNTS:
+  NUMBER: 1
+  COMMA: 3
+  NUMBER: 1
+  DASH: 2
+  DASH: 2
+  DASH: 2
+  COMMA: 3
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 2
+  DASH: 2
+  NUMBER: 1
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  DASH: 2
+  DASH: 2
+  PARENTHESIS: 4
+  COMMA: 3
+  NUMBER: 1
+  DASH: 2
+  PARENTHESIS: 4
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 4
+  NUMBER: 1
+  PARENTHESIS: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 9
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 23
+  SEPARATOR: 31
+  SEPARATOR: 7
+  SEPARATOR: 11
+  SEPARATOR: 25
+  SEPARATOR: 1
+  SEPARATOR: 25
+  SEPARATOR: 31
+  SEPARATOR: 4
+  SEPARATOR: 21
+  SEPARATOR: 31
+  SEPARATOR: 25
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 25
+  SEPARATOR: 1
+
+LINE 73 (length=2)
+TEXT: 9
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+
+LINE 74 (length=83)
+TEXT: России, нацеленной на устойчивый ее рост и эффективное инвестиционное обслуживание
+COUNTS:
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 10
+  SEPARATOR: 10
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 9
+  SEPARATOR: 1
+
+LINE 75 (length=395)
+TEXT: 4	Названы основные проблемы развития банковского сектора, которые возникли вследствие российских реформ и которыми являются низкий уровень капитализации, слабая долгосрочная ресурсная база, низкая рентабельность банков, высокая концентрация банковского капитала, сосредоточенного в основном в столичных банках, высокие риски банковского кредитования, проницаемость банков для криминальной среды
+COUNTS:
+  NUMBER: 1
+  COMMA: 7
+  NUMBER: 1
+  COMMA: 7
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  COMMA: 7
+  COMMA: 7
+  COMMA: 7
+  COMMA: 7
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 24
+  SEPARATOR: 30
+  SEPARATOR: 12
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 27
+  SEPARATOR: 27
+  SEPARATOR: 1
+  SEPARATOR: 30
+  SEPARATOR: 12
+  SEPARATOR: 15
+  SEPARATOR: 30
+  SEPARATOR: 27
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 18
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 76 (length=503)
+TEXT: 5	Предложено решение этих проблем путем строительства структурной базы экономики инвестиционного обслуживания устойчивого экономического роста, где у банков будет внутренняя мотивация к наращиванию своих капиталов и инвестиционной деятельности Доказывается, что построение в России эффективной в отношении безопасного развития банковской системы есть дело формирования в стране экономической макросреды, отвечающей структуре (институтам) экономики повышенного инвестиционного спроса и устойчивого роста
+COUNTS:
+  NUMBER: 1
+  COMMA: 3
+  NUMBER: 1
+  COMMA: 3
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  PARENTHESIS: 2
+  COMMA: 3
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 18
+  SEPARATOR: 23
+  SEPARATOR: 7
+  SEPARATOR: 11
+  SEPARATOR: 44
+  SEPARATOR: 44
+  SEPARATOR: 23
+  SEPARATOR: 8
+  SEPARATOR: 35
+  SEPARATOR: 23
+  SEPARATOR: 44
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 33
+
+LINE 77 (length=45)
+TEXT: Результаты исследования, выносимые на защиту
+COUNTS:
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 3
+
+LINE 78 (length=135)
+TEXT: -	выявлена роль банковского сектора в управлении экономикой инвестиционного обслуживания и обеспечении финансовой безопасности страны,
+COUNTS:
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  SEPARATOR: 5
+  SEPARATOR: 8
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 13
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 8
+  SEPARATOR: 13
+  SEPARATOR: 2
+  SEPARATOR: 8
+
+LINE 79 (length=219)
+TEXT: -	рассмотрено современное состояние банковской системы России с точки зрения ее способности стать действенным инструментом управления экономикой инвестиционного обслуживания и обеспечить финансовую безопасность страны,
+COUNTS:
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 1
+  DASH: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 5
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 18
+  SEPARATOR: 18
+  SEPARATOR: 8
+  SEPARATOR: 4
+  SEPARATOR: 14
+  SEPARATOR: 8
+  SEPARATOR: 18
+  SEPARATOR: 3
+  SEPARATOR: 17
+
+LINE 80 (length=119)
+TEXT: -	определены направления совершенствования и укрепления банковской системы России с целью ее превращения в действенный
+COUNTS:
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 8
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 8
+  SEPARATOR: 3
+  SEPARATOR: 16
+
+LINE 81 (length=3)
+TEXT: 10
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 82 (length=108)
+TEXT: инструмент управления экономикой инвестиционного обслуживания и обеспечения финансовой безопасности страны;
+COUNTS:
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 12
+  SEPARATOR: 12
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 12
+  SEPARATOR: 2
+  SEPARATOR: 7
+
+LINE 83 (length=119)
+TEXT: -	установлены приоритеты государственной политики по формированию конкурентоспособного российского банковского сектора
+COUNTS:
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  SEPARATOR: 7
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 8
+  SEPARATOR: 5
+  SEPARATOR: 7
+  SEPARATOR: 5
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 5
+
+LINE 84 (length=316)
+TEXT: Практическое значение исследования состоит в том, что в нем сформулированы предложения и рекомендации, направленные на совершенствование банковской системы, деятельности кредитных организаций и государственной политики по повышению экономической роли банковского сектора в обеспечении финансовой безопасности страны
+COUNTS:
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 18
+  SEPARATOR: 7
+  SEPARATOR: 6
+  SEPARATOR: 27
+  SEPARATOR: 27
+  SEPARATOR: 18
+  SEPARATOR: 3
+  SEPARATOR: 15
+  SEPARATOR: 18
+  SEPARATOR: 27
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 27
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 85 (length=460)
+TEXT: Теоретические материалы, изложенные в диссертационном исследовании, могут быть использованы в учебном процессе при преподавании общественных, прежде всего, социально-экономических дисциплин, связанных с обеспечением финансовой безопасности Полученные выводы и результаты исследования могут быть применены при разработке и реализации социально-экономических, в том числе региональных, программ, в практической деятельности соответствующих кредитных организаций
+COUNTS:
+  COMMA: 8
+  DASH: 2
+  DASH: 2
+  DASH: 2
+  COMMA: 8
+  DASH: 2
+  DASH: 2
+  COMMA: 8
+  COMMA: 8
+  COMMA: 8
+  DASH: 2
+  DASH: 2
+  COMMA: 8
+  DASH: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 23
+  SEPARATOR: 14
+  SEPARATOR: 12
+  SEPARATOR: 42
+  SEPARATOR: 42
+  SEPARATOR: 23
+  SEPARATOR: 3
+  SEPARATOR: 20
+  SEPARATOR: 23
+  SEPARATOR: 42
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 40
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 86 (length=269)
+TEXT: Апробация результатов исследования Основные положения и выводы диссертации были обсуждены на кафедре национальной безопасности РАГС, на XIX годовом общем собрании Ассоциации региональных банков России 24 мая 2005 года (г Москва), в публикациях автора общим объемом п л
+COUNTS:
+  YEAR: 1
+  NUMBER: 2
+  COMMA: 2
+  NUMBER: 2
+  COMMA: 2
+  NUMBER: 2
+  NUMBER: 2
+  YEAR: 1
+  NUMBER: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  PARENTHESIS: 2
+  COMMA: 2
+  NUMBER: 2
+  PARENTHESIS: 2
+  NUMBER: 2
+  NUMBER: 2
+  PARENTHESIS: 2
+  NUMBER: 2
+  YEAR: 1
+  PARENTHESIS: 2
+  YEAR: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 12
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 20
+  SEPARATOR: 8
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 22
+  SEPARATOR: 1
+  SEPARATOR: 22
+  SEPARATOR: 1
+  SEPARATOR: 20
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 20
+  SEPARATOR: 22
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 12
+
+LINE 87 (length=137)
+TEXT: Структура диссертации Работа общим объемом 9,2 пл состоит из введения, трех глав по два раздела в каждой, заключения и списка литературы
+COUNTS:
+  NUMBER: 2
+  COMMA: 3
+  NUMBER: 2
+  COMMA: 3
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 4
+  SEPARATOR: 12
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 12
+  SEPARATOR: 2
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 8
+
+LINE 88 (length=27)
+TEXT: ОСНОВНОЕ СОДЕРЖАНИЕ РАБОТЫ
+COUNTS:
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 24
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+
+LINE 89 (length=245)
+TEXT: Во Введении обосновываются актуальность, новизна и практическая значимость темы исследования, формулируются объект, предмет, цель, задачи и методология исследования, описывается степень научной разработанности исследуемой в диссертации проблемы
+COUNTS:
+  COMMA: 6
+  COMMA: 6
+  COMMA: 6
+  COMMA: 6
+  COMMA: 6
+  COMMA: 6
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 17
+  SEPARATOR: 8
+  SEPARATOR: 7
+  SEPARATOR: 2
+  SEPARATOR: 20
+  SEPARATOR: 20
+  SEPARATOR: 17
+  SEPARATOR: 7
+  SEPARATOR: 15
+  SEPARATOR: 17
+  SEPARATOR: 20
+  SEPARATOR: 2
+  SEPARATOR: 18
+
+LINE 90 (length=260)
+TEXT: В главе 1 "Банковский сектор в условиях современных требований к структуре национальной экономики" анализируются банковский сектор как фактор финансовой безопасности национального государства и картина современных угроз интересам банковского сообщества России
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  QUOTATION: 2
+  NUMBER: 1
+  QUOTATION: 2
+  QUOTATION: 2
+  NUMBER: 1
+  NUMBER: 1
+  QUOTATION: 2
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 21
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 17
+  SEPARATOR: 17
+  SEPARATOR: 21
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 21
+  SEPARATOR: 17
+  SEPARATOR: 5
+  SEPARATOR: 13
+
+LINE 91 (length=676)
+TEXT: Банковский сектор (наряду с фондовым рынком) - один из столпов современной финансовой системы, имеющий совершенно уникальное значение в системе управления современной рыночной экономикой, которую в научной литературе определяют как экономику денег, кредитов, инвестиций, устойчивого роста Банковский сектор играет одну из важнейших ролей и в обеспечении финансовой безопасности страны, рассматриваемой в настоящем исследовании как защищенность жизненно важных интересов личности, общества и государства в финансовой сфере от угроз (табл 1) Обеспечение финансовой безопасности особенно актуально для России в ее нынешнем положении страны с переходной, реформируемой экономикой
+COUNTS:
+  NUMBER: 1
+  COMMA: 8
+  NUMBER: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 8
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  DASH: 1
+  NUMBER: 1
+  COMMA: 8
+  COMMA: 8
+  COMMA: 8
+  DASH: 1
+  DASH: 1
+  PARENTHESIS: 4
+  COMMA: 8
+  NUMBER: 1
+  DASH: 1
+  PARENTHESIS: 4
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 4
+  NUMBER: 1
+  PARENTHESIS: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 21
+  SEPARATOR: 1
+  SEPARATOR: 34
+  SEPARATOR: 12
+  SEPARATOR: 16
+  SEPARATOR: 48
+  SEPARATOR: 48
+  SEPARATOR: 34
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 28
+  SEPARATOR: 34
+  SEPARATOR: 48
+  SEPARATOR: 1
+  SEPARATOR: 20
+  SEPARATOR: 56
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 92 (length=155)
+TEXT: По мнению автора, реальную угрозу финансовой безопасности России представляют следующие характеристики банковского сектора России в его нынешнем состоянии
+COUNTS:
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 10
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 13
+  SEPARATOR: 13
+  SEPARATOR: 10
+  SEPARATOR: 2
+  SEPARATOR: 8
+  SEPARATOR: 10
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 11
+
+LINE 93 (length=178)
+TEXT: Весьма низок уровень капитализации российских банков, совокупный капитал которых не превышает 4 % ВВП, что существенно меньше показателей не только развитых, но и основной части
+COUNTS:
+  NUMBER: 1
+  COMMA: 3
+  NUMBER: 1
+  COMMA: 3
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 9
+  SEPARATOR: 12
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 11
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 10
+  SEPARATOR: 12
+  SEPARATOR: 11
+  SEPARATOR: 4
+  SEPARATOR: 12
+  SEPARATOR: 1
+
+LINE 94 (length=3)
+TEXT: 12
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 95 (length=344)
+TEXT: динамично развивающихся стран Это означает слабую кредитоспособность российских банков и в принципе ставит под вопрос их функциональную роль в национальной экономике, поскольку такой банковский сектор плохо выполняет свою профильную функцию -обеспечения реального сектора инвестициями, достаточными для устойчивого роста национальной экономики
+COUNTS:
+  COMMA: 2
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 2
+  DASH: 1
+  DASH: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DASH: 1
+  DASH: 1
+  COMMA: 2
+  DASH: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 20
+  SEPARATOR: 11
+  SEPARATOR: 5
+  SEPARATOR: 28
+  SEPARATOR: 28
+  SEPARATOR: 20
+  SEPARATOR: 5
+  SEPARATOR: 16
+  SEPARATOR: 20
+  SEPARATOR: 28
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 12
+  SEPARATOR: 1
+
+LINE 96 (length=10)
+TEXT: Таблица 1
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+
+LINE 97 (length=86)
+TEXT: Жизненно важные интересы личности, общества, государства в финансово-банковской сфере
+COUNTS:
+  COMMA: 2
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 2
+  DASH: 1
+  DASH: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DASH: 1
+  DASH: 1
+  COMMA: 2
+  DASH: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 6
+  SEPARATOR: 4
+  SEPARATOR: 6
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+
+LINE 98 (length=40)
+TEXT: Субъекты интересов	Содержание интересов
+COUNTS:
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 7
+
+LINE 99 (length=281)
+TEXT: Личность	Хранение и получение процентных ставок по вкладам (депозитам). Получение кредитов и других банковских услуг. Реализация права на возмещение государством вреда, причиненного незаконными действиями кредитной организации или органов государственной власти и должностных лиц.
+COUNTS:
+  DOT: 3
+  COMMA: 1
+  DOT: 3
+  DOT: 3
+  COMMA: 1
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  DOT: 3
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DOT: 3
+  DOT: 3
+  PARENTHESIS: 2
+  COMMA: 1
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  DOT: 3
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 19
+  SEPARATOR: 9
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 27
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 27
+  SEPARATOR: 19
+  SEPARATOR: 2
+  SEPARATOR: 11
+  SEPARATOR: 19
+  SEPARATOR: 27
+  SEPARATOR: 3
+  SEPARATOR: 19
+
+LINE 100 (length=180)
+TEXT: Общество	Установление и поддержание баланса экономических, финансовых интересов, Повышение благосостояния людей на основе экономического роста, поддержание общественного согласия,
+COUNTS:
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 12
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 11
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 11
+  SEPARATOR: 12
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 17
+  SEPARATOR: 1
+
+LINE 101 (length=261)
+TEXT: Государство	Стабильное функционирование институтов финансового посредничества, Способность банков привлекать инвестиции в экономику страны. Конкурентоспособность	финансово-банковской	системы, позволяющая интегрироваться в международное экономическое сообщество
+COUNTS:
+  DOT: 1
+  COMMA: 2
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  COMMA: 2
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 2
+  DASH: 1
+  DOT: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 13
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 19
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 19
+  SEPARATOR: 13
+  SEPARATOR: 3
+  SEPARATOR: 16
+  SEPARATOR: 13
+  SEPARATOR: 19
+  SEPARATOR: 1
+  SEPARATOR: 14
+
+LINE 102 (length=642)
+TEXT: В России неразвита финансовая инфраструктура и сам внутренний рынок финансового посредничества из-за отсутствия адекватной правовой основы их формирования и функционирования От этого страдает вся национальная экономика, не получающая должных инвестиций на свою модернизацию - создание структурных условий для своего устойчивого роста, а также формирования непосредственно в финансово-банковском секторе правоохранительного механизма, эффективно препятствующего уходу сектора от решения инвестиционных задач в область теневых, криминальных операций, содействующих оттоку капитала из страны, финансовой подпитке международного терроризма и т п
+COUNTS:
+  COMMA: 6
+  DASH: 3
+  DASH: 3
+  DASH: 3
+  COMMA: 6
+  DASH: 3
+  DASH: 3
+  COMMA: 6
+  COMMA: 6
+  COMMA: 6
+  DASH: 3
+  DASH: 3
+  COMMA: 6
+  DASH: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 49
+  SEPARATOR: 9
+  SEPARATOR: 11
+  SEPARATOR: 48
+  SEPARATOR: 48
+  SEPARATOR: 49
+  SEPARATOR: 11
+  SEPARATOR: 38
+  SEPARATOR: 49
+  SEPARATOR: 48
+  SEPARATOR: 9
+  SEPARATOR: 33
+
+LINE 103 (length=3)
+TEXT: 13
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 104 (length=605)
+TEXT: Банковская система России отличается низкой конкурентоспособностью, что препятствует ее интеграции в международное банковское сообщество, необходимой в современных условиях глобальной экономики для возможности собственного развития - в том числе через создание на российской территории новых банков с участием иностранного капитала Такая открытость экономически выгодна России, поскольку иностранные банки привносят в страну пребывания не только капитал, но и современные банковские технологии и качественные услуги, помогая притоку в страну иностранных инвестиций и росту конкурентоспособности ее банков
+COUNTS:
+  COMMA: 5
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 5
+  DASH: 1
+  DASH: 1
+  COMMA: 5
+  COMMA: 5
+  COMMA: 5
+  DASH: 1
+  DASH: 1
+  COMMA: 5
+  DASH: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 28
+  SEPARATOR: 32
+  SEPARATOR: 12
+  SEPARATOR: 11
+  SEPARATOR: 46
+  SEPARATOR: 46
+  SEPARATOR: 1
+  SEPARATOR: 32
+  SEPARATOR: 10
+  SEPARATOR: 37
+  SEPARATOR: 32
+  SEPARATOR: 46
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 38
+  SEPARATOR: 2
+
+LINE 105 (length=711)
+TEXT: Автор считает, что банковский сектор России функционирует практически вне системы российского федерализма, вне должной системы равномерного распределения банковских капиталов по всем субъектам РФ Имеющийся сегодня в России финансовый потенциал региональных банков не адекватен экономике регионов, поскольку 90 % промышленного капитала и населения страны находится в регионах, а более 80 % финансовых активов - в Москве 1 В результате российские регионы, не обладая сильной местной банковской системой, не могут сформировать у себя серьезный финансовый потенциал, закрепить свою финансовую самостоятельность и, следовательно, обеспечить нормальный инвестиционный процесс и устойчивый рост национальной экономики
+COUNTS:
+  NUMBER: 3
+  COMMA: 9
+  NUMBER: 3
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 9
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 1
+  DASH: 1
+  NUMBER: 3
+  COMMA: 9
+  COMMA: 9
+  COMMA: 9
+  DASH: 1
+  DASH: 1
+  COMMA: 9
+  NUMBER: 3
+  DASH: 1
+  NUMBER: 3
+  NUMBER: 3
+  NUMBER: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 26
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 41
+  SEPARATOR: 20
+  SEPARATOR: 16
+  SEPARATOR: 50
+  SEPARATOR: 50
+  SEPARATOR: 1
+  SEPARATOR: 41
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 33
+  SEPARATOR: 41
+  SEPARATOR: 1
+  SEPARATOR: 50
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 17
+  SEPARATOR: 52
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 106 (length=243)
+TEXT: Российские банки не отличаются прозрачностью, что, по мнению автора, способствует недобросовестной банковской деятельности, практике различных "серых схем", повышает в целом риски криминализации банковской сферы вплоть до ее прямого участия в
+COUNTS:
+  COMMA: 5
+  COMMA: 5
+  QUOTATION: 2
+  COMMA: 5
+  COMMA: 5
+  COMMA: 5
+  QUOTATION: 2
+  QUOTATION: 2
+  COMMA: 5
+  QUOTATION: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 13
+  SEPARATOR: 6
+  SEPARATOR: 5
+  SEPARATOR: 16
+  SEPARATOR: 16
+  SEPARATOR: 13
+  SEPARATOR: 4
+  SEPARATOR: 14
+  SEPARATOR: 13
+  SEPARATOR: 16
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 16
+  SEPARATOR: 1
+
+LINE 107 (length=107)
+TEXT: 1 Мехряков В Губернская история Бизнес растет, а банки умирают// Национальный банковский журнал,2005 -№ II
+COUNTS:
+  YEAR: 1
+  NUMBER: 2
+  COMMA: 2
+  NUMBER: 2
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 2
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 1
+  YEAR: 1
+  DASH: 1
+  NUMBER: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DASH: 1
+  DASH: 1
+  SLASH: 2
+  DOUBLE_SLASH: 1
+  COMMA: 2
+  NUMBER: 2
+  DASH: 1
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  YEAR: 1
+  SLASH: 2
+  YEAR: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 4
+
+LINE 108 (length=3)
+TEXT: 14
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 109 (length=72)
+TEXT: отмывании преступных доходов и пособничества международному терроризму.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 4
+
+LINE 110 (length=179)
+TEXT: В главе 2 "Состояние и проблемы функционирования банковского сектора России" изучаются правовое обеспечение банковской реформы и сам ход реформирования банковского сектора России
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  QUOTATION: 2
+  NUMBER: 1
+  QUOTATION: 2
+  QUOTATION: 2
+  NUMBER: 1
+  NUMBER: 1
+  QUOTATION: 2
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 11
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 11
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 12
+
+LINE 111 (length=565)
+TEXT: Автор отмечает неплохую динамику развития в России банковской системы В последние годы в реальном выражении (с учетом инфляции) рост банковского сектора составляет примерно 15-25 % в год, что значительно превышает рост ВВП В то же время уровень развития банковского сектора по международным меркам остается низким Если взять такой показатель, как отношение активов банковского сектора к ВВП, то в России в настоящее время он составляет примерно 43 %, в то время как в экономически развитых странах этот показатель, как правило, превышает 100, а то и 300 % (Табл 2)
+COUNTS:
+  NUMBER: 6
+  COMMA: 7
+  NUMBER: 6
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 7
+  NUMBER: 6
+  NUMBER: 6
+  DASH: 1
+  DASH: 1
+  NUMBER: 6
+  COMMA: 7
+  COMMA: 7
+  COMMA: 7
+  DASH: 1
+  DASH: 1
+  PARENTHESIS: 4
+  COMMA: 7
+  NUMBER: 6
+  DASH: 1
+  PARENTHESIS: 4
+  NUMBER: 6
+  NUMBER: 6
+  PARENTHESIS: 4
+  NUMBER: 6
+  PARENTHESIS: 4
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 13
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 6
+  SEPARATOR: 27
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 37
+  SEPARATOR: 12
+  SEPARATOR: 16
+  SEPARATOR: 2
+  SEPARATOR: 30
+  SEPARATOR: 2
+  SEPARATOR: 30
+  SEPARATOR: 1
+  SEPARATOR: 37
+  SEPARATOR: 11
+  SEPARATOR: 2
+  SEPARATOR: 37
+  SEPARATOR: 2
+  SEPARATOR: 37
+  SEPARATOR: 30
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 36
+
+LINE 112 (length=10)
+TEXT: Таблица 2
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+
+LINE 113 (length=51)
+TEXT: Отношение активов и капитала банков к ВВП в 2004 г
+COUNTS:
+  YEAR: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  YEAR: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  YEAR: 1
+  YEAR: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 2
+
+LINE 114 (length=18)
+TEXT: 	Активы		Капитал	
+COUNTS:
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+
+LINE 115 (length=65)
+TEXT: 	Объем, млрд	отношение к ВВП (%)	Объем, млрд	отношение к ВВП (%)
+COUNTS:
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  PARENTHESIS: 4
+  COMMA: 2
+  PARENTHESIS: 4
+  PARENTHESIS: 4
+  PARENTHESIS: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 2
+
+LINE 116 (length=25)
+TEXT: Германия	2712	137	239	12
+COUNTS:
+  NUMBER: 4
+  NUMBER: 4
+  NUMBER: 4
+  NUMBER: 4
+  NUMBER: 4
+  NUMBER: 4
+  NUMBER: 4
+  NUMBER: 4
+  NUMBER: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 117 (length=24)
+TEXT: Франция	3423	239	248	17
+COUNTS:
+  NUMBER: 4
+  NUMBER: 4
+  NUMBER: 4
+  NUMBER: 4
+  NUMBER: 4
+  NUMBER: 4
+  NUMBER: 4
+  NUMBER: 4
+  NUMBER: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 118 (length=31)
+TEXT: Великобритания	5332	340	487	31
+COUNTS:
+  NUMBER: 4
+  NUMBER: 4
+  NUMBER: 4
+  NUMBER: 4
+  NUMBER: 4
+  NUMBER: 4
+  NUMBER: 4
+  NUMBER: 4
+  NUMBER: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 119 (length=22)
+TEXT: Россия	257	42,5	34	34
+COUNTS:
+  NUMBER: 5
+  COMMA: 1
+  NUMBER: 5
+  COMMA: 1
+  NUMBER: 5
+  NUMBER: 5
+  NUMBER: 5
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  NUMBER: 5
+  NUMBER: 5
+  NUMBER: 5
+  NUMBER: 5
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 120 (length=103)
+TEXT: Источник Стратегия повышения конкурентоспособности банковского сектора России (проект) - М, 2005 - С 5
+COUNTS:
+  YEAR: 1
+  NUMBER: 2
+  COMMA: 1
+  NUMBER: 2
+  DASH: 2
+  PAGES: 1
+  DASH: 2
+  DASH: 2
+  COMMA: 1
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 2
+  YEAR: 1
+  DASH: 2
+  NUMBER: 2
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 2
+  DASH: 2
+  PARENTHESIS: 2
+  COMMA: 1
+  NUMBER: 2
+  DASH: 2
+  PARENTHESIS: 2
+  NUMBER: 2
+  NUMBER: 2
+  PARENTHESIS: 2
+  NUMBER: 2
+  YEAR: 1
+  PARENTHESIS: 2
+  YEAR: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 5
+
+LINE 121 (length=51)
+TEXT: Диссертант выявляет факторы, сдерживающие развитие
+COUNTS:
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 5
+  SEPARATOR: 5
+
+LINE 122 (length=297)
+TEXT: банковской деятельности в России Это 1) низкий уровень капитализации, слабая долгосрочная ресурсная база и низкая рентабельность российских банков, 2) сильная концентрация банковского капитала, сосредоточенного в банках крупнейших городов (Москвы и Санкт-Петербурга), 3) высокие риски банковского
+COUNTS:
+  NUMBER: 3
+  COMMA: 4
+  NUMBER: 3
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 4
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 1
+  DASH: 1
+  NUMBER: 3
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  DASH: 1
+  DASH: 1
+  PARENTHESIS: 5
+  COMMA: 4
+  NUMBER: 3
+  DASH: 1
+  PARENTHESIS: 5
+  NUMBER: 3
+  NUMBER: 3
+  PARENTHESIS: 5
+  NUMBER: 3
+  PARENTHESIS: 5
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 19
+  SEPARATOR: 1
+  SEPARATOR: 24
+  SEPARATOR: 7
+  SEPARATOR: 21
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 21
+  SEPARATOR: 24
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 24
+  SEPARATOR: 21
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 123 (length=3)
+TEXT: 15
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 124 (length=213)
+TEXT: кредитования, 4) ненадежность защиты от криминальной среды, 5) слабое использование рыночных стимулов в развитии банковской сферы, 6) низкая эффективность процедур банковского надзора и банковского лицензирования
+COUNTS:
+  NUMBER: 3
+  COMMA: 3
+  NUMBER: 3
+  COMMA: 3
+  NUMBER: 3
+  NUMBER: 3
+  NUMBER: 3
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  PARENTHESIS: 3
+  COMMA: 3
+  NUMBER: 3
+  PARENTHESIS: 3
+  NUMBER: 3
+  NUMBER: 3
+  PARENTHESIS: 3
+  NUMBER: 3
+  PARENTHESIS: 3
+  ENTITY_SHAPE: 3
+  SEPARATOR: 10
+  SEPARATOR: 14
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 17
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 3
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 10
+
+LINE 125 (length=960)
+TEXT: Крайне медленно разрабатывается банковское законодательство В последнее время в Российской Федерации принимаются необходимые стратегические решения, нормативно обеспечивающее реформирование банковской деятельности Это - решения в области либерализации валютного законодательства, создания системы страхования вкладов, перехода на международные стандарты финансовой отчетности, формирования эффективных механизмов борьбы с "грязными" деньгами Принимаемые документы, по признанию международных экспертов, соответствует международным стандартам Однако все еще отсутствуют многие законы, призванные укреплять в банковской системе ее многоукладный характер и конкурентную среду; расширять ассортимент операций финансового посредничества; обеспечивать должный уровень корпоративного управления, банковского регулирования и банковского надзора, борьбы с отмыванием доходов, полученных преступным путем, и финансированием терроризма, контролирования валютных операций
+COUNTS:
+  COMMA: 12
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 12
+  DASH: 1
+  QUOTATION: 2
+  DASH: 1
+  COMMA: 12
+  COMMA: 12
+  COMMA: 12
+  DASH: 1
+  QUOTATION: 2
+  DASH: 1
+  QUOTATION: 2
+  COMMA: 12
+  DASH: 1
+  QUOTATION: 2
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 27
+  SEPARATOR: 1
+  SEPARATOR: 69
+  SEPARATOR: 18
+  SEPARATOR: 30
+  SEPARATOR: 59
+  SEPARATOR: 59
+  SEPARATOR: 69
+  SEPARATOR: 15
+  SEPARATOR: 51
+  SEPARATOR: 69
+  SEPARATOR: 59
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 77
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+
+LINE 126 (length=479)
+TEXT: Автор предлагает совершенствовать законодательство по укреплению надежности страховой системы, обеспечению защиты интересов кредиторов и инвесторов, а также интересов вкладчиков при банкротстве кредитной организации В частности, необходимо ввести, наряду с традиционными вкладами населения, так называемые «безотзывные» вклады, увеличить размеры банковских вкладов, подлежащих компенсации, создать специальную организацию, позволяющую выявлять финансовые затруднения у кредитных
+COUNTS:
+  COMMA: 9
+  COMMA: 9
+  QUOTATION: 2
+  COMMA: 9
+  COMMA: 9
+  COMMA: 9
+  QUOTATION: 2
+  QUOTATION: 2
+  COMMA: 9
+  QUOTATION: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 1
+  SEPARATOR: 35
+  SEPARATOR: 13
+  SEPARATOR: 7
+  SEPARATOR: 36
+  SEPARATOR: 36
+  SEPARATOR: 35
+  SEPARATOR: 6
+  SEPARATOR: 29
+  SEPARATOR: 35
+  SEPARATOR: 36
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 37
+  SEPARATOR: 3
+  SEPARATOR: 2
+
+LINE 127 (length=3)
+TEXT: 16
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 128 (length=77)
+TEXT: учреждений на ранней стадии их возникновения и адекватно на них реагировать.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 8
+  SEPARATOR: 9
+  SEPARATOR: 2
+  SEPARATOR: 6
+
+LINE 129 (length=714)
+TEXT: В нашей стране не решена задача надежной защиты банковского сектора от криминальной среды В результате предпринятых мер России удалось выйти еще в 2000 году из "черного списка" Специальной группы по финансовым действиям (ФАТФ), а в 2003 году стать членом ФАТФ. Набирает силу Федеральная служба РФ по финансовому мониторингу В одном только 2004 году эта служба выявила 1349 преступлений, связанных с легализацией преступных доходов (и ущербом в 14 млрд руб), а за восемь месяцев 2005 года количество выявленных преступлений возросло до 5833? Более того, Россия становится региональным лидером в борьбе с отмыванием доходов, полученных нечестным путем, создавая в Центральной Азии по образцу ФАТФ региональный орган
+COUNTS:
+  DOT: 1
+  YEAR: 4
+  NUMBER: 7
+  COMMA: 6
+  NUMBER: 7
+  DOT: 1
+  DOT: 1
+  COMMA: 6
+  NUMBER: 7
+  NUMBER: 7
+  DOT: 1
+  QUOTATION: 2
+  DOT: 1
+  YEAR: 4
+  DOT: 1
+  NUMBER: 7
+  DOT: 1
+  COMMA: 6
+  COMMA: 6
+  COMMA: 6
+  DOT: 1
+  QUOTATION: 2
+  QUOTATION: 2
+  DOT: 1
+  PARENTHESIS: 4
+  COMMA: 6
+  NUMBER: 7
+  PARENTHESIS: 4
+  NUMBER: 7
+  QUOTATION: 2
+  NUMBER: 7
+  PARENTHESIS: 4
+  DOT: 1
+  NUMBER: 7
+  YEAR: 4
+  PARENTHESIS: 4
+  YEAR: 4
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 25
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 7
+  SEPARATOR: 4
+  SEPARATOR: 42
+  SEPARATOR: 25
+  SEPARATOR: 18
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 32
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 32
+  SEPARATOR: 3
+  SEPARATOR: 42
+  SEPARATOR: 10
+  SEPARATOR: 2
+  SEPARATOR: 26
+  SEPARATOR: 4
+  SEPARATOR: 42
+  SEPARATOR: 32
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 11
+  SEPARATOR: 46
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 130 (length=584)
+TEXT: Однако явно недостаточную роль в деле защиты от проникновения криминала в банковское сообщество играет российское законодательство Адекватной мерой на современные угрозы со стороны криминальных сил должна стать криминологическая экспертиза принимаемых законов Нуждаются в законодательной регламентации и деятельность банковских служб безопасности, которые несут основное бремя выявления и предупреждения преступлений в финансово-кредитной сфере Не существует также ни одного нормативного и методического документа ЦБР, в котором бы говорилось о том, как обеспечить безопасность банка
+COUNTS:
+  COMMA: 3
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 3
+  DASH: 1
+  DASH: 1
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  DASH: 1
+  DASH: 1
+  COMMA: 3
+  DASH: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  SEPARATOR: 1
+  SEPARATOR: 25
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 33
+  SEPARATOR: 15
+  SEPARATOR: 14
+  SEPARATOR: 2
+  SEPARATOR: 33
+  SEPARATOR: 33
+  SEPARATOR: 33
+  SEPARATOR: 9
+  SEPARATOR: 33
+  SEPARATOR: 33
+  SEPARATOR: 33
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 46
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 131 (length=235)
+TEXT: Диссертант подчеркивает, что без устранения пробелов в российском законодательстве по данным проблемам банковская реформа не решит задачу повышения конкурентоспособности российской экономики в ее банковском секторе, от которого весьма
+COUNTS:
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 3
+  SEPARATOR: 8
+  SEPARATOR: 10
+  SEPARATOR: 10
+  SEPARATOR: 14
+  SEPARATOR: 3
+  SEPARATOR: 13
+  SEPARATOR: 14
+  SEPARATOR: 10
+  SEPARATOR: 3
+  SEPARATOR: 19
+
+LINE 132 (length=75)
+TEXT: , Никольский А Отмывание становится модным//Ведомости -Mt2005 - 7 октября.
+COUNTS:
+  DOT: 1
+  YEAR: 1
+  NUMBER: 2
+  COMMA: 1
+  NUMBER: 2
+  DASH: 2
+  DOT: 1
+  DASH: 2
+  DOT: 1
+  DASH: 2
+  COMMA: 1
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 2
+  DOT: 1
+  DOT: 1
+  YEAR: 1
+  DOT: 1
+  DASH: 2
+  NUMBER: 2
+  DOT: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 2
+  DOT: 1
+  DASH: 2
+  DOT: 1
+  SLASH: 2
+  DOUBLE_SLASH: 1
+  COMMA: 1
+  NUMBER: 2
+  DASH: 2
+  NUMBER: 2
+  NUMBER: 2
+  DOT: 1
+  NUMBER: 2
+  YEAR: 1
+  SLASH: 2
+  YEAR: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 133 (length=3)
+TEXT: 17
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 134 (length=75)
+TEXT: многое зависит в деле повышения эффективности управления экономикой страны
+COUNTS:
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 6
+
+LINE 135 (length=279)
+TEXT: В главе 3 "Основные меры совершенствования банковского сектора России" исследуется фактор экономической макросреды построения в России эффективной банковской системы и формулируются рекомендации в отношении задач государства по повышению конкурентоспособности российских банков.
+COUNTS:
+  DOT: 1
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 1
+  QUOTATION: 2
+  DOT: 1
+  DOT: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  QUOTATION: 2
+  QUOTATION: 2
+  DOT: 1
+  NUMBER: 1
+  NUMBER: 1
+  QUOTATION: 2
+  NUMBER: 1
+  DOT: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 15
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 20
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 20
+  SEPARATOR: 13
+  SEPARATOR: 4
+  SEPARATOR: 12
+  SEPARATOR: 13
+  SEPARATOR: 20
+  SEPARATOR: 4
+  SEPARATOR: 18
+  SEPARATOR: 1
+
+LINE 136 (length=197)
+TEXT: По мнению диссертанта, задача государства в реформировании банковской системы состоит, как в мерах регулирования макросреды, так и мерах по повышению качества работы кредитных организаций (Табл 3)
+COUNTS:
+  NUMBER: 1
+  COMMA: 3
+  NUMBER: 1
+  COMMA: 3
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  PARENTHESIS: 2
+  COMMA: 3
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 21
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 21
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 21
+  SEPARATOR: 14
+  SEPARATOR: 2
+  SEPARATOR: 11
+
+LINE 137 (length=1036)
+TEXT: Стабильное развитие банковского сектора нуждается в предсказуемой финансовой политике государства, базирующейся не на мировой конъюнктуре, а на современных структурных приоритетах национальной экономики Государство должно обеспечить банковскую систему, а с ее помощью - экономику страны, долгосрочными ресурсами В настоящее время огромные государственные средства, включая резервы ЦБР, в минимальной степени участвуют в экономическом росте государство, концентрируя около 40 % ВВП, вкладывает в народное хозяйство только 20 % от общего объема инвестиций - в основном в инфраструктуру и социальные объекты Россия вошла в тройку лидеров среди развивающихся стран по межбанковскому экспорту капитала. Покупка валюты ЦБР уже в течение пяти лет остается основным каналом эмиссии В то же время российская промышленность остро нуждается в инвестициях для модернизации промышленности Многие крупные предприятия развиваются за счет собственных кредитов (самокредитования), прибегают к иностранным заимствованиям Остальным инвестиции не доступны
+COUNTS:
+  DOT: 1
+  NUMBER: 2
+  COMMA: 9
+  NUMBER: 2
+  DASH: 2
+  DOT: 1
+  DASH: 2
+  DOT: 1
+  DASH: 2
+  COMMA: 9
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 2
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 2
+  NUMBER: 2
+  DOT: 1
+  COMMA: 9
+  COMMA: 9
+  COMMA: 9
+  DASH: 2
+  DOT: 1
+  DASH: 2
+  DOT: 1
+  PARENTHESIS: 2
+  COMMA: 9
+  NUMBER: 2
+  DASH: 2
+  PARENTHESIS: 2
+  NUMBER: 2
+  NUMBER: 2
+  PARENTHESIS: 2
+  DOT: 1
+  NUMBER: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 17
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 36
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 60
+  SEPARATOR: 21
+  SEPARATOR: 31
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 63
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 63
+  SEPARATOR: 1
+  SEPARATOR: 60
+  SEPARATOR: 21
+  SEPARATOR: 60
+  SEPARATOR: 1
+  SEPARATOR: 60
+  SEPARATOR: 63
+  SEPARATOR: 10
+  SEPARATOR: 66
+
+LINE 138 (length=3)
+TEXT: 18
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 139 (length=10)
+TEXT: Таблица 3
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+
+LINE 140 (length=87)
+TEXT: Направления государственной политики минимизации угроз безопасности в банковской сфере
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 10
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 10
+  SEPARATOR: 2
+  SEPARATOR: 5
+
+LINE 141 (length=97)
+TEXT: Угрозы	Направления государственной политики по минимизации угроз безопасности в банковской сфере
+COUNTS:
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 5
+
+LINE 142 (length=368)
+TEXT: Низкий уровень капитализации (не превышает 4% ВВП), не позволяющий обеспечить инвестиционный рост национальной экономики	Наращивание долгосрочной ресурсной базы банков за счет роста вкладов населения, вовлечения в банковский оборот средств бюджета и внебюджетных фондов, развитие рынка банковских облигаций и сертификатов, повышение рентабельности деятельности банков
+COUNTS:
+  NUMBER: 1
+  COMMA: 4
+  NUMBER: 1
+  COMMA: 4
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  PARENTHESIS: 2
+  COMMA: 4
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 13
+  SEPARATOR: 24
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 31
+  SEPARATOR: 31
+  SEPARATOR: 1
+  SEPARATOR: 24
+  SEPARATOR: 4
+  SEPARATOR: 18
+  SEPARATOR: 24
+  SEPARATOR: 31
+  SEPARATOR: 8
+  SEPARATOR: 27
+  SEPARATOR: 2
+
+LINE 143 (length=341)
+TEXT: Неразвитость финансовой инфраструктуры, способствующая снижению инновационной активности, оттоку капитала из страны	Развитие рынка долговых ценных бумаг, лизинга, венчурных фондов, ипотечного кредитования, частных и государственных гарантийных фондов для предоставления обеспечения при кредитовании субъектов малого предпринимательства и др
+COUNTS:
+  COMMA: 6
+  COMMA: 6
+  COMMA: 6
+  COMMA: 6
+  COMMA: 6
+  COMMA: 6
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 24
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 29
+  SEPARATOR: 29
+  SEPARATOR: 24
+  SEPARATOR: 5
+  SEPARATOR: 22
+  SEPARATOR: 24
+  SEPARATOR: 29
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 144 (length=765)
+TEXT: Неравномерное распределение банковских капиталов по всем субъектам РФ, что нарушает принципы экономического федерализма (90% промышленного капитала и населения страны находится в регионах, а более 80% финансовых активов - в Москве)	Поэтапный переход на международные стандарты достаточности капитала для сохранения эффективно работающих малых и средних региональных банков, разработка государственной программы поддержки региональных банков, предусматривающей развитие банковской инфраструктуры в регионах, расширение доступа региональных банков к инструментам рефинансирования через территориальные управления Банка России, механизм стимулирования кредитных организаций, открывающих и имеющих филиалы и отделения в труднодоступных районах и малонаселенных пунктах
+COUNTS:
+  NUMBER: 2
+  COMMA: 7
+  NUMBER: 2
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 7
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 1
+  DASH: 1
+  NUMBER: 2
+  COMMA: 7
+  COMMA: 7
+  COMMA: 7
+  DASH: 1
+  DASH: 1
+  PARENTHESIS: 2
+  COMMA: 7
+  NUMBER: 2
+  DASH: 1
+  PARENTHESIS: 2
+  NUMBER: 2
+  NUMBER: 2
+  PARENTHESIS: 2
+  NUMBER: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 24
+  SEPARATOR: 1
+  SEPARATOR: 70
+  SEPARATOR: 21
+  SEPARATOR: 18
+  SEPARATOR: 1
+  SEPARATOR: 57
+  SEPARATOR: 57
+  SEPARATOR: 70
+  SEPARATOR: 8
+  SEPARATOR: 35
+  SEPARATOR: 70
+  SEPARATOR: 57
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 52
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 145 (length=294)
+TEXT: Недостаточная прозрачность финансово» банковской системы, затрудняющая противодействие отмыванию преступных доходов, международному терроризму	Достижение необходимой для реализации национальных интересов прозрачности, контролируемости, управляемости, обеспечение открытости банковского сектора
+COUNTS:
+  COMMA: 5
+  COMMA: 5
+  QUOTATION: 1
+  COMMA: 5
+  COMMA: 5
+  COMMA: 5
+  QUOTATION: 1
+  QUOTATION: 1
+  COMMA: 5
+  QUOTATION: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 7
+  SEPARATOR: 17
+  SEPARATOR: 5
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 20
+  SEPARATOR: 20
+  SEPARATOR: 17
+  SEPARATOR: 5
+  SEPARATOR: 20
+  SEPARATOR: 17
+  SEPARATOR: 20
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 20
+  SEPARATOR: 3
+  SEPARATOR: 1
+
+LINE 146 (length=62)
+TEXT: От государства зависит обеспечение банковской системы, а с ее
+COUNTS:
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 5
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 7
+
+LINE 147 (length=474)
+TEXT: помощью - экономики страны, долгосрочными ресурсами за счет средств федерального бюджета и внебюджетных государственных фондов, введение в рыночный оборот природных ресурсов, недвижимости. В Европе, например, на суммарную стоимость действующих кредитов под залог недвижимости приходится до 40 % всех банковских активов В России же природные ресурсы и иная недвижимость не введены в экономический оборот из-за неадекватного учета прав на соответствующие объекты недвижимости
+COUNTS:
+  DOT: 1
+  NUMBER: 1
+  COMMA: 5
+  NUMBER: 1
+  DASH: 2
+  DOT: 1
+  DASH: 2
+  DOT: 1
+  DASH: 2
+  COMMA: 5
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 2
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 2
+  NUMBER: 1
+  DOT: 1
+  COMMA: 5
+  COMMA: 5
+  COMMA: 5
+  DASH: 2
+  DOT: 1
+  DASH: 2
+  DOT: 1
+  COMMA: 5
+  NUMBER: 1
+  DASH: 2
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 19
+  SEPARATOR: 3
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 35
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 35
+  SEPARATOR: 1
+  SEPARATOR: 19
+  SEPARATOR: 2
+  SEPARATOR: 24
+  SEPARATOR: 19
+  SEPARATOR: 1
+  SEPARATOR: 35
+  SEPARATOR: 3
+  SEPARATOR: 35
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 148 (length=3)
+TEXT: 19
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 149 (length=653)
+TEXT: Сегодня в научном сообществе России много дискутируют по поводу профицитного бюджета. Стабилизационного фонда РФ и выплачиваемого с ускорением внешнего долга страны При этом высказываются диаметрально противоположные точки зрения на кредитно-денежную политику государства С позиции одних. Стабилизационный фонд РФ должен сыграть роль "дамбы, защищающей российскую экономику от наркотического воздействия излишних денег, мощного инструмента поддержания экономического роста"1. Другие - за то, чтобы не превращать Стабилизационный фонд РФ в "кубышку", "стерилизатор" денежной массы, а вбросить в российскую экономику этот огромный дополнительный ресурс 2
+COUNTS:
+  DOT: 3
+  NUMBER: 2
+  COMMA: 5
+  NUMBER: 2
+  DASH: 2
+  DOT: 3
+  DASH: 2
+  DOT: 3
+  DASH: 2
+  COMMA: 5
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 2
+  DOT: 3
+  QUOTATION: 6
+  DOT: 3
+  DOT: 3
+  DASH: 2
+  NUMBER: 2
+  DOT: 3
+  COMMA: 5
+  COMMA: 5
+  COMMA: 5
+  DASH: 2
+  DOT: 3
+  QUOTATION: 6
+  DASH: 2
+  QUOTATION: 6
+  DOT: 3
+  COMMA: 5
+  NUMBER: 2
+  DASH: 2
+  NUMBER: 2
+  QUOTATION: 6
+  NUMBER: 2
+  DOT: 3
+  NUMBER: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 14
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 3
+  SEPARATOR: 18
+  SEPARATOR: 1
+  SEPARATOR: 34
+  SEPARATOR: 14
+  SEPARATOR: 14
+  SEPARATOR: 3
+  SEPARATOR: 48
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 48
+  SEPARATOR: 34
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 33
+  SEPARATOR: 1
+  SEPARATOR: 34
+  SEPARATOR: 48
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 32
+
+LINE 150 (length=267)
+TEXT: В диссертации защищается позиция согласования между собой обеих точек зрения Деньги Стабилизационного фонда РФ нельзя растратить бездумно, но они и не могут быть просто так законсервированы в условиях финансового голода для российских банков и российских предприятий
+COUNTS:
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 16
+  SEPARATOR: 6
+  SEPARATOR: 3
+  SEPARATOR: 26
+  SEPARATOR: 1
+  SEPARATOR: 26
+  SEPARATOR: 16
+  SEPARATOR: 8
+  SEPARATOR: 12
+  SEPARATOR: 16
+  SEPARATOR: 26
+  SEPARATOR: 4
+  SEPARATOR: 12
+
+LINE 151 (length=641)
+TEXT: Автор поддерживает предложенный специалистами РАН вариант решения данной проблемы создать на конкурсной основе дочерний Центральный банк или Банк развития и за счет его ресурсов выделять кредиты российским коммерческим структурам, что позволит снизить цену кредита, по оценкам экспертов, на одну треть Важным шагом в создании в России эффективной финансовой системы и благоприятного инвестиционного климата в условиях бюджетного профицита должно стать развитие полноценного рынка государственных бумаг, целевых займов на приоритетные национальные проекты - ускоренное развитие сельского хозяйства, образования, здравоохранения и рынка жилья
+COUNTS:
+  COMMA: 6
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 6
+  DASH: 1
+  DASH: 1
+  COMMA: 6
+  COMMA: 6
+  COMMA: 6
+  DASH: 1
+  DASH: 1
+  COMMA: 6
+  DASH: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 19
+  SEPARATOR: 2
+  SEPARATOR: 41
+  SEPARATOR: 16
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 47
+  SEPARATOR: 47
+  SEPARATOR: 41
+  SEPARATOR: 9
+  SEPARATOR: 35
+  SEPARATOR: 41
+  SEPARATOR: 47
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 41
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 152 (length=159)
+TEXT: 1 Конишева ‰ Панина Т "Опасный поворот". Интервью советника Президента РФ по экономическим вопросам А Илларионова//Российская газета. • М , 2005 - 23 сентября
+COUNTS:
+  DOT: 2
+  YEAR: 1
+  NUMBER: 3
+  COMMA: 1
+  NUMBER: 3
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  DASH: 1
+  COMMA: 1
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 1
+  DOT: 2
+  QUOTATION: 2
+  DOT: 2
+  YEAR: 1
+  DOT: 2
+  DASH: 1
+  NUMBER: 3
+  DOT: 2
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  DOT: 2
+  QUOTATION: 2
+  DASH: 1
+  QUOTATION: 2
+  DOT: 2
+  SLASH: 2
+  DOUBLE_SLASH: 1
+  COMMA: 1
+  NUMBER: 3
+  DASH: 1
+  NUMBER: 3
+  QUOTATION: 2
+  NUMBER: 3
+  DOT: 2
+  NUMBER: 3
+  YEAR: 1
+  SLASH: 2
+  YEAR: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 12
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 12
+  SEPARATOR: 2
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 8
+
+LINE 153 (length=71)
+TEXT: 2МахлинМ Беспокойная кубышка// Российская газета. • М , 2005 -8 ноября
+COUNTS:
+  DOT: 1
+  YEAR: 1
+  NUMBER: 3
+  COMMA: 1
+  NUMBER: 3
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  COMMA: 1
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  YEAR: 1
+  DOT: 1
+  DASH: 1
+  NUMBER: 3
+  DOT: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  SLASH: 2
+  DOUBLE_SLASH: 1
+  COMMA: 1
+  NUMBER: 3
+  DASH: 1
+  NUMBER: 3
+  NUMBER: 3
+  DOT: 1
+  NUMBER: 3
+  YEAR: 1
+  SLASH: 2
+  YEAR: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 154 (length=3)
+TEXT: 20
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+
+LINE 155 (length=588)
+TEXT: Сегодня вне банковской системы России и соответственно вне российской экономики находятся миллиарды сбережений населения Между тем в России создана система страхования вкладов, в которую вошли примерно 940 банков из общего числа кредитных организаций, которых в стране 1260 И в этих банках, вступивших в систему, сосредоточено более 99 % вкладов И уже это повысило доверие населения к банковской системе Однако нужна дальнейшая разработка мер по повышению доверия к банкам, что позволит, по прогнозам экспертов в течение ближайших трех лет увеличить вклады населения в банках в 2-3 раза.
+COUNTS:
+  DOT: 1
+  NUMBER: 5
+  COMMA: 6
+  NUMBER: 5
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  COMMA: 6
+  NUMBER: 5
+  NUMBER: 5
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  NUMBER: 5
+  DOT: 1
+  COMMA: 6
+  COMMA: 6
+  COMMA: 6
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 6
+  NUMBER: 5
+  DASH: 1
+  NUMBER: 5
+  NUMBER: 5
+  DOT: 1
+  NUMBER: 5
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 22
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 37
+  SEPARATOR: 17
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 39
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 39
+  SEPARATOR: 1
+  SEPARATOR: 37
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 26
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 37
+  SEPARATOR: 2
+  SEPARATOR: 39
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 43
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 156 (length=367)
+TEXT: На наращивание долгосрочной ресурсной базы банков будет работать также инициатива по возвращению в страну капиталов Президент РФ высказывался и на этот счет, указав на необходимость "стимулировать приход капиталов, накопленных гражданами, в нашу национальную экономику Эти деньги должны работать на нашу экономику, в нашей стране, а не "болтаться" в офшорных зонах 1
+COUNTS:
+  NUMBER: 1
+  COMMA: 5
+  NUMBER: 1
+  COMMA: 5
+  NUMBER: 1
+  NUMBER: 1
+  QUOTATION: 3
+  NUMBER: 1
+  COMMA: 5
+  COMMA: 5
+  COMMA: 5
+  QUOTATION: 3
+  QUOTATION: 3
+  COMMA: 5
+  NUMBER: 1
+  NUMBER: 1
+  QUOTATION: 3
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 1
+  SEPARATOR: 40
+  SEPARATOR: 9
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 21
+  SEPARATOR: 1
+  SEPARATOR: 21
+  SEPARATOR: 40
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 21
+  SEPARATOR: 40
+  SEPARATOR: 21
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 157 (length=411)
+TEXT: "Удлинение" ресурсной базы банковской системы даст возможность с меньшим риском предоставлять долгосрочные кредиты экономике, спрос на которые постоянно увеличивается Только через развитие инструментов долгосрочного кредитования технического перевооружения промышленности Россия может совершить инвестиционный рывок, преодолев технологическое отставание и решив проблему зависимости экономики от экспорта сырья
+COUNTS:
+  COMMA: 2
+  COMMA: 2
+  QUOTATION: 2
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  QUOTATION: 2
+  QUOTATION: 2
+  COMMA: 2
+  QUOTATION: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 15
+  SEPARATOR: 1
+  SEPARATOR: 12
+  SEPARATOR: 10
+  SEPARATOR: 12
+  SEPARATOR: 31
+  SEPARATOR: 1
+  SEPARATOR: 31
+  SEPARATOR: 12
+  SEPARATOR: 7
+  SEPARATOR: 24
+  SEPARATOR: 12
+  SEPARATOR: 31
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 34
+
+LINE 158 (length=229)
+TEXT: Государство должно, по мнению диссертанта, принять следующие меры по снижению затрат, связанных с ведением банковского бизнеса 1) совершенствовать тарифную политику, установленную на расчетно-кассовое обслуживание; 2) освободить
+COUNTS:
+  NUMBER: 2
+  COMMA: 4
+  NUMBER: 2
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 4
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 1
+  DASH: 1
+  NUMBER: 2
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  DASH: 1
+  DASH: 1
+  PARENTHESIS: 2
+  COMMA: 4
+  NUMBER: 2
+  DASH: 1
+  PARENTHESIS: 2
+  NUMBER: 2
+  NUMBER: 2
+  PARENTHESIS: 2
+  NUMBER: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 15
+  SEPARATOR: 5
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 14
+  SEPARATOR: 15
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 15
+  SEPARATOR: 14
+  SEPARATOR: 16
+
+LINE 159 (length=119)
+TEXT: 1 Послание Президента РФ В В Путина Федеральному Собранию РФ 26 апреля 2005 года// Российская газета. 2005 - 27 апреля
+COUNTS:
+  DOT: 1
+  YEAR: 2
+  NUMBER: 5
+  NUMBER: 5
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  NUMBER: 5
+  NUMBER: 5
+  DASH: 1
+  DOT: 1
+  DOT: 1
+  YEAR: 2
+  DOT: 1
+  DASH: 1
+  NUMBER: 5
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  SLASH: 2
+  DOUBLE_SLASH: 1
+  NUMBER: 5
+  DASH: 1
+  NUMBER: 5
+  NUMBER: 5
+  DOT: 1
+  NUMBER: 5
+  YEAR: 2
+  SLASH: 2
+  YEAR: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 12
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+
+LINE 160 (length=3)
+TEXT: 21
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 161 (length=323)
+TEXT: банки от выполнения не свойственных им функций, например, контроль кассовой дисциплины клиентов, 3) совершенствовать процесс администрирования налогов, 4) сократить отчетность, 5) рационализировать процесс установления арендных платежей, 6) снизить и дифференцировать ставки отчислений в Фонд обязательного резервирования.
+COUNTS:
+  DOT: 1
+  NUMBER: 4
+  COMMA: 6
+  NUMBER: 4
+  DOT: 1
+  DOT: 1
+  COMMA: 6
+  NUMBER: 4
+  NUMBER: 4
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 4
+  DOT: 1
+  COMMA: 6
+  COMMA: 6
+  COMMA: 6
+  DOT: 1
+  DOT: 1
+  PARENTHESIS: 4
+  COMMA: 6
+  NUMBER: 4
+  PARENTHESIS: 4
+  NUMBER: 4
+  NUMBER: 4
+  PARENTHESIS: 4
+  DOT: 1
+  NUMBER: 4
+  PARENTHESIS: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 18
+  SEPARATOR: 10
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 28
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 28
+  SEPARATOR: 1
+  SEPARATOR: 18
+  SEPARATOR: 5
+  SEPARATOR: 20
+  SEPARATOR: 1
+  SEPARATOR: 18
+  SEPARATOR: 28
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 20
+  SEPARATOR: 2
+
+LINE 162 (length=603)
+TEXT: Повышению капитализации банковской системы нашей страны будут способствовать рост уровня заработной платы, стимулирующий рост производительности труда, разработка и реализация программ легализации и повышения прозрачности бизнеса В российской экономике отмечается интересная деталь- финансовое положение предприятий на деле гораздо (в разы) лучше того, что отражается в их финансовой отчетности И этот теневой характер деятельности многих предприятий является препятствием для работы банков, которые не имеют права без документального подтверждения финансовой состоятельности заемщика, выдавать кредиты
+COUNTS:
+  COMMA: 5
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 5
+  DASH: 1
+  DASH: 1
+  COMMA: 5
+  COMMA: 5
+  COMMA: 5
+  DASH: 1
+  DASH: 1
+  PARENTHESIS: 2
+  COMMA: 5
+  DASH: 1
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 43
+  SEPARATOR: 16
+  SEPARATOR: 11
+  SEPARATOR: 43
+  SEPARATOR: 43
+  SEPARATOR: 43
+  SEPARATOR: 1
+  SEPARATOR: 16
+  SEPARATOR: 48
+  SEPARATOR: 43
+  SEPARATOR: 1
+  SEPARATOR: 43
+  SEPARATOR: 11
+  SEPARATOR: 42
+  SEPARATOR: 1
+
+LINE 163 (length=538)
+TEXT: Необходимо также успешное проведение судебной, административной реформы - особенно на региональном уровне Нужно всячески стимулировать региональную и местную власть к достижению лучших экономических и социальных результатов, ввести систему самофинансирования большинства региональных и местных образований, уходить от современного положения, когда подавляющая часть регионов и муниципалитетов являются дотационными, что не позволяет им быть клиентами банков - кредитоспособными, инвестировать в экономику своих регионов и муниципалитетов
+COUNTS:
+  COMMA: 6
+  DASH: 2
+  DASH: 2
+  DASH: 2
+  COMMA: 6
+  DASH: 2
+  DASH: 2
+  COMMA: 6
+  COMMA: 6
+  COMMA: 6
+  DASH: 2
+  DASH: 2
+  COMMA: 6
+  DASH: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 11
+  SEPARATOR: 27
+  SEPARATOR: 16
+  SEPARATOR: 18
+  SEPARATOR: 2
+  SEPARATOR: 50
+  SEPARATOR: 50
+  SEPARATOR: 27
+  SEPARATOR: 9
+  SEPARATOR: 30
+  SEPARATOR: 27
+  SEPARATOR: 50
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 34
+  SEPARATOR: 2
+  SEPARATOR: 1
+
+LINE 164 (length=234)
+TEXT: Диссертант предлагает для повышения качества работы кредитных организаций России укреплять рыночную дисциплину в банковской сфере, обеспечивать равные условия конкуренции для всех кредитных организаций государственных и коммерческих.
+COUNTS:
+  DOT: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 1
+  DOT: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 14
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 19
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 19
+  SEPARATOR: 14
+  SEPARATOR: 5
+  SEPARATOR: 10
+  SEPARATOR: 14
+  SEPARATOR: 19
+  SEPARATOR: 3
+  SEPARATOR: 18
+
+LINE 165 (length=3)
+TEXT: 22
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+
+LINE 166 (length=771)
+TEXT: центральных и региональных, российского и иностранного капитала в банковской системе В настоящее время в российской банковской системе фактически доминирует государственное участие Всеми экспертами отмечается, что доля банков с государственным участием в капитале в последнее время увеличилась Фактически им предоставлен режим наибольшего благоприятствования - высокие международные рейтинги, отсутствие правовых рисков, "мягкое" регулирование, гарантированная клиентская база. Сохраняется практика предоставления преимуществ и льгот отдельным кредитным организациям со стороны государственных и муниципальных органов В банках с государственным участием удивительным образом сочетаются государственные интересы и частная инициатива предприимчивых чиновников и менеджеров
+COUNTS:
+  DOT: 1
+  COMMA: 5
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  DASH: 1
+  COMMA: 5
+  DASH: 1
+  DOT: 1
+  QUOTATION: 2
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 5
+  COMMA: 5
+  COMMA: 5
+  DASH: 1
+  DOT: 1
+  QUOTATION: 2
+  DASH: 1
+  QUOTATION: 2
+  DOT: 1
+  COMMA: 5
+  DASH: 1
+  QUOTATION: 2
+  DOT: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 24
+  SEPARATOR: 55
+  SEPARATOR: 18
+  SEPARATOR: 25
+  SEPARATOR: 1
+  SEPARATOR: 61
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 61
+  SEPARATOR: 55
+  SEPARATOR: 16
+  SEPARATOR: 45
+  SEPARATOR: 55
+  SEPARATOR: 61
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 60
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 167 (length=591)
+TEXT: Доминирование на рынке финансовых ресурсов банков с государственным участием, допустимое только в краткосрочный период, становится тормозом для развития национальной банковской системы в условиях, пока не сложилась должным образом система частного банковского бизнеса Уже сейчас значительная часть российских банков, создаваемых государством, остаются слабыми, неспособными к финансово-кредитному обслуживанию крупных проектов Кроме того, как раз российское государство выступает строителем монопольного банковского рынка вместо того, чтобы быть жестким проводником антимонопольной политики
+COUNTS:
+  COMMA: 8
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 8
+  DASH: 1
+  DASH: 1
+  COMMA: 8
+  COMMA: 8
+  COMMA: 8
+  DASH: 1
+  DASH: 1
+  COMMA: 8
+  DASH: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 25
+  SEPARATOR: 1
+  SEPARATOR: 38
+  SEPARATOR: 14
+  SEPARATOR: 22
+  SEPARATOR: 33
+  SEPARATOR: 1
+  SEPARATOR: 33
+  SEPARATOR: 38
+  SEPARATOR: 6
+  SEPARATOR: 32
+  SEPARATOR: 38
+  SEPARATOR: 33
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 25
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 168 (length=375)
+TEXT: По мнению автора, место банков с государственным участием на рынке финансовых ресурсов и услуг должно отвечать общему рыночному принципу государственное участие не вытесняет рыночный сектор, но восполняет его на той территории, которую он не может или не хочет осваивать Систему государственных банков необходимо модернизировать Государство должно определить четкие критерии
+COUNTS:
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 17
+  SEPARATOR: 6
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 22
+  SEPARATOR: 1
+  SEPARATOR: 22
+  SEPARATOR: 17
+  SEPARATOR: 2
+  SEPARATOR: 26
+  SEPARATOR: 17
+  SEPARATOR: 22
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 31
+  SEPARATOR: 1
+
+LINE 169 (length=3)
+TEXT: 23
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 170 (length=905)
+TEXT: целесообразности и эффективности государственного участия в капитале кредитных организаций Функции государственных банков необходимо ограничить выполнением четких государственных задач -кредитовать важные для государства проекты Экспортно-импортные банки должны стимулировать внешнеэкономические связи и содействовать выходу на мировой рынок национальных фирм, предоставляя им, например, дешевые кредиты для продвижения своей продукции на внешний рынок Уместны государственные банки для стимулирования развития агропромышленного комплекса, к чему прибегают почти все развитые страны мира Возможно использование государственных банков и для кредитования социально значимых для страны объектов, в том числе при предоставлении ипотечных кредитов Таким образом, функции государственных банков должны быть строго ограничены, и они не должны иметь каких-либо преимуществ в банковском бизнесе на открытом рынке.
+COUNTS:
+  DOT: 1
+  COMMA: 7
+  DASH: 3
+  DOT: 1
+  DASH: 3
+  DOT: 1
+  DASH: 3
+  COMMA: 7
+  DASH: 3
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DASH: 3
+  DOT: 1
+  COMMA: 7
+  COMMA: 7
+  COMMA: 7
+  DASH: 3
+  DOT: 1
+  DASH: 3
+  DOT: 1
+  COMMA: 7
+  DASH: 3
+  DOT: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 33
+  SEPARATOR: 52
+  SEPARATOR: 22
+  SEPARATOR: 24
+  SEPARATOR: 1
+  SEPARATOR: 70
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 70
+  SEPARATOR: 52
+  SEPARATOR: 13
+  SEPARATOR: 46
+  SEPARATOR: 52
+  SEPARATOR: 70
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 57
+  SEPARATOR: 1
+  SEPARATOR: 3
+
+LINE 171 (length=466)
+TEXT: Необходима политика поддержки региональных банков, которой, по мнению автора до настоящего времени не было Мало того, предполагаемый переход на международные стандарты достаточности капитала ("Базель-2") ударит по эффективно работающим малым и средним региональным банкам, которые являются единственным источником доступного кредита для местного реального сектора и банковских услуг для населения Усугубится и без того большая диспропорция между центром и регионами
+COUNTS:
+  NUMBER: 1
+  COMMA: 4
+  NUMBER: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 4
+  NUMBER: 1
+  NUMBER: 1
+  DASH: 1
+  QUOTATION: 2
+  DASH: 1
+  NUMBER: 1
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  DASH: 1
+  QUOTATION: 2
+  DASH: 1
+  QUOTATION: 2
+  PARENTHESIS: 2
+  COMMA: 4
+  NUMBER: 1
+  DASH: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  QUOTATION: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  NUMBER: 1
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 33
+  SEPARATOR: 16
+  SEPARATOR: 17
+  SEPARATOR: 1
+  SEPARATOR: 29
+  SEPARATOR: 1
+  SEPARATOR: 29
+  SEPARATOR: 33
+  SEPARATOR: 10
+  SEPARATOR: 25
+  SEPARATOR: 1
+  SEPARATOR: 33
+  SEPARATOR: 29
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 31
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 172 (length=370)
+TEXT: Автор считает, что капитализацию российской банковской системы необходимо повышать, однако при этом надо обеспечить поэтапное вхождение российских банков в международную банковскую систему, с тем, чтобы не разрушать, а укреплять национальные кредитные организаций Нужна государственная программа поддержки развития региональных банков, в которой будет поставлена задача
+COUNTS:
+  COMMA: 6
+  COMMA: 6
+  COMMA: 6
+  COMMA: 6
+  COMMA: 6
+  COMMA: 6
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 14
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 32
+  SEPARATOR: 5
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 21
+  SEPARATOR: 1
+  SEPARATOR: 21
+  SEPARATOR: 32
+  SEPARATOR: 3
+  SEPARATOR: 21
+  SEPARATOR: 32
+  SEPARATOR: 21
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 21
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 173 (length=3)
+TEXT: 24
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 174 (length=545)
+TEXT: федеральным, региональным и муниципальным органам власти и деловым кругам целенаправленно предпринимать шаги по созданию на региональном уровне благоприятных возможностей для приложения капиталов банков В числе таких задач создание и поддержка банковской инфраструктуры в регионах, расширение доступа региональных банков к инструментам рефинансирования через территориальные управления ЦБР, создание механизма стимулирования для кредитных организаций, открывающих и имеющих филиалы и отделения в труднодоступных районах и малонаселенных пунктах
+COUNTS:
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 48
+  SEPARATOR: 23
+  SEPARATOR: 17
+  SEPARATOR: 48
+  SEPARATOR: 48
+  SEPARATOR: 48
+  SEPARATOR: 8
+  SEPARATOR: 20
+  SEPARATOR: 48
+  SEPARATOR: 48
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 34
+  SEPARATOR: 1
+
+LINE 175 (length=828)
+TEXT: Задача государства состоит в том, чтобы развивать в банковском секторе условия для справедливой конкуренции, расширять спектр банковских услуг, повышать привлекательность и доступность банковских услуг для населения Банковский сектор должен включать как крупные многофилиальные банки, так и региональные банки средней и небольшой величины, банки, специализирующиеся на отдельных услугах (потребительском кредитовании, ипотеке, кредитовании малого и среднего бизнеса) Лишь оптимальный по своей структуре и построенный на принципах справедливой конкуренции банковский сектор станет эффективным инструментом аккумулирования инвестиционных ресурсов для обеспечения ускоренного экономического роста на основе диверсификации экономики, выравнивания уровней регионального развития, повышения качества и уровня жизни российских граждан
+COUNTS:
+  COMMA: 10
+  COMMA: 10
+  COMMA: 10
+  COMMA: 10
+  COMMA: 10
+  PARENTHESIS: 2
+  COMMA: 10
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  PARENTHESIS: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 5
+  SEPARATOR: 43
+  SEPARATOR: 50
+  SEPARATOR: 26
+  SEPARATOR: 12
+  SEPARATOR: 73
+  SEPARATOR: 73
+  SEPARATOR: 50
+  SEPARATOR: 13
+  SEPARATOR: 37
+  SEPARATOR: 50
+  SEPARATOR: 73
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 11
+  SEPARATOR: 53
+  SEPARATOR: 5
+  SEPARATOR: 1
+
+LINE 176 (length=358)
+TEXT: По мнению диссертанта, требуется разработка правовой базы и создание режима наибольшего благоприятствования для развития национальной платежной системы, основанной на безналичных инструментах платежа с использованием специальных средств, базирующихся на современных информационных технологиях Необходимо выработать и внедрить национальные стандарты качества
+COUNTS:
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 35
+  SEPARATOR: 11
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 26
+  SEPARATOR: 26
+  SEPARATOR: 35
+  SEPARATOR: 7
+  SEPARATOR: 21
+  SEPARATOR: 35
+  SEPARATOR: 26
+  SEPARATOR: 4
+  SEPARATOR: 22
+  SEPARATOR: 1
+
+LINE 177 (length=3)
+TEXT: 25
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 178 (length=270)
+TEXT: банковской деятельности, стандарты против отмывания денег и финансирования терроризма, проводить работу по повышению положительного имиджа российских банков Реформирование банковского сектора не может быть осуществлено без социального партнерства государства и бизнеса.
+COUNTS:
+  DOT: 1
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  COMMA: 2
+  DOT: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 19
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 20
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 20
+  SEPARATOR: 19
+  SEPARATOR: 3
+  SEPARATOR: 17
+  SEPARATOR: 19
+  SEPARATOR: 20
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 17
+  SEPARATOR: 1
+
+LINE 179 (length=53)
+TEXT: В Заключении подводятся основные итоги исследования.
+COUNTS:
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 3
+
+LINE 180 (length=66)
+TEXT: По теме диссертации опубликованы следующие научные работы автора:
+COUNTS:
+  COLON: 1
+  COLON: 1
+  COLON: 1
+  COLON: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 5
+  SEPARATOR: 6
+  SEPARATOR: 4
+  SEPARATOR: 6
+  SEPARATOR: 5
+  SEPARATOR: 6
+
+LINE 181 (length=143)
+TEXT: 1	Кондратьев О Н Банковский сектор - в системе обеспечения экономической безопасности национального государства - М/ «Пашков дом», 2006, 6 п л
+COUNTS:
+  YEAR: 1
+  NUMBER: 3
+  COMMA: 2
+  NUMBER: 3
+  DASH: 2
+  DASH: 2
+  DASH: 2
+  COMMA: 2
+  NUMBER: 3
+  NUMBER: 3
+  DASH: 2
+  QUOTATION: 2
+  YEAR: 1
+  DASH: 2
+  NUMBER: 3
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DASH: 2
+  QUOTATION: 2
+  DASH: 2
+  QUOTATION: 2
+  SLASH: 1
+  COMMA: 2
+  NUMBER: 3
+  DASH: 2
+  NUMBER: 3
+  QUOTATION: 2
+  NUMBER: 3
+  NUMBER: 3
+  YEAR: 1
+  SLASH: 1
+  YEAR: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 8
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 6
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 8
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 9
+
+LINE 182 (length=206)
+TEXT: 2	Кондратьев О Н Банковский сектор как фактор обеспечения экономической безопасности Российской Федерации// Национальная безопасность России проблемы и пути обеспечения Вып 4. — М Изд-во РАГС, 2006,0,8 п л
+COUNTS:
+  DOT: 1
+  YEAR: 1
+  NUMBER: 5
+  COMMA: 3
+  NUMBER: 5
+  DASH: 2
+  DOT: 1
+  DASH: 2
+  DOT: 1
+  DASH: 2
+  COMMA: 3
+  NUMBER: 5
+  NUMBER: 5
+  DASH: 2
+  DOT: 1
+  DOT: 1
+  YEAR: 1
+  DOT: 1
+  DASH: 2
+  NUMBER: 5
+  DOT: 1
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  DASH: 2
+  DOT: 1
+  DASH: 2
+  DOT: 1
+  SLASH: 2
+  DOUBLE_SLASH: 1
+  COMMA: 3
+  NUMBER: 5
+  DASH: 2
+  NUMBER: 5
+  NUMBER: 5
+  DOT: 1
+  NUMBER: 5
+  YEAR: 1
+  SLASH: 2
+  YEAR: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 15
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 10
+  SEPARATOR: 1
+  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 14
+
+LINE 183 (length=123)
+TEXT: 3	. Кондратьев ОНО путях повышения эффективности работы банковской системы России// Деньги и кредит, М • 2007, № 4,0,5 п л
+COUNTS:
+  DOT: 1
+  YEAR: 1
+  NUMBER: 5
+  COMMA: 4
+  NUMBER: 5
+  DOT: 1
+  DOT: 1
+  COMMA: 4
+  NUMBER: 5
+  NUMBER: 5
+  DOT: 1
+  DOT: 1
+  YEAR: 1
+  DOT: 1
+  NUMBER: 5
+  DOT: 1
+  COMMA: 4
+  COMMA: 4
+  COMMA: 4
+  DOT: 1
+  DOT: 1
+  SLASH: 2
+  DOUBLE_SLASH: 1
+  COMMA: 4
+  NUMBER: 5
+  NUMBER: 5
+  NUMBER: 5
+  DOT: 1
+  NUMBER: 5
+  YEAR: 1
+  SLASH: 2
+  YEAR: 1
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
+
+LINE 184 (length=3)
+TEXT: 26
+COUNTS:
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 185 (length=12)
+TEXT: Автореферат
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+
+LINE 186 (length=69)
+TEXT: диссертации на соискание ученой степени кандидата экономических наук
+COUNTS:
+  SEPARATOR: 5
+  SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 9
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 7
+  SEPARATOR: 9
+  SEPARATOR: 1
+  SEPARATOR: 6
+
+LINE 187 (length=27)
+TEXT: КОНДРАТЬЕВ Олег Николаевич
+COUNTS:
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 12
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+
+LINE 188 (length=35)
+TEXT: Тема диссертационного исследования
+COUNTS:
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 3
+
+LINE 189 (length=71)
+TEXT: БАНКОВСКИЙ СЕКТОР В СИСТЕМЕ УПРАВЛЕНИЯ ЭКОНОМИКОЙ РОССИЙСКОЙ ФЕДЕРАЦИИ
+COUNTS:
+  ENTITY_SHAPE: 12
+  ENTITY_SHAPE: 11
+  ENTITY_SHAPE: 63
+  ENTITY_SHAPE: 19
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 19
+  ENTITY_SHAPE: 5
+  SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 7
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 1
+
+LINE 190 (length=47)
+TEXT: Научный руководитель КорниловМЯ дэн, профессор
+COUNTS:
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+
+LINE 191 (length=44)
+TEXT: Изготовление оригинал-макета Кондратьев О Н
+COUNTS:
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 3
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 4
+
+LINE 192 (length=41)
+TEXT: Подписано в печать ^g,zi,^. Тираж 20 экз
+COUNTS:
+  DOT: 1
+  NUMBER: 1
+  COMMA: 2
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 2
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  NUMBER: 1
+  DOT: 1
+  COMMA: 2
+  COMMA: 2
+  COMMA: 2
+  DOT: 1
+  DOT: 1
+  COMMA: 2
+  NUMBER: 1
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 1
+  NUMBER: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 1
+
+LINE 193 (length=13)
+TEXT: Уел пл 7^ 2-
+COUNTS:
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 1
+  DASH: 1
+  NUMBER: 2
+  DASH: 1
+  DASH: 1
+  NUMBER: 2
+  DASH: 1
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+
+LINE 194 (length=79)
+TEXT: Российская академия государственной службы при Президенте Российской Федерации
+COUNTS:
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  SEPARATOR: 3
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 7
+  SEPARATOR: 7
+  SEPARATOR: 5
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 5
+  SEPARATOR: 7
+  SEPARATOR: 4
+  SEPARATOR: 7
+
+LINE 195 (length=35)
+TEXT: Отпечатано ОПМТ РАГС. Заказ № ¾,Z∕
+COUNTS:
+  DOT: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  COMMA: 1
+  DOT: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 11
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
+  SEPARATOR: 2
+  SEPARATOR: 4
+  SEPARATOR: 1
+
+LINE 196 (length=36)
+TEXT: 119606, Москва, пр-т Вернадского, 84
+COUNTS:
+  NUMBER: 2
+  COMMA: 3
+  NUMBER: 2
+  DASH: 1
+  DASH: 1
+  DASH: 1
+  COMMA: 3
+  NUMBER: 2
+  NUMBER: 2
+  DASH: 1
+  DASH: 1
+  NUMBER: 2
+  COMMA: 3
+  COMMA: 3
+  COMMA: 3
+  DASH: 1
+  DASH: 1
+  COMMA: 3
+  NUMBER: 2
+  DASH: 1
+  NUMBER: 2
+  NUMBER: 2
+  NUMBER: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
+
