@@ -255,8 +255,8 @@ def make_plot(
         aspect="auto",
         origin="lower",
         extent=[
-            search_start,
-            search_start+cwt.shape[1],
+            search_start + 0.5,
+            search_start + cwt.shape[1] + 0.5,
             scales[0],
             scales[-1]
         ],

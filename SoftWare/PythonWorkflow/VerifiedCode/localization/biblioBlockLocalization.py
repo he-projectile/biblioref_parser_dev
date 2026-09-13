@@ -15,8 +15,11 @@ CWT_MAX_SCALE = 75
 
 CWT_MEAN_MULTIPLIER = 2
 
-LENGTH_SIGMA = 100
-LENGTH_OFFSET = 222
+LENGTH_SIGMA_1 = 125
+LENGTH_OFFSET_1 = 225
+LENGTH_SIGMA_2 = 32
+LENGTH_OFFSET_2 = 46
+
 
 SEARCH_START_K = 0.908
 SEARCH_START_K_ALTERNATIVE = SEARCH_START_K**2
@@ -342,12 +345,8 @@ def calculate_cwt(
 
         kernel_length = len(kernel)
 
-        pad_left = kernel_length // 2
-        pad_right = (
-            kernel_length
-            - 1
-            - pad_left
-        )
+        pad_left = 0
+        pad_right = kernel_length - 1
 
         padded_signal = np.pad(
             signal,
@@ -420,8 +419,6 @@ def detect_biblio_block(
     )
 
     width_index = best_index[0]
-    best_center = best_index[1]
-
     best_width = widths[
         width_index
     ]
@@ -432,10 +429,10 @@ def detect_biblio_block(
 
     # Преобразование индекса массива
     # в номер строки.
-    start = max(
-        1,
-        best_center
-        - best_width // 2
+    best_start = best_index[1]
+
+    start = (
+        best_start
         + 1
     )
 
@@ -495,8 +492,11 @@ def localizeBiblioBlockData(
     # --------------------------------------------------------
 
     length_penalty = np.exp(
-        -(lengths - LENGTH_OFFSET) ** 2
-        / (2*LENGTH_SIGMA ** 2)
+        -(lengths - LENGTH_OFFSET_1) ** 2
+        / (2*LENGTH_SIGMA_1 ** 2)
+    )+np.exp(
+        -(lengths - LENGTH_OFFSET_2) ** 2
+        / (2*LENGTH_SIGMA_2 ** 2)
     )
 
     filtered_scores = scores * length_penalty   
