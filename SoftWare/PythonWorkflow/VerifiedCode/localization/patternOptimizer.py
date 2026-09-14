@@ -1,3 +1,4 @@
+
 import argparse
 import json
 import random
@@ -7,6 +8,7 @@ import functools
 import time
 
 import matplotlib.pyplot as plt
+from matplotlib.ticker import FuncFormatter
 import numpy as np
 from scipy.optimize import differential_evolution
 
@@ -19,15 +21,15 @@ from biblioBlockLocalization import localizeBiblioBlockData, loadLocalizationDat
 
 DEFAULT_SEED = 10
 
-WEIGHT_MIN = -10.0
-WEIGHT_MAX = 10.0
+WEIGHT_MIN = -1.0
+WEIGHT_MAX = 1.0
 
-POP_SIZE = 15
-MAX_ITER = 1
+POP_SIZE = 1
+MAX_ITER = 100
 TOL = 1e-7
 
-TRAIN_RATIO = 0.8
-VALIDATION_RATIO = 0
+TRAIN_RATIO = 0.5
+VALIDATION_RATIO = 0.25
 
 REFERENCE_LABEL = "БИБЛ. ССЫЛКА"
 
@@ -398,17 +400,16 @@ def optimization_objective(weights, train):
 
 def optimize(
     train,
+    validation,
     pattern_count,
     seed=DEFAULT_SEED
 ):
     """
-    Optimizes pattern weights using
-    scipy.optimize.differential_evolution.
+    Оптимизирует веса паттернов через differential_evolution.
 
-    Objective:
-
-        error = -mean(IoU)
-
+    Функция потерь считается только по train.
+    Веса выбираются по лучшему Validation IoU.
+    Test здесь не участвует вообще.
     """
 
     dimension = pattern_count
@@ -418,44 +419,15 @@ def optimize(
         for _ in range(dimension)
     ]
 
-    iteration_history = []
+    iteration_history = {
+        "time": [],
+        "train": [],
+        "validation": [],
+    }
 
-    evaluation_counter = 0
-    best_iou = -1.0
-
-#    def objective(weights):
-#
-#        nonlocal evaluation_counter
-#        nonlocal best_iou
-#
-#        evaluation_counter += 1
-#
-#        mean_iou, _ = evaluate_weights(
-#            train,
-#            weights
-#        )
-#
-#        if mean_iou > best_iou:
-#
-#            best_iou = mean_iou
-#
-#            print(
-#                f"\nNEW BEST | "
-#                f"evaluation {evaluation_counter} | "
-#                f"mean IoU = {mean_iou:.6f}",
-#                flush=True
-#            )
-#
-#        elif evaluation_counter % 10 == 0:
-#
-#            print(
-#                f"Evaluation {evaluation_counter} | "
-#                f"mean IoU = {mean_iou:.6f} | "
-#                f"best = {best_iou:.6f}",
-#                flush=True
-#            )
-#
-#        return -mean_iou
+    best_validation_iou = -1.0
+    best_validation_weights = None
+    best_validation_time = 0.0
 
     objective = functools.partial(
         optimization_objective,
@@ -463,16 +435,31 @@ def optimize(
     )
 
     def callback(xk, convergence):
-        mean_iou, _ = evaluate_weights(train, xk)
+        nonlocal best_validation_iou
+        nonlocal best_validation_weights
+        nonlocal best_validation_time
 
-        iteration_history.append(mean_iou)
+        train_mean_iou, _ = evaluate_weights(train, xk)
+        validation_mean_iou, _ = evaluate_weights(validation, xk)
 
-        iteration = len(iteration_history)
         elapsed = time.time() - start_time
+
+        iteration_history["time"].append(elapsed)
+        iteration_history["train"].append(train_mean_iou)
+        iteration_history["validation"].append(validation_mean_iou)
+
+        if validation_mean_iou > best_validation_iou:
+            best_validation_iou = validation_mean_iou
+            best_validation_weights = xk.copy()
+            best_validation_time = elapsed
+
+        iteration = len(iteration_history["train"])
 
         print(
             f"[Iteration {iteration:3d}/{MAX_ITER}] "
-            f"IoU = {mean_iou:.6f} | "
+            f"Train IoU = {train_mean_iou:.6f} | "
+            f"Validation IoU = {validation_mean_iou:.6f} | "
+            f"Best Validation = {best_validation_iou:.6f} | "
             f"Time = {elapsed / 60:.1f} min | "
             f"Conv = {convergence:.3e}",
             flush=True
@@ -484,32 +471,13 @@ def optimize(
     print("=" * 70)
     print("Starting differential evolution")
     print("=" * 70)
-
-    print(
-        f"Patterns: {pattern_count}"
-    )
-
-    print(
-        f"Training documents: {len(train)}"
-    )
-
-    print(
-        f"Weight bounds: "
-        f"[{WEIGHT_MIN}, {WEIGHT_MAX}]"
-    )
-
-    print(
-        f"Population size: {POP_SIZE}"
-    )
-
-    print(
-        f"Maximum iterations: {MAX_ITER}"
-    )
-
-    print(
-        f"Seed: {seed}"
-    )
-
+    print(f"Patterns: {pattern_count}")
+    print(f"Training documents: {len(train)}")
+    print(f"Validation documents: {len(validation)}")
+    print(f"Weight bounds: [{WEIGHT_MIN}, {WEIGHT_MAX}]")
+    print(f"Population size: {POP_SIZE}")
+    print(f"Maximum iterations: {MAX_ITER}")
+    print(f"Seed: {seed}")
     print("=" * 70)
     print()
 
@@ -519,56 +487,57 @@ def optimize(
         seed=seed,
         popsize=POP_SIZE,
         maxiter=MAX_ITER,
+        mutation=0.3,
+        recombination=0.5,
+        init="latinhypercube",
+        strategy="rand1bin",
         tol=TOL,
         polish=False,
-        workers=max(1, os.cpu_count() - 2),
+        workers=max(1, os.cpu_count() - 1),
         updating="deferred",
         disp=False,
         callback=callback
     )
 
-    # In case scipy finishes before callback is called
-    # for the final solution.
-    final_iou, _ = evaluate_weights(
-        train,
-        result.x
-    )
+    # Проверяем финальную точку DE отдельно:
+    # callback мог её не залогировать (workers>1 + deferred).
+    final_train_iou, _ = evaluate_weights(train, result.x)
+    final_validation_iou, _ = evaluate_weights(validation, result.x)
+
+    elapsed = time.time() - start_time
+
+    if final_validation_iou > best_validation_iou:
+        best_validation_iou = final_validation_iou
+        best_validation_weights = result.x.copy()
+        best_validation_time = elapsed
 
     if (
-        not iteration_history
-        or abs(
-            iteration_history[-1]
-            - final_iou
-        ) > 1e-12
+        not iteration_history["train"]
+        or abs(iteration_history["train"][-1] - final_train_iou) > 1e-12
     ):
-        iteration_history.append(
-            final_iou
-        )
+        iteration_history["time"].append(elapsed)
+        iteration_history["train"].append(final_train_iou)
+        iteration_history["validation"].append(final_validation_iou)
 
     print()
     print("=" * 70)
     print("Optimization finished")
     print("=" * 70)
-
-    print(
-        f"Best mean IoU: "
-        f"{final_iou:.6f}"
-    )
-
-    print(
-        f"Function evaluations: "
-        f"{result.nfev}"
-    )
-
-    print(
-        f"Iterations: "
-        f"{result.nit}"
-    )
-
+    print(f"Final mean Train IoU:      {final_train_iou:.6f}")
+    print(f"Final mean Validation IoU: {final_validation_iou:.6f}")
+    print(f"Best Validation IoU:       {best_validation_iou:.6f} "
+          f"(at {best_validation_time / 60:.1f} min)")
+    print(f"Function evaluations: {result.nfev}")
+    print(f"Iterations: {result.nit}")
     print("=" * 70)
     print()
 
-    return result, iteration_history
+    return (
+        result,
+        iteration_history,
+        best_validation_weights,
+        best_validation_iou
+    )
 
 
 # ============================================================
@@ -634,6 +603,7 @@ def save_history(
     train_mean_iou,
     validation_mean_iou,
     test_mean_iou,
+    best_validation_iou,
 ):
     data = {
         "configuration": {
@@ -643,161 +613,93 @@ def save_history(
             "population_size": POP_SIZE,
             "max_iterations": MAX_ITER,
             "tolerance": TOL,
-
             "train_ratio": TRAIN_RATIO,
             "validation_ratio": VALIDATION_RATIO,
-            "test_ratio": 1-TRAIN_RATIO-VALIDATION_RATIO,
-
+            "test_ratio": 1 - TRAIN_RATIO - VALIDATION_RATIO,
             "pattern_count": pattern_count,
-
             "iterations_completed": int(result.nit),
             "function_evaluations": int(result.nfev),
+            "selection_criterion": "best_validation_iou",
         },
-
         "input": {
             "texts": str(args.texts),
             "annotations": str(args.annotations),
             "machine": str(args.machine),
             "patterns": str(args.patterns),
         },
-
         "dataset": {
-            "total": (
-                len(train)
-                + len(validation)
-                + len(test)
-            ),
-
+            "total": len(train) + len(validation) + len(test),
             "train": {
                 "count": len(train),
-                "documents": [
-                    item["name"]
-                    for item in train
-                ],
+                "documents": [item["name"] for item in train],
             },
-
             "validation": {
                 "count": len(validation),
-                "documents": [
-                    item["name"]
-                    for item in validation
-                ],
+                "documents": [item["name"] for item in validation],
             },
-
             "test": {
                 "count": len(test),
-                "documents": [
-                    item["name"]
-                    for item in test
-                ],
+                "documents": [item["name"] for item in test],
             },
         },
-
-        "iterations": list(
-            range(
-                1,
-                len(iteration_history) + 1
-            )
-        ),
-
-        "mean_iou": [
-            float(value)
-            for value in iteration_history
-        ],
-
+        "time": [float(v) for v in iteration_history["time"]],
+        "train_iou": [float(v) for v in iteration_history["train"]],
+        "validation_iou": [float(v) for v in iteration_history["validation"]],
         "final_evaluation": {
-            "train_mean_iou": float(
-                train_mean_iou
-            ),
-            "validation_mean_iou": float(
-                validation_mean_iou
-            ),
-            "test_mean_iou": float(
-                test_mean_iou
-            ),
+            "train_mean_iou": float(train_mean_iou),
+            "validation_mean_iou": float(validation_mean_iou),
+            "test_mean_iou": float(test_mean_iou),
+        },
+        "selection": {
+            "criterion": "best_validation_iou",
+            "best_validation_iou": float(best_validation_iou),
         },
     }
 
-    with open(
-        output_filename,
-        "w",
-        encoding="utf-8"
-    ) as f:
-
-        json.dump(
-            data,
-            f,
-            ensure_ascii=False,
-            indent=2
-        )
+    with open(output_filename, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
 
 # ============================================================
 # Plot IoU
 # ============================================================
 
 def plot_iou_history(
-    history,
+    time_history,
+    train_history,
+    validation_history,
     output_filename
 ):
-    """
-    Plots mean IoU versus optimization iteration.
-    """
-
-    if not history:
+    if not train_history:
         return
 
-    iterations = np.arange(
-        1,
-        len(history) + 1
-    )
+    fig, ax = plt.subplots(figsize=(10, 6), dpi=150)
 
-    fig, ax = plt.subplots(
-        figsize=(10, 6),
-        dpi=150
+    ax.plot(
+        time_history, train_history,
+        linewidth=2.0, marker="o", markersize=3,
+        label="Train"
     )
 
     ax.plot(
-        iterations,
-        history,
-        linewidth=2.0,
-        marker="o",
-        markersize=3
+        time_history, validation_history,
+        linewidth=2.0, marker="o", markersize=3,
+        label="Validation"
     )
 
-    ax.set_xlabel(
-        "Итерация"
-    )
+    def format_time(seconds, pos):
+        seconds = int(seconds)
+        return f"{seconds // 60:02d}:{seconds % 60:02d}"
 
-    ax.set_ylabel(
-        "Средний IoU"
-    )
-
-    ax.set_title(
-        "Изменение среднего IoU в процессе оптимизации"
-    )
-
-    ax.grid(
-        True,
-        alpha=0.3
-    )
-
-    ax.set_xlim(
-        1,
-        len(history)
-    )
-
-    ax.set_ylim(
-        0.0,
-        1.0
-    )
+    ax.xaxis.set_major_formatter(FuncFormatter(format_time))
+    ax.set_xlabel("Время")
+    ax.set_ylabel("Средний IoU")
+    ax.set_title("Изменение среднего IoU в процессе оптимизации")
+    ax.grid(True, alpha=0.3)
+    ax.legend()
+    ax.set_ylim(0.0, 1.0)
 
     fig.tight_layout()
-
-    fig.savefig(
-        output_filename,
-        dpi=300
-    )
-
+    fig.savefig(output_filename, dpi=300)
     plt.close(fig)
 
 
@@ -810,9 +712,9 @@ def plot_iou_histogram(
     bins = np.linspace(0.0, 1.0, 21)
 
     datasets = [
-        ("Train", train_ious, "#1f77b4"),  # Синий
-        ("Validation", validation_ious, "#ff7f0e"),  # Оранжевый
-        ("Test", test_ious, "#2ca02c"),  # Зеленый
+        ("Train (opt.)",        train_ious,      "#1f77b4"),
+        ("Validation (select)", validation_ious, "#ff7f0e"),
+        ("Test (held-out)",     test_ious,       "#2ca02c"),
     ]
 
     # Фильтруем только непустые датасеты
@@ -876,9 +778,10 @@ def plot_iou_histogram(
 
     # Общий заголовок для всей картинки
     plt.suptitle(
-        "Распределение IoU по поддатасетам", fontsize=14, y=0.98
+        "Распределение IoU по поддатасетам "
+        "(веса выбраны по Validation, Test — отложенная оценка)",
+        fontsize=12, y=0.99
     )
-
     plt.tight_layout()
     plt.savefig(output_filename, dpi=150, bbox_inches="tight")
     plt.close()
@@ -952,6 +855,7 @@ def main():
 
     parser.add_argument(
         "--output-patterns",
+        required=True,
         default="patterns_optimized.json",
         help=(
             "Output file for optimized patterns "
@@ -989,7 +893,7 @@ def main():
 
     parser.add_argument(
         "--iou-histogram",
-        default=None,
+        required=True,
         help="Path to IoU histogram image. If omitted, histogram is not created.",
     )
 
@@ -1074,16 +978,19 @@ def main():
     # Optimization
     # --------------------------------------------------------
 
-    result, history = optimize(
+    (
+        result,
+        history,
+        optimized_weights,
+        best_validation_iou
+    ) = optimize(
         train=train,
+        validation=validation,
         pattern_count=pattern_count,
         seed=args.seed
     )
 
-    optimized_weights = np.asarray(
-        result.x,
-        dtype=float
-    )
+    optimized_weights = result.x
 
     # --------------------------------------------------------
     # Print optimized weights
@@ -1102,20 +1009,9 @@ def main():
         "Evaluating optimized weights..."
     )
 
-    train_mean_iou, train_ious = evaluate_weights(
-        train,
-        optimized_weights,
-    )
-
-    validation_mean_iou, validation_ious = evaluate_weights(
-        validation,
-        optimized_weights,
-    )
-
-    test_mean_iou, test_ious = evaluate_weights(
-        test,
-        optimized_weights,
-    )
+    train_mean_iou, train_ious = evaluate_weights(train, optimized_weights)
+    validation_mean_iou, validation_ious = evaluate_weights(validation, optimized_weights)
+    test_mean_iou, test_ious = evaluate_weights(test, optimized_weights)
 
     print()
     print("=" * 70)
@@ -1168,6 +1064,8 @@ def main():
         train_mean_iou=train_mean_iou,
         validation_mean_iou=validation_mean_iou,
         test_mean_iou=test_mean_iou,
+        best_validation_iou = best_validation_iou
+
     )
 
     print(
@@ -1180,7 +1078,9 @@ def main():
     # --------------------------------------------------------
 
     plot_iou_history(
-        history,
+        history["time"],
+        history["train"],
+        history["validation"],
         args.plot
     )
 
@@ -1189,13 +1089,12 @@ def main():
         f"{args.plot}"
     )
 
-    if args.iou_histogram:
-        plot_iou_histogram(
-            train_ious,
-            validation_ious,
-            test_ious,
-            args.iou_histogram,
-        )
+    plot_iou_histogram(
+        train_ious,
+        validation_ious,
+        test_ious,
+        args.iou_histogram,
+    )
 
 if __name__ == "__main__":
     main()

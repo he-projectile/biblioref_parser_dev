@@ -3,5 +3,5 @@ python `
 --texts .\DataSource\ `
 --annotations .\DataSource\ `
 --machine .\VerifiedCode\localization\localizationProducts `
---patterns .\VerifiedCode\localization\patterns_optimized.json `
+--patterns .\VerifiedCode\localization\patterns_optimized_1.json `
 --output .\VerifiedCode\localization\localizationPlots\IoU_histogram.png

@@ -1,0 +1,28 @@
+        objective,
+        bounds,
+        seed=seed,
+        popsize=POP_SIZE,
+        maxiter=MAX_ITER,
+        mutation=0.3,
+        recombination=0.5,
+        init="latinhypercube",
+        tol=TOL,
+        polish=False,
+        workers=max(1, os.cpu_count()-2),
+        updating="deferred",
+        disp=False,
+        callback=callback
+
+DEFAULT_SEED = 11
+
+WEIGHT_MIN = -1.0
+WEIGHT_MAX = 1.0
+
+POP_SIZE = 1
+MAX_ITER = 40
+TOL = 1e-7
+
+TRAIN_RATIO = 0.8
+VALIDATION_RATIO = 0
+
+REFERENCE_LABEL = "БИБЛ. ССЫЛКА"

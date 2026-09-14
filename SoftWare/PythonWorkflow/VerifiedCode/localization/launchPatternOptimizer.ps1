@@ -6,5 +6,5 @@ python `
 --patterns .\VerifiedCode\localization\patterns.json `
 --history .\VerifiedCode\localization\optimizationStatistics\optimizationHistory.json `
 --plot .\VerifiedCode\localization\optimizationStatistics\optimizationPlot.png `
---output-patterns .\VerifiedCode\localization\patterns_optimized.json `
+--output-patterns .\VerifiedCode\localization\patterns_optimized_1.json `
 --iou-histogram .\VerifiedCode\localization\optimizationStatistics\optimizationHistogram.png
