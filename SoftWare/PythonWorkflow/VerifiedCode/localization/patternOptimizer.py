@@ -493,7 +493,7 @@ def optimize(
         strategy="rand1bin",
         tol=TOL,
         polish=False,
-        workers=max(1, os.cpu_count() - 1),
+        workers=-1,
         updating="deferred",
         disp=False,
         callback=callback
@@ -604,6 +604,7 @@ def save_history(
     validation_mean_iou,
     test_mean_iou,
     best_validation_iou,
+    optimized_weights
 ):
     data = {
         "configuration": {
@@ -653,6 +654,7 @@ def save_history(
         "selection": {
             "criterion": "best_validation_iou",
             "best_validation_iou": float(best_validation_iou),
+            "best_validation_weights": [float(w) for w in optimized_weights],
         },
     }
 
@@ -990,7 +992,6 @@ def main():
         seed=args.seed
     )
 
-    optimized_weights = result.x
 
     # --------------------------------------------------------
     # Print optimized weights
@@ -1064,7 +1065,8 @@ def main():
         train_mean_iou=train_mean_iou,
         validation_mean_iou=validation_mean_iou,
         test_mean_iou=test_mean_iou,
-        best_validation_iou = best_validation_iou
+        best_validation_iou = best_validation_iou,
+        optimized_weights = optimized_weights 
 
     )
 

@@ -27,7 +27,7 @@
             "occurrences": 675,
             "documents": 39,
             "support": 0.17002518891687657,
-            "weight": 0.23392062471767883
+            "weight": 0.19811754389171865
         },
         {
             "name": "INITIAL",
@@ -37,7 +37,7 @@
             "occurrences": 655,
             "documents": 38,
             "support": 0.16498740554156172,
-            "weight": 0.9488211493063332
+            "weight": 0.2473567718527696
         },
         {
             "name": "INITIALS",
@@ -47,7 +47,7 @@
             "occurrences": 634,
             "documents": 37,
             "support": 0.1596977329974811,
-            "weight": -0.2568790532761449
+            "weight": -0.518938249731787
         },
         {
             "name": "YEAR",
@@ -57,7 +57,7 @@
             "occurrences": 586,
             "documents": 47,
             "support": 0.14760705289672543,
-            "weight": -0.006785491355042139
+            "weight": 0.6407771188239035
         },
         {
             "name": "NUMBER",
@@ -67,7 +67,7 @@
             "occurrences": 586,
             "documents": 47,
             "support": 0.14760705289672543,
-            "weight": 0.30482203053488677
+            "weight": 0.021885589569492492
         },
         {
             "name": "COMMA",
@@ -77,7 +77,7 @@
             "occurrences": 520,
             "documents": 40,
             "support": 0.1309823677581864,
-            "weight": 0.4646657895930866
+            "weight": 0.3649465971436292
         },
         {
             "name": "NUMBER",
@@ -87,7 +87,7 @@
             "occurrences": 444,
             "documents": 37,
             "support": 0.11183879093198992,
-            "weight": -0.5758802094343387
+            "weight": -0.013050501914969592
         },
         {
             "name": "DASH",
@@ -97,7 +97,7 @@
             "occurrences": 414,
             "documents": 35,
             "support": 0.10428211586901763,
-            "weight": 0.6761127732096615
+            "weight": 0.3335114641184418
         },
         {
             "name": "PAGES",
@@ -107,7 +107,7 @@
             "occurrences": 369,
             "documents": 33,
             "support": 0.0929471032745592,
-            "weight": -0.21782647221892648
+            "weight": 0.4925816751424199
         },
         {
             "name": "DOT",
@@ -117,7 +117,7 @@
             "occurrences": 312,
             "documents": 31,
             "support": 0.07858942065491184,
-            "weight": 0.7925395237372048
+            "weight": -0.7481469406464111
         },
         {
             "name": "INITIAL",
@@ -127,7 +127,7 @@
             "occurrences": 271,
             "documents": 26,
             "support": 0.06826196473551638,
-            "weight": 0.48374648351255534
+            "weight": -0.47222282222221046
         },
         {
             "name": "DASH",
@@ -137,7 +137,7 @@
             "occurrences": 197,
             "documents": 40,
             "support": 0.04962216624685139,
-            "weight": 0.822880943722341
+            "weight": -0.2907517909635968
         },
         {
             "name": "DOT",
@@ -147,7 +147,7 @@
             "occurrences": 169,
             "documents": 26,
             "support": 0.04256926952141058,
-            "weight": -0.10180025070764187
+            "weight": -0.8335603549991528
         },
         {
             "name": "DASH",
@@ -157,7 +157,7 @@
             "occurrences": 167,
             "documents": 30,
             "support": 0.042065491183879096,
-            "weight": 0.9229535362027756
+            "weight": 0.899514688467169
         },
         {
             "name": "COLON",
@@ -167,7 +167,7 @@
             "occurrences": 144,
             "documents": 26,
             "support": 0.036272040302267,
-            "weight": -0.47012702892585256
+            "weight": -0.5358332709807805
         },
         {
             "name": "COMMA",
@@ -177,7 +177,7 @@
             "occurrences": 140,
             "documents": 30,
             "support": 0.03526448362720403,
-            "weight": 0.7196806929456905
+            "weight": 0.3616359108664646
         },
         {
             "name": "NUMBER",
@@ -187,7 +187,7 @@
             "occurrences": 116,
             "documents": 34,
             "support": 0.029219143576826197,
-            "weight": 0.4459951322576938
+            "weight": -0.7425717107754555
         },
         {
             "name": "NUMBER",
@@ -197,7 +197,7 @@
             "occurrences": 101,
             "documents": 31,
             "support": 0.02544080604534005,
-            "weight": -0.32106198862272484
+            "weight": 0.47125817567766437
         },
         {
             "name": "DASH",
@@ -207,7 +207,7 @@
             "occurrences": 93,
             "documents": 30,
             "support": 0.023425692695214106,
-            "weight": 0.6590891515972015
+            "weight": 0.49628185160481597
         },
         {
             "name": "DOT",
@@ -217,7 +217,7 @@
             "occurrences": 85,
             "documents": 19,
             "support": 0.021410579345088162,
-            "weight": 0.7989548047225061
+            "weight": 0.7077156356358227
         },
         {
             "name": "QUOTATION",
@@ -227,7 +227,7 @@
             "occurrences": 85,
             "documents": 22,
             "support": 0.021410579345088162,
-            "weight": -0.6250251822986597
+            "weight": -0.7311447340321401
         },
         {
             "name": "DOT",
@@ -237,7 +237,7 @@
             "occurrences": 82,
             "documents": 21,
             "support": 0.02065491183879093,
-            "weight": 0.22522497933739927
+            "weight": -0.6471506575828088
         },
         {
             "name": "INITIAL",
@@ -247,7 +247,7 @@
             "occurrences": 60,
             "documents": 16,
             "support": 0.015113350125944584,
-            "weight": 0.06215383034277844
+            "weight": -0.175839780386275
         },
         {
             "name": "YEAR",
@@ -257,7 +257,7 @@
             "occurrences": 51,
             "documents": 20,
             "support": 0.012846347607052897,
-            "weight": -0.15540078548715686
+            "weight": -0.1556846474843947
         },
         {
             "name": "DOT",
@@ -267,7 +267,7 @@
             "occurrences": 43,
             "documents": 18,
             "support": 0.010831234256926952,
-            "weight": 0.08234534459182785
+            "weight": 0.5654902008040934
         },
         {
             "name": "COLON",
@@ -277,7 +277,7 @@
             "occurrences": 43,
             "documents": 13,
             "support": 0.010831234256926952,
-            "weight": 0.7181483076342206
+            "weight": 0.1670402358127714
         },
         {
             "name": "COLON",
@@ -287,7 +287,7 @@
             "occurrences": 42,
             "documents": 17,
             "support": 0.01057934508816121,
-            "weight": 0.44466000445239384
+            "weight": 0.51976876683277
         },
         {
             "name": "DASH",
@@ -297,7 +297,7 @@
             "occurrences": 38,
             "documents": 16,
             "support": 0.009571788413098237,
-            "weight": 0.2345407125182184
+            "weight": 0.0034942121277554694
         },
         {
             "name": "NUMBER",
@@ -307,7 +307,7 @@
             "occurrences": 35,
             "documents": 16,
             "support": 0.008816120906801008,
-            "weight": -0.6476911930273157
+            "weight": -0.23030418230237915
         },
         {
             "name": "DOT",
@@ -317,7 +317,7 @@
             "occurrences": 32,
             "documents": 13,
             "support": 0.008060453400503778,
-            "weight": 0.44371376241437144
+            "weight": 0.900719960437717
         },
         {
             "name": "COMMA",
@@ -327,7 +327,7 @@
             "occurrences": 31,
             "documents": 14,
             "support": 0.0078085642317380355,
-            "weight": 0.5548686244189847
+            "weight": 0.13528821500934773
         },
         {
             "name": "COMMA",
@@ -337,7 +337,7 @@
             "occurrences": 30,
             "documents": 16,
             "support": 0.007556675062972292,
-            "weight": 0.4818168820152713
+            "weight": -0.2766231931026457
         },
         {
             "name": "COMMA",
@@ -347,7 +347,7 @@
             "occurrences": 29,
             "documents": 12,
             "support": 0.007304785894206549,
-            "weight": 0.841491962887553
+            "weight": -0.09529005504784038
         },
         {
             "name": "DASH",
@@ -357,7 +357,7 @@
             "occurrences": 26,
             "documents": 7,
             "support": 0.00654911838790932,
-            "weight": -0.36502693531205055
+            "weight": 0.5532529864837936
         },
         {
             "name": "INITIAL",
@@ -367,7 +367,7 @@
             "occurrences": 26,
             "documents": 11,
             "support": 0.00654911838790932,
-            "weight": 0.41897203925845306
+            "weight": 0.6297287867577521
         },
         {
             "name": "DOT",
@@ -377,7 +377,7 @@
             "occurrences": 22,
             "documents": 10,
             "support": 0.0055415617128463475,
-            "weight": -0.04265394369734676
+            "weight": 0.4513422842008066
         },
         {
             "name": "QUOTATION",
@@ -387,7 +387,7 @@
             "occurrences": 20,
             "documents": 11,
             "support": 0.005037783375314861,
-            "weight": 0.5948265468656557
+            "weight": -0.24581861331109822
         },
         {
             "name": "DASH",
@@ -397,7 +397,7 @@
             "occurrences": 19,
             "documents": 8,
             "support": 0.004785894206549119,
-            "weight": 0.45571572054475906
+            "weight": -0.5893383357557119
         },
         {
             "name": "QUOTATION",
@@ -407,7 +407,7 @@
             "occurrences": 19,
             "documents": 12,
             "support": 0.004785894206549119,
-            "weight": -0.9352960084136533
+            "weight": -0.5052719834518298
         },
         {
             "name": "DOT",
@@ -417,7 +417,7 @@
             "occurrences": 17,
             "documents": 3,
             "support": 0.0042821158690176326,
-            "weight": 0.37521965637120736
+            "weight": 0.6622200353413772
         },
         {
             "name": "URL",
@@ -427,7 +427,7 @@
             "occurrences": 16,
             "documents": 3,
             "support": 0.004030226700251889,
-            "weight": -0.18548842786435138
+            "weight": 0.6779305578023356
         },
         {
             "name": "SLASH",
@@ -437,7 +437,7 @@
             "occurrences": 16,
             "documents": 3,
             "support": 0.004030226700251889,
-            "weight": 0.9576220570554499
+            "weight": 0.6240605837812336
         },
         {
             "name": "PARENTHESIS",
@@ -447,7 +447,7 @@
             "occurrences": 16,
             "documents": 1,
             "support": 0.004030226700251889,
-            "weight": 0.34530248666046215
+            "weight": 0.4083536860987047
         },
         {
             "name": "DOUBLE_SLASH",
@@ -457,7 +457,7 @@
             "occurrences": 15,
             "documents": 3,
             "support": 0.003778337531486146,
-            "weight": 0.6181572404361653
+            "weight": -0.06738290912217326
         },
         {
             "name": "COLON",
@@ -467,7 +467,7 @@
             "occurrences": 15,
             "documents": 3,
             "support": 0.003778337531486146,
-            "weight": 0.5461494773925872
+            "weight": -0.08533830314526536
         },
         {
             "name": "COMMA",
@@ -477,7 +477,7 @@
             "occurrences": 15,
             "documents": 7,
             "support": 0.003778337531486146,
-            "weight": 0.022503126620591285
+            "weight": -0.20016372914956615
         },
         {
             "name": "NUMBER",
@@ -487,7 +487,7 @@
             "occurrences": 12,
             "documents": 8,
             "support": 0.003022670025188917,
-            "weight": 0.07479201491979204
+            "weight": -0.3117822484610654
         },
         {
             "name": "DASH",
@@ -497,7 +497,7 @@
             "occurrences": 11,
             "documents": 3,
             "support": 0.0027707808564231737,
-            "weight": 0.4361101555856901
+            "weight": -0.05346568395361073
         },
         {
             "name": "PARENTHESIS",
@@ -507,7 +507,7 @@
             "occurrences": 9,
             "documents": 8,
             "support": 0.0022670025188916876,
-            "weight": 0.15320789233144927
+            "weight": -0.38068638354036066
         },
         {
             "name": "NUMBER",
@@ -517,7 +517,7 @@
             "occurrences": 9,
             "documents": 2,
             "support": 0.0022670025188916876,
-            "weight": -0.6757235269339661
+            "weight": 0.10900419375861325
         },
         {
             "name": "QUOTATION",
@@ -527,7 +527,7 @@
             "occurrences": 8,
             "documents": 6,
             "support": 0.0020151133501259445,
-            "weight": 0.8073018216548298
+            "weight": 0.17151000459610755
         },
         {
             "name": "NUMBER",
@@ -537,7 +537,7 @@
             "occurrences": 8,
             "documents": 8,
             "support": 0.0020151133501259445,
-            "weight": -0.434598712272241
+            "weight": -0.4863556909781832
         },
         {
             "name": "PARENTHESIS",
@@ -547,7 +547,7 @@
             "occurrences": 6,
             "documents": 5,
             "support": 0.0015113350125944584,
-            "weight": -0.0737753661201963
+            "weight": 0.9836789273463349
         },
         {
             "name": "INITIAL",
@@ -557,7 +557,7 @@
             "occurrences": 6,
             "documents": 5,
             "support": 0.0015113350125944584,
-            "weight": 0.583569918284705
+            "weight": 0.528946550167184
         },
         {
             "name": "DOT",
@@ -567,7 +567,7 @@
             "occurrences": 6,
             "documents": 2,
             "support": 0.0015113350125944584,
-            "weight": 0.14401414650500488
+            "weight": 0.401479970680497
         },
         {
             "name": "INITIAL",
@@ -577,7 +577,7 @@
             "occurrences": 5,
             "documents": 2,
             "support": 0.0012594458438287153,
-            "weight": 0.9321393963906206
+            "weight": 0.36200121128539053
         },
         {
             "name": "INITIALS",
@@ -587,7 +587,7 @@
             "occurrences": 5,
             "documents": 4,
             "support": 0.0012594458438287153,
-            "weight": -0.10979665440881581
+            "weight": 0.7181187300186862
         },
         {
             "name": "INITIALS",
@@ -597,7 +597,7 @@
             "occurrences": 4,
             "documents": 2,
             "support": 0.0010075566750629723,
-            "weight": -0.026393884288469116
+            "weight": 0.1455419288854467
         },
         {
             "name": "NUMBER",
@@ -607,7 +607,7 @@
             "occurrences": 4,
             "documents": 4,
             "support": 0.0010075566750629723,
-            "weight": -0.11888535436112302
+            "weight": 0.8988360733484917
         },
         {
             "name": "YEAR",
@@ -617,7 +617,7 @@
             "occurrences": 4,
             "documents": 1,
             "support": 0.0010075566750629723,
-            "weight": -0.34620685303045295
+            "weight": -0.6988680894620631
         },
         {
             "name": "SLASH",
@@ -627,7 +627,7 @@
             "occurrences": 3,
             "documents": 3,
             "support": 0.0007556675062972292,
-            "weight": 0.4940764216905438
+            "weight": 0.6263469026796118
         },
         {
             "name": "PARENTHESIS",
@@ -637,7 +637,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0007556675062972292,
-            "weight": -0.05834716790182304
+            "weight": 0.5791037536201902
         },
         {
             "name": "INITIAL",
@@ -647,7 +647,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0007556675062972292,
-            "weight": 0.8169812909468428
+            "weight": 0.27497589201846795
         },
         {
             "name": "YEAR",
@@ -657,7 +657,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0007556675062972292,
-            "weight": 0.5303860752926088
+            "weight": 0.744132489958484
         },
         {
             "name": "ENTITY_SHAPE",
@@ -667,7 +667,7 @@
             "occurrences": 586,
             "documents": 47,
             "support": 0.14760705289672543,
-            "weight": 0.7525312462379861
+            "weight": -0.19429483409643433
         },
         {
             "name": "ENTITY_SHAPE",
@@ -677,7 +677,7 @@
             "occurrences": 309,
             "documents": 43,
             "support": 0.07783375314861461,
-            "weight": 0.2691848116735418
+            "weight": -0.8665679150726014
         },
         {
             "name": "ENTITY_SHAPE",
@@ -687,7 +687,7 @@
             "occurrences": 214,
             "documents": 26,
             "support": 0.05390428211586902,
-            "weight": -0.6760181164197665
+            "weight": 0.5184130530059572
         },
         {
             "name": "ENTITY_SHAPE",
@@ -697,7 +697,7 @@
             "occurrences": 132,
             "documents": 24,
             "support": 0.03324937027707808,
-            "weight": -0.1973231551906205
+            "weight": 0.6025816576723062
         },
         {
             "name": "ENTITY_SHAPE",
@@ -707,7 +707,7 @@
             "occurrences": 92,
             "documents": 5,
             "support": 0.023173803526448364,
-            "weight": 0.03525810564295928
+            "weight": 0.596122209986147
         },
         {
             "name": "ENTITY_SHAPE",
@@ -717,7 +717,7 @@
             "occurrences": 63,
             "documents": 31,
             "support": 0.015869017632241814,
-            "weight": -0.9638827696738292
+            "weight": -0.10746843825185648
         },
         {
             "name": "ENTITY_SHAPE",
@@ -727,7 +727,7 @@
             "occurrences": 59,
             "documents": 16,
             "support": 0.014861460957178841,
-            "weight": 0.41536004915928904
+            "weight": 0.5561243076789226
         },
         {
             "name": "ENTITY_SHAPE",
@@ -737,7 +737,7 @@
             "occurrences": 59,
             "documents": 8,
             "support": 0.014861460957178841,
-            "weight": -0.228579945422683
+            "weight": 0.09973845162900119
         },
         {
             "name": "ENTITY_SHAPE",
@@ -747,7 +747,7 @@
             "occurrences": 57,
             "documents": 15,
             "support": 0.014357682619647354,
-            "weight": 0.7681046092704593
+            "weight": 0.5377447153636756
         },
         {
             "name": "ENTITY_SHAPE",
@@ -757,7 +757,7 @@
             "occurrences": 56,
             "documents": 5,
             "support": 0.014105793450881612,
-            "weight": 0.5614039779724989
+            "weight": 0.8912793405442831
         },
         {
             "name": "ENTITY_SHAPE",
@@ -767,7 +767,7 @@
             "occurrences": 54,
             "documents": 17,
             "support": 0.013602015113350126,
-            "weight": -0.05220667057221495
+            "weight": -0.13418171848468174
         },
         {
             "name": "ENTITY_SHAPE",
@@ -777,7 +777,7 @@
             "occurrences": 53,
             "documents": 27,
             "support": 0.013350125944584382,
-            "weight": 0.348700992013685
+            "weight": -0.13174792292749982
         },
         {
             "name": "ENTITY_SHAPE",
@@ -787,7 +787,7 @@
             "occurrences": 50,
             "documents": 6,
             "support": 0.012594458438287154,
-            "weight": -0.33508575848132616
+            "weight": 0.30432909579327605
         },
         {
             "name": "ENTITY_SHAPE",
@@ -797,7 +797,7 @@
             "occurrences": 50,
             "documents": 26,
             "support": 0.012594458438287154,
-            "weight": -0.6261558457355967
+            "weight": 0.5040872484485928
         },
         {
             "name": "ENTITY_SHAPE",
@@ -807,7 +807,7 @@
             "occurrences": 45,
             "documents": 21,
             "support": 0.011335012594458438,
-            "weight": 0.2693038634033862
+            "weight": 0.43235223565186853
         },
         {
             "name": "ENTITY_SHAPE",
@@ -817,7 +817,7 @@
             "occurrences": 45,
             "documents": 28,
             "support": 0.011335012594458438,
-            "weight": 0.9145406327169001
+            "weight": 0.2296848634924491
         },
         {
             "name": "ENTITY_SHAPE",
@@ -827,7 +827,7 @@
             "occurrences": 43,
             "documents": 23,
             "support": 0.010831234256926952,
-            "weight": 0.18494170902428575
+            "weight": 0.050392631637744545
         },
         {
             "name": "ENTITY_SHAPE",
@@ -837,7 +837,7 @@
             "occurrences": 42,
             "documents": 4,
             "support": 0.01057934508816121,
-            "weight": 0.4131736532125414
+            "weight": 0.16493207395142662
         },
         {
             "name": "ENTITY_SHAPE",
@@ -847,7 +847,7 @@
             "occurrences": 36,
             "documents": 10,
             "support": 0.00906801007556675,
-            "weight": -0.6643856546362149
+            "weight": 0.19719270886431772
         },
         {
             "name": "ENTITY_SHAPE",
@@ -857,7 +857,7 @@
             "occurrences": 31,
             "documents": 10,
             "support": 0.0078085642317380355,
-            "weight": 0.6634857689521465
+            "weight": 0.5536969905711879
         },
         {
             "name": "ENTITY_SHAPE",
@@ -867,7 +867,7 @@
             "occurrences": 31,
             "documents": 10,
             "support": 0.0078085642317380355,
-            "weight": -0.7753575096081813
+            "weight": -0.4904359530956215
         },
         {
             "name": "ENTITY_SHAPE",
@@ -877,7 +877,7 @@
             "occurrences": 29,
             "documents": 9,
             "support": 0.007304785894206549,
-            "weight": 0.3300562269332099
+            "weight": 0.14019693534735822
         },
         {
             "name": "ENTITY_SHAPE",
@@ -887,7 +887,7 @@
             "occurrences": 28,
             "documents": 11,
             "support": 0.007052896725440806,
-            "weight": -0.3978002125500254
+            "weight": 0.7456406810767295
         },
         {
             "name": "ENTITY_SHAPE",
@@ -897,7 +897,7 @@
             "occurrences": 26,
             "documents": 7,
             "support": 0.00654911838790932,
-            "weight": 0.46650749582077355
+            "weight": 0.5185420216762806
         },
         {
             "name": "ENTITY_SHAPE",
@@ -907,7 +907,7 @@
             "occurrences": 25,
             "documents": 15,
             "support": 0.006297229219143577,
-            "weight": -0.5419832930382348
+            "weight": 0.17280733486393518
         },
         {
             "name": "ENTITY_SHAPE",
@@ -917,7 +917,7 @@
             "occurrences": 25,
             "documents": 13,
             "support": 0.006297229219143577,
-            "weight": 0.25852688782937694
+            "weight": 0.0372584756721861
         },
         {
             "name": "ENTITY_SHAPE",
@@ -927,7 +927,7 @@
             "occurrences": 24,
             "documents": 6,
             "support": 0.006045340050377834,
-            "weight": -0.4083309261880391
+            "weight": -0.6143287357640542
         },
         {
             "name": "ENTITY_SHAPE",
@@ -937,7 +937,7 @@
             "occurrences": 22,
             "documents": 6,
             "support": 0.0055415617128463475,
-            "weight": 0.4494525789367898
+            "weight": 0.7570499577517267
         },
         {
             "name": "ENTITY_SHAPE",
@@ -947,7 +947,7 @@
             "occurrences": 20,
             "documents": 4,
             "support": 0.005037783375314861,
-            "weight": 0.3514595911479135
+            "weight": 0.6108173511705322
         },
         {
             "name": "ENTITY_SHAPE",
@@ -957,7 +957,7 @@
             "occurrences": 19,
             "documents": 6,
             "support": 0.004785894206549119,
-            "weight": 0.3631169234199221
+            "weight": 0.8226733503510517
         },
         {
             "name": "ENTITY_SHAPE",
@@ -967,7 +967,7 @@
             "occurrences": 19,
             "documents": 4,
             "support": 0.004785894206549119,
-            "weight": -0.1461350260039237
+            "weight": 0.10497308215123957
         },
         {
             "name": "ENTITY_SHAPE",
@@ -977,7 +977,7 @@
             "occurrences": 17,
             "documents": 8,
             "support": 0.0042821158690176326,
-            "weight": 0.9701872063890249
+            "weight": -0.6773387983127339
         },
         {
             "name": "ENTITY_SHAPE",
@@ -987,7 +987,7 @@
             "occurrences": 16,
             "documents": 6,
             "support": 0.004030226700251889,
-            "weight": 0.47562601422636197
+            "weight": -0.5655603695723684
         },
         {
             "name": "ENTITY_SHAPE",
@@ -997,7 +997,7 @@
             "occurrences": 16,
             "documents": 10,
             "support": 0.004030226700251889,
-            "weight": -0.28932832335303693
+            "weight": -0.5191963891491682
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1007,7 +1007,7 @@
             "occurrences": 16,
             "documents": 1,
             "support": 0.004030226700251889,
-            "weight": -0.3190491002174993
+            "weight": 0.2289208633460289
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1017,7 +1017,7 @@
             "occurrences": 15,
             "documents": 10,
             "support": 0.003778337531486146,
-            "weight": 0.8871695353414395
+            "weight": 0.6124187118912048
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1027,7 +1027,7 @@
             "occurrences": 14,
             "documents": 4,
             "support": 0.003526448362720403,
-            "weight": -0.45721106517113463
+            "weight": 0.0037511510866043984
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1037,7 +1037,7 @@
             "occurrences": 13,
             "documents": 6,
             "support": 0.00327455919395466,
-            "weight": -0.3948049446960744
+            "weight": 0.07033434191772847
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1047,7 +1047,7 @@
             "occurrences": 13,
             "documents": 5,
             "support": 0.00327455919395466,
-            "weight": -0.36105898213381216
+            "weight": 0.6534138311146509
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1057,7 +1057,7 @@
             "occurrences": 13,
             "documents": 3,
             "support": 0.00327455919395466,
-            "weight": -0.9431286965432335
+            "weight": 0.44504256276499876
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1067,7 +1067,7 @@
             "occurrences": 13,
             "documents": 8,
             "support": 0.00327455919395466,
-            "weight": -0.8124127231036875
+            "weight": -0.4525111418672141
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1077,7 +1077,7 @@
             "occurrences": 12,
             "documents": 8,
             "support": 0.003022670025188917,
-            "weight": 0.4678213547314156
+            "weight": -0.5268005338512516
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1087,7 +1087,7 @@
             "occurrences": 12,
             "documents": 11,
             "support": 0.003022670025188917,
-            "weight": 0.6698865014905018
+            "weight": -0.758979919803695
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1097,7 +1097,7 @@
             "occurrences": 12,
             "documents": 2,
             "support": 0.003022670025188917,
-            "weight": -0.6651127953219331
+            "weight": -0.7454149670490149
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1107,7 +1107,7 @@
             "occurrences": 12,
             "documents": 4,
             "support": 0.003022670025188917,
-            "weight": -0.4999979553707361
+            "weight": 0.09977606480586165
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1117,7 +1117,7 @@
             "occurrences": 11,
             "documents": 9,
             "support": 0.0027707808564231737,
-            "weight": -0.3722576213621399
+            "weight": -0.5704934736087325
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1127,7 +1127,7 @@
             "occurrences": 11,
             "documents": 1,
             "support": 0.0027707808564231737,
-            "weight": -0.37754756134429923
+            "weight": -0.30873617906986206
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1137,7 +1137,7 @@
             "occurrences": 10,
             "documents": 4,
             "support": 0.0025188916876574307,
-            "weight": -0.9534438861986398
+            "weight": 0.5891638967004518
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1147,7 +1147,7 @@
             "occurrences": 10,
             "documents": 3,
             "support": 0.0025188916876574307,
-            "weight": 0.16640939471797123
+            "weight": 0.7988651764579779
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1157,7 +1157,7 @@
             "occurrences": 9,
             "documents": 3,
             "support": 0.0022670025188916876,
-            "weight": -0.22544017171317288
+            "weight": -0.5051805267684757
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1167,7 +1167,7 @@
             "occurrences": 9,
             "documents": 5,
             "support": 0.0022670025188916876,
-            "weight": 0.9289356759167178
+            "weight": -0.0066484046053626455
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1177,7 +1177,7 @@
             "occurrences": 9,
             "documents": 6,
             "support": 0.0022670025188916876,
-            "weight": -0.39781610617714325
+            "weight": -0.8712600720943395
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1187,7 +1187,7 @@
             "occurrences": 9,
             "documents": 6,
             "support": 0.0022670025188916876,
-            "weight": 0.5605248513776548
+            "weight": -0.19891315226976203
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1197,7 +1197,7 @@
             "occurrences": 9,
             "documents": 7,
             "support": 0.0022670025188916876,
-            "weight": -0.4976324388390665
+            "weight": -0.500688136231714
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1207,7 +1207,7 @@
             "occurrences": 9,
             "documents": 3,
             "support": 0.0022670025188916876,
-            "weight": -0.6261231547100694
+            "weight": -0.7330362278071674
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1217,7 +1217,7 @@
             "occurrences": 9,
             "documents": 2,
             "support": 0.0022670025188916876,
-            "weight": -0.5788998381856818
+            "weight": -0.5190620903335111
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1227,7 +1227,7 @@
             "occurrences": 8,
             "documents": 6,
             "support": 0.0020151133501259445,
-            "weight": 0.8506638025186799
+            "weight": -0.45112354360247076
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1237,7 +1237,7 @@
             "occurrences": 8,
             "documents": 3,
             "support": 0.0020151133501259445,
-            "weight": -0.6842550688131241
+            "weight": -0.20239844973040721
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1247,7 +1247,7 @@
             "occurrences": 8,
             "documents": 3,
             "support": 0.0020151133501259445,
-            "weight": 0.6193419838184326
+            "weight": -0.16779831750830898
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1257,7 +1257,7 @@
             "occurrences": 8,
             "documents": 3,
             "support": 0.0020151133501259445,
-            "weight": 0.5199750576173976
+            "weight": -0.18860694372609887
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1267,7 +1267,7 @@
             "occurrences": 7,
             "documents": 6,
             "support": 0.0017632241813602015,
-            "weight": -0.8647401354438922
+            "weight": 0.5338000092560715
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1277,7 +1277,7 @@
             "occurrences": 7,
             "documents": 1,
             "support": 0.0017632241813602015,
-            "weight": -0.3868939851981765
+            "weight": -0.6754432008054143
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1287,7 +1287,7 @@
             "occurrences": 7,
             "documents": 4,
             "support": 0.0017632241813602015,
-            "weight": -0.7862765783289646
+            "weight": -0.1585790446054146
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1297,7 +1297,7 @@
             "occurrences": 7,
             "documents": 2,
             "support": 0.0017632241813602015,
-            "weight": 0.07999018606202668
+            "weight": 0.0037490290304764695
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1307,7 +1307,7 @@
             "occurrences": 7,
             "documents": 1,
             "support": 0.0017632241813602015,
-            "weight": -0.32676345670190754
+            "weight": 0.39810148267401346
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1317,7 +1317,7 @@
             "occurrences": 7,
             "documents": 3,
             "support": 0.0017632241813602015,
-            "weight": 0.6022134751374097
+            "weight": -0.036373991104920456
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1327,7 +1327,7 @@
             "occurrences": 7,
             "documents": 2,
             "support": 0.0017632241813602015,
-            "weight": 0.39221320505819657
+            "weight": 0.25405546762455034
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1337,7 +1337,7 @@
             "occurrences": 7,
             "documents": 3,
             "support": 0.0017632241813602015,
-            "weight": 0.49662671907156364
+            "weight": 0.19771664005917344
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1347,7 +1347,7 @@
             "occurrences": 6,
             "documents": 1,
             "support": 0.0015113350125944584,
-            "weight": 0.6753843776439923
+            "weight": -0.5632507073551192
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1357,7 +1357,7 @@
             "occurrences": 6,
             "documents": 6,
             "support": 0.0015113350125944584,
-            "weight": 0.9171970489316257
+            "weight": 0.41544850656455545
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1367,7 +1367,7 @@
             "occurrences": 6,
             "documents": 3,
             "support": 0.0015113350125944584,
-            "weight": -0.1329465501290511
+            "weight": 0.8018089209792654
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1377,7 +1377,7 @@
             "occurrences": 6,
             "documents": 4,
             "support": 0.0015113350125944584,
-            "weight": -0.35031781040079957
+            "weight": -0.690129494061846
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1387,7 +1387,7 @@
             "occurrences": 6,
             "documents": 1,
             "support": 0.0015113350125944584,
-            "weight": 0.3085059320664141
+            "weight": 0.7775269344324949
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1397,7 +1397,7 @@
             "occurrences": 6,
             "documents": 3,
             "support": 0.0015113350125944584,
-            "weight": -0.05663338688733799
+            "weight": 0.5256300980672108
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1407,7 +1407,7 @@
             "occurrences": 6,
             "documents": 3,
             "support": 0.0015113350125944584,
-            "weight": -0.774668103863069
+            "weight": -0.24561803941860605
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1417,7 +1417,7 @@
             "occurrences": 6,
             "documents": 2,
             "support": 0.0015113350125944584,
-            "weight": -0.3555268561822179
+            "weight": -0.4424665425512786
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1427,7 +1427,7 @@
             "occurrences": 6,
             "documents": 1,
             "support": 0.0015113350125944584,
-            "weight": -0.3510992566009905
+            "weight": 0.30426468180907995
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1437,7 +1437,7 @@
             "occurrences": 6,
             "documents": 1,
             "support": 0.0015113350125944584,
-            "weight": -0.028440800717583592
+            "weight": -0.13061748136124707
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1447,7 +1447,7 @@
             "occurrences": 6,
             "documents": 1,
             "support": 0.0015113350125944584,
-            "weight": 0.264464511079997
+            "weight": 0.5533282442230965
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1457,7 +1457,7 @@
             "occurrences": 6,
             "documents": 1,
             "support": 0.0015113350125944584,
-            "weight": -0.45701525922843855
+            "weight": -0.04078943969143589
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1467,7 +1467,7 @@
             "occurrences": 6,
             "documents": 1,
             "support": 0.0015113350125944584,
-            "weight": -0.3059888996681357
+            "weight": -0.08934058634534736
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1477,7 +1477,7 @@
             "occurrences": 5,
             "documents": 1,
             "support": 0.0012594458438287153,
-            "weight": 0.9595905387430907
+            "weight": 0.07897752483769849
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1487,7 +1487,7 @@
             "occurrences": 5,
             "documents": 3,
             "support": 0.0012594458438287153,
-            "weight": 0.5294681165207233
+            "weight": -0.5080136367346377
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1497,7 +1497,7 @@
             "occurrences": 5,
             "documents": 3,
             "support": 0.0012594458438287153,
-            "weight": -0.43405512285287984
+            "weight": 0.48596301476272474
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1507,7 +1507,7 @@
             "occurrences": 5,
             "documents": 3,
             "support": 0.0012594458438287153,
-            "weight": -0.029563185448419516
+            "weight": 0.14600491413301797
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1517,7 +1517,7 @@
             "occurrences": 5,
             "documents": 3,
             "support": 0.0012594458438287153,
-            "weight": -0.15365743311806535
+            "weight": -0.48722062628247076
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1527,7 +1527,7 @@
             "occurrences": 5,
             "documents": 2,
             "support": 0.0012594458438287153,
-            "weight": 0.5169556188571287
+            "weight": 0.35682691381910314
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1537,7 +1537,7 @@
             "occurrences": 5,
             "documents": 1,
             "support": 0.0012594458438287153,
-            "weight": 0.34149918632096354
+            "weight": -0.6412733258285364
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1547,7 +1547,7 @@
             "occurrences": 5,
             "documents": 1,
             "support": 0.0012594458438287153,
-            "weight": -0.8857389826380251
+            "weight": -0.6309724975692074
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1557,7 +1557,7 @@
             "occurrences": 5,
             "documents": 1,
             "support": 0.0012594458438287153,
-            "weight": -0.3367700827984883
+            "weight": -0.6543777278137184
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1567,7 +1567,7 @@
             "occurrences": 5,
             "documents": 1,
             "support": 0.0012594458438287153,
-            "weight": -0.7288750822040245
+            "weight": -0.9161010015099174
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1577,7 +1577,7 @@
             "occurrences": 5,
             "documents": 2,
             "support": 0.0012594458438287153,
-            "weight": 0.08383120840264247
+            "weight": 0.006856308607447126
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1587,7 +1587,7 @@
             "occurrences": 5,
             "documents": 1,
             "support": 0.0012594458438287153,
-            "weight": -0.8199119651237988
+            "weight": 0.3831545210140823
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1597,7 +1597,7 @@
             "occurrences": 4,
             "documents": 3,
             "support": 0.0010075566750629723,
-            "weight": 0.6553795592350828
+            "weight": -0.8473824936943806
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1607,7 +1607,7 @@
             "occurrences": 4,
             "documents": 3,
             "support": 0.0010075566750629723,
-            "weight": -0.26762417468433297
+            "weight": -0.46228363722484755
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1617,7 +1617,7 @@
             "occurrences": 4,
             "documents": 4,
             "support": 0.0010075566750629723,
-            "weight": 0.09039766167543806
+            "weight": 0.13017563768599305
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1627,7 +1627,7 @@
             "occurrences": 4,
             "documents": 1,
             "support": 0.0010075566750629723,
-            "weight": 0.32561675366451714
+            "weight": -0.894524759177572
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1637,7 +1637,7 @@
             "occurrences": 4,
             "documents": 3,
             "support": 0.0010075566750629723,
-            "weight": 0.12556352570502272
+            "weight": 0.47589213608970704
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1647,7 +1647,7 @@
             "occurrences": 4,
             "documents": 1,
             "support": 0.0010075566750629723,
-            "weight": -0.12587102231733538
+            "weight": -0.31182003858775487
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1657,7 +1657,7 @@
             "occurrences": 4,
             "documents": 2,
             "support": 0.0010075566750629723,
-            "weight": 0.40834184946126695
+            "weight": 0.8977069938054401
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1667,7 +1667,7 @@
             "occurrences": 4,
             "documents": 2,
             "support": 0.0010075566750629723,
-            "weight": -0.6694348745008998
+            "weight": 0.512631921459181
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1677,7 +1677,7 @@
             "occurrences": 4,
             "documents": 1,
             "support": 0.0010075566750629723,
-            "weight": -0.3020665392779651
+            "weight": 0.19613035263623302
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1687,7 +1687,7 @@
             "occurrences": 4,
             "documents": 1,
             "support": 0.0010075566750629723,
-            "weight": -0.15786153155595084
+            "weight": -0.12169317626066989
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1697,7 +1697,7 @@
             "occurrences": 4,
             "documents": 1,
             "support": 0.0010075566750629723,
-            "weight": 0.01158333711872328
+            "weight": -0.015207426080694919
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1707,7 +1707,7 @@
             "occurrences": 4,
             "documents": 3,
             "support": 0.0010075566750629723,
-            "weight": 0.5141451323482709
+            "weight": -0.6554438824447895
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1717,7 +1717,7 @@
             "occurrences": 4,
             "documents": 3,
             "support": 0.0010075566750629723,
-            "weight": -0.34877979479401855
+            "weight": -0.31320323246123716
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1727,7 +1727,7 @@
             "occurrences": 4,
             "documents": 3,
             "support": 0.0010075566750629723,
-            "weight": -0.31207572364551517
+            "weight": 0.48937851825665035
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1737,7 +1737,7 @@
             "occurrences": 4,
             "documents": 1,
             "support": 0.0010075566750629723,
-            "weight": -0.15828985142926177
+            "weight": 0.335141532052887
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1747,7 +1747,7 @@
             "occurrences": 4,
             "documents": 1,
             "support": 0.0010075566750629723,
-            "weight": 0.0019538670313141715
+            "weight": -0.22900849790853317
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1757,7 +1757,7 @@
             "occurrences": 4,
             "documents": 2,
             "support": 0.0010075566750629723,
-            "weight": 0.691344884141236
+            "weight": -0.2163955667102161
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1767,7 +1767,7 @@
             "occurrences": 4,
             "documents": 2,
             "support": 0.0010075566750629723,
-            "weight": 0.6166424195489191
+            "weight": -0.596908592731479
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1777,7 +1777,7 @@
             "occurrences": 4,
             "documents": 3,
             "support": 0.0010075566750629723,
-            "weight": -0.13819032113341145
+            "weight": 0.1487948478732073
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1787,7 +1787,7 @@
             "occurrences": 4,
             "documents": 1,
             "support": 0.0010075566750629723,
-            "weight": -0.774320220809928
+            "weight": -0.033737128867020516
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1797,7 +1797,7 @@
             "occurrences": 4,
             "documents": 1,
             "support": 0.0010075566750629723,
-            "weight": -0.26493538259311733
+            "weight": -0.09641262738475764
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1807,7 +1807,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0007556675062972292,
-            "weight": 0.37278047426716365
+            "weight": 0.057348201938129284
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1817,7 +1817,7 @@
             "occurrences": 3,
             "documents": 3,
             "support": 0.0007556675062972292,
-            "weight": 0.11380249078014759
+            "weight": -0.3795431835080769
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1827,7 +1827,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0007556675062972292,
-            "weight": 0.635029281120361
+            "weight": -0.09655131449445764
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1837,7 +1837,7 @@
             "occurrences": 3,
             "documents": 3,
             "support": 0.0007556675062972292,
-            "weight": -0.5487375443857214
+            "weight": -0.8917571138133943
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1847,7 +1847,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0007556675062972292,
-            "weight": -0.23021881823591483
+            "weight": 0.33479449875408474
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1857,7 +1857,7 @@
             "occurrences": 3,
             "documents": 3,
             "support": 0.0007556675062972292,
-            "weight": -0.4408486328998311
+            "weight": -0.4637016141982302
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1867,7 +1867,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0007556675062972292,
-            "weight": -0.554124908357027
+            "weight": -0.5929050958599121
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1877,7 +1877,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0007556675062972292,
-            "weight": 0.09774938137477829
+            "weight": 0.19424699157656344
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1887,7 +1887,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0007556675062972292,
-            "weight": 0.42789395490944226
+            "weight": 0.7148570391783786
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1897,7 +1897,7 @@
             "occurrences": 3,
             "documents": 3,
             "support": 0.0007556675062972292,
-            "weight": 0.8008432837929569
+            "weight": -0.12519084317278795
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1907,7 +1907,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0007556675062972292,
-            "weight": 0.4405012018213852
+            "weight": 0.38657726095248446
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1917,7 +1917,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0007556675062972292,
-            "weight": 0.422719283053127
+            "weight": 0.4047510307762081
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1927,7 +1927,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0007556675062972292,
-            "weight": -0.7617397532721574
+            "weight": 0.47076025681070655
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1937,7 +1937,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0007556675062972292,
-            "weight": 0.6393499186158351
+            "weight": -0.7262745237999972
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1947,7 +1947,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0007556675062972292,
-            "weight": -0.3030551589776781
+            "weight": 0.13964452186842302
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1957,7 +1957,7 @@
             "occurrences": 3,
             "documents": 3,
             "support": 0.0007556675062972292,
-            "weight": 0.21166115883728542
+            "weight": 0.35593907572182304
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1967,7 +1967,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0007556675062972292,
-            "weight": 0.3382764825190099
+            "weight": 0.4265361416939535
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1977,7 +1977,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0007556675062972292,
-            "weight": 0.7810416239277589
+            "weight": 0.2867506188435929
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1987,7 +1987,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0007556675062972292,
-            "weight": 0.6570923402278201
+            "weight": 0.27395091163070306
         },
         {
             "name": "ENTITY_SHAPE",
@@ -1997,7 +1997,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0007556675062972292,
-            "weight": -0.2945343681360497
+            "weight": 0.54863253196902
         },
         {
             "name": "ENTITY_SHAPE",
@@ -2007,7 +2007,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0007556675062972292,
-            "weight": -0.9776451378293186
+            "weight": -0.36923205261454406
         },
         {
             "name": "ENTITY_SHAPE",
@@ -2017,7 +2017,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0007556675062972292,
-            "weight": 0.23097377534071106
+            "weight": 0.005834209755820607
         },
         {
             "name": "ENTITY_SHAPE",
@@ -2027,7 +2027,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0007556675062972292,
-            "weight": -0.3715236492978746
+            "weight": -0.6871238804585474
         },
         {
             "name": "ENTITY_SHAPE",
@@ -2037,7 +2037,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0007556675062972292,
-            "weight": -0.7258175596730894
+            "weight": 0.8557253658515176
         },
         {
             "name": "ENTITY_SHAPE",
@@ -2047,7 +2047,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0007556675062972292,
-            "weight": -0.8455354878308772
+            "weight": 0.37565372565053634
         },
         {
             "name": "ENTITY_SHAPE",
@@ -2057,7 +2057,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0007556675062972292,
-            "weight": 0.014359461735359957
+            "weight": 0.8115221737771039
         },
         {
             "name": "ENTITY_SHAPE",
@@ -2067,7 +2067,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0007556675062972292,
-            "weight": 0.2563451319570871
+            "weight": -0.29040685749806594
         },
         {
             "name": "ENTITY_SHAPE",
@@ -2077,7 +2077,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0007556675062972292,
-            "weight": -0.3306970128238652
+            "weight": -0.3549681583210481
         },
         {
             "name": "ENTITY_SHAPE",
@@ -2087,7 +2087,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0007556675062972292,
-            "weight": -0.38462535516464
+            "weight": 0.2360785914112693
         },
         {
             "name": "ENTITY_SHAPE",
@@ -2097,7 +2097,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0007556675062972292,
-            "weight": 0.23057195213738835
+            "weight": 0.11943517571593909
         },
         {
             "name": "ENTITY_SHAPE",
@@ -2107,7 +2107,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0007556675062972292,
-            "weight": 0.27561761132307505
+            "weight": -0.29652348365027725
         },
         {
             "name": "ENTITY_SHAPE",
@@ -2117,7 +2117,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0007556675062972292,
-            "weight": 0.1891987736776335
+            "weight": -0.6710141337621729
         },
         {
             "name": "ENTITY_SHAPE",
@@ -2127,7 +2127,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0007556675062972292,
-            "weight": 0.9326259533752881
+            "weight": 0.04589505035304464
         },
         {
             "name": "SEPARATOR",
@@ -2138,7 +2138,7 @@
             "occurrences": 418,
             "documents": 34,
             "support": 0.12388855957320688,
-            "weight": -0.35855362936975865
+            "weight": -0.50534774155529
         },
         {
             "name": "SEPARATOR",
@@ -2149,7 +2149,7 @@
             "occurrences": 92,
             "documents": 25,
             "support": 0.027267338470657973,
-            "weight": 0.4035418515541418
+            "weight": -0.45436573804807234
         },
         {
             "name": "SEPARATOR",
@@ -2160,7 +2160,7 @@
             "occurrences": 46,
             "documents": 13,
             "support": 0.013633669235328987,
-            "weight": 0.6454225024548046
+            "weight": 0.4291405879080785
         },
         {
             "name": "SEPARATOR",
@@ -2171,7 +2171,7 @@
             "occurrences": 45,
             "documents": 11,
             "support": 0.013337285121517486,
-            "weight": 0.2954113992365943
+            "weight": -0.271158686128939
         },
         {
             "name": "SEPARATOR",
@@ -2182,7 +2182,7 @@
             "occurrences": 44,
             "documents": 12,
             "support": 0.013040901007705987,
-            "weight": -0.5583233877619667
+            "weight": -0.6659953295124252
         },
         {
             "name": "SEPARATOR",
@@ -2193,7 +2193,7 @@
             "occurrences": 36,
             "documents": 13,
             "support": 0.01066982809721399,
-            "weight": 0.5576733248787091
+            "weight": 0.4138168356141334
         },
         {
             "name": "SEPARATOR",
@@ -2204,7 +2204,7 @@
             "occurrences": 31,
             "documents": 9,
             "support": 0.009187907528156491,
-            "weight": 0.5418399792590798
+            "weight": -0.15032091717015994
         },
         {
             "name": "SEPARATOR",
@@ -2215,7 +2215,7 @@
             "occurrences": 27,
             "documents": 11,
             "support": 0.008002371072910491,
-            "weight": -0.5495647351287843
+            "weight": 0.6032374078057996
         },
         {
             "name": "SEPARATOR",
@@ -2226,7 +2226,7 @@
             "occurrences": 27,
             "documents": 12,
             "support": 0.008002371072910491,
-            "weight": -0.7405823017480727
+            "weight": -0.6204482014986772
         },
         {
             "name": "SEPARATOR",
@@ -2237,7 +2237,7 @@
             "occurrences": 26,
             "documents": 6,
             "support": 0.007705986959098993,
-            "weight": -0.26425870583155886
+            "weight": -0.9006672560912141
         },
         {
             "name": "SEPARATOR",
@@ -2248,7 +2248,7 @@
             "occurrences": 26,
             "documents": 9,
             "support": 0.007705986959098993,
-            "weight": 0.5386238556523655
+            "weight": -0.5300485766218084
         },
         {
             "name": "SEPARATOR",
@@ -2259,7 +2259,7 @@
             "occurrences": 26,
             "documents": 7,
             "support": 0.007705986959098993,
-            "weight": 0.9029674619747641
+            "weight": -0.47972274758545186
         },
         {
             "name": "SEPARATOR",
@@ -2270,7 +2270,7 @@
             "occurrences": 26,
             "documents": 7,
             "support": 0.007705986959098993,
-            "weight": 0.21872910369058896
+            "weight": -0.6255927631902587
         },
         {
             "name": "SEPARATOR",
@@ -2281,7 +2281,7 @@
             "occurrences": 25,
             "documents": 6,
             "support": 0.007409602845287492,
-            "weight": -0.15203264465643385
+            "weight": -0.7615606137196061
         },
         {
             "name": "SEPARATOR",
@@ -2292,7 +2292,7 @@
             "occurrences": 25,
             "documents": 13,
             "support": 0.007409602845287492,
-            "weight": -0.37182306144545896
+            "weight": -0.06099208584356042
         },
         {
             "name": "SEPARATOR",
@@ -2303,7 +2303,7 @@
             "occurrences": 24,
             "documents": 5,
             "support": 0.007113218731475993,
-            "weight": -0.3824441714043305
+            "weight": 0.4429335518961046
         },
         {
             "name": "SEPARATOR",
@@ -2314,7 +2314,7 @@
             "occurrences": 23,
             "documents": 9,
             "support": 0.006816834617664493,
-            "weight": -0.038996087107208366
+            "weight": 0.4147110352791705
         },
         {
             "name": "SEPARATOR",
@@ -2325,7 +2325,7 @@
             "occurrences": 23,
             "documents": 5,
             "support": 0.006816834617664493,
-            "weight": -0.1755461230651415
+            "weight": -0.232184509946878
         },
         {
             "name": "SEPARATOR",
@@ -2336,7 +2336,7 @@
             "occurrences": 19,
             "documents": 11,
             "support": 0.005631298162418494,
-            "weight": 0.60164539320044
+            "weight": -0.5988560446017892
         },
         {
             "name": "SEPARATOR",
@@ -2347,7 +2347,7 @@
             "occurrences": 19,
             "documents": 10,
             "support": 0.005631298162418494,
-            "weight": 0.6168107381594785
+            "weight": -0.4389464195851507
         },
         {
             "name": "SEPARATOR",
@@ -2358,7 +2358,7 @@
             "occurrences": 18,
             "documents": 7,
             "support": 0.005334914048606995,
-            "weight": -0.386040532245455
+            "weight": -0.1336316275126872
         },
         {
             "name": "SEPARATOR",
@@ -2369,7 +2369,7 @@
             "occurrences": 18,
             "documents": 4,
             "support": 0.005334914048606995,
-            "weight": 0.7338946026561937
+            "weight": 0.6820455795627853
         },
         {
             "name": "SEPARATOR",
@@ -2380,7 +2380,7 @@
             "occurrences": 16,
             "documents": 4,
             "support": 0.004742145820983995,
-            "weight": 0.13926336784204518
+            "weight": -0.234146143514688
         },
         {
             "name": "SEPARATOR",
@@ -2391,7 +2391,7 @@
             "occurrences": 16,
             "documents": 6,
             "support": 0.004742145820983995,
-            "weight": 0.342822062423642
+            "weight": 0.07885079496609793
         },
         {
             "name": "SEPARATOR",
@@ -2402,7 +2402,7 @@
             "occurrences": 15,
             "documents": 1,
             "support": 0.004445761707172495,
-            "weight": 0.3243891840234818
+            "weight": -0.7903570306821102
         },
         {
             "name": "SEPARATOR",
@@ -2413,7 +2413,7 @@
             "occurrences": 15,
             "documents": 7,
             "support": 0.004445761707172495,
-            "weight": -0.1837891376137908
+            "weight": -0.3805998935476578
         },
         {
             "name": "SEPARATOR",
@@ -2424,7 +2424,7 @@
             "occurrences": 14,
             "documents": 4,
             "support": 0.004149377593360996,
-            "weight": 0.3021147618917812
+            "weight": 0.6020811199857721
         },
         {
             "name": "SEPARATOR",
@@ -2435,7 +2435,7 @@
             "occurrences": 14,
             "documents": 5,
             "support": 0.004149377593360996,
-            "weight": -0.17017242891268958
+            "weight": -0.69245466305809
         },
         {
             "name": "SEPARATOR",
@@ -2446,7 +2446,7 @@
             "occurrences": 14,
             "documents": 8,
             "support": 0.004149377593360996,
-            "weight": -0.28733080761202845
+            "weight": -0.012579730574926895
         },
         {
             "name": "SEPARATOR",
@@ -2457,7 +2457,7 @@
             "occurrences": 13,
             "documents": 2,
             "support": 0.0038529934795494963,
-            "weight": -0.2461588195094473
+            "weight": 0.19665130941182007
         },
         {
             "name": "SEPARATOR",
@@ -2468,7 +2468,7 @@
             "occurrences": 13,
             "documents": 5,
             "support": 0.0038529934795494963,
-            "weight": 0.21985697420398553
+            "weight": 0.12018409398742524
         },
         {
             "name": "SEPARATOR",
@@ -2479,7 +2479,7 @@
             "occurrences": 13,
             "documents": 5,
             "support": 0.0038529934795494963,
-            "weight": 0.036079803655723275
+            "weight": -0.1289455049088516
         },
         {
             "name": "SEPARATOR",
@@ -2490,7 +2490,7 @@
             "occurrences": 13,
             "documents": 6,
             "support": 0.0038529934795494963,
-            "weight": 0.63108652949145
+            "weight": 0.34534573398558144
         },
         {
             "name": "SEPARATOR",
@@ -2501,7 +2501,7 @@
             "occurrences": 13,
             "documents": 2,
             "support": 0.0038529934795494963,
-            "weight": 0.31503721490490144
+            "weight": 0.18988863575633008
         },
         {
             "name": "SEPARATOR",
@@ -2512,7 +2512,7 @@
             "occurrences": 13,
             "documents": 3,
             "support": 0.0038529934795494963,
-            "weight": -0.10997656872993455
+            "weight": 0.031466913979849576
         },
         {
             "name": "SEPARATOR",
@@ -2523,7 +2523,7 @@
             "occurrences": 13,
             "documents": 1,
             "support": 0.0038529934795494963,
-            "weight": -0.24530431081836646
+            "weight": -0.4657815933971067
         },
         {
             "name": "SEPARATOR",
@@ -2534,7 +2534,7 @@
             "occurrences": 12,
             "documents": 6,
             "support": 0.0035566093657379964,
-            "weight": -0.34794473949310367
+            "weight": 0.35647056086368956
         },
         {
             "name": "SEPARATOR",
@@ -2545,7 +2545,7 @@
             "occurrences": 12,
             "documents": 5,
             "support": 0.0035566093657379964,
-            "weight": 0.7158155248368638
+            "weight": 0.3709241150863305
         },
         {
             "name": "SEPARATOR",
@@ -2556,7 +2556,7 @@
             "occurrences": 12,
             "documents": 5,
             "support": 0.0035566093657379964,
-            "weight": -0.12572996329856356
+            "weight": -0.7704139816919588
         },
         {
             "name": "SEPARATOR",
@@ -2567,7 +2567,7 @@
             "occurrences": 12,
             "documents": 4,
             "support": 0.0035566093657379964,
-            "weight": -0.29749355758837537
+            "weight": -0.14330267434415722
         },
         {
             "name": "SEPARATOR",
@@ -2578,7 +2578,7 @@
             "occurrences": 12,
             "documents": 7,
             "support": 0.0035566093657379964,
-            "weight": -0.12411350983738512
+            "weight": 0.08131219657348776
         },
         {
             "name": "SEPARATOR",
@@ -2589,7 +2589,7 @@
             "occurrences": 12,
             "documents": 8,
             "support": 0.0035566093657379964,
-            "weight": 0.2806920742529997
+            "weight": -0.02849499973964309
         },
         {
             "name": "SEPARATOR",
@@ -2600,7 +2600,7 @@
             "occurrences": 11,
             "documents": 8,
             "support": 0.003260225251926497,
-            "weight": -0.16439437117888356
+            "weight": 0.8314573341238507
         },
         {
             "name": "SEPARATOR",
@@ -2611,7 +2611,7 @@
             "occurrences": 11,
             "documents": 5,
             "support": 0.003260225251926497,
-            "weight": -0.8646231502333027
+            "weight": 0.24457462386211315
         },
         {
             "name": "SEPARATOR",
@@ -2622,7 +2622,7 @@
             "occurrences": 11,
             "documents": 4,
             "support": 0.003260225251926497,
-            "weight": 0.49924036837788166
+            "weight": -0.2392668999074984
         },
         {
             "name": "SEPARATOR",
@@ -2633,7 +2633,7 @@
             "occurrences": 11,
             "documents": 4,
             "support": 0.003260225251926497,
-            "weight": -0.2997753504492937
+            "weight": 0.5467872793020905
         },
         {
             "name": "SEPARATOR",
@@ -2644,7 +2644,7 @@
             "occurrences": 11,
             "documents": 5,
             "support": 0.003260225251926497,
-            "weight": -0.5581056811652594
+            "weight": 0.15117519604576435
         },
         {
             "name": "SEPARATOR",
@@ -2655,7 +2655,7 @@
             "occurrences": 11,
             "documents": 6,
             "support": 0.003260225251926497,
-            "weight": 0.8974347904932192
+            "weight": -0.26727150571845515
         },
         {
             "name": "SEPARATOR",
@@ -2666,7 +2666,7 @@
             "occurrences": 11,
             "documents": 5,
             "support": 0.003260225251926497,
-            "weight": -0.4611526888402485
+            "weight": 0.8043250980144119
         },
         {
             "name": "SEPARATOR",
@@ -2677,7 +2677,7 @@
             "occurrences": 11,
             "documents": 6,
             "support": 0.003260225251926497,
-            "weight": -0.0996067171215469
+            "weight": 0.008794464099365129
         },
         {
             "name": "SEPARATOR",
@@ -2688,7 +2688,7 @@
             "occurrences": 10,
             "documents": 5,
             "support": 0.002963841138114997,
-            "weight": 0.1287902414025912
+            "weight": 0.14044600673084062
         },
         {
             "name": "SEPARATOR",
@@ -2699,7 +2699,7 @@
             "occurrences": 10,
             "documents": 5,
             "support": 0.002963841138114997,
-            "weight": -0.3228509823572998
+            "weight": 0.9108721693153785
         },
         {
             "name": "SEPARATOR",
@@ -2710,7 +2710,7 @@
             "occurrences": 10,
             "documents": 3,
             "support": 0.002963841138114997,
-            "weight": -0.2277974444341504
+            "weight": 0.9401523509286178
         },
         {
             "name": "SEPARATOR",
@@ -2721,7 +2721,7 @@
             "occurrences": 10,
             "documents": 5,
             "support": 0.002963841138114997,
-            "weight": 0.4516551158279327
+            "weight": -0.7499684292677717
         },
         {
             "name": "SEPARATOR",
@@ -2732,7 +2732,7 @@
             "occurrences": 10,
             "documents": 6,
             "support": 0.002963841138114997,
-            "weight": -0.6919883035828369
+            "weight": -0.3448712545276351
         },
         {
             "name": "SEPARATOR",
@@ -2743,7 +2743,7 @@
             "occurrences": 10,
             "documents": 7,
             "support": 0.002963841138114997,
-            "weight": 0.1703917106519135
+            "weight": 0.09210474772974941
         },
         {
             "name": "SEPARATOR",
@@ -2754,7 +2754,7 @@
             "occurrences": 10,
             "documents": 2,
             "support": 0.002963841138114997,
-            "weight": -0.6816024804684406
+            "weight": 0.6843795259826155
         },
         {
             "name": "SEPARATOR",
@@ -2765,7 +2765,7 @@
             "occurrences": 10,
             "documents": 5,
             "support": 0.002963841138114997,
-            "weight": -0.7764399063531754
+            "weight": 0.20634840613034733
         },
         {
             "name": "SEPARATOR",
@@ -2776,7 +2776,7 @@
             "occurrences": 10,
             "documents": 6,
             "support": 0.002963841138114997,
-            "weight": -0.6430967724410386
+            "weight": -0.25430721263350375
         },
         {
             "name": "SEPARATOR",
@@ -2787,7 +2787,7 @@
             "occurrences": 9,
             "documents": 5,
             "support": 0.0026674570243034974,
-            "weight": 0.05681566896643986
+            "weight": 0.6545371585847366
         },
         {
             "name": "SEPARATOR",
@@ -2798,7 +2798,7 @@
             "occurrences": 9,
             "documents": 5,
             "support": 0.0026674570243034974,
-            "weight": 0.007225666760044325
+            "weight": 0.5943137725400276
         },
         {
             "name": "SEPARATOR",
@@ -2809,7 +2809,7 @@
             "occurrences": 9,
             "documents": 1,
             "support": 0.0026674570243034974,
-            "weight": -0.19955511834642548
+            "weight": 0.24329796261982173
         },
         {
             "name": "SEPARATOR",
@@ -2820,7 +2820,7 @@
             "occurrences": 9,
             "documents": 5,
             "support": 0.0026674570243034974,
-            "weight": 0.22777432224987892
+            "weight": 0.0521129467075383
         },
         {
             "name": "SEPARATOR",
@@ -2831,7 +2831,7 @@
             "occurrences": 9,
             "documents": 2,
             "support": 0.0026674570243034974,
-            "weight": 0.932447630254629
+            "weight": 0.8686704162803265
         },
         {
             "name": "SEPARATOR",
@@ -2842,7 +2842,7 @@
             "occurrences": 9,
             "documents": 3,
             "support": 0.0026674570243034974,
-            "weight": -0.009846598705478882
+            "weight": 0.5508125238645702
         },
         {
             "name": "SEPARATOR",
@@ -2853,7 +2853,7 @@
             "occurrences": 9,
             "documents": 1,
             "support": 0.0026674570243034974,
-            "weight": -0.20720870325992635
+            "weight": 0.3367673758994387
         },
         {
             "name": "SEPARATOR",
@@ -2864,7 +2864,7 @@
             "occurrences": 9,
             "documents": 4,
             "support": 0.0026674570243034974,
-            "weight": 0.25306546919214856
+            "weight": -0.1439695606328023
         },
         {
             "name": "SEPARATOR",
@@ -2875,7 +2875,7 @@
             "occurrences": 9,
             "documents": 2,
             "support": 0.0026674570243034974,
-            "weight": 0.09624707303819346
+            "weight": 0.15698086123603927
         },
         {
             "name": "SEPARATOR",
@@ -2886,7 +2886,7 @@
             "occurrences": 8,
             "documents": 3,
             "support": 0.0023710729104919974,
-            "weight": -0.7778177928305762
+            "weight": 0.4765728864278822
         },
         {
             "name": "SEPARATOR",
@@ -2897,7 +2897,7 @@
             "occurrences": 8,
             "documents": 5,
             "support": 0.0023710729104919974,
-            "weight": 0.3104891440952444
+            "weight": 0.8146221394592548
         },
         {
             "name": "SEPARATOR",
@@ -2908,7 +2908,7 @@
             "occurrences": 8,
             "documents": 4,
             "support": 0.0023710729104919974,
-            "weight": -0.6379300299851262
+            "weight": -0.17506159389881026
         },
         {
             "name": "SEPARATOR",
@@ -2919,7 +2919,7 @@
             "occurrences": 8,
             "documents": 5,
             "support": 0.0023710729104919974,
-            "weight": 0.5899857709386842
+            "weight": -0.4488683618178684
         },
         {
             "name": "SEPARATOR",
@@ -2930,7 +2930,7 @@
             "occurrences": 8,
             "documents": 4,
             "support": 0.0023710729104919974,
-            "weight": 0.0642130677694206
+            "weight": 0.9344545534992197
         },
         {
             "name": "SEPARATOR",
@@ -2941,7 +2941,7 @@
             "occurrences": 8,
             "documents": 1,
             "support": 0.0023710729104919974,
-            "weight": 0.5344317419483289
+            "weight": -0.7315416595962188
         },
         {
             "name": "SEPARATOR",
@@ -2952,7 +2952,7 @@
             "occurrences": 8,
             "documents": 1,
             "support": 0.0023710729104919974,
-            "weight": -0.8731453876184416
+            "weight": -0.2652807254520837
         },
         {
             "name": "SEPARATOR",
@@ -2963,7 +2963,7 @@
             "occurrences": 8,
             "documents": 4,
             "support": 0.0023710729104919974,
-            "weight": -0.20399242380616878
+            "weight": -0.2704217171584883
         },
         {
             "name": "SEPARATOR",
@@ -2974,7 +2974,7 @@
             "occurrences": 8,
             "documents": 3,
             "support": 0.0023710729104919974,
-            "weight": 0.8433876234269211
+            "weight": 0.03639510953815339
         },
         {
             "name": "SEPARATOR",
@@ -2985,7 +2985,7 @@
             "occurrences": 8,
             "documents": 2,
             "support": 0.0023710729104919974,
-            "weight": 0.31281315601678505
+            "weight": 0.6936013699219652
         },
         {
             "name": "SEPARATOR",
@@ -2996,7 +2996,7 @@
             "occurrences": 7,
             "documents": 6,
             "support": 0.002074688796680498,
-            "weight": -0.5759634836399674
+            "weight": 0.34776978131218295
         },
         {
             "name": "SEPARATOR",
@@ -3007,7 +3007,7 @@
             "occurrences": 7,
             "documents": 3,
             "support": 0.002074688796680498,
-            "weight": -0.8272179449567172
+            "weight": -0.7334429330419362
         },
         {
             "name": "SEPARATOR",
@@ -3018,7 +3018,7 @@
             "occurrences": 7,
             "documents": 6,
             "support": 0.002074688796680498,
-            "weight": 0.09542754326697667
+            "weight": -0.7199095402697293
         },
         {
             "name": "SEPARATOR",
@@ -3029,7 +3029,7 @@
             "occurrences": 7,
             "documents": 5,
             "support": 0.002074688796680498,
-            "weight": 0.22384370939864007
+            "weight": -0.7062790332484193
         },
         {
             "name": "SEPARATOR",
@@ -3040,7 +3040,7 @@
             "occurrences": 7,
             "documents": 4,
             "support": 0.002074688796680498,
-            "weight": -0.7509532357638609
+            "weight": 0.6649146888005864
         },
         {
             "name": "SEPARATOR",
@@ -3051,7 +3051,7 @@
             "occurrences": 7,
             "documents": 5,
             "support": 0.002074688796680498,
-            "weight": -0.419300597172922
+            "weight": -0.6134191338300383
         },
         {
             "name": "SEPARATOR",
@@ -3062,7 +3062,7 @@
             "occurrences": 7,
             "documents": 5,
             "support": 0.002074688796680498,
-            "weight": 0.2003651918012892
+            "weight": -0.5133667570663463
         },
         {
             "name": "SEPARATOR",
@@ -3073,7 +3073,7 @@
             "occurrences": 7,
             "documents": 3,
             "support": 0.002074688796680498,
-            "weight": 0.0031192059001838857
+            "weight": 0.9191425383114205
         },
         {
             "name": "SEPARATOR",
@@ -3084,7 +3084,7 @@
             "occurrences": 7,
             "documents": 4,
             "support": 0.002074688796680498,
-            "weight": -0.2427736599447884
+            "weight": -0.40402834892458106
         },
         {
             "name": "SEPARATOR",
@@ -3095,7 +3095,7 @@
             "occurrences": 7,
             "documents": 4,
             "support": 0.002074688796680498,
-            "weight": 0.08426926257429845
+            "weight": -0.22186353042633322
         },
         {
             "name": "SEPARATOR",
@@ -3106,7 +3106,7 @@
             "occurrences": 7,
             "documents": 3,
             "support": 0.002074688796680498,
-            "weight": 0.3259696379136856
+            "weight": 0.03550560043241058
         },
         {
             "name": "SEPARATOR",
@@ -3117,7 +3117,7 @@
             "occurrences": 7,
             "documents": 3,
             "support": 0.002074688796680498,
-            "weight": 0.3710930834263615
+            "weight": -0.2720454290928339
         },
         {
             "name": "SEPARATOR",
@@ -3128,7 +3128,7 @@
             "occurrences": 7,
             "documents": 3,
             "support": 0.002074688796680498,
-            "weight": 0.8072981240996713
+            "weight": -0.4835538283753219
         },
         {
             "name": "SEPARATOR",
@@ -3139,7 +3139,7 @@
             "occurrences": 6,
             "documents": 2,
             "support": 0.0017783046828689982,
-            "weight": 0.33981632981215193
+            "weight": -0.0628038091772194
         },
         {
             "name": "SEPARATOR",
@@ -3150,7 +3150,7 @@
             "occurrences": 6,
             "documents": 3,
             "support": 0.0017783046828689982,
-            "weight": -0.08293231145906232
+            "weight": 0.3030663143854677
         },
         {
             "name": "SEPARATOR",
@@ -3161,7 +3161,7 @@
             "occurrences": 6,
             "documents": 4,
             "support": 0.0017783046828689982,
-            "weight": 0.1984817397571954
+            "weight": 0.07175490096838044
         },
         {
             "name": "SEPARATOR",
@@ -3172,7 +3172,7 @@
             "occurrences": 6,
             "documents": 3,
             "support": 0.0017783046828689982,
-            "weight": -0.2445058442248631
+            "weight": 0.6687095849609046
         },
         {
             "name": "SEPARATOR",
@@ -3183,7 +3183,7 @@
             "occurrences": 6,
             "documents": 2,
             "support": 0.0017783046828689982,
-            "weight": 0.8365676811892602
+            "weight": 0.5855318326864087
         },
         {
             "name": "SEPARATOR",
@@ -3194,7 +3194,7 @@
             "occurrences": 6,
             "documents": 2,
             "support": 0.0017783046828689982,
-            "weight": 0.4944641077147782
+            "weight": -0.3506460875576376
         },
         {
             "name": "SEPARATOR",
@@ -3205,7 +3205,7 @@
             "occurrences": 6,
             "documents": 4,
             "support": 0.0017783046828689982,
-            "weight": 0.3069726450654835
+            "weight": 0.08659610227825998
         },
         {
             "name": "SEPARATOR",
@@ -3216,7 +3216,7 @@
             "occurrences": 6,
             "documents": 2,
             "support": 0.0017783046828689982,
-            "weight": 0.3578356475608322
+            "weight": -0.6686745494228994
         },
         {
             "name": "SEPARATOR",
@@ -3227,7 +3227,7 @@
             "occurrences": 6,
             "documents": 4,
             "support": 0.0017783046828689982,
-            "weight": 0.27035139508215345
+            "weight": 0.2166898889269866
         },
         {
             "name": "SEPARATOR",
@@ -3238,7 +3238,7 @@
             "occurrences": 6,
             "documents": 5,
             "support": 0.0017783046828689982,
-            "weight": -0.3294319453611253
+            "weight": 0.04257503672979679
         },
         {
             "name": "SEPARATOR",
@@ -3249,7 +3249,7 @@
             "occurrences": 6,
             "documents": 3,
             "support": 0.0017783046828689982,
-            "weight": 0.18379471066600317
+            "weight": 0.7503145632140571
         },
         {
             "name": "SEPARATOR",
@@ -3260,7 +3260,7 @@
             "occurrences": 6,
             "documents": 4,
             "support": 0.0017783046828689982,
-            "weight": -0.3904841914746424
+            "weight": -0.7129883077081118
         },
         {
             "name": "SEPARATOR",
@@ -3271,7 +3271,7 @@
             "occurrences": 6,
             "documents": 2,
             "support": 0.0017783046828689982,
-            "weight": -0.866850301917248
+            "weight": 0.16094643551031584
         },
         {
             "name": "SEPARATOR",
@@ -3282,7 +3282,7 @@
             "occurrences": 6,
             "documents": 4,
             "support": 0.0017783046828689982,
-            "weight": -0.14299398435563904
+            "weight": -0.31764649806500334
         },
         {
             "name": "SEPARATOR",
@@ -3293,7 +3293,7 @@
             "occurrences": 6,
             "documents": 1,
             "support": 0.0017783046828689982,
-            "weight": -0.15481260046005807
+            "weight": 0.07069643558872296
         },
         {
             "name": "SEPARATOR",
@@ -3304,7 +3304,7 @@
             "occurrences": 6,
             "documents": 2,
             "support": 0.0017783046828689982,
-            "weight": 0.5811705835308087
+            "weight": 0.648951980894682
         },
         {
             "name": "SEPARATOR",
@@ -3315,7 +3315,7 @@
             "occurrences": 6,
             "documents": 3,
             "support": 0.0017783046828689982,
-            "weight": 0.19955605073285332
+            "weight": 0.2436946915629974
         },
         {
             "name": "SEPARATOR",
@@ -3326,7 +3326,7 @@
             "occurrences": 6,
             "documents": 3,
             "support": 0.0017783046828689982,
-            "weight": 0.3387477883664931
+            "weight": -0.08459370748859207
         },
         {
             "name": "SEPARATOR",
@@ -3337,7 +3337,7 @@
             "occurrences": 6,
             "documents": 4,
             "support": 0.0017783046828689982,
-            "weight": 0.19053963682510888
+            "weight": -0.8465218797636344
         },
         {
             "name": "SEPARATOR",
@@ -3348,7 +3348,7 @@
             "occurrences": 6,
             "documents": 3,
             "support": 0.0017783046828689982,
-            "weight": 0.24640002908589187
+            "weight": -0.282839226310621
         },
         {
             "name": "SEPARATOR",
@@ -3359,7 +3359,7 @@
             "occurrences": 6,
             "documents": 1,
             "support": 0.0017783046828689982,
-            "weight": -0.09566716066425207
+            "weight": 0.713822262973423
         },
         {
             "name": "SEPARATOR",
@@ -3370,7 +3370,7 @@
             "occurrences": 5,
             "documents": 3,
             "support": 0.0014819205690574985,
-            "weight": -0.00891000688211352
+            "weight": -0.26765474180869997
         },
         {
             "name": "SEPARATOR",
@@ -3381,7 +3381,7 @@
             "occurrences": 5,
             "documents": 4,
             "support": 0.0014819205690574985,
-            "weight": -0.1466917559465296
+            "weight": 0.11067638623149323
         },
         {
             "name": "SEPARATOR",
@@ -3392,7 +3392,7 @@
             "occurrences": 5,
             "documents": 3,
             "support": 0.0014819205690574985,
-            "weight": -0.30851767413452913
+            "weight": -0.5749465709811552
         },
         {
             "name": "SEPARATOR",
@@ -3403,7 +3403,7 @@
             "occurrences": 5,
             "documents": 4,
             "support": 0.0014819205690574985,
-            "weight": -0.0005519304791430368
+            "weight": 0.20316642134230278
         },
         {
             "name": "SEPARATOR",
@@ -3414,7 +3414,7 @@
             "occurrences": 5,
             "documents": 4,
             "support": 0.0014819205690574985,
-            "weight": -0.1103398628085478
+            "weight": 0.17324570311882947
         },
         {
             "name": "SEPARATOR",
@@ -3425,7 +3425,7 @@
             "occurrences": 5,
             "documents": 1,
             "support": 0.0014819205690574985,
-            "weight": -0.36186739007139745
+            "weight": -0.8805093325754876
         },
         {
             "name": "SEPARATOR",
@@ -3436,7 +3436,7 @@
             "occurrences": 5,
             "documents": 3,
             "support": 0.0014819205690574985,
-            "weight": -0.7973763223309587
+            "weight": 0.5537089051129689
         },
         {
             "name": "SEPARATOR",
@@ -3447,7 +3447,7 @@
             "occurrences": 5,
             "documents": 3,
             "support": 0.0014819205690574985,
-            "weight": 0.6446621832363963
+            "weight": -0.4586138927690686
         },
         {
             "name": "SEPARATOR",
@@ -3458,7 +3458,7 @@
             "occurrences": 5,
             "documents": 3,
             "support": 0.0014819205690574985,
-            "weight": 0.9179412698716014
+            "weight": 0.26520796631789434
         },
         {
             "name": "SEPARATOR",
@@ -3469,7 +3469,7 @@
             "occurrences": 5,
             "documents": 3,
             "support": 0.0014819205690574985,
-            "weight": -0.5243141851978675
+            "weight": -0.7707317301730551
         },
         {
             "name": "SEPARATOR",
@@ -3480,7 +3480,7 @@
             "occurrences": 5,
             "documents": 3,
             "support": 0.0014819205690574985,
-            "weight": 0.36687149126111906
+            "weight": -0.8314829480414493
         },
         {
             "name": "SEPARATOR",
@@ -3491,7 +3491,7 @@
             "occurrences": 5,
             "documents": 4,
             "support": 0.0014819205690574985,
-            "weight": -0.48513267989904907
+            "weight": 0.6081324558491743
         },
         {
             "name": "SEPARATOR",
@@ -3502,7 +3502,7 @@
             "occurrences": 5,
             "documents": 2,
             "support": 0.0014819205690574985,
-            "weight": 0.192924101858994
+            "weight": 0.3120928193603032
         },
         {
             "name": "SEPARATOR",
@@ -3513,7 +3513,7 @@
             "occurrences": 5,
             "documents": 3,
             "support": 0.0014819205690574985,
-            "weight": -0.42023671133274443
+            "weight": 0.08512203919294947
         },
         {
             "name": "SEPARATOR",
@@ -3524,7 +3524,7 @@
             "occurrences": 5,
             "documents": 3,
             "support": 0.0014819205690574985,
-            "weight": -0.34824878778722435
+            "weight": -0.0029958293700290684
         },
         {
             "name": "SEPARATOR",
@@ -3535,7 +3535,7 @@
             "occurrences": 5,
             "documents": 3,
             "support": 0.0014819205690574985,
-            "weight": -0.11242515527044716
+            "weight": -0.20758149192264586
         },
         {
             "name": "SEPARATOR",
@@ -3546,7 +3546,7 @@
             "occurrences": 5,
             "documents": 3,
             "support": 0.0014819205690574985,
-            "weight": 0.383403348702237
+            "weight": 0.9500886593544575
         },
         {
             "name": "SEPARATOR",
@@ -3557,7 +3557,7 @@
             "occurrences": 5,
             "documents": 2,
             "support": 0.0014819205690574985,
-            "weight": -0.47545331453141204
+            "weight": -0.4457922936351941
         },
         {
             "name": "SEPARATOR",
@@ -3568,7 +3568,7 @@
             "occurrences": 5,
             "documents": 2,
             "support": 0.0014819205690574985,
-            "weight": 0.2294466444774783
+            "weight": -0.6335331136777752
         },
         {
             "name": "SEPARATOR",
@@ -3579,7 +3579,7 @@
             "occurrences": 5,
             "documents": 2,
             "support": 0.0014819205690574985,
-            "weight": -0.5605051900482159
+            "weight": -0.4944500547445454
         },
         {
             "name": "SEPARATOR",
@@ -3590,7 +3590,7 @@
             "occurrences": 5,
             "documents": 2,
             "support": 0.0014819205690574985,
-            "weight": 0.459116100460512
+            "weight": -0.5193407884876156
         },
         {
             "name": "SEPARATOR",
@@ -3601,7 +3601,7 @@
             "occurrences": 5,
             "documents": 3,
             "support": 0.0014819205690574985,
-            "weight": 0.48618666448444703
+            "weight": -0.595350281508048
         },
         {
             "name": "SEPARATOR",
@@ -3612,7 +3612,7 @@
             "occurrences": 5,
             "documents": 4,
             "support": 0.0014819205690574985,
-            "weight": 0.4395792999865529
+            "weight": -0.3096044388804957
         },
         {
             "name": "SEPARATOR",
@@ -3623,7 +3623,7 @@
             "occurrences": 5,
             "documents": 2,
             "support": 0.0014819205690574985,
-            "weight": -0.4215626836753501
+            "weight": -0.06938819675837749
         },
         {
             "name": "SEPARATOR",
@@ -3634,7 +3634,7 @@
             "occurrences": 5,
             "documents": 3,
             "support": 0.0014819205690574985,
-            "weight": 0.061154139259500306
+            "weight": 0.15187766077105636
         },
         {
             "name": "SEPARATOR",
@@ -3645,7 +3645,7 @@
             "occurrences": 5,
             "documents": 1,
             "support": 0.0014819205690574985,
-            "weight": 0.31535296587980466
+            "weight": -0.2510460150259959
         },
         {
             "name": "SEPARATOR",
@@ -3656,7 +3656,7 @@
             "occurrences": 5,
             "documents": 1,
             "support": 0.0014819205690574985,
-            "weight": 0.4090744236691879
+            "weight": -0.298812262822434
         },
         {
             "name": "SEPARATOR",
@@ -3667,7 +3667,7 @@
             "occurrences": 4,
             "documents": 3,
             "support": 0.0011855364552459987,
-            "weight": 0.030000830213947394
+            "weight": -0.5112628339775518
         },
         {
             "name": "SEPARATOR",
@@ -3678,7 +3678,7 @@
             "occurrences": 4,
             "documents": 2,
             "support": 0.0011855364552459987,
-            "weight": -0.7314464311550855
+            "weight": -0.7222675612209892
         },
         {
             "name": "SEPARATOR",
@@ -3689,7 +3689,7 @@
             "occurrences": 4,
             "documents": 1,
             "support": 0.0011855364552459987,
-            "weight": 0.41332161675052603
+            "weight": 0.6524734613298435
         },
         {
             "name": "SEPARATOR",
@@ -3700,7 +3700,7 @@
             "occurrences": 4,
             "documents": 3,
             "support": 0.0011855364552459987,
-            "weight": 0.14387155750115266
+            "weight": 0.5051881085894747
         },
         {
             "name": "SEPARATOR",
@@ -3711,7 +3711,7 @@
             "occurrences": 4,
             "documents": 3,
             "support": 0.0011855364552459987,
-            "weight": -0.21948964054126419
+            "weight": 0.32619784877749924
         },
         {
             "name": "SEPARATOR",
@@ -3722,7 +3722,7 @@
             "occurrences": 4,
             "documents": 3,
             "support": 0.0011855364552459987,
-            "weight": -0.15651748171030855
+            "weight": -0.30775050810055127
         },
         {
             "name": "SEPARATOR",
@@ -3733,7 +3733,7 @@
             "occurrences": 4,
             "documents": 2,
             "support": 0.0011855364552459987,
-            "weight": 0.4069575280646136
+            "weight": -0.24386164177400727
         },
         {
             "name": "SEPARATOR",
@@ -3744,7 +3744,7 @@
             "occurrences": 4,
             "documents": 2,
             "support": 0.0011855364552459987,
-            "weight": 0.8624161150901763
+            "weight": -0.32238385024966565
         },
         {
             "name": "SEPARATOR",
@@ -3755,7 +3755,7 @@
             "occurrences": 4,
             "documents": 4,
             "support": 0.0011855364552459987,
-            "weight": -0.4741501123400247
+            "weight": 0.015586261716377336
         },
         {
             "name": "SEPARATOR",
@@ -3766,7 +3766,7 @@
             "occurrences": 4,
             "documents": 3,
             "support": 0.0011855364552459987,
-            "weight": 0.09870624188229882
+            "weight": 0.023986426709270647
         },
         {
             "name": "SEPARATOR",
@@ -3777,7 +3777,7 @@
             "occurrences": 4,
             "documents": 1,
             "support": 0.0011855364552459987,
-            "weight": -0.8841029696958143
+            "weight": 0.8994692208224875
         },
         {
             "name": "SEPARATOR",
@@ -3788,7 +3788,7 @@
             "occurrences": 4,
             "documents": 3,
             "support": 0.0011855364552459987,
-            "weight": -0.6249155938819861
+            "weight": 0.6080897759323047
         },
         {
             "name": "SEPARATOR",
@@ -3799,7 +3799,7 @@
             "occurrences": 4,
             "documents": 3,
             "support": 0.0011855364552459987,
-            "weight": 0.8345639976548971
+            "weight": 0.6906692544033581
         },
         {
             "name": "SEPARATOR",
@@ -3810,7 +3810,7 @@
             "occurrences": 4,
             "documents": 3,
             "support": 0.0011855364552459987,
-            "weight": 0.34151379002033355
+            "weight": -0.9824133971750588
         },
         {
             "name": "SEPARATOR",
@@ -3821,7 +3821,7 @@
             "occurrences": 4,
             "documents": 3,
             "support": 0.0011855364552459987,
-            "weight": -0.8757743134291865
+            "weight": 0.39467132105790736
         },
         {
             "name": "SEPARATOR",
@@ -3832,7 +3832,7 @@
             "occurrences": 4,
             "documents": 1,
             "support": 0.0011855364552459987,
-            "weight": -0.061633112098704146
+            "weight": 0.7919087798985227
         },
         {
             "name": "SEPARATOR",
@@ -3843,7 +3843,7 @@
             "occurrences": 4,
             "documents": 2,
             "support": 0.0011855364552459987,
-            "weight": 0.7347481490439634
+            "weight": -0.31506259129375747
         },
         {
             "name": "SEPARATOR",
@@ -3854,7 +3854,7 @@
             "occurrences": 4,
             "documents": 2,
             "support": 0.0011855364552459987,
-            "weight": 0.3548072251830017
+            "weight": -0.7250102499022508
         },
         {
             "name": "SEPARATOR",
@@ -3865,7 +3865,7 @@
             "occurrences": 4,
             "documents": 3,
             "support": 0.0011855364552459987,
-            "weight": 0.20595028660628634
+            "weight": 0.20014659996172202
         },
         {
             "name": "SEPARATOR",
@@ -3876,7 +3876,7 @@
             "occurrences": 4,
             "documents": 1,
             "support": 0.0011855364552459987,
-            "weight": -0.02752238108042393
+            "weight": 0.4349047133767012
         },
         {
             "name": "SEPARATOR",
@@ -3887,7 +3887,7 @@
             "occurrences": 4,
             "documents": 1,
             "support": 0.0011855364552459987,
-            "weight": -0.2162645483755522
+            "weight": -0.8946522138156188
         },
         {
             "name": "SEPARATOR",
@@ -3898,7 +3898,7 @@
             "occurrences": 4,
             "documents": 3,
             "support": 0.0011855364552459987,
-            "weight": -0.35794696713851426
+            "weight": -0.856447473560283
         },
         {
             "name": "SEPARATOR",
@@ -3909,7 +3909,7 @@
             "occurrences": 4,
             "documents": 1,
             "support": 0.0011855364552459987,
-            "weight": -0.7280433469290816
+            "weight": 0.9512605646339622
         },
         {
             "name": "SEPARATOR",
@@ -3920,7 +3920,7 @@
             "occurrences": 4,
             "documents": 1,
             "support": 0.0011855364552459987,
-            "weight": -0.5531812841924449
+            "weight": -0.15839408272091293
         },
         {
             "name": "SEPARATOR",
@@ -3931,7 +3931,7 @@
             "occurrences": 4,
             "documents": 3,
             "support": 0.0011855364552459987,
-            "weight": 0.9067850538560402
+            "weight": 0.7739634445218444
         },
         {
             "name": "SEPARATOR",
@@ -3942,7 +3942,7 @@
             "occurrences": 4,
             "documents": 3,
             "support": 0.0011855364552459987,
-            "weight": -0.5227734050568733
+            "weight": -0.33501956010890976
         },
         {
             "name": "SEPARATOR",
@@ -3953,7 +3953,7 @@
             "occurrences": 4,
             "documents": 3,
             "support": 0.0011855364552459987,
-            "weight": 0.5035635937233716
+            "weight": 0.8161304783696708
         },
         {
             "name": "SEPARATOR",
@@ -3964,7 +3964,7 @@
             "occurrences": 4,
             "documents": 2,
             "support": 0.0011855364552459987,
-            "weight": -0.442252134793948
+            "weight": 0.06832101864098816
         },
         {
             "name": "SEPARATOR",
@@ -3975,7 +3975,7 @@
             "occurrences": 4,
             "documents": 3,
             "support": 0.0011855364552459987,
-            "weight": -0.13349744579929745
+            "weight": 0.6779354144386505
         },
         {
             "name": "SEPARATOR",
@@ -3986,7 +3986,7 @@
             "occurrences": 4,
             "documents": 3,
             "support": 0.0011855364552459987,
-            "weight": 0.00910253967868524
+            "weight": 0.48626860576565134
         },
         {
             "name": "SEPARATOR",
@@ -3997,7 +3997,7 @@
             "occurrences": 4,
             "documents": 2,
             "support": 0.0011855364552459987,
-            "weight": 0.4782839948209676
+            "weight": -0.056583684734148765
         },
         {
             "name": "SEPARATOR",
@@ -4008,7 +4008,7 @@
             "occurrences": 4,
             "documents": 1,
             "support": 0.0011855364552459987,
-            "weight": 0.46839227615927914
+            "weight": -0.7730469931761823
         },
         {
             "name": "SEPARATOR",
@@ -4019,7 +4019,7 @@
             "occurrences": 4,
             "documents": 1,
             "support": 0.0011855364552459987,
-            "weight": 0.6953268128615233
+            "weight": -0.39367024587621136
         },
         {
             "name": "SEPARATOR",
@@ -4030,7 +4030,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": 0.12347071035820534
+            "weight": -0.8967030982269801
         },
         {
             "name": "SEPARATOR",
@@ -4041,7 +4041,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0008891523414344991,
-            "weight": -0.13719340235673838
+            "weight": 0.8849142992487946
         },
         {
             "name": "SEPARATOR",
@@ -4052,7 +4052,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": 0.06738795714529155
+            "weight": -0.13235965162919228
         },
         {
             "name": "SEPARATOR",
@@ -4063,7 +4063,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0008891523414344991,
-            "weight": 0.5651994530568312
+            "weight": 0.0753453863725091
         },
         {
             "name": "SEPARATOR",
@@ -4074,7 +4074,7 @@
             "occurrences": 3,
             "documents": 3,
             "support": 0.0008891523414344991,
-            "weight": 0.04898811829001315
+            "weight": 0.887913245333062
         },
         {
             "name": "SEPARATOR",
@@ -4085,7 +4085,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": -0.7886066922641671
+            "weight": 0.37992871414165075
         },
         {
             "name": "SEPARATOR",
@@ -4096,7 +4096,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": 0.1177852749622279
+            "weight": -0.4059322900825836
         },
         {
             "name": "SEPARATOR",
@@ -4107,7 +4107,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": 0.8205155910176813
+            "weight": -0.09824955266563362
         },
         {
             "name": "SEPARATOR",
@@ -4118,7 +4118,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0008891523414344991,
-            "weight": 0.05977144326154127
+            "weight": -0.3191037452690817
         },
         {
             "name": "SEPARATOR",
@@ -4129,7 +4129,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0008891523414344991,
-            "weight": -0.28001158350996924
+            "weight": 0.22083173407981938
         },
         {
             "name": "SEPARATOR",
@@ -4140,7 +4140,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": -0.7968481812269823
+            "weight": -0.05880243311841493
         },
         {
             "name": "SEPARATOR",
@@ -4151,7 +4151,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": 0.4099652571112178
+            "weight": -0.5978315401141354
         },
         {
             "name": "SEPARATOR",
@@ -4162,7 +4162,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0008891523414344991,
-            "weight": 0.1715233163648029
+            "weight": -0.35292969342649727
         },
         {
             "name": "SEPARATOR",
@@ -4173,7 +4173,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0008891523414344991,
-            "weight": -0.48530698981844334
+            "weight": 0.023185266632867796
         },
         {
             "name": "SEPARATOR",
@@ -4184,7 +4184,7 @@
             "occurrences": 3,
             "documents": 3,
             "support": 0.0008891523414344991,
-            "weight": 0.046425921969533324
+            "weight": -0.5762584427662143
         },
         {
             "name": "SEPARATOR",
@@ -4195,7 +4195,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": 0.08236992301651824
+            "weight": 0.030186749862689766
         },
         {
             "name": "SEPARATOR",
@@ -4206,7 +4206,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": -0.013531234988312879
+            "weight": 0.47789830263819444
         },
         {
             "name": "SEPARATOR",
@@ -4217,7 +4217,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": 0.5647705356134403
+            "weight": 0.8471526238796674
         },
         {
             "name": "SEPARATOR",
@@ -4228,7 +4228,7 @@
             "occurrences": 3,
             "documents": 3,
             "support": 0.0008891523414344991,
-            "weight": -0.10044293018943695
+            "weight": -0.5369106866706269
         },
         {
             "name": "SEPARATOR",
@@ -4239,7 +4239,7 @@
             "occurrences": 3,
             "documents": 3,
             "support": 0.0008891523414344991,
-            "weight": -0.24299351487198628
+            "weight": 0.2405703585008243
         },
         {
             "name": "SEPARATOR",
@@ -4250,7 +4250,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": 0.7624423047002573
+            "weight": 0.8930982036305535
         },
         {
             "name": "SEPARATOR",
@@ -4261,7 +4261,7 @@
             "occurrences": 3,
             "documents": 3,
             "support": 0.0008891523414344991,
-            "weight": -0.25642714871513106
+            "weight": 0.9848067447428843
         },
         {
             "name": "SEPARATOR",
@@ -4272,7 +4272,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": -0.3145646073060768
+            "weight": -0.9855906372903687
         },
         {
             "name": "SEPARATOR",
@@ -4283,7 +4283,7 @@
             "occurrences": 3,
             "documents": 3,
             "support": 0.0008891523414344991,
-            "weight": -0.28642434151087126
+            "weight": 0.05261389584321008
         },
         {
             "name": "SEPARATOR",
@@ -4294,7 +4294,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": -0.028143138397785816
+            "weight": -0.31074679254828874
         },
         {
             "name": "SEPARATOR",
@@ -4305,7 +4305,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": 0.3510458549636928
+            "weight": 0.30176822982206297
         },
         {
             "name": "SEPARATOR",
@@ -4316,7 +4316,7 @@
             "occurrences": 3,
             "documents": 3,
             "support": 0.0008891523414344991,
-            "weight": 0.2659546339087815
+            "weight": -0.27083043090820136
         },
         {
             "name": "SEPARATOR",
@@ -4327,7 +4327,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0008891523414344991,
-            "weight": -0.015289398636897045
+            "weight": -0.32269729448979445
         },
         {
             "name": "SEPARATOR",
@@ -4338,7 +4338,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0008891523414344991,
-            "weight": 0.07438661271689084
+            "weight": -0.4748672184260804
         },
         {
             "name": "SEPARATOR",
@@ -4349,7 +4349,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0008891523414344991,
-            "weight": 0.2494005802812771
+            "weight": -0.34597652634018594
         },
         {
             "name": "SEPARATOR",
@@ -4360,7 +4360,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0008891523414344991,
-            "weight": -0.24900614090369833
+            "weight": 0.22085196244447225
         },
         {
             "name": "SEPARATOR",
@@ -4371,7 +4371,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": 0.30225605338002737
+            "weight": 0.3594243328957034
         },
         {
             "name": "SEPARATOR",
@@ -4382,7 +4382,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": -0.2956960617211186
+            "weight": -0.4590521294866663
         },
         {
             "name": "SEPARATOR",
@@ -4393,7 +4393,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": 0.12584072789446976
+            "weight": 0.3858733082196961
         },
         {
             "name": "SEPARATOR",
@@ -4404,7 +4404,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0008891523414344991,
-            "weight": 0.3138107480566561
+            "weight": -0.10923938394643073
         },
         {
             "name": "SEPARATOR",
@@ -4415,7 +4415,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": -0.10318633555502577
+            "weight": -0.6915735736139663
         },
         {
             "name": "SEPARATOR",
@@ -4426,7 +4426,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0008891523414344991,
-            "weight": 0.9197714559346066
+            "weight": 0.17824940382990517
         },
         {
             "name": "SEPARATOR",
@@ -4437,7 +4437,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": -0.189689303843684
+            "weight": 0.2827811742788946
         },
         {
             "name": "SEPARATOR",
@@ -4448,7 +4448,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0008891523414344991,
-            "weight": -0.2425879697470299
+            "weight": -0.6515217989848274
         },
         {
             "name": "SEPARATOR",
@@ -4459,7 +4459,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0008891523414344991,
-            "weight": 0.2596234270980058
+            "weight": -0.31782419342142665
         },
         {
             "name": "SEPARATOR",
@@ -4470,7 +4470,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": 0.15019285314143915
+            "weight": -0.8401144506811397
         },
         {
             "name": "SEPARATOR",
@@ -4481,7 +4481,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0008891523414344991,
-            "weight": -0.7170561160399127
+            "weight": -0.9958811206471896
         },
         {
             "name": "SEPARATOR",
@@ -4492,7 +4492,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": 0.49395795744681514
+            "weight": -0.23204059457248616
         },
         {
             "name": "SEPARATOR",
@@ -4503,7 +4503,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": 0.4901720729149006
+            "weight": -0.2359223089497341
         },
         {
             "name": "SEPARATOR",
@@ -4514,7 +4514,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0008891523414344991,
-            "weight": 0.0465006304522495
+            "weight": -0.48272782140844595
         },
         {
             "name": "SEPARATOR",
@@ -4525,7 +4525,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": 0.2986961150835783
+            "weight": -0.5406759814987779
         },
         {
             "name": "SEPARATOR",
@@ -4536,7 +4536,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": -0.006843775844193045
+            "weight": -0.36942717263789193
         },
         {
             "name": "SEPARATOR",
@@ -4547,7 +4547,7 @@
             "occurrences": 3,
             "documents": 3,
             "support": 0.0008891523414344991,
-            "weight": 0.9871537669381973
+            "weight": 0.2226505478419547
         },
         {
             "name": "SEPARATOR",
@@ -4558,7 +4558,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": -0.6165803124559409
+            "weight": -0.19342985444802197
         },
         {
             "name": "SEPARATOR",
@@ -4569,7 +4569,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": 0.8314317667751259
+            "weight": 0.47951758924890475
         },
         {
             "name": "SEPARATOR",
@@ -4580,7 +4580,7 @@
             "occurrences": 3,
             "documents": 3,
             "support": 0.0008891523414344991,
-            "weight": -0.029296280144796127
+            "weight": -0.4896079920218488
         },
         {
             "name": "SEPARATOR",
@@ -4591,7 +4591,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": 0.0074623388999977
+            "weight": -0.019406884617183318
         },
         {
             "name": "SEPARATOR",
@@ -4602,7 +4602,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": 0.7574164417285285
+            "weight": -0.9749822107404162
         },
         {
             "name": "SEPARATOR",
@@ -4613,7 +4613,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": -0.9043079601621875
+            "weight": 0.6049386599723763
         },
         {
             "name": "SEPARATOR",
@@ -4624,7 +4624,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": -0.30474525037792866
+            "weight": 0.10528628122868366
         },
         {
             "name": "SEPARATOR",
@@ -4635,7 +4635,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": -0.5973946412767104
+            "weight": -0.1812592446700293
         },
         {
             "name": "SEPARATOR",
@@ -4646,7 +4646,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0008891523414344991,
-            "weight": 0.12362644225669261
+            "weight": -0.058775371408422705
         },
         {
             "name": "SEPARATOR",
@@ -4657,7 +4657,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0008891523414344991,
-            "weight": 0.3613893714779135
+            "weight": -0.17364055477724172
         },
         {
             "name": "SEPARATOR",
@@ -4668,7 +4668,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": -0.08646783014273163
+            "weight": -0.189397266472923
         },
         {
             "name": "SEPARATOR",
@@ -4679,7 +4679,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": 0.06811055656810283
+            "weight": 0.02078463323461177
         },
         {
             "name": "SEPARATOR",
@@ -4690,7 +4690,7 @@
             "occurrences": 3,
             "documents": 3,
             "support": 0.0008891523414344991,
-            "weight": -0.8440252080483333
+            "weight": 0.5362995458266135
         },
         {
             "name": "SEPARATOR",
@@ -4701,7 +4701,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": 0.08490387344104056
+            "weight": -0.4654666973531947
         },
         {
             "name": "SEPARATOR",
@@ -4712,7 +4712,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0008891523414344991,
-            "weight": 0.46924302969237197
+            "weight": -0.001974469426847869
         },
         {
             "name": "SEPARATOR",
@@ -4723,7 +4723,7 @@
             "occurrences": 3,
             "documents": 2,
             "support": 0.0008891523414344991,
-            "weight": 0.11913590067103974
+            "weight": 0.5564737396029211
         },
         {
             "name": "SEPARATOR",
@@ -4734,7 +4734,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0008891523414344991,
-            "weight": -0.08020155644205673
+            "weight": -0.70136421528886
         },
         {
             "name": "SEPARATOR",
@@ -4745,7 +4745,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0008891523414344991,
-            "weight": 0.5420989900458362
+            "weight": 0.0902467368366362
         },
         {
             "name": "SEPARATOR",
@@ -4756,7 +4756,7 @@
             "occurrences": 3,
             "documents": 3,
             "support": 0.0008891523414344991,
-            "weight": -0.6467145005697128
+            "weight": -0.5339745550043015
         },
         {
             "name": "SEPARATOR",
@@ -4767,7 +4767,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0008891523414344991,
-            "weight": 0.2590261901974127
+            "weight": -0.9765688521330799
         },
         {
             "name": "SEPARATOR",
@@ -4778,7 +4778,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0008891523414344991,
-            "weight": 0.515879429421924
+            "weight": -0.04629636534518011
         },
         {
             "name": "SEPARATOR",
@@ -4789,7 +4789,7 @@
             "occurrences": 3,
             "documents": 1,
             "support": 0.0008891523414344991,
-            "weight": 0.25214520999249457
+            "weight": -0.589649886663436
         }
     ]
 }
