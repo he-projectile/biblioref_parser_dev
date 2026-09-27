@@ -3,9 +3,9 @@ import argparse
 import json
 import random
 from pathlib import Path
-import os
 import functools
 import time
+import os
 
 import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
@@ -428,6 +428,7 @@ def optimize(
     best_validation_iou = -1.0
     best_validation_weights = None
     best_validation_time = 0.0
+    best_validation_best_train_iou = -1.0
 
     objective = functools.partial(
         optimization_objective,
@@ -438,6 +439,7 @@ def optimize(
         nonlocal best_validation_iou
         nonlocal best_validation_weights
         nonlocal best_validation_time
+        nonlocal best_validation_best_train_iou
 
         train_mean_iou, _ = evaluate_weights(train, xk)
         validation_mean_iou, _ = evaluate_weights(validation, xk)
@@ -447,6 +449,13 @@ def optimize(
         iteration_history["time"].append(elapsed)
         iteration_history["train"].append(train_mean_iou)
         iteration_history["validation"].append(validation_mean_iou)
+
+        if validation_mean_iou == best_validation_iou:
+            if train_mean_iou > best_validation_best_train_iou:
+                best_validation_best_train_iou = train_mean_iou
+                best_validation_iou = validation_mean_iou
+                best_validation_weights = xk.copy()
+                best_validation_time = elapsed       
 
         if validation_mean_iou > best_validation_iou:
             best_validation_iou = validation_mean_iou
@@ -492,7 +501,7 @@ def optimize(
         init="latinhypercube",
         tol=TOL,
         polish=False,
-        workers=-1,
+        workers=max(1, os.cpu_count()-1),
         updating="deferred",
         disp=False,
         callback=callback

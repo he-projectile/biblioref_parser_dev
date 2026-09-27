@@ -15,8 +15,8 @@ CWT_MAX_SCALE = 75
 
 CWT_MEAN_MULTIPLIER = 2
 
-LENGTH_SIGMA_1 = 125
-LENGTH_OFFSET_1 = 225
+LENGTH_SIGMA_1 = 50
+LENGTH_OFFSET_1 = 350
 LENGTH_SIGMA_2 = 32
 LENGTH_OFFSET_2 = 46
 
@@ -491,13 +491,15 @@ def localizeBiblioBlockData(
     # Length penalty
     # --------------------------------------------------------
 
-    length_penalty = np.exp(
-        -(lengths - LENGTH_OFFSET_1) ** 2
-        / (2*LENGTH_SIGMA_1 ** 2)
-    )+np.exp(
-        -(lengths - LENGTH_OFFSET_2) ** 2
-        / (2*LENGTH_SIGMA_2 ** 2)
-    )
+    # length_penalty = np.exp(
+    #     -(lengths - LENGTH_OFFSET_1) ** 2
+    #     / (2*LENGTH_SIGMA_1 ** 2)
+    # )+np.exp(
+    #     -(lengths - LENGTH_OFFSET_2) ** 2
+    #     / (2*LENGTH_SIGMA_2 ** 2)
+    # )
+
+    length_penalty = 1.0/(1.0+np.exp((lengths-LENGTH_OFFSET_1)/LENGTH_SIGMA_1))
 
     filtered_scores = scores * length_penalty   
 
