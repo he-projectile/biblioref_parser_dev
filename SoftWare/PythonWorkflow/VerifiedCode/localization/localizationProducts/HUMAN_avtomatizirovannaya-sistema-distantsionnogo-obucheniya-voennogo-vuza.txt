@@ -26,888 +26,756 @@ PATTERNS:
    regex: \b[А-ЯЁ]\.
 11: DASH
    regex: [-–—]
-12: DOT
-   regex: \.
-13: DASH
+12: DASH
    regex: [-–—]
-14: COLON
-   regex: :
-15: COMMA
+13: DOT
+   regex: \.
+14: COMMA
    regex: ,
+15: COLON
+   regex: :
 16: NUMBER
    regex: \d+
 17: NUMBER
    regex: \d+
-18: DASH
-   regex: [-–—]
+18: QUOTATION
+   regex: [«»\"„“”]
 19: DOT
    regex: \.
-20: QUOTATION
-   regex: [«»\"„“”]
+20: DASH
+   regex: [-–—]
 21: DOT
    regex: \.
 22: INITIAL
    regex: \b[А-ЯЁ]\.
-23: YEAR
-   regex: (?<!\d)(17|18|19|20|21)\d{2}(?!\d)
+23: COLON
+   regex: :
 24: DOT
    regex: \.
 25: COLON
    regex: :
-26: COLON
-   regex: :
+26: YEAR
+   regex: (?<!\d)(17|18|19|20|21)\d{2}(?!\d)
 27: DASH
    regex: [-–—]
-28: NUMBER
+28: COMMA
+   regex: ,
+29: NUMBER
    regex: \d+
-29: DOT
-   regex: \.
 30: COMMA
    regex: ,
-31: COMMA
-   regex: ,
+31: DOT
+   regex: \.
 32: COMMA
    regex: ,
-33: DASH
-   regex: [-–—]
-34: INITIAL
+33: INITIAL
    regex: \b[А-ЯЁ]\.
+34: DASH
+   regex: [-–—]
 35: DOT
    regex: \.
-36: QUOTATION
-   regex: [«»\"„“”]
-37: DASH
-   regex: [-–—]
-38: QUOTATION
-   regex: [«»\"„“”]
-39: DOT
-   regex: \.
-40: URL
-   regex: (?:https?://|www\.)[^\s]+
-41: SLASH
-   regex: /
-42: PARENTHESIS
+36: PARENTHESIS
    regex: [()]
+37: QUOTATION
+   regex: [«»\"„“”]
+38: COMMA
+   regex: ,
+39: QUOTATION
+   regex: [«»\"„“”]
+40: DOT
+   regex: \.
+41: NUMBER
+   regex: \d+
+42: URL
+   regex: (?:https?://|www\.)[^\s]+
 43: DOUBLE_SLASH
    regex: //
 44: COLON
    regex: :
-45: COMMA
-   regex: ,
-46: NUMBER
-   regex: \d+
-47: DASH
-   regex: [-–—]
-48: PARENTHESIS
+45: SLASH
+   regex: /
+46: PARENTHESIS
    regex: [()]
-49: NUMBER
-   regex: \d+
-50: QUOTATION
+47: DOT
+   regex: \.
+48: QUOTATION
    regex: [«»\"„“”]
-51: NUMBER
-   regex: \d+
-52: PARENTHESIS
+49: DASH
+   regex: [-–—]
+50: INITIAL
+   regex: \b[А-ЯЁ]\.
+51: PARENTHESIS
    regex: [()]
+52: INITIALS
+   regex: \b[А-ЯЁ]\.\s*[А-ЯЁ]\.
 53: INITIAL
    regex: \b[А-ЯЁ]\.
-54: DOT
-   regex: \.
-55: INITIAL
-   regex: \b[А-ЯЁ]\.
-56: INITIALS
+54: INITIALS
    regex: \b[А-ЯЁ]\.\s*[А-ЯЁ]\.
-57: INITIALS
-   regex: \b[А-ЯЁ]\.\s*[А-ЯЁ]\.
-58: NUMBER
-   regex: \d+
-59: YEAR
-   regex: (?<!\d)(17|18|19|20|21)\d{2}(?!\d)
-60: SLASH
+55: SLASH
    regex: /
-61: PARENTHESIS
-   regex: [()]
-62: INITIAL
-   regex: \b[А-ЯЁ]\.
-63: YEAR
-   regex: (?<!\d)(17|18|19|20|21)\d{2}(?!\d)
-64: ENTITY_SHAPE
+56: NUMBER
    regex: \d+
-65: ENTITY_SHAPE
+57: PARENTHESIS
+   regex: [()]
+58: INITIAL
+   regex: \b[А-ЯЁ]\.
+59: ENTITY_SHAPE
+   regex: \d+
+60: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+
-66: ENTITY_SHAPE
+61: ENTITY_SHAPE
    regex: [А-ЯЁA-Z]\.\s+\d+\-\d+
-67: ENTITY_SHAPE
+62: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
-68: ENTITY_SHAPE
+63: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.
-69: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
-70: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
-71: ENTITY_SHAPE
+64: ENTITY_SHAPE
    regex: [А-ЯЁA-Z]\s+\d+\-\d+
-72: ENTITY_SHAPE
-   regex: [А-ЯЁA-Z]\.
-73: ENTITY_SHAPE
+65: ENTITY_SHAPE
    regex: \d+\-\d+
-74: ENTITY_SHAPE
-   regex: №\s+\d+
-75: ENTITY_SHAPE
+66: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+67: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.
+68: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
-76: ENTITY_SHAPE
-   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
-77: ENTITY_SHAPE
-   regex: №\d+
-78: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
-79: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
-80: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
-81: ENTITY_SHAPE
+69: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+70: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]
-82: ENTITY_SHAPE
-   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
-83: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
-84: ENTITY_SHAPE
-   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
-85: ENTITY_SHAPE
-   regex: [А-ЯЁA-Z]
-86: ENTITY_SHAPE
-   regex: [А-ЯЁA-Z]\.\d+\-\d+
-87: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё][а-яё][А-ЯЁ][А-ЯЁ][А-ЯЁ]
-88: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
-89: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+
-90: ENTITY_SHAPE
-   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
-91: ENTITY_SHAPE
-   regex: [А-ЯЁ][А-ЯЁ][а-яё]\.
-92: ENTITY_SHAPE
-   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
-93: ENTITY_SHAPE
-   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
-94: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]
-95: ENTITY_SHAPE
-   regex: [А-ЯЁA-Z]\.\s+\d+
-96: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
-97: ENTITY_SHAPE
+71: ENTITY_SHAPE
+   regex: №\s+\d+
+72: ENTITY_SHAPE
+   regex: №\d+
+73: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+74: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
-98: ENTITY_SHAPE
-   regex: [А-ЯЁA-Z]\.\s+\d+\s+\-\s+\d+
-99: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+
-100: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.
-101: ENTITY_SHAPE
-   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
-102: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
-103: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+
-104: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
-105: ENTITY_SHAPE
-   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
-106: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
-107: ENTITY_SHAPE
-   regex: [а-яё]+\.\d+\-\d+
-108: ENTITY_SHAPE
-   regex: [А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+
-109: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
-110: ENTITY_SHAPE
-   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁ][а-яё]+
-111: ENTITY_SHAPE
-   regex: [а-яё]+\.\s+\d+
-112: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ]\.
-113: ENTITY_SHAPE
+75: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+76: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+77: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+78: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё][а-яё][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+79: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+80: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]
+81: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+\s+[а-яё]+
-114: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+
-115: ENTITY_SHAPE
-   regex: [А-ЯЁA-Z]\.\d+
-116: ENTITY_SHAPE
+82: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+83: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\d+\-\d+
+84: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+85: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+86: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]
+87: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][а-яё]\.
+88: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+89: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+\d+\s+\-\s+\d+
+90: ENTITY_SHAPE
    regex: [А-ЯЁA-Z]\.\s+\d+
-117: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
-118: ENTITY_SHAPE
-   regex: [А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+
-119: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\.\s+[а-яё]+\-[а-яё]+
-120: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
-121: ENTITY_SHAPE
-   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
-122: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+\-[а-яё]+\.
-123: ENTITY_SHAPE
-   regex: [А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+
-124: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
-125: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]
-126: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
-127: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+,\s+[а-яё]+\-[а-яё]+
-128: ENTITY_SHAPE
-   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\s+\([А-ЯЁ][а-яё]+\)
-129: ENTITY_SHAPE
-   regex: [А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+
-130: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁ][А-ЯЁ]
-131: ENTITY_SHAPE
-   regex: [А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+
-132: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+
-133: ENTITY_SHAPE
+91: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+92: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+
-134: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+\-[а-яё]+
-135: ENTITY_SHAPE
-   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ]
-136: ENTITY_SHAPE
+93: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+94: ENTITY_SHAPE
+   regex: [а-яё]+\.\d+\-\d+
+95: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+
+96: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+97: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+
+98: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+99: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁ][а-яё]+
+100: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+101: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+102: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+103: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+104: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+105: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+
+106: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\.\s+[а-яё]+\-[а-яё]+
+107: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ]\.
+108: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+
+109: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+110: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+\-[а-яё]+\.
+111: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+
+112: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+
+113: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]
+114: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+,\s+[а-яё]+\-[а-яё]+
+115: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.
+116: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\s+\([А-ЯЁ][а-яё]+\)
+117: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+
+118: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁ][А-ЯЁ]
+119: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+
+120: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+
+121: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+122: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+123: ENTITY_SHAPE
    regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\s+\([А-ЯЁ][а-яё]+\)
-137: ENTITY_SHAPE
+124: ENTITY_SHAPE
    regex: [А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\s+[А-ЯЁ][а-яё]+
-138: ENTITY_SHAPE
+125: ENTITY_SHAPE
    regex: [А-ЯЁA-Z]\s+\d+
-139: ENTITY_SHAPE
-   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
-140: ENTITY_SHAPE
+126: ENTITY_SHAPE
    regex: [А-ЯЁ][А-ЯЁ][а-яё][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+
-141: ENTITY_SHAPE
+127: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+\-[а-яё]+\-[А-ЯЁ][а-яё]+
-142: ENTITY_SHAPE
+128: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+\s+[а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][а-яё]+
-143: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
-144: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
-145: ENTITY_SHAPE
+129: ENTITY_SHAPE
    regex: [a-z]+://[a-z]+\.[a-z]+\.[a-z]+/[a-z]+
-146: ENTITY_SHAPE
+130: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
+131: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ]
+132: ENTITY_SHAPE
+   regex: [а-яё]+\.\s+\d+
+133: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+134: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
+135: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\-[а-яё]+
+136: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+«[А-ЯЁ][а-яё]+»
+137: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ]
+138: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+,\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
+139: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ],\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
+140: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\-[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
+141: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
+142: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+\d+
+143: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+
+144: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+
+145: ENTITY_SHAPE
+   regex: \s+№\s+\d+
+146: ENTITY_SHAPE
+   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
 147: ENTITY_SHAPE
    regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
 148: ENTITY_SHAPE
-   regex: [а-яё]+\s+\d+\-\d+
-149: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ]\.
-150: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\-[а-яё]+
-151: ENTITY_SHAPE
-   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+«[А-ЯЁ][а-яё]+»
-152: ENTITY_SHAPE
-   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ]
-153: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+,\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
-154: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ],\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
-155: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁ][а-яё]+
-156: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\-[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
-157: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
-158: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+\d+
-159: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
-160: ENTITY_SHAPE
-   regex: \s+№\s+\d+
-161: ENTITY_SHAPE
-   regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
-162: ENTITY_SHAPE
    regex: №\s+[а-яё]+\.\s+[а-яё]+\s+\d+
-163: ENTITY_SHAPE
+149: ENTITY_SHAPE
    regex: [А-ЯЁ][А-ЯЁ][а-яё][А-ЯЁ][А-ЯЁ][А-ЯЁ]
-164: ENTITY_SHAPE
+150: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\d+
+151: ENTITY_SHAPE
+   regex: [А-ЯЁA-Z]\.\s+\d+
+152: ENTITY_SHAPE
    regex: [А-ЯЁA-Z]\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
-165: ENTITY_SHAPE
+153: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+\-\s+[А-ЯЁ][а-яё]+
-166: ENTITY_SHAPE
+154: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+
-167: ENTITY_SHAPE
+155: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\-[А-ЯЁ][а-яё]+
-168: ENTITY_SHAPE
-   regex: [а-яё]+\.\s+\d+\-\d+
-169: ENTITY_SHAPE
-   regex: [а-яё]+\.\d+
-170: ENTITY_SHAPE
+156: ENTITY_SHAPE
    regex: [А-ЯЁA-Z]\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
-171: ENTITY_SHAPE
+157: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ]\.
+158: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\s+[А-ЯЁA-Z]\.
-172: ENTITY_SHAPE
+159: ENTITY_SHAPE
    regex: [А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
-173: ENTITY_SHAPE
+160: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+,\s+[а-яё]+,\s+[а-яё]+
-174: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
-175: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
-176: ENTITY_SHAPE
+161: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+,\s+[а-яё]+\-[а-яё]+
-177: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.
-178: ENTITY_SHAPE
+162: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+:\s+[а-яё]+\-[а-яё]+
-179: ENTITY_SHAPE
+163: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][а-яё]+
-180: ENTITY_SHAPE
+164: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
-181: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\-[а-яё]+\s+[а-яё]+
-182: ENTITY_SHAPE
+165: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
-183: ENTITY_SHAPE
-   regex: [А-ЯЁ][А-ЯЁ][а-яё]
-184: ENTITY_SHAPE
+166: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+\s+[а-яё]+:\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
-185: ENTITY_SHAPE
+167: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[А-ЯЁ][а-яё]+
-186: ENTITY_SHAPE
+168: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]
-187: ENTITY_SHAPE
+169: ENTITY_SHAPE
    regex: [A-Z][a-z]+,\s+[A-Z][a-z]+
-188: ENTITY_SHAPE
+170: ENTITY_SHAPE
    regex: \s+[А-ЯЁA-Z]\.\s+[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
-189: ENTITY_SHAPE
+171: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+:\s+[А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+\.
-190: ENTITY_SHAPE
+172: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
-191: ENTITY_SHAPE
+173: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
-192: ENTITY_SHAPE
+174: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+:\s+[А-ЯЁ][а-яё]+\.\s+[A-Z][A-Z][A-Z]\s+[а-яё]+\.\s+[а-яё]+\.
-193: ENTITY_SHAPE
-   regex: [A-Z][a-z]+
-194: ENTITY_SHAPE
+175: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+:\s+[а-яё]+\.\s+[а-яё]+\.\s+\d+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+\.\-[а-яё]+\.\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
-195: ENTITY_SHAPE
+176: ENTITY_SHAPE
+   regex: [а-яё]+\.\s+\d+\-\d+
+177: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+,\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
-196: ENTITY_SHAPE
+178: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+\.\s+[а-яё]+\.\s+[а-яё]+,\s+[а-яё]+\-[а-яё]+\.\s+[а-яё]+\.\s+«[А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+»
-197: ENTITY_SHAPE
+179: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\-[а-яё]+\s+[а-яё]+
-198: ENTITY_SHAPE
+180: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
-199: ENTITY_SHAPE
+181: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+\s+[а-яё]+:\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[А-ЯЁ][а-яё]+
-200: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+
-201: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ]
-202: ENTITY_SHAPE
+182: ENTITY_SHAPE
+   regex: [А-ЯЁ][а-яё]+,\s+[А-ЯЁ][а-яё]+
+183: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[а-яё]+\s+[а-яё]+\s+[а-яё]+\.\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё]\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]
-203: ENTITY_SHAPE
+184: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[а-яё]+\-[а-яё]+\s+[а-яё]+
-204: ENTITY_SHAPE
+185: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+\s+[а-яё]+\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]
-205: ENTITY_SHAPE
+186: ENTITY_SHAPE
    regex: [А-ЯЁ][а-яё]+\-[а-яё]+\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.
-206: ENTITY_SHAPE
-   regex: [А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ],\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.,\s+[А-ЯЁ][а-яё]+\s+[А-ЯЁ][А-ЯЁ]\.
-207: ENTITY_SHAPE
-   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+
-208: ENTITY_SHAPE
-   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+
-209: ENTITY_SHAPE
-   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+
-210: ENTITY_SHAPE
-   regex: [А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+,\s+[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.[А-ЯЁA-Z]\.\s+[А-ЯЁ][а-яё]+\-[А-ЯЁ][а-яё]+
-211: SEPARATOR
+187: SEPARATOR
    regex: \.
-212: SEPARATOR
+188: SEPARATOR
    regex: У,
-213: SEPARATOR
+189: SEPARATOR
    regex: \.:
-214: SEPARATOR
+190: SEPARATOR
+   regex: а,
+191: SEPARATOR
    regex: а:
-215: SEPARATOR
-   regex: а,
-216: SEPARATOR
+192: SEPARATOR
    regex: я\s+/
-217: SEPARATOR
-   regex: \.\s+\-
-218: SEPARATOR
-   regex: в\s+/
-219: SEPARATOR
-   regex: а\s+/
-220: SEPARATOR
-   regex: и,
-221: SEPARATOR
+193: SEPARATOR
    regex: а\s+//
-222: SEPARATOR
-   regex: »\.\s+\-
-223: SEPARATOR
-   regex: \.,
-224: SEPARATOR
-   regex: и\s+/
-225: SEPARATOR
-   regex: а,
-226: SEPARATOR
+194: SEPARATOR
+   regex: и,
+195: SEPARATOR
    regex: л:
-227: SEPARATOR
-   regex: а\s+//
-228: SEPARATOR
-   regex: В
-229: SEPARATOR
-   regex: м\s+/
-230: SEPARATOR
-   regex: й\s+/
-231: SEPARATOR
-   regex: ь:
-232: SEPARATOR
-   regex: к
-233: SEPARATOR
-   regex: ф,
-234: SEPARATOR
-   regex: 2\.
-235: SEPARATOR
-   regex: Е
-236: SEPARATOR
-   regex: 1\.\s+\-
-237: SEPARATOR
-   regex: в\s+//
-238: SEPARATOR
-   regex: ж:
-239: SEPARATOR
-   regex: »,
-240: SEPARATOR
-   regex: г:
-241: SEPARATOR
-   regex: И,
-242: SEPARATOR
-   regex: к:
-243: SEPARATOR
-   regex: 3\.
-244: SEPARATOR
+196: SEPARATOR
    regex: в\s+/
-245: SEPARATOR
-   regex: н\s+//
-246: SEPARATOR
-   regex: О
-247: SEPARATOR
-   regex: ж,
-248: SEPARATOR
-   regex: М:
-249: SEPARATOR
+197: SEPARATOR
    regex: а\s+//
-250: SEPARATOR
-   regex: а\s+И
-251: SEPARATOR
-   regex: 0\.
-252: SEPARATOR
-   regex: к,
-253: SEPARATOR
-   regex: х\s+/
-254: SEPARATOR
-   regex: »\.
-255: SEPARATOR
-   regex: А
-256: SEPARATOR
-   regex: 8\.\s+\-
-257: SEPARATOR
-   regex: а\s+:
-258: SEPARATOR
-   regex: т,
-259: SEPARATOR
-   regex: 1\.
-260: SEPARATOR
-   regex: й\s+//
-261: SEPARATOR
-   regex: д,
-262: SEPARATOR
-   regex: а\s+//
-263: SEPARATOR
-   regex: а\s+И
-264: SEPARATOR
-   regex: 4\.
-265: SEPARATOR
-   regex: 7\.\s+\-
-266: SEPARATOR
-   regex: и\s+//
-267: SEPARATOR
-   regex: М
-268: SEPARATOR
-   regex: а
-269: SEPARATOR
-   regex: в\s+//
-270: SEPARATOR
-   regex: е\s+/
-271: SEPARATOR
-   regex: 7\.
-272: SEPARATOR
-   regex: о\.\s+\-
-273: SEPARATOR
-   regex: 4\.\s+\-
-274: SEPARATOR
-   regex: \.\s+/
-275: SEPARATOR
-   regex: Н,
-276: SEPARATOR
-   regex: в\s+\[Текст\]/
-277: SEPARATOR
-   regex: н\s+//
-278: SEPARATOR
-   regex: л
-279: SEPARATOR
-   regex: м\s+//
-280: SEPARATOR
-   regex: и\s+//
-281: SEPARATOR
-   regex: ы\s+/
-282: SEPARATOR
-   regex: 2\.\s+\-
-283: SEPARATOR
-   regex: 2\.\s+\-
-284: SEPARATOR
-   regex: \)\s+//
-285: SEPARATOR
-   regex: м
-286: SEPARATOR
-   regex: 6\.
-287: SEPARATOR
-   regex: Г
-288: SEPARATOR
-   regex: в:
-289: SEPARATOR
-   regex: ь,
-290: SEPARATOR
-   regex: и//
-291: SEPARATOR
-   regex: \.
-292: SEPARATOR
-   regex: е\s+//
-293: SEPARATOR
-   regex: и\.\s+\-
-294: SEPARATOR
-   regex: в\s+//
-295: SEPARATOR
-   regex: я\s+//
-296: SEPARATOR
-   regex: 5\.\s+\-
-297: SEPARATOR
-   regex: 9\.
-298: SEPARATOR
-   regex: 6\.\s+\-
-299: SEPARATOR
-   regex: е\.\s+\-
-300: SEPARATOR
-   regex: 8\.
-301: SEPARATOR
-   regex: Н
-302: SEPARATOR
-   regex: У\.
-303: SEPARATOR
-   regex: и
-304: SEPARATOR
-   regex: и\.\s+\-
-305: SEPARATOR
-   regex: 3\.\s+\-
-306: SEPARATOR
-   regex: З,
-307: SEPARATOR
-   regex: 5\.\s+\-
-308: SEPARATOR
-   regex: 2\.\s+\-
-309: SEPARATOR
-   regex: а\s+/
-310: SEPARATOR
-   regex: а//
-311: SEPARATOR
-   regex: У
-312: SEPARATOR
-   regex: \.
-313: SEPARATOR
-   regex: 1\.
-314: SEPARATOR
-   regex: 1\.
-315: SEPARATOR
-   regex: 3\.
-316: SEPARATOR
-   regex: 0\.
-317: SEPARATOR
-   regex: С
-318: SEPARATOR
-   regex: 3
-319: SEPARATOR
-   regex: в\s+И
-320: SEPARATOR
-   regex: 6\s+\-
-321: SEPARATOR
-   regex: й\s+И
-322: SEPARATOR
-   regex: у,
-323: SEPARATOR
-   regex: \.
-324: SEPARATOR
-   regex: я\s+//
-325: SEPARATOR
-   regex: и/
-326: SEPARATOR
-   regex: я\.
-327: SEPARATOR
-   regex: и\.\s+\-
-328: SEPARATOR
-   regex: я»\.
-329: SEPARATOR
-   regex: 8\.\s+\-
-330: SEPARATOR
-   regex: \.\s+\-
-331: SEPARATOR
-   regex: и
-332: SEPARATOR
-   regex: а\s+/
-333: SEPARATOR
-   regex: 4\.\s+\-
-334: SEPARATOR
-   regex: 7\.\s+\-
-335: SEPARATOR
-   regex: Ц,
-336: SEPARATOR
-   regex: л,
-337: SEPARATOR
-   regex: 7
-338: SEPARATOR
-   regex: 4
-339: SEPARATOR
-   regex: ф\s+\-
-340: SEPARATOR
-   regex: я\.//
-341: SEPARATOR
-   regex: а//
-342: SEPARATOR
-   regex: О\.\s+\-
-343: SEPARATOR
+198: SEPARATOR
+   regex: »\.\s+\-
+199: SEPARATOR
    regex: и\s+/
-344: SEPARATOR
-   regex: \.\s+—
-345: SEPARATOR
-   regex: 7
-346: SEPARATOR
-   regex: й\s+//
-347: SEPARATOR
-   regex: 3\.\s+\-
-348: SEPARATOR
-   regex: А\.\s+\-
-349: SEPARATOR
-   regex: н//
-350: SEPARATOR
-   regex: а
-351: SEPARATOR
-   regex: и\s+И
-352: SEPARATOR
-   regex: 9\.\s+\-\s+С\.
-353: SEPARATOR
+200: SEPARATOR
+   regex: В
+201: SEPARATOR
    regex: \.,
-354: SEPARATOR
-   regex: я\s+И
-355: SEPARATOR
-   regex: С,
-356: SEPARATOR
-   regex: я\.\s+\-
-357: SEPARATOR
-   regex: е\.\s+\-
-358: SEPARATOR
-   regex: 3\.
-359: SEPARATOR
-   regex: я
-360: SEPARATOR
-   regex: а\.\s+\-
-361: SEPARATOR
-   regex: 2\.
-362: SEPARATOR
-   regex: 1\.\s+\-
-363: SEPARATOR
-   regex: 6\.\s+\-
-364: SEPARATOR
-   regex: 1\.\s+\-
-365: SEPARATOR
-   regex: к\s+/
-366: SEPARATOR
-   regex: 4,
-367: SEPARATOR
-   regex: и\s+\-
-368: SEPARATOR
-   regex: а\.\s+//
-369: SEPARATOR
-   regex: \.\s+\(осенняя\s+сессия\)\.
-370: SEPARATOR
-   regex: 4\.
-371: SEPARATOR
-   regex: 1
-372: SEPARATOR
-   regex: »\s+\-
-373: SEPARATOR
-   regex: т
-374: SEPARATOR
-   regex: 2
-375: SEPARATOR
-   regex: 6
-376: SEPARATOR
-   regex: 5\.\s+\-
-377: SEPARATOR
-   regex: а
-378: SEPARATOR
-   regex: й\s+//
-379: SEPARATOR
-   regex: в\s+//
-380: SEPARATOR
-   regex: 2\s+г\.,
-381: SEPARATOR
-   regex: \.:
-382: SEPARATOR
-   regex: и\s+//
-383: SEPARATOR
-   regex: И
-384: SEPARATOR
-   regex: л\.\s+\-
-385: SEPARATOR
-   regex: а\s+\-
-386: SEPARATOR
-   regex: У\.\-
-387: SEPARATOR
-   regex: и\.
-388: SEPARATOR
-   regex: »,
-389: SEPARATOR
-   regex: 8\.
-390: SEPARATOR
-   regex: и
-391: SEPARATOR
-   regex: ы\s+//
-392: SEPARATOR
-   regex: 0\.\s+\-\s+С\.
-393: SEPARATOR
-   regex: е\s+//
-394: SEPARATOR
-   regex: а\s+И
-395: SEPARATOR
-   regex: а;
-396: SEPARATOR
-   regex: \.\s+\-
-397: SEPARATOR
-   regex: \.\s+\-
-398: SEPARATOR
-   regex: м,
-399: SEPARATOR
-   regex: 9\.
-400: SEPARATOR
-   regex: к\s+:
-401: SEPARATOR
-   regex: s\s+/
-402: SEPARATOR
-   regex: 0\.\s+\-
-403: SEPARATOR
-   regex: 7\.
-404: SEPARATOR
-   regex: 4\.
-405: SEPARATOR
-   regex: У
-406: SEPARATOR
-   regex: 6\.
-407: SEPARATOR
-   regex: »\s+/
-408: SEPARATOR
-   regex: н\.\s+\-
-409: SEPARATOR
+202: SEPARATOR
+   regex: к
+203: SEPARATOR
+   regex: а\s+/
+204: SEPARATOR
+   regex: а,
+205: SEPARATOR
+   regex: м\s+/
+206: SEPARATOR
    regex: й\s+/
-410: SEPARATOR
-   regex: а\.\s+В\s+сб\.
-411: SEPARATOR
-   regex: и\.\s+В\s+сб\.
-412: SEPARATOR
-   regex: \.\s+\(весенняя\s+сессия\)\.
-413: SEPARATOR
-   regex: \)\s+//
-414: SEPARATOR
-   regex: 3\.
-415: SEPARATOR
-   regex: 5
-416: SEPARATOR
+207: SEPARATOR
+   regex: ф,
+208: SEPARATOR
+   regex: \.\s+\-
+209: SEPARATOR
+   regex: Е
+210: SEPARATOR
+   regex: в\s+//
+211: SEPARATOR
+   regex: г:
+212: SEPARATOR
+   regex: И,
+213: SEPARATOR
+   regex: к:
+214: SEPARATOR
+   regex: 2\.
+215: SEPARATOR
    regex: в\s+/
-417: SEPARATOR
-   regex: и,
-418: SEPARATOR
-   regex: в\s+\-
-419: SEPARATOR
-   regex: в\.\s+\-
-420: SEPARATOR
-   regex: я//
-421: SEPARATOR
-   regex: 9\.\s+\-
-422: SEPARATOR
-   regex: а\.\s+\-
-423: SEPARATOR
-   regex: 4\.\s+\-
-424: SEPARATOR
-   regex: 9\.\s+\-
-425: SEPARATOR
-   regex: х\s+//
-426: SEPARATOR
+216: SEPARATOR
+   regex: О
+217: SEPARATOR
+   regex: М:
+218: SEPARATOR
+   regex: ь:
+219: SEPARATOR
+   regex: »\.
+220: SEPARATOR
+   regex: А
+221: SEPARATOR
+   regex: ж:
+222: SEPARATOR
+   regex: »,
+223: SEPARATOR
+   regex: а\s+И
+224: SEPARATOR
+   regex: 0\.
+225: SEPARATOR
+   regex: ж,
+226: SEPARATOR
+   regex: т,
+227: SEPARATOR
+   regex: к,
+228: SEPARATOR
+   regex: а
+229: SEPARATOR
+   regex: 1\.\s+\-
+230: SEPARATOR
+   regex: а\s+//
+231: SEPARATOR
+   regex: а\s+И
+232: SEPARATOR
+   regex: о\.\s+\-
+233: SEPARATOR
    regex: \.\s+/
-427: SEPARATOR
-   regex: »\s+\(ПРОЕКТ\-2009\)\.\s+\-
-428: SEPARATOR
-   regex: м»,
-429: SEPARATOR
-   regex: й
-430: SEPARATOR
+234: SEPARATOR
+   regex: Н,
+235: SEPARATOR
+   regex: в\s+\[Текст\]/
+236: SEPARATOR
+   regex: М
+237: SEPARATOR
+   regex: л
+238: SEPARATOR
+   regex: м\s+//
+239: SEPARATOR
+   regex: а\s+//
+240: SEPARATOR
+   regex: ы\s+/
+241: SEPARATOR
+   regex: 8\.\s+\-
+242: SEPARATOR
+   regex: 2\.\s+\-
+243: SEPARATOR
+   regex: 4\.\s+\-
+244: SEPARATOR
    regex: 1\.
-431: SEPARATOR
-   regex: ш\s+//
-432: SEPARATOR
-   regex: 5\s+\-
-433: SEPARATOR
-   regex: 2\s+\-
-434: SEPARATOR
-   regex: а\s+\-
-435: SEPARATOR
-   regex: 4\s+\-
-436: SEPARATOR
-   regex: й\s+И
-437: SEPARATOR
-   regex: 7\s+\-
-438: SEPARATOR
-   regex: И\.
-439: SEPARATOR
-   regex: е
-440: SEPARATOR
-   regex: и\.
-441: SEPARATOR
-   regex: й/
-442: SEPARATOR
-   regex: н,
-443: SEPARATOR
-   regex: и,
-444: SEPARATOR
-   regex: А,
-445: SEPARATOR
-   regex: У/
-446: SEPARATOR
-   regex: в/
-447: SEPARATOR
+245: SEPARATOR
+   regex: \)\s+//
+246: SEPARATOR
+   regex: м
+247: SEPARATOR
+   regex: Г
+248: SEPARATOR
+   regex: и\s+//
+249: SEPARATOR
+   regex: и\.\s+\-
+250: SEPARATOR
+   regex: я\s+//
+251: SEPARATOR
+   regex: 5\.\s+\-
+252: SEPARATOR
+   regex: а\s+:
+253: SEPARATOR
+   regex: 2\.\s+\-
+254: SEPARATOR
+   regex: 7\.\s+\-
+255: SEPARATOR
+   regex: и\s+//
+256: SEPARATOR
+   regex: 3\.
+257: SEPARATOR
+   regex: 6\.
+258: SEPARATOR
+   regex: х\s+/
+259: SEPARATOR
+   regex: и
+260: SEPARATOR
+   regex: е\s+/
+261: SEPARATOR
+   regex: и\.\s+\-
+262: SEPARATOR
+   regex: 7\.
+263: SEPARATOR
+   regex: 3\.\s+\-
+264: SEPARATOR
+   regex: 5\.\s+\-
+265: SEPARATOR
+   regex: а\s+/
+266: SEPARATOR
+   regex: 9\.
+267: SEPARATOR
+   regex: У
+268: SEPARATOR
+   regex: \.
+269: SEPARATOR
+   regex: 1\.
+270: SEPARATOR
+   regex: 3\.
+271: SEPARATOR
+   regex: 0\.
+272: SEPARATOR
+   regex: С
+273: SEPARATOR
+   regex: 6\.\s+\-
+274: SEPARATOR
+   regex: 6\s+\-
+275: SEPARATOR
+   regex: у,
+276: SEPARATOR
+   regex: ь,
+277: SEPARATOR
+   regex: и//
+278: SEPARATOR
+   regex: я\s+//
+279: SEPARATOR
+   regex: е\s+//
+280: SEPARATOR
+   regex: и/
+281: SEPARATOR
+   regex: и\.\s+\-
+282: SEPARATOR
+   regex: я»\.
+283: SEPARATOR
+   regex: и
+284: SEPARATOR
+   regex: а\s+/
+285: SEPARATOR
+   regex: З,
+286: SEPARATOR
+   regex: л,
+287: SEPARATOR
+   regex: 1\.
+288: SEPARATOR
+   regex: й\s+//
+289: SEPARATOR
+   regex: 7
+290: SEPARATOR
+   regex: 3
+291: SEPARATOR
+   regex: 4
+292: SEPARATOR
+   regex: ф\s+\-
+293: SEPARATOR
+   regex: а//
+294: SEPARATOR
+   regex: е\.\s+\-
+295: SEPARATOR
+   regex: О\.\s+\-
+296: SEPARATOR
+   regex: н\s+//
+297: SEPARATOR
+   regex: и\s+/
+298: SEPARATOR
+   regex: в\s+//
+299: SEPARATOR
+   regex: 8\.
+300: SEPARATOR
+   regex: Н
+301: SEPARATOR
+   regex: 7
+302: SEPARATOR
+   regex: й\s+//
+303: SEPARATOR
+   regex: А\.\s+\-
+304: SEPARATOR
    regex: н//
-448: SEPARATOR
+305: SEPARATOR
+   regex: и\s+И
+306: SEPARATOR
+   regex: \.
+307: SEPARATOR
+   regex: д,
+308: SEPARATOR
+   regex: 9\.\s+\-\s+С\.
+309: SEPARATOR
+   regex: я\s+И
+310: SEPARATOR
+   regex: я\.
+311: SEPARATOR
+   regex: е\.\s+\-
+312: SEPARATOR
+   regex: я
+313: SEPARATOR
+   regex: а\.\s+\-
+314: SEPARATOR
+   regex: 6\.\s+\-
+315: SEPARATOR
+   regex: 4\.\s+\-
+316: SEPARATOR
+   regex: 7\.\s+\-
+317: SEPARATOR
+   regex: к\s+/
+318: SEPARATOR
+   regex: Ц,
+319: SEPARATOR
+   regex: а//
+320: SEPARATOR
+   regex: и\s+\-
+321: SEPARATOR
+   regex: а\.\s+//
+322: SEPARATOR
+   regex: \.\s+\(осенняя\s+сессия\)\.
+323: SEPARATOR
+   regex: 4\.
+324: SEPARATOR
+   regex: 1
+325: SEPARATOR
+   regex: »\s+\-
+326: SEPARATOR
+   regex: т
+327: SEPARATOR
+   regex: 2
+328: SEPARATOR
+   regex: 6
+329: SEPARATOR
+   regex: 5\.\s+\-
+330: SEPARATOR
+   regex: я\.//
+331: SEPARATOR
+   regex: а
+332: SEPARATOR
+   regex: й\s+//
+333: SEPARATOR
+   regex: 3\.\s+\-
+334: SEPARATOR
+   regex: \.:
+335: SEPARATOR
+   regex: в:
+336: SEPARATOR
+   regex: И
+337: SEPARATOR
+   regex: л\.\s+\-
+338: SEPARATOR
+   regex: а\s+\-
+339: SEPARATOR
+   regex: а
+340: SEPARATOR
+   regex: У\.\-
+341: SEPARATOR
+   regex: 8\.
+342: SEPARATOR
+   regex: и
+343: SEPARATOR
    regex: \.,
-449: SEPARATOR
-   regex: в,
-450: SEPARATOR
-   regex: ж\.
-451: SEPARATOR
-   regex: в\.
-452: SEPARATOR
-   regex: м,
+344: SEPARATOR
+   regex: ы\s+//
+345: SEPARATOR
+   regex: 0\.\s+\-\s+С\.
+346: SEPARATOR
+   regex: е\s+//
+347: SEPARATOR
+   regex: я\.\s+\-
+348: SEPARATOR
+   regex: а;
+349: SEPARATOR
+   regex: \.\s+\-
+350: SEPARATOR
+   regex: 3\.
+351: SEPARATOR
+   regex: 8\.\s+\-
+352: SEPARATOR
+   regex: \.\s+\-
+353: SEPARATOR
+   regex: к\s+:
+354: SEPARATOR
+   regex: 1\.\s+\-
+355: SEPARATOR
+   regex: 4\.
+356: SEPARATOR
+   regex: »\s+/
+357: SEPARATOR
+   regex: 4,
+358: SEPARATOR
+   regex: а\.\s+В\s+сб\.
+359: SEPARATOR
+   regex: и\.\s+В\s+сб\.
+360: SEPARATOR
+   regex: \.\s+\(весенняя\s+сессия\)\.
+361: SEPARATOR
+   regex: \)\s+//
+362: SEPARATOR
+   regex: 5
+363: SEPARATOR
+   regex: в\s+/
+364: SEPARATOR
+   regex: и,
+365: SEPARATOR
+   regex: в\s+\-
+366: SEPARATOR
+   regex: в\.\s+\-
+367: SEPARATOR
+   regex: я//
+368: SEPARATOR
+   regex: 9\.\s+\-
+369: SEPARATOR
+   regex: а\.\s+\-
+370: SEPARATOR
+   regex: 4\.\s+\-
+371: SEPARATOR
+   regex: 9\.\s+\-
+372: SEPARATOR
+   regex: н\s+//
+373: SEPARATOR
+   regex: \.\s+—
+374: SEPARATOR
+   regex: »\s+\(ПРОЕКТ\-2009\)\.\s+\-
+375: SEPARATOR
+   regex: й
+376: SEPARATOR
+   regex: 5\s+\-
+377: SEPARATOR
+   regex: а\s+\-
+378: SEPARATOR
+   regex: й\s+И
+379: SEPARATOR
+   regex: 4\s+\-
+380: SEPARATOR
+   regex: 7\s+\-
+381: SEPARATOR
+   regex: е
+382: SEPARATOR
+   regex: и\.
+383: SEPARATOR
+   regex: й/
+384: SEPARATOR
+   regex: У/
+385: SEPARATOR
+   regex: н//
+386: SEPARATOR
+   regex: \.,
 
 ================================================================================
 
@@ -924,9 +792,9 @@ COUNTS:
   ENTITY_SHAPE: 1
   SEPARATOR: 1
   SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 2
   SEPARATOR: 1
-  SEPARATOR: 2
-  SEPARATOR: 2
   SEPARATOR: 3
   SEPARATOR: 3
   SEPARATOR: 2
@@ -935,29 +803,29 @@ LINE 2 (length=32)
 TEXT: СЛАВНОВ КОНСТАНТИН ВЛАДИМИРОВИЧ
 COUNTS:
   ENTITY_SHAPE: 6
-  ENTITY_SHAPE: 5
   ENTITY_SHAPE: 29
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 9
   ENTITY_SHAPE: 9
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 9
   ENTITY_SHAPE: 2
   SEPARATOR: 4
   SEPARATOR: 3
   SEPARATOR: 3
   SEPARATOR: 1
-  SEPARATOR: 4
   SEPARATOR: 2
+  SEPARATOR: 4
   SEPARATOR: 4
 
 LINE 3 (length=27)
 TEXT: АВТОМАТИЗИРОВАННАЯ СИСТЕМА
 COUNTS:
   ENTITY_SHAPE: 5
-  ENTITY_SHAPE: 4
   ENTITY_SHAPE: 25
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 8
   ENTITY_SHAPE: 8
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 8
   ENTITY_SHAPE: 1
   SEPARATOR: 2
   SEPARATOR: 1
@@ -972,40 +840,38 @@ LINE 4 (length=24)
 TEXT: ДИСТАНЦИОННОГО ОБУЧЕНИЯ
 COUNTS:
   ENTITY_SHAPE: 5
-  ENTITY_SHAPE: 3
   ENTITY_SHAPE: 22
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 6
   ENTITY_SHAPE: 6
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 6
   ENTITY_SHAPE: 1
   SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 1
   SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
   SEPARATOR: 4
-  SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 3
-  SEPARATOR: 1
 
 LINE 5 (length=14)
 TEXT: ВОЕННОГО ВУЗА
 COUNTS:
   ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 12
-  ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   SEPARATOR: 2
   SEPARATOR: 1
   SEPARATOR: 3
   SEPARATOR: 1
   SEPARATOR: 1
+  SEPARATOR: 1
   SEPARATOR: 2
-  SEPARATOR: 1
-  SEPARATOR: 1
 
 LINE 6 (length=51)
 TEXT: Специальность 05.13.10 - управление в социальных и
@@ -1016,26 +882,23 @@ COUNTS:
   DASH: 1
   DOT: 2
   DASH: 1
-  DOT: 2
   DASH: 1
+  DOT: 2
   NUMBER: 3
-  NUMBER: 3
-  DASH: 1
-  DOT: 2
-  DOT: 2
-  DOT: 2
-  DASH: 1
   NUMBER: 3
   DOT: 2
   DASH: 1
   DOT: 2
-  DASH: 1
   DOT: 2
-  NUMBER: 3
   DASH: 1
   NUMBER: 3
+  DOT: 2
+  DASH: 1
+  DOT: 2
+  DOT: 2
   NUMBER: 3
   DOT: 2
+  DASH: 1
   NUMBER: 3
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
@@ -1044,21 +907,19 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   SEPARATOR: 2
+  SEPARATOR: 3
+  SEPARATOR: 3
   SEPARATOR: 1
-  SEPARATOR: 3
-  SEPARATOR: 3
-  SEPARATOR: 2
   SEPARATOR: 4
   SEPARATOR: 2
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 2
   SEPARATOR: 4
-  SEPARATOR: 3
   SEPARATOR: 1
   SEPARATOR: 2
+  SEPARATOR: 2
   SEPARATOR: 1
+  SEPARATOR: 3
   SEPARATOR: 3
   SEPARATOR: 4
   SEPARATOR: 1
@@ -1083,8 +944,8 @@ LINE 8 (length=79)
 TEXT: АВТОРЕФЕРАТ диссертации на соискание ученой степени кандидата технических наук
 COUNTS:
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 11
+  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
@@ -1097,8 +958,8 @@ COUNTS:
   SEPARATOR: 7
   SEPARATOR: 9
   SEPARATOR: 9
-  SEPARATOR: 7
   SEPARATOR: 4
+  SEPARATOR: 7
   SEPARATOR: 7
   SEPARATOR: 9
   SEPARATOR: 1
@@ -1120,14 +981,9 @@ COUNTS:
   DASH: 1
   NUMBER: 1
   DASH: 1
-  DASH: 1
   NUMBER: 1
   DASH: 1
   NUMBER: 1
-  NUMBER: 1
-  NUMBER: 1
-  YEAR: 1
-  YEAR: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
@@ -1159,8 +1015,8 @@ COUNTS:
   SEPARATOR: 2
   SEPARATOR: 5
   SEPARATOR: 5
-  SEPARATOR: 4
   SEPARATOR: 5
+  SEPARATOR: 4
   SEPARATOR: 4
   SEPARATOR: 5
   SEPARATOR: 5
@@ -1179,7 +1035,6 @@ COUNTS:
   COMMA: 1
   COMMA: 1
   DASH: 1
-  DASH: 1
   COMMA: 1
   DASH: 1
   ENTITY_SHAPE: 4
@@ -1196,11 +1051,11 @@ COUNTS:
   SEPARATOR: 5
   SEPARATOR: 2
   SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 6
   SEPARATOR: 1
-  SEPARATOR: 6
-  SEPARATOR: 6
-  SEPARATOR: 5
   SEPARATOR: 4
+  SEPARATOR: 5
   SEPARATOR: 5
   SEPARATOR: 6
   SEPARATOR: 1
@@ -1210,15 +1065,15 @@ LINE 12 (length=133)
 TEXT: Официальные оппоненты:	доктор технических наук, доцент Курочка Павел Николаевич, кандидат технических наук Кузьмин Александр Юрьевич
 COUNTS:
   COMMA: 2
-  COLON: 1
   COMMA: 2
   COLON: 1
   COLON: 1
+  COLON: 1
+  COMMA: 2
   COMMA: 2
   COMMA: 2
   COMMA: 2
   COLON: 1
-  COMMA: 2
   ENTITY_SHAPE: 7
   ENTITY_SHAPE: 7
   ENTITY_SHAPE: 1
@@ -1235,11 +1090,11 @@ COUNTS:
   SEPARATOR: 9
   SEPARATOR: 4
   SEPARATOR: 1
+  SEPARATOR: 11
+  SEPARATOR: 11
   SEPARATOR: 1
-  SEPARATOR: 11
-  SEPARATOR: 11
-  SEPARATOR: 9
   SEPARATOR: 6
+  SEPARATOR: 9
   SEPARATOR: 9
   SEPARATOR: 11
   SEPARATOR: 11
@@ -1254,12 +1109,11 @@ COUNTS:
   DASH: 1
   DASH: 1
   DASH: 1
-  DASH: 1
+  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
@@ -1273,9 +1127,9 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 4
-  SEPARATOR: 9
   SEPARATOR: 6
   SEPARATOR: 2
+  SEPARATOR: 9
   SEPARATOR: 9
   SEPARATOR: 4
   SEPARATOR: 7
@@ -1290,38 +1144,33 @@ COUNTS:
   DASH: 1
   DOT: 3
   DASH: 1
-  DOT: 3
   DASH: 1
+  DOT: 3
   COLON: 1
   NUMBER: 6
   NUMBER: 6
-  DASH: 1
-  DOT: 3
   QUOTATION: 2
   DOT: 3
+  DASH: 1
+  DOT: 3
+  COLON: 1
+  DOT: 3
+  COLON: 1
   YEAR: 1
-  DOT: 3
-  COLON: 1
-  COLON: 1
   DASH: 1
   NUMBER: 6
   DOT: 3
   DASH: 1
   DOT: 3
   QUOTATION: 2
-  DASH: 1
   QUOTATION: 2
   DOT: 3
+  NUMBER: 6
   COLON: 1
-  NUMBER: 6
+  DOT: 3
+  QUOTATION: 2
   DASH: 1
   NUMBER: 6
-  QUOTATION: 2
-  NUMBER: 6
-  DOT: 3
-  NUMBER: 6
-  YEAR: 1
-  YEAR: 1
   ENTITY_SHAPE: 6
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 3
@@ -1330,32 +1179,29 @@ COUNTS:
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   SEPARATOR: 3
   SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 13
   SEPARATOR: 1
   SEPARATOR: 4
-  SEPARATOR: 3
+  SEPARATOR: 1
   SEPARATOR: 14
   SEPARATOR: 3
   SEPARATOR: 1
-  SEPARATOR: 3
-  SEPARATOR: 3
   SEPARATOR: 14
-  SEPARATOR: 13
-  SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 3
   SEPARATOR: 2
-  SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 13
   SEPARATOR: 3
   SEPARATOR: 1
+  SEPARATOR: 13
   SEPARATOR: 13
   SEPARATOR: 14
   SEPARATOR: 1
@@ -1371,31 +1217,28 @@ COUNTS:
   DASH: 1
   DOT: 5
   DASH: 1
-  DOT: 5
-  DASH: 1
-  COMMA: 5
-  NUMBER: 5
-  NUMBER: 5
-  DASH: 1
-  DOT: 5
-  DOT: 5
-  DOT: 5
-  DASH: 1
-  NUMBER: 5
-  DOT: 5
-  COMMA: 5
-  COMMA: 5
-  COMMA: 5
-  DASH: 1
-  DOT: 5
   DASH: 1
   DOT: 5
   COMMA: 5
   NUMBER: 5
-  DASH: 1
-  NUMBER: 5
   NUMBER: 5
   DOT: 5
+  DASH: 1
+  DOT: 5
+  DOT: 5
+  DASH: 1
+  COMMA: 5
+  NUMBER: 5
+  COMMA: 5
+  DOT: 5
+  COMMA: 5
+  DASH: 1
+  DOT: 5
+  COMMA: 5
+  DOT: 5
+  NUMBER: 5
+  DOT: 5
+  DASH: 1
   NUMBER: 5
   ENTITY_SHAPE: 5
   ENTITY_SHAPE: 2
@@ -1409,22 +1252,20 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 2
-  SEPARATOR: 5
-  SEPARATOR: 1
-  SEPARATOR: 5
-  SEPARATOR: 1
-  SEPARATOR: 2
-  SEPARATOR: 5
-  SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 1
   SEPARATOR: 1
+  SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 5
   SEPARATOR: 3
+  SEPARATOR: 2
+  SEPARATOR: 2
   SEPARATOR: 1
-  SEPARATOR: 2
-  SEPARATOR: 2
+  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
@@ -1438,20 +1279,19 @@ COUNTS:
   DASH: 1
   DOT: 1
   DASH: 1
-  DOT: 1
-  DASH: 1
   DASH: 1
   DOT: 1
   DOT: 1
-  DOT: 1
   DASH: 1
+  DOT: 1
   DOT: 1
   DASH: 1
   DOT: 1
   DASH: 1
   DOT: 1
-  DASH: 1
   DOT: 1
+  DOT: 1
+  DASH: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
@@ -1467,15 +1307,14 @@ COUNTS:
   SEPARATOR: 5
   SEPARATOR: 2
   SEPARATOR: 2
-  SEPARATOR: 1
   SEPARATOR: 9
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 9
-  SEPARATOR: 5
+  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 10
+  SEPARATOR: 5
   SEPARATOR: 5
   SEPARATOR: 9
   SEPARATOR: 1
@@ -1492,11 +1331,11 @@ COUNTS:
   DOT: 1
   NUMBER: 2
   NUMBER: 2
-  DOT: 1
   QUOTATION: 2
+  DOT: 1
+  DOT: 1
   DOT: 1
   YEAR: 1
-  DOT: 1
   NUMBER: 2
   DOT: 1
   DOT: 1
@@ -1504,13 +1343,9 @@ COUNTS:
   QUOTATION: 2
   DOT: 1
   NUMBER: 2
-  NUMBER: 2
+  DOT: 1
   QUOTATION: 2
   NUMBER: 2
-  DOT: 1
-  NUMBER: 2
-  YEAR: 1
-  YEAR: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
@@ -1525,11 +1360,10 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 2
+  SEPARATOR: 1
   SEPARATOR: 4
-  SEPARATOR: 1
-  SEPARATOR: 2
-  SEPARATOR: 2
-  SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 3
 
@@ -1556,7 +1390,6 @@ COUNTS:
   SEPARATOR: 3
   SEPARATOR: 2
   SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 5
 
 LINE 19 (length=12)
@@ -1576,10 +1409,10 @@ COUNTS:
   INITIAL: 2
   DOT: 2
   DOT: 2
-  INITIAL: 2
   DOT: 2
   INITIAL: 2
   INITIALS: 1
+  INITIAL: 2
   INITIALS: 1
   INITIAL: 2
   ENTITY_SHAPE: 1
@@ -1593,15 +1426,12 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 2
-  SEPARATOR: 2
   SEPARATOR: 1
   SEPARATOR: 1
 
 LINE 20 (length=2)
 TEXT: 3
 COUNTS:
-  NUMBER: 1
-  NUMBER: 1
   NUMBER: 1
   NUMBER: 1
   NUMBER: 1
@@ -1631,11 +1461,8 @@ COUNTS:
   DASH: 1
   NUMBER: 1
   DASH: 1
-  DASH: 1
   NUMBER: 1
   DASH: 1
-  NUMBER: 1
-  NUMBER: 1
   NUMBER: 1
   ENTITY_SHAPE: 1
   SEPARATOR: 1
@@ -1646,11 +1473,11 @@ LINE 23 (length=28)
 TEXT: ОБЩАЯ ХАРАКТЕРИСТИКА РАБОТЫ
 COUNTS:
   ENTITY_SHAPE: 5
-  ENTITY_SHAPE: 4
   ENTITY_SHAPE: 25
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 7
   ENTITY_SHAPE: 7
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 7
   ENTITY_SHAPE: 2
   SEPARATOR: 1
   SEPARATOR: 2
@@ -1678,20 +1505,19 @@ COUNTS:
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 4
-  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 4
-  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 4
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 4
   ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 4
   ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 4
   ENTITY_SHAPE: 2
   SEPARATOR: 3
   SEPARATOR: 5
@@ -1701,19 +1527,17 @@ COUNTS:
   SEPARATOR: 9
   SEPARATOR: 4
   SEPARATOR: 1
+  SEPARATOR: 17
   SEPARATOR: 3
   SEPARATOR: 17
   SEPARATOR: 3
-  SEPARATOR: 3
-  SEPARATOR: 17
-  SEPARATOR: 25
   SEPARATOR: 11
   SEPARATOR: 21
   SEPARATOR: 25
+  SEPARATOR: 25
   SEPARATOR: 17
   SEPARATOR: 2
   SEPARATOR: 25
-  SEPARATOR: 2
 
 LINE 25 (length=200)
 TEXT: В рамках самостоятельной работы проявляются многие важнейшие качества обучаемых и формируется облик будущего военного специалиста. Однако при подготовке курсантов к занятиям с применением специальной
@@ -1747,7 +1571,6 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 7
@@ -1755,14 +1578,13 @@ COUNTS:
   SEPARATOR: 14
   SEPARATOR: 5
   SEPARATOR: 8
+  SEPARATOR: 12
   SEPARATOR: 1
   SEPARATOR: 12
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 12
-  SEPARATOR: 14
   SEPARATOR: 7
   SEPARATOR: 10
+  SEPARATOR: 14
   SEPARATOR: 14
   SEPARATOR: 12
   SEPARATOR: 3
@@ -1776,40 +1598,37 @@ COUNTS:
   DASH: 1
   DOT: 3
   DASH: 1
-  DOT: 3
-  DASH: 1
-  COMMA: 5
-  DASH: 1
-  DOT: 3
-  DOT: 3
-  DOT: 3
   DASH: 1
   DOT: 3
   COMMA: 5
-  COMMA: 5
-  COMMA: 5
+  DOT: 3
   DASH: 1
   DOT: 3
+  DOT: 3
+  DASH: 1
+  COMMA: 5
+  COMMA: 5
+  DOT: 3
+  COMMA: 5
   DASH: 1
   DOT: 3
   PARENTHESIS: 2
   COMMA: 5
+  DOT: 3
+  PARENTHESIS: 2
+  DOT: 3
   DASH: 1
   PARENTHESIS: 2
   PARENTHESIS: 2
-  DOT: 3
-  PARENTHESIS: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
@@ -1817,34 +1636,31 @@ COUNTS:
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   SEPARATOR: 3
   SEPARATOR: 1
   SEPARATOR: 2
-  SEPARATOR: 1
   SEPARATOR: 30
+  SEPARATOR: 1
   SEPARATOR: 51
   SEPARATOR: 19
   SEPARATOR: 21
+  SEPARATOR: 53
   SEPARATOR: 3
   SEPARATOR: 53
   SEPARATOR: 3
-  SEPARATOR: 3
-  SEPARATOR: 53
-  SEPARATOR: 51
   SEPARATOR: 20
   SEPARATOR: 49
   SEPARATOR: 51
-  SEPARATOR: 2
+  SEPARATOR: 51
   SEPARATOR: 53
   SEPARATOR: 2
   SEPARATOR: 11
   SEPARATOR: 47
-  SEPARATOR: 2
   SEPARATOR: 2
 
 LINE 27 (length=607)
@@ -1858,62 +1674,59 @@ COUNTS:
   DOT: 2
   DOT: 2
   DOT: 2
+  COMMA: 4
+  COMMA: 4
   DOT: 2
   COMMA: 4
-  COMMA: 4
-  COMMA: 4
-  DOT: 2
   DOT: 2
   PARENTHESIS: 2
   COMMA: 4
-  PARENTHESIS: 2
+  DOT: 2
   PARENTHESIS: 2
   DOT: 2
+  PARENTHESIS: 2
   PARENTHESIS: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
   SEPARATOR: 2
   SEPARATOR: 3
-  SEPARATOR: 3
   SEPARATOR: 17
+  SEPARATOR: 3
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 45
   SEPARATOR: 16
   SEPARATOR: 11
-  SEPARATOR: 2
   SEPARATOR: 37
   SEPARATOR: 2
   SEPARATOR: 1
-  SEPARATOR: 2
   SEPARATOR: 37
-  SEPARATOR: 45
+  SEPARATOR: 2
   SEPARATOR: 11
   SEPARATOR: 33
+  SEPARATOR: 45
   SEPARATOR: 45
   SEPARATOR: 37
   SEPARATOR: 10
@@ -1930,11 +1743,11 @@ COUNTS:
   DOT: 1
   DOT: 1
   DOT: 1
-  DOT: 1
-  PARENTHESIS: 4
-  PARENTHESIS: 4
   PARENTHESIS: 4
   DOT: 1
+  PARENTHESIS: 4
+  DOT: 1
+  PARENTHESIS: 4
   PARENTHESIS: 4
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
@@ -1955,11 +1768,9 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   SEPARATOR: 1
@@ -1970,18 +1781,16 @@ COUNTS:
   SEPARATOR: 21
   SEPARATOR: 5
   SEPARATOR: 17
-  SEPARATOR: 1
   SEPARATOR: 27
   SEPARATOR: 1
   SEPARATOR: 2
-  SEPARATOR: 1
   SEPARATOR: 27
-  SEPARATOR: 21
+  SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 19
   SEPARATOR: 21
   SEPARATOR: 2
-  SEPARATOR: 1
+  SEPARATOR: 21
   SEPARATOR: 27
   SEPARATOR: 2
   SEPARATOR: 36
@@ -2010,11 +1819,11 @@ COUNTS:
   SEPARATOR: 5
   SEPARATOR: 15
   SEPARATOR: 15
-  SEPARATOR: 13
   SEPARATOR: 8
   SEPARATOR: 12
   SEPARATOR: 13
   SEPARATOR: 1
+  SEPARATOR: 13
   SEPARATOR: 15
   SEPARATOR: 2
   SEPARATOR: 25
@@ -2037,13 +1846,12 @@ COUNTS:
   SEPARATOR: 2
   SEPARATOR: 1
   SEPARATOR: 1
+  SEPARATOR: 2
   SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 2
-  SEPARATOR: 2
-  SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 2
@@ -2063,20 +1871,19 @@ COUNTS:
   DOT: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 5
-  ENTITY_SHAPE: 4
   ENTITY_SHAPE: 25
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 8
   ENTITY_SHAPE: 8
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 8
   ENTITY_SHAPE: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 3
   SEPARATOR: 4
   SEPARATOR: 1
+  SEPARATOR: 1
   SEPARATOR: 3
-  SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 3
 
@@ -2089,27 +1896,26 @@ COUNTS:
   DOT: 1
   INITIAL: 1
   DASH: 1
-  DOT: 1
-  DASH: 1
   DASH: 1
   DOT: 1
   QUOTATION: 1
+  DOT: 1
+  DASH: 1
   DOT: 1
   INITIAL: 1
   DOT: 1
   DASH: 1
   DOT: 1
+  INITIAL: 1
+  DASH: 1
+  DOT: 1
+  QUOTATION: 1
+  QUOTATION: 1
+  DOT: 1
+  DOT: 1
+  QUOTATION: 1
   DASH: 1
   INITIAL: 1
-  DOT: 1
-  QUOTATION: 1
-  DASH: 1
-  QUOTATION: 1
-  DOT: 1
-  DASH: 1
-  QUOTATION: 1
-  INITIAL: 1
-  DOT: 1
   INITIAL: 1
   INITIAL: 1
   ENTITY_SHAPE: 1
@@ -2122,14 +1928,11 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 2
 
 LINE 33 (length=13)
 TEXT: ОЭ 2θθβaκr !
 COUNTS:
-  NUMBER: 1
-  NUMBER: 1
   NUMBER: 1
   NUMBER: 1
   NUMBER: 1
@@ -2153,8 +1956,6 @@ COUNTS:
   NUMBER: 1
   NUMBER: 1
   NUMBER: 1
-  NUMBER: 1
-  NUMBER: 1
   ENTITY_SHAPE: 1
   SEPARATOR: 1
 
@@ -2166,64 +1967,60 @@ COUNTS:
   DASH: 1
   DOT: 1
   DASH: 1
+  DASH: 1
+  DOT: 1
+  COMMA: 3
+  QUOTATION: 2
   DOT: 1
   DASH: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  COMMA: 3
+  COMMA: 3
+  DOT: 1
   COMMA: 3
   DASH: 1
   DOT: 1
   QUOTATION: 2
-  DOT: 1
-  DOT: 1
-  DASH: 1
-  DOT: 1
   COMMA: 3
-  COMMA: 3
-  COMMA: 3
-  DASH: 1
+  QUOTATION: 2
+  DOT: 1
   DOT: 1
   QUOTATION: 2
   DASH: 1
-  QUOTATION: 2
-  DOT: 1
-  COMMA: 3
-  DASH: 1
-  QUOTATION: 2
-  DOT: 1
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 11
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 3
   SEPARATOR: 4
-  SEPARATOR: 1
   SEPARATOR: 17
+  SEPARATOR: 1
   SEPARATOR: 12
+  SEPARATOR: 17
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 17
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 17
-  SEPARATOR: 17
   SEPARATOR: 6
   SEPARATOR: 7
   SEPARATOR: 17
   SEPARATOR: 17
-  SEPARATOR: 1
+  SEPARATOR: 17
   SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 15
-  SEPARATOR: 1
 
 LINE 36 (length=462)
 TEXT: Цель работы. Цель диссертационной работы заключается в исследовании и экспериментальной проверке эффективности АСДО военного вуза, функционирующей в ИИС и обеспечивающей снижение временных затрат преподавателей при подготовке курсантов к практическим занятиям на специальной технике и лабораторном оборудовании за счет интеллектуальной поддержки процесса обучения на заданном уровне успеваемости курсантов. В рамках этой цели необходимо решить следующие задачи:
@@ -2232,21 +2029,21 @@ COUNTS:
   COMMA: 1
   DOT: 2
   DOT: 2
+  COMMA: 1
   COLON: 1
-  COMMA: 1
-  DOT: 2
-  DOT: 2
-  DOT: 2
-  COLON: 1
-  COLON: 1
-  DOT: 2
-  COMMA: 1
-  COMMA: 1
-  COMMA: 1
   DOT: 2
   DOT: 2
   COLON: 1
+  DOT: 2
+  COLON: 1
   COMMA: 1
+  COMMA: 1
+  DOT: 2
+  COMMA: 1
+  DOT: 2
+  COMMA: 1
+  DOT: 2
+  COLON: 1
   DOT: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
@@ -2256,48 +2053,44 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 10
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   SEPARATOR: 2
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 15
   SEPARATOR: 1
   SEPARATOR: 1
+  SEPARATOR: 1
   SEPARATOR: 33
   SEPARATOR: 13
   SEPARATOR: 9
-  SEPARATOR: 2
   SEPARATOR: 33
   SEPARATOR: 2
   SEPARATOR: 2
-  SEPARATOR: 1
+  SEPARATOR: 33
   SEPARATOR: 2
-  SEPARATOR: 33
-  SEPARATOR: 33
   SEPARATOR: 4
   SEPARATOR: 23
   SEPARATOR: 33
   SEPARATOR: 2
   SEPARATOR: 33
+  SEPARATOR: 33
   SEPARATOR: 8
   SEPARATOR: 41
-  SEPARATOR: 1
 
 LINE 37 (length=248)
 TEXT: разработать модель и алгоритм функционирования автоматизированной системы дистанционного обучения (АСДО) военного вуза, обеспечивающую интеллектуальную поддержку самостоятельной работы курсантов и преподавателей в процессе дистанционного обучения;
@@ -2317,8 +2110,8 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 4
+  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 18
@@ -2327,9 +2120,9 @@ COUNTS:
   SEPARATOR: 17
   SEPARATOR: 1
   SEPARATOR: 17
-  SEPARATOR: 18
   SEPARATOR: 4
   SEPARATOR: 15
+  SEPARATOR: 18
   SEPARATOR: 18
   SEPARATOR: 17
   SEPARATOR: 3
@@ -2362,9 +2155,9 @@ COUNTS:
   SEPARATOR: 15
   SEPARATOR: 1
   SEPARATOR: 15
-  SEPARATOR: 13
   SEPARATOR: 5
   SEPARATOR: 15
+  SEPARATOR: 13
   SEPARATOR: 13
   SEPARATOR: 15
   SEPARATOR: 5
@@ -2385,15 +2178,14 @@ COUNTS:
   SEPARATOR: 4
   SEPARATOR: 17
   SEPARATOR: 17
-  SEPARATOR: 18
   SEPARATOR: 2
   SEPARATOR: 10
   SEPARATOR: 18
+  SEPARATOR: 18
   SEPARATOR: 17
   SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 17
-  SEPARATOR: 1
 
 LINE 40 (length=171)
 TEXT: определить механизм анализа учебных ситуаций, их ранжирования и формирования комплекса корректирующих управляющих воздействий для достижения заданного уровня обученности;
@@ -2410,9 +2202,9 @@ COUNTS:
   SEPARATOR: 4
   SEPARATOR: 18
   SEPARATOR: 18
+  SEPARATOR: 6
+  SEPARATOR: 6
   SEPARATOR: 12
-  SEPARATOR: 6
-  SEPARATOR: 6
   SEPARATOR: 12
   SEPARATOR: 18
   SEPARATOR: 3
@@ -2435,11 +2227,11 @@ COUNTS:
   SEPARATOR: 21
   SEPARATOR: 1
   SEPARATOR: 21
-  SEPARATOR: 12
   SEPARATOR: 1
   SEPARATOR: 9
   SEPARATOR: 12
   SEPARATOR: 2
+  SEPARATOR: 12
   SEPARATOR: 21
   SEPARATOR: 3
   SEPARATOR: 14
@@ -2460,8 +2252,8 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 5
   SEPARATOR: 1
-  SEPARATOR: 5
   SEPARATOR: 4
+  SEPARATOR: 5
   SEPARATOR: 5
 
 LINE 43 (length=136)
@@ -2490,17 +2282,15 @@ COUNTS:
   SEPARATOR: 9
   SEPARATOR: 2
   SEPARATOR: 3
-  SEPARATOR: 1
   SEPARATOR: 11
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 11
-  SEPARATOR: 9
+  SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 8
   SEPARATOR: 9
-  SEPARATOR: 1
+  SEPARATOR: 9
   SEPARATOR: 11
   SEPARATOR: 1
   SEPARATOR: 8
@@ -2517,13 +2307,13 @@ COUNTS:
   DOT: 1
   DOT: 1
   DOT: 1
+  COMMA: 6
+  COMMA: 6
   DOT: 1
   COMMA: 6
-  COMMA: 6
-  COMMA: 6
-  DOT: 1
   DOT: 1
   COMMA: 6
+  DOT: 1
   DOT: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
@@ -2534,25 +2324,22 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 5
-  SEPARATOR: 1
   SEPARATOR: 18
+  SEPARATOR: 1
   SEPARATOR: 7
   SEPARATOR: 6
+  SEPARATOR: 31
   SEPARATOR: 1
   SEPARATOR: 31
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 31
-  SEPARATOR: 18
   SEPARATOR: 6
   SEPARATOR: 17
   SEPARATOR: 18
-  SEPARATOR: 1
+  SEPARATOR: 18
   SEPARATOR: 31
   SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 22
-  SEPARATOR: 1
   SEPARATOR: 1
 
 LINE 45 (length=319)
@@ -2566,14 +2353,20 @@ COUNTS:
   DOT: 1
   DOT: 1
   DOT: 1
-  DOT: 1
   COMMA: 3
   COMMA: 3
-  COMMA: 3
-  DOT: 1
   DOT: 1
   COMMA: 3
   DOT: 1
+  COMMA: 3
+  DOT: 1
+  DOT: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
@@ -2581,40 +2374,30 @@ COUNTS:
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 3
   SEPARATOR: 1
+  SEPARATOR: 1
   SEPARATOR: 24
   SEPARATOR: 7
   SEPARATOR: 7
-  SEPARATOR: 1
+  SEPARATOR: 20
   SEPARATOR: 1
   SEPARATOR: 20
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 20
-  SEPARATOR: 24
   SEPARATOR: 4
   SEPARATOR: 25
+  SEPARATOR: 24
   SEPARATOR: 24
   SEPARATOR: 20
   SEPARATOR: 3
   SEPARATOR: 26
-  SEPARATOR: 1
 
 LINE 46 (length=2)
 TEXT: 5
 COUNTS:
-  NUMBER: 1
-  NUMBER: 1
   NUMBER: 1
   NUMBER: 1
   NUMBER: 1
@@ -2636,13 +2419,13 @@ COUNTS:
   DOT: 1
   DOT: 1
   DOT: 1
+  COMMA: 2
+  COMMA: 2
   DOT: 1
   COMMA: 2
-  COMMA: 2
-  COMMA: 2
-  DOT: 1
   DOT: 1
   COMMA: 2
+  DOT: 1
   DOT: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
@@ -2663,20 +2446,18 @@ COUNTS:
   SEPARATOR: 10
   SEPARATOR: 3
   SEPARATOR: 4
+  SEPARATOR: 12
   SEPARATOR: 1
   SEPARATOR: 12
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 12
-  SEPARATOR: 10
   SEPARATOR: 1
   SEPARATOR: 4
+  SEPARATOR: 10
   SEPARATOR: 10
   SEPARATOR: 12
   SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 7
-  SEPARATOR: 2
 
 LINE 48 (length=98)
 TEXT: Научная новизна. В диссертации получены следующие результаты, характеризующиеся научной новизной.
@@ -2689,13 +2470,13 @@ COUNTS:
   DOT: 2
   DOT: 2
   DOT: 2
+  COMMA: 1
+  COMMA: 1
   DOT: 2
   COMMA: 1
-  COMMA: 1
-  COMMA: 1
-  DOT: 2
   DOT: 2
   COMMA: 1
+  DOT: 2
   DOT: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
@@ -2708,15 +2489,14 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 8
   SEPARATOR: 3
+  SEPARATOR: 8
   SEPARATOR: 2
+  SEPARATOR: 8
   SEPARATOR: 1
-  SEPARATOR: 8
   SEPARATOR: 2
-  SEPARATOR: 2
-  SEPARATOR: 8
-  SEPARATOR: 8
   SEPARATOR: 2
   SEPARATOR: 4
+  SEPARATOR: 8
   SEPARATOR: 8
   SEPARATOR: 8
   SEPARATOR: 2
@@ -2733,15 +2513,14 @@ COUNTS:
   DOT: 1
   DOT: 1
   DOT: 1
-  DOT: 1
   COMMA: 2
   COMMA: 2
-  COMMA: 2
-  DOT: 1
   DOT: 1
   COMMA: 2
   DOT: 1
-  ENTITY_SHAPE: 1
+  COMMA: 2
+  DOT: 1
+  DOT: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
@@ -2763,15 +2542,14 @@ COUNTS:
   SEPARATOR: 27
   SEPARATOR: 9
   SEPARATOR: 10
+  SEPARATOR: 28
   SEPARATOR: 1
   SEPARATOR: 28
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 28
-  SEPARATOR: 27
   SEPARATOR: 11
   SEPARATOR: 22
+  SEPARATOR: 27
   SEPARATOR: 27
   SEPARATOR: 28
   SEPARATOR: 8
@@ -2811,26 +2589,22 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   SEPARATOR: 1
   SEPARATOR: 3
   SEPARATOR: 15
   SEPARATOR: 6
   SEPARATOR: 5
+  SEPARATOR: 15
   SEPARATOR: 1
   SEPARATOR: 15
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 15
-  SEPARATOR: 15
   SEPARATOR: 2
   SEPARATOR: 14
   SEPARATOR: 15
   SEPARATOR: 15
+  SEPARATOR: 15
   SEPARATOR: 4
   SEPARATOR: 23
-  SEPARATOR: 1
 
 LINE 51 (length=354)
 TEXT: На основе анализа известных подходов к проектированию и построению компьютерных сетей разработана модель проектирования топологической структуры сети на основе алгоритма Форда-Беллмана теории графов, позволяющая синтезировать сегмент интегрированной информационной системы сложной архитектуры смешенного типа с учетом объема и содержания решаемых задач.
@@ -2840,25 +2614,24 @@ COUNTS:
   DASH: 1
   DOT: 1
   DASH: 1
-  DOT: 1
-  DASH: 1
-  COMMA: 1
-  DASH: 1
-  DOT: 1
-  DOT: 1
-  DOT: 1
   DASH: 1
   DOT: 1
   COMMA: 1
-  COMMA: 1
-  COMMA: 1
-  DASH: 1
   DOT: 1
   DASH: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  COMMA: 1
+  COMMA: 1
   DOT: 1
   COMMA: 1
   DASH: 1
   DOT: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
@@ -2866,41 +2639,37 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
   SEPARATOR: 1
   SEPARATOR: 7
   SEPARATOR: 28
   SEPARATOR: 8
   SEPARATOR: 11
-  SEPARATOR: 1
+  SEPARATOR: 24
   SEPARATOR: 1
   SEPARATOR: 24
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 24
-  SEPARATOR: 28
   SEPARATOR: 4
   SEPARATOR: 22
+  SEPARATOR: 28
   SEPARATOR: 28
   SEPARATOR: 24
   SEPARATOR: 5
   SEPARATOR: 27
-  SEPARATOR: 1
 
 LINE 52 (length=272)
 TEXT: Практическая ценность результатов работы заключается в том, что они позволяют использовать разработанные в работе алгоритмы и модели АСДО и ИИС для организации учебно - воспитательного процесса в высшем военно-учебном заведении на основе стандарта качества ISO-9001:2000.
@@ -2913,39 +2682,34 @@ COUNTS:
   DASH: 3
   DOT: 1
   DASH: 3
-  DOT: 1
   DASH: 3
-  COLON: 1
+  DOT: 1
   COMMA: 1
+  COLON: 1
   NUMBER: 2
   NUMBER: 2
+  DOT: 1
   DASH: 3
   DOT: 1
+  COLON: 1
   DOT: 1
+  COLON: 1
   YEAR: 1
+  DASH: 3
+  COMMA: 1
+  NUMBER: 2
+  COMMA: 1
   DOT: 1
+  COMMA: 1
+  DASH: 3
+  DOT: 1
+  COMMA: 1
+  DOT: 1
+  NUMBER: 2
   COLON: 1
-  COLON: 1
-  DASH: 3
-  NUMBER: 2
-  DOT: 1
-  COMMA: 1
-  COMMA: 1
-  COMMA: 1
-  DASH: 3
   DOT: 1
   DASH: 3
-  DOT: 1
-  COLON: 1
-  COMMA: 1
   NUMBER: 2
-  DASH: 3
-  NUMBER: 2
-  NUMBER: 2
-  DOT: 1
-  NUMBER: 2
-  YEAR: 1
-  YEAR: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
@@ -2960,9 +2724,8 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   SEPARATOR: 1
@@ -2973,14 +2736,12 @@ COUNTS:
   SEPARATOR: 23
   SEPARATOR: 8
   SEPARATOR: 5
-  SEPARATOR: 1
   SEPARATOR: 13
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 2
-  SEPARATOR: 1
   SEPARATOR: 13
-  SEPARATOR: 23
+  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 1
@@ -2988,10 +2749,9 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 23
   SEPARATOR: 2
+  SEPARATOR: 23
   SEPARATOR: 13
-  SEPARATOR: 1
   SEPARATOR: 17
-  SEPARATOR: 1
 
 LINE 53 (length=619)
 TEXT: Внедрение. Результаты проведенного исследования были использованы при организации учебного процесса Военного института радиоэлектроники, а также при выполнении научно-исследовательских работ, направленных на совершенствование подготовки специалистов в военных вузах. Фактический целевой эффект от внедрения АСДО в Военном институте радиоэлектроники выразился в снижении нагрузки преподавателей: при консультациях в ходе подготовки к практическим занятиям на специальной технике на 50%, а при консультациях к другим видам занятий - на 75% за счет обеспечения информационной, вычислительной и интеллектуальной поддержек.
@@ -3003,57 +2763,53 @@ COUNTS:
   DASH: 2
   DOT: 3
   DASH: 2
-  DOT: 3
   DASH: 2
-  COLON: 1
+  DOT: 3
   COMMA: 4
+  COLON: 1
   NUMBER: 2
   NUMBER: 2
-  DASH: 2
-  DOT: 3
-  DOT: 3
-  DOT: 3
-  COLON: 1
-  COLON: 1
-  DASH: 2
-  NUMBER: 2
-  DOT: 3
-  COMMA: 4
-  COMMA: 4
-  COMMA: 4
-  DASH: 2
   DOT: 3
   DASH: 2
   DOT: 3
   COLON: 1
+  DOT: 3
+  COLON: 1
+  DASH: 2
   COMMA: 4
   NUMBER: 2
-  DASH: 2
-  NUMBER: 2
-  NUMBER: 2
+  COMMA: 4
   DOT: 3
+  COMMA: 4
+  DASH: 2
+  DOT: 3
+  COMMA: 4
+  DOT: 3
+  NUMBER: 2
+  COLON: 1
+  DOT: 3
+  DASH: 2
   NUMBER: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 5
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 9
   ENTITY_SHAPE: 4
-  ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 4
   ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 4
   ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 5
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   SEPARATOR: 3
   SEPARATOR: 1
@@ -3065,24 +2821,22 @@ COUNTS:
   SEPARATOR: 39
   SEPARATOR: 22
   SEPARATOR: 6
-  SEPARATOR: 3
   SEPARATOR: 56
   SEPARATOR: 3
   SEPARATOR: 1
-  SEPARATOR: 3
   SEPARATOR: 56
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 39
+  SEPARATOR: 3
   SEPARATOR: 9
   SEPARATOR: 31
+  SEPARATOR: 39
   SEPARATOR: 39
   SEPARATOR: 56
   SEPARATOR: 2
   SEPARATOR: 1
   SEPARATOR: 8
   SEPARATOR: 48
-  SEPARATOR: 1
 
 LINE 54 (length=21)
 TEXT: На защиту выносятся:
@@ -3130,16 +2884,16 @@ COUNTS:
   SEPARATOR: 6
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 10
+  SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 4
   SEPARATOR: 14
   SEPARATOR: 1
   SEPARATOR: 14
-  SEPARATOR: 10
   SEPARATOR: 3
   SEPARATOR: 6
+  SEPARATOR: 10
   SEPARATOR: 10
   SEPARATOR: 14
   SEPARATOR: 1
@@ -3164,10 +2918,9 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   SEPARATOR: 2
-  SEPARATOR: 1
   SEPARATOR: 6
+  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 4
@@ -3204,18 +2957,16 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   SEPARATOR: 2
+  SEPARATOR: 6
   SEPARATOR: 1
   SEPARATOR: 6
-  SEPARATOR: 6
   SEPARATOR: 2
   SEPARATOR: 14
   SEPARATOR: 14
-  SEPARATOR: 6
   SEPARATOR: 2
   SEPARATOR: 4
+  SEPARATOR: 6
   SEPARATOR: 6
   SEPARATOR: 14
   SEPARATOR: 2
@@ -3231,7 +2982,6 @@ COUNTS:
   DASH: 1
   DASH: 1
   DASH: 1
-  DASH: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 4
   ENTITY_SHAPE: 1
@@ -3240,27 +2990,24 @@ COUNTS:
   ENTITY_SHAPE: 1
   SEPARATOR: 4
   SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 5
+  SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 6
   SEPARATOR: 9
   SEPARATOR: 2
   SEPARATOR: 9
-  SEPARATOR: 5
   SEPARATOR: 2
   SEPARATOR: 5
   SEPARATOR: 5
   SEPARATOR: 2
+  SEPARATOR: 5
   SEPARATOR: 9
-  SEPARATOR: 1
   SEPARATOR: 9
 
 LINE 59 (length=2)
 TEXT: 6
 COUNTS:
-  NUMBER: 1
-  NUMBER: 1
   NUMBER: 1
   NUMBER: 1
   NUMBER: 1
@@ -3282,59 +3029,54 @@ COUNTS:
   DASH: 3
   DOT: 6
   DASH: 3
-  DOT: 6
   DASH: 3
-  COLON: 2
+  DOT: 6
   COMMA: 7
+  COLON: 2
   NUMBER: 5
   NUMBER: 5
-  DASH: 3
-  DOT: 6
   QUOTATION: 8
   DOT: 6
+  DASH: 3
+  DOT: 6
+  COLON: 2
+  DOT: 6
+  COLON: 2
   YEAR: 5
-  DOT: 6
-  COLON: 2
-  COLON: 2
   DASH: 3
+  COMMA: 7
   NUMBER: 5
+  COMMA: 7
   DOT: 6
   COMMA: 7
-  COMMA: 7
-  COMMA: 7
   DASH: 3
+  DOT: 6
+  PARENTHESIS: 8
+  QUOTATION: 8
+  COMMA: 7
+  QUOTATION: 8
+  DOT: 6
+  NUMBER: 5
+  COLON: 2
+  PARENTHESIS: 8
   DOT: 6
   QUOTATION: 8
   DASH: 3
-  QUOTATION: 8
-  DOT: 6
-  PARENTHESIS: 8
-  COLON: 2
-  COMMA: 7
-  NUMBER: 5
-  DASH: 3
   PARENTHESIS: 8
   NUMBER: 5
-  QUOTATION: 8
-  NUMBER: 5
   PARENTHESIS: 8
-  DOT: 6
-  NUMBER: 5
-  YEAR: 5
-  PARENTHESIS: 8
-  YEAR: 5
   ENTITY_SHAPE: 5
   ENTITY_SHAPE: 15
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 15
   ENTITY_SHAPE: 10
-  ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 5
   ENTITY_SHAPE: 15
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 3
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 10
   ENTITY_SHAPE: 5
@@ -3342,32 +3084,30 @@ COUNTS:
   ENTITY_SHAPE: 15
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   SEPARATOR: 6
   SEPARATOR: 1
   SEPARATOR: 5
   SEPARATOR: 21
   SEPARATOR: 1
-  SEPARATOR: 4
   SEPARATOR: 1
-  SEPARATOR: 2
+  SEPARATOR: 4
   SEPARATOR: 27
+  SEPARATOR: 2
   SEPARATOR: 15
   SEPARATOR: 9
-  SEPARATOR: 1
-  SEPARATOR: 6
   SEPARATOR: 49
   SEPARATOR: 6
   SEPARATOR: 3
   SEPARATOR: 1
-  SEPARATOR: 6
   SEPARATOR: 49
-  SEPARATOR: 27
+  SEPARATOR: 1
+  SEPARATOR: 6
   SEPARATOR: 11
   SEPARATOR: 2
   SEPARATOR: 19
   SEPARATOR: 3
+  SEPARATOR: 27
   SEPARATOR: 27
   SEPARATOR: 49
   SEPARATOR: 1
@@ -3389,16 +3129,14 @@ COUNTS:
   DOT: 2
   DOT: 2
   DOT: 2
-  NUMBER: 2
-  DOT: 2
-  COMMA: 1
-  COMMA: 1
-  COMMA: 1
-  DOT: 2
-  DOT: 2
   COMMA: 1
   NUMBER: 2
-  NUMBER: 2
+  COMMA: 1
+  DOT: 2
+  COMMA: 1
+  DOT: 2
+  COMMA: 1
+  DOT: 2
   NUMBER: 2
   DOT: 2
   NUMBER: 2
@@ -3406,8 +3144,8 @@ COUNTS:
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
@@ -3419,19 +3157,16 @@ COUNTS:
   SEPARATOR: 6
   SEPARATOR: 3
   SEPARATOR: 4
+  SEPARATOR: 9
   SEPARATOR: 2
   SEPARATOR: 9
   SEPARATOR: 2
-  SEPARATOR: 2
-  SEPARATOR: 9
-  SEPARATOR: 6
   SEPARATOR: 2
   SEPARATOR: 5
   SEPARATOR: 6
-  SEPARATOR: 1
+  SEPARATOR: 6
   SEPARATOR: 9
   SEPARATOR: 5
-  SEPARATOR: 1
   SEPARATOR: 1
 
 LINE 62 (length=389)
@@ -3449,16 +3184,14 @@ COUNTS:
   DOT: 1
   DOT: 1
   DOT: 1
-  NUMBER: 11
-  DOT: 1
-  COMMA: 8
-  COMMA: 8
-  COMMA: 8
-  DOT: 1
-  DOT: 1
   COMMA: 8
   NUMBER: 11
-  NUMBER: 11
+  COMMA: 8
+  DOT: 1
+  COMMA: 8
+  DOT: 1
+  COMMA: 8
+  DOT: 1
   NUMBER: 11
   DOT: 1
   NUMBER: 11
@@ -3480,9 +3213,8 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
@@ -3492,26 +3224,25 @@ COUNTS:
   SEPARATOR: 31
   SEPARATOR: 9
   SEPARATOR: 10
-  SEPARATOR: 1
   SEPARATOR: 14
   SEPARATOR: 1
   SEPARATOR: 2
-  SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 14
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 31
-  SEPARATOR: 4
   SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 4
   SEPARATOR: 2
   SEPARATOR: 20
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 31
   SEPARATOR: 2
+  SEPARATOR: 31
   SEPARATOR: 14
+  SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 4
   SEPARATOR: 24
@@ -3531,25 +3262,23 @@ COUNTS:
   DOT: 5
   DOT: 5
   DOT: 5
-  NUMBER: 4
-  DOT: 5
-  COMMA: 4
-  COMMA: 4
-  COMMA: 4
-  DOT: 5
-  DOT: 5
   COMMA: 4
   NUMBER: 4
-  NUMBER: 4
+  COMMA: 4
+  DOT: 5
+  COMMA: 4
+  DOT: 5
+  COMMA: 4
+  DOT: 5
   NUMBER: 4
   DOT: 5
   NUMBER: 4
+  ENTITY_SHAPE: 4
   ENTITY_SHAPE: 4
   ENTITY_SHAPE: 4
   ENTITY_SHAPE: 4
   ENTITY_SHAPE: 4
   ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 4
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 4
   ENTITY_SHAPE: 3
@@ -3557,49 +3286,47 @@ COUNTS:
   ENTITY_SHAPE: 4
   SEPARATOR: 5
   SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 8
+  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 16
   SEPARATOR: 9
   SEPARATOR: 3
-  SEPARATOR: 5
   SEPARATOR: 21
   SEPARATOR: 5
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 5
   SEPARATOR: 21
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 16
+  SEPARATOR: 1
+  SEPARATOR: 5
   SEPARATOR: 4
   SEPARATOR: 2
   SEPARATOR: 18
   SEPARATOR: 1
   SEPARATOR: 16
+  SEPARATOR: 16
   SEPARATOR: 21
   SEPARATOR: 3
   SEPARATOR: 15
-  SEPARATOR: 1
 
 LINE 64 (length=27)
 TEXT: ОСНОВНОЕ СОДЕРЖАНИЕ РАБОТЫ
 COUNTS:
   ENTITY_SHAPE: 5
-  ENTITY_SHAPE: 4
   ENTITY_SHAPE: 24
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 7
   ENTITY_SHAPE: 7
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 7
   ENTITY_SHAPE: 2
   SEPARATOR: 1
   SEPARATOR: 3
   SEPARATOR: 5
   SEPARATOR: 2
-  SEPARATOR: 3
   SEPARATOR: 2
+  SEPARATOR: 3
   SEPARATOR: 1
 
 LINE 65 (length=124)
@@ -3613,13 +3340,13 @@ COUNTS:
   DOT: 1
   DOT: 1
   DOT: 1
+  COMMA: 2
+  COMMA: 2
   DOT: 1
   COMMA: 2
-  COMMA: 2
-  COMMA: 2
-  DOT: 1
   DOT: 1
   COMMA: 2
+  DOT: 1
   DOT: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
@@ -3637,15 +3364,14 @@ COUNTS:
   SEPARATOR: 13
   SEPARATOR: 3
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 11
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 11
-  SEPARATOR: 13
+  SEPARATOR: 1
   SEPARATOR: 5
   SEPARATOR: 6
+  SEPARATOR: 13
   SEPARATOR: 13
   SEPARATOR: 11
   SEPARATOR: 5
@@ -3658,25 +3384,24 @@ COUNTS:
   DASH: 2
   DOT: 2
   DASH: 2
-  DOT: 2
-  DASH: 2
-  COMMA: 8
-  DASH: 2
-  DOT: 2
-  DOT: 2
-  DOT: 2
   DASH: 2
   DOT: 2
   COMMA: 8
-  COMMA: 8
-  COMMA: 8
-  DASH: 2
   DOT: 2
   DASH: 2
+  DOT: 2
+  DOT: 2
+  DASH: 2
+  COMMA: 8
+  COMMA: 8
   DOT: 2
   COMMA: 8
   DASH: 2
   DOT: 2
+  COMMA: 8
+  DOT: 2
+  DOT: 2
+  DASH: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 6
   ENTITY_SHAPE: 1
@@ -3687,28 +3412,26 @@ COUNTS:
   SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 2
-  SEPARATOR: 2
   SEPARATOR: 29
+  SEPARATOR: 2
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 62
   SEPARATOR: 30
   SEPARATOR: 18
-  SEPARATOR: 2
   SEPARATOR: 69
   SEPARATOR: 2
   SEPARATOR: 1
-  SEPARATOR: 2
   SEPARATOR: 69
-  SEPARATOR: 62
+  SEPARATOR: 2
   SEPARATOR: 20
   SEPARATOR: 50
+  SEPARATOR: 62
   SEPARATOR: 62
   SEPARATOR: 69
   SEPARATOR: 2
   SEPARATOR: 11
   SEPARATOR: 68
-  SEPARATOR: 2
 
 LINE 67 (length=194)
 TEXT: Во втором параграфе рассмотрены описательные модели процессов самостоятельной работы курсантов военного вуза при подготовке к практическим занятиям на специальной технике и сложной лабораторной
@@ -3734,8 +3457,6 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   SEPARATOR: 1
   SEPARATOR: 6
   SEPARATOR: 15
@@ -3743,9 +3464,9 @@ COUNTS:
   SEPARATOR: 6
   SEPARATOR: 9
   SEPARATOR: 9
-  SEPARATOR: 15
   SEPARATOR: 3
   SEPARATOR: 12
+  SEPARATOR: 15
   SEPARATOR: 15
   SEPARATOR: 9
   SEPARATOR: 4
@@ -3754,8 +3475,6 @@ COUNTS:
 LINE 68 (length=2)
 TEXT: 7
 COUNTS:
-  NUMBER: 1
-  NUMBER: 1
   NUMBER: 1
   NUMBER: 1
   NUMBER: 1
@@ -3775,26 +3494,24 @@ COUNTS:
   DASH: 1
   DOT: 2
   DASH: 1
-  DOT: 2
-  DASH: 1
-  COMMA: 2
-  DASH: 1
-  DOT: 2
-  DOT: 2
-  DOT: 2
   DASH: 1
   DOT: 2
   COMMA: 2
-  COMMA: 2
-  COMMA: 2
-  DASH: 1
   DOT: 2
   DASH: 1
+  DOT: 2
+  DOT: 2
+  DASH: 1
+  COMMA: 2
+  COMMA: 2
   DOT: 2
   COMMA: 2
   DASH: 1
   DOT: 2
-  ENTITY_SHAPE: 1
+  COMMA: 2
+  DOT: 2
+  DOT: 2
+  DASH: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
@@ -3822,22 +3539,19 @@ COUNTS:
   SEPARATOR: 8
   SEPARATOR: 7
   SEPARATOR: 8
-  SEPARATOR: 2
   SEPARATOR: 15
   SEPARATOR: 2
+  SEPARATOR: 15
   SEPARATOR: 2
   SEPARATOR: 1
-  SEPARATOR: 15
+  SEPARATOR: 5
+  SEPARATOR: 5
   SEPARATOR: 8
-  SEPARATOR: 5
-  SEPARATOR: 5
   SEPARATOR: 8
   SEPARATOR: 15
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 24
-  SEPARATOR: 1
-  SEPARATOR: 1
 
 LINE 70 (length=1017)
 TEXT: В третьем параграфе проанализированы задачи, объекты и способы управления самостоятельной работой как многофункциональной системой. Основными задачами такого управления являются: повышение успеваемости курсантов, корректировка учебно-воспитательного процесса, обеспечение мотивации обучения, снижение затрат на эксплуатацию специальной техники Определены органы управления (командование и профессорско-преподавательский состав) системы самостоятельной работы и объекты контроля (начальники курсов, начальники образцов специальной техники, курсанты). Предложена модель управления самостоятельной работой в рамках распределенной системы для выявления курсантов, уровень обученности которых отличается от прогнозируемою, ранжирование возможных причин такой сигуации и выбор управляющих воздействий для проведения устранения расхождений. Определены способы управления самостоятельной работой: организационно-методические, адаптивнопсихологические, информационные, каждый из которых включает методы поощрения и наказания.
@@ -3847,80 +3561,75 @@ COUNTS:
   DASH: 3
   DOT: 4
   DASH: 3
-  DOT: 4
   DASH: 3
+  DOT: 4
+  COMMA: 11
   COLON: 2
-  COMMA: 11
+  DOT: 4
   DASH: 3
-  DOT: 4
-  DOT: 4
   DOT: 4
   COLON: 2
+  DOT: 4
   COLON: 2
   DASH: 3
+  COMMA: 11
+  COMMA: 11
   DOT: 4
   COMMA: 11
-  COMMA: 11
-  COMMA: 11
-  DASH: 3
-  DOT: 4
   DASH: 3
   DOT: 4
   PARENTHESIS: 4
-  COLON: 2
   COMMA: 11
-  DASH: 3
-  PARENTHESIS: 4
+  DOT: 4
+  COLON: 2
   PARENTHESIS: 4
   DOT: 4
+  DASH: 3
+  PARENTHESIS: 4
   PARENTHESIS: 4
   ENTITY_SHAPE: 4
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 4
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 4
   ENTITY_SHAPE: 4
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 4
-  ENTITY_SHAPE: 4
-  ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 4
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   SEPARATOR: 4
   SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 31
+  SEPARATOR: 1
   SEPARATOR: 3
   SEPARATOR: 75
   SEPARATOR: 32
   SEPARATOR: 21
-  SEPARATOR: 4
   SEPARATOR: 72
   SEPARATOR: 4
+  SEPARATOR: 72
   SEPARATOR: 4
   SEPARATOR: 1
-  SEPARATOR: 72
-  SEPARATOR: 75
   SEPARATOR: 24
   SEPARATOR: 50
+  SEPARATOR: 75
   SEPARATOR: 75
   SEPARATOR: 72
   SEPARATOR: 2
   SEPARATOR: 18
   SEPARATOR: 72
-  SEPARATOR: 2
-  SEPARATOR: 3
 
 LINE 71 (length=675)
 TEXT: В четвертом параграфе рассмотрены критерии эффективности АСДО и схема исследований. В соответствии со стандартом качества ISO 9001'2000 критериями эффективности АСДО являются' снижение временных издержек ППС: при подготовке к практическим занятиям на специальной технике (Wcn) и при подготовке к занятиям с применением сложной лабораторной базы (Waa6). Для обеспечения работы АСДО на основе ИИС: уровень инженерного персонала (W0κπ) - характеризует отношение имеющегося штата инженерного персонала к необходимому для бесперебойной эксплуатации; потери времени эксплуатации АСДО, вызванные техническими npH4HHaMH(WnBp) характеризует степень бесперебойной эксплуатации АСДО. •
@@ -3933,43 +3642,38 @@ COUNTS:
   DASH: 1
   DOT: 3
   DASH: 1
-  DOT: 3
   DASH: 1
-  COLON: 2
+  DOT: 3
   COMMA: 1
+  COLON: 2
   NUMBER: 5
   NUMBER: 5
+  DOT: 3
   DASH: 1
   DOT: 3
+  COLON: 2
   DOT: 3
+  COLON: 2
   YEAR: 1
+  DASH: 1
+  COMMA: 1
+  NUMBER: 5
+  COMMA: 1
   DOT: 3
+  COMMA: 1
+  DASH: 1
+  DOT: 3
+  PARENTHESIS: 8
+  COMMA: 1
+  DOT: 3
+  NUMBER: 5
   COLON: 2
-  COLON: 2
-  DASH: 1
-  NUMBER: 5
-  DOT: 3
-  COMMA: 1
-  COMMA: 1
-  COMMA: 1
-  DASH: 1
-  DOT: 3
-  DASH: 1
-  DOT: 3
   PARENTHESIS: 8
-  COLON: 2
-  COMMA: 1
-  NUMBER: 5
+  DOT: 3
   DASH: 1
   PARENTHESIS: 8
   NUMBER: 5
-  NUMBER: 5
   PARENTHESIS: 8
-  DOT: 3
-  NUMBER: 5
-  YEAR: 1
-  PARENTHESIS: 8
-  YEAR: 1
   ENTITY_SHAPE: 5
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
@@ -3982,9 +3686,8 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 7
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 7
-  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 1
   SEPARATOR: 3
   SEPARATOR: 2
   SEPARATOR: 20
@@ -3993,14 +3696,12 @@ COUNTS:
   SEPARATOR: 37
   SEPARATOR: 12
   SEPARATOR: 16
-  SEPARATOR: 3
   SEPARATOR: 48
   SEPARATOR: 3
   SEPARATOR: 7
-  SEPARATOR: 3
   SEPARATOR: 48
   SEPARATOR: 1
-  SEPARATOR: 37
+  SEPARATOR: 3
   SEPARATOR: 12
   SEPARATOR: 1
   SEPARATOR: 37
@@ -4008,6 +3709,7 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 37
   SEPARATOR: 2
+  SEPARATOR: 37
   SEPARATOR: 48
   SEPARATOR: 8
   SEPARATOR: 61
@@ -4022,34 +3724,31 @@ COUNTS:
   DASH: 7
   DOT: 3
   DASH: 7
+  DASH: 7
+  DOT: 3
+  COMMA: 10
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 3
+  DASH: 7
+  DOT: 3
   DOT: 3
   DASH: 7
   COMMA: 10
   NUMBER: 1
-  NUMBER: 1
-  DASH: 7
-  DOT: 3
-  DOT: 3
-  DOT: 3
-  DASH: 7
-  NUMBER: 1
+  COMMA: 10
   DOT: 3
   COMMA: 10
-  COMMA: 10
-  COMMA: 10
-  DASH: 7
-  DOT: 3
   DASH: 7
   DOT: 3
   PARENTHESIS: 7
   COMMA: 10
-  NUMBER: 1
-  DASH: 7
-  PARENTHESIS: 7
-  NUMBER: 1
+  DOT: 3
   NUMBER: 1
   PARENTHESIS: 7
   DOT: 3
+  DASH: 7
+  PARENTHESIS: 7
   NUMBER: 1
   PARENTHESIS: 7
   ENTITY_SHAPE: 1
@@ -4062,58 +3761,50 @@ COUNTS:
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 18
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 3
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   SEPARATOR: 3
   SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 18
+  SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 68
   SEPARATOR: 19
   SEPARATOR: 26
   SEPARATOR: 1
-  SEPARATOR: 3
   SEPARATOR: 58
   SEPARATOR: 3
   SEPARATOR: 3
-  SEPARATOR: 3
   SEPARATOR: 58
-  SEPARATOR: 68
+  SEPARATOR: 3
   SEPARATOR: 20
   SEPARATOR: 1
   SEPARATOR: 48
   SEPARATOR: 68
   SEPARATOR: 2
+  SEPARATOR: 68
   SEPARATOR: 58
   SEPARATOR: 16
   SEPARATOR: 57
-  SEPARATOR: 1
 
 LINE 73 (length=2)
 TEXT: 8
 COUNTS:
-  NUMBER: 1
-  NUMBER: 1
   NUMBER: 1
   NUMBER: 1
   NUMBER: 1
@@ -4135,9 +3826,9 @@ COUNTS:
   SEPARATOR: 3
   SEPARATOR: 7
   SEPARATOR: 7
-  SEPARATOR: 5
   SEPARATOR: 3
   SEPARATOR: 2
+  SEPARATOR: 5
   SEPARATOR: 5
   SEPARATOR: 7
   SEPARATOR: 4
@@ -4152,32 +3843,30 @@ COUNTS:
   NUMBER: 1
   NUMBER: 1
   NUMBER: 1
-  NUMBER: 1
-  NUMBER: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
-  SEPARATOR: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
   SEPARATOR: 1
   SEPARATOR: 4
+  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 5
   SEPARATOR: 5
-  SEPARATOR: 4
   SEPARATOR: 1
   SEPARATOR: 5
+  SEPARATOR: 4
   SEPARATOR: 4
   SEPARATOR: 5
   SEPARATOR: 3
@@ -4193,34 +3882,31 @@ COUNTS:
   DASH: 7
   DOT: 4
   DASH: 7
+  DASH: 7
+  DOT: 4
+  COMMA: 16
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 4
+  DASH: 7
+  DOT: 4
   DOT: 4
   DASH: 7
   COMMA: 16
   NUMBER: 1
-  NUMBER: 1
-  DASH: 7
-  DOT: 4
-  DOT: 4
-  DOT: 4
-  DASH: 7
-  NUMBER: 1
+  COMMA: 16
   DOT: 4
   COMMA: 16
-  COMMA: 16
-  COMMA: 16
-  DASH: 7
-  DOT: 4
   DASH: 7
   DOT: 4
   PARENTHESIS: 8
   COMMA: 16
-  NUMBER: 1
-  DASH: 7
-  PARENTHESIS: 8
-  NUMBER: 1
+  DOT: 4
   NUMBER: 1
   PARENTHESIS: 8
   DOT: 4
+  DASH: 7
+  PARENTHESIS: 8
   NUMBER: 1
   PARENTHESIS: 8
   ENTITY_SHAPE: 1
@@ -4228,8 +3914,8 @@ COUNTS:
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 14
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 3
@@ -4242,8 +3928,6 @@ COUNTS:
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 4
-  ENTITY_SHAPE: 2
   SEPARATOR: 4
   SEPARATOR: 1
   SEPARATOR: 1
@@ -4251,22 +3935,20 @@ COUNTS:
   SEPARATOR: 49
   SEPARATOR: 22
   SEPARATOR: 26
+  SEPARATOR: 74
   SEPARATOR: 4
+  SEPARATOR: 74
   SEPARATOR: 1
-  SEPARATOR: 74
   SEPARATOR: 4
-  SEPARATOR: 4
-  SEPARATOR: 74
-  SEPARATOR: 49
   SEPARATOR: 12
   SEPARATOR: 1
   SEPARATOR: 43
+  SEPARATOR: 49
   SEPARATOR: 49
   SEPARATOR: 74
   SEPARATOR: 1
   SEPARATOR: 14
   SEPARATOR: 51
-  SEPARATOR: 1
 
 LINE 77 (length=18)
 TEXT: Pj=∑,P<cpm.),	(1)
@@ -4283,27 +3965,23 @@ COUNTS:
   DOT: 1
   DOT: 1
   DOT: 1
+  COMMA: 2
   NUMBER: 1
-  DOT: 1
-  COMMA: 2
-  COMMA: 2
   COMMA: 2
   DOT: 1
+  COMMA: 2
   DOT: 1
   PARENTHESIS: 3
   COMMA: 2
-  NUMBER: 1
-  PARENTHESIS: 3
-  NUMBER: 1
+  DOT: 1
   NUMBER: 1
   PARENTHESIS: 3
   DOT: 1
+  PARENTHESIS: 3
   NUMBER: 1
   PARENTHESIS: 3
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
@@ -4323,17 +4001,14 @@ COUNTS:
   NUMBER: 1
   DASH: 1
   DASH: 1
-  NUMBER: 1
   COMMA: 1
+  NUMBER: 1
   COMMA: 1
   COMMA: 1
   DASH: 1
-  DASH: 1
   COMMA: 1
   NUMBER: 1
   DASH: 1
-  NUMBER: 1
-  NUMBER: 1
   NUMBER: 1
   ENTITY_SHAPE: 1
   SEPARATOR: 2
@@ -4342,10 +4017,10 @@ COUNTS:
   SEPARATOR: 2
   SEPARATOR: 3
   SEPARATOR: 3
-  SEPARATOR: 5
   SEPARATOR: 2
   SEPARATOR: 1
   SEPARATOR: 4
+  SEPARATOR: 5
   SEPARATOR: 5
   SEPARATOR: 3
   SEPARATOR: 1
@@ -4354,7 +4029,6 @@ COUNTS:
 LINE 79 (length=10)
 TEXT: f = ∑Pj •
 COUNTS:
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
 
 LINE 80 (length=295)
@@ -4367,38 +4041,35 @@ COUNTS:
   DASH: 1
   DOT: 2
   DASH: 1
+  DASH: 1
+  DOT: 2
+  COMMA: 9
+  NUMBER: 16
+  NUMBER: 16
+  QUOTATION: 1
+  DOT: 2
+  DASH: 1
+  DOT: 2
   DOT: 2
   DASH: 1
   COMMA: 9
   NUMBER: 16
-  NUMBER: 16
-  DASH: 1
-  DOT: 2
-  QUOTATION: 1
-  DOT: 2
-  DOT: 2
-  DASH: 1
-  NUMBER: 16
+  COMMA: 9
   DOT: 2
   COMMA: 9
-  COMMA: 9
-  COMMA: 9
   DASH: 1
-  DOT: 2
-  QUOTATION: 1
-  DASH: 1
-  QUOTATION: 1
   DOT: 2
   PARENTHESIS: 2
-  COMMA: 9
-  NUMBER: 16
-  DASH: 1
-  PARENTHESIS: 2
-  NUMBER: 16
   QUOTATION: 1
+  COMMA: 9
+  QUOTATION: 1
+  DOT: 2
   NUMBER: 16
   PARENTHESIS: 2
   DOT: 2
+  QUOTATION: 1
+  DASH: 1
+  PARENTHESIS: 2
   NUMBER: 16
   PARENTHESIS: 2
   ENTITY_SHAPE: 16
@@ -4418,36 +4089,32 @@ COUNTS:
   SEPARATOR: 10
   SEPARATOR: 9
   SEPARATOR: 4
+  SEPARATOR: 23
   SEPARATOR: 2
   SEPARATOR: 23
+  SEPARATOR: 2
+  SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 1
-  SEPARATOR: 23
-  SEPARATOR: 2
-  SEPARATOR: 2
-  SEPARATOR: 2
-  SEPARATOR: 10
   SEPARATOR: 3
-  SEPARATOR: 1
   SEPARATOR: 3
   SEPARATOR: 20
   SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 10
   SEPARATOR: 2
+  SEPARATOR: 10
   SEPARATOR: 23
+  SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 4
   SEPARATOR: 16
-  SEPARATOR: 1
 
 LINE 81 (length=2)
 TEXT: 9
 COUNTS:
-  NUMBER: 1
-  NUMBER: 1
   NUMBER: 1
   NUMBER: 1
   NUMBER: 1
@@ -4468,8 +4135,6 @@ COUNTS:
   PARENTHESIS: 2
   NUMBER: 1
   PARENTHESIS: 2
-  NUMBER: 1
-  NUMBER: 1
   PARENTHESIS: 2
   NUMBER: 1
   PARENTHESIS: 2
@@ -4480,15 +4145,15 @@ LINE 83 (length=87)
 TEXT: и являются случайными величинами, распределенными по нормальному закону с параметрами:
 COUNTS:
   COMMA: 1
-  COLON: 1
   COMMA: 1
   COLON: 1
   COLON: 1
+  COLON: 1
+  COMMA: 1
   COMMA: 1
   COMMA: 1
   COMMA: 1
   COLON: 1
-  COMMA: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 8
@@ -4496,15 +4161,14 @@ COUNTS:
   SEPARATOR: 7
   SEPARATOR: 7
   SEPARATOR: 7
-  SEPARATOR: 8
   SEPARATOR: 3
   SEPARATOR: 2
   SEPARATOR: 8
+  SEPARATOR: 8
   SEPARATOR: 7
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 5
-  SEPARATOR: 1
 
 LINE 84 (length=2)
 TEXT: к
@@ -4526,32 +4190,28 @@ COUNTS:
   DOT: 1
   DOT: 1
   DOT: 1
+  COMMA: 1
   NUMBER: 11
-  DOT: 1
-  COMMA: 1
-  COMMA: 1
   COMMA: 1
   DOT: 1
+  COMMA: 1
   DOT: 1
   PARENTHESIS: 2
   COMMA: 1
-  NUMBER: 11
-  PARENTHESIS: 2
-  NUMBER: 11
+  DOT: 1
   NUMBER: 11
   PARENTHESIS: 2
   DOT: 1
+  PARENTHESIS: 2
   NUMBER: 11
   PARENTHESIS: 2
   ENTITY_SHAPE: 11
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 3
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
@@ -4563,8 +4223,6 @@ COUNTS:
 LINE 86 (length=60)
 TEXT: σ = λ[d^ = 7^4p8 +49p7 + 36p6 + 25p5 +16p4 + 9p3 + 4p1 + p1
 COUNTS:
-  NUMBER: 16
-  NUMBER: 16
   NUMBER: 16
   NUMBER: 16
   NUMBER: 16
@@ -4593,8 +4251,6 @@ COUNTS:
   PARENTHESIS: 2
   NUMBER: 1
   PARENTHESIS: 2
-  NUMBER: 1
-  NUMBER: 1
   PARENTHESIS: 2
   NUMBER: 1
   PARENTHESIS: 2
@@ -4608,19 +4264,18 @@ COUNTS:
   DASH: 1
   DASH: 1
   DASH: 1
-  COLON: 1
   COMMA: 1
-  DASH: 1
-  COLON: 1
   COLON: 1
   DASH: 1
-  COMMA: 1
-  COMMA: 1
-  COMMA: 1
-  DASH: 1
-  DASH: 1
   COLON: 1
+  COLON: 1
+  DASH: 1
   COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  COLON: 1
   DASH: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
@@ -4640,8 +4295,8 @@ COUNTS:
   SEPARATOR: 5
   SEPARATOR: 21
   SEPARATOR: 21
-  SEPARATOR: 7
   SEPARATOR: 4
+  SEPARATOR: 7
   SEPARATOR: 7
   SEPARATOR: 7
   SEPARATOR: 21
@@ -4659,14 +4314,13 @@ COUNTS:
   DOT: 1
   DOT: 1
   DOT: 1
-  DOT: 1
-  PARENTHESIS: 1
-  PARENTHESIS: 1
   PARENTHESIS: 1
   DOT: 1
+  PARENTHESIS: 1
+  DOT: 1
+  PARENTHESIS: 1
   PARENTHESIS: 1
   ENTITY_SHAPE: 3
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
@@ -4681,13 +4335,11 @@ COUNTS:
   NUMBER: 16
   NUMBER: 16
   NUMBER: 16
-  NUMBER: 16
-  NUMBER: 16
   ENTITY_SHAPE: 16
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
-  SEPARATOR: 3
   SEPARATOR: 2
+  SEPARATOR: 3
   SEPARATOR: 3
   SEPARATOR: 2
   SEPARATOR: 3
@@ -4710,16 +4362,14 @@ COUNTS:
   DOT: 2
   DOT: 2
   DOT: 2
-  NUMBER: 1
-  DOT: 2
-  COMMA: 4
-  COMMA: 4
-  COMMA: 4
-  DOT: 2
-  DOT: 2
   COMMA: 4
   NUMBER: 1
-  NUMBER: 1
+  COMMA: 4
+  DOT: 2
+  COMMA: 4
+  DOT: 2
+  COMMA: 4
+  DOT: 2
   NUMBER: 1
   DOT: 2
   NUMBER: 1
@@ -4739,23 +4389,19 @@ COUNTS:
   SEPARATOR: 15
   SEPARATOR: 6
   SEPARATOR: 9
-  SEPARATOR: 2
   SEPARATOR: 20
   SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 1
-  SEPARATOR: 2
   SEPARATOR: 20
-  SEPARATOR: 15
+  SEPARATOR: 2
   SEPARATOR: 4
   SEPARATOR: 13
   SEPARATOR: 15
+  SEPARATOR: 15
   SEPARATOR: 20
-  SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 5
   SEPARATOR: 22
-  SEPARATOR: 1
 
 LINE 92 (length=1337)
 TEXT: Во втором параграфе рассмотрена модель формирования оценок «параметров сложности изучаемой специальной техники» и «важности изученных ранее инженерных дисциплин» основанная на методе экспертной оценки с использованием расплывчатых категорий (нечетных множеств) Для группы экспертов (преподаватели кафедр, обеспечивающих изучение специальной техники и другие ЛИР) определяем исходные данные отобранные темы q-ой дисциплины при изучении образца h сложность освоения, которого нужно определить - для κc, и отобранные темы т-дисциплин смежных кафедр, изучение которых формирует успешность освоения h-ого образца техники, квалификационные требования (уровень знаний, навыков, умений), опыт преподавания инженерных дисциплин в военном вузе, информация об организации изучения подобных дисциплин в других вузах. Экспертам трудно дать количественные оценки указанных параметров, поэтому при ответах на постановление в анкетах вопросы достаточно оперировать показателями- очень трудно; достаточно трудно; трудно; недостаточно трудно; почти легко; легко (для κr4); очень важно; достаточно важно; важно; не очень важно; неважно (для КЮжн), являющиеся лингвистическими переменными расплывчатых категорий. Тогда оценки, полученные, по результатам экспертного опроса для каждого из рассматриваемых коэффициентов можно представить в виде двух нечетких
@@ -4767,38 +4413,35 @@ COUNTS:
   DASH: 5
   DOT: 2
   DASH: 5
+  DASH: 5
+  DOT: 2
+  COMMA: 13
+  NUMBER: 1
+  NUMBER: 1
+  QUOTATION: 4
+  DOT: 2
+  DASH: 5
+  DOT: 2
   DOT: 2
   DASH: 5
   COMMA: 13
   NUMBER: 1
-  NUMBER: 1
-  DASH: 5
-  DOT: 2
-  QUOTATION: 4
-  DOT: 2
-  DOT: 2
-  DASH: 5
-  NUMBER: 1
+  COMMA: 13
   DOT: 2
   COMMA: 13
-  COMMA: 13
-  COMMA: 13
   DASH: 5
-  DOT: 2
-  QUOTATION: 4
-  DASH: 5
-  QUOTATION: 4
   DOT: 2
   PARENTHESIS: 10
-  COMMA: 13
-  NUMBER: 1
-  DASH: 5
-  PARENTHESIS: 10
-  NUMBER: 1
   QUOTATION: 4
+  COMMA: 13
+  QUOTATION: 4
+  DOT: 2
   NUMBER: 1
   PARENTHESIS: 10
   DOT: 2
+  QUOTATION: 4
+  DASH: 5
+  PARENTHESIS: 10
   NUMBER: 1
   PARENTHESIS: 10
   ENTITY_SHAPE: 1
@@ -4808,18 +4451,16 @@ COUNTS:
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 9
   ENTITY_SHAPE: 4
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 3
   ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 4
   ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 5
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
   SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 1
@@ -4827,29 +4468,24 @@ COUNTS:
   SEPARATOR: 78
   SEPARATOR: 31
   SEPARATOR: 28
-  SEPARATOR: 2
   SEPARATOR: 93
-  SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 93
   SEPARATOR: 1
-  SEPARATOR: 78
+  SEPARATOR: 2
   SEPARATOR: 18
   SEPARATOR: 65
   SEPARATOR: 78
   SEPARATOR: 1
+  SEPARATOR: 78
   SEPARATOR: 93
   SEPARATOR: 2
   SEPARATOR: 9
   SEPARATOR: 101
-  SEPARATOR: 2
-  SEPARATOR: 2
 
 LINE 93 (length=3)
 TEXT: 10
 COUNTS:
-  NUMBER: 1
-  NUMBER: 1
   NUMBER: 1
   NUMBER: 1
   NUMBER: 1
@@ -4863,7 +4499,6 @@ COUNTS:
 LINE 94 (length=70)
 TEXT: множеств А - характеризует сложность изучаемого образца техники и В -
 COUNTS:
-  DASH: 2
   DASH: 2
   DASH: 2
   DASH: 2
@@ -4902,11 +4537,10 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
+  SEPARATOR: 4
   SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 4
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
@@ -4923,56 +4557,52 @@ COUNTS:
   DASH: 2
   DOT: 1
   DASH: 2
+  DASH: 2
+  DOT: 1
+  COMMA: 7
+  NUMBER: 1
+  NUMBER: 1
+  DOT: 1
+  DASH: 2
+  DOT: 1
   DOT: 1
   DASH: 2
   COMMA: 7
   NUMBER: 1
-  NUMBER: 1
-  DASH: 2
-  DOT: 1
-  DOT: 1
-  DOT: 1
-  DASH: 2
-  NUMBER: 1
-  DOT: 1
   COMMA: 7
-  COMMA: 7
+  DOT: 1
   COMMA: 7
   DASH: 2
   DOT: 1
-  DASH: 2
-  DOT: 1
-  SLASH: 1
   PARENTHESIS: 7
   COMMA: 7
-  NUMBER: 1
-  DASH: 2
-  PARENTHESIS: 7
-  NUMBER: 1
-  NUMBER: 1
-  PARENTHESIS: 7
   DOT: 1
   NUMBER: 1
   SLASH: 1
+  PARENTHESIS: 7
+  DOT: 1
+  DASH: 2
+  PARENTHESIS: 7
+  SLASH: 1
+  NUMBER: 1
   PARENTHESIS: 7
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 4
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 10
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 4
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
@@ -4982,23 +4612,20 @@ COUNTS:
   SEPARATOR: 10
   SEPARATOR: 7
   SEPARATOR: 4
+  SEPARATOR: 15
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 15
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 15
-  SEPARATOR: 10
   SEPARATOR: 3
   SEPARATOR: 12
   SEPARATOR: 10
+  SEPARATOR: 10
   SEPARATOR: 15
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 3
   SEPARATOR: 20
-  SEPARATOR: 1
 
 LINE 97 (length=115)
 TEXT: всех экспертов на определенный вопрос, усредняются. Совокупная функция принадлежности для описания kτpописывается:
@@ -5007,21 +4634,21 @@ COUNTS:
   COMMA: 1
   DOT: 1
   DOT: 1
+  COMMA: 1
   COLON: 1
-  COMMA: 1
-  DOT: 1
-  DOT: 1
-  DOT: 1
-  COLON: 1
-  COLON: 1
-  DOT: 1
-  COMMA: 1
-  COMMA: 1
-  COMMA: 1
   DOT: 1
   DOT: 1
   COLON: 1
+  DOT: 1
+  COLON: 1
   COMMA: 1
+  COMMA: 1
+  DOT: 1
+  COMMA: 1
+  DOT: 1
+  COMMA: 1
+  DOT: 1
+  COLON: 1
   DOT: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
@@ -5039,16 +4666,15 @@ COUNTS:
   SEPARATOR: 3
   SEPARATOR: 5
   SEPARATOR: 3
+  SEPARATOR: 6
+  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 6
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 6
-  SEPARATOR: 5
   SEPARATOR: 7
   SEPARATOR: 4
+  SEPARATOR: 5
   SEPARATOR: 5
   SEPARATOR: 6
   SEPARATOR: 1
@@ -5072,24 +4698,20 @@ COUNTS:
   NUMBER: 1
   DASH: 1
   DASH: 1
-  NUMBER: 1
   COMMA: 1
+  NUMBER: 1
   COMMA: 1
   COMMA: 1
   DASH: 1
-  DASH: 1
   COMMA: 1
   NUMBER: 1
   DASH: 1
-  NUMBER: 1
-  NUMBER: 1
   NUMBER: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 6
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
@@ -5110,8 +4732,6 @@ COUNTS:
   PARENTHESIS: 2
   NUMBER: 1
   PARENTHESIS: 2
-  NUMBER: 1
-  NUMBER: 1
   PARENTHESIS: 2
   NUMBER: 1
   PARENTHESIS: 2
@@ -5132,11 +4752,10 @@ COUNTS:
   COMMA: 1
   COMMA: 1
   DASH: 2
-  DASH: 2
   PARENTHESIS: 8
   COMMA: 1
-  DASH: 2
   PARENTHESIS: 8
+  DASH: 2
   PARENTHESIS: 8
   PARENTHESIS: 8
   ENTITY_SHAPE: 1
@@ -5144,7 +4763,6 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
@@ -5161,8 +4779,8 @@ COUNTS:
   SEPARATOR: 5
   SEPARATOR: 1
   SEPARATOR: 5
-  SEPARATOR: 5
   SEPARATOR: 4
+  SEPARATOR: 5
   SEPARATOR: 5
   SEPARATOR: 5
   SEPARATOR: 5
@@ -5176,26 +4794,23 @@ COUNTS:
   DASH: 1
   DOT: 1
   DASH: 1
-  DOT: 1
-  DASH: 1
   DASH: 1
   DOT: 1
   DOT: 1
-  DOT: 1
   DASH: 1
+  DOT: 1
   DOT: 1
   DASH: 1
   DOT: 1
   DASH: 1
   DOT: 1
   PARENTHESIS: 2
+  DOT: 1
+  PARENTHESIS: 2
+  DOT: 1
   DASH: 1
   PARENTHESIS: 2
   PARENTHESIS: 2
-  DOT: 1
-  PARENTHESIS: 2
-  SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
@@ -5205,6 +4820,7 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 2
+  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
@@ -5218,32 +4834,30 @@ COUNTS:
   DASH: 1
   DOT: 2
   DASH: 1
-  DOT: 2
-  DASH: 1
-  COMMA: 1
-  DASH: 1
-  DOT: 2
-  DOT: 2
-  DOT: 2
   DASH: 1
   DOT: 2
   COMMA: 1
-  COMMA: 1
-  COMMA: 1
+  DOT: 2
   DASH: 1
   DOT: 2
+  DOT: 2
+  DASH: 1
+  COMMA: 1
+  COMMA: 1
+  DOT: 2
+  COMMA: 1
   DASH: 1
   DOT: 2
   PARENTHESIS: 4
   COMMA: 1
-  DASH: 1
-  PARENTHESIS: 4
+  DOT: 2
   PARENTHESIS: 4
   DOT: 2
+  DASH: 1
+  PARENTHESIS: 4
   PARENTHESIS: 4
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
-  SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 2
@@ -5278,21 +4892,19 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 5
   SEPARATOR: 3
   SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 5
   SEPARATOR: 1
   SEPARATOR: 1
+  SEPARATOR: 5
   SEPARATOR: 1
-  SEPARATOR: 5
-  SEPARATOR: 5
   SEPARATOR: 1
   SEPARATOR: 6
+  SEPARATOR: 5
   SEPARATOR: 5
   SEPARATOR: 5
   SEPARATOR: 1
@@ -5309,8 +4921,6 @@ COUNTS:
   PARENTHESIS: 2
   NUMBER: 3
   PARENTHESIS: 2
-  NUMBER: 3
-  NUMBER: 3
   PARENTHESIS: 2
   NUMBER: 3
   PARENTHESIS: 2
@@ -5336,8 +4946,6 @@ COUNTS:
   PARENTHESIS: 2
   NUMBER: 1
   PARENTHESIS: 2
-  NUMBER: 1
-  NUMBER: 1
   PARENTHESIS: 2
   NUMBER: 1
   PARENTHESIS: 2
@@ -5361,8 +4969,6 @@ COUNTS:
   PARENTHESIS: 2
   NUMBER: 1
   PARENTHESIS: 2
-  NUMBER: 1
-  NUMBER: 1
   PARENTHESIS: 2
   NUMBER: 1
   PARENTHESIS: 2
@@ -5372,15 +4978,15 @@ LINE 108 (length=96)
 TEXT: Затем вычисляются выпуклые комбинации нечетких множеств А, и Bl с функцией принадлежности вида:
 COUNTS:
   COMMA: 1
-  COLON: 1
   COMMA: 1
   COLON: 1
   COLON: 1
+  COLON: 1
+  COMMA: 1
   COMMA: 1
   COMMA: 1
   COMMA: 1
   COLON: 1
-  COMMA: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
@@ -5394,7 +5000,6 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 1
@@ -5403,14 +5008,13 @@ COUNTS:
   SEPARATOR: 3
   SEPARATOR: 10
   SEPARATOR: 10
-  SEPARATOR: 4
   SEPARATOR: 2
   SEPARATOR: 5
+  SEPARATOR: 4
   SEPARATOR: 4
   SEPARATOR: 10
   SEPARATOR: 1
   SEPARATOR: 7
-  SEPARATOR: 1
 
 LINE 109 (length=49)
 TEXT: μ⅛^ = Λ1μl^(x) и μ^ (У) = ⅜μΓ8'(У), где λ>0.	(9)
@@ -5427,21 +5031,19 @@ COUNTS:
   DOT: 1
   DOT: 1
   DOT: 1
+  COMMA: 1
   NUMBER: 4
-  DOT: 1
-  COMMA: 1
-  COMMA: 1
   COMMA: 1
   DOT: 1
+  COMMA: 1
   DOT: 1
   PARENTHESIS: 8
   COMMA: 1
-  NUMBER: 4
-  PARENTHESIS: 8
-  NUMBER: 4
+  DOT: 1
   NUMBER: 4
   PARENTHESIS: 8
   DOT: 1
+  PARENTHESIS: 8
   NUMBER: 4
   PARENTHESIS: 8
   ENTITY_SHAPE: 4
@@ -5449,7 +5051,6 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 1
   SEPARATOR: 1
@@ -5457,7 +5058,6 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 2
   SEPARATOR: 1
 
 LINE 110 (length=129)
@@ -5478,8 +5078,6 @@ COUNTS:
   DOT: 1
   DOT: 1
   NUMBER: 1
-  NUMBER: 1
-  NUMBER: 1
   DOT: 1
   NUMBER: 1
   ENTITY_SHAPE: 1
@@ -5495,15 +5093,14 @@ COUNTS:
   SEPARATOR: 6
   SEPARATOR: 3
   SEPARATOR: 2
+  SEPARATOR: 6
   SEPARATOR: 1
   SEPARATOR: 6
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 6
-  SEPARATOR: 6
   SEPARATOR: 2
   SEPARATOR: 1
   SEPARATOR: 8
+  SEPARATOR: 6
   SEPARATOR: 6
   SEPARATOR: 6
   SEPARATOR: 7
@@ -5516,26 +5113,24 @@ COUNTS:
   DASH: 1
   DOT: 1
   DASH: 1
-  DOT: 1
-  DASH: 1
-  COMMA: 1
-  DASH: 1
-  DOT: 1
-  DOT: 1
-  DOT: 1
   DASH: 1
   DOT: 1
   COMMA: 1
-  COMMA: 1
-  COMMA: 1
-  DASH: 1
   DOT: 1
   DASH: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
+  COMMA: 1
+  COMMA: 1
   DOT: 1
   COMMA: 1
   DASH: 1
   DOT: 1
-  ENTITY_SHAPE: 1
+  COMMA: 1
+  DOT: 1
+  DOT: 1
+  DASH: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
@@ -5562,14 +5157,13 @@ COUNTS:
   SEPARATOR: 10
   SEPARATOR: 8
   SEPARATOR: 4
+  SEPARATOR: 21
   SEPARATOR: 1
   SEPARATOR: 21
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 21
-  SEPARATOR: 10
   SEPARATOR: 3
   SEPARATOR: 7
+  SEPARATOR: 10
   SEPARATOR: 10
   SEPARATOR: 21
   SEPARATOR: 4
@@ -5582,19 +5176,18 @@ COUNTS:
   DASH: 1
   DASH: 1
   DASH: 1
-  COLON: 1
   COMMA: 1
-  DASH: 1
-  COLON: 1
   COLON: 1
   DASH: 1
-  COMMA: 1
-  COMMA: 1
-  COMMA: 1
-  DASH: 1
-  DASH: 1
   COLON: 1
+  COLON: 1
+  DASH: 1
   COMMA: 1
+  COMMA: 1
+  COMMA: 1
+  DASH: 1
+  COMMA: 1
+  COLON: 1
   DASH: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
@@ -5603,8 +5196,6 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
@@ -5630,16 +5221,15 @@ COUNTS:
   SEPARATOR: 9
   SEPARATOR: 30
   SEPARATOR: 30
-  SEPARATOR: 28
   SEPARATOR: 7
   SEPARATOR: 1
   SEPARATOR: 23
+  SEPARATOR: 28
   SEPARATOR: 28
   SEPARATOR: 30
   SEPARATOR: 1
   SEPARATOR: 3
   SEPARATOR: 34
-  SEPARATOR: 1
 
 LINE 113 (length=42)
 TEXT: lQκwcaumu = f № АС ’ ^∏∏∏ ’ ^ПМ ) ,	(1 0)
@@ -5650,16 +5240,14 @@ COUNTS:
   COMMA: 1
   NUMBER: 2
   NUMBER: 2
-  NUMBER: 2
   COMMA: 1
+  NUMBER: 2
   COMMA: 1
   COMMA: 1
   PARENTHESIS: 3
   COMMA: 1
   NUMBER: 2
   PARENTHESIS: 3
-  NUMBER: 2
-  NUMBER: 2
   PARENTHESIS: 3
   NUMBER: 2
   PARENTHESIS: 3
@@ -5679,10 +5267,9 @@ COUNTS:
   DASH: 1
   DASH: 1
   DASH: 1
-  DASH: 1
+  PARENTHESIS: 1
   PARENTHESIS: 1
   DASH: 1
-  PARENTHESIS: 1
   PARENTHESIS: 1
   PARENTHESIS: 1
   SEPARATOR: 1
@@ -5690,8 +5277,8 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 4
   SEPARATOR: 3
+  SEPARATOR: 4
   SEPARATOR: 4
   SEPARATOR: 1
   SEPARATOR: 1
@@ -5707,17 +5294,15 @@ COUNTS:
   DASH: 2
   DASH: 2
   DASH: 2
-  DASH: 2
   ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 2
   SEPARATOR: 3
   SEPARATOR: 8
   SEPARATOR: 4
   SEPARATOR: 1
   SEPARATOR: 7
   SEPARATOR: 7
-  SEPARATOR: 8
   SEPARATOR: 4
+  SEPARATOR: 8
   SEPARATOR: 8
   SEPARATOR: 7
   SEPARATOR: 1
@@ -5756,17 +5341,15 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   SEPARATOR: 4
   SEPARATOR: 8
   SEPARATOR: 5
   SEPARATOR: 2
   SEPARATOR: 6
   SEPARATOR: 6
-  SEPARATOR: 8
   SEPARATOR: 3
   SEPARATOR: 7
+  SEPARATOR: 8
   SEPARATOR: 8
   SEPARATOR: 6
   SEPARATOR: 11
@@ -5785,13 +5368,10 @@ COUNTS:
   DASH: 1
   NUMBER: 1
   DASH: 1
-  DASH: 1
   PARENTHESIS: 2
   NUMBER: 1
-  DASH: 1
   PARENTHESIS: 2
-  NUMBER: 1
-  NUMBER: 1
+  DASH: 1
   PARENTHESIS: 2
   NUMBER: 1
   PARENTHESIS: 2
@@ -5813,25 +5393,21 @@ COUNTS:
   NUMBER: 2
   DASH: 8
   DASH: 8
-  NUMBER: 2
-  COMMA: 1
-  COMMA: 1
-  COMMA: 1
-  DASH: 8
-  DASH: 8
-  PARENTHESIS: 2
   COMMA: 1
   NUMBER: 2
+  COMMA: 1
+  COMMA: 1
   DASH: 8
   PARENTHESIS: 2
+  COMMA: 1
   NUMBER: 2
-  NUMBER: 2
+  PARENTHESIS: 2
+  DASH: 8
   PARENTHESIS: 2
   NUMBER: 2
   PARENTHESIS: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
   SEPARATOR: 2
 
 LINE 120 (length=28)
@@ -5844,14 +5420,13 @@ COUNTS:
   DASH: 1
   DASH: 1
   DASH: 1
-  DASH: 1
   ENTITY_SHAPE: 1
   SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 1
-  SEPARATOR: 4
   SEPARATOR: 2
   SEPARATOR: 1
+  SEPARATOR: 4
   SEPARATOR: 4
   SEPARATOR: 1
   SEPARATOR: 1
@@ -5866,7 +5441,6 @@ COUNTS:
   DASH: 1
   DASH: 1
   DASH: 1
-  DASH: 1
   ENTITY_SHAPE: 1
   SEPARATOR: 2
   SEPARATOR: 3
@@ -5874,9 +5448,9 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 2
-  SEPARATOR: 3
   SEPARATOR: 1
   SEPARATOR: 2
+  SEPARATOR: 3
   SEPARATOR: 3
   SEPARATOR: 2
   SEPARATOR: 7
@@ -5891,14 +5465,13 @@ COUNTS:
   DASH: 1
   DASH: 1
   DASH: 1
-  DASH: 1
   SEPARATOR: 4
   SEPARATOR: 4
   SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 2
-  SEPARATOR: 4
   SEPARATOR: 1
+  SEPARATOR: 4
   SEPARATOR: 4
   SEPARATOR: 4
   SEPARATOR: 2
@@ -5914,31 +5487,28 @@ COUNTS:
   DASH: 4
   DOT: 4
   DASH: 4
-  DOT: 4
-  DASH: 4
-  COMMA: 7
-  NUMBER: 3
-  NUMBER: 3
-  DASH: 4
-  DOT: 4
-  DOT: 4
-  DOT: 4
-  DASH: 4
-  NUMBER: 3
-  DOT: 4
-  COMMA: 7
-  COMMA: 7
-  COMMA: 7
-  DASH: 4
-  DOT: 4
   DASH: 4
   DOT: 4
   COMMA: 7
   NUMBER: 3
-  DASH: 4
-  NUMBER: 3
   NUMBER: 3
   DOT: 4
+  DASH: 4
+  DOT: 4
+  DOT: 4
+  DASH: 4
+  COMMA: 7
+  NUMBER: 3
+  COMMA: 7
+  DOT: 4
+  COMMA: 7
+  DASH: 4
+  DOT: 4
+  COMMA: 7
+  DOT: 4
+  NUMBER: 3
+  DOT: 4
+  DASH: 4
   NUMBER: 3
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 4
@@ -5950,16 +5520,15 @@ COUNTS:
   ENTITY_SHAPE: 5
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 4
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 4
   ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
   ENTITY_SHAPE: 1
   SEPARATOR: 4
   SEPARATOR: 3
@@ -5967,25 +5536,22 @@ COUNTS:
   SEPARATOR: 32
   SEPARATOR: 16
   SEPARATOR: 10
-  SEPARATOR: 4
   SEPARATOR: 49
-  SEPARATOR: 4
-  SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 49
   SEPARATOR: 1
-  SEPARATOR: 32
+  SEPARATOR: 1
+  SEPARATOR: 4
   SEPARATOR: 11
   SEPARATOR: 38
   SEPARATOR: 1
   SEPARATOR: 32
-  SEPARATOR: 1
+  SEPARATOR: 32
   SEPARATOR: 49
   SEPARATOR: 3
   SEPARATOR: 7
   SEPARATOR: 39
   SEPARATOR: 1
-  SEPARATOR: 3
 
 LINE 124 (length=171)
 TEXT: В четвертом параграфе рассматривается модель анализа и выбора управленческих решений корректировки учебно-методических комплексов ГАОС или самостоятельной работы в целом.
@@ -5994,20 +5560,19 @@ COUNTS:
   DASH: 1
   DOT: 1
   DASH: 1
-  DOT: 1
-  DASH: 1
   DASH: 1
   DOT: 1
   DOT: 1
-  DOT: 1
   DASH: 1
+  DOT: 1
   DOT: 1
   DASH: 1
   DOT: 1
   DASH: 1
   DOT: 1
-  DASH: 1
   DOT: 1
+  DOT: 1
+  DASH: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 5
   ENTITY_SHAPE: 1
@@ -6023,15 +5588,14 @@ COUNTS:
   SEPARATOR: 7
   SEPARATOR: 7
   SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 11
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 11
-  SEPARATOR: 13
+  SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 9
+  SEPARATOR: 13
   SEPARATOR: 13
   SEPARATOR: 11
   SEPARATOR: 2
@@ -6041,15 +5605,15 @@ LINE 125 (length=286)
 TEXT: Целью предполагаемого решения является устранения расхождений между прогнозируемым уровнем освоения с помощью ГАОС образца специальной техники и определенным в результате процесса усвоения индивидуального модуля, степень согласованности которых определяется на основе критерия Пирсона:
 COUNTS:
   COMMA: 1
-  COLON: 1
   COMMA: 1
   COLON: 1
   COLON: 1
+  COLON: 1
+  COMMA: 1
   COMMA: 1
   COMMA: 1
   COMMA: 1
   COLON: 1
-  COMMA: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
@@ -6060,8 +5624,6 @@ COUNTS:
   ENTITY_SHAPE: 6
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
@@ -6069,10 +5631,11 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
@@ -6087,9 +5650,9 @@ COUNTS:
   SEPARATOR: 17
   SEPARATOR: 1
   SEPARATOR: 17
-  SEPARATOR: 14
   SEPARATOR: 11
   SEPARATOR: 10
+  SEPARATOR: 14
   SEPARATOR: 14
   SEPARATOR: 17
   SEPARATOR: 2
@@ -6109,23 +5672,19 @@ COUNTS:
   NUMBER: 2
   DASH: 2
   DASH: 2
-  NUMBER: 2
   COMMA: 2
+  NUMBER: 2
   COMMA: 2
   COMMA: 2
   DASH: 2
-  DASH: 2
   PARENTHESIS: 2
   COMMA: 2
   NUMBER: 2
+  PARENTHESIS: 2
   DASH: 2
   PARENTHESIS: 2
   NUMBER: 2
-  NUMBER: 2
   PARENTHESIS: 2
-  NUMBER: 2
-  PARENTHESIS: 2
-  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   SEPARATOR: 2
@@ -6140,32 +5699,29 @@ COUNTS:
   DASH: 4
   DASH: 4
   DASH: 4
-  COLON: 1
   COMMA: 13
+  COLON: 1
   NUMBER: 16
   NUMBER: 16
-  DASH: 4
-  QUOTATION: 24
-  COLON: 1
-  COLON: 1
-  DASH: 4
-  NUMBER: 16
-  COMMA: 13
-  COMMA: 13
-  COMMA: 13
-  DASH: 4
   QUOTATION: 24
   DASH: 4
-  QUOTATION: 24
-  PARENTHESIS: 9
   COLON: 1
+  COLON: 1
+  DASH: 4
   COMMA: 13
   NUMBER: 16
+  COMMA: 13
+  COMMA: 13
   DASH: 4
   PARENTHESIS: 9
-  NUMBER: 16
+  QUOTATION: 24
+  COMMA: 13
   QUOTATION: 24
   NUMBER: 16
+  COLON: 1
+  PARENTHESIS: 9
+  QUOTATION: 24
+  DASH: 4
   PARENTHESIS: 9
   NUMBER: 16
   PARENTHESIS: 9
@@ -6190,17 +5746,16 @@ COUNTS:
   SEPARATOR: 11
   SEPARATOR: 3
   SEPARATOR: 21
-  SEPARATOR: 3
   SEPARATOR: 21
   SEPARATOR: 3
-  SEPARATOR: 10
+  SEPARATOR: 3
   SEPARATOR: 10
   SEPARATOR: 1
   SEPARATOR: 11
   SEPARATOR: 3
   SEPARATOR: 1
   SEPARATOR: 10
-  SEPARATOR: 9
+  SEPARATOR: 10
   SEPARATOR: 21
   SEPARATOR: 5
   SEPARATOR: 3
@@ -6220,26 +5775,22 @@ COUNTS:
   NUMBER: 5
   DASH: 1
   DASH: 1
-  NUMBER: 5
-  COMMA: 1
-  COMMA: 1
-  COMMA: 1
-  DASH: 1
-  DASH: 1
-  PARENTHESIS: 4
   COMMA: 1
   NUMBER: 5
+  COMMA: 1
+  COMMA: 1
   DASH: 1
   PARENTHESIS: 4
+  COMMA: 1
   NUMBER: 5
-  NUMBER: 5
+  PARENTHESIS: 4
+  DASH: 1
   PARENTHESIS: 4
   NUMBER: 5
   PARENTHESIS: 4
   ENTITY_SHAPE: 5
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 2
@@ -6254,21 +5805,18 @@ COUNTS:
   COMMA: 1
   NUMBER: 2
   NUMBER: 2
-  NUMBER: 2
   COMMA: 1
+  NUMBER: 2
   COMMA: 1
   COMMA: 1
   PARENTHESIS: 2
   COMMA: 1
   NUMBER: 2
   PARENTHESIS: 2
-  NUMBER: 2
-  NUMBER: 2
   PARENTHESIS: 2
   NUMBER: 2
   PARENTHESIS: 2
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
@@ -6291,9 +5839,9 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 11
   SEPARATOR: 1
+  SEPARATOR: 6
+  SEPARATOR: 6
   SEPARATOR: 7
-  SEPARATOR: 6
-  SEPARATOR: 6
   SEPARATOR: 7
   SEPARATOR: 11
   SEPARATOR: 2
@@ -6302,8 +5850,6 @@ COUNTS:
 LINE 130 (length=3)
 TEXT: 12
 COUNTS:
-  NUMBER: 1
-  NUMBER: 1
   NUMBER: 1
   NUMBER: 1
   NUMBER: 1
@@ -6325,45 +5871,42 @@ COUNTS:
   DASH: 3
   DOT: 1
   DASH: 3
+  DASH: 3
+  DOT: 1
+  COMMA: 5
+  NUMBER: 10
+  NUMBER: 10
+  DOT: 1
+  DASH: 3
+  DOT: 1
   DOT: 1
   DASH: 3
   COMMA: 5
   NUMBER: 10
-  NUMBER: 10
-  DASH: 3
-  DOT: 1
-  DOT: 1
-  DOT: 1
-  DASH: 3
-  NUMBER: 10
-  DOT: 1
   COMMA: 5
-  COMMA: 5
+  DOT: 1
   COMMA: 5
   DASH: 3
   DOT: 1
-  DASH: 3
-  DOT: 1
-  SLASH: 1
   PARENTHESIS: 2
   COMMA: 5
-  NUMBER: 10
-  DASH: 3
-  PARENTHESIS: 2
-  NUMBER: 10
-  NUMBER: 10
-  PARENTHESIS: 2
   DOT: 1
   NUMBER: 10
   SLASH: 1
+  PARENTHESIS: 2
+  DOT: 1
+  DASH: 3
+  PARENTHESIS: 2
+  SLASH: 1
+  NUMBER: 10
   PARENTHESIS: 2
   ENTITY_SHAPE: 10
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
@@ -6375,21 +5918,19 @@ COUNTS:
   SEPARATOR: 15
   SEPARATOR: 12
   SEPARATOR: 5
+  SEPARATOR: 35
   SEPARATOR: 1
   SEPARATOR: 35
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 35
-  SEPARATOR: 1
-  SEPARATOR: 15
   SEPARATOR: 6
   SEPARATOR: 3
   SEPARATOR: 9
   SEPARATOR: 6
   SEPARATOR: 15
+  SEPARATOR: 15
   SEPARATOR: 35
   SEPARATOR: 4
-  SEPARATOR: 1
   SEPARATOR: 23
 
 LINE 132 (length=1620)
@@ -6402,91 +5943,80 @@ COUNTS:
   DASH: 5
   DOT: 10
   DASH: 5
+  DASH: 5
+  DOT: 10
+  COMMA: 23
+  NUMBER: 3
+  NUMBER: 3
+  DOT: 10
+  DASH: 5
+  DOT: 10
   DOT: 10
   DASH: 5
   COMMA: 23
   NUMBER: 3
-  NUMBER: 3
-  DASH: 5
-  DOT: 10
-  DOT: 10
-  DOT: 10
-  DASH: 5
-  NUMBER: 3
-  DOT: 10
   COMMA: 23
-  COMMA: 23
+  DOT: 10
   COMMA: 23
   DASH: 5
   DOT: 10
-  DASH: 5
-  DOT: 10
-  SLASH: 1
   PARENTHESIS: 22
   COMMA: 23
-  NUMBER: 3
-  DASH: 5
-  PARENTHESIS: 22
-  NUMBER: 3
-  NUMBER: 3
-  PARENTHESIS: 22
   DOT: 10
   NUMBER: 3
   SLASH: 1
+  PARENTHESIS: 22
+  DOT: 10
+  DASH: 5
+  PARENTHESIS: 22
+  SLASH: 1
+  NUMBER: 3
   PARENTHESIS: 22
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 10
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 14
   ENTITY_SHAPE: 8
-  ENTITY_SHAPE: 4
-  ENTITY_SHAPE: 8
   ENTITY_SHAPE: 10
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 4
   ENTITY_SHAPE: 7
   ENTITY_SHAPE: 8
   ENTITY_SHAPE: 8
   ENTITY_SHAPE: 7
   ENTITY_SHAPE: 10
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 3
   SEPARATOR: 10
   SEPARATOR: 5
   SEPARATOR: 2
-  SEPARATOR: 5
   SEPARATOR: 2
   SEPARATOR: 53
+  SEPARATOR: 5
   SEPARATOR: 3
   SEPARATOR: 95
   SEPARATOR: 48
   SEPARATOR: 44
-  SEPARATOR: 10
   SEPARATOR: 108
   SEPARATOR: 1
   SEPARATOR: 10
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 10
   SEPARATOR: 108
   SEPARATOR: 1
-  SEPARATOR: 95
+  SEPARATOR: 10
   SEPARATOR: 24
   SEPARATOR: 109
   SEPARATOR: 1
   SEPARATOR: 95
-  SEPARATOR: 2
+  SEPARATOR: 95
   SEPARATOR: 108
-  SEPARATOR: 2
-  SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 20
   SEPARATOR: 102
-  SEPARATOR: 2
-  SEPARATOR: 2
-  SEPARATOR: 1
   SEPARATOR: 2
 
 LINE 133 (length=77)
@@ -6503,19 +6033,16 @@ COUNTS:
   NUMBER: 1
   DASH: 1
   DASH: 1
-  NUMBER: 1
-  COMMA: 1
-  COMMA: 1
-  COMMA: 1
-  DASH: 1
-  DASH: 1
-  PARENTHESIS: 3
   COMMA: 1
   NUMBER: 1
+  COMMA: 1
+  COMMA: 1
   DASH: 1
   PARENTHESIS: 3
+  COMMA: 1
   NUMBER: 1
-  NUMBER: 1
+  PARENTHESIS: 3
+  DASH: 1
   PARENTHESIS: 3
   NUMBER: 1
   PARENTHESIS: 3
@@ -6531,12 +6058,11 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 1
-  SEPARATOR: 4
   SEPARATOR: 1
   SEPARATOR: 5
   SEPARATOR: 4
+  SEPARATOR: 4
   SEPARATOR: 2
-  SEPARATOR: 1
 
 LINE 134 (length=236)
 TEXT: Эта матрица пополняется столбцом наименьших разностей ulr Выбираются те варианты, в строках которых стоит наименьшее для этого столбца значение. При необходимости двух органов управления выбирают ближайший, трех - ближайший по второму.
@@ -6546,54 +6072,51 @@ COUNTS:
   DASH: 1
   DOT: 2
   DASH: 1
-  DOT: 2
-  DASH: 1
-  COMMA: 2
-  DASH: 1
-  DOT: 2
-  DOT: 2
-  DOT: 2
   DASH: 1
   DOT: 2
   COMMA: 2
-  COMMA: 2
-  COMMA: 2
-  DASH: 1
   DOT: 2
   DASH: 1
+  DOT: 2
+  DOT: 2
+  DASH: 1
+  COMMA: 2
+  COMMA: 2
   DOT: 2
   COMMA: 2
   DASH: 1
   DOT: 2
+  COMMA: 2
+  DOT: 2
+  DOT: 2
+  DASH: 1
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 1
   SEPARATOR: 2
   SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 17
   SEPARATOR: 7
   SEPARATOR: 6
+  SEPARATOR: 17
   SEPARATOR: 2
   SEPARATOR: 17
   SEPARATOR: 2
-  SEPARATOR: 2
-  SEPARATOR: 17
-  SEPARATOR: 17
   SEPARATOR: 5
   SEPARATOR: 18
+  SEPARATOR: 17
   SEPARATOR: 17
   SEPARATOR: 17
   SEPARATOR: 5
@@ -6602,8 +6125,6 @@ COUNTS:
 LINE 135 (length=3)
 TEXT: 13
 COUNTS:
-  NUMBER: 1
-  NUMBER: 1
   NUMBER: 1
   NUMBER: 1
   NUMBER: 1
@@ -6623,72 +6144,68 @@ COUNTS:
   DASH: 1
   DOT: 3
   DASH: 1
-  DOT: 3
-  DASH: 1
-  COMMA: 6
-  DASH: 1
-  DOT: 3
-  DOT: 3
-  DOT: 3
   DASH: 1
   DOT: 3
   COMMA: 6
-  COMMA: 6
-  COMMA: 6
-  DASH: 1
   DOT: 3
   DASH: 1
+  DOT: 3
+  DOT: 3
+  DASH: 1
+  COMMA: 6
+  COMMA: 6
   DOT: 3
   COMMA: 6
   DASH: 1
   DOT: 3
+  COMMA: 6
+  DOT: 3
+  DOT: 3
+  DASH: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 16
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
   SEPARATOR: 3
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 18
   SEPARATOR: 1
   SEPARATOR: 1
+  SEPARATOR: 1
   SEPARATOR: 42
   SEPARATOR: 14
   SEPARATOR: 23
-  SEPARATOR: 1
-  SEPARATOR: 3
   SEPARATOR: 48
   SEPARATOR: 3
   SEPARATOR: 4
-  SEPARATOR: 3
-  SEPARATOR: 2
+  SEPARATOR: 1
   SEPARATOR: 48
   SEPARATOR: 1
-  SEPARATOR: 42
   SEPARATOR: 1
+  SEPARATOR: 3
   SEPARATOR: 1
-  SEPARATOR: 1
+  SEPARATOR: 2
   SEPARATOR: 14
   SEPARATOR: 36
   SEPARATOR: 42
   SEPARATOR: 6
+  SEPARATOR: 42
   SEPARATOR: 48
   SEPARATOR: 1
   SEPARATOR: 3
   SEPARATOR: 53
-  SEPARATOR: 1
 
 LINE 137 (length=211)
 TEXT: Представим ИИС АСДО в виде взвешенного графа G =< М, R > имеющего п- вершин (количество узлов а в компьютерной сети) с матрицей весов Hz=(eyy). COijeR Требуется построить такой остовный подграф G (расстояние М)
@@ -6698,42 +6215,39 @@ COUNTS:
   DASH: 1
   DOT: 1
   DASH: 1
-  DOT: 1
-  DASH: 1
-  COMMA: 1
-  DASH: 1
-  DOT: 1
-  DOT: 1
-  DOT: 1
   DASH: 1
   DOT: 1
   COMMA: 1
-  COMMA: 1
-  COMMA: 1
+  DOT: 1
   DASH: 1
   DOT: 1
+  DOT: 1
+  DASH: 1
+  COMMA: 1
+  COMMA: 1
+  DOT: 1
+  COMMA: 1
   DASH: 1
   DOT: 1
   PARENTHESIS: 6
   COMMA: 1
-  DASH: 1
-  PARENTHESIS: 6
+  DOT: 1
   PARENTHESIS: 6
   DOT: 1
+  DASH: 1
+  PARENTHESIS: 6
   PARENTHESIS: 6
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 18
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
@@ -6744,21 +6258,20 @@ COUNTS:
   SEPARATOR: 3
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 2
   SEPARATOR: 8
+  SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 4
-  SEPARATOR: 1
   SEPARATOR: 9
   SEPARATOR: 1
   SEPARATOR: 2
-  SEPARATOR: 1
   SEPARATOR: 9
-  SEPARATOR: 8
+  SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 11
   SEPARATOR: 8
   SEPARATOR: 2
+  SEPARATOR: 8
   SEPARATOR: 9
   SEPARATOR: 4
   SEPARATOR: 15
@@ -6777,11 +6290,10 @@ COUNTS:
   COMMA: 4
   COMMA: 4
   DASH: 1
-  DASH: 1
   PARENTHESIS: 3
   COMMA: 4
-  DASH: 1
   PARENTHESIS: 3
+  DASH: 1
   PARENTHESIS: 3
   PARENTHESIS: 3
   ENTITY_SHAPE: 8
@@ -6794,15 +6306,13 @@ COUNTS:
   SEPARATOR: 5
   SEPARATOR: 1
   SEPARATOR: 5
-  SEPARATOR: 9
   SEPARATOR: 2
   SEPARATOR: 5
   SEPARATOR: 9
+  SEPARATOR: 9
   SEPARATOR: 5
   SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 9
-  SEPARATOR: 1
 
 LINE 139 (length=268)
 TEXT: входящих в C(G) минимальна при следующих ограничениях: используемые технологии. Ethernet- 100Base-TX (длина кабеля не более 100 м);при длине ребра свыше 100 м - использовать высокоскоростные модемы (протокол X 25, Frame Relay), стоимостные ограничения 7 <7 проектная.
@@ -6814,64 +6324,58 @@ COUNTS:
   DASH: 3
   DOT: 2
   DASH: 3
-  DOT: 2
   DASH: 3
-  COLON: 1
+  DOT: 2
   COMMA: 2
+  COLON: 1
   NUMBER: 6
   NUMBER: 6
+  DOT: 2
   DASH: 3
   DOT: 2
-  DOT: 2
-  DOT: 2
   COLON: 1
+  DOT: 2
   COLON: 1
   DASH: 3
+  COMMA: 2
   NUMBER: 6
+  COMMA: 2
   DOT: 2
   COMMA: 2
-  COMMA: 2
-  COMMA: 2
-  DASH: 3
-  DOT: 2
   DASH: 3
   DOT: 2
   PARENTHESIS: 6
-  COLON: 1
   COMMA: 2
+  DOT: 2
   NUMBER: 6
-  DASH: 3
-  PARENTHESIS: 6
-  NUMBER: 6
-  NUMBER: 6
+  COLON: 1
   PARENTHESIS: 6
   DOT: 2
+  DASH: 3
+  PARENTHESIS: 6
   NUMBER: 6
   PARENTHESIS: 6
   ENTITY_SHAPE: 6
   ENTITY_SHAPE: 9
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 4
   SEPARATOR: 2
   SEPARATOR: 5
   SEPARATOR: 9
   SEPARATOR: 10
   SEPARATOR: 8
+  SEPARATOR: 17
   SEPARATOR: 2
   SEPARATOR: 17
+  SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 1
-  SEPARATOR: 17
-  SEPARATOR: 2
-  SEPARATOR: 2
-  SEPARATOR: 9
   SEPARATOR: 5
   SEPARATOR: 3
   SEPARATOR: 7
   SEPARATOR: 1
   SEPARATOR: 9
-  SEPARATOR: 1
+  SEPARATOR: 9
   SEPARATOR: 17
   SEPARATOR: 1
   SEPARATOR: 17
@@ -6887,45 +6391,42 @@ COUNTS:
   DASH: 2
   DOT: 2
   DASH: 2
-  DOT: 2
   DASH: 2
-  COLON: 2
+  DOT: 2
   COMMA: 24
+  COLON: 2
   NUMBER: 2
   NUMBER: 2
-  DASH: 2
-  DOT: 2
   QUOTATION: 2
   DOT: 2
+  DASH: 2
   DOT: 2
   COLON: 2
+  DOT: 2
   COLON: 2
   DASH: 2
+  COMMA: 24
   NUMBER: 2
+  COMMA: 24
   DOT: 2
-  COMMA: 24
-  COMMA: 24
   COMMA: 24
   DASH: 2
   DOT: 2
+  PARENTHESIS: 18
   QUOTATION: 2
-  DASH: 2
+  COMMA: 24
   QUOTATION: 2
   DOT: 2
+  NUMBER: 2
+  COLON: 2
   SLASH: 2
   PARENTHESIS: 18
-  COLON: 2
-  COMMA: 24
-  NUMBER: 2
+  DOT: 2
+  QUOTATION: 2
   DASH: 2
   PARENTHESIS: 18
-  NUMBER: 2
-  QUOTATION: 2
-  NUMBER: 2
-  PARENTHESIS: 18
-  DOT: 2
-  NUMBER: 2
   SLASH: 2
+  NUMBER: 2
   PARENTHESIS: 18
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 6
@@ -6935,52 +6436,47 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 22
   ENTITY_SHAPE: 6
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 4
   ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 6
   ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 6
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   SEPARATOR: 2
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 28
+  SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 60
   SEPARATOR: 26
   SEPARATOR: 28
-  SEPARATOR: 2
   SEPARATOR: 64
-  SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 64
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 60
+  SEPARATOR: 2
   SEPARATOR: 17
   SEPARATOR: 50
   SEPARATOR: 1
   SEPARATOR: 60
   SEPARATOR: 2
+  SEPARATOR: 60
   SEPARATOR: 64
-  SEPARATOR: 2
   SEPARATOR: 9
   SEPARATOR: 61
 
 LINE 141 (length=3)
 TEXT: 14
 COUNTS:
-  NUMBER: 1
-  NUMBER: 1
   NUMBER: 1
   NUMBER: 1
   NUMBER: 1
@@ -7001,16 +6497,14 @@ COUNTS:
   COMMA: 3
   NUMBER: 1
   NUMBER: 1
-  NUMBER: 1
   COMMA: 3
+  NUMBER: 1
   COMMA: 3
   COMMA: 3
   PARENTHESIS: 4
   COMMA: 3
   NUMBER: 1
   PARENTHESIS: 4
-  NUMBER: 1
-  NUMBER: 1
   PARENTHESIS: 4
   NUMBER: 1
   PARENTHESIS: 4
@@ -7022,10 +6516,10 @@ COUNTS:
   SEPARATOR: 2
   SEPARATOR: 5
   SEPARATOR: 5
-  SEPARATOR: 14
   SEPARATOR: 3
   SEPARATOR: 1
   SEPARATOR: 6
+  SEPARATOR: 14
   SEPARATOR: 14
   SEPARATOR: 5
   SEPARATOR: 6
@@ -7035,16 +6529,16 @@ LINE 143 (length=251)
 TEXT: С учетом особенностей функционирования АСДО (информационные потоки различной величины и скорости обмена, пакетная передача потоков информации) выявлено, что обслуживание потока заявок в ИИС подчиняется законам Эрланга и получены следующие результаты:
 COUNTS:
   COMMA: 2
-  COLON: 1
   COMMA: 2
+  COLON: 1
   COLON: 1
   COLON: 1
   COMMA: 2
   COMMA: 2
   COMMA: 2
   PARENTHESIS: 2
-  COLON: 1
   COMMA: 2
+  COLON: 1
   PARENTHESIS: 2
   PARENTHESIS: 2
   PARENTHESIS: 2
@@ -7059,13 +6553,13 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 2
-  SEPARATOR: 1
+  ENTITY_SHAPE: 1
   SEPARATOR: 1
   SEPARATOR: 8
+  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 17
@@ -7073,13 +6567,12 @@ COUNTS:
   SEPARATOR: 5
   SEPARATOR: 19
   SEPARATOR: 3
-  SEPARATOR: 1
   SEPARATOR: 19
-  SEPARATOR: 17
   SEPARATOR: 6
   SEPARATOR: 11
   SEPARATOR: 17
   SEPARATOR: 2
+  SEPARATOR: 17
   SEPARATOR: 19
   SEPARATOR: 2
   SEPARATOR: 16
@@ -7102,8 +6595,6 @@ COUNTS:
   DOT: 1
   DOT: 1
   NUMBER: 1
-  NUMBER: 1
-  NUMBER: 1
   DOT: 1
   NUMBER: 1
   ENTITY_SHAPE: 1
@@ -7123,15 +6614,14 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 2
+  SEPARATOR: 4
   SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 4
-  SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 1
   SEPARATOR: 4
+  SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 4
   SEPARATOR: 1
@@ -7168,8 +6658,6 @@ COUNTS:
   PARENTHESIS: 2
   NUMBER: 1
   PARENTHESIS: 2
-  NUMBER: 1
-  NUMBER: 1
   PARENTHESIS: 2
   NUMBER: 1
   PARENTHESIS: 2
@@ -7189,29 +6677,25 @@ COUNTS:
   COMMA: 1
   NUMBER: 1
   NUMBER: 1
-  DASH: 1
   QUOTATION: 2
   DASH: 1
+  DASH: 1
+  COMMA: 1
   NUMBER: 1
   COMMA: 1
   COMMA: 1
+  DASH: 1
+  PARENTHESIS: 4
+  QUOTATION: 2
   COMMA: 1
-  DASH: 1
-  QUOTATION: 2
-  DASH: 1
-  QUOTATION: 2
-  PARENTHESIS: 4
-  COMMA: 1
-  NUMBER: 1
-  DASH: 1
-  PARENTHESIS: 4
-  NUMBER: 1
   QUOTATION: 2
   NUMBER: 1
   PARENTHESIS: 4
+  QUOTATION: 2
+  DASH: 1
+  PARENTHESIS: 4
   NUMBER: 1
   PARENTHESIS: 4
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   SEPARATOR: 1
@@ -7228,17 +6712,17 @@ COUNTS:
   DOT: 1
   DOT: 1
   DOT: 1
+  COMMA: 3
+  COMMA: 3
   DOT: 1
   COMMA: 3
-  COMMA: 3
-  COMMA: 3
-  DOT: 1
   DOT: 1
   PARENTHESIS: 2
   COMMA: 3
-  PARENTHESIS: 2
+  DOT: 1
   PARENTHESIS: 2
   DOT: 1
+  PARENTHESIS: 2
   PARENTHESIS: 2
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
@@ -7246,26 +6730,23 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 6
   SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 8
+  SEPARATOR: 1
   SEPARATOR: 3
-  SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 12
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 12
-  SEPARATOR: 8
+  SEPARATOR: 1
   SEPARATOR: 5
   SEPARATOR: 11
   SEPARATOR: 8
   SEPARATOR: 2
+  SEPARATOR: 8
   SEPARATOR: 12
   SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 11
-  SEPARATOR: 1
 
 LINE 150 (length=43)
 TEXT: 2	. Среднее число активных станций в ИИС'.
@@ -7284,8 +6765,6 @@ COUNTS:
   DOT: 2
   DOT: 2
   DOT: 2
-  NUMBER: 1
-  NUMBER: 1
   NUMBER: 1
   DOT: 2
   NUMBER: 1
@@ -7308,16 +6787,14 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 3
   SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 1
   SEPARATOR: 2
-  SEPARATOR: 3
-  SEPARATOR: 2
-  SEPARATOR: 2
-  SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 3
@@ -7330,17 +6807,16 @@ COUNTS:
   DASH: 1
   DASH: 1
   DASH: 1
-  DASH: 1
   QUOTATION: 2
   DASH: 1
   DASH: 1
-  QUOTATION: 2
-  DASH: 1
-  QUOTATION: 2
-  PARENTHESIS: 3
   DASH: 1
   PARENTHESIS: 3
   QUOTATION: 2
+  QUOTATION: 2
+  PARENTHESIS: 3
+  QUOTATION: 2
+  DASH: 1
   PARENTHESIS: 3
   PARENTHESIS: 3
   ENTITY_SHAPE: 1
@@ -7348,7 +6824,6 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   SEPARATOR: 1
-  SEPARATOR: 2
   SEPARATOR: 2
 
 LINE 152 (length=8)
@@ -7365,13 +6840,10 @@ COUNTS:
   DASH: 1
   NUMBER: 1
   DASH: 1
-  DASH: 1
   PARENTHESIS: 2
   NUMBER: 1
-  DASH: 1
   PARENTHESIS: 2
-  NUMBER: 1
-  NUMBER: 1
+  DASH: 1
   PARENTHESIS: 2
   NUMBER: 1
   PARENTHESIS: 2
@@ -7396,31 +6868,27 @@ COUNTS:
   COMMA: 1
   NUMBER: 2
   NUMBER: 2
-  DASH: 2
   QUOTATION: 1
   DASH: 2
+  DASH: 2
+  COMMA: 1
   NUMBER: 2
   COMMA: 1
   COMMA: 1
-  COMMA: 1
-  DASH: 2
-  QUOTATION: 1
-  DASH: 2
-  QUOTATION: 1
-  PARENTHESIS: 5
-  COMMA: 1
-  NUMBER: 2
   DASH: 2
   PARENTHESIS: 5
-  NUMBER: 2
+  QUOTATION: 1
+  COMMA: 1
   QUOTATION: 1
   NUMBER: 2
+  PARENTHESIS: 5
+  QUOTATION: 1
+  DASH: 2
   PARENTHESIS: 5
   NUMBER: 2
   PARENTHESIS: 5
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
   SEPARATOR: 2
 
 LINE 155 (length=11)
@@ -7437,11 +6905,8 @@ COUNTS:
   DASH: 1
   NUMBER: 1
   DASH: 1
-  DASH: 1
   NUMBER: 1
   DASH: 1
-  NUMBER: 1
-  NUMBER: 1
   NUMBER: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
@@ -7458,17 +6923,17 @@ COUNTS:
   DOT: 1
   DOT: 1
   DOT: 1
+  COMMA: 1
+  COMMA: 1
   DOT: 1
   COMMA: 1
-  COMMA: 1
-  COMMA: 1
-  DOT: 1
   DOT: 1
   PARENTHESIS: 2
   COMMA: 1
-  PARENTHESIS: 2
+  DOT: 1
   PARENTHESIS: 2
   DOT: 1
+  PARENTHESIS: 2
   PARENTHESIS: 2
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
@@ -7481,23 +6946,20 @@ COUNTS:
   SEPARATOR: 14
   SEPARATOR: 7
   SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 13
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 13
-  SEPARATOR: 14
+  SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 16
   SEPARATOR: 14
   SEPARATOR: 2
+  SEPARATOR: 14
   SEPARATOR: 13
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 20
-  SEPARATOR: 1
 
 LINE 157 (length=47)
 TEXT: 3	Вероятность передачи пакета с первой попытки
@@ -7509,8 +6971,6 @@ COUNTS:
   NUMBER: 1
   NUMBER: 1
   NUMBER: 1
-  NUMBER: 1
-  NUMBER: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
@@ -7529,11 +6989,11 @@ COUNTS:
   SEPARATOR: 2
   SEPARATOR: 3
   SEPARATOR: 2
-  SEPARATOR: 1
   SEPARATOR: 2
-  SEPARATOR: 3
+  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 4
+  SEPARATOR: 3
   SEPARATOR: 3
   SEPARATOR: 2
   SEPARATOR: 1
@@ -7542,7 +7002,6 @@ COUNTS:
 LINE 158 (length=4)
 TEXT: М-\
 COUNTS:
-  DASH: 1
   DASH: 1
   DASH: 1
   DASH: 1
@@ -7564,14 +7023,11 @@ COUNTS:
   PARENTHESIS: 2
   NUMBER: 2
   PARENTHESIS: 2
-  NUMBER: 2
-  NUMBER: 2
   PARENTHESIS: 2
   NUMBER: 2
   PARENTHESIS: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 2
@@ -7590,11 +7046,8 @@ COUNTS:
   DASH: 1
   NUMBER: 1
   DASH: 1
-  DASH: 1
   NUMBER: 1
   DASH: 1
-  NUMBER: 1
-  NUMBER: 1
   NUMBER: 1
   ENTITY_SHAPE: 1
   SEPARATOR: 1
@@ -7612,13 +7065,12 @@ COUNTS:
   DOT: 1
   DOT: 1
   DOT: 1
-  DOT: 1
-  PARENTHESIS: 2
-  PARENTHESIS: 2
   PARENTHESIS: 2
   DOT: 1
   PARENTHESIS: 2
-  ENTITY_SHAPE: 1
+  DOT: 1
+  PARENTHESIS: 2
+  PARENTHESIS: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
@@ -7640,14 +7092,13 @@ COUNTS:
   SEPARATOR: 9
   SEPARATOR: 1
   SEPARATOR: 1
+  SEPARATOR: 4
   SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 4
-  SEPARATOR: 9
   SEPARATOR: 2
   SEPARATOR: 7
+  SEPARATOR: 9
   SEPARATOR: 9
   SEPARATOR: 4
   SEPARATOR: 1
@@ -7666,17 +7117,15 @@ COUNTS:
   NUMBER: 1
   DOT: 1
   DOT: 1
-  DOT: 1
   COLON: 1
-  COLON: 1
-  NUMBER: 1
-  DOT: 1
-  DOT: 1
   DOT: 1
   COLON: 1
   NUMBER: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
   NUMBER: 1
-  NUMBER: 1
+  COLON: 1
   DOT: 1
   NUMBER: 1
   ENTITY_SHAPE: 1
@@ -7699,10 +7148,9 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 4
   SEPARATOR: 3
   SEPARATOR: 1
+  SEPARATOR: 4
   SEPARATOR: 4
   SEPARATOR: 1
 
@@ -7716,11 +7164,10 @@ COUNTS:
   COMMA: 1
   COMMA: 1
   QUOTATION: 1
-  QUOTATION: 1
   COMMA: 1
   QUOTATION: 1
+  QUOTATION: 1
   ENTITY_SHAPE: 5
-  ENTITY_SHAPE: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
@@ -7740,13 +7187,10 @@ COUNTS:
   DASH: 3
   NUMBER: 2
   DASH: 3
-  DASH: 3
   PARENTHESIS: 7
   NUMBER: 2
-  DASH: 3
   PARENTHESIS: 7
-  NUMBER: 2
-  NUMBER: 2
+  DASH: 3
   PARENTHESIS: 7
   NUMBER: 2
   PARENTHESIS: 7
@@ -7769,11 +7213,8 @@ COUNTS:
   DASH: 1
   NUMBER: 2
   DASH: 1
-  DASH: 1
   NUMBER: 2
   DASH: 1
-  NUMBER: 2
-  NUMBER: 2
   NUMBER: 2
   ENTITY_SHAPE: 2
   SEPARATOR: 2
@@ -7799,17 +7240,17 @@ COUNTS:
   DOT: 1
   DOT: 1
   DOT: 1
+  COMMA: 1
+  COMMA: 1
   DOT: 1
   COMMA: 1
-  COMMA: 1
-  COMMA: 1
-  DOT: 1
   DOT: 1
   PARENTHESIS: 2
   COMMA: 1
-  PARENTHESIS: 2
+  DOT: 1
   PARENTHESIS: 2
   DOT: 1
+  PARENTHESIS: 2
   PARENTHESIS: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 7
@@ -7819,24 +7260,23 @@ COUNTS:
   ENTITY_SHAPE: 1
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 4
+  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 11
   SEPARATOR: 9
   SEPARATOR: 8
-  SEPARATOR: 1
   SEPARATOR: 20
   SEPARATOR: 1
   SEPARATOR: 2
-  SEPARATOR: 1
   SEPARATOR: 20
-  SEPARATOR: 11
+  SEPARATOR: 1
   SEPARATOR: 3
   SEPARATOR: 15
   SEPARATOR: 11
   SEPARATOR: 2
+  SEPARATOR: 11
   SEPARATOR: 20
   SEPARATOR: 3
   SEPARATOR: 26
@@ -7848,20 +7288,19 @@ COUNTS:
   DASH: 1
   DOT: 1
   DASH: 1
-  DOT: 1
-  DASH: 1
   DASH: 1
   DOT: 1
   DOT: 1
-  DOT: 1
   DASH: 1
+  DOT: 1
   DOT: 1
   DASH: 1
   DOT: 1
   DASH: 1
   DOT: 1
-  DASH: 1
   DOT: 1
+  DOT: 1
+  DASH: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 12
@@ -7870,9 +7309,9 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 3
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
@@ -7880,19 +7319,17 @@ COUNTS:
   SEPARATOR: 4
   SEPARATOR: 3
   SEPARATOR: 3
-  SEPARATOR: 1
   SEPARATOR: 6
   SEPARATOR: 1
   SEPARATOR: 4
-  SEPARATOR: 1
   SEPARATOR: 6
-  SEPARATOR: 4
+  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 3
   SEPARATOR: 4
   SEPARATOR: 2
-  SEPARATOR: 1
+  SEPARATOR: 4
   SEPARATOR: 6
   SEPARATOR: 1
   SEPARATOR: 12
@@ -7901,8 +7338,6 @@ COUNTS:
 LINE 169 (length=3)
 TEXT: 15
 COUNTS:
-  NUMBER: 1
-  NUMBER: 1
   NUMBER: 1
   NUMBER: 1
   NUMBER: 1
@@ -7924,7 +7359,6 @@ COUNTS:
   DASH: 1
   DASH: 1
   DASH: 1
-  DASH: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
@@ -7950,9 +7384,9 @@ COUNTS:
   SEPARATOR: 6
   SEPARATOR: 1
   SEPARATOR: 6
-  SEPARATOR: 4
   SEPARATOR: 2
   SEPARATOR: 3
+  SEPARATOR: 4
   SEPARATOR: 4
   SEPARATOR: 6
   SEPARATOR: 9
@@ -7969,13 +7403,8 @@ COUNTS:
   NUMBER: 1
   NUMBER: 1
   NUMBER: 1
-  NUMBER: 1
-  NUMBER: 1
-  YEAR: 1
-  YEAR: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 9
-  ENTITY_SHAPE: 3
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
@@ -7997,7 +7426,6 @@ COUNTS:
   COMMA: 7
   COMMA: 7
   DASH: 1
-  DASH: 1
   COMMA: 7
   DASH: 1
   ENTITY_SHAPE: 2
@@ -8016,18 +7444,16 @@ COUNTS:
   SEPARATOR: 3
   SEPARATOR: 44
   SEPARATOR: 1
-  SEPARATOR: 35
   SEPARATOR: 1
   SEPARATOR: 16
   SEPARATOR: 27
   SEPARATOR: 35
   SEPARATOR: 2
+  SEPARATOR: 35
   SEPARATOR: 44
   SEPARATOR: 1
   SEPARATOR: 7
   SEPARATOR: 32
-  SEPARATOR: 1
-  SEPARATOR: 1
 
 LINE 173 (length=287)
 TEXT: В третьей главе рассмотрены методологические основы разработки АСДО военного вуза, как системы интеллектуальной поддержки процесса организации самостоятельной работы курсантов при подготовке к занятиям на специальной технике и сложном лабораторном оборудовании, построенная на базе ИИС.
@@ -8040,13 +7466,13 @@ COUNTS:
   DOT: 1
   DOT: 1
   DOT: 1
+  COMMA: 2
+  COMMA: 2
   DOT: 1
   COMMA: 2
-  COMMA: 2
-  COMMA: 2
-  DOT: 1
   DOT: 1
   COMMA: 2
+  DOT: 1
   DOT: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
@@ -8058,29 +7484,27 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 10
+  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 22
   SEPARATOR: 9
   SEPARATOR: 7
-  SEPARATOR: 1
   SEPARATOR: 16
   SEPARATOR: 1
   SEPARATOR: 2
-  SEPARATOR: 1
   SEPARATOR: 16
-  SEPARATOR: 22
+  SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 17
   SEPARATOR: 22
   SEPARATOR: 2
+  SEPARATOR: 22
   SEPARATOR: 16
   SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 20
-  SEPARATOR: 1
 
 LINE 174 (length=312)
 TEXT: В первом параграфе представлены методики организации самостоятельной работы курсантов при подготовке к занятиям на специальной технике и сложным лабораторным работам. При подготовке к занятиям на специальной технике выделяют этапы. Обеспеченность самостоятельной работы необходимыми методическими материалами у]
@@ -8099,8 +7523,8 @@ COUNTS:
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
@@ -8114,7 +7538,6 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
   SEPARATOR: 2
   SEPARATOR: 1
   SEPARATOR: 9
@@ -8122,14 +7545,13 @@ COUNTS:
   SEPARATOR: 25
   SEPARATOR: 9
   SEPARATOR: 15
+  SEPARATOR: 21
   SEPARATOR: 2
   SEPARATOR: 21
   SEPARATOR: 2
-  SEPARATOR: 2
-  SEPARATOR: 21
-  SEPARATOR: 25
   SEPARATOR: 7
   SEPARATOR: 22
+  SEPARATOR: 25
   SEPARATOR: 25
   SEPARATOR: 21
   SEPARATOR: 4
@@ -8150,21 +7572,19 @@ COUNTS:
   DOT: 2
   DOT: 2
   DOT: 2
+  COMMA: 6
   NUMBER: 1
-  DOT: 2
-  COMMA: 6
-  COMMA: 6
   COMMA: 6
   DOT: 2
+  COMMA: 6
   DOT: 2
   PARENTHESIS: 12
   COMMA: 6
-  NUMBER: 1
-  PARENTHESIS: 12
-  NUMBER: 1
+  DOT: 2
   NUMBER: 1
   PARENTHESIS: 12
   DOT: 2
+  PARENTHESIS: 12
   NUMBER: 1
   PARENTHESIS: 12
   ENTITY_SHAPE: 1
@@ -8177,18 +7597,16 @@ COUNTS:
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 31
   ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 3
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 5
   ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 5
   ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 5
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 5
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   SEPARATOR: 2
@@ -8200,16 +7618,15 @@ COUNTS:
   SEPARATOR: 27
   SEPARATOR: 14
   SEPARATOR: 3
-  SEPARATOR: 2
   SEPARATOR: 48
   SEPARATOR: 2
   SEPARATOR: 4
-  SEPARATOR: 2
   SEPARATOR: 48
-  SEPARATOR: 38
+  SEPARATOR: 2
   SEPARATOR: 10
   SEPARATOR: 1
   SEPARATOR: 52
+  SEPARATOR: 38
   SEPARATOR: 38
   SEPARATOR: 48
   SEPARATOR: 11
@@ -8225,12 +7642,9 @@ COUNTS:
   NUMBER: 1
   NUMBER: 1
   NUMBER: 1
-  NUMBER: 1
-  NUMBER: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
 
@@ -8243,35 +7657,33 @@ COUNTS:
   NUMBER: 1
   DOT: 1
   DOT: 1
-  COLON: 1
   COMMA: 4
+  COLON: 1
   NUMBER: 1
   NUMBER: 1
-  DOT: 1
   QUOTATION: 2
   DOT: 1
   DOT: 1
   COLON: 1
+  DOT: 1
   COLON: 1
+  COMMA: 4
   NUMBER: 1
-  DOT: 1
-  COMMA: 4
-  COMMA: 4
   COMMA: 4
   DOT: 1
-  QUOTATION: 2
-  QUOTATION: 2
+  COMMA: 4
   DOT: 1
   PARENTHESIS: 10
-  COLON: 1
-  COMMA: 4
-  NUMBER: 1
-  PARENTHESIS: 10
-  NUMBER: 1
   QUOTATION: 2
+  COMMA: 4
+  QUOTATION: 2
+  DOT: 1
   NUMBER: 1
+  COLON: 1
   PARENTHESIS: 10
   DOT: 1
+  QUOTATION: 2
+  PARENTHESIS: 10
   NUMBER: 1
   PARENTHESIS: 10
   ENTITY_SHAPE: 1
@@ -8283,16 +7695,15 @@ COUNTS:
   SEPARATOR: 20
   SEPARATOR: 12
   SEPARATOR: 11
-  SEPARATOR: 1
   SEPARATOR: 21
   SEPARATOR: 1
   SEPARATOR: 2
-  SEPARATOR: 1
   SEPARATOR: 21
-  SEPARATOR: 20
+  SEPARATOR: 1
   SEPARATOR: 6
   SEPARATOR: 1
   SEPARATOR: 21
+  SEPARATOR: 20
   SEPARATOR: 20
   SEPARATOR: 21
   SEPARATOR: 4
@@ -8319,15 +7730,14 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   SEPARATOR: 1
   SEPARATOR: 3
@@ -8335,14 +7745,13 @@ COUNTS:
   SEPARATOR: 8
   SEPARATOR: 3
   SEPARATOR: 6
+  SEPARATOR: 2
   SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 2
-  SEPARATOR: 8
   SEPARATOR: 1
   SEPARATOR: 9
+  SEPARATOR: 8
   SEPARATOR: 8
   SEPARATOR: 2
   SEPARATOR: 1
@@ -8351,8 +7760,6 @@ COUNTS:
 LINE 179 (length=3)
 TEXT: 16
 COUNTS:
-  NUMBER: 1
-  NUMBER: 1
   NUMBER: 1
   NUMBER: 1
   NUMBER: 1
@@ -8374,41 +7781,38 @@ COUNTS:
   DASH: 2
   DOT: 2
   DASH: 2
+  DASH: 2
+  DOT: 2
+  COMMA: 9
+  NUMBER: 9
+  NUMBER: 9
+  QUOTATION: 3
+  DOT: 2
+  DASH: 2
+  DOT: 2
   DOT: 2
   DASH: 2
   COMMA: 9
   NUMBER: 9
-  NUMBER: 9
-  DASH: 2
-  DOT: 2
-  QUOTATION: 3
-  DOT: 2
-  DOT: 2
-  DASH: 2
-  NUMBER: 9
-  DOT: 2
   COMMA: 9
-  COMMA: 9
+  DOT: 2
   COMMA: 9
   DASH: 2
   DOT: 2
-  QUOTATION: 3
-  DASH: 2
-  QUOTATION: 3
-  DOT: 2
-  SLASH: 1
   PARENTHESIS: 28
-  COMMA: 9
-  NUMBER: 9
-  DASH: 2
-  PARENTHESIS: 28
-  NUMBER: 9
   QUOTATION: 3
-  NUMBER: 9
-  PARENTHESIS: 28
+  COMMA: 9
+  QUOTATION: 3
   DOT: 2
   NUMBER: 9
   SLASH: 1
+  PARENTHESIS: 28
+  DOT: 2
+  QUOTATION: 3
+  DASH: 2
+  PARENTHESIS: 28
+  SLASH: 1
+  NUMBER: 9
   PARENTHESIS: 28
   ENTITY_SHAPE: 9
   ENTITY_SHAPE: 3
@@ -8419,54 +7823,50 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 16
   ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 3
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
   SEPARATOR: 2
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 50
-  SEPARATOR: 2
   SEPARATOR: 1
+  SEPARATOR: 2
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 94
+  SEPARATOR: 1
   SEPARATOR: 38
   SEPARATOR: 40
   SEPARATOR: 1
-  SEPARATOR: 2
   SEPARATOR: 81
   SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 2
-  SEPARATOR: 2
   SEPARATOR: 1
-  SEPARATOR: 2
   SEPARATOR: 81
   SEPARATOR: 1
   SEPARATOR: 1
+  SEPARATOR: 2
   SEPARATOR: 3
   SEPARATOR: 1
-  SEPARATOR: 94
+  SEPARATOR: 2
   SEPARATOR: 22
   SEPARATOR: 90
   SEPARATOR: 6
+  SEPARATOR: 94
   SEPARATOR: 94
   SEPARATOR: 81
   SEPARATOR: 1
   SEPARATOR: 12
   SEPARATOR: 96
-  SEPARATOR: 1
 
 LINE 181 (length=211)
 TEXT: основе анализа данных τeκyme∣ о семестра (з2 ); корректируются показатели экспертных оценок сложности изучаемого материала и важности изученного ранее раздела инженерной дисциплины ( ¾ ) преподавателями кафедр.
@@ -8484,14 +7884,12 @@ COUNTS:
   NUMBER: 1
   DOT: 1
   DOT: 1
+  PARENTHESIS: 4
   DOT: 1
-  PARENTHESIS: 4
-  NUMBER: 1
-  PARENTHESIS: 4
-  NUMBER: 1
   NUMBER: 1
   PARENTHESIS: 4
   DOT: 1
+  PARENTHESIS: 4
   NUMBER: 1
   PARENTHESIS: 4
   ENTITY_SHAPE: 1
@@ -8500,15 +7898,14 @@ COUNTS:
   SEPARATOR: 18
   SEPARATOR: 7
   SEPARATOR: 4
+  SEPARATOR: 14
   SEPARATOR: 1
   SEPARATOR: 14
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 14
-  SEPARATOR: 18
   SEPARATOR: 2
   SEPARATOR: 9
   SEPARATOR: 1
+  SEPARATOR: 18
   SEPARATOR: 18
   SEPARATOR: 14
   SEPARATOR: 1
@@ -8551,15 +7948,14 @@ COUNTS:
   SEPARATOR: 9
   SEPARATOR: 1
   SEPARATOR: 3
-  SEPARATOR: 1
   SEPARATOR: 5
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 5
-  SEPARATOR: 9
+  SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 4
+  SEPARATOR: 9
   SEPARATOR: 9
   SEPARATOR: 5
   SEPARATOR: 3
@@ -8579,21 +7975,19 @@ COUNTS:
   DOT: 2
   DOT: 2
   DOT: 2
+  COMMA: 1
   NUMBER: 1
-  DOT: 2
-  COMMA: 1
-  COMMA: 1
   COMMA: 1
   DOT: 2
+  COMMA: 1
   DOT: 2
   PARENTHESIS: 2
   COMMA: 1
-  NUMBER: 1
-  PARENTHESIS: 2
-  NUMBER: 1
+  DOT: 2
   NUMBER: 1
   PARENTHESIS: 2
   DOT: 2
+  PARENTHESIS: 2
   NUMBER: 1
   PARENTHESIS: 2
   ENTITY_SHAPE: 1
@@ -8605,9 +7999,9 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   SEPARATOR: 2
@@ -8615,31 +8009,27 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 2
-  SEPARATOR: 1
   SEPARATOR: 13
   SEPARATOR: 5
+  SEPARATOR: 1
   SEPARATOR: 3
-  SEPARATOR: 2
   SEPARATOR: 17
   SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 17
-  SEPARATOR: 13
+  SEPARATOR: 1
+  SEPARATOR: 2
   SEPARATOR: 6
   SEPARATOR: 1
   SEPARATOR: 9
   SEPARATOR: 13
+  SEPARATOR: 13
   SEPARATOR: 17
   SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 2
-  SEPARATOR: 1
   SEPARATOR: 13
-  SEPARATOR: 1
 
 LINE 184 (length=111)
 TEXT: 2	В ходе самостоятельной работы ГАОС оценивает соответствия уровня знаний, навыков и умений курсанта требуемым
@@ -8650,13 +8040,11 @@ COUNTS:
   COMMA: 1
   NUMBER: 1
   NUMBER: 1
-  NUMBER: 1
-  COMMA: 1
-  COMMA: 1
-  COMMA: 1
   COMMA: 1
   NUMBER: 1
-  NUMBER: 1
+  COMMA: 1
+  COMMA: 1
+  COMMA: 1
   NUMBER: 1
   NUMBER: 1
   ENTITY_SHAPE: 1
@@ -8675,10 +8063,10 @@ COUNTS:
   SEPARATOR: 5
   SEPARATOR: 1
   SEPARATOR: 5
-  SEPARATOR: 7
   SEPARATOR: 3
   SEPARATOR: 9
   SEPARATOR: 1
+  SEPARATOR: 7
   SEPARATOR: 7
   SEPARATOR: 5
   SEPARATOR: 3
@@ -8702,8 +8090,6 @@ COUNTS:
   DOT: 2
   DOT: 2
   NUMBER: 1
-  NUMBER: 1
-  NUMBER: 1
   DOT: 2
   NUMBER: 1
   ENTITY_SHAPE: 1
@@ -8728,24 +8114,21 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   SEPARATOR: 2
   SEPARATOR: 3
-  SEPARATOR: 1
   SEPARATOR: 6
   SEPARATOR: 7
   SEPARATOR: 3
-  SEPARATOR: 2
+  SEPARATOR: 1
   SEPARATOR: 12
   SEPARATOR: 2
   SEPARATOR: 1
+  SEPARATOR: 12
   SEPARATOR: 1
   SEPARATOR: 2
-  SEPARATOR: 12
-  SEPARATOR: 6
-  SEPARATOR: 1
   SEPARATOR: 3
   SEPARATOR: 7
+  SEPARATOR: 6
   SEPARATOR: 6
   SEPARATOR: 12
   SEPARATOR: 1
@@ -8768,14 +8151,12 @@ COUNTS:
   NUMBER: 1
   DOT: 2
   DOT: 2
+  PARENTHESIS: 2
   DOT: 2
-  PARENTHESIS: 2
-  NUMBER: 1
-  PARENTHESIS: 2
-  NUMBER: 1
   NUMBER: 1
   PARENTHESIS: 2
   DOT: 2
+  PARENTHESIS: 2
   NUMBER: 1
   PARENTHESIS: 2
   ENTITY_SHAPE: 1
@@ -8789,21 +8170,19 @@ COUNTS:
   SEPARATOR: 4
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 10
   SEPARATOR: 5
   SEPARATOR: 3
-  SEPARATOR: 2
   SEPARATOR: 10
   SEPARATOR: 2
   SEPARATOR: 1
-  SEPARATOR: 2
   SEPARATOR: 10
   SEPARATOR: 1
-  SEPARATOR: 10
+  SEPARATOR: 2
   SEPARATOR: 4
   SEPARATOR: 1
   SEPARATOR: 12
+  SEPARATOR: 10
   SEPARATOR: 10
   SEPARATOR: 10
   SEPARATOR: 1
@@ -8813,8 +8192,6 @@ COUNTS:
 LINE 187 (length=3)
 TEXT: 17
 COUNTS:
-  NUMBER: 1
-  NUMBER: 1
   NUMBER: 1
   NUMBER: 1
   NUMBER: 1
@@ -8837,38 +8214,35 @@ COUNTS:
   DASH: 9
   DOT: 4
   DASH: 9
+  DASH: 9
+  DOT: 4
+  COMMA: 12
+  NUMBER: 1
+  NUMBER: 1
+  QUOTATION: 4
+  DOT: 4
+  DASH: 9
+  DOT: 4
   DOT: 4
   DASH: 9
   COMMA: 12
   NUMBER: 1
-  NUMBER: 1
-  DASH: 9
-  DOT: 4
-  QUOTATION: 4
-  DOT: 4
-  DOT: 4
-  DASH: 9
-  NUMBER: 1
+  COMMA: 12
   DOT: 4
   COMMA: 12
-  COMMA: 12
-  COMMA: 12
   DASH: 9
-  DOT: 4
-  QUOTATION: 4
-  DASH: 9
-  QUOTATION: 4
   DOT: 4
   PARENTHESIS: 2
-  COMMA: 12
-  NUMBER: 1
-  DASH: 9
-  PARENTHESIS: 2
-  NUMBER: 1
   QUOTATION: 4
+  COMMA: 12
+  QUOTATION: 4
+  DOT: 4
   NUMBER: 1
   PARENTHESIS: 2
   DOT: 4
+  QUOTATION: 4
+  DASH: 9
+  PARENTHESIS: 2
   NUMBER: 1
   PARENTHESIS: 2
   ENTITY_SHAPE: 1
@@ -8877,27 +8251,26 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 5
   ENTITY_SHAPE: 47
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 5
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 8
   ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 7
-  ENTITY_SHAPE: 8
-  ENTITY_SHAPE: 5
-  ENTITY_SHAPE: 8
-  ENTITY_SHAPE: 7
-  ENTITY_SHAPE: 5
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 8
-  ENTITY_SHAPE: 5
-  ENTITY_SHAPE: 5
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   SEPARATOR: 4
@@ -8910,30 +8283,24 @@ COUNTS:
   SEPARATOR: 74
   SEPARATOR: 38
   SEPARATOR: 35
-  SEPARATOR: 4
-  SEPARATOR: 1
   SEPARATOR: 70
   SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 6
   SEPARATOR: 1
-  SEPARATOR: 4
   SEPARATOR: 70
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 74
+  SEPARATOR: 1
+  SEPARATOR: 4
   SEPARATOR: 28
   SEPARATOR: 48
   SEPARATOR: 74
+  SEPARATOR: 74
   SEPARATOR: 70
-  SEPARATOR: 1
   SEPARATOR: 3
   SEPARATOR: 11
   SEPARATOR: 100
-  SEPARATOR: 1
-  SEPARATOR: 3
-  SEPARATOR: 1
-  SEPARATOR: 1
 
 LINE 189 (length=1322)
 TEXT: В четвертом параграфе даются методические рекомендации для построения ИИС. На основе углубленного анализа существующих технологий построения компьютерных сетей и их технических характеристик, для развертывания ИИС рекомендованы следующие решения: ЛВС кафедр необходимо строить на основе технологии Fast Ethernet (Ethernet) использую витую пару 4,5 категорий (UTP-4,5), обеспечивая скорость обмена данными (10/100 Мбит/с); в качестве магистральных линий между сегментами сети использовать витую пару 5 категории (при расстоянии менее 100м), а при расстоянии от 100м до 5000м специальные высокоскоростные модемы, или оборудование IOLAPLN (технология IOLA PLN позволяет обеспечить от 6 до 24 магистральных канала); сетевые адаптеры, установленные в ПЭВМ должны обеспечивать скорость передачи данных 10/100 Мбит/с в дуплексном режиме Предложена типовая структура ИИС для выполнения задач АСДО, на основе топологии звезда, логические домены ИИС - сеть автоматизированной системы контроля успеваемости и сеть дистанционного обучения, реализуемые при помощи коммутатора 4-го уровня. Определен состав общего программного обеспечения ИИС на основе сертифицированных программных продуктов, в том числе для обеспечения информационной безопасности, предложен состав сервера ИИС АСДО и методические рекомендации для его развертывания.
@@ -8945,41 +8312,38 @@ COUNTS:
   DASH: 3
   DOT: 3
   DASH: 3
-  DOT: 3
   DASH: 3
-  COLON: 1
+  DOT: 3
   COMMA: 12
+  COLON: 1
   NUMBER: 15
   NUMBER: 15
+  DOT: 3
   DASH: 3
   DOT: 3
-  DOT: 3
-  DOT: 3
   COLON: 1
+  DOT: 3
   COLON: 1
   DASH: 3
+  COMMA: 12
   NUMBER: 15
+  COMMA: 12
   DOT: 3
-  COMMA: 12
-  COMMA: 12
   COMMA: 12
   DASH: 3
   DOT: 3
-  DASH: 3
+  PARENTHESIS: 10
+  COMMA: 12
   DOT: 3
+  NUMBER: 15
+  COLON: 1
   SLASH: 4
   PARENTHESIS: 10
-  COLON: 1
-  COMMA: 12
-  NUMBER: 15
+  DOT: 3
   DASH: 3
   PARENTHESIS: 10
-  NUMBER: 15
-  NUMBER: 15
-  PARENTHESIS: 10
-  DOT: 3
-  NUMBER: 15
   SLASH: 4
+  NUMBER: 15
   PARENTHESIS: 10
   ENTITY_SHAPE: 15
   ENTITY_SHAPE: 5
@@ -8987,72 +8351,66 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 59
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 5
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 5
-  ENTITY_SHAPE: 10
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 10
-  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 10
+  ENTITY_SHAPE: 5
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
   SEPARATOR: 3
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 3
   SEPARATOR: 24
+  SEPARATOR: 1
   SEPARATOR: 3
+  SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 1
-  SEPARATOR: 2
+  SEPARATOR: 71
   SEPARATOR: 2
   SEPARATOR: 3
-  SEPARATOR: 71
   SEPARATOR: 33
   SEPARATOR: 37
-  SEPARATOR: 3
-  SEPARATOR: 1
   SEPARATOR: 86
   SEPARATOR: 3
   SEPARATOR: 9
-  SEPARATOR: 3
-  SEPARATOR: 2
   SEPARATOR: 86
   SEPARATOR: 4
-  SEPARATOR: 71
+  SEPARATOR: 1
   SEPARATOR: 3
-  SEPARATOR: 23
+  SEPARATOR: 3
   SEPARATOR: 2
+  SEPARATOR: 23
   SEPARATOR: 6
   SEPARATOR: 65
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 71
   SEPARATOR: 12
+  SEPARATOR: 71
   SEPARATOR: 86
   SEPARATOR: 2
   SEPARATOR: 4
   SEPARATOR: 1
   SEPARATOR: 6
   SEPARATOR: 109
-  SEPARATOR: 1
-  SEPARATOR: 1
 
 LINE 190 (length=322)
 TEXT: В четвертой главе рассматриваются вопросы практической реализации АСДО и ИИСВ на примере Воронежского военного института радиоэлектроники. В первом параграфе, на основе решения задач построения СКС и расчета характеристик компьютерной сети, синтезирована ИИС, образующая информационную и вычислительную поддержки процесса
@@ -9065,13 +8423,13 @@ COUNTS:
   DOT: 1
   DOT: 1
   DOT: 1
+  COMMA: 3
+  COMMA: 3
   DOT: 1
   COMMA: 3
-  COMMA: 3
-  COMMA: 3
-  DOT: 1
   DOT: 1
   COMMA: 3
+  DOT: 1
   DOT: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
@@ -9082,10 +8440,10 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 4
-  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   SEPARATOR: 1
   SEPARATOR: 1
@@ -9094,16 +8452,13 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 26
-  SEPARATOR: 5
-  SEPARATOR: 5
-  SEPARATOR: 1
   SEPARATOR: 26
   SEPARATOR: 1
   SEPARATOR: 5
-  SEPARATOR: 1
+  SEPARATOR: 5
   SEPARATOR: 26
+  SEPARATOR: 1
+  SEPARATOR: 5
   SEPARATOR: 26
   SEPARATOR: 1
   SEPARATOR: 1
@@ -9111,20 +8466,16 @@ COUNTS:
   SEPARATOR: 17
   SEPARATOR: 26
   SEPARATOR: 4
-  SEPARATOR: 1
   SEPARATOR: 26
-  SEPARATOR: 1
+  SEPARATOR: 26
   SEPARATOR: 1
   SEPARATOR: 3
   SEPARATOR: 24
-  SEPARATOR: 1
   SEPARATOR: 1
 
 LINE 191 (length=3)
 TEXT: 18
 COUNTS:
-  NUMBER: 1
-  NUMBER: 1
   NUMBER: 1
   NUMBER: 1
   NUMBER: 1
@@ -9142,20 +8493,19 @@ COUNTS:
   DASH: 1
   DOT: 1
   DASH: 1
-  DOT: 1
-  DASH: 1
   DASH: 1
   DOT: 1
   DOT: 1
-  DOT: 1
   DASH: 1
+  DOT: 1
   DOT: 1
   DASH: 1
   DOT: 1
   DASH: 1
   DOT: 1
-  DASH: 1
   DOT: 1
+  DOT: 1
+  DASH: 1
   SEPARATOR: 1
   SEPARATOR: 3
   SEPARATOR: 8
@@ -9165,10 +8515,9 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 8
   SEPARATOR: 2
   SEPARATOR: 6
+  SEPARATOR: 8
   SEPARATOR: 8
   SEPARATOR: 1
   SEPARATOR: 1
@@ -9184,42 +8533,39 @@ COUNTS:
   DASH: 4
   DOT: 6
   DASH: 4
-  DOT: 6
   DASH: 4
-  COLON: 1
+  DOT: 6
   COMMA: 21
+  COLON: 1
   NUMBER: 16
   NUMBER: 16
-  DASH: 4
-  DOT: 6
   QUOTATION: 9
   DOT: 6
+  DASH: 4
   DOT: 6
   COLON: 1
+  DOT: 6
   COLON: 1
   DASH: 4
+  COMMA: 21
   NUMBER: 16
+  COMMA: 21
   DOT: 6
   COMMA: 21
-  COMMA: 21
-  COMMA: 21
   DASH: 4
-  DOT: 6
-  QUOTATION: 9
-  DASH: 4
-  QUOTATION: 9
   DOT: 6
   PARENTHESIS: 14
-  COLON: 1
-  COMMA: 21
-  NUMBER: 16
-  DASH: 4
-  PARENTHESIS: 14
-  NUMBER: 16
   QUOTATION: 9
+  COMMA: 21
+  QUOTATION: 9
+  DOT: 6
   NUMBER: 16
+  COLON: 1
   PARENTHESIS: 14
   DOT: 6
+  QUOTATION: 9
+  DASH: 4
+  PARENTHESIS: 14
   NUMBER: 16
   PARENTHESIS: 14
   ENTITY_SHAPE: 16
@@ -9233,25 +8579,21 @@ COUNTS:
   ENTITY_SHAPE: 12
   ENTITY_SHAPE: 88
   ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 7
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 4
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 7
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 5
   ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 17
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 17
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 7
-  ENTITY_SHAPE: 17
-  ENTITY_SHAPE: 17
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   SEPARATOR: 6
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 41
@@ -9259,44 +8601,39 @@ COUNTS:
   SEPARATOR: 11
   SEPARATOR: 1
   SEPARATOR: 8
-  SEPARATOR: 93
   SEPARATOR: 1
+  SEPARATOR: 93
   SEPARATOR: 46
   SEPARATOR: 39
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 6
-  SEPARATOR: 1
   SEPARATOR: 75
+  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 6
   SEPARATOR: 11
-  SEPARATOR: 2
   SEPARATOR: 1
-  SEPARATOR: 6
+  SEPARATOR: 1
   SEPARATOR: 75
   SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 2
-  SEPARATOR: 93
-  SEPARATOR: 25
   SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 6
+  SEPARATOR: 25
   SEPARATOR: 7
   SEPARATOR: 69
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 93
   SEPARATOR: 3
-  SEPARATOR: 1
+  SEPARATOR: 93
   SEPARATOR: 75
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 16
   SEPARATOR: 88
-  SEPARATOR: 1
-  SEPARATOR: 1
 
 LINE 194 (length=572)
 TEXT: В третьем параграфе проводится оценка эффективности от внедрения АСДО в учебный процесс по критериям Wcn Waa6 W0llπ WnBp В результате расчетов, получены результаты, позволяющие сделать следующие выводы: снижение временных издержек ППС. при подготовке курсантов к практическим занятиям на специальной технике составило 80%, а при подготовке к сложным лабораторным работам - 50%, наиболее приемлемым для военного вуза (при численности не более 1500 курсантов) счищется обеспеченностью не более 300 единиц ПЭВМ при полном штате сотрудников, обеспечивающих эксплуатацию АСДО.
@@ -9308,38 +8645,35 @@ COUNTS:
   DASH: 1
   DOT: 2
   DASH: 1
-  DOT: 2
   DASH: 1
-  COLON: 1
+  DOT: 2
   COMMA: 5
+  COLON: 1
   NUMBER: 6
   NUMBER: 6
+  DOT: 2
   DASH: 1
   DOT: 2
-  DOT: 2
-  DOT: 2
   COLON: 1
+  DOT: 2
   COLON: 1
   DASH: 1
+  COMMA: 5
   NUMBER: 6
+  COMMA: 5
   DOT: 2
   COMMA: 5
-  COMMA: 5
-  COMMA: 5
-  DASH: 1
-  DOT: 2
   DASH: 1
   DOT: 2
   PARENTHESIS: 2
-  COLON: 1
   COMMA: 5
+  DOT: 2
   NUMBER: 6
-  DASH: 1
-  PARENTHESIS: 2
-  NUMBER: 6
-  NUMBER: 6
+  COLON: 1
   PARENTHESIS: 2
   DOT: 2
+  DASH: 1
+  PARENTHESIS: 2
   NUMBER: 6
   PARENTHESIS: 2
   ENTITY_SHAPE: 6
@@ -9349,34 +8683,31 @@ COUNTS:
   ENTITY_SHAPE: 4
   ENTITY_SHAPE: 4
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 4
   SEPARATOR: 2
   SEPARATOR: 3
   SEPARATOR: 15
   SEPARATOR: 2
   SEPARATOR: 2
-  SEPARATOR: 1
   SEPARATOR: 26
+  SEPARATOR: 1
   SEPARATOR: 18
   SEPARATOR: 12
-  SEPARATOR: 2
   SEPARATOR: 32
   SEPARATOR: 2
   SEPARATOR: 3
+  SEPARATOR: 32
   SEPARATOR: 1
   SEPARATOR: 2
-  SEPARATOR: 32
-  SEPARATOR: 26
   SEPARATOR: 8
   SEPARATOR: 1
   SEPARATOR: 30
   SEPARATOR: 1
   SEPARATOR: 26
+  SEPARATOR: 26
   SEPARATOR: 32
   SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 51
-  SEPARATOR: 2
 
 LINE 195 (length=663)
 TEXT: В четвертом параграфе дана оценка экономической целесообразности АСДО. Сравнивая соотношение «эффект/затраты» на основе критерия целевой эффективности затрат на развитие АСДО военного вуза, можно сделать следующие выводы- нельзя экономить на структурированных кабельных системах (СКС), иначе, придется каждый год вкладывать в АСДО минимум 4200 у.е ; затраты на развертывание АСДО к концу 3-го года уменьшаются, а затраты на эксплуатацию составляют лишь 10% от затрат на создание и внедрение АСДО; экономически целесообразным является приобретение «мощных» серверов главного и вторичных и средних клиентских станций; при увеличении масштаба сегмента ИИС свыше 300
@@ -9388,41 +8719,38 @@ COUNTS:
   DASH: 2
   DOT: 2
   DASH: 2
+  DASH: 2
+  DOT: 2
+  COMMA: 4
+  NUMBER: 4
+  NUMBER: 4
+  QUOTATION: 4
+  DOT: 2
+  DASH: 2
+  DOT: 2
   DOT: 2
   DASH: 2
   COMMA: 4
   NUMBER: 4
-  NUMBER: 4
-  DASH: 2
-  DOT: 2
-  QUOTATION: 4
-  DOT: 2
-  DOT: 2
-  DASH: 2
-  NUMBER: 4
-  DOT: 2
   COMMA: 4
-  COMMA: 4
+  DOT: 2
   COMMA: 4
   DASH: 2
   DOT: 2
-  QUOTATION: 4
-  DASH: 2
-  QUOTATION: 4
-  DOT: 2
-  SLASH: 1
   PARENTHESIS: 2
-  COMMA: 4
-  NUMBER: 4
-  DASH: 2
-  PARENTHESIS: 2
-  NUMBER: 4
   QUOTATION: 4
-  NUMBER: 4
-  PARENTHESIS: 2
+  COMMA: 4
+  QUOTATION: 4
   DOT: 2
   NUMBER: 4
   SLASH: 1
+  PARENTHESIS: 2
+  DOT: 2
+  QUOTATION: 4
+  DASH: 2
+  PARENTHESIS: 2
+  SLASH: 1
+  NUMBER: 4
   PARENTHESIS: 2
   ENTITY_SHAPE: 4
   ENTITY_SHAPE: 1
@@ -9432,47 +8760,43 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 7
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 7
-  ENTITY_SHAPE: 7
   ENTITY_SHAPE: 1
   SEPARATOR: 2
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 18
-  SEPARATOR: 5
   SEPARATOR: 1
+  SEPARATOR: 5
   SEPARATOR: 5
   SEPARATOR: 1
   SEPARATOR: 51
+  SEPARATOR: 1
   SEPARATOR: 15
   SEPARATOR: 14
-  SEPARATOR: 2
   SEPARATOR: 39
   SEPARATOR: 2
   SEPARATOR: 9
-  SEPARATOR: 2
-  SEPARATOR: 2
   SEPARATOR: 39
+  SEPARATOR: 2
   SEPARATOR: 1
-  SEPARATOR: 51
+  SEPARATOR: 2
   SEPARATOR: 9
   SEPARATOR: 1
   SEPARATOR: 39
   SEPARATOR: 1
   SEPARATOR: 51
   SEPARATOR: 2
+  SEPARATOR: 51
   SEPARATOR: 39
-  SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 49
 
 LINE 196 (length=3)
 TEXT: 19
 COUNTS:
-  NUMBER: 1
-  NUMBER: 1
   NUMBER: 1
   NUMBER: 1
   NUMBER: 1
@@ -9494,17 +8818,17 @@ COUNTS:
   DOT: 3
   DOT: 3
   DOT: 3
+  COMMA: 1
+  COMMA: 1
   DOT: 3
   COMMA: 1
-  COMMA: 1
-  COMMA: 1
-  DOT: 3
   DOT: 3
   PARENTHESIS: 2
   COMMA: 1
-  PARENTHESIS: 2
+  DOT: 3
   PARENTHESIS: 2
   DOT: 3
+  PARENTHESIS: 2
   PARENTHESIS: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 7
@@ -9514,20 +8838,19 @@ COUNTS:
   SEPARATOR: 3
   SEPARATOR: 1
   SEPARATOR: 6
-  SEPARATOR: 1
   SEPARATOR: 14
+  SEPARATOR: 1
   SEPARATOR: 5
   SEPARATOR: 8
+  SEPARATOR: 18
   SEPARATOR: 3
   SEPARATOR: 18
   SEPARATOR: 3
-  SEPARATOR: 3
-  SEPARATOR: 18
-  SEPARATOR: 14
   SEPARATOR: 3
   SEPARATOR: 21
   SEPARATOR: 14
   SEPARATOR: 1
+  SEPARATOR: 14
   SEPARATOR: 18
   SEPARATOR: 9
 
@@ -9560,23 +8883,20 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   SEPARATOR: 2
   SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 9
   SEPARATOR: 5
   SEPARATOR: 1
+  SEPARATOR: 20
   SEPARATOR: 2
   SEPARATOR: 20
   SEPARATOR: 2
-  SEPARATOR: 2
-  SEPARATOR: 20
-  SEPARATOR: 9
   SEPARATOR: 2
   SEPARATOR: 13
   SEPARATOR: 9
-  SEPARATOR: 1
+  SEPARATOR: 9
   SEPARATOR: 20
   SEPARATOR: 1
   SEPARATOR: 18
@@ -9586,18 +8906,18 @@ LINE 199 (length=23)
 TEXT: ОСНОВНЫЕ ВЫВОДЫ РАБОТЫ
 COUNTS:
   ENTITY_SHAPE: 4
-  ENTITY_SHAPE: 3
   ENTITY_SHAPE: 20
+  ENTITY_SHAPE: 3
   ENTITY_SHAPE: 6
-  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 6
   ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
   SEPARATOR: 3
   SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 1
-  SEPARATOR: 2
   SEPARATOR: 1
+  SEPARATOR: 2
 
 LINE 200 (length=88)
 TEXT: В ходе выполнения диссертационного исследования получены следующие основные результаты:
@@ -9614,8 +8934,8 @@ COUNTS:
   SEPARATOR: 5
   SEPARATOR: 6
   SEPARATOR: 6
-  SEPARATOR: 3
   SEPARATOR: 2
+  SEPARATOR: 3
   SEPARATOR: 3
   SEPARATOR: 3
   SEPARATOR: 6
@@ -9639,8 +8959,6 @@ COUNTS:
   DOT: 2
   DOT: 2
   NUMBER: 1
-  NUMBER: 1
-  NUMBER: 1
   DOT: 2
   NUMBER: 1
   ENTITY_SHAPE: 1
@@ -9664,27 +8982,25 @@ COUNTS:
   SEPARATOR: 2
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 12
   SEPARATOR: 4
-  SEPARATOR: 2
-  SEPARATOR: 2
   SEPARATOR: 1
+  SEPARATOR: 2
   SEPARATOR: 9
   SEPARATOR: 2
   SEPARATOR: 1
   SEPARATOR: 1
+  SEPARATOR: 9
+  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 1
-  SEPARATOR: 9
-  SEPARATOR: 12
   SEPARATOR: 2
   SEPARATOR: 1
   SEPARATOR: 3
   SEPARATOR: 12
+  SEPARATOR: 12
   SEPARATOR: 9
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 6
 
@@ -9703,16 +9019,14 @@ COUNTS:
   DOT: 2
   DOT: 2
   DOT: 2
-  NUMBER: 1
-  DOT: 2
-  COMMA: 3
-  COMMA: 3
-  COMMA: 3
-  DOT: 2
-  DOT: 2
   COMMA: 3
   NUMBER: 1
-  NUMBER: 1
+  COMMA: 3
+  DOT: 2
+  COMMA: 3
+  DOT: 2
+  COMMA: 3
+  DOT: 2
   NUMBER: 1
   DOT: 2
   NUMBER: 1
@@ -9733,25 +9047,20 @@ COUNTS:
   SEPARATOR: 7
   SEPARATOR: 4
   SEPARATOR: 1
-  SEPARATOR: 2
   SEPARATOR: 20
   SEPARATOR: 2
   SEPARATOR: 1
-  SEPARATOR: 2
   SEPARATOR: 20
-  SEPARATOR: 17
-  SEPARATOR: 1
+  SEPARATOR: 2
   SEPARATOR: 4
-  SEPARATOR: 1
   SEPARATOR: 10
   SEPARATOR: 1
+  SEPARATOR: 17
   SEPARATOR: 17
   SEPARATOR: 20
   SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 14
-  SEPARATOR: 1
-  SEPARATOR: 1
 
 LINE 203 (length=147)
 TEXT: 3	Синтезированы модели для определения параметров оценок: сложности изучаемой специальной техники и важности изученных ранее инженерных дисциплин.
@@ -9766,17 +9075,15 @@ COUNTS:
   NUMBER: 1
   DOT: 1
   DOT: 1
-  DOT: 1
   COLON: 1
-  COLON: 1
-  NUMBER: 1
-  DOT: 1
-  DOT: 1
   DOT: 1
   COLON: 1
   NUMBER: 1
+  DOT: 1
+  DOT: 1
+  DOT: 1
   NUMBER: 1
-  NUMBER: 1
+  COLON: 1
   DOT: 1
   NUMBER: 1
   ENTITY_SHAPE: 1
@@ -9799,16 +9106,15 @@ COUNTS:
   SEPARATOR: 7
   SEPARATOR: 6
   SEPARATOR: 3
+  SEPARATOR: 16
+  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 16
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 16
-  SEPARATOR: 7
   SEPARATOR: 2
   SEPARATOR: 5
+  SEPARATOR: 7
   SEPARATOR: 7
   SEPARATOR: 16
   SEPARATOR: 2
@@ -9832,8 +9138,6 @@ COUNTS:
   DOT: 2
   DOT: 2
   NUMBER: 1
-  NUMBER: 1
-  NUMBER: 1
   DOT: 2
   NUMBER: 1
   ENTITY_SHAPE: 1
@@ -9858,24 +9162,20 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   SEPARATOR: 2
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 13
   SEPARATOR: 3
   SEPARATOR: 6
-  SEPARATOR: 2
   SEPARATOR: 13
-  SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 13
   SEPARATOR: 1
-  SEPARATOR: 13
+  SEPARATOR: 2
   SEPARATOR: 3
   SEPARATOR: 1
   SEPARATOR: 10
+  SEPARATOR: 13
   SEPARATOR: 13
   SEPARATOR: 13
   SEPARATOR: 1
@@ -9897,16 +9197,14 @@ COUNTS:
   DOT: 2
   DOT: 2
   DOT: 2
-  NUMBER: 1
-  DOT: 2
-  COMMA: 1
-  COMMA: 1
-  COMMA: 1
-  DOT: 2
-  DOT: 2
   COMMA: 1
   NUMBER: 1
-  NUMBER: 1
+  COMMA: 1
+  DOT: 2
+  COMMA: 1
+  DOT: 2
+  COMMA: 1
+  DOT: 2
   NUMBER: 1
   DOT: 2
   NUMBER: 1
@@ -9920,20 +9218,19 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   SEPARATOR: 2
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 4
+  SEPARATOR: 1
   SEPARATOR: 17
   SEPARATOR: 6
   SEPARATOR: 6
+  SEPARATOR: 15
   SEPARATOR: 2
   SEPARATOR: 15
   SEPARATOR: 2
-  SEPARATOR: 2
-  SEPARATOR: 15
-  SEPARATOR: 17
   SEPARATOR: 4
   SEPARATOR: 8
+  SEPARATOR: 17
   SEPARATOR: 17
   SEPARATOR: 15
   SEPARATOR: 1
@@ -9955,16 +9252,14 @@ COUNTS:
   DOT: 2
   DOT: 2
   DOT: 2
-  NUMBER: 1
-  DOT: 2
-  COMMA: 2
-  COMMA: 2
-  COMMA: 2
-  DOT: 2
-  DOT: 2
   COMMA: 2
   NUMBER: 1
-  NUMBER: 1
+  COMMA: 2
+  DOT: 2
+  COMMA: 2
+  DOT: 2
+  COMMA: 2
+  DOT: 2
   NUMBER: 1
   DOT: 2
   NUMBER: 1
@@ -9986,20 +9281,17 @@ COUNTS:
   SEPARATOR: 5
   SEPARATOR: 2
   SEPARATOR: 1
+  SEPARATOR: 16
   SEPARATOR: 2
+  SEPARATOR: 16
   SEPARATOR: 1
-  SEPARATOR: 16
   SEPARATOR: 2
-  SEPARATOR: 2
-  SEPARATOR: 16
-  SEPARATOR: 12
   SEPARATOR: 1
   SEPARATOR: 9
   SEPARATOR: 1
   SEPARATOR: 12
-  SEPARATOR: 1
+  SEPARATOR: 12
   SEPARATOR: 16
-  SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 16
   SEPARATOR: 1
@@ -10008,11 +9300,11 @@ LINE 207 (length=40)
 TEXT: ОСНОВНЫЕ ПУБЛИКАЦИИ ПО ТЕМЕ ДИССЕРТАЦИИ
 COUNTS:
   ENTITY_SHAPE: 7
-  ENTITY_SHAPE: 5
   ENTITY_SHAPE: 35
+  ENTITY_SHAPE: 5
+  ENTITY_SHAPE: 9
   ENTITY_SHAPE: 9
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 9
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   SEPARATOR: 1
@@ -10020,11 +9312,10 @@ COUNTS:
   SEPARATOR: 3
   SEPARATOR: 2
   SEPARATOR: 1
-  SEPARATOR: 2
   SEPARATOR: 1
   SEPARATOR: 3
+  SEPARATOR: 2
   SEPARATOR: 6
-  SEPARATOR: 1
 
 LINE 208 (length=273)
 TEXT: 1.	Абрамов П.Б., Славнов К.В. Использование некоторых принципов дистанционного обучения при организации самоподготовки курсантов в военном вузе.// Новые информационные технологии в образовании: сборник статей. Воронеж. ВГТУ, 2000. -С. 15-16. (Лично автором выполнена 1 с).
@@ -10041,53 +9332,48 @@ COUNTS:
   DOT: 12
   INITIAL: 5
   DASH: 2
-  DOT: 12
   DASH: 2
-  COLON: 1
+  DOT: 12
   COMMA: 2
+  COLON: 1
   NUMBER: 5
   NUMBER: 5
-  DASH: 2
   DOT: 12
+  DASH: 2
   DOT: 12
   INITIAL: 5
+  COLON: 1
+  DOT: 12
+  COLON: 1
   YEAR: 1
-  DOT: 12
-  COLON: 1
-  COLON: 1
   DASH: 2
+  COMMA: 2
   NUMBER: 5
+  COMMA: 2
   DOT: 12
   COMMA: 2
-  COMMA: 2
-  COMMA: 2
-  DASH: 2
   INITIAL: 5
-  DOT: 12
   DASH: 2
   DOT: 12
-  SLASH: 2
   PARENTHESIS: 2
+  COMMA: 2
+  DOT: 12
+  NUMBER: 5
   DOUBLE_SLASH: 1
   COLON: 1
-  COMMA: 2
-  NUMBER: 5
-  DASH: 2
-  PARENTHESIS: 2
-  NUMBER: 5
-  NUMBER: 5
-  PARENTHESIS: 2
-  INITIAL: 5
-  DOT: 12
-  INITIAL: 5
-  INITIALS: 2
-  INITIALS: 2
-  NUMBER: 5
-  YEAR: 1
   SLASH: 2
   PARENTHESIS: 2
+  DOT: 12
+  DASH: 2
   INITIAL: 5
-  YEAR: 1
+  PARENTHESIS: 2
+  INITIALS: 2
+  INITIAL: 5
+  INITIALS: 2
+  SLASH: 2
+  NUMBER: 5
+  PARENTHESIS: 2
+  INITIAL: 5
   ENTITY_SHAPE: 5
   ENTITY_SHAPE: 6
   ENTITY_SHAPE: 1
@@ -10098,57 +9384,52 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 15
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 6
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   SEPARATOR: 12
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 3
+  SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 14
   SEPARATOR: 4
+  SEPARATOR: 1
   SEPARATOR: 5
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 12
-  SEPARATOR: 1
   SEPARATOR: 19
   SEPARATOR: 1
   SEPARATOR: 12
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 2
-  SEPARATOR: 12
-  SEPARATOR: 1
   SEPARATOR: 19
-  SEPARATOR: 14
   SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 12
   SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 8
@@ -10156,17 +9437,14 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 14
   SEPARATOR: 1
+  SEPARATOR: 14
   SEPARATOR: 19
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 11
-  SEPARATOR: 1
   SEPARATOR: 1
 
 LINE 209 (length=283)
@@ -10184,69 +9462,63 @@ COUNTS:
   DOT: 13
   INITIAL: 5
   DASH: 3
-  DOT: 13
   DASH: 3
+  DOT: 13
   COMMA: 2
   NUMBER: 6
   NUMBER: 6
+  DOT: 13
   DASH: 3
   DOT: 13
-  DOT: 13
   INITIAL: 5
+  DOT: 13
   YEAR: 1
-  DOT: 13
   DASH: 3
+  COMMA: 2
   NUMBER: 6
+  COMMA: 2
   DOT: 13
   COMMA: 2
-  COMMA: 2
-  COMMA: 2
-  DASH: 3
   INITIAL: 5
-  DOT: 13
   DASH: 3
   DOT: 13
-  SLASH: 3
   PARENTHESIS: 2
+  COMMA: 2
+  DOT: 13
+  NUMBER: 6
   DOUBLE_SLASH: 1
-  COMMA: 2
-  NUMBER: 6
-  DASH: 3
-  PARENTHESIS: 2
-  NUMBER: 6
-  NUMBER: 6
-  PARENTHESIS: 2
-  INITIAL: 5
-  DOT: 13
-  INITIAL: 5
-  INITIALS: 2
-  INITIALS: 2
-  NUMBER: 6
-  YEAR: 1
   SLASH: 3
   PARENTHESIS: 2
+  DOT: 13
+  DASH: 3
   INITIAL: 5
-  YEAR: 1
+  PARENTHESIS: 2
+  INITIALS: 2
+  INITIAL: 5
+  INITIALS: 2
+  SLASH: 3
+  NUMBER: 6
+  PARENTHESIS: 2
+  INITIAL: 5
   ENTITY_SHAPE: 6
   ENTITY_SHAPE: 7
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 5
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 13
   ENTITY_SHAPE: 4
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 3
   ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 4
   ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 7
   ENTITY_SHAPE: 1
@@ -10254,54 +9526,49 @@ COUNTS:
   SEPARATOR: 13
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 1
+  SEPARATOR: 3
   SEPARATOR: 1
   SEPARATOR: 3
-  SEPARATOR: 3
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 15
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
   SEPARATOR: 7
+  SEPARATOR: 1
+  SEPARATOR: 1
   SEPARATOR: 4
-  SEPARATOR: 13
-  SEPARATOR: 1
   SEPARATOR: 15
   SEPARATOR: 1
   SEPARATOR: 13
   SEPARATOR: 1
   SEPARATOR: 1
+  SEPARATOR: 2
+  SEPARATOR: 15
+  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 2
-  SEPARATOR: 2
+  SEPARATOR: 1
   SEPARATOR: 13
-  SEPARATOR: 1
-  SEPARATOR: 15
-  SEPARATOR: 1
-  SEPARATOR: 15
-  SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 2
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 10
   SEPARATOR: 3
   SEPARATOR: 15
   SEPARATOR: 15
+  SEPARATOR: 15
+  SEPARATOR: 1
+  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 3
-  SEPARATOR: 1
   SEPARATOR: 17
   SEPARATOR: 1
 
@@ -10324,22 +9591,20 @@ COUNTS:
   DOT: 5
   INITIAL: 4
   DOT: 5
+  COMMA: 1
   NUMBER: 1
+  COMMA: 1
   DOT: 5
-  COMMA: 1
-  COMMA: 1
   COMMA: 1
   INITIAL: 4
   DOT: 5
-  DOT: 5
   COMMA: 1
+  DOT: 5
   NUMBER: 1
-  NUMBER: 1
-  NUMBER: 1
-  INITIAL: 4
   DOT: 5
   INITIAL: 4
   INITIALS: 2
+  INITIAL: 4
   INITIALS: 2
   NUMBER: 1
   INITIAL: 4
@@ -10347,52 +9612,48 @@ COUNTS:
   ENTITY_SHAPE: 4
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 9
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 4
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 4
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
   SEPARATOR: 5
+  SEPARATOR: 3
   SEPARATOR: 1
   SEPARATOR: 3
-  SEPARATOR: 3
-  SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 4
+  SEPARATOR: 1
   SEPARATOR: 6
   SEPARATOR: 2
-  SEPARATOR: 5
+  SEPARATOR: 1
   SEPARATOR: 6
   SEPARATOR: 5
   SEPARATOR: 1
   SEPARATOR: 2
+  SEPARATOR: 6
   SEPARATOR: 1
   SEPARATOR: 5
-  SEPARATOR: 6
-  SEPARATOR: 4
-  SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 4
   SEPARATOR: 1
+  SEPARATOR: 4
   SEPARATOR: 6
   SEPARATOR: 1
   SEPARATOR: 1
@@ -10403,8 +9664,6 @@ COUNTS:
 LINE 211 (length=3)
 TEXT: 20
 COUNTS:
-  NUMBER: 1
-  NUMBER: 1
   NUMBER: 1
   NUMBER: 1
   NUMBER: 1
@@ -10429,66 +9688,61 @@ COUNTS:
   DOT: 5
   INITIAL: 1
   DASH: 3
-  DOT: 5
   DASH: 3
-  COLON: 1
+  DOT: 5
   COMMA: 2
+  COLON: 1
   NUMBER: 8
   NUMBER: 8
-  DASH: 3
   DOT: 5
+  DASH: 3
   DOT: 5
   INITIAL: 1
+  COLON: 1
+  DOT: 5
+  COLON: 1
   YEAR: 2
+  DASH: 3
+  COMMA: 2
+  NUMBER: 8
+  COMMA: 2
   DOT: 5
+  COMMA: 2
+  INITIAL: 1
+  DASH: 3
+  DOT: 5
+  PARENTHESIS: 2
+  COMMA: 2
+  DOT: 5
+  NUMBER: 8
   COLON: 1
-  COLON: 1
-  DASH: 3
-  NUMBER: 8
+  PARENTHESIS: 2
   DOT: 5
-  COMMA: 2
-  COMMA: 2
-  COMMA: 2
   DASH: 3
   INITIAL: 1
-  DOT: 5
-  DASH: 3
-  DOT: 5
   PARENTHESIS: 2
-  COLON: 1
-  COMMA: 2
-  NUMBER: 8
-  DASH: 3
-  PARENTHESIS: 2
-  NUMBER: 8
+  INITIAL: 1
   NUMBER: 8
   PARENTHESIS: 2
   INITIAL: 1
-  DOT: 5
-  INITIAL: 1
-  NUMBER: 8
-  YEAR: 2
-  PARENTHESIS: 2
-  INITIAL: 1
-  YEAR: 2
   ENTITY_SHAPE: 8
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 10
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
   SEPARATOR: 5
   SEPARATOR: 1
@@ -10496,30 +9750,27 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 8
+  SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 4
   SEPARATOR: 1
+  SEPARATOR: 3
+  SEPARATOR: 1
   SEPARATOR: 5
   SEPARATOR: 1
   SEPARATOR: 3
   SEPARATOR: 1
   SEPARATOR: 5
   SEPARATOR: 1
-  SEPARATOR: 5
-  SEPARATOR: 1
-  SEPARATOR: 3
-  SEPARATOR: 8
   SEPARATOR: 2
-  SEPARATOR: 1
   SEPARATOR: 6
   SEPARATOR: 3
   SEPARATOR: 7
   SEPARATOR: 1
   SEPARATOR: 8
+  SEPARATOR: 8
   SEPARATOR: 3
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 6
@@ -10539,53 +9790,48 @@ COUNTS:
   DOT: 8
   INITIAL: 4
   DASH: 1
-  DOT: 8
   DASH: 1
-  COLON: 1
+  DOT: 8
   COMMA: 4
+  COLON: 1
   NUMBER: 7
   NUMBER: 7
-  DASH: 1
   DOT: 8
+  DASH: 1
   DOT: 8
   INITIAL: 4
+  COLON: 1
+  DOT: 8
+  COLON: 1
   YEAR: 1
-  DOT: 8
-  COLON: 1
-  COLON: 1
   DASH: 1
+  COMMA: 4
   NUMBER: 7
+  COMMA: 4
   DOT: 8
   COMMA: 4
-  COMMA: 4
-  COMMA: 4
-  DASH: 1
   INITIAL: 4
-  DOT: 8
   DASH: 1
   DOT: 8
-  SLASH: 2
   PARENTHESIS: 4
+  COMMA: 4
+  DOT: 8
+  NUMBER: 7
   DOUBLE_SLASH: 1
   COLON: 1
-  COMMA: 4
-  NUMBER: 7
-  DASH: 1
-  PARENTHESIS: 4
-  NUMBER: 7
-  NUMBER: 7
-  PARENTHESIS: 4
-  INITIAL: 4
-  DOT: 8
-  INITIAL: 4
-  INITIALS: 2
-  INITIALS: 2
-  NUMBER: 7
-  YEAR: 1
   SLASH: 2
   PARENTHESIS: 4
+  DOT: 8
+  DASH: 1
   INITIAL: 4
-  YEAR: 1
+  PARENTHESIS: 4
+  INITIALS: 2
+  INITIAL: 4
+  INITIALS: 2
+  SLASH: 2
+  NUMBER: 7
+  PARENTHESIS: 4
+  INITIAL: 4
   ENTITY_SHAPE: 7
   ENTITY_SHAPE: 8
   ENTITY_SHAPE: 2
@@ -10599,51 +9845,43 @@ COUNTS:
   ENTITY_SHAPE: 22
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 8
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 8
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 8
   ENTITY_SHAPE: 1
   SEPARATOR: 8
   SEPARATOR: 2
-  SEPARATOR: 1
   SEPARATOR: 7
-  SEPARATOR: 2
-  SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 2
+  SEPARATOR: 2
   SEPARATOR: 4
+  SEPARATOR: 10
   SEPARATOR: 8
+  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 10
   SEPARATOR: 1
-  SEPARATOR: 8
-  SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 2
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 1
   SEPARATOR: 8
-  SEPARATOR: 10
-  SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 4
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
@@ -10652,11 +9890,12 @@ COUNTS:
   SEPARATOR: 3
   SEPARATOR: 4
   SEPARATOR: 2
+  SEPARATOR: 4
   SEPARATOR: 10
+  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 11
-  SEPARATOR: 2
   SEPARATOR: 1
 
 LINE 214 (length=281)
@@ -10674,53 +9913,48 @@ COUNTS:
   DOT: 8
   INITIAL: 4
   DASH: 1
-  DOT: 8
   DASH: 1
-  COLON: 1
+  DOT: 8
   COMMA: 4
+  COLON: 1
   NUMBER: 7
   NUMBER: 7
-  DASH: 1
   DOT: 8
+  DASH: 1
   DOT: 8
   INITIAL: 4
+  COLON: 1
+  DOT: 8
+  COLON: 1
   YEAR: 1
-  DOT: 8
-  COLON: 1
-  COLON: 1
   DASH: 1
+  COMMA: 4
   NUMBER: 7
+  COMMA: 4
   DOT: 8
   COMMA: 4
-  COMMA: 4
-  COMMA: 4
-  DASH: 1
   INITIAL: 4
-  DOT: 8
   DASH: 1
   DOT: 8
-  SLASH: 2
   PARENTHESIS: 4
+  COMMA: 4
+  DOT: 8
+  NUMBER: 7
   DOUBLE_SLASH: 1
   COLON: 1
-  COMMA: 4
-  NUMBER: 7
-  DASH: 1
-  PARENTHESIS: 4
-  NUMBER: 7
-  NUMBER: 7
-  PARENTHESIS: 4
-  INITIAL: 4
-  DOT: 8
-  INITIAL: 4
-  INITIALS: 2
-  INITIALS: 2
-  NUMBER: 7
-  YEAR: 1
   SLASH: 2
   PARENTHESIS: 4
+  DOT: 8
+  DASH: 1
   INITIAL: 4
-  YEAR: 1
+  PARENTHESIS: 4
+  INITIALS: 2
+  INITIAL: 4
+  INITIALS: 2
+  SLASH: 2
+  NUMBER: 7
+  PARENTHESIS: 4
+  INITIAL: 4
   ENTITY_SHAPE: 7
   ENTITY_SHAPE: 8
   ENTITY_SHAPE: 2
@@ -10731,41 +9965,35 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 8
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 8
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   SEPARATOR: 8
   SEPARATOR: 2
-  SEPARATOR: 1
   SEPARATOR: 9
+  SEPARATOR: 1
   SEPARATOR: 5
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 2
   SEPARATOR: 8
+  SEPARATOR: 2
   SEPARATOR: 7
   SEPARATOR: 4
+  SEPARATOR: 19
   SEPARATOR: 8
+  SEPARATOR: 1
   SEPARATOR: 19
   SEPARATOR: 1
   SEPARATOR: 8
-  SEPARATOR: 1
-  SEPARATOR: 8
-  SEPARATOR: 19
-  SEPARATOR: 1
-  SEPARATOR: 8
-  SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 1
   SEPARATOR: 5
@@ -10773,12 +10001,13 @@ COUNTS:
   SEPARATOR: 3
   SEPARATOR: 8
   SEPARATOR: 2
+  SEPARATOR: 8
   SEPARATOR: 19
+  SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 4
   SEPARATOR: 14
-  SEPARATOR: 2
   SEPARATOR: 1
 
 LINE 215 (length=266)
@@ -10796,46 +10025,41 @@ COUNTS:
   DOT: 10
   INITIAL: 5
   DASH: 1
-  DOT: 10
   DASH: 1
+  DOT: 10
   COMMA: 5
   NUMBER: 7
   NUMBER: 7
+  DOT: 10
   DASH: 1
   DOT: 10
-  DOT: 10
   INITIAL: 5
+  DOT: 10
   YEAR: 2
-  DOT: 10
   DASH: 1
+  COMMA: 5
   NUMBER: 7
+  COMMA: 5
   DOT: 10
   COMMA: 5
+  INITIAL: 5
+  DASH: 1
+  DOT: 10
+  PARENTHESIS: 2
   COMMA: 5
-  COMMA: 5
+  DOT: 10
+  NUMBER: 7
+  PARENTHESIS: 2
+  DOT: 10
   DASH: 1
   INITIAL: 5
-  DOT: 10
-  DASH: 1
-  DOT: 10
   PARENTHESIS: 2
-  COMMA: 5
-  NUMBER: 7
-  DASH: 1
-  PARENTHESIS: 2
-  NUMBER: 7
-  NUMBER: 7
-  PARENTHESIS: 2
-  INITIAL: 5
-  DOT: 10
+  INITIALS: 2
   INITIAL: 5
   INITIALS: 2
-  INITIALS: 2
   NUMBER: 7
-  YEAR: 2
   PARENTHESIS: 2
   INITIAL: 5
-  YEAR: 2
   ENTITY_SHAPE: 7
   ENTITY_SHAPE: 8
   ENTITY_SHAPE: 2
@@ -10850,48 +10074,42 @@ COUNTS:
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 19
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 8
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 8
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   SEPARATOR: 10
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 7
+  SEPARATOR: 1
   SEPARATOR: 5
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 10
+  SEPARATOR: 1
   SEPARATOR: 6
   SEPARATOR: 5
+  SEPARATOR: 1
   SEPARATOR: 2
-  SEPARATOR: 10
   SEPARATOR: 22
   SEPARATOR: 10
   SEPARATOR: 1
   SEPARATOR: 1
+  SEPARATOR: 22
   SEPARATOR: 3
   SEPARATOR: 10
-  SEPARATOR: 22
-  SEPARATOR: 10
-  SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 3
   SEPARATOR: 7
@@ -10899,15 +10117,13 @@ COUNTS:
   SEPARATOR: 4
   SEPARATOR: 10
   SEPARATOR: 3
+  SEPARATOR: 10
   SEPARATOR: 22
   SEPARATOR: 1
-  SEPARATOR: 2
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 11
-  SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 1
 
 LINE 216 (length=265)
@@ -10924,102 +10140,91 @@ COUNTS:
   DOT: 10
   INITIAL: 4
   DASH: 1
-  DOT: 10
   DASH: 1
+  DOT: 10
   COMMA: 2
   NUMBER: 4
   NUMBER: 4
-  DASH: 1
-  DOT: 10
   QUOTATION: 2
   DOT: 10
+  DASH: 1
+  DOT: 10
   INITIAL: 4
+  DOT: 10
   YEAR: 1
-  DOT: 10
   DASH: 1
+  COMMA: 2
   NUMBER: 4
+  COMMA: 2
   DOT: 10
   COMMA: 2
-  COMMA: 2
-  COMMA: 2
-  DASH: 1
   INITIAL: 4
-  DOT: 10
-  QUOTATION: 2
   DASH: 1
+  DOT: 10
+  PARENTHESIS: 3
+  QUOTATION: 2
+  COMMA: 2
   QUOTATION: 2
   DOT: 10
+  NUMBER: 4
   SLASH: 1
   PARENTHESIS: 3
-  COMMA: 2
-  NUMBER: 4
-  DASH: 1
-  PARENTHESIS: 3
-  NUMBER: 4
-  QUOTATION: 2
-  NUMBER: 4
-  PARENTHESIS: 3
-  INITIAL: 4
   DOT: 10
+  QUOTATION: 2
+  DASH: 1
+  INITIAL: 4
+  PARENTHESIS: 3
+  INITIALS: 2
   INITIAL: 4
   INITIALS: 2
-  INITIALS: 2
-  NUMBER: 4
-  YEAR: 1
   SLASH: 1
+  NUMBER: 4
   PARENTHESIS: 3
   INITIAL: 4
-  YEAR: 1
   ENTITY_SHAPE: 4
   ENTITY_SHAPE: 8
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 19
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 8
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 4
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 8
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   SEPARATOR: 10
-  SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 3
+  SEPARATOR: 1
   SEPARATOR: 4
+  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 12
-  SEPARATOR: 1
   SEPARATOR: 11
   SEPARATOR: 4
-  SEPARATOR: 10
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 9
   SEPARATOR: 1
-  SEPARATOR: 10
   SEPARATOR: 1
   SEPARATOR: 10
   SEPARATOR: 1
@@ -11027,8 +10232,8 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 1
-  SEPARATOR: 12
   SEPARATOR: 1
+  SEPARATOR: 10
   SEPARATOR: 2
   SEPARATOR: 16
   SEPARATOR: 1
@@ -11036,6 +10241,7 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 12
   SEPARATOR: 3
+  SEPARATOR: 12
   SEPARATOR: 9
   SEPARATOR: 1
   SEPARATOR: 1
@@ -11043,7 +10249,6 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 3
   SEPARATOR: 14
-  SEPARATOR: 1
   SEPARATOR: 1
 
 LINE 217 (length=192)
@@ -11061,122 +10266,111 @@ COUNTS:
   DOT: 6
   INITIAL: 2
   DASH: 4
-  DOT: 6
   DASH: 4
+  DOT: 6
   COMMA: 3
   NUMBER: 5
   NUMBER: 5
+  DOT: 6
   DASH: 4
   DOT: 6
-  DOT: 6
   INITIAL: 2
+  DOT: 6
   YEAR: 1
-  DOT: 6
   DASH: 4
+  COMMA: 3
   NUMBER: 5
+  COMMA: 3
   DOT: 6
   COMMA: 3
-  COMMA: 3
-  COMMA: 3
-  DASH: 4
   INITIAL: 2
-  DOT: 6
   DASH: 4
   DOT: 6
-  SLASH: 2
   PARENTHESIS: 2
+  COMMA: 3
+  DOT: 6
+  NUMBER: 5
   DOUBLE_SLASH: 1
-  COMMA: 3
-  NUMBER: 5
-  DASH: 4
-  PARENTHESIS: 2
-  NUMBER: 5
-  NUMBER: 5
-  PARENTHESIS: 2
-  INITIAL: 2
-  DOT: 6
-  INITIAL: 2
-  INITIALS: 1
-  INITIALS: 1
-  NUMBER: 5
-  YEAR: 1
   SLASH: 2
   PARENTHESIS: 2
+  DOT: 6
+  DASH: 4
   INITIAL: 2
-  YEAR: 1
+  PARENTHESIS: 2
+  INITIALS: 1
+  INITIAL: 2
+  INITIALS: 1
+  SLASH: 2
+  NUMBER: 5
+  PARENTHESIS: 2
+  INITIAL: 2
   ENTITY_SHAPE: 5
   ENTITY_SHAPE: 6
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 11
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 6
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 6
   ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 6
   SEPARATOR: 6
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 4
-  SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 11
+  SEPARATOR: 1
   SEPARATOR: 5
+  SEPARATOR: 1
+  SEPARATOR: 1
   SEPARATOR: 4
-  SEPARATOR: 6
+  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 10
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 6
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 2
   SEPARATOR: 1
-  SEPARATOR: 6
-  SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 10
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 11
   SEPARATOR: 1
+  SEPARATOR: 1
+  SEPARATOR: 6
   SEPARATOR: 2
   SEPARATOR: 4
   SEPARATOR: 9
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 11
-  SEPARATOR: 1
+  SEPARATOR: 11
   SEPARATOR: 10
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 10
-  SEPARATOR: 1
   SEPARATOR: 1
 
 LINE 218 (length=307)
@@ -11193,73 +10387,65 @@ COUNTS:
   DOT: 9
   INITIAL: 3
   DASH: 5
-  DOT: 9
   DASH: 5
+  DOT: 9
   COMMA: 4
   NUMBER: 5
   NUMBER: 5
+  DOT: 9
   DASH: 5
   DOT: 9
-  DOT: 9
   INITIAL: 3
+  DOT: 9
   YEAR: 1
-  DOT: 9
   DASH: 5
+  COMMA: 4
   NUMBER: 5
+  COMMA: 4
   DOT: 9
   COMMA: 4
-  COMMA: 4
-  COMMA: 4
-  DASH: 5
   INITIAL: 3
-  DOT: 9
   DASH: 5
   DOT: 9
-  SLASH: 3
   PARENTHESIS: 2
+  COMMA: 4
+  DOT: 9
+  NUMBER: 5
   DOUBLE_SLASH: 1
-  COMMA: 4
-  NUMBER: 5
-  DASH: 5
-  PARENTHESIS: 2
-  NUMBER: 5
-  NUMBER: 5
-  PARENTHESIS: 2
-  INITIAL: 3
-  DOT: 9
-  INITIAL: 3
-  NUMBER: 5
-  YEAR: 1
   SLASH: 3
   PARENTHESIS: 2
+  DOT: 9
+  DASH: 5
   INITIAL: 3
-  YEAR: 1
+  PARENTHESIS: 2
+  INITIAL: 3
+  SLASH: 3
+  NUMBER: 5
+  PARENTHESIS: 2
+  INITIAL: 3
   ENTITY_SHAPE: 5
   ENTITY_SHAPE: 8
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 13
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 8
+  ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 8
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   SEPARATOR: 9
-  SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
@@ -11269,43 +10455,39 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 1
   SEPARATOR: 15
   SEPARATOR: 1
+  SEPARATOR: 1
   SEPARATOR: 9
+  SEPARATOR: 1
   SEPARATOR: 5
   SEPARATOR: 1
-  SEPARATOR: 9
-  SEPARATOR: 1
   SEPARATOR: 15
+  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 9
   SEPARATOR: 1
   SEPARATOR: 3
   SEPARATOR: 1
+  SEPARATOR: 15
+  SEPARATOR: 1
+  SEPARATOR: 1
   SEPARATOR: 9
-  SEPARATOR: 1
-  SEPARATOR: 15
-  SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 15
-  SEPARATOR: 1
   SEPARATOR: 5
   SEPARATOR: 9
   SEPARATOR: 2
   SEPARATOR: 1
   SEPARATOR: 15
+  SEPARATOR: 1
   SEPARATOR: 15
-  SEPARATOR: 1
-  SEPARATOR: 1
+  SEPARATOR: 15
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 19
-  SEPARATOR: 1
 
 LINE 219 (length=345)
 TEXT: 10.	Баркалов С.А , Белоусов В.Е , Славнов К.В Модель формирования показателей качества учебного процесса в техническом университете с использованием средств имитационного моделирования// Сборник статей “Непрерывное многоуровневое образование: состояние, проблемы, перспективы”. - Воронеж В1 АСУ, 2005 , С.105-109 (Лично автором выполнена 1 с.).
@@ -11321,87 +10503,79 @@ COUNTS:
   DOT: 8
   INITIAL: 4
   DASH: 2
-  DOT: 8
   DASH: 2
-  COLON: 1
+  DOT: 8
   COMMA: 6
+  COLON: 1
   NUMBER: 6
   NUMBER: 6
-  DASH: 2
-  DOT: 8
   QUOTATION: 2
   DOT: 8
+  DASH: 2
+  DOT: 8
   INITIAL: 4
+  COLON: 1
+  DOT: 8
+  COLON: 1
   YEAR: 1
-  DOT: 8
-  COLON: 1
-  COLON: 1
   DASH: 2
+  COMMA: 6
   NUMBER: 6
+  COMMA: 6
   DOT: 8
   COMMA: 6
-  COMMA: 6
-  COMMA: 6
-  DASH: 2
   INITIAL: 4
-  DOT: 8
-  QUOTATION: 2
   DASH: 2
+  DOT: 8
+  PARENTHESIS: 2
+  QUOTATION: 2
+  COMMA: 6
   QUOTATION: 2
   DOT: 8
-  SLASH: 2
-  PARENTHESIS: 2
+  NUMBER: 6
   DOUBLE_SLASH: 1
   COLON: 1
-  COMMA: 6
-  NUMBER: 6
-  DASH: 2
-  PARENTHESIS: 2
-  NUMBER: 6
-  QUOTATION: 2
-  NUMBER: 6
-  PARENTHESIS: 2
-  INITIAL: 4
-  DOT: 8
-  INITIAL: 4
-  NUMBER: 6
-  YEAR: 1
   SLASH: 2
   PARENTHESIS: 2
+  DOT: 8
+  QUOTATION: 2
+  DASH: 2
   INITIAL: 4
-  YEAR: 1
+  PARENTHESIS: 2
+  INITIAL: 4
+  SLASH: 2
+  NUMBER: 6
+  PARENTHESIS: 2
+  INITIAL: 4
   ENTITY_SHAPE: 6
   ENTITY_SHAPE: 8
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 4
   ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 19
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 4
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 8
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 4
-  ENTITY_SHAPE: 3
-  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 8
   ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 3
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 3
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 1
+  ENTITY_SHAPE: 8
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   SEPARATOR: 8
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 6
@@ -11410,26 +10584,24 @@ COUNTS:
   SEPARATOR: 2
   SEPARATOR: 1
   SEPARATOR: 17
+  SEPARATOR: 1
   SEPARATOR: 9
   SEPARATOR: 8
-  SEPARATOR: 8
-  SEPARATOR: 1
   SEPARATOR: 17
   SEPARATOR: 1
   SEPARATOR: 8
   SEPARATOR: 1
   SEPARATOR: 5
-  SEPARATOR: 8
+  SEPARATOR: 17
   SEPARATOR: 1
-  SEPARATOR: 17
-  SEPARATOR: 17
+  SEPARATOR: 8
   SEPARATOR: 3
   SEPARATOR: 5
   SEPARATOR: 12
   SEPARATOR: 1
   SEPARATOR: 17
   SEPARATOR: 17
-  SEPARATOR: 1
+  SEPARATOR: 17
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 2
@@ -11448,73 +10620,63 @@ COUNTS:
   DASH: 2
   DOT: 10
   DASH: 2
-  DOT: 10
   DASH: 2
+  DOT: 10
   COMMA: 2
   NUMBER: 13
   NUMBER: 13
+  DOT: 10
   DASH: 2
   DOT: 10
   DOT: 10
   YEAR: 1
-  DOT: 10
   DASH: 2
+  COMMA: 2
   NUMBER: 13
+  COMMA: 2
   DOT: 10
-  COMMA: 2
-  COMMA: 2
   COMMA: 2
   DASH: 2
   DOT: 10
-  DASH: 2
+  COMMA: 2
   DOT: 10
+  NUMBER: 13
   SLASH: 1
-  COMMA: 2
-  NUMBER: 13
-  DASH: 2
-  NUMBER: 13
-  NUMBER: 13
   DOT: 10
-  NUMBER: 13
-  YEAR: 1
+  DASH: 2
   SLASH: 1
-  YEAR: 1
+  NUMBER: 13
   ENTITY_SHAPE: 13
   ENTITY_SHAPE: 7
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 7
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 7
+  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 7
   ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 7
   ENTITY_SHAPE: 1
   SEPARATOR: 10
-  SEPARATOR: 1
   SEPARATOR: 2
-  SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 11
   SEPARATOR: 5
   SEPARATOR: 3
-  SEPARATOR: 10
   SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 2
   SEPARATOR: 10
   SEPARATOR: 1
-  SEPARATOR: 2
-  SEPARATOR: 10
-  SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 2
-  SEPARATOR: 11
+  SEPARATOR: 2
   SEPARATOR: 1
+  SEPARATOR: 10
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 7
@@ -11522,16 +10684,15 @@ COUNTS:
   SEPARATOR: 2
   SEPARATOR: 2
   SEPARATOR: 11
+  SEPARATOR: 11
   SEPARATOR: 1
   SEPARATOR: 4
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 1
-  SEPARATOR: 2
   SEPARATOR: 1
   SEPARATOR: 1
   SEPARATOR: 3
-  SEPARATOR: 1
 
 LINE 221 (length=155)
 TEXT: Отпечатано в отделе оперативной полиграфии Воронежского государственного архитектурно-строительного университета 394006, Воронеж, ул. 20-летия Октября, 84
@@ -11543,44 +10704,41 @@ COUNTS:
   DASH: 2
   DOT: 1
   DASH: 2
-  DOT: 1
-  DASH: 2
-  COMMA: 3
-  NUMBER: 3
-  NUMBER: 3
-  DASH: 2
-  DOT: 1
-  DOT: 1
-  DOT: 1
-  DASH: 2
-  NUMBER: 3
-  DOT: 1
-  COMMA: 3
-  COMMA: 3
-  COMMA: 3
-  DASH: 2
-  DOT: 1
   DASH: 2
   DOT: 1
   COMMA: 3
   NUMBER: 3
-  DASH: 2
-  NUMBER: 3
   NUMBER: 3
   DOT: 1
+  DASH: 2
+  DOT: 1
+  DOT: 1
+  DASH: 2
+  COMMA: 3
+  NUMBER: 3
+  COMMA: 3
+  DOT: 1
+  COMMA: 3
+  DASH: 2
+  DOT: 1
+  COMMA: 3
+  DOT: 1
+  NUMBER: 3
+  DOT: 1
+  DASH: 2
   NUMBER: 3
   ENTITY_SHAPE: 3
   ENTITY_SHAPE: 4
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 4
   ENTITY_SHAPE: 2
-  ENTITY_SHAPE: 1
-  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 4
+  ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 2
+  ENTITY_SHAPE: 1
   ENTITY_SHAPE: 1
   ENTITY_SHAPE: 4
   ENTITY_SHAPE: 1
@@ -11592,18 +10750,17 @@ COUNTS:
   SEPARATOR: 1
   SEPARATOR: 7
   SEPARATOR: 5
+  SEPARATOR: 9
   SEPARATOR: 1
   SEPARATOR: 9
   SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 1
-  SEPARATOR: 9
   SEPARATOR: 2
-  SEPARATOR: 7
+  SEPARATOR: 1
   SEPARATOR: 3
   SEPARATOR: 13
   SEPARATOR: 1
   SEPARATOR: 1
+  SEPARATOR: 7
   SEPARATOR: 7
   SEPARATOR: 9
   SEPARATOR: 1
@@ -11621,9 +10778,7 @@ COUNTS:
   QUOTATION: 1
   QUOTATION: 1
   NUMBER: 2
-  NUMBER: 2
   QUOTATION: 1
-  NUMBER: 2
   NUMBER: 2
   ENTITY_SHAPE: 2
   ENTITY_SHAPE: 1

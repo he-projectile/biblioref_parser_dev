@@ -1,21 +1,21 @@
 {
   "version": 1,
   "statistics": {
-    "references": 593,
-    "entities": 3970,
-    "transitions": 3374,
+    "references": 475,
+    "entities": 3171,
+    "transitions": 2694,
     "entity_types": {
-      "АВТОРЫ": 812,
-      "НАЗВАНИЕ": 593,
-      "НАЗВАНИЕ ЖУРНАЛА": 260,
-      "ГОД ПУБЛИКАЦИИ": 587,
-      "URL": 17,
-      "СТРАНИЦЫ": 444,
-      "МЕСТО ИЗДАНИЯ": 460,
-      "ИЗДАТЕЛЬСТВО": 349,
-      "НАЗВАНИЕ КОНФЕРЕНЦИИ": 292,
-      "ТОМ": 39,
-      "НОМЕР": 117
+      "АВТОРЫ": 647,
+      "НАЗВАНИЕ": 475,
+      "НАЗВАНИЕ ЖУРНАЛА": 214,
+      "ГОД ПУБЛИКАЦИИ": 476,
+      "URL": 8,
+      "СТРАНИЦЫ": 357,
+      "МЕСТО ИЗДАНИЯ": 360,
+      "ИЗДАТЕЛЬСТВО": 279,
+      "НАЗВАНИЕ КОНФЕРЕНЦИИ": 230,
+      "ТОМ": 30,
+      "НОМЕР": 95
     }
   },
   "patterns": [
@@ -24,9 +24,9 @@
       "type": "entity_micro",
       "entity": "АВТОРЫ",
       "regex": "\\.",
-      "occurrences": 675,
-      "documents": 39,
-      "support": 0.17002518891687657,
+      "occurrences": 513,
+      "documents": 28,
+      "support": 0.16177861873226113,
       "weight": 0.0
     },
     {
@@ -34,9 +34,9 @@
       "type": "entity_micro",
       "entity": "АВТОРЫ",
       "regex": "\\b[А-ЯЁ]\\.",
-      "occurrences": 655,
-      "documents": 38,
-      "support": 0.16498740554156172,
+      "occurrences": 495,
+      "documents": 27,
+      "support": 0.15610217596972564,
       "weight": 0.0
     },
     {
@@ -44,9 +44,9 @@
       "type": "entity_micro",
       "entity": "АВТОРЫ",
       "regex": "\\b[А-ЯЁ]\\.\\s*[А-ЯЁ]\\.",
-      "occurrences": 634,
-      "documents": 37,
-      "support": 0.1596977329974811,
+      "occurrences": 477,
+      "documents": 26,
+      "support": 0.15042573320719016,
       "weight": 0.0
     },
     {
@@ -54,9 +54,9 @@
       "type": "entity_micro",
       "entity": "ГОД ПУБЛИКАЦИИ",
       "regex": "(?<!\\d)(17|18|19|20|21)\\d{2}(?!\\d)",
-      "occurrences": 586,
-      "documents": 47,
-      "support": 0.14760705289672543,
+      "occurrences": 475,
+      "documents": 35,
+      "support": 0.14979501734468623,
       "weight": 0.0
     },
     {
@@ -64,9 +64,9 @@
       "type": "entity_micro",
       "entity": "ГОД ПУБЛИКАЦИИ",
       "regex": "\\d+",
-      "occurrences": 586,
-      "documents": 47,
-      "support": 0.14760705289672543,
+      "occurrences": 475,
+      "documents": 35,
+      "support": 0.14979501734468623,
       "weight": 0.0
     },
     {
@@ -74,9 +74,9 @@
       "type": "entity_micro",
       "entity": "АВТОРЫ",
       "regex": ",",
-      "occurrences": 520,
-      "documents": 40,
-      "support": 0.1309823677581864,
+      "occurrences": 397,
+      "documents": 29,
+      "support": 0.1251970987070325,
       "weight": 0.0
     },
     {
@@ -84,9 +84,9 @@
       "type": "entity_micro",
       "entity": "СТРАНИЦЫ",
       "regex": "\\d+",
-      "occurrences": 444,
-      "documents": 37,
-      "support": 0.11183879093198992,
+      "occurrences": 357,
+      "documents": 27,
+      "support": 0.11258278145695365,
       "weight": 0.0
     },
     {
@@ -94,9 +94,9 @@
       "type": "entity_micro",
       "entity": "СТРАНИЦЫ",
       "regex": "[-–—]",
-      "occurrences": 414,
-      "documents": 35,
-      "support": 0.10428211586901763,
+      "occurrences": 339,
+      "documents": 26,
+      "support": 0.10690633869441817,
       "weight": 0.0
     },
     {
@@ -104,9 +104,9 @@
       "type": "entity_micro",
       "entity": "СТРАНИЦЫ",
       "regex": "\\b[Сс]\\.?\\s*\\d+(?:\\s*[-–—]\\s*\\d+)?",
-      "occurrences": 369,
-      "documents": 33,
-      "support": 0.0929471032745592,
+      "occurrences": 295,
+      "documents": 24,
+      "support": 0.09303058971933144,
       "weight": 0.0
     },
     {
@@ -114,9 +114,9 @@
       "type": "entity_micro",
       "entity": "СТРАНИЦЫ",
       "regex": "\\.",
-      "occurrences": 312,
-      "documents": 31,
-      "support": 0.07858942065491184,
+      "occurrences": 229,
+      "documents": 21,
+      "support": 0.07221696625670136,
       "weight": 0.0
     },
     {
@@ -124,9 +124,9 @@
       "type": "entity_micro",
       "entity": "СТРАНИЦЫ",
       "regex": "\\b[А-ЯЁ]\\.",
-      "occurrences": 271,
-      "documents": 26,
-      "support": 0.06826196473551638,
+      "occurrences": 202,
+      "documents": 17,
+      "support": 0.06370230211289814,
       "weight": 0.0
     },
     {
@@ -134,19 +134,9 @@
       "type": "entity_micro",
       "entity": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
       "regex": "[-–—]",
-      "occurrences": 197,
-      "documents": 40,
-      "support": 0.04962216624685139,
-      "weight": 0.0
-    },
-    {
-      "name": "DOT",
-      "type": "entity_micro",
-      "entity": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
-      "regex": "\\.",
-      "occurrences": 169,
-      "documents": 26,
-      "support": 0.04256926952141058,
+      "occurrences": 153,
+      "documents": 30,
+      "support": 0.048249763481551564,
       "weight": 0.0
     },
     {
@@ -154,19 +144,19 @@
       "type": "entity_micro",
       "entity": "ИЗДАТЕЛЬСТВО",
       "regex": "[-–—]",
-      "occurrences": 167,
-      "documents": 30,
-      "support": 0.042065491183879096,
+      "occurrences": 137,
+      "documents": 21,
+      "support": 0.04320403658152003,
       "weight": 0.0
     },
     {
-      "name": "COLON",
+      "name": "DOT",
       "type": "entity_micro",
       "entity": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
-      "regex": ":",
-      "occurrences": 144,
-      "documents": 26,
-      "support": 0.036272040302267,
+      "regex": "\\.",
+      "occurrences": 113,
+      "documents": 16,
+      "support": 0.035635446231472724,
       "weight": 0.0
     },
     {
@@ -174,9 +164,19 @@
       "type": "entity_micro",
       "entity": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
       "regex": ",",
-      "occurrences": 140,
-      "documents": 30,
-      "support": 0.03526448362720403,
+      "occurrences": 109,
+      "documents": 22,
+      "support": 0.03437401450646484,
+      "weight": 0.0
+    },
+    {
+      "name": "COLON",
+      "type": "entity_micro",
+      "entity": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
+      "regex": ":",
+      "occurrences": 98,
+      "documents": 18,
+      "support": 0.03090507726269316,
       "weight": 0.0
     },
     {
@@ -184,9 +184,9 @@
       "type": "entity_micro",
       "entity": "НОМЕР",
       "regex": "\\d+",
-      "occurrences": 116,
-      "documents": 34,
-      "support": 0.029219143576826197,
+      "occurrences": 94,
+      "documents": 23,
+      "support": 0.029643645537685274,
       "weight": 0.0
     },
     {
@@ -194,29 +194,9 @@
       "type": "entity_micro",
       "entity": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
       "regex": "\\d+",
-      "occurrences": 101,
-      "documents": 31,
-      "support": 0.02544080604534005,
-      "weight": 0.0
-    },
-    {
-      "name": "DASH",
-      "type": "entity_micro",
-      "entity": "НАЗВАНИЕ",
-      "regex": "[-–—]",
-      "occurrences": 93,
-      "documents": 30,
-      "support": 0.023425692695214106,
-      "weight": 0.0
-    },
-    {
-      "name": "DOT",
-      "type": "entity_micro",
-      "entity": "МЕСТО ИЗДАНИЯ",
-      "regex": "\\.",
-      "occurrences": 85,
-      "documents": 19,
-      "support": 0.021410579345088162,
+      "occurrences": 73,
+      "documents": 22,
+      "support": 0.02302112898139388,
       "weight": 0.0
     },
     {
@@ -224,9 +204,29 @@
       "type": "entity_micro",
       "entity": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
       "regex": "[«»\\\"„“”]",
-      "occurrences": 85,
-      "documents": 22,
-      "support": 0.021410579345088162,
+      "occurrences": 73,
+      "documents": 18,
+      "support": 0.02302112898139388,
+      "weight": 0.0
+    },
+    {
+      "name": "DOT",
+      "type": "entity_micro",
+      "entity": "МЕСТО ИЗДАНИЯ",
+      "regex": "\\.",
+      "occurrences": 68,
+      "documents": 13,
+      "support": 0.021444339325134027,
+      "weight": 0.0
+    },
+    {
+      "name": "DASH",
+      "type": "entity_micro",
+      "entity": "НАЗВАНИЕ",
+      "regex": "[-–—]",
+      "occurrences": 65,
+      "documents": 21,
+      "support": 0.020498265531378113,
       "weight": 0.0
     },
     {
@@ -234,9 +234,9 @@
       "type": "entity_micro",
       "entity": "ИЗДАТЕЛЬСТВО",
       "regex": "\\.",
-      "occurrences": 82,
-      "documents": 21,
-      "support": 0.02065491183879093,
+      "occurrences": 60,
+      "documents": 14,
+      "support": 0.01892147587511826,
       "weight": 0.0
     },
     {
@@ -244,9 +244,39 @@
       "type": "entity_micro",
       "entity": "МЕСТО ИЗДАНИЯ",
       "regex": "\\b[А-ЯЁ]\\.",
-      "occurrences": 60,
-      "documents": 16,
-      "support": 0.015113350125944584,
+      "occurrences": 50,
+      "documents": 10,
+      "support": 0.01576789656259855,
+      "weight": 0.0
+    },
+    {
+      "name": "COLON",
+      "type": "entity_micro",
+      "entity": "НАЗВАНИЕ",
+      "regex": ":",
+      "occurrences": 38,
+      "documents": 10,
+      "support": 0.011983601387574897,
+      "weight": 0.0
+    },
+    {
+      "name": "DOT",
+      "type": "entity_micro",
+      "entity": "НАЗВАНИЕ ЖУРНАЛА",
+      "regex": "\\.",
+      "occurrences": 35,
+      "documents": 14,
+      "support": 0.011037527593818985,
+      "weight": 0.0
+    },
+    {
+      "name": "COLON",
+      "type": "entity_micro",
+      "entity": "НАЗВАНИЕ ЖУРНАЛА",
+      "regex": ":",
+      "occurrences": 34,
+      "documents": 12,
+      "support": 0.010722169662567014,
       "weight": 0.0
     },
     {
@@ -254,39 +284,9 @@
       "type": "entity_micro",
       "entity": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
       "regex": "(?<!\\d)(17|18|19|20|21)\\d{2}(?!\\d)",
-      "occurrences": 51,
-      "documents": 20,
-      "support": 0.012846347607052897,
-      "weight": 0.0
-    },
-    {
-      "name": "DOT",
-      "type": "entity_micro",
-      "entity": "НАЗВАНИЕ ЖУРНАЛА",
-      "regex": "\\.",
-      "occurrences": 43,
-      "documents": 18,
-      "support": 0.010831234256926952,
-      "weight": 0.0
-    },
-    {
-      "name": "COLON",
-      "type": "entity_micro",
-      "entity": "НАЗВАНИЕ",
-      "regex": ":",
-      "occurrences": 43,
+      "occurrences": 34,
       "documents": 13,
-      "support": 0.010831234256926952,
-      "weight": 0.0
-    },
-    {
-      "name": "COLON",
-      "type": "entity_micro",
-      "entity": "НАЗВАНИЕ ЖУРНАЛА",
-      "regex": ":",
-      "occurrences": 42,
-      "documents": 17,
-      "support": 0.01057934508816121,
+      "support": 0.010722169662567014,
       "weight": 0.0
     },
     {
@@ -294,9 +294,19 @@
       "type": "entity_micro",
       "entity": "НАЗВАНИЕ ЖУРНАЛА",
       "regex": "[-–—]",
-      "occurrences": 38,
-      "documents": 16,
-      "support": 0.009571788413098237,
+      "occurrences": 31,
+      "documents": 12,
+      "support": 0.009776095868811101,
+      "weight": 0.0
+    },
+    {
+      "name": "COMMA",
+      "type": "entity_micro",
+      "entity": "НАЗВАНИЕ",
+      "regex": ",",
+      "occurrences": 29,
+      "documents": 12,
+      "support": 0.00914538000630716,
       "weight": 0.0
     },
     {
@@ -304,29 +314,9 @@
       "type": "entity_micro",
       "entity": "ТОМ",
       "regex": "\\d+",
-      "occurrences": 35,
-      "documents": 16,
-      "support": 0.008816120906801008,
-      "weight": 0.0
-    },
-    {
-      "name": "DOT",
-      "type": "entity_micro",
-      "entity": "ТОМ",
-      "regex": "\\.",
-      "occurrences": 32,
-      "documents": 13,
-      "support": 0.008060453400503778,
-      "weight": 0.0
-    },
-    {
-      "name": "COMMA",
-      "type": "entity_micro",
-      "entity": "НАЗВАНИЕ",
-      "regex": ",",
-      "occurrences": 31,
-      "documents": 14,
-      "support": 0.0078085642317380355,
+      "occurrences": 27,
+      "documents": 11,
+      "support": 0.008514664143803218,
       "weight": 0.0
     },
     {
@@ -334,9 +324,19 @@
       "type": "entity_micro",
       "entity": "НАЗВАНИЕ ЖУРНАЛА",
       "regex": ",",
-      "occurrences": 30,
-      "documents": 16,
-      "support": 0.007556675062972292,
+      "occurrences": 27,
+      "documents": 15,
+      "support": 0.008514664143803218,
+      "weight": 0.0
+    },
+    {
+      "name": "DOT",
+      "type": "entity_micro",
+      "entity": "ТОМ",
+      "regex": "\\.",
+      "occurrences": 23,
+      "documents": 8,
+      "support": 0.007253232418795333,
       "weight": 0.0
     },
     {
@@ -344,19 +344,9 @@
       "type": "entity_micro",
       "entity": "ИЗДАТЕЛЬСТВО",
       "regex": ",",
-      "occurrences": 29,
-      "documents": 12,
-      "support": 0.007304785894206549,
-      "weight": 0.0
-    },
-    {
-      "name": "DASH",
-      "type": "entity_micro",
-      "entity": "АВТОРЫ",
-      "regex": "[-–—]",
-      "occurrences": 26,
-      "documents": 7,
-      "support": 0.00654911838790932,
+      "occurrences": 22,
+      "documents": 8,
+      "support": 0.006937874487543362,
       "weight": 0.0
     },
     {
@@ -364,29 +354,9 @@
       "type": "entity_micro",
       "entity": "ТОМ",
       "regex": "\\b[А-ЯЁ]\\.",
-      "occurrences": 26,
-      "documents": 11,
-      "support": 0.00654911838790932,
-      "weight": 0.0
-    },
-    {
-      "name": "DOT",
-      "type": "entity_micro",
-      "entity": "НАЗВАНИЕ",
-      "regex": "\\.",
-      "occurrences": 22,
-      "documents": 10,
-      "support": 0.0055415617128463475,
-      "weight": 0.0
-    },
-    {
-      "name": "QUOTATION",
-      "type": "entity_micro",
-      "entity": "ИЗДАТЕЛЬСТВО",
-      "regex": "[«»\\\"„“”]",
-      "occurrences": 20,
-      "documents": 11,
-      "support": 0.005037783375314861,
+      "occurrences": 19,
+      "documents": 7,
+      "support": 0.005991800693787449,
       "weight": 0.0
     },
     {
@@ -394,9 +364,49 @@
       "type": "entity_micro",
       "entity": "МЕСТО ИЗДАНИЯ",
       "regex": "[-–—]",
-      "occurrences": 19,
+      "occurrences": 18,
+      "documents": 7,
+      "support": 0.005676442762535478,
+      "weight": 0.0
+    },
+    {
+      "name": "DOT",
+      "type": "entity_micro",
+      "entity": "НАЗВАНИЕ",
+      "regex": "\\.",
+      "occurrences": 17,
+      "documents": 6,
+      "support": 0.005361084831283507,
+      "weight": 0.0
+    },
+    {
+      "name": "PARENTHESIS",
+      "type": "entity_micro",
+      "entity": "АВТОРЫ",
+      "regex": "[()]",
+      "occurrences": 16,
+      "documents": 1,
+      "support": 0.005045726900031536,
+      "weight": 0.0
+    },
+    {
+      "name": "QUOTATION",
+      "type": "entity_micro",
+      "entity": "ИЗДАТЕЛЬСТВО",
+      "regex": "[«»\\\"„“”]",
+      "occurrences": 15,
       "documents": 8,
-      "support": 0.004785894206549119,
+      "support": 0.004730368968779565,
+      "weight": 0.0
+    },
+    {
+      "name": "COMMA",
+      "type": "entity_micro",
+      "entity": "МЕСТО ИЗДАНИЯ",
+      "regex": ",",
+      "occurrences": 12,
+      "documents": 5,
+      "support": 0.003784295175023652,
       "weight": 0.0
     },
     {
@@ -404,9 +414,9 @@
       "type": "entity_micro",
       "entity": "НАЗВАНИЕ",
       "regex": "[«»\\\"„“”]",
-      "occurrences": 19,
-      "documents": 12,
-      "support": 0.004785894206549119,
+      "occurrences": 12,
+      "documents": 6,
+      "support": 0.003784295175023652,
       "weight": 0.0
     },
     {
@@ -414,9 +424,19 @@
       "type": "entity_micro",
       "entity": "URL",
       "regex": "\\.",
-      "occurrences": 17,
-      "documents": 3,
-      "support": 0.0042821158690176326,
+      "occurrences": 8,
+      "documents": 1,
+      "support": 0.002522863450015768,
+      "weight": 0.0
+    },
+    {
+      "name": "NUMBER",
+      "type": "entity_micro",
+      "entity": "НАЗВАНИЕ",
+      "regex": "\\d+",
+      "occurrences": 8,
+      "documents": 5,
+      "support": 0.002522863450015768,
       "weight": 0.0
     },
     {
@@ -424,29 +444,9 @@
       "type": "entity_micro",
       "entity": "URL",
       "regex": "(?:https?://|www\\.)[^\\s]+",
-      "occurrences": 16,
-      "documents": 3,
-      "support": 0.004030226700251889,
-      "weight": 0.0
-    },
-    {
-      "name": "SLASH",
-      "type": "entity_micro",
-      "entity": "URL",
-      "regex": "/",
-      "occurrences": 16,
-      "documents": 3,
-      "support": 0.004030226700251889,
-      "weight": 0.0
-    },
-    {
-      "name": "PARENTHESIS",
-      "type": "entity_micro",
-      "entity": "АВТОРЫ",
-      "regex": "[()]",
-      "occurrences": 16,
+      "occurrences": 7,
       "documents": 1,
-      "support": 0.004030226700251889,
+      "support": 0.002207505518763797,
       "weight": 0.0
     },
     {
@@ -454,9 +454,9 @@
       "type": "entity_micro",
       "entity": "URL",
       "regex": "//",
-      "occurrences": 15,
-      "documents": 3,
-      "support": 0.003778337531486146,
+      "occurrences": 7,
+      "documents": 1,
+      "support": 0.002207505518763797,
       "weight": 0.0
     },
     {
@@ -464,39 +464,19 @@
       "type": "entity_micro",
       "entity": "URL",
       "regex": ":",
-      "occurrences": 15,
-      "documents": 3,
-      "support": 0.003778337531486146,
+      "occurrences": 7,
+      "documents": 1,
+      "support": 0.002207505518763797,
       "weight": 0.0
     },
     {
-      "name": "COMMA",
-      "type": "entity_micro",
-      "entity": "МЕСТО ИЗДАНИЯ",
-      "regex": ",",
-      "occurrences": 15,
-      "documents": 7,
-      "support": 0.003778337531486146,
-      "weight": 0.0
-    },
-    {
-      "name": "NUMBER",
-      "type": "entity_micro",
-      "entity": "НАЗВАНИЕ",
-      "regex": "\\d+",
-      "occurrences": 12,
-      "documents": 8,
-      "support": 0.003022670025188917,
-      "weight": 0.0
-    },
-    {
-      "name": "DASH",
+      "name": "SLASH",
       "type": "entity_micro",
       "entity": "URL",
-      "regex": "[-–—]",
-      "occurrences": 11,
-      "documents": 3,
-      "support": 0.0027707808564231737,
+      "regex": "/",
+      "occurrences": 7,
+      "documents": 1,
+      "support": 0.002207505518763797,
       "weight": 0.0
     },
     {
@@ -504,59 +484,9 @@
       "type": "entity_micro",
       "entity": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
       "regex": "[()]",
-      "occurrences": 9,
-      "documents": 8,
-      "support": 0.0022670025188916876,
-      "weight": 0.0
-    },
-    {
-      "name": "NUMBER",
-      "type": "entity_micro",
-      "entity": "URL",
-      "regex": "\\d+",
-      "occurrences": 9,
-      "documents": 2,
-      "support": 0.0022670025188916876,
-      "weight": 0.0
-    },
-    {
-      "name": "QUOTATION",
-      "type": "entity_micro",
-      "entity": "НАЗВАНИЕ ЖУРНАЛА",
-      "regex": "[«»\\\"„“”]",
-      "occurrences": 8,
+      "occurrences": 7,
       "documents": 6,
-      "support": 0.0020151133501259445,
-      "weight": 0.0
-    },
-    {
-      "name": "NUMBER",
-      "type": "entity_micro",
-      "entity": "НАЗВАНИЕ ЖУРНАЛА",
-      "regex": "\\d+",
-      "occurrences": 8,
-      "documents": 8,
-      "support": 0.0020151133501259445,
-      "weight": 0.0
-    },
-    {
-      "name": "PARENTHESIS",
-      "type": "entity_micro",
-      "entity": "НАЗВАНИЕ",
-      "regex": "[()]",
-      "occurrences": 6,
-      "documents": 5,
-      "support": 0.0015113350125944584,
-      "weight": 0.0
-    },
-    {
-      "name": "INITIAL",
-      "type": "entity_micro",
-      "entity": "ИЗДАТЕЛЬСТВО",
-      "regex": "\\b[А-ЯЁ]\\.",
-      "occurrences": 6,
-      "documents": 5,
-      "support": 0.0015113350125944584,
+      "support": 0.002207505518763797,
       "weight": 0.0
     },
     {
@@ -566,7 +496,27 @@
       "regex": "\\.",
       "occurrences": 6,
       "documents": 2,
-      "support": 0.0015113350125944584,
+      "support": 0.001892147587511826,
+      "weight": 0.0
+    },
+    {
+      "name": "QUOTATION",
+      "type": "entity_micro",
+      "entity": "НАЗВАНИЕ ЖУРНАЛА",
+      "regex": "[«»\\\"„“”]",
+      "occurrences": 5,
+      "documents": 3,
+      "support": 0.001576789656259855,
+      "weight": 0.0
+    },
+    {
+      "name": "DASH",
+      "type": "entity_micro",
+      "entity": "АВТОРЫ",
+      "regex": "[-–—]",
+      "occurrences": 5,
+      "documents": 5,
+      "support": 0.001576789656259855,
       "weight": 0.0
     },
     {
@@ -576,17 +526,17 @@
       "regex": "\\b[А-ЯЁ]\\.",
       "occurrences": 5,
       "documents": 2,
-      "support": 0.0012594458438287153,
+      "support": 0.001576789656259855,
       "weight": 0.0
     },
     {
-      "name": "INITIALS",
+      "name": "PARENTHESIS",
       "type": "entity_micro",
-      "entity": "ИЗДАТЕЛЬСТВО",
-      "regex": "\\b[А-ЯЁ]\\.\\s*[А-ЯЁ]\\.",
-      "occurrences": 5,
-      "documents": 4,
-      "support": 0.0012594458438287153,
+      "entity": "НАЗВАНИЕ",
+      "regex": "[()]",
+      "occurrences": 4,
+      "documents": 3,
+      "support": 0.001261431725007884,
       "weight": 0.0
     },
     {
@@ -596,27 +546,27 @@
       "regex": "\\b[А-ЯЁ]\\.\\s*[А-ЯЁ]\\.",
       "occurrences": 4,
       "documents": 2,
-      "support": 0.0010075566750629723,
+      "support": 0.001261431725007884,
       "weight": 0.0
     },
     {
-      "name": "NUMBER",
+      "name": "INITIAL",
       "type": "entity_micro",
       "entity": "ИЗДАТЕЛЬСТВО",
-      "regex": "\\d+",
+      "regex": "\\b[А-ЯЁ]\\.",
       "occurrences": 4,
-      "documents": 4,
-      "support": 0.0010075566750629723,
+      "documents": 3,
+      "support": 0.001261431725007884,
       "weight": 0.0
     },
     {
-      "name": "YEAR",
+      "name": "INITIALS",
       "type": "entity_micro",
-      "entity": "URL",
-      "regex": "(?<!\\d)(17|18|19|20|21)\\d{2}(?!\\d)",
+      "entity": "ИЗДАТЕЛЬСТВО",
+      "regex": "\\b[А-ЯЁ]\\.\\s*[А-ЯЁ]\\.",
       "occurrences": 4,
-      "documents": 1,
-      "support": 0.0010075566750629723,
+      "documents": 3,
+      "support": 0.001261431725007884,
       "weight": 0.0
     },
     {
@@ -626,7 +576,17 @@
       "regex": "/",
       "occurrences": 3,
       "documents": 3,
-      "support": 0.0007556675062972292,
+      "support": 0.000946073793755913,
+      "weight": 0.0
+    },
+    {
+      "name": "NUMBER",
+      "type": "entity_micro",
+      "entity": "НАЗВАНИЕ ЖУРНАЛА",
+      "regex": "\\d+",
+      "occurrences": 3,
+      "documents": 3,
+      "support": 0.000946073793755913,
       "weight": 0.0
     },
     {
@@ -636,7 +596,7 @@
       "regex": "[()]",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0007556675062972292,
+      "support": 0.000946073793755913,
       "weight": 0.0
     },
     {
@@ -646,17 +606,7 @@
       "regex": "\\b[А-ЯЁ]\\.",
       "occurrences": 3,
       "documents": 2,
-      "support": 0.0007556675062972292,
-      "weight": 0.0
-    },
-    {
-      "name": "YEAR",
-      "type": "entity_micro",
-      "entity": "НАЗВАНИЕ",
-      "regex": "(?<!\\d)(17|18|19|20|21)\\d{2}(?!\\d)",
-      "occurrences": 3,
-      "documents": 2,
-      "support": 0.0007556675062972292,
+      "support": 0.000946073793755913,
       "weight": 0.0
     },
     {
@@ -664,9 +614,9 @@
       "type": "entity_shape",
       "entity": "ГОД ПУБЛИКАЦИИ",
       "regex": "\\d+",
-      "occurrences": 586,
-      "documents": 47,
-      "support": 0.14760705289672543,
+      "occurrences": 475,
+      "documents": 35,
+      "support": 0.14979501734468623,
       "weight": 0.0
     },
     {
@@ -674,9 +624,9 @@
       "type": "entity_shape",
       "entity": "МЕСТО ИЗДАНИЯ",
       "regex": "[А-ЯЁ][а-яё]+",
-      "occurrences": 309,
-      "documents": 43,
-      "support": 0.07783375314861461,
+      "occurrences": 237,
+      "documents": 32,
+      "support": 0.07473982970671712,
       "weight": 0.0
     },
     {
@@ -684,9 +634,9 @@
       "type": "entity_shape",
       "entity": "СТРАНИЦЫ",
       "regex": "[А-ЯЁA-Z]\\.\\s+\\d+\\-\\d+",
-      "occurrences": 214,
-      "documents": 26,
-      "support": 0.05390428211586902,
+      "occurrences": 154,
+      "documents": 17,
+      "support": 0.04856512141280353,
       "weight": 0.0
     },
     {
@@ -694,9 +644,9 @@
       "type": "entity_shape",
       "entity": "АВТОРЫ",
       "regex": "[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.",
-      "occurrences": 132,
-      "documents": 24,
-      "support": 0.03324937027707808,
+      "occurrences": 122,
+      "documents": 21,
+      "support": 0.03847366761274046,
       "weight": 0.0
     },
     {
@@ -704,29 +654,9 @@
       "type": "entity_shape",
       "entity": "АВТОРЫ",
       "regex": "[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁA-Z]\\.",
-      "occurrences": 92,
-      "documents": 5,
-      "support": 0.023173803526448364,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "НАЗВАНИЕ",
-      "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
       "occurrences": 63,
-      "documents": 31,
-      "support": 0.015869017632241814,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "АВТОРЫ",
-      "regex": "[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.,\\s+[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.",
-      "occurrences": 59,
-      "documents": 16,
-      "support": 0.014861460957178841,
+      "documents": 3,
+      "support": 0.019867549668874173,
       "weight": 0.0
     },
     {
@@ -734,19 +664,9 @@
       "type": "entity_shape",
       "entity": "СТРАНИЦЫ",
       "regex": "[А-ЯЁA-Z]\\s+\\d+\\-\\d+",
-      "occurrences": 59,
-      "documents": 8,
-      "support": 0.014861460957178841,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "МЕСТО ИЗДАНИЯ",
-      "regex": "[А-ЯЁA-Z]\\.",
-      "occurrences": 57,
-      "documents": 15,
-      "support": 0.014357682619647354,
+      "occurrences": 58,
+      "documents": 7,
+      "support": 0.01829076001261432,
       "weight": 0.0
     },
     {
@@ -756,17 +676,27 @@
       "regex": "\\d+\\-\\d+",
       "occurrences": 56,
       "documents": 5,
-      "support": 0.014105793450881612,
+      "support": 0.017660044150110375,
       "weight": 0.0
     },
     {
       "name": "ENTITY_SHAPE",
       "type": "entity_shape",
-      "entity": "НОМЕР",
-      "regex": "№\\s+\\d+",
-      "occurrences": 54,
-      "documents": 17,
-      "support": 0.013602015113350126,
+      "entity": "НАЗВАНИЕ",
+      "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
+      "occurrences": 49,
+      "documents": 22,
+      "support": 0.01545253863134658,
+      "weight": 0.0
+    },
+    {
+      "name": "ENTITY_SHAPE",
+      "type": "entity_shape",
+      "entity": "МЕСТО ИЗДАНИЯ",
+      "regex": "[А-ЯЁA-Z]\\.",
+      "occurrences": 47,
+      "documents": 10,
+      "support": 0.014821822768842637,
       "weight": 0.0
     },
     {
@@ -774,59 +704,19 @@
       "type": "entity_shape",
       "entity": "НАЗВАНИЕ",
       "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
-      "occurrences": 53,
-      "documents": 27,
-      "support": 0.013350125944584382,
+      "occurrences": 45,
+      "documents": 21,
+      "support": 0.014191106906338695,
       "weight": 0.0
     },
     {
       "name": "ENTITY_SHAPE",
       "type": "entity_shape",
       "entity": "АВТОРЫ",
-      "regex": "[А-ЯЁA-Z]\\.\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+",
-      "occurrences": 50,
-      "documents": 6,
-      "support": 0.012594458438287154,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "НОМЕР",
-      "regex": "№\\d+",
-      "occurrences": 50,
-      "documents": 26,
-      "support": 0.012594458438287154,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "НАЗВАНИЕ",
-      "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
-      "occurrences": 45,
-      "documents": 21,
-      "support": 0.011335012594458438,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "НАЗВАНИЕ",
-      "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
-      "occurrences": 45,
-      "documents": 28,
-      "support": 0.011335012594458438,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "НАЗВАНИЕ",
-      "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
-      "occurrences": 43,
-      "documents": 23,
-      "support": 0.010831234256926952,
+      "regex": "[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.,\\s+[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.",
+      "occurrences": 42,
+      "documents": 11,
+      "support": 0.013245033112582781,
       "weight": 0.0
     },
     {
@@ -836,17 +726,67 @@
       "regex": "[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\s+[А-ЯЁA-Z]",
       "occurrences": 42,
       "documents": 4,
-      "support": 0.01057934508816121,
+      "support": 0.013245033112582781,
       "weight": 0.0
     },
     {
       "name": "ENTITY_SHAPE",
       "type": "entity_shape",
-      "entity": "ИЗДАТЕЛЬСТВО",
-      "regex": "[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]",
-      "occurrences": 36,
-      "documents": 10,
-      "support": 0.00906801007556675,
+      "entity": "НОМЕР",
+      "regex": "№\\s+\\d+",
+      "occurrences": 41,
+      "documents": 11,
+      "support": 0.012929675181330811,
+      "weight": 0.0
+    },
+    {
+      "name": "ENTITY_SHAPE",
+      "type": "entity_shape",
+      "entity": "НОМЕР",
+      "regex": "№\\d+",
+      "occurrences": 41,
+      "documents": 18,
+      "support": 0.012929675181330811,
+      "weight": 0.0
+    },
+    {
+      "name": "ENTITY_SHAPE",
+      "type": "entity_shape",
+      "entity": "НАЗВАНИЕ",
+      "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
+      "occurrences": 38,
+      "documents": 17,
+      "support": 0.011983601387574897,
+      "weight": 0.0
+    },
+    {
+      "name": "ENTITY_SHAPE",
+      "type": "entity_shape",
+      "entity": "НАЗВАНИЕ",
+      "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
+      "occurrences": 38,
+      "documents": 18,
+      "support": 0.011983601387574897,
+      "weight": 0.0
+    },
+    {
+      "name": "ENTITY_SHAPE",
+      "type": "entity_shape",
+      "entity": "АВТОРЫ",
+      "regex": "[А-ЯЁA-Z]\\.\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+",
+      "occurrences": 35,
+      "documents": 4,
+      "support": 0.011037527593818985,
+      "weight": 0.0
+    },
+    {
+      "name": "ENTITY_SHAPE",
+      "type": "entity_shape",
+      "entity": "НАЗВАНИЕ",
+      "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
+      "occurrences": 34,
+      "documents": 21,
+      "support": 0.010722169662567014,
       "weight": 0.0
     },
     {
@@ -854,39 +794,9 @@
       "type": "entity_shape",
       "entity": "АВТОРЫ",
       "regex": "[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.,\\s+[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.,\\s+[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.",
-      "occurrences": 31,
-      "documents": 10,
-      "support": 0.0078085642317380355,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "ИЗДАТЕЛЬСТВО",
-      "regex": "[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]",
-      "occurrences": 31,
-      "documents": 10,
-      "support": 0.0078085642317380355,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "МЕСТО ИЗДАНИЯ",
-      "regex": "[А-ЯЁA-Z]",
-      "occurrences": 29,
-      "documents": 9,
-      "support": 0.007304785894206549,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "СТРАНИЦЫ",
-      "regex": "[А-ЯЁA-Z]\\.\\d+\\-\\d+",
-      "occurrences": 28,
-      "documents": 11,
-      "support": 0.007052896725440806,
+      "occurrences": 27,
+      "documents": 8,
+      "support": 0.008514664143803218,
       "weight": 0.0
     },
     {
@@ -896,17 +806,27 @@
       "regex": "[А-ЯЁ][а-яё]+\\-[а-яё]+\\s+[А-ЯЁ][а-яё][а-яё][А-ЯЁ][А-ЯЁ][А-ЯЁ]",
       "occurrences": 26,
       "documents": 7,
-      "support": 0.00654911838790932,
+      "support": 0.008199306212551246,
       "weight": 0.0
     },
     {
       "name": "ENTITY_SHAPE",
       "type": "entity_shape",
-      "entity": "НАЗВАНИЕ",
-      "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
+      "entity": "ИЗДАТЕЛЬСТВО",
+      "regex": "[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]",
       "occurrences": 25,
-      "documents": 15,
-      "support": 0.006297229219143577,
+      "documents": 8,
+      "support": 0.007883948281299276,
+      "weight": 0.0
+    },
+    {
+      "name": "ENTITY_SHAPE",
+      "type": "entity_shape",
+      "entity": "МЕСТО ИЗДАНИЯ",
+      "regex": "[А-ЯЁA-Z]",
+      "occurrences": 25,
+      "documents": 7,
+      "support": 0.007883948281299276,
       "weight": 0.0
     },
     {
@@ -914,39 +834,39 @@
       "type": "entity_shape",
       "entity": "НАЗВАНИЕ ЖУРНАЛА",
       "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+",
-      "occurrences": 25,
-      "documents": 13,
-      "support": 0.006297229219143577,
+      "occurrences": 23,
+      "documents": 11,
+      "support": 0.007253232418795333,
       "weight": 0.0
     },
     {
       "name": "ENTITY_SHAPE",
       "type": "entity_shape",
-      "entity": "АВТОРЫ",
-      "regex": "[А-ЯЁA-Z]\\.\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+",
-      "occurrences": 24,
+      "entity": "ИЗДАТЕЛЬСТВО",
+      "regex": "[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]",
+      "occurrences": 23,
       "documents": 6,
-      "support": 0.006045340050377834,
+      "support": 0.007253232418795333,
       "weight": 0.0
     },
     {
       "name": "ENTITY_SHAPE",
       "type": "entity_shape",
-      "entity": "МЕСТО ИЗДАНИЯ",
-      "regex": "[А-ЯЁ][А-ЯЁ][а-яё]\\.",
+      "entity": "СТРАНИЦЫ",
+      "regex": "[А-ЯЁA-Z]\\.\\d+\\-\\d+",
       "occurrences": 22,
-      "documents": 6,
-      "support": 0.0055415617128463475,
+      "documents": 7,
+      "support": 0.006937874487543362,
       "weight": 0.0
     },
     {
       "name": "ENTITY_SHAPE",
       "type": "entity_shape",
-      "entity": "АВТОРЫ",
-      "regex": "[А-ЯЁA-Z]\\.\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+",
-      "occurrences": 20,
-      "documents": 4,
-      "support": 0.005037783375314861,
+      "entity": "НАЗВАНИЕ",
+      "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
+      "occurrences": 21,
+      "documents": 12,
+      "support": 0.006622516556291391,
       "weight": 0.0
     },
     {
@@ -954,9 +874,9 @@
       "type": "entity_shape",
       "entity": "АВТОРЫ",
       "regex": "[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+",
-      "occurrences": 19,
-      "documents": 6,
-      "support": 0.004785894206549119,
+      "occurrences": 17,
+      "documents": 4,
+      "support": 0.005361084831283507,
       "weight": 0.0
     },
     {
@@ -964,39 +884,29 @@
       "type": "entity_shape",
       "entity": "АВТОРЫ",
       "regex": "[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\s+[А-ЯЁA-Z]",
-      "occurrences": 19,
-      "documents": 4,
-      "support": 0.004785894206549119,
+      "occurrences": 17,
+      "documents": 3,
+      "support": 0.005361084831283507,
       "weight": 0.0
     },
     {
       "name": "ENTITY_SHAPE",
       "type": "entity_shape",
-      "entity": "ТОМ",
-      "regex": "[А-ЯЁA-Z]\\.\\s+\\d+",
+      "entity": "МЕСТО ИЗДАНИЯ",
+      "regex": "[А-ЯЁ][А-ЯЁ][а-яё]\\.",
       "occurrences": 17,
-      "documents": 8,
-      "support": 0.0042821158690176326,
+      "documents": 3,
+      "support": 0.005361084831283507,
       "weight": 0.0
     },
     {
       "name": "ENTITY_SHAPE",
       "type": "entity_shape",
       "entity": "АВТОРЫ",
-      "regex": "[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.,\\s+[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.,\\s+[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.,\\s+[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.",
+      "regex": "[А-ЯЁA-Z]\\.\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+",
       "occurrences": 16,
-      "documents": 6,
-      "support": 0.004030226700251889,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "НАЗВАНИЕ ЖУРНАЛА",
-      "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
-      "occurrences": 16,
-      "documents": 10,
-      "support": 0.004030226700251889,
+      "documents": 2,
+      "support": 0.005045726900031536,
       "weight": 0.0
     },
     {
@@ -1006,47 +916,27 @@
       "regex": "[А-ЯЁA-Z]\\.\\s+\\d+\\s+\\-\\s+\\d+",
       "occurrences": 16,
       "documents": 1,
-      "support": 0.004030226700251889,
+      "support": 0.005045726900031536,
       "weight": 0.0
     },
     {
       "name": "ENTITY_SHAPE",
       "type": "entity_shape",
-      "entity": "НАЗВАНИЕ ЖУРНАЛА",
-      "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
+      "entity": "ТОМ",
+      "regex": "[А-ЯЁA-Z]\\.\\s+\\d+",
       "occurrences": 15,
-      "documents": 10,
-      "support": 0.003778337531486146,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "АВТОРЫ",
-      "regex": "[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁA-Z]\\.",
-      "occurrences": 14,
-      "documents": 4,
-      "support": 0.003526448362720403,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "АВТОРЫ",
-      "regex": "[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+",
-      "occurrences": 13,
       "documents": 6,
-      "support": 0.00327455919395466,
+      "support": 0.004730368968779565,
       "weight": 0.0
     },
     {
       "name": "ENTITY_SHAPE",
       "type": "entity_shape",
-      "entity": "НАЗВАНИЕ ЖУРНАЛА",
-      "regex": "[А-ЯЁ][а-яё]+\\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]",
-      "occurrences": 13,
+      "entity": "АВТОРЫ",
+      "regex": "[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.,\\s+[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.,\\s+[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.,\\s+[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.",
+      "occurrences": 14,
       "documents": 5,
-      "support": 0.00327455919395466,
+      "support": 0.004415011037527594,
       "weight": 0.0
     },
     {
@@ -1056,37 +946,17 @@
       "regex": "[А-ЯЁ][а-яё]+",
       "occurrences": 13,
       "documents": 3,
-      "support": 0.00327455919395466,
+      "support": 0.004099653106275623,
       "weight": 0.0
     },
     {
       "name": "ENTITY_SHAPE",
       "type": "entity_shape",
-      "entity": "НАЗВАНИЕ",
-      "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
-      "occurrences": 13,
-      "documents": 8,
-      "support": 0.00327455919395466,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "АВТОРЫ",
-      "regex": "[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+",
+      "entity": "НАЗВАНИЕ ЖУРНАЛА",
+      "regex": "[А-ЯЁ][а-яё]+\\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]",
       "occurrences": 12,
-      "documents": 8,
-      "support": 0.003022670025188917,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "НАЗВАНИЕ",
-      "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
-      "occurrences": 12,
-      "documents": 11,
-      "support": 0.003022670025188917,
+      "documents": 4,
+      "support": 0.003784295175023652,
       "weight": 0.0
     },
     {
@@ -1096,7 +966,7 @@
       "regex": "[а-яё]+\\.\\d+\\-\\d+",
       "occurrences": 12,
       "documents": 2,
-      "support": 0.003022670025188917,
+      "support": 0.003784295175023652,
       "weight": 0.0
     },
     {
@@ -1106,7 +976,7 @@
       "regex": "[А-ЯЁA-Z]\\s+[А-ЯЁA-Z]\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\s+[А-ЯЁA-Z]\\s+[А-ЯЁ][а-яё]+",
       "occurrences": 12,
       "documents": 4,
-      "support": 0.003022670025188917,
+      "support": 0.003784295175023652,
       "weight": 0.0
     },
     {
@@ -1116,7 +986,27 @@
       "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
       "occurrences": 11,
       "documents": 9,
-      "support": 0.0027707808564231737,
+      "support": 0.003468937243771681,
+      "weight": 0.0
+    },
+    {
+      "name": "ENTITY_SHAPE",
+      "type": "entity_shape",
+      "entity": "НАЗВАНИЕ ЖУРНАЛА",
+      "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
+      "occurrences": 11,
+      "documents": 7,
+      "support": 0.003468937243771681,
+      "weight": 0.0
+    },
+    {
+      "name": "ENTITY_SHAPE",
+      "type": "entity_shape",
+      "entity": "НАЗВАНИЕ",
+      "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
+      "occurrences": 11,
+      "documents": 6,
+      "support": 0.003468937243771681,
       "weight": 0.0
     },
     {
@@ -1126,77 +1016,57 @@
       "regex": "[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.[А-ЯЁ][а-яё]+",
       "occurrences": 11,
       "documents": 1,
-      "support": 0.0027707808564231737,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "СТРАНИЦЫ",
-      "regex": "[а-яё]+\\.\\s+\\d+",
-      "occurrences": 10,
-      "documents": 4,
-      "support": 0.0025188916876574307,
+      "support": 0.003468937243771681,
       "weight": 0.0
     },
     {
       "name": "ENTITY_SHAPE",
       "type": "entity_shape",
       "entity": "АВТОРЫ",
-      "regex": "[А-ЯЁ][а-яё]+\\s+[А-ЯЁ][А-ЯЁ]\\.",
+      "regex": "[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+",
       "occurrences": 10,
-      "documents": 3,
-      "support": 0.0025188916876574307,
+      "documents": 4,
+      "support": 0.00315357931251971,
       "weight": 0.0
     },
     {
       "name": "ENTITY_SHAPE",
       "type": "entity_shape",
-      "entity": "ИЗДАТЕЛЬСТВО",
-      "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+",
-      "occurrences": 9,
-      "documents": 3,
-      "support": 0.0022670025188916876,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "НАЗВАНИЕ",
-      "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
-      "occurrences": 9,
-      "documents": 5,
-      "support": 0.0022670025188916876,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "ТОМ",
-      "regex": "[А-ЯЁA-Z]\\.\\d+",
-      "occurrences": 9,
+      "entity": "АВТОРЫ",
+      "regex": "[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+",
+      "occurrences": 10,
       "documents": 6,
-      "support": 0.0022670025188916876,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "СТРАНИЦЫ",
-      "regex": "[А-ЯЁA-Z]\\.\\s+\\d+",
-      "occurrences": 9,
-      "documents": 6,
-      "support": 0.0022670025188916876,
+      "support": 0.00315357931251971,
       "weight": 0.0
     },
     {
       "name": "ENTITY_SHAPE",
       "type": "entity_shape",
       "entity": "НАЗВАНИЕ ЖУРНАЛА",
-      "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
-      "occurrences": 9,
+      "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
+      "occurrences": 10,
       "documents": 7,
-      "support": 0.0022670025188916876,
+      "support": 0.00315357931251971,
+      "weight": 0.0
+    },
+    {
+      "name": "ENTITY_SHAPE",
+      "type": "entity_shape",
+      "entity": "НАЗВАНИЕ",
+      "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
+      "occurrences": 10,
+      "documents": 9,
+      "support": 0.00315357931251971,
+      "weight": 0.0
+    },
+    {
+      "name": "ENTITY_SHAPE",
+      "type": "entity_shape",
+      "entity": "АВТОРЫ",
+      "regex": "[А-ЯЁA-Z]\\.\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+",
+      "occurrences": 9,
+      "documents": 3,
+      "support": 0.002838221381267739,
       "weight": 0.0
     },
     {
@@ -1206,7 +1076,7 @@
       "regex": "[А-ЯЁ][А-ЯЁ]\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\s+[А-ЯЁA-Z]\\s+[А-ЯЁ][а-яё]+",
       "occurrences": 9,
       "documents": 3,
-      "support": 0.0022670025188916876,
+      "support": 0.002838221381267739,
       "weight": 0.0
     },
     {
@@ -1216,17 +1086,27 @@
       "regex": "[А-ЯЁ][а-яё]+\\-[а-яё]+\\s+[А-ЯЁ][а-яё]+\\.\\s+[а-яё]+\\-[а-яё]+",
       "occurrences": 9,
       "documents": 2,
-      "support": 0.0022670025188916876,
+      "support": 0.002838221381267739,
+      "weight": 0.0
+    },
+    {
+      "name": "ENTITY_SHAPE",
+      "type": "entity_shape",
+      "entity": "АВТОРЫ",
+      "regex": "[А-ЯЁ][а-яё]+\\s+[А-ЯЁ][А-ЯЁ]\\.",
+      "occurrences": 9,
+      "documents": 2,
+      "support": 0.002838221381267739,
       "weight": 0.0
     },
     {
       "name": "ENTITY_SHAPE",
       "type": "entity_shape",
       "entity": "ИЗДАТЕЛЬСТВО",
-      "regex": "[А-ЯЁ][а-яё]+\\-[а-яё]+\\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]",
+      "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+",
       "occurrences": 8,
-      "documents": 6,
-      "support": 0.0020151133501259445,
+      "documents": 2,
+      "support": 0.002522863450015768,
       "weight": 0.0
     },
     {
@@ -1236,7 +1116,7 @@
       "regex": "[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+",
       "occurrences": 8,
       "documents": 3,
-      "support": 0.0020151133501259445,
+      "support": 0.002522863450015768,
       "weight": 0.0
     },
     {
@@ -1246,7 +1126,17 @@
       "regex": "[А-ЯЁ][а-яё]+\\.\\s+[а-яё]+\\.\\s+[а-яё]+\\.\\s+[а-яё]+\\-[а-яё]+\\.",
       "occurrences": 8,
       "documents": 3,
-      "support": 0.0020151133501259445,
+      "support": 0.002522863450015768,
+      "weight": 0.0
+    },
+    {
+      "name": "ENTITY_SHAPE",
+      "type": "entity_shape",
+      "entity": "НАЗВАНИЕ",
+      "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
+      "occurrences": 8,
+      "documents": 4,
+      "support": 0.002522863450015768,
       "weight": 0.0
     },
     {
@@ -1256,17 +1146,7 @@
       "regex": "[А-ЯЁ][А-ЯЁ]\\s+[А-ЯЁ][а-яё]+",
       "occurrences": 8,
       "documents": 3,
-      "support": 0.0020151133501259445,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "НАЗВАНИЕ",
-      "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
-      "occurrences": 7,
-      "documents": 6,
-      "support": 0.0017632241813602015,
+      "support": 0.002522863450015768,
       "weight": 0.0
     },
     {
@@ -1276,17 +1156,7 @@
       "regex": "[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\s+[А-ЯЁA-Z]\\s+,\\s+[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\s+[А-ЯЁA-Z]\\s+,\\s+[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\s+[А-ЯЁA-Z]",
       "occurrences": 7,
       "documents": 1,
-      "support": 0.0017632241813602015,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "ИЗДАТЕЛЬСТВО",
-      "regex": "[А-ЯЁ][а-яё]+\\-[а-яё]+\\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]",
-      "occurrences": 7,
-      "documents": 4,
-      "support": 0.0017632241813602015,
+      "support": 0.002207505518763797,
       "weight": 0.0
     },
     {
@@ -1296,7 +1166,17 @@
       "regex": "[А-ЯЁ][а-яё]+\\-[а-яё]+\\s+[А-ЯЁ][а-яё]+\\.\\s+[а-яё]+\\.\\s+[а-яё]+,\\s+[а-яё]+\\-[а-яё]+",
       "occurrences": 7,
       "documents": 2,
-      "support": 0.0017632241813602015,
+      "support": 0.002207505518763797,
+      "weight": 0.0
+    },
+    {
+      "name": "ENTITY_SHAPE",
+      "type": "entity_shape",
+      "entity": "АВТОРЫ",
+      "regex": "[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁA-Z]\\.",
+      "occurrences": 7,
+      "documents": 3,
+      "support": 0.002207505518763797,
       "weight": 0.0
     },
     {
@@ -1306,7 +1186,7 @@
       "regex": "[А-ЯЁA-Z]\\.\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+\\s+\\([А-ЯЁ][а-яё]+\\)",
       "occurrences": 7,
       "documents": 1,
-      "support": 0.0017632241813602015,
+      "support": 0.002207505518763797,
       "weight": 0.0
     },
     {
@@ -1316,7 +1196,7 @@
       "regex": "[А-ЯЁ][А-ЯЁ]\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\s+[А-ЯЁA-Z]\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\s+[А-ЯЁA-Z]\\s+[А-ЯЁ][а-яё]+",
       "occurrences": 7,
       "documents": 3,
-      "support": 0.0017632241813602015,
+      "support": 0.002207505518763797,
       "weight": 0.0
     },
     {
@@ -1326,7 +1206,7 @@
       "regex": "[А-ЯЁ][а-яё]+,\\s+[А-ЯЁ][А-ЯЁ]",
       "occurrences": 7,
       "documents": 2,
-      "support": 0.0017632241813602015,
+      "support": 0.002207505518763797,
       "weight": 0.0
     },
     {
@@ -1336,7 +1216,7 @@
       "regex": "[А-ЯЁA-Z]\\s+[А-ЯЁA-Z]\\s+[А-ЯЁ][а-яё]+",
       "occurrences": 7,
       "documents": 3,
-      "support": 0.0017632241813602015,
+      "support": 0.002207505518763797,
       "weight": 0.0
     },
     {
@@ -1346,37 +1226,27 @@
       "regex": "[А-ЯЁ][а-яё]+\\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\\s+[А-ЯЁ][а-яё]+",
       "occurrences": 6,
       "documents": 1,
-      "support": 0.0015113350125944584,
+      "support": 0.001892147587511826,
       "weight": 0.0
     },
     {
       "name": "ENTITY_SHAPE",
       "type": "entity_shape",
-      "entity": "ИЗДАТЕЛЬСТВО",
-      "regex": "[А-ЯЁ][а-яё]+",
+      "entity": "НАЗВАНИЕ",
+      "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
       "occurrences": 6,
-      "documents": 6,
-      "support": 0.0015113350125944584,
+      "documents": 5,
+      "support": 0.001892147587511826,
       "weight": 0.0
     },
     {
       "name": "ENTITY_SHAPE",
       "type": "entity_shape",
       "entity": "ИЗДАТЕЛЬСТВО",
-      "regex": "[А-ЯЁ][а-яё]+\\-[а-яё]+\\s+[А-ЯЁ][а-яё]+\\.\\s+[а-яё]+\\.\\s+[а-яё]+\\-[а-яё]+",
+      "regex": "[А-ЯЁ][а-яё]+\\-[а-яё]+\\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]",
       "occurrences": 6,
       "documents": 3,
-      "support": 0.0015113350125944584,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "ИЗДАТЕЛЬСТВО",
-      "regex": "[А-ЯЁ][А-ЯЁ][А-ЯЁ]",
-      "occurrences": 6,
-      "documents": 4,
-      "support": 0.0015113350125944584,
+      "support": 0.001892147587511826,
       "weight": 0.0
     },
     {
@@ -1386,7 +1256,7 @@
       "regex": "[А-ЯЁA-Z]\\.\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+\\s+\\([А-ЯЁ][а-яё]+\\)",
       "occurrences": 6,
       "documents": 1,
-      "support": 0.0015113350125944584,
+      "support": 0.001892147587511826,
       "weight": 0.0
     },
     {
@@ -1396,7 +1266,7 @@
       "regex": "[А-ЯЁA-Z]\\s+[А-ЯЁA-Z]\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\s+[А-ЯЁA-Z]\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\s+[А-ЯЁA-Z]\\s+[А-ЯЁ][а-яё]+",
       "occurrences": 6,
       "documents": 3,
-      "support": 0.0015113350125944584,
+      "support": 0.001892147587511826,
       "weight": 0.0
     },
     {
@@ -1406,17 +1276,7 @@
       "regex": "[А-ЯЁA-Z]\\s+\\d+",
       "occurrences": 6,
       "documents": 3,
-      "support": 0.0015113350125944584,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "АВТОРЫ",
-      "regex": "[А-ЯЁA-Z]\\.\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+",
-      "occurrences": 6,
-      "documents": 2,
-      "support": 0.0015113350125944584,
+      "support": 0.001892147587511826,
       "weight": 0.0
     },
     {
@@ -1426,7 +1286,7 @@
       "regex": "[А-ЯЁ][А-ЯЁ][а-яё][А-ЯЁ]\\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\\s+[А-ЯЁ][а-яё]+",
       "occurrences": 6,
       "documents": 1,
-      "support": 0.0015113350125944584,
+      "support": 0.001892147587511826,
       "weight": 0.0
     },
     {
@@ -1436,7 +1296,7 @@
       "regex": "[А-ЯЁ][а-яё]+\\-[а-яё]+\\-[А-ЯЁ][а-яё]+",
       "occurrences": 6,
       "documents": 1,
-      "support": 0.0015113350125944584,
+      "support": 0.001892147587511826,
       "weight": 0.0
     },
     {
@@ -1446,27 +1306,7 @@
       "regex": "[А-ЯЁ][а-яё]+\\-[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\\s+[А-ЯЁ][а-яё]+",
       "occurrences": 6,
       "documents": 1,
-      "support": 0.0015113350125944584,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "АВТОРЫ",
-      "regex": "[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.",
-      "occurrences": 6,
-      "documents": 1,
-      "support": 0.0015113350125944584,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "АВТОРЫ",
-      "regex": "[А-ЯЁ][а-яё]+\\-[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.",
-      "occurrences": 6,
-      "documents": 1,
-      "support": 0.0015113350125944584,
+      "support": 0.001892147587511826,
       "weight": 0.0
     },
     {
@@ -1476,47 +1316,57 @@
       "regex": "[a-z]+://[a-z]+\\.[a-z]+\\.[a-z]+/[a-z]+",
       "occurrences": 5,
       "documents": 1,
-      "support": 0.0012594458438287153,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "МЕСТО ИЗДАНИЯ",
-      "regex": "[А-ЯЁ][а-яё]+,\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁ][а-яё]+\\-[А-ЯЁ][а-яё]+",
-      "occurrences": 5,
-      "documents": 3,
-      "support": 0.0012594458438287153,
+      "support": 0.001576789656259855,
       "weight": 0.0
     },
     {
       "name": "ENTITY_SHAPE",
       "type": "entity_shape",
       "entity": "ИЗДАТЕЛЬСТВО",
-      "regex": "[А-ЯЁ][А-ЯЁ][А-ЯЁ]\\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]",
+      "regex": "[А-ЯЁ][а-яё]+\\-[а-яё]+\\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]",
+      "occurrences": 5,
+      "documents": 4,
+      "support": 0.001576789656259855,
+      "weight": 0.0
+    },
+    {
+      "name": "ENTITY_SHAPE",
+      "type": "entity_shape",
+      "entity": "ИЗДАТЕЛЬСТВО",
+      "regex": "[А-ЯЁ][А-ЯЁ][А-ЯЁ]",
       "occurrences": 5,
       "documents": 3,
-      "support": 0.0012594458438287153,
+      "support": 0.001576789656259855,
       "weight": 0.0
     },
     {
       "name": "ENTITY_SHAPE",
       "type": "entity_shape",
       "entity": "СТРАНИЦЫ",
-      "regex": "[а-яё]+\\s+\\d+\\-\\d+",
+      "regex": "[а-яё]+\\.\\s+\\d+",
       "occurrences": 5,
       "documents": 3,
-      "support": 0.0012594458438287153,
+      "support": 0.001576789656259855,
+      "weight": 0.0
+    },
+    {
+      "name": "ENTITY_SHAPE",
+      "type": "entity_shape",
+      "entity": "НАЗВАНИЕ ЖУРНАЛА",
+      "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
+      "occurrences": 5,
+      "documents": 5,
+      "support": 0.001576789656259855,
       "weight": 0.0
     },
     {
       "name": "ENTITY_SHAPE",
       "type": "entity_shape",
       "entity": "АВТОРЫ",
-      "regex": "[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.,\\s+[А-ЯЁ][а-яё]+\\s+[А-ЯЁ][А-ЯЁ]\\.",
+      "regex": "[А-ЯЁA-Z]\\.\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+",
       "occurrences": 5,
-      "documents": 3,
-      "support": 0.0012594458438287153,
+      "documents": 1,
+      "support": 0.001576789656259855,
       "weight": 0.0
     },
     {
@@ -1526,7 +1376,7 @@
       "regex": "[А-ЯЁ][а-яё]+\\-[а-яё]+\\s+[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\-[а-яё]+",
       "occurrences": 5,
       "documents": 2,
-      "support": 0.0012594458438287153,
+      "support": 0.001576789656259855,
       "weight": 0.0
     },
     {
@@ -1536,7 +1386,7 @@
       "regex": "[А-ЯЁ][А-ЯЁ][А-ЯЁ]\\s+«[А-ЯЁ][а-яё]+»",
       "occurrences": 5,
       "documents": 1,
-      "support": 0.0012594458438287153,
+      "support": 0.001576789656259855,
       "weight": 0.0
     },
     {
@@ -1546,7 +1396,7 @@
       "regex": "[А-ЯЁ][А-ЯЁ][А-ЯЁ]",
       "occurrences": 5,
       "documents": 1,
-      "support": 0.0012594458438287153,
+      "support": 0.001576789656259855,
       "weight": 0.0
     },
     {
@@ -1556,7 +1406,7 @@
       "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+,\\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]",
       "occurrences": 5,
       "documents": 1,
-      "support": 0.0012594458438287153,
+      "support": 0.001576789656259855,
       "weight": 0.0
     },
     {
@@ -1566,17 +1416,7 @@
       "regex": "[А-ЯЁ][а-яё]+\\s+[А-ЯЁ][А-ЯЁ],\\s+[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.",
       "occurrences": 5,
       "documents": 1,
-      "support": 0.0012594458438287153,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "МЕСТО ИЗДАНИЯ",
-      "regex": "[А-ЯЁ][а-яё]+,\\s+[А-ЯЁ][а-яё]+",
-      "occurrences": 5,
-      "documents": 2,
-      "support": 0.0012594458438287153,
+      "support": 0.001576789656259855,
       "weight": 0.0
     },
     {
@@ -1586,7 +1426,7 @@
       "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\-[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
       "occurrences": 5,
       "documents": 1,
-      "support": 0.0012594458438287153,
+      "support": 0.001576789656259855,
       "weight": 0.0
     },
     {
@@ -1596,7 +1436,7 @@
       "regex": "[А-ЯЁ][а-яё]+\\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]",
       "occurrences": 4,
       "documents": 3,
-      "support": 0.0010075566750629723,
+      "support": 0.001261431725007884,
       "weight": 0.0
     },
     {
@@ -1606,17 +1446,27 @@
       "regex": "[А-ЯЁ][а-яё]+\\s+\\d+",
       "occurrences": 4,
       "documents": 3,
-      "support": 0.0010075566750629723,
+      "support": 0.001261431725007884,
       "weight": 0.0
     },
     {
       "name": "ENTITY_SHAPE",
       "type": "entity_shape",
-      "entity": "НАЗВАНИЕ",
-      "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
+      "entity": "МЕСТО ИЗДАНИЯ",
+      "regex": "[А-ЯЁ][а-яё]+,\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁ][а-яё]+\\-[А-ЯЁ][а-яё]+",
+      "occurrences": 4,
+      "documents": 2,
+      "support": 0.001261431725007884,
+      "weight": 0.0
+    },
+    {
+      "name": "ENTITY_SHAPE",
+      "type": "entity_shape",
+      "entity": "ИЗДАТЕЛЬСТВО",
+      "regex": "[А-ЯЁ][а-яё]+",
       "occurrences": 4,
       "documents": 4,
-      "support": 0.0010075566750629723,
+      "support": 0.001261431725007884,
       "weight": 0.0
     },
     {
@@ -1626,7 +1476,7 @@
       "regex": "\\s+№\\s+\\d+",
       "occurrences": 4,
       "documents": 1,
-      "support": 0.0010075566750629723,
+      "support": 0.001261431725007884,
       "weight": 0.0
     },
     {
@@ -1636,7 +1486,17 @@
       "regex": "[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]\\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]",
       "occurrences": 4,
       "documents": 3,
-      "support": 0.0010075566750629723,
+      "support": 0.001261431725007884,
+      "weight": 0.0
+    },
+    {
+      "name": "ENTITY_SHAPE",
+      "type": "entity_shape",
+      "entity": "ИЗДАТЕЛЬСТВО",
+      "regex": "[А-ЯЁ][А-ЯЁ][А-ЯЁ]\\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]",
+      "occurrences": 4,
+      "documents": 2,
+      "support": 0.001261431725007884,
       "weight": 0.0
     },
     {
@@ -1646,7 +1506,7 @@
       "regex": "№\\s+[а-яё]+\\.\\s+[а-яё]+\\s+\\d+",
       "occurrences": 4,
       "documents": 1,
-      "support": 0.0010075566750629723,
+      "support": 0.001261431725007884,
       "weight": 0.0
     },
     {
@@ -1656,7 +1516,27 @@
       "regex": "[А-ЯЁ][А-ЯЁ][а-яё][А-ЯЁ][А-ЯЁ][А-ЯЁ]",
       "occurrences": 4,
       "documents": 2,
-      "support": 0.0010075566750629723,
+      "support": 0.001261431725007884,
+      "weight": 0.0
+    },
+    {
+      "name": "ENTITY_SHAPE",
+      "type": "entity_shape",
+      "entity": "ТОМ",
+      "regex": "[А-ЯЁA-Z]\\.\\d+",
+      "occurrences": 4,
+      "documents": 2,
+      "support": 0.001261431725007884,
+      "weight": 0.0
+    },
+    {
+      "name": "ENTITY_SHAPE",
+      "type": "entity_shape",
+      "entity": "СТРАНИЦЫ",
+      "regex": "[А-ЯЁA-Z]\\.\\s+\\d+",
+      "occurrences": 4,
+      "documents": 3,
+      "support": 0.001261431725007884,
       "weight": 0.0
     },
     {
@@ -1666,7 +1546,7 @@
       "regex": "[А-ЯЁA-Z]\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
       "occurrences": 4,
       "documents": 2,
-      "support": 0.0010075566750629723,
+      "support": 0.001261431725007884,
       "weight": 0.0
     },
     {
@@ -1676,7 +1556,7 @@
       "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+\\-\\s+[А-ЯЁ][а-яё]+",
       "occurrences": 4,
       "documents": 1,
-      "support": 0.0010075566750629723,
+      "support": 0.001261431725007884,
       "weight": 0.0
     },
     {
@@ -1686,7 +1566,7 @@
       "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
       "occurrences": 4,
       "documents": 1,
-      "support": 0.0010075566750629723,
+      "support": 0.001261431725007884,
       "weight": 0.0
     },
     {
@@ -1696,27 +1576,7 @@
       "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\-[А-ЯЁ][а-яё]+",
       "occurrences": 4,
       "documents": 1,
-      "support": 0.0010075566750629723,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "СТРАНИЦЫ",
-      "regex": "[а-яё]+\\.\\s+\\d+\\-\\d+",
-      "occurrences": 4,
-      "documents": 3,
-      "support": 0.0010075566750629723,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "СТРАНИЦЫ",
-      "regex": "[а-яё]+\\.\\d+",
-      "occurrences": 4,
-      "documents": 3,
-      "support": 0.0010075566750629723,
+      "support": 0.001261431725007884,
       "weight": 0.0
     },
     {
@@ -1726,7 +1586,17 @@
       "regex": "[А-ЯЁA-Z]\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
       "occurrences": 4,
       "documents": 3,
-      "support": 0.0010075566750629723,
+      "support": 0.001261431725007884,
+      "weight": 0.0
+    },
+    {
+      "name": "ENTITY_SHAPE",
+      "type": "entity_shape",
+      "entity": "АВТОРЫ",
+      "regex": "[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.,\\s+[А-ЯЁ][а-яё]+\\s+[А-ЯЁ][А-ЯЁ]\\.",
+      "occurrences": 4,
+      "documents": 2,
+      "support": 0.001261431725007884,
       "weight": 0.0
     },
     {
@@ -1736,7 +1606,7 @@
       "regex": "[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\s+[А-ЯЁA-Z]\\.",
       "occurrences": 4,
       "documents": 1,
-      "support": 0.0010075566750629723,
+      "support": 0.001261431725007884,
       "weight": 0.0
     },
     {
@@ -1746,7 +1616,7 @@
       "regex": "[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]\\s+[А-ЯЁ][А-ЯЁ]\\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]",
       "occurrences": 4,
       "documents": 1,
-      "support": 0.0010075566750629723,
+      "support": 0.001261431725007884,
       "weight": 0.0
     },
     {
@@ -1756,27 +1626,7 @@
       "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+,\\s+[а-яё]+,\\s+[а-яё]+",
       "occurrences": 4,
       "documents": 2,
-      "support": 0.0010075566750629723,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "НАЗВАНИЕ ЖУРНАЛА",
-      "regex": "[А-ЯЁ][а-яё]+\\s+[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
-      "occurrences": 4,
-      "documents": 2,
-      "support": 0.0010075566750629723,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "НАЗВАНИЕ ЖУРНАЛА",
-      "regex": "[А-ЯЁ][а-яё]+\\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]",
-      "occurrences": 4,
-      "documents": 3,
-      "support": 0.0010075566750629723,
+      "support": 0.001261431725007884,
       "weight": 0.0
     },
     {
@@ -1786,17 +1636,7 @@
       "regex": "[А-ЯЁ][а-яё]+\\.\\s+[а-яё]+\\.\\s+[а-яё]+,\\s+[а-яё]+\\-[а-яё]+",
       "occurrences": 4,
       "documents": 1,
-      "support": 0.0010075566750629723,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "АВТОРЫ",
-      "regex": "[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁA-Z]\\.\\s+,\\s+[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁA-Z]\\.",
-      "occurrences": 4,
-      "documents": 1,
-      "support": 0.0010075566750629723,
+      "support": 0.001261431725007884,
       "weight": 0.0
     },
     {
@@ -1806,7 +1646,7 @@
       "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+:\\s+[а-яё]+\\-[а-яё]+",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0007556675062972292,
+      "support": 0.000946073793755913,
       "weight": 0.0
     },
     {
@@ -1816,7 +1656,7 @@
       "regex": "[А-ЯЁ][а-яё]+\\s+[А-ЯЁ][а-яё]+",
       "occurrences": 3,
       "documents": 3,
-      "support": 0.0007556675062972292,
+      "support": 0.000946073793755913,
       "weight": 0.0
     },
     {
@@ -1826,17 +1666,7 @@
       "regex": "[А-ЯЁ][а-яё]+\\-[а-яё]+\\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]\\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0007556675062972292,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "НАЗВАНИЕ",
-      "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\-[а-яё]+\\s+[а-яё]+",
-      "occurrences": 3,
-      "documents": 3,
-      "support": 0.0007556675062972292,
+      "support": 0.000946073793755913,
       "weight": 0.0
     },
     {
@@ -1846,17 +1676,7 @@
       "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
       "occurrences": 3,
       "documents": 2,
-      "support": 0.0007556675062972292,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "МЕСТО ИЗДАНИЯ",
-      "regex": "[А-ЯЁ][А-ЯЁ][а-яё]",
-      "occurrences": 3,
-      "documents": 3,
-      "support": 0.0007556675062972292,
+      "support": 0.000946073793755913,
       "weight": 0.0
     },
     {
@@ -1866,7 +1686,7 @@
       "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+:\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
       "occurrences": 3,
       "documents": 2,
-      "support": 0.0007556675062972292,
+      "support": 0.000946073793755913,
       "weight": 0.0
     },
     {
@@ -1876,7 +1696,7 @@
       "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[А-ЯЁ][а-яё]+",
       "occurrences": 3,
       "documents": 2,
-      "support": 0.0007556675062972292,
+      "support": 0.000946073793755913,
       "weight": 0.0
     },
     {
@@ -1886,7 +1706,7 @@
       "regex": "[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁA-Z]",
       "occurrences": 3,
       "documents": 2,
-      "support": 0.0007556675062972292,
+      "support": 0.000946073793755913,
       "weight": 0.0
     },
     {
@@ -1896,7 +1716,7 @@
       "regex": "[A-Z][a-z]+,\\s+[A-Z][a-z]+",
       "occurrences": 3,
       "documents": 3,
-      "support": 0.0007556675062972292,
+      "support": 0.000946073793755913,
       "weight": 0.0
     },
     {
@@ -1906,7 +1726,7 @@
       "regex": "\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0007556675062972292,
+      "support": 0.000946073793755913,
       "weight": 0.0
     },
     {
@@ -1916,7 +1736,7 @@
       "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+:\\s+[А-ЯЁ][а-яё]+\\.\\s+[а-яё]+\\.\\s+[а-яё]+\\.",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0007556675062972292,
+      "support": 0.000946073793755913,
       "weight": 0.0
     },
     {
@@ -1926,7 +1746,7 @@
       "regex": "[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.,\\s+[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.,\\s+[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.,\\s+[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.,\\s+[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.",
       "occurrences": 3,
       "documents": 2,
-      "support": 0.0007556675062972292,
+      "support": 0.000946073793755913,
       "weight": 0.0
     },
     {
@@ -1936,7 +1756,7 @@
       "regex": "[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.,\\s+[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.,\\s+[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.,\\s+[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.,\\s+[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.,\\s+[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0007556675062972292,
+      "support": 0.000946073793755913,
       "weight": 0.0
     },
     {
@@ -1946,17 +1766,7 @@
       "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+:\\s+[А-ЯЁ][а-яё]+\\.\\s+[A-Z][A-Z][A-Z]\\s+[а-яё]+\\.\\s+[а-яё]+\\.",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0007556675062972292,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "МЕСТО ИЗДАНИЯ",
-      "regex": "[A-Z][a-z]+",
-      "occurrences": 3,
-      "documents": 3,
-      "support": 0.0007556675062972292,
+      "support": 0.000946073793755913,
       "weight": 0.0
     },
     {
@@ -1966,7 +1776,17 @@
       "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+:\\s+[а-яё]+\\.\\s+[а-яё]+\\.\\s+\\d+\\-[а-яё]+\\s+[А-ЯЁ][а-яё]+\\.\\s+[а-яё]+\\.\\s+[а-яё]+\\.\\-[а-яё]+\\.\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0007556675062972292,
+      "support": 0.000946073793755913,
+      "weight": 0.0
+    },
+    {
+      "name": "ENTITY_SHAPE",
+      "type": "entity_shape",
+      "entity": "СТРАНИЦЫ",
+      "regex": "[а-яё]+\\.\\s+\\d+\\-\\d+",
+      "occurrences": 3,
+      "documents": 2,
+      "support": 0.000946073793755913,
       "weight": 0.0
     },
     {
@@ -1976,7 +1796,7 @@
       "regex": "[А-ЯЁ][а-яё]+,\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0007556675062972292,
+      "support": 0.000946073793755913,
       "weight": 0.0
     },
     {
@@ -1986,7 +1806,7 @@
       "regex": "[А-ЯЁ][а-яё]+\\.\\s+[а-яё]+\\.\\s+[а-яё]+,\\s+[а-яё]+\\-[а-яё]+\\.\\s+[а-яё]+\\.\\s+«[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+»",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0007556675062972292,
+      "support": 0.000946073793755913,
       "weight": 0.0
     },
     {
@@ -1996,7 +1816,7 @@
       "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\-[а-яё]+\\s+[а-яё]+",
       "occurrences": 3,
       "documents": 2,
-      "support": 0.0007556675062972292,
+      "support": 0.000946073793755913,
       "weight": 0.0
     },
     {
@@ -2006,7 +1826,7 @@
       "regex": "[А-ЯЁ][а-яё]+\\s+[А-ЯЁ][А-ЯЁ]\\.,\\s+[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0007556675062972292,
+      "support": 0.000946073793755913,
       "weight": 0.0
     },
     {
@@ -2016,27 +1836,17 @@
       "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+:\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[А-ЯЁ][а-яё]+",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0007556675062972292,
+      "support": 0.000946073793755913,
       "weight": 0.0
     },
     {
       "name": "ENTITY_SHAPE",
       "type": "entity_shape",
-      "entity": "НАЗВАНИЕ ЖУРНАЛА",
-      "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+",
+      "entity": "МЕСТО ИЗДАНИЯ",
+      "regex": "[А-ЯЁ][а-яё]+,\\s+[А-ЯЁ][а-яё]+",
       "occurrences": 3,
-      "documents": 2,
-      "support": 0.0007556675062972292,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "АВТОРЫ",
-      "regex": "[А-ЯЁ][а-яё]+\\s+[А-ЯЁ][А-ЯЁ]",
-      "occurrences": 3,
-      "documents": 2,
-      "support": 0.0007556675062972292,
+      "documents": 1,
+      "support": 0.000946073793755913,
       "weight": 0.0
     },
     {
@@ -2046,7 +1856,7 @@
       "regex": "[А-ЯЁ][а-яё]+\\-[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\.\\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё][а-яё]\\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ]",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0007556675062972292,
+      "support": 0.000946073793755913,
       "weight": 0.0
     },
     {
@@ -2056,7 +1866,7 @@
       "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[а-яё]+\\-[а-яё]+\\s+[а-яё]+",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0007556675062972292,
+      "support": 0.000946073793755913,
       "weight": 0.0
     },
     {
@@ -2066,7 +1876,7 @@
       "regex": "[А-ЯЁ][а-яё]+\\s+[а-яё]+\\s+[А-ЯЁ][А-ЯЁ][А-ЯЁ][А-ЯЁ]",
       "occurrences": 3,
       "documents": 2,
-      "support": 0.0007556675062972292,
+      "support": 0.000946073793755913,
       "weight": 0.0
     },
     {
@@ -2076,57 +1886,7 @@
       "regex": "[А-ЯЁ][а-яё]+\\-[а-яё]+\\s+[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0007556675062972292,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "АВТОРЫ",
-      "regex": "[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.,\\s+[А-ЯЁ][а-яё]+\\s+[А-ЯЁ][А-ЯЁ],\\s+[А-ЯЁ][а-яё]+\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.,\\s+[А-ЯЁ][а-яё]+\\s+[А-ЯЁ][А-ЯЁ]\\.",
-      "occurrences": 3,
-      "documents": 1,
-      "support": 0.0007556675062972292,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "АВТОРЫ",
-      "regex": "[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+\\-[А-ЯЁ][а-яё]+",
-      "occurrences": 3,
-      "documents": 1,
-      "support": 0.0007556675062972292,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "АВТОРЫ",
-      "regex": "[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+\\-[А-ЯЁ][а-яё]+",
-      "occurrences": 3,
-      "documents": 1,
-      "support": 0.0007556675062972292,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "АВТОРЫ",
-      "regex": "[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+\\-[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+",
-      "occurrences": 3,
-      "documents": 1,
-      "support": 0.0007556675062972292,
-      "weight": 0.0
-    },
-    {
-      "name": "ENTITY_SHAPE",
-      "type": "entity_shape",
-      "entity": "АВТОРЫ",
-      "regex": "[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+,\\s+[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.[А-ЯЁA-Z]\\.\\s+[А-ЯЁ][а-яё]+\\-[А-ЯЁ][а-яё]+",
-      "occurrences": 3,
-      "documents": 1,
-      "support": 0.0007556675062972292,
+      "support": 0.000946073793755913,
       "weight": 0.0
     },
     {
@@ -2135,9 +1895,9 @@
       "from": "АВТОРЫ",
       "to": "НАЗВАНИЕ",
       "regex": "\\.",
-      "occurrences": 418,
-      "documents": 34,
-      "support": 0.12388855957320688,
+      "occurrences": 320,
+      "documents": 24,
+      "support": 0.11878247958426132,
       "weight": 0.0
     },
     {
@@ -2146,9 +1906,9 @@
       "from": "ИЗДАТЕЛЬСТВО",
       "to": "ГОД ПУБЛИКАЦИИ",
       "regex": "У,",
-      "occurrences": 92,
-      "documents": 25,
-      "support": 0.027267338470657973,
+      "occurrences": 78,
+      "documents": 19,
+      "support": 0.028953229398663696,
       "weight": 0.0
     },
     {
@@ -2157,20 +1917,9 @@
       "from": "МЕСТО ИЗДАНИЯ",
       "to": "ИЗДАТЕЛЬСТВО",
       "regex": "\\.:",
-      "occurrences": 46,
-      "documents": 13,
-      "support": 0.013633669235328987,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "МЕСТО ИЗДАНИЯ",
-      "to": "ИЗДАТЕЛЬСТВО",
-      "regex": "а:",
-      "occurrences": 45,
-      "documents": 11,
-      "support": 0.013337285121517486,
+      "occurrences": 40,
+      "documents": 10,
+      "support": 0.014847809948032665,
       "weight": 0.0
     },
     {
@@ -2179,9 +1928,20 @@
       "from": "ИЗДАТЕЛЬСТВО",
       "to": "ГОД ПУБЛИКАЦИИ",
       "regex": "а,",
-      "occurrences": 44,
-      "documents": 12,
-      "support": 0.013040901007705987,
+      "occurrences": 36,
+      "documents": 9,
+      "support": 0.013363028953229399,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "МЕСТО ИЗДАНИЯ",
+      "to": "ИЗДАТЕЛЬСТВО",
+      "regex": "а:",
+      "occurrences": 28,
+      "documents": 5,
+      "support": 0.010393466963622866,
       "weight": 0.0
     },
     {
@@ -2190,53 +1950,9 @@
       "from": "НАЗВАНИЕ",
       "to": "АВТОРЫ",
       "regex": "я\\s+/",
-      "occurrences": 36,
-      "documents": 13,
-      "support": 0.01066982809721399,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
-      "to": "МЕСТО ИЗДАНИЯ",
-      "regex": "\\.\\s+\\-",
-      "occurrences": 31,
+      "occurrences": 27,
       "documents": 9,
-      "support": 0.009187907528156491,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НАЗВАНИЕ",
-      "to": "АВТОРЫ",
-      "regex": "в\\s+/",
-      "occurrences": 27,
-      "documents": 11,
-      "support": 0.008002371072910491,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НАЗВАНИЕ",
-      "to": "АВТОРЫ",
-      "regex": "а\\s+/",
-      "occurrences": 27,
-      "documents": 12,
-      "support": 0.008002371072910491,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "ИЗДАТЕЛЬСТВО",
-      "to": "ГОД ПУБЛИКАЦИИ",
-      "regex": "и,",
-      "occurrences": 26,
-      "documents": 6,
-      "support": 0.007705986959098993,
+      "support": 0.01002227171492205,
       "weight": 0.0
     },
     {
@@ -2247,51 +1963,18 @@
       "regex": "а\\s+//",
       "occurrences": 26,
       "documents": 9,
-      "support": 0.007705986959098993,
+      "support": 0.009651076466221232,
       "weight": 0.0
     },
     {
       "name": "SEPARATOR",
       "type": "transition",
-      "from": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
-      "to": "МЕСТО ИЗДАНИЯ",
-      "regex": "»\\.\\s+\\-",
-      "occurrences": 26,
-      "documents": 7,
-      "support": 0.007705986959098993,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "МЕСТО ИЗДАНИЯ",
+      "from": "ИЗДАТЕЛЬСТВО",
       "to": "ГОД ПУБЛИКАЦИИ",
-      "regex": "\\.,",
-      "occurrences": 26,
-      "documents": 7,
-      "support": 0.007705986959098993,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НАЗВАНИЕ",
-      "to": "АВТОРЫ",
-      "regex": "и\\s+/",
-      "occurrences": 25,
-      "documents": 6,
-      "support": 0.007409602845287492,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "МЕСТО ИЗДАНИЯ",
-      "to": "ГОД ПУБЛИКАЦИИ",
-      "regex": "а,",
-      "occurrences": 25,
-      "documents": 13,
-      "support": 0.007409602845287492,
+      "regex": "и,",
+      "occurrences": 24,
+      "documents": 5,
+      "support": 0.008908685968819599,
       "weight": 0.0
     },
     {
@@ -2302,7 +1985,18 @@
       "regex": "л:",
       "occurrences": 24,
       "documents": 5,
-      "support": 0.007113218731475993,
+      "support": 0.008908685968819599,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "НАЗВАНИЕ",
+      "to": "АВТОРЫ",
+      "regex": "в\\s+/",
+      "occurrences": 23,
+      "documents": 8,
+      "support": 0.008537490720118782,
       "weight": 0.0
     },
     {
@@ -2311,9 +2005,31 @@
       "from": "АВТОРЫ",
       "to": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
       "regex": "а\\s+//",
-      "occurrences": 23,
-      "documents": 9,
-      "support": 0.006816834617664493,
+      "occurrences": 22,
+      "documents": 8,
+      "support": 0.008166295471417966,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
+      "to": "МЕСТО ИЗДАНИЯ",
+      "regex": "»\\.\\s+\\-",
+      "occurrences": 22,
+      "documents": 6,
+      "support": 0.008166295471417966,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "НАЗВАНИЕ",
+      "to": "АВТОРЫ",
+      "regex": "и\\s+/",
+      "occurrences": 21,
+      "documents": 4,
+      "support": 0.0077951002227171495,
       "weight": 0.0
     },
     {
@@ -2322,42 +2038,20 @@
       "from": "АВТОРЫ",
       "to": "НАЗВАНИЕ",
       "regex": "В",
-      "occurrences": 23,
-      "documents": 5,
-      "support": 0.006816834617664493,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НАЗВАНИЕ",
-      "to": "АВТОРЫ",
-      "regex": "м\\s+/",
-      "occurrences": 19,
-      "documents": 11,
-      "support": 0.005631298162418494,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НАЗВАНИЕ",
-      "to": "АВТОРЫ",
-      "regex": "й\\s+/",
-      "occurrences": 19,
-      "documents": 10,
-      "support": 0.005631298162418494,
+      "occurrences": 20,
+      "documents": 3,
+      "support": 0.007423904974016332,
       "weight": 0.0
     },
     {
       "name": "SEPARATOR",
       "type": "transition",
       "from": "МЕСТО ИЗДАНИЯ",
-      "to": "ИЗДАТЕЛЬСТВО",
-      "regex": "ь:",
-      "occurrences": 18,
-      "documents": 7,
-      "support": 0.005334914048606995,
+      "to": "ГОД ПУБЛИКАЦИИ",
+      "regex": "\\.,",
+      "occurrences": 20,
+      "documents": 4,
+      "support": 0.007423904974016332,
       "weight": 0.0
     },
     {
@@ -2368,7 +2062,51 @@
       "regex": "к",
       "occurrences": 18,
       "documents": 4,
-      "support": 0.005334914048606995,
+      "support": 0.0066815144766146995,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "НАЗВАНИЕ",
+      "to": "АВТОРЫ",
+      "regex": "а\\s+/",
+      "occurrences": 17,
+      "documents": 8,
+      "support": 0.006310319227913883,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "МЕСТО ИЗДАНИЯ",
+      "to": "ГОД ПУБЛИКАЦИИ",
+      "regex": "а,",
+      "occurrences": 17,
+      "documents": 9,
+      "support": 0.006310319227913883,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "НАЗВАНИЕ",
+      "to": "АВТОРЫ",
+      "regex": "м\\s+/",
+      "occurrences": 16,
+      "documents": 8,
+      "support": 0.005939123979213066,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "НАЗВАНИЕ",
+      "to": "АВТОРЫ",
+      "regex": "й\\s+/",
+      "occurrences": 15,
+      "documents": 8,
+      "support": 0.005567928730512249,
       "weight": 0.0
     },
     {
@@ -2377,20 +2115,20 @@
       "from": "МЕСТО ИЗДАНИЯ",
       "to": "ГОД ПУБЛИКАЦИИ",
       "regex": "ф,",
-      "occurrences": 16,
-      "documents": 4,
-      "support": 0.004742145820983995,
+      "occurrences": 15,
+      "documents": 3,
+      "support": 0.005567928730512249,
       "weight": 0.0
     },
     {
       "name": "SEPARATOR",
       "type": "transition",
-      "from": "ГОД ПУБЛИКАЦИИ",
-      "to": "СТРАНИЦЫ",
-      "regex": "2\\.",
-      "occurrences": 16,
-      "documents": 6,
-      "support": 0.004742145820983995,
+      "from": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
+      "to": "МЕСТО ИЗДАНИЯ",
+      "regex": "\\.\\s+\\-",
+      "occurrences": 15,
+      "documents": 5,
+      "support": 0.005567928730512249,
       "weight": 0.0
     },
     {
@@ -2401,18 +2139,7 @@
       "regex": "Е",
       "occurrences": 15,
       "documents": 1,
-      "support": 0.004445761707172495,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "ГОД ПУБЛИКАЦИИ",
-      "to": "СТРАНИЦЫ",
-      "regex": "1\\.\\s+\\-",
-      "occurrences": 15,
-      "documents": 7,
-      "support": 0.004445761707172495,
+      "support": 0.005567928730512249,
       "weight": 0.0
     },
     {
@@ -2423,29 +2150,7 @@
       "regex": "в\\s+//",
       "occurrences": 14,
       "documents": 4,
-      "support": 0.004149377593360996,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "МЕСТО ИЗДАНИЯ",
-      "to": "ИЗДАТЕЛЬСТВО",
-      "regex": "ж:",
-      "occurrences": 14,
-      "documents": 5,
-      "support": 0.004149377593360996,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "ИЗДАТЕЛЬСТВО",
-      "to": "ГОД ПУБЛИКАЦИИ",
-      "regex": "»,",
-      "occurrences": 14,
-      "documents": 8,
-      "support": 0.004149377593360996,
+      "support": 0.005196733481811433,
       "weight": 0.0
     },
     {
@@ -2456,7 +2161,7 @@
       "regex": "г:",
       "occurrences": 13,
       "documents": 2,
-      "support": 0.0038529934795494963,
+      "support": 0.004825538233110616,
       "weight": 0.0
     },
     {
@@ -2467,7 +2172,7 @@
       "regex": "И,",
       "occurrences": 13,
       "documents": 5,
-      "support": 0.0038529934795494963,
+      "support": 0.004825538233110616,
       "weight": 0.0
     },
     {
@@ -2478,7 +2183,7 @@
       "regex": "к:",
       "occurrences": 13,
       "documents": 5,
-      "support": 0.0038529934795494963,
+      "support": 0.004825538233110616,
       "weight": 0.0
     },
     {
@@ -2486,10 +2191,10 @@
       "type": "transition",
       "from": "ГОД ПУБЛИКАЦИИ",
       "to": "СТРАНИЦЫ",
-      "regex": "3\\.",
+      "regex": "2\\.",
       "occurrences": 13,
-      "documents": 6,
-      "support": 0.0038529934795494963,
+      "documents": 4,
+      "support": 0.004825538233110616,
       "weight": 0.0
     },
     {
@@ -2500,18 +2205,7 @@
       "regex": "в\\s+/",
       "occurrences": 13,
       "documents": 2,
-      "support": 0.0038529934795494963,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "АВТОРЫ",
-      "to": "НАЗВАНИЕ ЖУРНАЛА",
-      "regex": "н\\s+//",
-      "occurrences": 13,
-      "documents": 3,
-      "support": 0.0038529934795494963,
+      "support": 0.004825538233110616,
       "weight": 0.0
     },
     {
@@ -2522,18 +2216,7 @@
       "regex": "О",
       "occurrences": 13,
       "documents": 1,
-      "support": 0.0038529934795494963,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "МЕСТО ИЗДАНИЯ",
-      "to": "ГОД ПУБЛИКАЦИИ",
-      "regex": "ж,",
-      "occurrences": 12,
-      "documents": 6,
-      "support": 0.0035566093657379964,
+      "support": 0.004825538233110616,
       "weight": 0.0
     },
     {
@@ -2544,62 +2227,18 @@
       "regex": "М:",
       "occurrences": 12,
       "documents": 5,
-      "support": 0.0035566093657379964,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НАЗВАНИЕ",
-      "to": "НАЗВАНИЕ ЖУРНАЛА",
-      "regex": "а\\s+//",
-      "occurrences": 12,
-      "documents": 5,
-      "support": 0.0035566093657379964,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "АВТОРЫ",
-      "to": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
-      "regex": "а\\s+И",
-      "occurrences": 12,
-      "documents": 4,
-      "support": 0.0035566093657379964,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "ГОД ПУБЛИКАЦИИ",
-      "to": "СТРАНИЦЫ",
-      "regex": "0\\.",
-      "occurrences": 12,
-      "documents": 7,
-      "support": 0.0035566093657379964,
+      "support": 0.004454342984409799,
       "weight": 0.0
     },
     {
       "name": "SEPARATOR",
       "type": "transition",
       "from": "МЕСТО ИЗДАНИЯ",
-      "to": "ГОД ПУБЛИКАЦИИ",
-      "regex": "к,",
+      "to": "ИЗДАТЕЛЬСТВО",
+      "regex": "ь:",
       "occurrences": 12,
-      "documents": 8,
-      "support": 0.0035566093657379964,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НАЗВАНИЕ",
-      "to": "АВТОРЫ",
-      "regex": "х\\s+/",
-      "occurrences": 11,
-      "documents": 8,
-      "support": 0.003260225251926497,
+      "documents": 4,
+      "support": 0.004454342984409799,
       "weight": 0.0
     },
     {
@@ -2610,7 +2249,7 @@
       "regex": "»\\.",
       "occurrences": 11,
       "documents": 5,
-      "support": 0.003260225251926497,
+      "support": 0.004083147735708983,
       "weight": 0.0
     },
     {
@@ -2621,18 +2260,7 @@
       "regex": "А",
       "occurrences": 11,
       "documents": 4,
-      "support": 0.003260225251926497,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "ГОД ПУБЛИКАЦИИ",
-      "to": "СТРАНИЦЫ",
-      "regex": "8\\.\\s+\\-",
-      "occurrences": 11,
-      "documents": 4,
-      "support": 0.003260225251926497,
+      "support": 0.004083147735708983,
       "weight": 0.0
     },
     {
@@ -2640,10 +2268,54 @@
       "type": "transition",
       "from": "МЕСТО ИЗДАНИЯ",
       "to": "ИЗДАТЕЛЬСТВО",
-      "regex": "а\\s+:",
+      "regex": "ж:",
       "occurrences": 11,
+      "documents": 4,
+      "support": 0.004083147735708983,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "ИЗДАТЕЛЬСТВО",
+      "to": "ГОД ПУБЛИКАЦИИ",
+      "regex": "»,",
+      "occurrences": 11,
+      "documents": 6,
+      "support": 0.004083147735708983,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "АВТОРЫ",
+      "to": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
+      "regex": "а\\s+И",
+      "occurrences": 11,
+      "documents": 3,
+      "support": 0.004083147735708983,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "ГОД ПУБЛИКАЦИИ",
+      "to": "СТРАНИЦЫ",
+      "regex": "0\\.",
+      "occurrences": 11,
+      "documents": 6,
+      "support": 0.004083147735708983,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "МЕСТО ИЗДАНИЯ",
+      "to": "ГОД ПУБЛИКАЦИИ",
+      "regex": "ж,",
+      "occurrences": 10,
       "documents": 5,
-      "support": 0.003260225251926497,
+      "support": 0.003711952487008166,
       "weight": 0.0
     },
     {
@@ -2652,31 +2324,9 @@
       "from": "ИЗДАТЕЛЬСТВО",
       "to": "ГОД ПУБЛИКАЦИИ",
       "regex": "т,",
-      "occurrences": 11,
-      "documents": 6,
-      "support": 0.003260225251926497,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "ГОД ПУБЛИКАЦИИ",
-      "to": "СТРАНИЦЫ",
-      "regex": "1\\.",
-      "occurrences": 11,
+      "occurrences": 10,
       "documents": 5,
-      "support": 0.003260225251926497,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НАЗВАНИЕ",
-      "to": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
-      "regex": "й\\s+//",
-      "occurrences": 11,
-      "documents": 6,
-      "support": 0.003260225251926497,
+      "support": 0.003711952487008166,
       "weight": 0.0
     },
     {
@@ -2684,76 +2334,10 @@
       "type": "transition",
       "from": "МЕСТО ИЗДАНИЯ",
       "to": "ГОД ПУБЛИКАЦИИ",
-      "regex": "д,",
-      "occurrences": 10,
-      "documents": 5,
-      "support": 0.002963841138114997,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НАЗВАНИЕ",
-      "to": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
-      "regex": "а\\s+//",
-      "occurrences": 10,
-      "documents": 5,
-      "support": 0.002963841138114997,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "АВТОРЫ",
-      "to": "НАЗВАНИЕ ЖУРНАЛА",
-      "regex": "а\\s+И",
-      "occurrences": 10,
-      "documents": 3,
-      "support": 0.002963841138114997,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "ГОД ПУБЛИКАЦИИ",
-      "to": "СТРАНИЦЫ",
-      "regex": "4\\.",
-      "occurrences": 10,
-      "documents": 5,
-      "support": 0.002963841138114997,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "ГОД ПУБЛИКАЦИИ",
-      "to": "СТРАНИЦЫ",
-      "regex": "7\\.\\s+\\-",
+      "regex": "к,",
       "occurrences": 10,
       "documents": 6,
-      "support": 0.002963841138114997,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НАЗВАНИЕ",
-      "to": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
-      "regex": "и\\s+//",
-      "occurrences": 10,
-      "documents": 7,
-      "support": 0.002963841138114997,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "МЕСТО ИЗДАНИЯ",
-      "to": "ИЗДАТЕЛЬСТВО",
-      "regex": "М",
-      "occurrences": 10,
-      "documents": 2,
-      "support": 0.002963841138114997,
+      "support": 0.003711952487008166,
       "weight": 0.0
     },
     {
@@ -2764,29 +2348,7 @@
       "regex": "а",
       "occurrences": 10,
       "documents": 5,
-      "support": 0.002963841138114997,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "АВТОРЫ",
-      "to": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
-      "regex": "в\\s+//",
-      "occurrences": 10,
-      "documents": 6,
-      "support": 0.002963841138114997,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НАЗВАНИЕ",
-      "to": "АВТОРЫ",
-      "regex": "е\\s+/",
-      "occurrences": 9,
-      "documents": 5,
-      "support": 0.0026674570243034974,
+      "support": 0.003711952487008166,
       "weight": 0.0
     },
     {
@@ -2794,10 +2356,32 @@
       "type": "transition",
       "from": "ГОД ПУБЛИКАЦИИ",
       "to": "СТРАНИЦЫ",
-      "regex": "7\\.",
+      "regex": "1\\.\\s+\\-",
+      "occurrences": 10,
+      "documents": 4,
+      "support": 0.003711952487008166,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "НАЗВАНИЕ",
+      "to": "НАЗВАНИЕ ЖУРНАЛА",
+      "regex": "а\\s+//",
       "occurrences": 9,
-      "documents": 5,
-      "support": 0.0026674570243034974,
+      "documents": 4,
+      "support": 0.0033407572383073497,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "АВТОРЫ",
+      "to": "НАЗВАНИЕ ЖУРНАЛА",
+      "regex": "а\\s+И",
+      "occurrences": 9,
+      "documents": 2,
+      "support": 0.0033407572383073497,
       "weight": 0.0
     },
     {
@@ -2808,18 +2392,7 @@
       "regex": "о\\.\\s+\\-",
       "occurrences": 9,
       "documents": 1,
-      "support": 0.0026674570243034974,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "ГОД ПУБЛИКАЦИИ",
-      "to": "СТРАНИЦЫ",
-      "regex": "4\\.\\s+\\-",
-      "occurrences": 9,
-      "documents": 5,
-      "support": 0.0026674570243034974,
+      "support": 0.0033407572383073497,
       "weight": 0.0
     },
     {
@@ -2830,7 +2403,7 @@
       "regex": "\\.\\s+/",
       "occurrences": 9,
       "documents": 2,
-      "support": 0.0026674570243034974,
+      "support": 0.0033407572383073497,
       "weight": 0.0
     },
     {
@@ -2841,7 +2414,7 @@
       "regex": "Н,",
       "occurrences": 9,
       "documents": 3,
-      "support": 0.0026674570243034974,
+      "support": 0.0033407572383073497,
       "weight": 0.0
     },
     {
@@ -2852,18 +2425,18 @@
       "regex": "в\\s+\\[Текст\\]/",
       "occurrences": 9,
       "documents": 1,
-      "support": 0.0026674570243034974,
+      "support": 0.0033407572383073497,
       "weight": 0.0
     },
     {
       "name": "SEPARATOR",
       "type": "transition",
-      "from": "АВТОРЫ",
-      "to": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
-      "regex": "н\\s+//",
+      "from": "МЕСТО ИЗДАНИЯ",
+      "to": "ИЗДАТЕЛЬСТВО",
+      "regex": "М",
       "occurrences": 9,
-      "documents": 4,
-      "support": 0.0026674570243034974,
+      "documents": 1,
+      "support": 0.0033407572383073497,
       "weight": 0.0
     },
     {
@@ -2874,7 +2447,7 @@
       "regex": "л",
       "occurrences": 9,
       "documents": 2,
-      "support": 0.0026674570243034974,
+      "support": 0.0033407572383073497,
       "weight": 0.0
     },
     {
@@ -2885,18 +2458,18 @@
       "regex": "м\\s+//",
       "occurrences": 8,
       "documents": 3,
-      "support": 0.0023710729104919974,
+      "support": 0.002969561989606533,
       "weight": 0.0
     },
     {
       "name": "SEPARATOR",
       "type": "transition",
       "from": "НАЗВАНИЕ",
-      "to": "НАЗВАНИЕ ЖУРНАЛА",
-      "regex": "и\\s+//",
+      "to": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
+      "regex": "а\\s+//",
       "occurrences": 8,
-      "documents": 5,
-      "support": 0.0023710729104919974,
+      "documents": 3,
+      "support": 0.002969561989606533,
       "weight": 0.0
     },
     {
@@ -2907,7 +2480,7 @@
       "regex": "ы\\s+/",
       "occurrences": 8,
       "documents": 4,
-      "support": 0.0023710729104919974,
+      "support": 0.002969561989606533,
       "weight": 0.0
     },
     {
@@ -2915,10 +2488,10 @@
       "type": "transition",
       "from": "ГОД ПУБЛИКАЦИИ",
       "to": "СТРАНИЦЫ",
-      "regex": "2\\.\\s+\\-",
+      "regex": "8\\.\\s+\\-",
       "occurrences": 8,
-      "documents": 5,
-      "support": 0.0023710729104919974,
+      "documents": 3,
+      "support": 0.002969561989606533,
       "weight": 0.0
     },
     {
@@ -2929,7 +2502,29 @@
       "regex": "2\\.\\s+\\-",
       "occurrences": 8,
       "documents": 4,
-      "support": 0.0023710729104919974,
+      "support": 0.002969561989606533,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "ГОД ПУБЛИКАЦИИ",
+      "to": "СТРАНИЦЫ",
+      "regex": "4\\.\\s+\\-",
+      "occurrences": 8,
+      "documents": 4,
+      "support": 0.002969561989606533,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "ГОД ПУБЛИКАЦИИ",
+      "to": "СТРАНИЦЫ",
+      "regex": "1\\.",
+      "occurrences": 8,
+      "documents": 3,
+      "support": 0.002969561989606533,
       "weight": 0.0
     },
     {
@@ -2940,7 +2535,7 @@
       "regex": "\\)\\s+//",
       "occurrences": 8,
       "documents": 1,
-      "support": 0.0023710729104919974,
+      "support": 0.002969561989606533,
       "weight": 0.0
     },
     {
@@ -2951,18 +2546,7 @@
       "regex": "м",
       "occurrences": 8,
       "documents": 1,
-      "support": 0.0023710729104919974,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "ГОД ПУБЛИКАЦИИ",
-      "to": "СТРАНИЦЫ",
-      "regex": "6\\.",
-      "occurrences": 8,
-      "documents": 4,
-      "support": 0.0023710729104919974,
+      "support": 0.002969561989606533,
       "weight": 0.0
     },
     {
@@ -2973,29 +2557,7 @@
       "regex": "Г",
       "occurrences": 8,
       "documents": 3,
-      "support": 0.0023710729104919974,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "МЕСТО ИЗДАНИЯ",
-      "to": "ИЗДАТЕЛЬСТВО",
-      "regex": "в:",
-      "occurrences": 8,
-      "documents": 2,
-      "support": 0.0023710729104919974,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "МЕСТО ИЗДАНИЯ",
-      "to": "ГОД ПУБЛИКАЦИИ",
-      "regex": "ь,",
-      "occurrences": 7,
-      "documents": 6,
-      "support": 0.002074688796680498,
+      "support": 0.002969561989606533,
       "weight": 0.0
     },
     {
@@ -3003,32 +2565,10 @@
       "type": "transition",
       "from": "НАЗВАНИЕ",
       "to": "НАЗВАНИЕ ЖУРНАЛА",
-      "regex": "и//",
+      "regex": "и\\s+//",
       "occurrences": 7,
-      "documents": 3,
-      "support": 0.002074688796680498,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
-      "to": "МЕСТО ИЗДАНИЯ",
-      "regex": "\\.",
-      "occurrences": 7,
-      "documents": 6,
-      "support": 0.002074688796680498,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НАЗВАНИЕ",
-      "to": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
-      "regex": "е\\s+//",
-      "occurrences": 7,
-      "documents": 5,
-      "support": 0.002074688796680498,
+      "documents": 4,
+      "support": 0.0025983667409057165,
       "weight": 0.0
     },
     {
@@ -3039,18 +2579,7 @@
       "regex": "и\\.\\s+\\-",
       "occurrences": 7,
       "documents": 4,
-      "support": 0.002074688796680498,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НАЗВАНИЕ",
-      "to": "НАЗВАНИЕ ЖУРНАЛА",
-      "regex": "в\\s+//",
-      "occurrences": 7,
-      "documents": 5,
-      "support": 0.002074688796680498,
+      "support": 0.0025983667409057165,
       "weight": 0.0
     },
     {
@@ -3061,7 +2590,7 @@
       "regex": "я\\s+//",
       "occurrences": 7,
       "documents": 5,
-      "support": 0.002074688796680498,
+      "support": 0.0025983667409057165,
       "weight": 0.0
     },
     {
@@ -3072,7 +2601,18 @@
       "regex": "5\\.\\s+\\-",
       "occurrences": 7,
       "documents": 3,
-      "support": 0.002074688796680498,
+      "support": 0.0025983667409057165,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "МЕСТО ИЗДАНИЯ",
+      "to": "ИЗДАТЕЛЬСТВО",
+      "regex": "а\\s+:",
+      "occurrences": 7,
+      "documents": 3,
+      "support": 0.0025983667409057165,
       "weight": 0.0
     },
     {
@@ -3080,10 +2620,10 @@
       "type": "transition",
       "from": "ГОД ПУБЛИКАЦИИ",
       "to": "СТРАНИЦЫ",
-      "regex": "9\\.",
+      "regex": "2\\.\\s+\\-",
       "occurrences": 7,
       "documents": 4,
-      "support": 0.002074688796680498,
+      "support": 0.0025983667409057165,
       "weight": 0.0
     },
     {
@@ -3091,21 +2631,21 @@
       "type": "transition",
       "from": "ГОД ПУБЛИКАЦИИ",
       "to": "СТРАНИЦЫ",
-      "regex": "6\\.\\s+\\-",
+      "regex": "7\\.\\s+\\-",
+      "occurrences": 7,
+      "documents": 5,
+      "support": 0.0025983667409057165,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "НАЗВАНИЕ",
+      "to": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
+      "regex": "и\\s+//",
       "occurrences": 7,
       "documents": 4,
-      "support": 0.002074688796680498,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НАЗВАНИЕ ЖУРНАЛА",
-      "to": "ГОД ПУБЛИКАЦИИ",
-      "regex": "е\\.\\s+\\-",
-      "occurrences": 7,
-      "documents": 3,
-      "support": 0.002074688796680498,
+      "support": 0.0025983667409057165,
       "weight": 0.0
     },
     {
@@ -3113,32 +2653,32 @@
       "type": "transition",
       "from": "ГОД ПУБЛИКАЦИИ",
       "to": "СТРАНИЦЫ",
-      "regex": "8\\.",
+      "regex": "3\\.",
       "occurrences": 7,
       "documents": 3,
-      "support": 0.002074688796680498,
+      "support": 0.0025983667409057165,
       "weight": 0.0
     },
     {
       "name": "SEPARATOR",
       "type": "transition",
-      "from": "АВТОРЫ",
-      "to": "НАЗВАНИЕ",
-      "regex": "Н",
+      "from": "ГОД ПУБЛИКАЦИИ",
+      "to": "СТРАНИЦЫ",
+      "regex": "6\\.",
       "occurrences": 7,
       "documents": 3,
-      "support": 0.002074688796680498,
+      "support": 0.0025983667409057165,
       "weight": 0.0
     },
     {
       "name": "SEPARATOR",
       "type": "transition",
-      "from": "ИЗДАТЕЛЬСТВО",
-      "to": "ГОД ПУБЛИКАЦИИ",
-      "regex": "У\\.",
+      "from": "НАЗВАНИЕ",
+      "to": "АВТОРЫ",
+      "regex": "х\\s+/",
       "occurrences": 6,
-      "documents": 2,
-      "support": 0.0017783046828689982,
+      "documents": 5,
+      "support": 0.0022271714922048997,
       "weight": 0.0
     },
     {
@@ -3149,7 +2689,18 @@
       "regex": "и",
       "occurrences": 6,
       "documents": 3,
-      "support": 0.0017783046828689982,
+      "support": 0.0022271714922048997,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "НАЗВАНИЕ",
+      "to": "АВТОРЫ",
+      "regex": "е\\s+/",
+      "occurrences": 6,
+      "documents": 3,
+      "support": 0.0022271714922048997,
       "weight": 0.0
     },
     {
@@ -3160,7 +2711,18 @@
       "regex": "и\\.\\s+\\-",
       "occurrences": 6,
       "documents": 4,
-      "support": 0.0017783046828689982,
+      "support": 0.0022271714922048997,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "ГОД ПУБЛИКАЦИИ",
+      "to": "СТРАНИЦЫ",
+      "regex": "7\\.",
+      "occurrences": 6,
+      "documents": 4,
+      "support": 0.0022271714922048997,
       "weight": 0.0
     },
     {
@@ -3171,18 +2733,7 @@
       "regex": "3\\.\\s+\\-",
       "occurrences": 6,
       "documents": 3,
-      "support": 0.0017783046828689982,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "ИЗДАТЕЛЬСТВО",
-      "to": "ГОД ПУБЛИКАЦИИ",
-      "regex": "З,",
-      "occurrences": 6,
-      "documents": 2,
-      "support": 0.0017783046828689982,
+      "support": 0.0022271714922048997,
       "weight": 0.0
     },
     {
@@ -3193,18 +2744,7 @@
       "regex": "5\\.\\s+\\-",
       "occurrences": 6,
       "documents": 2,
-      "support": 0.0017783046828689982,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "ГОД ПУБЛИКАЦИИ",
-      "to": "НОМЕР",
-      "regex": "2\\.\\s+\\-",
-      "occurrences": 6,
-      "documents": 4,
-      "support": 0.0017783046828689982,
+      "support": 0.0022271714922048997,
       "weight": 0.0
     },
     {
@@ -3215,18 +2755,18 @@
       "regex": "а\\s+/",
       "occurrences": 6,
       "documents": 2,
-      "support": 0.0017783046828689982,
+      "support": 0.0022271714922048997,
       "weight": 0.0
     },
     {
       "name": "SEPARATOR",
       "type": "transition",
-      "from": "НАЗВАНИЕ",
-      "to": "НАЗВАНИЕ ЖУРНАЛА",
-      "regex": "а//",
+      "from": "ГОД ПУБЛИКАЦИИ",
+      "to": "СТРАНИЦЫ",
+      "regex": "9\\.",
       "occurrences": 6,
-      "documents": 4,
-      "support": 0.0017783046828689982,
+      "documents": 3,
+      "support": 0.0022271714922048997,
       "weight": 0.0
     },
     {
@@ -3237,7 +2777,7 @@
       "regex": "У",
       "occurrences": 6,
       "documents": 5,
-      "support": 0.0017783046828689982,
+      "support": 0.0022271714922048997,
       "weight": 0.0
     },
     {
@@ -3248,18 +2788,7 @@
       "regex": "\\.",
       "occurrences": 6,
       "documents": 3,
-      "support": 0.0017783046828689982,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "ТОМ",
-      "to": "СТРАНИЦЫ",
-      "regex": "1\\.",
-      "occurrences": 6,
-      "documents": 4,
-      "support": 0.0017783046828689982,
+      "support": 0.0022271714922048997,
       "weight": 0.0
     },
     {
@@ -3270,7 +2799,7 @@
       "regex": "1\\.",
       "occurrences": 6,
       "documents": 2,
-      "support": 0.0017783046828689982,
+      "support": 0.0022271714922048997,
       "weight": 0.0
     },
     {
@@ -3281,7 +2810,7 @@
       "regex": "3\\.",
       "occurrences": 6,
       "documents": 4,
-      "support": 0.0017783046828689982,
+      "support": 0.0022271714922048997,
       "weight": 0.0
     },
     {
@@ -3292,7 +2821,7 @@
       "regex": "0\\.",
       "occurrences": 6,
       "documents": 1,
-      "support": 0.0017783046828689982,
+      "support": 0.0022271714922048997,
       "weight": 0.0
     },
     {
@@ -3303,7 +2832,7 @@
       "regex": "С",
       "occurrences": 6,
       "documents": 2,
-      "support": 0.0017783046828689982,
+      "support": 0.0022271714922048997,
       "weight": 0.0
     },
     {
@@ -3311,21 +2840,10 @@
       "type": "transition",
       "from": "ГОД ПУБЛИКАЦИИ",
       "to": "СТРАНИЦЫ",
-      "regex": "3",
+      "regex": "6\\.\\s+\\-",
       "occurrences": 6,
       "documents": 3,
-      "support": 0.0017783046828689982,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "АВТОРЫ",
-      "to": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
-      "regex": "в\\s+И",
-      "occurrences": 6,
-      "documents": 3,
-      "support": 0.0017783046828689982,
+      "support": 0.0022271714922048997,
       "weight": 0.0
     },
     {
@@ -3336,18 +2854,7 @@
       "regex": "6\\s+\\-",
       "occurrences": 6,
       "documents": 4,
-      "support": 0.0017783046828689982,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "АВТОРЫ",
-      "to": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
-      "regex": "й\\s+И",
-      "occurrences": 6,
-      "documents": 3,
-      "support": 0.0017783046828689982,
+      "support": 0.0022271714922048997,
       "weight": 0.0
     },
     {
@@ -3358,18 +2865,29 @@
       "regex": "у,",
       "occurrences": 6,
       "documents": 1,
-      "support": 0.0017783046828689982,
+      "support": 0.0022271714922048997,
       "weight": 0.0
     },
     {
       "name": "SEPARATOR",
       "type": "transition",
-      "from": "НАЗВАНИЕ ЖУРНАЛА",
+      "from": "МЕСТО ИЗДАНИЯ",
       "to": "ГОД ПУБЛИКАЦИИ",
-      "regex": "\\.",
+      "regex": "ь,",
       "occurrences": 5,
-      "documents": 3,
-      "support": 0.0014819205690574985,
+      "documents": 4,
+      "support": 0.001855976243504083,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "НАЗВАНИЕ",
+      "to": "НАЗВАНИЕ ЖУРНАЛА",
+      "regex": "и//",
+      "occurrences": 5,
+      "documents": 2,
+      "support": 0.001855976243504083,
       "weight": 0.0
     },
     {
@@ -3380,7 +2898,18 @@
       "regex": "я\\s+//",
       "occurrences": 5,
       "documents": 4,
-      "support": 0.0014819205690574985,
+      "support": 0.001855976243504083,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "НАЗВАНИЕ",
+      "to": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
+      "regex": "е\\s+//",
+      "occurrences": 5,
+      "documents": 3,
+      "support": 0.001855976243504083,
       "weight": 0.0
     },
     {
@@ -3391,18 +2920,7 @@
       "regex": "и/",
       "occurrences": 5,
       "documents": 3,
-      "support": 0.0014819205690574985,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НАЗВАНИЕ ЖУРНАЛА",
-      "to": "ГОД ПУБЛИКАЦИИ",
-      "regex": "я\\.",
-      "occurrences": 5,
-      "documents": 4,
-      "support": 0.0014819205690574985,
+      "support": 0.001855976243504083,
       "weight": 0.0
     },
     {
@@ -3413,7 +2931,7 @@
       "regex": "и\\.\\s+\\-",
       "occurrences": 5,
       "documents": 4,
-      "support": 0.0014819205690574985,
+      "support": 0.001855976243504083,
       "weight": 0.0
     },
     {
@@ -3424,29 +2942,7 @@
       "regex": "я»\\.",
       "occurrences": 5,
       "documents": 1,
-      "support": 0.0014819205690574985,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "ГОД ПУБЛИКАЦИИ",
-      "to": "НОМЕР",
-      "regex": "8\\.\\s+\\-",
-      "occurrences": 5,
-      "documents": 3,
-      "support": 0.0014819205690574985,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НАЗВАНИЕ ЖУРНАЛА",
-      "to": "МЕСТО ИЗДАНИЯ",
-      "regex": "\\.\\s+\\-",
-      "occurrences": 5,
-      "documents": 3,
-      "support": 0.0014819205690574985,
+      "support": 0.001855976243504083,
       "weight": 0.0
     },
     {
@@ -3457,7 +2953,7 @@
       "regex": "и",
       "occurrences": 5,
       "documents": 3,
-      "support": 0.0014819205690574985,
+      "support": 0.001855976243504083,
       "weight": 0.0
     },
     {
@@ -3468,29 +2964,7 @@
       "regex": "а\\s+/",
       "occurrences": 5,
       "documents": 3,
-      "support": 0.0014819205690574985,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НОМЕР",
-      "to": "СТРАНИЦЫ",
-      "regex": "4\\.\\s+\\-",
-      "occurrences": 5,
-      "documents": 3,
-      "support": 0.0014819205690574985,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "ГОД ПУБЛИКАЦИИ",
-      "to": "НОМЕР",
-      "regex": "7\\.\\s+\\-",
-      "occurrences": 5,
-      "documents": 4,
-      "support": 0.0014819205690574985,
+      "support": 0.001855976243504083,
       "weight": 0.0
     },
     {
@@ -3498,10 +2972,10 @@
       "type": "transition",
       "from": "ИЗДАТЕЛЬСТВО",
       "to": "ГОД ПУБЛИКАЦИИ",
-      "regex": "Ц,",
+      "regex": "З,",
       "occurrences": 5,
-      "documents": 2,
-      "support": 0.0014819205690574985,
+      "documents": 1,
+      "support": 0.001855976243504083,
       "weight": 0.0
     },
     {
@@ -3512,7 +2986,29 @@
       "regex": "л,",
       "occurrences": 5,
       "documents": 3,
-      "support": 0.0014819205690574985,
+      "support": 0.001855976243504083,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "ТОМ",
+      "to": "СТРАНИЦЫ",
+      "regex": "1\\.",
+      "occurrences": 5,
+      "documents": 3,
+      "support": 0.001855976243504083,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "НАЗВАНИЕ",
+      "to": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
+      "regex": "й\\s+//",
+      "occurrences": 5,
+      "documents": 3,
+      "support": 0.001855976243504083,
       "weight": 0.0
     },
     {
@@ -3523,7 +3019,18 @@
       "regex": "7",
       "occurrences": 5,
       "documents": 3,
-      "support": 0.0014819205690574985,
+      "support": 0.001855976243504083,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "ГОД ПУБЛИКАЦИИ",
+      "to": "СТРАНИЦЫ",
+      "regex": "3",
+      "occurrences": 5,
+      "documents": 2,
+      "support": 0.001855976243504083,
       "weight": 0.0
     },
     {
@@ -3534,7 +3041,7 @@
       "regex": "4",
       "occurrences": 5,
       "documents": 3,
-      "support": 0.0014819205690574985,
+      "support": 0.001855976243504083,
       "weight": 0.0
     },
     {
@@ -3545,18 +3052,7 @@
       "regex": "ф\\s+\\-",
       "occurrences": 5,
       "documents": 3,
-      "support": 0.0014819205690574985,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НАЗВАНИЕ",
-      "to": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
-      "regex": "я\\.//",
-      "occurrences": 5,
-      "documents": 2,
-      "support": 0.0014819205690574985,
+      "support": 0.001855976243504083,
       "weight": 0.0
     },
     {
@@ -3567,7 +3063,18 @@
       "regex": "а//",
       "occurrences": 5,
       "documents": 2,
-      "support": 0.0014819205690574985,
+      "support": 0.001855976243504083,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "НАЗВАНИЕ ЖУРНАЛА",
+      "to": "ГОД ПУБЛИКАЦИИ",
+      "regex": "е\\.\\s+\\-",
+      "occurrences": 5,
+      "documents": 2,
+      "support": 0.001855976243504083,
       "weight": 0.0
     },
     {
@@ -3578,7 +3085,18 @@
       "regex": "О\\.\\s+\\-",
       "occurrences": 5,
       "documents": 2,
-      "support": 0.0014819205690574985,
+      "support": 0.001855976243504083,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "АВТОРЫ",
+      "to": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
+      "regex": "н\\s+//",
+      "occurrences": 5,
+      "documents": 2,
+      "support": 0.001855976243504083,
       "weight": 0.0
     },
     {
@@ -3589,18 +3107,40 @@
       "regex": "и\\s+/",
       "occurrences": 5,
       "documents": 2,
-      "support": 0.0014819205690574985,
+      "support": 0.001855976243504083,
       "weight": 0.0
     },
     {
       "name": "SEPARATOR",
       "type": "transition",
-      "from": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
-      "to": "МЕСТО ИЗДАНИЯ",
-      "regex": "\\.\\s+—",
+      "from": "АВТОРЫ",
+      "to": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
+      "regex": "в\\s+//",
       "occurrences": 5,
-      "documents": 3,
-      "support": 0.0014819205690574985,
+      "documents": 4,
+      "support": 0.001855976243504083,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "ГОД ПУБЛИКАЦИИ",
+      "to": "СТРАНИЦЫ",
+      "regex": "8\\.",
+      "occurrences": 5,
+      "documents": 2,
+      "support": 0.001855976243504083,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "АВТОРЫ",
+      "to": "НАЗВАНИЕ",
+      "regex": "Н",
+      "occurrences": 5,
+      "documents": 2,
+      "support": 0.001855976243504083,
       "weight": 0.0
     },
     {
@@ -3611,7 +3151,7 @@
       "regex": "7",
       "occurrences": 5,
       "documents": 4,
-      "support": 0.0014819205690574985,
+      "support": 0.001855976243504083,
       "weight": 0.0
     },
     {
@@ -3622,18 +3162,7 @@
       "regex": "й\\s+//",
       "occurrences": 5,
       "documents": 2,
-      "support": 0.0014819205690574985,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "ГОД ПУБЛИКАЦИИ",
-      "to": "СТРАНИЦЫ",
-      "regex": "3\\.\\s+\\-",
-      "occurrences": 5,
-      "documents": 3,
-      "support": 0.0014819205690574985,
+      "support": 0.001855976243504083,
       "weight": 0.0
     },
     {
@@ -3644,7 +3173,7 @@
       "regex": "А\\.\\s+\\-",
       "occurrences": 5,
       "documents": 1,
-      "support": 0.0014819205690574985,
+      "support": 0.001855976243504083,
       "weight": 0.0
     },
     {
@@ -3655,18 +3184,7 @@
       "regex": "н//",
       "occurrences": 5,
       "documents": 1,
-      "support": 0.0014819205690574985,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "МЕСТО ИЗДАНИЯ",
-      "to": "ГОД ПУБЛИКАЦИИ",
-      "regex": "а",
-      "occurrences": 4,
-      "documents": 3,
-      "support": 0.0011855364552459987,
+      "support": 0.001855976243504083,
       "weight": 0.0
     },
     {
@@ -3677,7 +3195,29 @@
       "regex": "и\\s+И",
       "occurrences": 4,
       "documents": 2,
-      "support": 0.0011855364552459987,
+      "support": 0.0014847809948032665,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
+      "to": "МЕСТО ИЗДАНИЯ",
+      "regex": "\\.",
+      "occurrences": 4,
+      "documents": 3,
+      "support": 0.0014847809948032665,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "МЕСТО ИЗДАНИЯ",
+      "to": "ГОД ПУБЛИКАЦИИ",
+      "regex": "д,",
+      "occurrences": 4,
+      "documents": 3,
+      "support": 0.0014847809948032665,
       "weight": 0.0
     },
     {
@@ -3688,18 +3228,7 @@
       "regex": "9\\.\\s+\\-\\s+С\\.",
       "occurrences": 4,
       "documents": 1,
-      "support": 0.0011855364552459987,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "АВТОРЫ",
-      "to": "НАЗВАНИЕ",
-      "regex": "\\.,",
-      "occurrences": 4,
-      "documents": 3,
-      "support": 0.0011855364552459987,
+      "support": 0.0014847809948032665,
       "weight": 0.0
     },
     {
@@ -3710,18 +3239,7 @@
       "regex": "я\\s+И",
       "occurrences": 4,
       "documents": 3,
-      "support": 0.0011855364552459987,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "ИЗДАТЕЛЬСТВО",
-      "to": "ГОД ПУБЛИКАЦИИ",
-      "regex": "С,",
-      "occurrences": 4,
-      "documents": 3,
-      "support": 0.0011855364552459987,
+      "support": 0.0014847809948032665,
       "weight": 0.0
     },
     {
@@ -3729,10 +3247,10 @@
       "type": "transition",
       "from": "НАЗВАНИЕ ЖУРНАЛА",
       "to": "ГОД ПУБЛИКАЦИИ",
-      "regex": "я\\.\\s+\\-",
+      "regex": "я\\.",
       "occurrences": 4,
-      "documents": 2,
-      "support": 0.0011855364552459987,
+      "documents": 3,
+      "support": 0.0014847809948032665,
       "weight": 0.0
     },
     {
@@ -3743,18 +3261,7 @@
       "regex": "е\\.\\s+\\-",
       "occurrences": 4,
       "documents": 2,
-      "support": 0.0011855364552459987,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НОМЕР",
-      "to": "СТРАНИЦЫ",
-      "regex": "3\\.",
-      "occurrences": 4,
-      "documents": 4,
-      "support": 0.0011855364552459987,
+      "support": 0.0014847809948032665,
       "weight": 0.0
     },
     {
@@ -3765,7 +3272,7 @@
       "regex": "я",
       "occurrences": 4,
       "documents": 3,
-      "support": 0.0011855364552459987,
+      "support": 0.0014847809948032665,
       "weight": 0.0
     },
     {
@@ -3776,29 +3283,7 @@
       "regex": "а\\.\\s+\\-",
       "occurrences": 4,
       "documents": 1,
-      "support": 0.0011855364552459987,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НОМЕР",
-      "to": "СТРАНИЦЫ",
-      "regex": "2\\.",
-      "occurrences": 4,
-      "documents": 3,
-      "support": 0.0011855364552459987,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "ГОД ПУБЛИКАЦИИ",
-      "to": "НОМЕР",
-      "regex": "1\\.\\s+\\-",
-      "occurrences": 4,
-      "documents": 3,
-      "support": 0.0011855364552459987,
+      "support": 0.0014847809948032665,
       "weight": 0.0
     },
     {
@@ -3809,7 +3294,7 @@
       "regex": "6\\.\\s+\\-",
       "occurrences": 4,
       "documents": 3,
-      "support": 0.0011855364552459987,
+      "support": 0.0014847809948032665,
       "weight": 0.0
     },
     {
@@ -3817,10 +3302,21 @@
       "type": "transition",
       "from": "НОМЕР",
       "to": "СТРАНИЦЫ",
-      "regex": "1\\.\\s+\\-",
+      "regex": "4\\.\\s+\\-",
+      "occurrences": 4,
+      "documents": 2,
+      "support": 0.0014847809948032665,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "ГОД ПУБЛИКАЦИИ",
+      "to": "НОМЕР",
+      "regex": "7\\.\\s+\\-",
       "occurrences": 4,
       "documents": 3,
-      "support": 0.0011855364552459987,
+      "support": 0.0014847809948032665,
       "weight": 0.0
     },
     {
@@ -3831,18 +3327,29 @@
       "regex": "к\\s+/",
       "occurrences": 4,
       "documents": 1,
-      "support": 0.0011855364552459987,
+      "support": 0.0014847809948032665,
       "weight": 0.0
     },
     {
       "name": "SEPARATOR",
       "type": "transition",
-      "from": "ГОД ПУБЛИКАЦИИ",
-      "to": "НОМЕР",
-      "regex": "4,",
+      "from": "ИЗДАТЕЛЬСТВО",
+      "to": "ГОД ПУБЛИКАЦИИ",
+      "regex": "Ц,",
       "occurrences": 4,
-      "documents": 2,
-      "support": 0.0011855364552459987,
+      "documents": 1,
+      "support": 0.0014847809948032665,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "НАЗВАНИЕ",
+      "to": "НАЗВАНИЕ ЖУРНАЛА",
+      "regex": "а//",
+      "occurrences": 4,
+      "documents": 3,
+      "support": 0.0014847809948032665,
       "weight": 0.0
     },
     {
@@ -3853,7 +3360,7 @@
       "regex": "и\\s+\\-",
       "occurrences": 4,
       "documents": 2,
-      "support": 0.0011855364552459987,
+      "support": 0.0014847809948032665,
       "weight": 0.0
     },
     {
@@ -3864,7 +3371,7 @@
       "regex": "а\\.\\s+//",
       "occurrences": 4,
       "documents": 3,
-      "support": 0.0011855364552459987,
+      "support": 0.0014847809948032665,
       "weight": 0.0
     },
     {
@@ -3875,7 +3382,7 @@
       "regex": "\\.\\s+\\(осенняя\\s+сессия\\)\\.",
       "occurrences": 4,
       "documents": 1,
-      "support": 0.0011855364552459987,
+      "support": 0.0014847809948032665,
       "weight": 0.0
     },
     {
@@ -3886,7 +3393,7 @@
       "regex": "4\\.",
       "occurrences": 4,
       "documents": 1,
-      "support": 0.0011855364552459987,
+      "support": 0.0014847809948032665,
       "weight": 0.0
     },
     {
@@ -3897,7 +3404,7 @@
       "regex": "1",
       "occurrences": 4,
       "documents": 3,
-      "support": 0.0011855364552459987,
+      "support": 0.0014847809948032665,
       "weight": 0.0
     },
     {
@@ -3908,7 +3415,7 @@
       "regex": "»\\s+\\-",
       "occurrences": 4,
       "documents": 1,
-      "support": 0.0011855364552459987,
+      "support": 0.0014847809948032665,
       "weight": 0.0
     },
     {
@@ -3919,7 +3426,7 @@
       "regex": "т",
       "occurrences": 4,
       "documents": 1,
-      "support": 0.0011855364552459987,
+      "support": 0.0014847809948032665,
       "weight": 0.0
     },
     {
@@ -3930,7 +3437,7 @@
       "regex": "2",
       "occurrences": 4,
       "documents": 3,
-      "support": 0.0011855364552459987,
+      "support": 0.0014847809948032665,
       "weight": 0.0
     },
     {
@@ -3941,7 +3448,7 @@
       "regex": "6",
       "occurrences": 4,
       "documents": 3,
-      "support": 0.0011855364552459987,
+      "support": 0.0014847809948032665,
       "weight": 0.0
     },
     {
@@ -3952,7 +3459,18 @@
       "regex": "5\\.\\s+\\-",
       "occurrences": 4,
       "documents": 3,
-      "support": 0.0011855364552459987,
+      "support": 0.0014847809948032665,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "НАЗВАНИЕ",
+      "to": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
+      "regex": "я\\.//",
+      "occurrences": 4,
+      "documents": 1,
+      "support": 0.0014847809948032665,
       "weight": 0.0
     },
     {
@@ -3963,7 +3481,7 @@
       "regex": "а",
       "occurrences": 4,
       "documents": 2,
-      "support": 0.0011855364552459987,
+      "support": 0.0014847809948032665,
       "weight": 0.0
     },
     {
@@ -3974,18 +3492,7 @@
       "regex": "й\\s+//",
       "occurrences": 4,
       "documents": 3,
-      "support": 0.0011855364552459987,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НАЗВАНИЕ",
-      "to": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
-      "regex": "в\\s+//",
-      "occurrences": 4,
-      "documents": 3,
-      "support": 0.0011855364552459987,
+      "support": 0.0014847809948032665,
       "weight": 0.0
     },
     {
@@ -3993,10 +3500,10 @@
       "type": "transition",
       "from": "ГОД ПУБЛИКАЦИИ",
       "to": "СТРАНИЦЫ",
-      "regex": "2\\s+г\\.,",
+      "regex": "3\\.\\s+\\-",
       "occurrences": 4,
       "documents": 2,
-      "support": 0.0011855364552459987,
+      "support": 0.0014847809948032665,
       "weight": 0.0
     },
     {
@@ -4007,18 +3514,18 @@
       "regex": "\\.:",
       "occurrences": 4,
       "documents": 1,
-      "support": 0.0011855364552459987,
+      "support": 0.0014847809948032665,
       "weight": 0.0
     },
     {
       "name": "SEPARATOR",
       "type": "transition",
-      "from": "АВТОРЫ",
-      "to": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
-      "regex": "и\\s+//",
+      "from": "МЕСТО ИЗДАНИЯ",
+      "to": "ИЗДАТЕЛЬСТВО",
+      "regex": "в:",
       "occurrences": 4,
       "documents": 1,
-      "support": 0.0011855364552459987,
+      "support": 0.0014847809948032665,
       "weight": 0.0
     },
     {
@@ -4029,7 +3536,7 @@
       "regex": "И",
       "occurrences": 3,
       "documents": 2,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4040,7 +3547,7 @@
       "regex": "л\\.\\s+\\-",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4051,7 +3558,18 @@
       "regex": "а\\s+\\-",
       "occurrences": 3,
       "documents": 2,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "МЕСТО ИЗДАНИЯ",
+      "to": "ГОД ПУБЛИКАЦИИ",
+      "regex": "а",
+      "occurrences": 3,
+      "documents": 2,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4062,29 +3580,7 @@
       "regex": "У\\.\\-",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0008891523414344991,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НАЗВАНИЕ ЖУРНАЛА",
-      "to": "МЕСТО ИЗДАНИЯ",
-      "regex": "и\\.",
-      "occurrences": 3,
-      "documents": 3,
-      "support": 0.0008891523414344991,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
-      "to": "МЕСТО ИЗДАНИЯ",
-      "regex": "»,",
-      "occurrences": 3,
-      "documents": 2,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4095,7 +3591,7 @@
       "regex": "8\\.",
       "occurrences": 3,
       "documents": 2,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4106,7 +3602,18 @@
       "regex": "и",
       "occurrences": 3,
       "documents": 2,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "АВТОРЫ",
+      "to": "НАЗВАНИЕ",
+      "regex": "\\.,",
+      "occurrences": 3,
+      "documents": 2,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4117,7 +3624,7 @@
       "regex": "ы\\s+//",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4128,7 +3635,7 @@
       "regex": "0\\.\\s+\\-\\s+С\\.",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4139,18 +3646,18 @@
       "regex": "е\\s+//",
       "occurrences": 3,
       "documents": 2,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
       "name": "SEPARATOR",
       "type": "transition",
-      "from": "НАЗВАНИЕ",
-      "to": "НАЗВАНИЕ ЖУРНАЛА",
-      "regex": "а\\s+И",
+      "from": "НАЗВАНИЕ ЖУРНАЛА",
+      "to": "ГОД ПУБЛИКАЦИИ",
+      "regex": "я\\.\\s+\\-",
       "occurrences": 3,
-      "documents": 2,
-      "support": 0.0008891523414344991,
+      "documents": 1,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4161,7 +3668,7 @@
       "regex": "а;",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4172,29 +3679,18 @@
       "regex": "\\.\\s+\\-",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
       "name": "SEPARATOR",
       "type": "transition",
-      "from": "ИЗДАТЕЛЬСТВО",
-      "to": "МЕСТО ИЗДАНИЯ",
-      "regex": "\\.\\s+\\-",
+      "from": "НОМЕР",
+      "to": "СТРАНИЦЫ",
+      "regex": "3\\.",
       "occurrences": 3,
       "documents": 3,
-      "support": 0.0008891523414344991,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "ИЗДАТЕЛЬСТВО",
-      "to": "ГОД ПУБЛИКАЦИИ",
-      "regex": "м,",
-      "occurrences": 3,
-      "documents": 2,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4202,10 +3698,21 @@
       "type": "transition",
       "from": "ГОД ПУБЛИКАЦИИ",
       "to": "НОМЕР",
-      "regex": "9\\.",
+      "regex": "8\\.\\s+\\-",
       "occurrences": 3,
       "documents": 2,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "НАЗВАНИЕ ЖУРНАЛА",
+      "to": "МЕСТО ИЗДАНИЯ",
+      "regex": "\\.\\s+\\-",
+      "occurrences": 3,
+      "documents": 2,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4216,40 +3723,7 @@
       "regex": "к\\s+:",
       "occurrences": 3,
       "documents": 2,
-      "support": 0.0008891523414344991,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НАЗВАНИЕ",
-      "to": "АВТОРЫ",
-      "regex": "s\\s+/",
-      "occurrences": 3,
-      "documents": 3,
-      "support": 0.0008891523414344991,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "ГОД ПУБЛИКАЦИИ",
-      "to": "СТРАНИЦЫ",
-      "regex": "0\\.\\s+\\-",
-      "occurrences": 3,
-      "documents": 3,
-      "support": 0.0008891523414344991,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "ГОД ПУБЛИКАЦИИ",
-      "to": "НОМЕР",
-      "regex": "7\\.",
-      "occurrences": 3,
-      "documents": 2,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4257,32 +3731,21 @@
       "type": "transition",
       "from": "НОМЕР",
       "to": "СТРАНИЦЫ",
-      "regex": "4\\.",
-      "occurrences": 3,
-      "documents": 3,
-      "support": 0.0008891523414344991,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НАЗВАНИЕ",
-      "to": "АВТОРЫ",
-      "regex": "У",
+      "regex": "1\\.\\s+\\-",
       "occurrences": 3,
       "documents": 2,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
       "name": "SEPARATOR",
       "type": "transition",
       "from": "ГОД ПУБЛИКАЦИИ",
-      "to": "НОМЕР",
-      "regex": "6\\.",
+      "to": "СТРАНИЦЫ",
+      "regex": "4\\.",
       "occurrences": 3,
       "documents": 3,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4293,29 +3756,18 @@
       "regex": "»\\s+/",
       "occurrences": 3,
       "documents": 2,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
       "name": "SEPARATOR",
       "type": "transition",
-      "from": "АВТОРЫ",
-      "to": "МЕСТО ИЗДАНИЯ",
-      "regex": "н\\.\\s+\\-",
+      "from": "ГОД ПУБЛИКАЦИИ",
+      "to": "НОМЕР",
+      "regex": "4,",
       "occurrences": 3,
-      "documents": 2,
-      "support": 0.0008891523414344991,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НАЗВАНИЕ",
-      "to": "НАЗВАНИЕ ЖУРНАЛА",
-      "regex": "й\\s+/",
-      "occurrences": 3,
-      "documents": 3,
-      "support": 0.0008891523414344991,
+      "documents": 1,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4326,7 +3778,7 @@
       "regex": "а\\.\\s+В\\s+сб\\.",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4337,7 +3789,7 @@
       "regex": "и\\.\\s+В\\s+сб\\.",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4348,7 +3800,7 @@
       "regex": "\\.\\s+\\(весенняя\\s+сессия\\)\\.",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4359,18 +3811,7 @@
       "regex": "\\)\\s+//",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0008891523414344991,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "ГОД ПУБЛИКАЦИИ",
-      "to": "ТОМ",
-      "regex": "3\\.",
-      "occurrences": 3,
-      "documents": 2,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4381,7 +3822,7 @@
       "regex": "5",
       "occurrences": 3,
       "documents": 2,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4392,7 +3833,7 @@
       "regex": "в\\s+/",
       "occurrences": 3,
       "documents": 2,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4403,7 +3844,7 @@
       "regex": "и,",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4414,7 +3855,7 @@
       "regex": "в\\s+\\-",
       "occurrences": 3,
       "documents": 2,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4425,7 +3866,7 @@
       "regex": "в\\.\\s+\\-",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4436,7 +3877,7 @@
       "regex": "я//",
       "occurrences": 3,
       "documents": 2,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4447,7 +3888,7 @@
       "regex": "9\\.\\s+\\-",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4458,7 +3899,7 @@
       "regex": "а\\.\\s+\\-",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4469,7 +3910,7 @@
       "regex": "4\\.\\s+\\-",
       "occurrences": 3,
       "documents": 2,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4480,29 +3921,29 @@
       "regex": "9\\.\\s+\\-",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
       "name": "SEPARATOR",
       "type": "transition",
-      "from": "НАЗВАНИЕ",
+      "from": "АВТОРЫ",
       "to": "НАЗВАНИЕ ЖУРНАЛА",
-      "regex": "х\\s+//",
+      "regex": "н\\s+//",
       "occurrences": 3,
       "documents": 2,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
       "name": "SEPARATOR",
       "type": "transition",
-      "from": "НАЗВАНИЕ ЖУРНАЛА",
-      "to": "ИЗДАТЕЛЬСТВО",
-      "regex": "\\.\\s+/",
+      "from": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
+      "to": "МЕСТО ИЗДАНИЯ",
+      "regex": "\\.\\s+—",
       "occurrences": 3,
       "documents": 2,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4513,18 +3954,7 @@
       "regex": "»\\s+\\(ПРОЕКТ\\-2009\\)\\.\\s+\\-",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0008891523414344991,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "ИЗДАТЕЛЬСТВО",
-      "to": "ГОД ПУБЛИКАЦИИ",
-      "regex": "м»,",
-      "occurrences": 3,
-      "documents": 2,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4535,29 +3965,7 @@
       "regex": "й",
       "occurrences": 3,
       "documents": 2,
-      "support": 0.0008891523414344991,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НОМЕР",
-      "to": "СТРАНИЦЫ",
-      "regex": "1\\.",
-      "occurrences": 3,
-      "documents": 3,
-      "support": 0.0008891523414344991,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "АВТОРЫ",
-      "to": "НАЗВАНИЕ ЖУРНАЛА",
-      "regex": "ш\\s+//",
-      "occurrences": 3,
-      "documents": 2,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4568,18 +3976,7 @@
       "regex": "5\\s+\\-",
       "occurrences": 3,
       "documents": 2,
-      "support": 0.0008891523414344991,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "ГОД ПУБЛИКАЦИИ",
-      "to": "СТРАНИЦЫ",
-      "regex": "2\\s+\\-",
-      "occurrences": 3,
-      "documents": 3,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4590,7 +3987,18 @@
       "regex": "а\\s+\\-",
       "occurrences": 3,
       "documents": 2,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
+      "weight": 0.0
+    },
+    {
+      "name": "SEPARATOR",
+      "type": "transition",
+      "from": "АВТОРЫ",
+      "to": "НАЗВАНИЕ КОНФЕРЕНЦИИ",
+      "regex": "й\\s+И",
+      "occurrences": 3,
+      "documents": 2,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4601,18 +4009,7 @@
       "regex": "4\\s+\\-",
       "occurrences": 3,
       "documents": 2,
-      "support": 0.0008891523414344991,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НАЗВАНИЕ",
-      "to": "НАЗВАНИЕ ЖУРНАЛА",
-      "regex": "й\\s+И",
-      "occurrences": 3,
-      "documents": 2,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4623,18 +4020,7 @@
       "regex": "7\\s+\\-",
       "occurrences": 3,
       "documents": 2,
-      "support": 0.0008891523414344991,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "ИЗДАТЕЛЬСТВО",
-      "to": "ГОД ПУБЛИКАЦИИ",
-      "regex": "И\\.",
-      "occurrences": 3,
-      "documents": 2,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4645,7 +4031,7 @@
       "regex": "е",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4656,7 +4042,7 @@
       "regex": "и\\.",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4667,40 +4053,7 @@
       "regex": "й/",
       "occurrences": 3,
       "documents": 2,
-      "support": 0.0008891523414344991,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "МЕСТО ИЗДАНИЯ",
-      "to": "ГОД ПУБЛИКАЦИИ",
-      "regex": "н,",
-      "occurrences": 3,
-      "documents": 2,
-      "support": 0.0008891523414344991,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НАЗВАНИЕ ЖУРНАЛА",
-      "to": "НОМЕР",
-      "regex": "и,",
-      "occurrences": 3,
-      "documents": 3,
-      "support": 0.0008891523414344991,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "ИЗДАТЕЛЬСТВО",
-      "to": "ГОД ПУБЛИКАЦИИ",
-      "regex": "А,",
-      "occurrences": 3,
-      "documents": 2,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4711,18 +4064,7 @@
       "regex": "У/",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0008891523414344991,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "НАЗВАНИЕ",
-      "to": "АВТОРЫ",
-      "regex": "в/",
-      "occurrences": 3,
-      "documents": 2,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4733,7 +4075,7 @@
       "regex": "н//",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     },
     {
@@ -4744,51 +4086,7 @@
       "regex": "\\.,",
       "occurrences": 3,
       "documents": 1,
-      "support": 0.0008891523414344991,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "МЕСТО ИЗДАНИЯ",
-      "to": "ГОД ПУБЛИКАЦИИ",
-      "regex": "в,",
-      "occurrences": 3,
-      "documents": 3,
-      "support": 0.0008891523414344991,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "МЕСТО ИЗДАНИЯ",
-      "to": "ИЗДАТЕЛЬСТВО",
-      "regex": "ж\\.",
-      "occurrences": 3,
-      "documents": 1,
-      "support": 0.0008891523414344991,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "АВТОРЫ",
-      "to": "НАЗВАНИЕ",
-      "regex": "в\\.",
-      "occurrences": 3,
-      "documents": 1,
-      "support": 0.0008891523414344991,
-      "weight": 0.0
-    },
-    {
-      "name": "SEPARATOR",
-      "type": "transition",
-      "from": "МЕСТО ИЗДАНИЯ",
-      "to": "ГОД ПУБЛИКАЦИИ",
-      "regex": "м,",
-      "occurrences": 3,
-      "documents": 1,
-      "support": 0.0008891523414344991,
+      "support": 0.0011135857461024498,
       "weight": 0.0
     }
   ]

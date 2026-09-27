@@ -24,12 +24,12 @@ DEFAULT_SEED = 10
 WEIGHT_MIN = -1.0
 WEIGHT_MAX = 1.0
 
-POP_SIZE = 5
-MAX_ITER = 1000
+POP_SIZE = 1
+MAX_ITER = 50
 TOL = 1e-15
 
-TRAIN_RATIO = 0.5
-VALIDATION_RATIO = 0.25
+TRAIN_RATIO = 0.66
+VALIDATION_RATIO = 0.4
 
 REFERENCE_LABEL = "БИБЛ. ССЫЛКА"
 
@@ -490,7 +490,6 @@ def optimize(
         mutation=0.3,
         recombination=0.5,
         init="latinhypercube",
-        strategy="rand1bin",
         tol=TOL,
         polish=False,
         workers=-1,
