@@ -2,7 +2,7 @@
 $SCRIPT_PATH = ".\VerifiedCode\localization\plotBiblioBlockLocalization.py"
 $PATTERNS_PATH = ".\VerifiedCode\localization\patterns_optimized_1.json"
 $OUTPUT_DIR = ".\VerifiedCode\localization\localizationPlots"
-$INPUT_DIR = ".\DataSource\Test"
+$INPUT_DIR = ".\DataSource"
 $MACHINE_DIR = ".\VerifiedCode\localization\localizationProducts"
 
 # Ищем все исходные файлы .json в папке DataSource
