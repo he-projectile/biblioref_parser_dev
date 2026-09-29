@@ -13,7 +13,7 @@ import numpy as np
 CWT_MIN_SCALE = 1
 CWT_MAX_SCALE = 75
 
-CWT_MEAN_MULTIPLIER = 0
+CWT_MEAN_MULTIPLIER = 2
 
 LENGTH_SIGMA_1 = 50
 LENGTH_OFFSET_1 = 350
@@ -342,6 +342,7 @@ def calculate_cwt(
             width,
             dtype=float
         )
+        
 
         kernel_length = len(kernel)
 

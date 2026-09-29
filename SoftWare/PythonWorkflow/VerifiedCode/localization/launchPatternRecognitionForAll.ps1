@@ -2,7 +2,7 @@
 $SCRIPT_PATH = ".\VerifiedCode\localization\patternRecognition.py"
 $PATTERNS_PATH = ".\VerifiedCode\localization\patterns.json"
 $OUTPUT_DIR = ".\VerifiedCode\localization\localizationProducts"
-$INPUT_DIR = ".\DataSource\Test"
+$INPUT_DIR = ".\DataSource"
 
 # Создаем папку для результатов, если её нет
 if (-not (Test-Path $OUTPUT_DIR)) {
